@@ -1,3 +1,23 @@
-.giveBorder{
+.LabHours{
+    font-weight: bold;
+    background-color: #99CCFF;
+    border: 1px solid black;
+}
+
+.TheoryHours{
+    font-weight: bold;
+    background-color: #CCCCFF;
+    border: 1px solid black;
+}
+
+.ColumnOneDays{
+    font-weight: bold;
+    background-color: #C0C0C0;
+    border: 1px solid black;
+}
+
+.TimetableContent{
+    color: #CCCCFF;
+    background-color: #FFFFCC;
     border: 1px solid black;
 }

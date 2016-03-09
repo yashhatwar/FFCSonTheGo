@@ -6,3 +6,7 @@ function changeColor() {
         divBlock.backgroundColor = "#FFFFCC";
     }
 }
+
+$(".TimetableContent").click(function () {
+   $(this).toggleClass("highlight");
+});

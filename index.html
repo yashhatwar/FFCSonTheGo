@@ -3,11 +3,34 @@
 <head>
     <title>My VIT Time Table</title>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="custom_bootstrap.css">
     <link rel="stylesheet" href="style.css">
+    <link href="metro.css" rel="stylesheet">
+    <link rel="stylesheet" href="custom_bootstrap.css">
     <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.12.0.min.js"></script>
+    <script src="metro.js"></script>
 </head>
 <body>
+
+<!--Facebook JavaScript SDK
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '1698400863751487',
+      xfbml      : true,
+      version    : 'v2.5'
+    });
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>-->
+
+<!--Website content-->
     <div class="container">
         <div class="row">
             <br>
@@ -48,81 +71,125 @@
         </div>
         <div class="row text-center">
             <div class="col-xs-1 ColumnOneDays" style="padding-top:20px; padding-bottom:20px;">MON</div>
-            <div class="col-xs-1 TimetableContent" style="padding-top:20px; padding-bottom:20px;">A1 / L1</div>
-            <div class="col-xs-1 TimetableContent" style="padding-top:20px; padding-bottom:20px;">F1 / L2</div>
-            <div class="col-xs-1 TimetableContent" style="padding-top:20px; padding-bottom:20px;">C1 / L3</div>
-            <div class="col-xs-1 TimetableContent" style="padding-top:20px; padding-bottom:20px;">E1 / L4</div>
-            <div class="col-xs-1 TimetableContent" style="padding-top:20px; padding-bottom:20px;">TD1 / L5</div>
+            <div class="col-xs-1 TimetableContent A1" style="padding-top:20px; padding-bottom:20px;">A1 / L1</div>
+            <div class="col-xs-1 TimetableContent F1" style="padding-top:20px; padding-bottom:20px;">F1 / L2</div>
+            <div class="col-xs-1 TimetableContent C1" style="padding-top:20px; padding-bottom:20px;">C1 / L3</div>
+            <div class="col-xs-1 TimetableContent E1" style="padding-top:20px; padding-bottom:20px;">E1 / L4</div>
+            <div class="col-xs-1 TimetableContent TD1" style="padding-top:20px; padding-bottom:20px;">TD1 / L5</div>
             <div class="col-xs-1 TimetableContent" style="padding-top:20px; padding-bottom:20px;">L6</div>
             <div class="col-xs-1" style="padding:31px; background-color: #C0C0C0;"></div>
-            <div class="col-xs-1 TimetableContent" style="padding-top:20px; padding-bottom:20px;">A2 / L31</div>
-            <div class="col-xs-1 TimetableContent" style="padding-top:20px; padding-bottom:20px;">F2 / L32</div>
-            <div class="col-xs-1 TimetableContent" style="padding-top:20px; padding-bottom:20px;">C2 / L33</div>
-            <div class="col-xs-1 TimetableContent" style="padding-top:20px; padding-bottom:20px;">E2 / L34</div>
-            <div class="col-xs-1 TimetableContent" style="padding-top:10px; padding-bottom:10px;">TD2 / L35</div>
+            <div class="col-xs-1 TimetableContent A2" style="padding-top:20px; padding-bottom:20px;">A2 / L31</div>
+            <div class="col-xs-1 TimetableContent F2" style="padding-top:20px; padding-bottom:20px;">F2 / L32</div>
+            <div class="col-xs-1 TimetableContent C2" style="padding-top:20px; padding-bottom:20px;">C2 / L33</div>
+            <div class="col-xs-1 TimetableContent E2" style="padding-top:20px; padding-bottom:20px;">E2 / L34</div>
+            <div class="col-xs-1 TimetableContent TD2" style="padding-top:10px; padding-bottom:10px;">TD2 / L35</div>
             <div class="col-xs-1 TimetableContent" style="padding-top:20px; padding-bottom:20px;">L36</div>
         </div>
         <div class="row text-center">
             <div class="col-xs-1 ColumnOneDays" style="padding-top:20px; padding-bottom:20px;">TUE</div>
-            <div class="col-xs-1 TimetableContent" style="padding-top:20px; padding-bottom:20px;">B1 / L7</div>
-            <div class="col-xs-1 TimetableContent" style="padding-top:20px; padding-bottom:20px;">G1 / L8</div>
-            <div class="col-xs-1 TimetableContent" style="padding-top:20px; padding-bottom:20px;">D1 / L9</div>
-            <div class="col-xs-1 TimetableContent" style="padding-top:10px; padding-bottom:10px;">TA1 / L10</div>
-            <div class="col-xs-1 TimetableContent" style="padding-top:10px; padding-bottom:10px;">TF1 / L11</div>
+            <div class="col-xs-1 TimetableContent B1" style="padding-top:20px; padding-bottom:20px;">B1 / L7</div>
+            <div class="col-xs-1 TimetableContent G1" style="padding-top:20px; padding-bottom:20px;">G1 / L8</div>
+            <div class="col-xs-1 TimetableContent D1" style="padding-top:20px; padding-bottom:20px;">D1 / L9</div>
+            <div class="col-xs-1 TimetableContent TA1" style="padding-top:10px; padding-bottom:10px;">TA1 / L10</div>
+            <div class="col-xs-1 TimetableContent TF1" style="padding-top:10px; padding-bottom:10px;">TF1 / L11</div>
             <div class="col-xs-1 TimetableContent" style="padding-top:20px; padding-bottom:20px;">L12</div>
             <div class="col-xs-1" style="padding:31px; background-color: #C0C0C0;"></div>
-            <div class="col-xs-1 TimetableContent" style="padding-top:20px; padding-bottom:20px;">B2 / L37</div>
-            <div class="col-xs-1 TimetableContent" style="padding-top:20px; padding-bottom:20px;">G2 / L38</div>
-            <div class="col-xs-1 TimetableContent" style="padding-top:20px; padding-bottom:20px;">D2 / L39</div>
-            <div class="col-xs-1 TimetableContent" style="padding-top:10px; padding-bottom:10px;">TA2 / L40</div>
-            <div class="col-xs-1 TimetableContent" style="padding-top:10px; padding-bottom:10px;">TF2 / L41</div>
+            <div class="col-xs-1 TimetableContent B2" style="padding-top:20px; padding-bottom:20px;">B2 / L37</div>
+            <div class="col-xs-1 TimetableContent G2" style="padding-top:20px; padding-bottom:20px;">G2 / L38</div>
+            <div class="col-xs-1 TimetableContent D2" style="padding-top:20px; padding-bottom:20px;">D2 / L39</div>
+            <div class="col-xs-1 TimetableContent TA2" style="padding-top:10px; padding-bottom:10px;">TA2 / L40</div>
+            <div class="col-xs-1 TimetableContent TF2" style="padding-top:10px; padding-bottom:10px;">TF2 / L41</div>
             <div class="col-xs-1 TimetableContent" style="padding-top:20px; padding-bottom:20px;">L42</div>
         </div>
         <div class="row text-center">
             <div class="col-xs-1 ColumnOneDays" style="padding-top:20px; padding-bottom:20px;">WED</div>
-            <div class="col-xs-1 TimetableContent" style="padding-top:20px; padding-bottom:20px;">C1 / L13</div>
-            <div class="col-xs-1 TimetableContent" style="padding-top:20px; padding-bottom:20px;">F1 / L14</div>
-            <div class="col-xs-1 TimetableContent" style="padding-top:20px; padding-bottom:20px;">E1 / L15</div>
-            <div class="col-xs-3 TimetableContent" style="padding-top:20px; padding-bottom:20px;">Seminar / Meeting</div>
+            <div class="col-xs-1 TimetableContent C1" style="padding-top:20px; padding-bottom:20px;">C1 / L13</div>
+            <div class="col-xs-1 TimetableContent F1" style="padding-top:20px; padding-bottom:20px;">F1 / L14</div>
+            <div class="col-xs-1 TimetableContent E1" style="padding-top:20px; padding-bottom:20px;">E1 / L15</div>
+            <div class="col-xs-3" style="padding-top:20px; padding-bottom:20px; color: grey; background-color: #FFFFCC; border: 1px solid black; cursor: default;">Seminar / Meeting</div>
             <div class="col-xs-1" style="font-weight:bold; padding-bottom:42px; background-color:#C0C0C0;">LUNCH</div>
-            <div class="col-xs-1 TimetableContent" style="padding-top:20px; padding-bottom:20px;">C2 / L43</div>
-            <div class="col-xs-1 TimetableContent" style="padding-top:20px; padding-bottom:20px;">F2 / L44</div>
-            <div class="col-xs-1 TimetableContent" style="padding-top:20px; padding-bottom:20px;">E2 / L45</div>
-            <div class="col-xs-1 TimetableContent" style="padding-top:10px; padding-bottom:10px;">TB2 / L46</div>
-            <div class="col-xs-1 TimetableContent" style="padding-top:10px; padding-bottom:10px;">TG2 / L47</div>
+            <div class="col-xs-1 TimetableContent C2" style="padding-top:20px; padding-bottom:20px;">C2 / L43</div>
+            <div class="col-xs-1 TimetableContent F2" style="padding-top:20px; padding-bottom:20px;">F2 / L44</div>
+            <div class="col-xs-1 TimetableContent E2" style="padding-top:20px; padding-bottom:20px;">E2 / L45</div>
+            <div class="col-xs-1 TimetableContent TB2" style="padding-top:10px; padding-bottom:10px;">TB2 / L46</div>
+            <div class="col-xs-1 TimetableContent TG2" style="padding-top:10px; padding-bottom:10px;">TG2 / L47</div>
             <div class="col-xs-1 TimetableContent" style="padding-top:20px; padding-bottom:20px;">L48</div>
         </div>
         <div class="row text-center">
             <div class="col-xs-1 ColumnOneDays" style="padding-top:20px; padding-bottom:20px;">THU</div>
-            <div class="col-xs-1 TimetableContent" style="padding-top:20px; padding-bottom:20px;">D1 / L19</div>
-            <div class="col-xs-1 TimetableContent" style="padding-top:20px; padding-bottom:20px;">A1 / L20</div>
-            <div class="col-xs-1 TimetableContent" style="padding-top:20px; padding-bottom:20px;">F1 / L21</div>
-            <div class="col-xs-1 TimetableContent" style="padding-top:20px; padding-bottom:20px;">C1 / L22</div>
-            <div class="col-xs-1 TimetableContent" style="padding-top:10px; padding-bottom:10px;">TE1 / L23</div>
+            <div class="col-xs-1 TimetableContent D1" style="padding-top:20px; padding-bottom:20px;">D1 / L19</div>
+            <div class="col-xs-1 TimetableContent A1" style="padding-top:20px; padding-bottom:20px;">A1 / L20</div>
+            <div class="col-xs-1 TimetableContent F1" style="padding-top:20px; padding-bottom:20px;">F1 / L21</div>
+            <div class="col-xs-1 TimetableContent C1" style="padding-top:20px; padding-bottom:20px;">C1 / L22</div>
+            <div class="col-xs-1 TimetableContent TE1" style="padding-top:10px; padding-bottom:10px;">TE1 / L23</div>
             <div class="col-xs-1 TimetableContent" style="padding-top:20px; padding-bottom:20px;">L24</div>
             <div class="col-xs-1" style="padding:31px; background-color: #C0C0C0;"></div>
-            <div class="col-xs-1 TimetableContent" style="padding-top:20px; padding-bottom:20px;">D2 / L49</div>
-            <div class="col-xs-1 TimetableContent" style="padding-top:20px; padding-bottom:20px;">A2 / L50</div>
-            <div class="col-xs-1 TimetableContent" style="padding-top:20px; padding-bottom:20px;">F2 / L51</div>
-            <div class="col-xs-1 TimetableContent" style="padding-top:20px; padding-bottom:20px;">C2 / L52</div>
-            <div class="col-xs-1 TimetableContent" style="padding-top:10px; padding-bottom:10px;">TE2 / L53</div>
+            <div class="col-xs-1 TimetableContent D2" style="padding-top:20px; padding-bottom:20px;">D2 / L49</div>
+            <div class="col-xs-1 TimetableContent A2" style="padding-top:20px; padding-bottom:20px;">A2 / L50</div>
+            <div class="col-xs-1 TimetableContent F2" style="padding-top:20px; padding-bottom:20px;">F2 / L51</div>
+            <div class="col-xs-1 TimetableContent C2" style="padding-top:20px; padding-bottom:20px;">C2 / L52</div>
+            <div class="col-xs-1 TimetableContent TE2" style="padding-top:10px; padding-bottom:10px;">TE2 / L53</div>
             <div class="col-xs-1 TimetableContent" style="padding-top:20px; padding-bottom:20px;">L54</div>
         </div>
         <div class="row text-center">
             <div class="col-xs-1 ColumnOneDays" style="padding-top:20px; padding-bottom:20px;">FRI</div>
-            <div class="col-xs-1 TimetableContent" style="padding-top:20px; padding-bottom:20px;">E1 / L25</div>
-            <div class="col-xs-1 TimetableContent" style="padding-top:20px; padding-bottom:20px;">B1 / L26</div>
-            <div class="col-xs-1 TimetableContent" style="padding-top:20px; padding-bottom:20px;">G1 / L27</div>
-            <div class="col-xs-1 TimetableContent" style="padding-top:20px; padding-bottom:20px;">D1 / L28</div>
-            <div class="col-xs-1 TimetableContent" style="padding-top:10px; padding-bottom:10px;">TC1 / L29</div>
+            <div class="col-xs-1 TimetableContent E1" style="padding-top:20px; padding-bottom:20px;">E1 / L25</div>
+            <div class="col-xs-1 TimetableContent B1" style="padding-top:20px; padding-bottom:20px;">B1 / L26</div>
+            <div class="col-xs-1 TimetableContent G1" style="padding-top:20px; padding-bottom:20px;">G1 / L27</div>
+            <div class="col-xs-1 TimetableContent D1" style="padding-top:20px; padding-bottom:20px;">D1 / L28</div>
+            <div class="col-xs-1 TimetableContent TC1" style="padding-top:10px; padding-bottom:10px;">TC1 / L29</div>
             <div class="col-xs-1 TimetableContent" style="padding-top:20px; padding-bottom:20px;">L30</div>
             <div class="col-xs-1" style="padding:30.5px; border-bottom: 1px solid black; background-color: #C0C0C0;"></div>
-            <div class="col-xs-1 TimetableContent" style="padding-top:20px; padding-bottom:20px;">E2 / L55</div>
-            <div class="col-xs-1 TimetableContent" style="padding-top:20px; padding-bottom:20px;">B2 / L56</div>
-            <div class="col-xs-1 TimetableContent" style="padding-top:20px; padding-bottom:20px;">G2 / L57</div>
-            <div class="col-xs-1 TimetableContent" style="padding-top:20px; padding-bottom:20px;">D2 / L58</div>
-            <div class="col-xs-1 TimetableContent" style="padding-top:10px; padding-bottom:10px;">TC2 / L59</div>
+            <div class="col-xs-1 TimetableContent E2" style="padding-top:20px; padding-bottom:20px;">E2 / L55</div>
+            <div class="col-xs-1 TimetableContent B2" style="padding-top:20px; padding-bottom:20px;">B2 / L56</div>
+            <div class="col-xs-1 TimetableContent G2" style="padding-top:20px; padding-bottom:20px;">G2 / L57</div>
+            <div class="col-xs-1 TimetableContent D2" style="padding-top:20px; padding-bottom:20px;">D2 / L58</div>
+            <div class="col-xs-1 TimetableContent TC2" style="padding-top:10px; padding-bottom:10px;">TC2 / L59</div>
             <div class="col-xs-1 TimetableContent" style="padding-top:20px; padding-bottom:20px;">L60</div>
+        </div>
+
+        <!--Slot tiles-->
+        <div style="padding-top: 8px;padding-bottom: 8px">
+        <div class="row" style="padding-top: 8px">
+        <div class="col-xs-7" style="padding-left: 70px;padding-right: 0px;">
+            <div class="A1-tile tile" data-role="tile" data-click="transform">A1</div>
+            <div class="B1-tile tile" data-role="tile" data-click="transform">B1</div>
+            <div class="C1-tile tile" data-role="tile" data-click="transform">C1</div>
+            <div class="D1-tile tile" data-role="tile" data-click="transform">D1</div>
+            <div class="E1-tile tile" data-role="tile" data-click="transform">E1</div>
+            <div class="F1-tile tile" data-role="tile" data-click="transform">F1</div>
+            <div class="G1-tile tile" style="margin-right: 0px;" data-role="tile" data-click="transform">G1</div>
+        </div>
+        <div class="col-xs-7" style="padding-left: 70px;padding-right: 0px;">
+            <div class="A2-tile tile" data-role="tile" data-click="transform">A2</div>
+            <div class="B2-tile tile" data-role="tile" data-click="transform">B2</div>
+            <div class="C2-tile tile" data-role="tile" data-click="transform">C2</div>
+            <div class="D2-tile tile" data-role="tile" data-click="transform">D2</div>
+            <div class="E2-tile tile" data-role="tile" data-click="transform">E2</div>
+            <div class="F2-tile tile" data-role="tile" data-click="transform">F2</div>
+            <div class="G2-tile tile" style="margin-right: 0px;" data-role="tile" data-click="transform">G2</div>
+        </div>
+        </div>
+        <div class="row" style="padding-bottom: 8px">
+        <div class="col-xs-7" style="padding-left: 70px;padding-right: 0px;">
+            <div class="TA1-tile tile" data-role="tile" data-click="transform">TA1</div>
+            <div class="TB1-tile tile" style="background-color: grey; cursor: default;">TB1</div>
+            <div class="TC1-tile tile" data-role="tile" data-click="transform">TC1</div>
+            <div class="TD1-tile tile" data-role="tile" data-click="transform">TD1</div>
+            <div class="TE1-tile tile" data-role="tile" data-click="transform">TE1</div>
+            <div class="TF1-tile tile" data-role="tile" data-click="transform">TF1</div>
+            <div class="TG1-tile tile" style="background-color: grey; cursor: default;">TG1</div>
+        </div>
+        <div class="col-xs-7" style="padding-left: 70px;padding-right: 0px;">
+            <div class="TA2-tile tile" data-role="tile" data-click="transform">TA2</div>
+            <div class="TB2-tile tile" data-role="tile" data-click="transform">TB2</div>
+            <div class="TC2-tile tile" data-role="tile" data-click="transform">TC2</div>
+            <div class="TD2-tile tile" data-role="tile" data-click="transform">TD2</div>
+            <div class="TE2-tile tile" data-role="tile" data-click="transform">TE2</div>
+            <div class="TF2-tile tile" data-role="tile" data-click="transform">TF2</div>
+            <div class="TG2-tile tile" style="margin-right: 0px;" data-role="tile" data-click="transform">TG2</div>
+        </div>
+        </div>
         </div>
 
         <!--Embed code Excel online-->

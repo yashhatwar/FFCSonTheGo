@@ -1,4 +1,6 @@
-# ffcsonthego.azurewebsites.net
+# ffcsonthego
+
+Website is for the use of students of VIT University, Vellore.
 
 Open source initiative.
 

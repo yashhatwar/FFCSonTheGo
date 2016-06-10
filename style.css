@@ -50,7 +50,7 @@
     padding-right: 17.5px;
     padding-top: 16px;
     padding-bottom: 16px;
-    margin: 8px;
+    margin: 12.5px;
     background-color:#1DE9B6;
 }
 
@@ -59,22 +59,40 @@
     padding-right: 17.5px;
     padding-top: 16px;
     padding-bottom: 16px;
-    margin: 8px;
+    margin: 12.5px;
     background-color: #76FF03;
 }
 
 .TA1-tile, .TB1-tile, .TC1-tile, .TD1-tile, .TE1-tile, .TF1-tile, .TG1-tile, .TA2-tile, .TB2-tile, .TC2-tile, .TD2-tile, .TE2-tile, .TF2-tile, .TG2-tile{
     padding-top: 16px;
     padding-bottom: 16px;
-    padding-left: 13px;
-    padding-right: 13px;
-    margin: 8px;
+    padding-left: 13.2px;
+    padding-right: 13.2px;
+    margin: 12.5px;
     background-color:#1DE9B6;
 }
 
 .TA1-tile.highlight, .TB1-tile.highlight, .TC1-tile.highlight, .TD1-tile.highlight, .TE1-tile.highlight, .TF1-tile.highlight, .TG1-tile.highlight, .TA2-tile.highlight, .TB2-tile.highlight, .TC2-tile.highlight, .TD2-tile.highlight, .TE2-tile.highlight, .TF2-tile.highlight, .TG2-tile.highlight{
     padding-top: 16px;
     padding-bottom: 16px;
+    padding-left: 13.2px;
+    padding-right: 13.2px;
+    margin: 12.5px;
+    background-color: #76FF03;
+}
+
+.TAA1-tile, .TBB1-tile, .TCC1-tile, .TDD1-tile, .TEE1-tile, .TFF1-tile, .TGG1-tile, .TAA2-tile, .TBB2-tile, .TCC2-tile, .TDD2-tile, .TEE2-tile, .TFF2-tile, .TGG2-tile{
+    padding-top: 19px;
+    padding-bottom: 19px;
+    padding-left: 13px;
+    padding-right: 13px;
+    margin: 8px;
+    background-color:#1DE9B6;
+}
+
+.TAA1-tile.highlight, .TBB1-tile.highlight, .TCC1-tile.highlight, .TDD1-tile.highlight, .TEE1-tile.highlight, .TFF1-tile.highlight, .TGG1-tile.highlight, .TAA2-tile.highlight, .TBB2-tile.highlight, .TCC2-tile.highlight, .TDD2-tile.highlight, .TEE2-tile.highlight, .TFF2-tile.highlight, .TGG2-tile.highlight{
+    padding-top: 19px;
+    padding-bottom: 19px;
     padding-left: 13px;
     padding-right: 13px;
     margin: 8px;

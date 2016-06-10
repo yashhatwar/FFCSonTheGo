@@ -141,3 +141,73 @@ $(".TG2-tile").click(function(){
 	$(this).toggleClass("highlight");
 	$(".TG2").toggleClass("highlight");
 });
+
+$(".TAA1-tile").click(function(){
+	$(this).toggleClass("highlight");
+	$(".TAA1").toggleClass("highlight");
+});
+
+$(".TBB1-tile").click(function(){
+	$(this).toggleClass("highlight");
+	$(".TBB1").toggleClass("highlight");
+});
+
+$(".TCC1-tile").click(function(){
+	$(this).toggleClass("highlight");
+	$(".TCC1").toggleClass("highlight");
+});
+
+$(".TDD1-tile").click(function(){
+	$(this).toggleClass("highlight");
+	$(".TDD1").toggleClass("highlight");
+});
+
+$(".TEE1-tile").click(function(){
+	$(this).toggleClass("highlight");
+	$(".TEE1").toggleClass("highlight");
+});
+
+$(".TFF1-tile").click(function(){
+	$(this).toggleClass("highlight");
+	$(".TFF1").toggleClass("highlight");
+});
+
+$(".TGG1-tile").click(function(){
+	$(this).toggleClass("highlight");
+	$(".TGG1").toggleClass("highlight");
+});
+
+$(".TAA2-tile").click(function(){
+	$(this).toggleClass("highlight");
+	$(".TAA2").toggleClass("highlight");
+});
+
+$(".TBB2-tile").click(function(){
+	$(this).toggleClass("highlight");
+	$(".TBB2").toggleClass("highlight");
+});
+
+$(".TCC2-tile").click(function(){
+	$(this).toggleClass("highlight");
+	$(".TCC2").toggleClass("highlight");
+});
+
+$(".TDD2-tile").click(function(){
+	$(this).toggleClass("highlight");
+	$(".TDD2").toggleClass("highlight");
+});
+
+$(".TEE2-tile").click(function(){
+	$(this).toggleClass("highlight");
+	$(".TEE2").toggleClass("highlight");
+});
+
+$(".TFF2-tile").click(function(){
+	$(this).toggleClass("highlight");
+	$(".TFF2").toggleClass("highlight");
+});
+
+$(".TGG2-tile").click(function(){
+	$(this).toggleClass("highlight");
+	$(".TGG2").toggleClass("highlight");
+});

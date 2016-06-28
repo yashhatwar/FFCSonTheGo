@@ -17,6 +17,10 @@ Contribute here
     <!--Microsoft jQuery Content Delivery Network (CDN)-->
     <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.12.0.min.js"></script>
     <script src="metro.js"></script>
+    <!--Joyride CSS file-->
+    <link rel=" stylesheet" type="text/css" href="joyride-2.1.css">
+    <!--Joyride plugin-->
+    <script src="jquery.joyride-2.1.js"></script>
     <!--Facebook admin account for comment plugin--> 
     <meta property="fb:admins" content="[VaTz88]"/>
 </head>
@@ -57,7 +61,8 @@ Contribute here
     <div class="container">
         <div class="row">
             <div class="col-xs-7"><h1>VIT TIME TABLE VISUALIZER</h1></div>
-            <div class="col-xs-7"><p class="text-right" style="margin-top: 40px;"><a href="https://onedrive.live.com/redir?resid=D67270317C4D2130!1616&authkey=!AGJ7II-ImFHqZcc&ithint=file%2cpdf" target="_blank">Quick start guide</a></p></div>
+            <!--Quick start guide
+            <div class="col-xs-7"><p class="text-right" style="margin-top: 40px;"><a href="pdf link here" target="_blank">Quick start guide</a></p></div>-->
         </div>
         <div class="row text-center">
             <div class="col-xs-1 ColumnOneDays" style="padding-top:10px; padding-bottom:10px;">THEORY HOURS</div>
@@ -87,7 +92,7 @@ Contribute here
         </div>
         <div class="row text-center">
             <div class="col-xs-1 ColumnOneDays" style="padding-top:20px; padding-bottom:20px;">MON</div>
-            <div class="col-xs-1 TimetableContent A1" style="padding-top:20px; padding-bottom:20px;">A1 / L1</div>
+            <div id="A1-id" class="col-xs-1 TimetableContent A1" style="padding-top:20px; padding-bottom:20px;">A1 / L1</div>
             <div class="col-xs-1 TimetableContent F1" style="padding-top:20px; padding-bottom:20px;">F1 / L2</div>
             <div class="col-xs-1 TimetableContent D1" style="padding-top:20px; padding-bottom:20px;">D1 / L3</div>
             <div class="col-xs-1 TimetableContent TB1" style="padding-top:20px; padding-bottom:20px;">TB1 / L4</div>
@@ -168,7 +173,7 @@ Contribute here
         <div style="padding-top: 8px; padding-bottom: 8px">
         <div class="row">
         <div class="col-xs-7" style="padding-left: 70px;padding-right: 0px;">
-            <div class="A1-tile tile" data-role="tile" data-click="transform">A1</div>
+            <div id="A1-tile-id" class="A1-tile tile" data-role="tile" data-click="transform">A1</div>
             <div class="B1-tile tile" data-role="tile" data-click="transform">B1</div>
             <div class="C1-tile tile" data-role="tile" data-click="transform">C1</div>
             <div class="D1-tile tile" data-role="tile" data-click="transform">D1</div>
@@ -229,19 +234,55 @@ Contribute here
         </div>-->
         </div>
 
-        <!--Embed code Excel online-->
-        <div class="ExcelSheet" style="padding-bottom: 8px; padding-top: 8px;">
+        <!--Embed code Excel online
+        <div id="ExcelSheet" class="ExcelSheet" style="padding-bottom: 8px; padding-top: 8px;">
 
-        	<iframe width="100%" height="500" frameborder="0" scrolling="no" src="https://onedrive.live.com/embed?cid=D67270317C4D2130&resid=D67270317C4D2130%211612&authkey=AGqhO4iGGCIMLho&em=2&AllowTyping=True&ActiveCell='Winter%202015-16%20Courses%20offered'!A1&wdHideHeaders=True&wdDownloadButton=True"></iframe>
+        	<iframe width="100%" height="500" frameborder="0" scrolling="no" src="link here"></iframe>
 
-        </div>
+        </div>-->
 
         <!--Facebook comments-->
-        <div class="fb-comments" data-href="http://ffcsonthego.azurewebsites.net" data-width="100%" data-numposts="10"></div>
+        <div id="fb-comment-id" class="fb-comments" data-href="http://ffcsonthego.azurewebsites.net" data-width="100%" data-numposts="10"></div>
 
     </div>
-    
+
     <script src="colorChange.js"></script>
+
+    <!--Tour tips-->
+    <ol id="joyRideTipContent">
+      <li data-text="Start">
+        <h1>Welcome to FFCS On The Go!</h1>
+        <h3 style="padding-bottom:15px;padding-top:5px;">Take a tour.</h3>
+      </li>
+      <li data-id="A1-id" data-button="Next">
+        <h4>Easy slot selection</h4>
+        <p>Click the slot to select.</p>
+      </li>
+      <li data-id="A1-tile-id" data-button="Next">
+        <h4>Fast selection</h4>
+        <p>Click the slot tile to select all at once.</p>
+      </li>
+      <li data-id="ExcelSheet" data-button="Next">
+        <h4>Excel sheet is here!</h4>
+        <p>Search and filter courses, slots and faculties. Also use the extra sheet 'My space' at the bottom to work in a seprate sheet.</p>
+      </li>
+      <li data-id="fb-comment-id" data-button="Done">
+        <h4>Interact with others</h4>
+        <p>Comment here, ask queries or give feedback.</p>
+      </li>
+    </ol>
+
+    <!--Launching joyride when to page is loaded-->
+    <script>
+    $(window).load(function() {
+      $("#joyRideTipContent").joyride({
+        /* Options will go here */
+        autoStart : true,
+        modal : false,
+        expose : true
+      });
+    });
+    </script>
     
 </body>
 </html>

@@ -26,12 +26,7 @@
     cursor: pointer;
 }
 
-.TimetableContent:hover, .A1:hover, .B1:hover, .C1:hover, .D1:hover, .E1:hover, .F1:hover, .G1:hover, .A2:hover, .B2:hover, .C2:hover, .D2:hover, .E2:hover, .F2:hover, .G2:hover, .TA1:hover, .TB1:hover, .TC1:hover, .TD1:hover, .TE1:hover, .TF1:hover, .TG1:hover, .TA2:hover, .TB2:hover, .TC2:hover, .TD2:hover, .TE2:hover, .TF2:hover, .TG2:hover{
-    color: black;
-    background-color: #CCFF33;
-    border: 1px solid black;
-    cursor: pointer;
-}
+
 
 .TimetableContent.highlight, .A1.highlight, .B1.highlight, .C1.highlight, .D1.highlight, .E1.highlight, .F1.highlight, .G1.highlight, .A2.highlight, .B2.highlight, .C2.highlight, .D2.highlight, .E2.highlight, .F2.highlight, .G2.highlight, .TA1.highlight, .TB1.highlight, .TC1.highlight, .TD1.highlight, .TE1.highlight, .TF1.highlight, .TG1.highlight, .TA2.highlight, .TB2.highlight, .TC2.highlight, .TD2.highlight, .TE2.highlight, .TF2.highlight, .TG2.highlight{
     color: black;
@@ -39,11 +34,7 @@
     cursor: pointer;
 }
 
-.TimetableContent.highlight:hover, .A1.highlight:hover, .B1.highlight:hover, .C1.highlight:hover, .D1.highlight:hover, .E1.highlight:hover, .F1.highlight:hover, .G1.highlight:hover, .A2.highlight:hover, .B2.highlight:hover, .C2.highlight:hover, .D2.highlight:hover, .E2.highlight:hover, .F2.highlight:hover, .G2.highlight:hover, .TA1.highlight:hover, .TB1.highlight:hover, .TC1.highlight:hover, .TD1.highlight:hover, .TE1.highlight:hover, .TF1.highlight:hover, .TG1.highlight:hover, .TA2.highlight:hover, .TB2.highlight:hover, .TC2.highlight:hover, .TD2.highlight:hover, .TE2.highlight:hover, .TF2.highlight:hover, .TG2.highlight:hover{
-    color: grey;
-    background-color: #CCFF33;
-    cursor: pointer;
-}
+
 
 .A1-tile, .B1-tile, .C1-tile, .D1-tile, .E1-tile, .F1-tile, .G1-tile, .A2-tile, .B2-tile, .C2-tile, .D2-tile, .E2-tile, .F2-tile, .G2-tile{
     padding-left: 17.5px;
@@ -102,4 +93,19 @@
 .ExcelSheet{
     margin-top:24px;
     margin-bottom:24px;
+}
+
+@media (min-width:961px) {
+    .TimetableContent:hover, .A1:hover, .B1:hover, .C1:hover, .D1:hover, .E1:hover, .F1:hover, .G1:hover, .A2:hover, .B2:hover, .C2:hover, .D2:hover, .E2:hover, .F2:hover, .G2:hover, .TA1:hover, .TB1:hover, .TC1:hover, .TD1:hover, .TE1:hover, .TF1:hover, .TG1:hover, .TA2:hover, .TB2:hover, .TC2:hover, .TD2:hover, .TE2:hover, .TF2:hover, .TG2:hover{
+        color: black;
+        background-color: #CCFF33;
+        border: 1px solid black;
+        cursor: pointer;
+    }
+
+    .TimetableContent.highlight:hover, .A1.highlight:hover, .B1.highlight:hover, .C1.highlight:hover, .D1.highlight:hover, .E1.highlight:hover, .F1.highlight:hover, .G1.highlight:hover, .A2.highlight:hover, .B2.highlight:hover, .C2.highlight:hover, .D2.highlight:hover, .E2.highlight:hover, .F2.highlight:hover, .G2.highlight:hover, .TA1.highlight:hover, .TB1.highlight:hover, .TC1.highlight:hover, .TD1.highlight:hover, .TE1.highlight:hover, .TF1.highlight:hover, .TG1.highlight:hover, .TA2.highlight:hover, .TB2.highlight:hover, .TC2.highlight:hover, .TD2.highlight:hover, .TE2.highlight:hover, .TF2.highlight:hover, .TG2.highlight:hover{
+        color: grey;
+        background-color: #CCFF33;
+        cursor: pointer;
+    }
 }

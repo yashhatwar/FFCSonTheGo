@@ -18,13 +18,14 @@ Contribute here
     <META NAME="Keywords" CONTENT="VIT, University, FFCS, On, The, Go, Time, Table, Visualizer">
     <META NAME="distribution" CONTENT="Global">
     <META NAME="country" CONTENT="India">
-    <link rel="stylesheet" href="style.css">
-    <link href="metro.css" rel="stylesheet">
-    <link rel="stylesheet" href="custom_bootstrap.css">
-    <meta property="og:image" content="https://raw.githubusercontent.com/VaTz88/VIT-Time-Table-Visualizer/master/FFCSonTheGoMetaImg.png"/>  
-    <meta property="og:title" content="FFCS On The Go!"/>  
-    <meta property="og:description" content="Visualize your timetable in most easy way.
-    Make the most optimum timetable for yourself."/>
+    
+    <meta property="og:title" content="FFCS On The Go" />
+    <meta property="og:url" content="http://ffcsonthego.azurewebsites.net/" />
+    <meta property="og:image" content="https://raw.githubusercontent.com/VaTz88/VIT-Time-Table-Visualizer/master/FFCSonTheGoMetaImg.png" />
+    <meta property="og:description" content="Visualize your timetable in most easy way. Make the most optimum timetable for yourself." />
+    <meta property="og:site_name" content="FFCSonTheGo" />
+    <meta property="fb:app_id" content="1698400863751487" />
+
     <!--Microsoft jQuery Content Delivery Network (CDN)-->
     <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.12.0.min.js"></script>
     <script src="metro.js"></script>
@@ -32,8 +33,11 @@ Contribute here
     <link rel=" stylesheet" type="text/css" href="joyride-2.1.css">
     <!--Joyride plugin-->
     <script src="jquery.joyride-2.1.js"></script>
-    <!--Facebook admin account for comment plugin--> 
-    <meta property="fb:admins" content="[VaTz88]"/>
+
+    <link rel="stylesheet" href="style.css">
+    <link href="metro.css" rel="stylesheet">
+    <link rel="stylesheet" href="custom_bootstrap.css">
+
 </head>
 <body onload="removeHoverCSSRule()">
 
@@ -74,7 +78,7 @@ Contribute here
             <div class="col-xs-7"><h1>VIT TIMETABLE VISUALIZER</h1></div>
             <!--Quick start guide
             <div class="col-xs-7"><p class="text-right" style="margin-top: 40px;"><a href="pdf link here" target="_blank">Quick start guide</a></p></div>-->
-            <div class="fb-like col-xs-7" data-href="http://ffcsonthego.azurewebsites.net/" data-layout="standard" data-action="like" data-size="large" data-show-faces="true" data-share="true"></div>
+            <div id="fb-like-share" class="fb-like col-xs-7" data-href="http://ffcsonthego.azurewebsites.net/" data-layout="standard" data-action="like" data-size="large" data-show-faces="false" data-share="true"></div>
         </div>
         <div class="row text-center">
             <div class="col-xs-1 ColumnOneDays" style="padding-top:10px; padding-bottom:10px;">THEORY HOURS</div>
@@ -310,9 +314,12 @@ Contribute here
         <h4>Workspace</h4>
         <p>Keep notes while making your timetable</p>
       </li>
-      <li data-id="fb-comment-id" data-button="Done" data-options="tipLocation:top">
+      <li data-id="fb-comment-id" data-button="Next" data-options="tipLocation:top">
         <h4>Interact with others</h4>
         <p>Comment here, ask queries or give feedback.</p>
+      </li>
+      <li data-id="fb-like-share" data-button="Done">
+        <h3>Like and Share</h3>
       </li>
     </ol>
 

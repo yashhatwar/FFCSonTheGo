@@ -2,7 +2,6 @@ $(".TimetableContent").click(function () {
    $(this).toggleClass("highlight");
 });
 
-//trial WORKS!!!
 $(".A1-tile").click(function(){
 	if($(this).hasClass("highlight")){
 		$(".A1").removeClass("highlight");
@@ -212,7 +211,6 @@ $(".G2").click(function(){
 		$(".G2-tile").removeClass("highlight");
 	}
 });
-//trial
 
 /*$(".A1-tile").click(function(){
 	$(this).toggleClass("highlight");
@@ -282,144 +280,304 @@ $(".F2-tile").click(function(){
 $(".G2-tile").click(function(){
 	$(this).toggleClass("highlight");
 	$(".G2").toggleClass("highlight");
-});
+});*/
 
 $(".TA1-tile").click(function(){
+	if($(this).hasClass("highlight")){
+		$(".TA1").removeClass("highlight");
+	}
+	else{
+		$(".TA1").addClass("highlight");
+	}
 	$(this).toggleClass("highlight");
-	$(".TA1").toggleClass("highlight");
+});
+$(".TA1").click(function(){
+	if(!$(this).hasClass("highlight")){
+		$(".TA1-tile").removeClass("highlight");
+	}
 });
 
 $(".TB1-tile").click(function(){
+	if($(this).hasClass("highlight")){
+		$(".TB1").removeClass("highlight");
+	}
+	else{
+		$(".TB1").addClass("highlight");
+	}
 	$(this).toggleClass("highlight");
-	$(".TB1").toggleClass("highlight");
+});
+$(".TB1").click(function(){
+	if(!$(this).hasClass("highlight")){
+		$(".TB1-tile").removeClass("highlight");
+	}
 });
 
 $(".TC1-tile").click(function(){
+	if($(this).hasClass("highlight")){
+		$(".TC1").removeClass("highlight");
+	}
+	else{
+		$(".TC1").addClass("highlight");
+	}
 	$(this).toggleClass("highlight");
-	$(".TC1").toggleClass("highlight");
+});
+$(".TC1").click(function(){
+	if(!$(this).hasClass("highlight")){
+		$(".TC1-tile").removeClass("highlight");
+	}
 });
 
 $(".TD1-tile").click(function(){
+	if($(this).hasClass("highlight")){
+		$(".TD1").removeClass("highlight");
+	}
+	else{
+		$(".TD1").addClass("highlight");
+	}
 	$(this).toggleClass("highlight");
-	$(".TD1").toggleClass("highlight");
+});
+$(".TD1").click(function(){
+	if(!$(this).hasClass("highlight")){
+		$(".TD1-tile").removeClass("highlight");
+	}
 });
 
 $(".TE1-tile").click(function(){
+	if($(this).hasClass("highlight")){
+		$(".TE1").removeClass("highlight");
+	}
+	else{
+		$(".TE1").addClass("highlight");
+	}
 	$(this).toggleClass("highlight");
-	$(".TE1").toggleClass("highlight");
+});
+$(".TE1").click(function(){
+	if(!$(this).hasClass("highlight")){
+		$(".TE1-tile").removeClass("highlight");
+	}
 });
 
 $(".TF1-tile").click(function(){
+	if($(this).hasClass("highlight")){
+		$(".TF1").removeClass("highlight");
+	}
+	else{
+		$(".TF1").addClass("highlight");
+	}
 	$(this).toggleClass("highlight");
-	$(".TF1").toggleClass("highlight");
+});
+$(".TF1").click(function(){
+	if(!$(this).hasClass("highlight")){
+		$(".TF1-tile").removeClass("highlight");
+	}
 });
 
 $(".TG1-tile").click(function(){
+	if($(this).hasClass("highlight")){
+		$(".TG1").removeClass("highlight");
+	}
+	else{
+		$(".TG1").addClass("highlight");
+	}
 	$(this).toggleClass("highlight");
-	$(".TG1").toggleClass("highlight");
+});
+$(".TG1").click(function(){
+	if(!$(this).hasClass("highlight")){
+		$(".TG1-tile").removeClass("highlight");
+	}
 });
 
 $(".TA2-tile").click(function(){
+	if($(this).hasClass("highlight")){
+		$(".TA2").removeClass("highlight");
+	}
+	else{
+		$(".TA2").addClass("highlight");
+	}
 	$(this).toggleClass("highlight");
-	$(".TA2").toggleClass("highlight");
+});
+$(".TA2").click(function(){
+	if(!$(this).hasClass("highlight")){
+		$(".TA2-tile").removeClass("highlight");
+	}
 });
 
 $(".TB2-tile").click(function(){
+	if($(this).hasClass("highlight")){
+		$(".TB2").removeClass("highlight");
+	}
+	else{
+		$(".TB2").addClass("highlight");
+	}
 	$(this).toggleClass("highlight");
-	$(".TB2").toggleClass("highlight");
+});
+$(".TB2").click(function(){
+	if(!$(this).hasClass("highlight")){
+		$(".TB2-tile").removeClass("highlight");
+	}
 });
 
 $(".TC2-tile").click(function(){
+	if($(this).hasClass("highlight")){
+		$(".TC2").removeClass("highlight");
+	}
+	else{
+		$(".TC2").addClass("highlight");
+	}
 	$(this).toggleClass("highlight");
-	$(".TC2").toggleClass("highlight");
+});
+$(".TC2").click(function(){
+	if(!$(this).hasClass("highlight")){
+		$(".TC2-tile").removeClass("highlight");
+	}
 });
 
 $(".TD2-tile").click(function(){
+	if($(this).hasClass("highlight")){
+		$(".TD2").removeClass("highlight");
+	}
+	else{
+		$(".TD2").addClass("highlight");
+	}
 	$(this).toggleClass("highlight");
-	$(".TD2").toggleClass("highlight");
+});
+$(".TD2").click(function(){
+	if(!$(this).hasClass("highlight")){
+		$(".TD2-tile").removeClass("highlight");
+	}
 });
 
 $(".TE2-tile").click(function(){
+	if($(this).hasClass("highlight")){
+		$(".TE2").removeClass("highlight");
+	}
+	else{
+		$(".TE2").addClass("highlight");
+	}
 	$(this).toggleClass("highlight");
-	$(".TE2").toggleClass("highlight");
+});
+$(".TE2").click(function(){
+	if(!$(this).hasClass("highlight")){
+		$(".TE2-tile").removeClass("highlight");
+	}
 });
 
 $(".TF2-tile").click(function(){
+	if($(this).hasClass("highlight")){
+		$(".TF2").removeClass("highlight");
+	}
+	else{
+		$(".TF2").addClass("highlight");
+	}
 	$(this).toggleClass("highlight");
-	$(".TF2").toggleClass("highlight");
+});
+$(".TF2").click(function(){
+	if(!$(this).hasClass("highlight")){
+		$(".TF2-tile").removeClass("highlight");
+	}
 });
 
 $(".TG2-tile").click(function(){
+	if($(this).hasClass("highlight")){
+		$(".TG2").removeClass("highlight");
+	}
+	else{
+		$(".TG2").addClass("highlight");
+	}
 	$(this).toggleClass("highlight");
-	$(".TG2").toggleClass("highlight");
+});
+$(".TG2").click(function(){
+	if(!$(this).hasClass("highlight")){
+		$(".TG2-tile").removeClass("highlight");
+	}
 });
 
 $(".TAA1-tile").click(function(){
+	if($(this).hasClass("highlight")){
+		$(".TAA1").removeClass("highlight");
+	}
+	else{
+		$(".TAA1").addClass("highlight");
+	}
 	$(this).toggleClass("highlight");
-	$(".TAA1").toggleClass("highlight");
 });
-
-$(".TBB1-tile").click(function(){
-	$(this).toggleClass("highlight");
-	$(".TBB1").toggleClass("highlight");
+$(".TAA1").click(function(){
+	if(!$(this).hasClass("highlight")){
+		$(".TAA1-tile").removeClass("highlight");
+	}
 });
 
 $(".TCC1-tile").click(function(){
+	if($(this).hasClass("highlight")){
+		$(".TCC1").removeClass("highlight");
+	}
+	else{
+		$(".TCC1").addClass("highlight");
+	}
 	$(this).toggleClass("highlight");
-	$(".TCC1").toggleClass("highlight");
 });
-
-$(".TDD1-tile").click(function(){
-	$(this).toggleClass("highlight");
-	$(".TDD1").toggleClass("highlight");
-});
-
-$(".TEE1-tile").click(function(){
-	$(this).toggleClass("highlight");
-	$(".TEE1").toggleClass("highlight");
-});
-
-$(".TFF1-tile").click(function(){
-	$(this).toggleClass("highlight");
-	$(".TFF1").toggleClass("highlight");
-});
-
-$(".TGG1-tile").click(function(){
-	$(this).toggleClass("highlight");
-	$(".TGG1").toggleClass("highlight");
+$(".TCC1").click(function(){
+	if(!$(this).hasClass("highlight")){
+		$(".TCC1-tile").removeClass("highlight");
+	}
 });
 
 $(".TAA2-tile").click(function(){
+	if($(this).hasClass("highlight")){
+		$(".TAA2").removeClass("highlight");
+	}
+	else{
+		$(".TAA2").addClass("highlight");
+	}
 	$(this).toggleClass("highlight");
-	$(".TAA2").toggleClass("highlight");
+});
+$(".TAA2").click(function(){
+	if(!$(this).hasClass("highlight")){
+		$(".TAA2-tile").removeClass("highlight");
+	}
 });
 
 $(".TBB2-tile").click(function(){
+	if($(this).hasClass("highlight")){
+		$(".TBB2").removeClass("highlight");
+	}
+	else{
+		$(".TBB2").addClass("highlight");
+	}
 	$(this).toggleClass("highlight");
-	$(".TBB2").toggleClass("highlight");
+});
+$(".TBB2").click(function(){
+	if(!$(this).hasClass("highlight")){
+		$(".TBB2-tile").removeClass("highlight");
+	}
 });
 
 $(".TCC2-tile").click(function(){
+	if($(this).hasClass("highlight")){
+		$(".TCC2").removeClass("highlight");
+	}
+	else{
+		$(".TCC2").addClass("highlight");
+	}
 	$(this).toggleClass("highlight");
-	$(".TCC2").toggleClass("highlight");
+});
+$(".TCC2").click(function(){
+	if(!$(this).hasClass("highlight")){
+		$(".TCC2-tile").removeClass("highlight");
+	}
 });
 
 $(".TDD2-tile").click(function(){
+	if($(this).hasClass("highlight")){
+		$(".TDD2").removeClass("highlight");
+	}
+	else{
+		$(".TDD2").addClass("highlight");
+	}
 	$(this).toggleClass("highlight");
-	$(".TDD2").toggleClass("highlight");
 });
-
-$(".TEE2-tile").click(function(){
-	$(this).toggleClass("highlight");
-	$(".TEE2").toggleClass("highlight");
+$(".TDD2").click(function(){
+	if(!$(this).hasClass("highlight")){
+		$(".TDD2-tile").removeClass("highlight");
+	}
 });
-
-$(".TFF2-tile").click(function(){
-	$(this).toggleClass("highlight");
-	$(".TFF2").toggleClass("highlight");
-});
-
-$(".TGG2-tile").click(function(){
-	$(this).toggleClass("highlight");
-	$(".TGG2").toggleClass("highlight");
-});*/

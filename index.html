@@ -38,7 +38,7 @@ Contribute here
     <link href="metro.css" rel="stylesheet">
     <link rel="stylesheet" href="custom_bootstrap.css">
 </head>
-<body onload="removeHoverCSSRule()">
+<body onload="removeHoverCSSRule()" onunload="fbShare()">
 
 <!--Google anlytics-->
 <script>
@@ -74,10 +74,10 @@ Contribute here
 <!--Website content-->
     <div class="container">
         <div class="row">
-            <div class="col-xs-7"><h1>VIT TIMETABLE VISUALIZER</h1></div>
+            <div class="col-xs-10"><h1>VIT TIMETABLE VISUALIZER</h1></div>
             <!--Quick start guide
             <div class="col-xs-7"><p class="text-right" style="margin-top: 40px;"><a href="pdf link here" target="_blank">Quick start guide</a></p></div>-->
-            <div class="fb-like col-xs-7" data-href="http://ffcsonthego.azurewebsites.net/" data-layout="standard" data-action="like" data-size="large" data-show-faces="false" data-share="true" style="padding-top:30px; padding-left:350px;"></div>
+            <div class="fb-like col-xs-4" data-href="http://ffcsonthego.azurewebsites.net/" data-layout="standard" data-action="like" data-size="large" data-show-faces="false" data-share="true" style="padding-top:30px;"></div>
         </div>
         <div class="row text-center">
             <div class="col-xs-1 ColumnOneDays" style="padding-top:10px; padding-bottom:10px;">THEORY HOURS</div>
@@ -289,6 +289,20 @@ Contribute here
     	    }
     	  }
     	}
+    </script>
+
+    <!--Facebook share dialog-->
+    <script type="text/javascript">
+        function fbShare(){
+            FB.ui({
+                display: 'popup',
+                method: 'share_open_graph',
+                action_type: 'og.likes',
+                action_properties: JSON.stringify({
+                    object:'http://ffcsonthego.azurewebsites.net/',
+                })
+              }, function(response){});
+        }
     </script>
 
     <!--Tour tips-->

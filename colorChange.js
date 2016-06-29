@@ -1,3 +1,12 @@
+function resetTimeTable(){
+	if($(".TimetableContent").hasClass("highlight")){
+		$(".TimetableContent").removeClass("highlight");
+	}
+	if($(".tile").hasClass("highlight")){
+		$(".tile").removeClass("highlight");
+	}
+}
+
 $(".TimetableContent").click(function () {
    $(this).toggleClass("highlight");
 });

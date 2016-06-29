@@ -4,6 +4,6 @@ Website is for the use of students of VIT University, Vellore.
 
 Open source initiative.
 
-Aim is to make easy for all to make most optimum timetable.
+Aim is to build a website which is simple, hassle free and will help VITians make most optimum timetable during course registration.
 
-Website is uses open source css and js - Bootstrap, Metro UI and jQuery.
+Website uses open source css and js - Bootstrap, Metro UI and jQuery.

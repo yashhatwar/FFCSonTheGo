@@ -590,3 +590,25 @@ $(".TDD2").click(function(){
 		$(".TDD2-tile").removeClass("highlight");
 	}
 });
+
+/*
+ * Code for parsing the slot string from inputSlotString
+ *
+ */
+
+ $("#inputSlotString + span .btn").click(function() {
+	 var input = $("#inputSlotString").val().trim();
+	 var slotArray = input.split("+");
+
+	 console.log(slotArray);
+
+	 slotArray.forEach(function(slot) {
+		markSlot(slot);
+	 });
+ });
+
+function markSlot(slot) {
+	if($("." + slot)) {
+		$("." + slot).toggleClass("highlight");
+	}
+}

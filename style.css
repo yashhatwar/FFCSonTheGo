@@ -120,6 +120,10 @@
   width: 1250px;
 }
 
+.alert.alert-dismissible {
+  margin-top: 5px;
+}
+
 @media (max-width: 767px) {
   .container {
     width: auto;

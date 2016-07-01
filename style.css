@@ -107,3 +107,15 @@
     background-color: #CCFF33;
     cursor: pointer;
 }
+
+/*
+  More accessible UI elements and for creating overflow scrolls
+ */
+
+.row.table-custom {
+  overflow-x: scroll;
+}
+
+.row.table-custom > .inner {
+  width: 1250px;
+}

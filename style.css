@@ -128,4 +128,22 @@
   .container {
     width: auto;
   }
+
+  #resetButton {
+    margin-bottom: 5px;
+  }
+
+  #fb-like-share {
+    margin: 5px 0;
+  }
+}
+
+@media (min-width: 768px) {
+  #resetButton {
+    margin-top: 25px;
+  }
+
+  #fb-like-share {
+    margin-top: 30px;
+  }
 }

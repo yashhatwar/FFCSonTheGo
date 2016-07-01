@@ -119,3 +119,9 @@
 .row.table-custom > .inner {
   width: 1250px;
 }
+
+@media (max-width: 767px) {
+  .container {
+    width: auto;
+  }
+}

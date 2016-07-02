@@ -649,3 +649,8 @@ function makeLabArray() {
 
 	labArray = left.add(right);
 }
+
+$(".alert-dismissible .close").click(function() {
+	$(this).parent()
+		.toggleClass("hide");
+});

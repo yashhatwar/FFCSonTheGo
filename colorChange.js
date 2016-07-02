@@ -531,10 +531,10 @@ $(".TDD2").click(function(){
  $("#slot-sel-area .panel-body button").click(function() {
 	 var input = $("#inputSlotString").val().trim();
 	 if(!input) return;
-	 var slotArray = input.split("+");
+	 var slotArray = input.split(/\s*\+\s*/);
 
 	 slotArray.forEach(function(slot) {
-		markSlot(slot.trim());
+		markSlot(slot.toUpperCase());
 	 });
  });
 

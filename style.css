@@ -107,3 +107,43 @@
     background-color: #CCFF33;
     cursor: pointer;
 }
+
+/*
+  More accessible UI elements and for creating overflow scrolls
+ */
+
+.row.table-custom, .row.slot-picker {
+  overflow-x: scroll;
+}
+
+.row.table-custom > .inner, .row.slot-picker > .inner {
+  width: 1250px;
+}
+
+.alert.alert-dismissible {
+  margin-top: 5px;
+}
+
+@media (max-width: 767px) {
+  .container {
+    width: auto;
+  }
+
+  #resetButton {
+    margin-bottom: 5px;
+  }
+
+  #fb-like-share {
+    margin: 5px 0;
+  }
+}
+
+@media (min-width: 768px) {
+  #resetButton {
+    margin-top: 25px;
+  }
+
+  #fb-like-share {
+    margin-top: 30px;
+  }
+}

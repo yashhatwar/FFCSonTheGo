@@ -523,19 +523,18 @@ $(".TDD2").click(function(){
 	}
 });
 
-/*
- * Code for parsing the slot string from inputSlotString
- *
+/**
+ * Code to generate a custom course list through #slot-sel-area, manage the
+ * list and to mark the added slots to the timetable.
  */
 
- $("#inputSlotString + span .btn").click(function() {
+ $("#slot-sel-area .panel-body button").click(function() {
 	 var input = $("#inputSlotString").val().trim();
+	 if(!input) return;
 	 var slotArray = input.split("+");
 
-	 console.log(slotArray);
-
 	 slotArray.forEach(function(slot) {
-		markSlot(slot);
+		markSlot(slot.trim());
 	 });
  });
 

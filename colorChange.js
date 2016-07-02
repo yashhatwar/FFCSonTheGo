@@ -1,3 +1,5 @@
+var labArray = null;
+
 function resetTimeTable(){
 	if($(".TimetableContent").hasClass("highlight")){
 		$(".TimetableContent").removeClass("highlight");
@@ -590,6 +592,63 @@ $(".TDD2").click(function(){
 		$(".TDD2-tile").removeClass("highlight");
 	}
 });
+
+/*
+ * Code for parsing the slot string from inputSlotString
+ *
+ */
+
+ $("#inputSlotString + span .btn").click(function() {
+	 var input = $("#inputSlotString").val().trim();
+	 var slotArray = input.split("+");
+
+	 console.log(slotArray);
+
+	 slotArray.forEach(function(slot) {
+		markSlot(slot);
+	 });
+ });
+
+/**
+ * Toggles slot highlighting of passed slot in the table.
+ * @param  {string} slot individual slot obtained from passed input.
+ * @return {undefined}
+ */
+function markSlot(slot) {
+	var labSlotPattern = /^L\d{1,2}$/;
+	var slotNum;
+	if(labSlotPattern.test(slot)) {
+		if(!labArray) makeLabArray();
+		slotNum = Number(slot.substring(1));
+		if(!(slotNum >= 15 && slotNum <= 18))
+			labArray.eq(slotNum - 1)
+							.toggleClass("highlight");
+	}
+	else if($("." + slot)) {
+		$("." + slot).toggleClass("highlight");
+	}
+}
+
+/**
+ * Prepares a $ collection of all the slots in the table in ascending order
+ * and pads 3 null objects to compensate for missing slots. The result is
+ * stored in labArray.
+ * @return {undefined}
+ */
+function makeLabArray() {
+	var left = $(),
+			right = $();
+	var slots = $(".TimetableContent");
+	slots.splice(26, 0, null, null, null);
+	var length = slots.length;
+	var i;
+	for(i = 0; i < 60; ++i) {
+		if(i % 12 < 6) left.push(slots.eq(i));
+		else right.push(slots.eq(i));
+	}
+
+	labArray = left.add(right);
+}
 
 $(".alert-dismissible .close").click(function() {
 	$(this).parent()

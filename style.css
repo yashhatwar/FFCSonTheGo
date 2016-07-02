@@ -140,18 +140,9 @@
   font-size: 1em;
 }
 
-#slot-sel-area .faculty,
-#slot-sel-area .slots {
+#slot-sel-area li span:not(.badge) {
   font-size: 1.3em;
   display: inline-block;
-}
-
-#slot-sel-area .faculty {
-  width: 800px;
-}
-
-#slot-sel-area .slots {
-  width: 300px;
 }
 
 #slot-sel-area .list-group li {

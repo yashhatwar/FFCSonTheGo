@@ -590,3 +590,8 @@ $(".TDD2").click(function(){
 		$(".TDD2-tile").removeClass("highlight");
 	}
 });
+
+$(".alert-dismissible .close").click(function() {
+	$(this).parent()
+		.toggleClass("hide");
+});

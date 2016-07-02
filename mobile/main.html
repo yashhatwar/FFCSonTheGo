@@ -33,6 +33,11 @@ Contribute here
     <link rel="stylesheet" href="..\metro.css">
     <link rel="stylesheet" href="..\custom_bootstrap.css">
 
+    <!--Joyride CSS file-->
+    <link rel=" stylesheet" type="text/css" href="..\joyride-2.1.css">
+    <!--Joyride plugin-->
+    <script src="..\jquery.joyride-2.1.js"></script>
+
     <style type="text/css">
         .TheoryHours, .ColumnOneDays, .TimetableContent{
             font-size: xx-large;
@@ -41,6 +46,15 @@ Contribute here
             padding-top: 40px;
             padding-bottom: 40px;
         }
+        .tile, .A1-tile.highlight, .B1-tile.highlight, .C1-tile.highlight, .D1-tile.highlight, .E1-tile.highlight, .F1-tile.highlight, .G1-tile.highlight, .A2-tile.highlight, .B2-tile.highlight, .C2-tile.highlight, .D2-tile.highlight, .E2-tile.highlight, .F2-tile.highlight, .G2-tile.highlight{
+            font-size: -webkit-xxx-large;
+            margin: 35px;
+        }
+
+        .joyride-tip-guide .joyride-next-tip{
+            font-size: xx-large;
+        }
+
     </style>
 </head>
 <body onload="removeHoverCSSRule()">
@@ -84,9 +98,19 @@ Contribute here
 
         <div class="row" style="padding-top:10px; padding-bottom:10px;">
             <!--Like and Share Facebook buttons-->
-            <div style="padding-top: 25px;" class="fb-like col-xs-10" data-href="http://ffcsonthego.azurewebsites.net/" data-layout="standard" data-action="like" data-size="large" data-show-faces="false" data-share="true"></div>
+            <div id="fb-like-share" style="padding-top: 25px;" class="fb-like col-xs-10" data-href="http://ffcsonthego.azurewebsites.net/" data-layout="standard" data-action="like" data-size="large" data-show-faces="false" data-share="true"></div>
             <!--Reset button-->
-            <div class="col-xs-4" style="text-align: right;"><button style="font-size: xx-large;" type="button" class="btn btn-success btn-lg" onclick="resetTimeTable()">Reset</button></div>
+            <div class="col-xs-4" style="text-align: right;"><button id="resetButton" style="font-size: xx-large;" type="button" class="btn btn-success btn-lg" onclick="resetTimeTable()">Reset</button></div>
+        </div>
+
+        <div class="row" style="padding-left: 70px; padding-right: 0px;">
+            <div id="A1-tile-id" class="A1-tile tile" data-role="tile" data-click="transform">A1</div>
+            <div class="B1-tile tile" data-role="tile" data-click="transform">B1</div>
+            <div class="C1-tile tile" data-role="tile" data-click="transform">C1</div>
+            <div class="D1-tile tile" data-role="tile" data-click="transform">D1</div>
+            <div class="E1-tile tile" data-role="tile" data-click="transform">E1</div>
+            <div class="F1-tile tile" data-role="tile" data-click="transform">F1</div>
+            <div class="G1-tile tile" style="margin-right: 0px;" data-role="tile" data-click="transform">G1</div>
         </div>
 
         <div class="row text-center">
@@ -100,7 +124,7 @@ Contribute here
         </div>
         <div class="row text-center">
             <div class="col-xs-2 ColumnOneDays">MON</div>
-            <div class="col-xs-2 TimetableContent A1">A1 / L1</div>
+            <div id="A1-id" class="col-xs-2 TimetableContent A1">A1 / L1</div>
             <div class="col-xs-2 TimetableContent F1">F1 / L2</div>
             <div class="col-xs-2 TimetableContent D1">D1 / L3</div>
             <div class="col-xs-2 TimetableContent TB1">TB1 / L4</div>
@@ -201,45 +225,97 @@ Contribute here
             <div class="col-xs-2 TimetableContent">L60</div>
         </div>
 
-        <div class="row" style="margin-top:20px; margin-bottom:20px;">
+        <div class="row" style="padding-left: 70px;padding-right: 0px;">
+            <div class="A2-tile tile" data-role="tile" data-click="transform">A2</div>
+            <div class="B2-tile tile" data-role="tile" data-click="transform">B2</div>
+            <div class="C2-tile tile" data-role="tile" data-click="transform">C2</div>
+            <div class="D2-tile tile" data-role="tile" data-click="transform">D2</div>
+            <div class="E2-tile tile" data-role="tile" data-click="transform">E2</div>
+            <div class="F2-tile tile" data-role="tile" data-click="transform">F2</div>
+            <div class="G2-tile tile" data-role="tile" data-click="transform">G2</div>
+        </div>
+
+        <div id="ExcelSheet" class="row" style="margin-top:20px; margin-bottom:20px;">
             <iframe width="100%" height="900" frameborder="0" scrolling="no" src="https://onedrive.live.com/embed?cid=D67270317C4D2130&resid=D67270317C4D2130%211771&authkey=AN3HUCRHif3i5tg&em=2&ActiveCell='Course%20Allocation%20Report'!A1&Item='Course%20Allocation%20Report'!A%3AC&wdHideGridlines=True"></iframe>
         </div>
 
         <!--Facebook comments plugin-->
-        <div class="fb-comments" data-href="http://ffcsonthego.azurewebsites.net" data-width="100%" data-numposts="5" data-order-by="reverse_time"></div>
+        <div id="fb-comment-id" class="fb-comments" data-href="http://ffcsonthego.azurewebsites.net" data-width="100%" data-numposts="5" data-order-by="reverse_time"></div>
 
         <hr>
 
-        <div class="row text-center" style="padding-bottom:15px; font-size: x-large;">This website is an open source initiative. Checkout on <a href="https://github.com/VaTz88/VIT-Time-Table-Visualizer" target="_blank">GitHub</a></div>
+        <div class="row text-center" style="padding-bottom:15px; font-size: x-large;">This website is an open source initiative. Checkout on <a href="https://github.com/VaTz88/VIT-Time-Table-Visualizer" target="_blank">GitHub</a>.</div>
 
-        <script src="..\colorChange.js"></script>
+    </div>
 
-        <!--disable hover for touch screen devices-->
-        <script type="text/javascript">
-            function removeHoverCSSRule() {
-              if ('createTouch' in document) {
-                try {
-                  var ignore = /:hover/;
-                  for (var i = 0; i < document.styleSheets.length; i++) {
-                    var sheet = document.styleSheets[i];
-                    if (!sheet.cssRules) {
-                      continue;
-                    }
-                    for (var j = sheet.cssRules.length - 1; j >= 0; j--) {
-                      var rule = sheet.cssRules[j];
-                      if (rule.type === CSSRule.STYLE_RULE && ignore.test(rule.selectorText)) {
-                        sheet.deleteRule(j);
-                      }
-                    }
-                  }
+    <script src="..\colorChange.js"></script>
+
+    <!--disable hover for touch screen devices-->
+    <script type="text/javascript">
+        function removeHoverCSSRule() {
+          if ('createTouch' in document) {
+            try {
+              var ignore = /:hover/;
+              for (var i = 0; i < document.styleSheets.length; i++) {
+                var sheet = document.styleSheets[i];
+                if (!sheet.cssRules) {
+                  continue;
                 }
-                catch(e) {
+                for (var j = sheet.cssRules.length - 1; j >= 0; j--) {
+                  var rule = sheet.cssRules[j];
+                  if (rule.type === CSSRule.STYLE_RULE && ignore.test(rule.selectorText)) {
+                    sheet.deleteRule(j);
+                  }
                 }
               }
             }
-        </script>
+            catch(e) {
+            }
+          }
+        }
+    </script>
 
-    </div>
+    <!--Tour tips-->
+    <ol id="joyRideTipContent">
+      <li data-text="Start">
+        <h1>Welcome to FFCS On The Go!</h1>
+        <h2 style="font-size: xx-large;font-weight: 100; padding-bottom:15px;padding-top:5px;">Take a tour.</h2>
+      </li>
+      <li data-id="A1-id" data-button="Next">
+        <h1>Easy slot selection</h1>
+        <h2 style="font-size: xx-large;font-weight: 100; padding-bottom:15px;padding-top:5px;">Click the slot to select.</h2>
+      </li>
+      <li data-id="A1-tile-id" data-button="Next">
+        <h1>Quick selection</h1>
+        <h2 style="font-size: xx-large;font-weight: 100; padding-bottom:15px;padding-top:5px;">Click the slot tile to select all at once.</h2>
+      </li>
+      <li data-id="resetButton" data-button="Next">
+        <h1>Easy reset</h1>
+        <h2 style="font-size: xx-large;font-weight: 100; padding-bottom:15px;padding-top:5px;">Click reset button to clear all selections</h2>
+      </li>
+      <li data-id="ExcelSheet" data-button="Next" data-options="tipLocation:top">
+        <h1>Excel sheet is here!</h1>
+        <h2 style="font-size: xx-large;font-weight: 100; padding-bottom:15px;padding-top:5px;">Search and filter courses, slots and faculties.</h2>
+      </li>
+      <li data-id="fb-comment-id" data-button="Next" data-options="tipLocation:top">
+        <h1>Interact with others</h1>
+        <h2 style="font-size: xx-large;font-weight: 100; padding-bottom:15px;padding-top:5px;">Comment here, ask queries or give feedback.</h2>
+      </li>
+      <li data-id="fb-like-share" data-button="Done">
+        <h1 style="font-size: xx-large;font-weight: 100; padding-bottom:15px;padding-top:5px;">Like and Share</h1>
+      </li>
+    </ol>
+
+    <!--Launching joyride when to page is loaded-->
+    <script>
+    $(window).load(function() {
+      $("#joyRideTipContent").joyride({
+        autoStart : true,
+        modal : false,
+        expose : true
+      });
+    });
+    </script>
 
 </body>
 </html>

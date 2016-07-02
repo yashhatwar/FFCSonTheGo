@@ -149,6 +149,10 @@
   line-height: 2rem;
 }
 
+#slot-sel-area ul {
+  margin-left: 0;
+}
+
 @media (max-width: 767px) {
   .container {
     width: auto;

@@ -109,6 +109,14 @@
 }
 
 /*
+  Custom CSS for slot chooser form and associated elements.
+ */
+
+#slot-sel-area {
+  margin-top: 15px;
+}
+
+/*
   More accessible UI elements and for creating overflow scrolls
  */
 

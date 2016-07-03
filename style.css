@@ -145,6 +145,26 @@
   display: inline-block;
 }
 
+#slot-sel-area .list-group-item.total {
+  padding-bottom: 10px;
+}
+
+#slot-sel-area .list-group-item.total .badge {
+  line-height: 1.4rem;
+  font-size: 1em;
+  border-radius: 20px;
+  min-width: 30px;
+  padding: 5px 4px 4px;
+  position: relative;
+  bottom: 1px;
+  background-color: #31708f;
+}
+
+#slot-sel-area .list-group-item.total strong {
+  position: relative;
+  bottom: -2px;
+}
+
 #slot-sel-area .list-group li {
   line-height: 2rem;
 }
@@ -193,6 +213,7 @@ div.slot-clash {
     bottom: -5px;
     right: 15px;
   }
+
 }
 
 @media (min-width: 768px) {

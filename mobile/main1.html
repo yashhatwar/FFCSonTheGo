@@ -55,6 +55,10 @@ Contribute here
             font-size: xx-large;
         }
 
+        body{
+            font-size: 24px;
+        }
+
     </style>
 </head>
 <body onload="removeHoverCSSRule()">
@@ -91,7 +95,7 @@ Contribute here
 </script>
 
 <!--Website content-->
-    <div class="container" style="width: 1250px">
+    <div class="container-fluid" style="width:1250px;">
         <div class="row text-center">
             <div class="col-xs-14"><h1 style="font-size: 88px;">VIT TIMETABLE VISUALIZER</h1></div>
         </div>
@@ -102,6 +106,9 @@ Contribute here
             <!--Reset button-->
             <div class="col-xs-4" style="text-align: right;"><button id="resetButton" style="font-size: xx-large;" type="button" class="btn btn-success btn-lg" onclick="resetTimeTable()">Reset</button></div>
         </div>
+    </div>
+
+    <div class="container" style="width: 1250px">
 
         <div class="row" style="padding-left: 70px; padding-right: 0px;">
             <div id="A1-tile-id" class="A1-tile tile" data-role="tile" data-click="transform">A1</div>
@@ -237,7 +244,7 @@ Contribute here
 
     </div>
 
-    <div class="container-fluid">
+    <div class="container-fluid" style="width:1250px;">
       <!-- Input slot string to highlight the slots -->
 
       <div class="row" id="slot-sel-area">
@@ -248,8 +255,8 @@ Contribute here
             <!--Reset button-->
             <div class="form-group form-group-md col-xs-14">
               <div class="btn-group col-sm-offset-4 col-sm-10">
-                <button type="button" id="toggleClickToSelect" data-toggle="button" class="btn btn-danger" data-state="disabled">Enable clicking on slots</button>
-                <button id="resetButton" type="button" class="btn btn-success" onclick="resetTimeTable()">Reset</button>
+                <button type="button" id="toggleClickToSelect" data-toggle="button" class="btn-lg btn-danger" data-state="disabled">Enable clicking on slots</button>
+                <button id="resetButton" type="button" class="btn-lg btn-success" onclick="resetTimeTable()">Reset</button>
               </div>
             </div>
 
@@ -282,7 +289,7 @@ Contribute here
             </div>
 
             <div class="col-xs-14">
-              <button type="button" id="markBtn" class="btn btn-lg btn-success col-sm-offset-4">Mark</button>
+              <button type="button" id="markBtn" class="btn-lg btn-success col-sm-offset-4">Mark</button>
             </div>
           </div>
           </div> <!-- panel-body -->

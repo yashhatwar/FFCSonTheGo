@@ -153,6 +153,11 @@
   margin-left: 0;
 }
 
+div.slot-clash {
+  background: red !important;
+  color: #fff !important;
+}
+
 @media (max-width: 767px) {
   .container {
     width: auto;

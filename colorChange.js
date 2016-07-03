@@ -19,6 +19,139 @@ $(".TimetableContent").click(function () {
  */
 
 (function() {
+	function CourseRecord(slots, title, fac, credits, $li) {
+		this.slots = slots;
+		this.title = title;
+		this.fac = fac;
+		this.credits = credits;
+		this.$li = $li;
+		this.isClashing = false;
+	}
+
+	function isSlotValid(slot) {
+		var labSlotPattern = /^L\d{1,2}$/;
+		var slotNum;
+		if(labSlotPattern.test(slot)) {
+			if(!labArray) makeLabArray();
+			slotNum = Number(slot.substring(1));
+			if(slotNum >= 15 && slotNum <= 18)
+				return false;
+		}
+		else if(!$("." + slot).length) {
+			return false;
+		}
+
+		return true;
+	}
+
+	var CRM = {
+		courses: [],
+		add: function(slots, title, fac, credits, $li) {
+			var record = new CourseRecord(slots, title, fac, credits, $li);
+			var clashes = this.getClashingSlots(record);
+			if(clashes.length) {
+				record.isClashing = true;
+			}
+
+			this.mark(record, clashes);
+			this.courses.push(record);
+
+		},
+
+		getClashingSlots: function(newRecord) {
+			var clashes = {
+				arr: [],
+				get: function(index) {
+					return this.arr[index];
+				},
+
+				length: function() {
+					return this.arr.length;
+				},
+
+				add: function(slot, rec1, rec2) {
+					var isAdded = false;
+					if(this.arr.length === 0) {
+						this.arr.push({
+							slot: slot,
+							records: [rec1, rec2]
+						});
+						return;
+					}
+
+					this.arr.forEach(function(clash) {
+						if(slot === clash.slot) {
+							isAdded = true;
+							if(clash.records.indexOf(rec1) === -1) {
+								clash.records.push(rec1);
+							}
+							if(clash.records.indexOf(rec2) === -1 ) {
+								clash.records.push(rec2);
+							}
+						}
+					});
+
+					if(!isAdded) {
+						this.arr.push({
+							slot: slot,
+							records: [rec1, rec2]
+						});
+					}
+
+				}
+			};
+
+			this.courses.forEach(function(otherRecord) {
+				newRecord.slots.forEach(function(newSlot) {
+					if(otherRecord.slots.indexOf(newSlot) >= 0) {
+						clashes.add(newSlot, newRecord, otherRecord);
+					}
+				});
+			});
+
+			return clashes;
+		},
+		mark: function(record, clashes) {
+			var i, loopSlot;
+			if(!record.isClashing) {
+				record.slots.forEach(function(slot) {
+					this.highlight(slot);
+				}, this);
+			} else {
+
+				for(i = 0; i < clashes.length(); ++i) {
+					loopSlot = clashes.get(i).slot;
+					this.highlight(loopSlot);
+					this.clashSlot(loopSlot);
+				}
+
+				record.slots.forEach(function(slot) {
+					this.highlight(slot);
+				}, this);
+
+			}
+		},
+		rem: function() {
+
+		},
+
+		highlight: function(slot) {
+			if(slot.match(/^L/)) {
+				labArray[Number(slot.substring(1)) - 1].addClass("highlight");
+			} else {
+				$("." + slot).addClass("highlight");
+			}
+		},
+
+		clashSlot: function(slot) {
+			if(slot.match(/^L/)) {
+				labArray[Number(slot.substring(1)) - 1].addClass("slot-clash");
+			} else {
+				$("." + slot).addClass("slot-clash");
+			}
+		}
+	};
+
 	var totalCredits = 0;
 
 	var facultyInput = $("#inputFaculty");
@@ -28,44 +161,50 @@ $(".TimetableContent").click(function () {
 	var totalContainer = $("#slot-sel-area .list-group li.total");
 	var totalSpan = totalContainer.find(".badge");
 
-    $("#slot-sel-area .panel-body button").click(function() {
-			var slot, slotArray, i, normSlotString, li;
-      slot = slotInput.val().trim();
-      if (!slot) {
-          $("#slot-sel-area .form-group").first().addClass("has-error");
-          return;
-      }
+  $("#slot-sel-area .panel-body button").click(function() {
+		var slot, slotArray, i, normSlotString, li;
+    slot = slotInput.val().trim();
+    if (!slot) {
+        $("#slot-sel-area .form-group").first().addClass("has-error");
+        return;
+    }
 
-      faculty = facultyInput.val().trim();
-      course = courseInput.val().trim();
-      credits = Number(creditsInput.val());
+    faculty = facultyInput.val().trim();
+    course = courseInput.val().trim();
+    credits = Number(creditsInput.val());
 
-      slotArray = slot.split(/\s*\+\s*/);
+    slotArray = slot.split(/\s*\+\s*/);
 
-      for (i = 0; i < slotArray.length; ++i) {
-          slotArray[i] = slotArray[i].toUpperCase();
-          markSlot(slotArray[i]);
-      }
 
-      normSlotString = slotArray.join(" + ");
-      li = $('<li class="list-group-item">' +
-          '<div class="row">' +
-          '<span class="slots col-sm-3">' + normSlotString + '</span>' +
-          '<span class="course col-sm-5">' + course + '</span>' +
-          '<span class="faculty col-sm-4">' + faculty + '</span>' +
-          '<span class="col-sm-2 text-right">' +
-          '<span class="badge">' + (credits ? credits : 0) + '</span>' +
-          '</span>' +
-          '</div>' +
-          '</li>');
+    normSlotString = slotArray.join(" + ");
+    li = $('<li class="list-group-item">' +
+        '<div class="row">' +
+        '<span class="slots col-sm-3">' + normSlotString + '</span>' +
+        '<span class="course col-sm-5">' + course + '</span>' +
+        '<span class="faculty col-sm-4">' + faculty + '</span>' +
+        '<span class="col-sm-2 text-right">' +
+        '<span class="badge">' + (credits ? credits : 0) + '</span>' +
+        '</span>' +
+        '</div>' +
+        '</li>');
 
-      totalContainer.before(li);
+    totalContainer.before(li);
 
-			totalCredits += credits;
+		totalCredits += credits;
 
-			totalSpan.text(totalCredits);
+		totalSpan.text(totalCredits);
 
-    });
+		for (i = 0; i < slotArray.length; ++i) {
+			slotArray[i] = slotArray[i].toUpperCase();
+			if(!isSlotValid(slotArray[i])) {
+				console.log("Invalid slot");
+				return false;
+			}
+		}
+
+		CRM.add(slotArray, course, faculty, credits, li);
+  });
+
 })();
 
 /**

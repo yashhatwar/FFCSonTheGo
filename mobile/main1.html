@@ -27,52 +27,32 @@ Contribute here
 
     <!--Microsoft jQuery Content Delivery Network (CDN)-->
     <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.12.0.min.js"></script>
-
+    
     <script src="..\metro.js"></script>
     <link rel="stylesheet" href="..\style.css">
     <link rel="stylesheet" href="..\metro.css">
     <link rel="stylesheet" href="..\custom_bootstrap.css">
 
-    <!--Joyride CSS file-->
-    <link rel=" stylesheet" type="text/css" href="..\joyride-2.1.css">
-    <!--Joyride plugin-->
-    <script src="..\jquery.joyride-2.1.js"></script>
+    <!--Joyride CSS file
+    <link rel=" stylesheet" type="text/css" href="..\joyride-2.1.css">-->
+    <!--Joyride plugin
+    <script src="..\jquery.joyride-2.1.js"></script>-->
 
     <style type="text/css">
-        @media (min-width: 1250px){
-            .TheoryHours, .ColumnOneDays, .TimetableContent{
-                font-size: xx-large;
-                padding-left: 0px;
-                padding-right: 0px;
-                padding-top: 40px;
-                padding-bottom: 40px;
-            }
-            .tile, .A1-tile.highlight, .B1-tile.highlight, .C1-tile.highlight, .D1-tile.highlight, .E1-tile.highlight, .F1-tile.highlight, .G1-tile.highlight, .A2-tile.highlight, .B2-tile.highlight, .C2-tile.highlight, .D2-tile.highlight, .E2-tile.highlight, .F2-tile.highlight, .G2-tile.highlight{
-                font-size: -webkit-xxx-large;
-                margin: 35px;
-            }
-
-            .joyride-tip-guide .joyride-next-tip{
-                font-size: xx-large;
-            }
+        .TheoryHours, .ColumnOneDays, .TimetableContent{
+            font-size: xx-large;
+            padding-left: 0px;
+            padding-right: 0px;
+            padding-top: 40px;
+            padding-bottom: 40px;
+        }
+        .tile, .A1-tile.highlight, .B1-tile.highlight, .C1-tile.highlight, .D1-tile.highlight, .E1-tile.highlight, .F1-tile.highlight, .G1-tile.highlight, .A2-tile.highlight, .B2-tile.highlight, .C2-tile.highlight, .D2-tile.highlight, .E2-tile.highlight, .F2-tile.highlight, .G2-tile.highlight{
+            font-size: 45px;
+            margin: 35px;
         }
 
-        @media (min-width: 600px){
-            .TheoryHours, .ColumnOneDays, .TimetableContent{
-                font-size: xx-large;
-                padding-left: 0px;
-                padding-right: 0px;
-                padding-top: 20px;
-                padding-bottom: 20px;
-            }
-            .tile, .A1-tile.highlight, .B1-tile.highlight, .C1-tile.highlight, .D1-tile.highlight, .E1-tile.highlight, .F1-tile.highlight, .G1-tile.highlight, .A2-tile.highlight, .B2-tile.highlight, .C2-tile.highlight, .D2-tile.highlight, .E2-tile.highlight, .F2-tile.highlight, .G2-tile.highlight{
-                font-size: xx-large;
-                margin: 20px;
-            }
-
-            .joyride-tip-guide .joyride-next-tip{
-                font-size: x-large;
-            }
+        .joyride-tip-guide .joyride-next-tip{
+            font-size: xx-large;
         }
 
     </style>
@@ -111,7 +91,7 @@ Contribute here
 </script>
 
 <!--Website content-->
-    <div class="container">
+    <div class="container" style="width: 1250px">
         <div class="row text-center">
             <div class="col-xs-14"><h1 style="font-size: 88px;">VIT TIMETABLE VISUALIZER</h1></div>
         </div>
@@ -132,7 +112,7 @@ Contribute here
             <div class="F1-tile tile" data-role="tile" data-click="transform">F1</div>
             <div class="G1-tile tile" style="margin-right: 0px;" data-role="tile" data-click="transform">G1</div>
         </div>
-<div class="container" style="width: 1250px">
+
         <div class="row text-center">
             <div class="col-xs-2 ColumnOneDays" style="font-size: x-large; background-color: whitesmoke; padding-top:68px; padding-bottom:68px;">MORNING</div>
             <div class="col-xs-2 TheoryHours">08:00AM to 08:50AM</div>
@@ -244,7 +224,7 @@ Contribute here
             <div class="col-xs-2 TimetableContent TDD2">TDD2 / L59</div>
             <div class="col-xs-2 TimetableContent">L60</div>
         </div>
-</div>
+
         <div class="row" style="padding-left: 70px;padding-right: 0px;">
             <div class="A2-tile tile" data-role="tile" data-click="transform">A2</div>
             <div class="B2-tile tile" data-role="tile" data-click="transform">B2</div>
@@ -255,7 +235,7 @@ Contribute here
             <div class="G2-tile tile" data-role="tile" data-click="transform">G2</div>
         </div>
 
-        <div class="container">
+        <div class=".container-fluid">
           <!-- Input slot string to highlight the slots -->
 
           <div class="row" id="slot-sel-area">
@@ -299,10 +279,8 @@ Contribute here
                   </div>
                 </div>
 
-                <div class="form-group">
-                  <div class="col-sm-offset-4 col-sm-10">
-                    <button type="button" id="markBtn" class="btn btn-md btn-success">Mark</button>
-                  </div>
+                <div class="col-xs-14">
+                  <button type="button" id="markBtn" class="btn btn-lg btn-success col-sm-offset-4">Mark</button>
                 </div>
               </div>
               </div> <!-- panel-body -->
@@ -328,7 +306,8 @@ Contribute here
 
         <hr>
 
-        <div class="row text-center" style="padding-bottom:15px; font-size: x-large;">10,000+ hits! This website is an open source initiative. See on <a href="https://github.com/VaTz88/VIT-Time-Table-Visualizer" target="_blank">GitHub</a>.</div>
+        <h4 class="row text-center" style="padding-bottom:15px; font-size: xx-large;">12,000+ Hits! Thank you.</h4>
+        <div class="row text-center" style="padding-bottom:15px; font-size: x-large;">This website is an open source initiative. See on <a href="https://github.com/VaTz88/VIT-Time-Table-Visualizer" target="_blank">GitHub</a>.</div>
 
     </div>
 
@@ -388,9 +367,9 @@ Contribute here
       <li data-id="fb-like-share" data-button="Done">
         <h1 style="font-size: xx-large;font-weight: 100; padding-bottom:15px;padding-top:5px;">Like and Share</h1>
       </li>
-    </ol>
+    </ol>-->
 
-    <!--Launching joyride when to page is loaded-->
+    <!--Launching joyride when to page is loaded
     <script>
     $(window).load(function() {
       $("#joyRideTipContent").joyride({

@@ -212,9 +212,12 @@ $(".TimetableContent").click(function () {
         '<span class="slots col-sm-3">' + normSlotString + '</span>' +
         '<span class="course col-sm-5">' + course + '</span>' +
         '<span class="faculty col-sm-4">' + faculty + '</span>' +
-        '<span class="col-sm-2 text-right">' +
+        '<span class="col-sm-1 text-right">' +
         '<span class="badge">' + (credits ? credits : 0) + '</span>' +
         '</span>' +
+				'<span class="col-sm-1 text-right">' +
+				'<span class="close">&times;</span>' +
+				'</span>' +
         '</div>' +
         '</li>');
 
@@ -281,4 +284,8 @@ function makeLabArray() {
 $(".alert-dismissible .close").click(function() {
 	$(this).parent()
 		.toggleClass("hide");
+});
+
+$("#slot-sel-area ul").on("click", "span.close", function() {
+	$(this).parents().filter("li.list-group-item").detach();
 });

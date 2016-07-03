@@ -127,6 +127,9 @@ $(".TimetableContent").click(function () {
 			} else {
 
 				for(i = 0; i < clashes.length(); ++i) {
+					clashes.get(i).records.forEach(function(record) {
+						record.$li.addClass("list-group-item-danger");
+					});
 					loopSlot = clashes.get(i).slot;
 					this.highlight(loopSlot);
 					this.clashSlot(loopSlot);
@@ -138,6 +141,7 @@ $(".TimetableContent").click(function () {
 
 			}
 		},
+
 		rem: function() {
 
 		},
@@ -181,6 +185,47 @@ $(".TimetableContent").click(function () {
 		});
 		return arr;
 	};
+
+	CRM.listenForRemove = function() {
+		var self = this;
+		$("#slot-sel-area ul").on("click", "span.close", function() {
+			var $li = $(this).parents().filter("li.list-group-item");
+			var liDom = $li.get(0);
+			var i;
+			for(i = 0; i < self.courses.length; ++i) {
+				if(self.courses[i].$li.get(0) === liDom) {
+					self.courses.splice(i, 1);
+					$(".TimetableContent").removeClass("highlight slot-clash");
+					$("#slot-sel-area .list-group li").removeClass("list-group-item-danger");
+					break;
+				}
+			}
+
+			var backupCourses = self.courses;
+			self.courses = [];
+
+			backupCourses.forEach(function(record) {
+				var clashes = self.getClashingSlots(record);
+				if(clashes.length()) {
+					record.isClashing = true;
+				}
+
+				self.mark(record, clashes);
+				self.courses.push(record);
+
+				console.log(self.courses);
+			});
+
+			totalCredits -= Number($li.find(".badge").text());
+
+			totalSpan.text(totalCredits);
+
+			$li.detach();
+
+		});
+	};
+
+	CRM.listenForRemove();
 
 	var totalCredits = 0;
 
@@ -284,8 +329,4 @@ function makeLabArray() {
 $(".alert-dismissible .close").click(function() {
 	$(this).parent()
 		.toggleClass("hide");
-});
-
-$("#slot-sel-area ul").on("click", "span.close", function() {
-	$(this).parents().filter("li.list-group-item").detach();
 });

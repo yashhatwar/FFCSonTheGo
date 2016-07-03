@@ -1,5 +1,9 @@
 var labArray = null;
 
+$(function() {
+	makeLabArray();
+});
+
 function resetTimeTable(){
 	if($(".TimetableContent").hasClass("highlight")){
 		$(".TimetableContent").removeClass("highlight");
@@ -47,14 +51,17 @@ $(".TimetableContent").click(function () {
 	var CRM = {
 		courses: [],
 		add: function(slots, title, fac, credits, $li) {
+			slots = this.expandSlots(slots);
 			var record = new CourseRecord(slots, title, fac, credits, $li);
 			var clashes = this.getClashingSlots(record);
-			if(clashes.length) {
+			if(clashes.length()) {
 				record.isClashing = true;
 			}
 
 			this.mark(record, clashes);
 			this.courses.push(record);
+
+			console.log(this.courses);
 
 		},
 
@@ -150,6 +157,29 @@ $(".TimetableContent").click(function () {
 				$("." + slot).addClass("slot-clash");
 			}
 		}
+	};
+
+	CRM.expandSlots = function(slots) {
+		var i, length = slots.length;
+		for(i = 0; i < length; ++i) {
+			if(this.getSlotType(slots[i]) === "lab") continue;
+			else {
+				slots = slots.concat(this.convertToLab(slots[i]));
+			}
+		}
+		return slots;
+	};
+
+	CRM.getSlotType = function(slot) {
+		return /^L/.test(slot) ? "lab" : "theory";
+	};
+
+	CRM.convertToLab = function(slot) {
+		var arr = [];
+		$("." + slot).each(function() {
+			arr.push($(this).text().replace(/^.*(L\d{1,2}).*$/, "$1"));
+		});
+		return arr;
 	};
 
 	var totalCredits = 0;

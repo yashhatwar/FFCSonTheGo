@@ -108,6 +108,10 @@
     cursor: pointer;
 }
 
+.row.header {
+  margin-bottom: 10px;
+}
+
 /*
   Custom CSS for slot chooser form and associated elements.
  */
@@ -132,6 +136,60 @@
   margin-top: 5px;
 }
 
+/*
+  Styles for the slot input form and the associated components.
+ */
+
+#slot-sel-area .list-group {
+  font-size: 1em;
+}
+
+#slot-sel-area li span:not(.badge) {
+  font-size: 1.3em;
+  display: inline-block;
+}
+
+#slot-sel-area .list-group-item.total {
+  padding-bottom: 10px;
+}
+
+#slot-sel-area .list-group-item.total .badge {
+  line-height: 1.4rem;
+  font-size: 1em;
+  border-radius: 20px;
+  min-width: 30px;
+  padding: 5px 4px 4px;
+  position: relative;
+  bottom: 1px;
+  background-color: #31708f;
+}
+
+#slot-sel-area .list-group-item.total strong {
+  position: relative;
+  bottom: -2px;
+}
+
+#slot-sel-area .list-group li {
+  line-height: 2rem;
+}
+
+#slot-sel-area ul {
+  margin-left: 0;
+}
+
+#slot-sel-area .panel-body .btn-group {
+  margin-bottom: 15px;
+}
+
+#slot-sel-area .list-group-item-danger .badge {
+  background-color: #a94442;
+}
+
+div.slot-clash {
+  background: red !important;
+  color: #fff !important;
+}
+
 @media (max-width: 767px) {
   .container {
     width: auto;
@@ -144,13 +202,33 @@
   #fb-like-share {
     margin: 5px 0;
   }
+
+  #slot-sel-area .list-group-item span:not(.badge):not(.close) {
+    display: block;
+  }
+
+  #slot-sel-area .list-group-item span.slots {
+    font-weight: bolder;
+  }
+
+  #slot-sel-area .list-group-item span.badge {
+    float: right;
+  }
+
+  #slot-sel-area .list-group-item:not(.total) span.badge {
+    margin-top: -60px;
+  }
+
+  #slot-sel-area .list-group-item .close {
+    font-size: 1.5em;
+    position: absolute;
+    bottom: -5px;
+    right: 15px;
+  }
+
 }
 
 @media (min-width: 768px) {
-  #resetButton {
-    margin-top: 25px;
-  }
-
   #fb-like-share {
     margin-top: 30px;
   }

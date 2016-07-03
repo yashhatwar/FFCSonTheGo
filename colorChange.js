@@ -142,10 +142,6 @@ $(".TimetableContent").click(function () {
 			}
 		},
 
-		rem: function() {
-
-		},
-
 		highlight: function(slot) {
 			if(slot.match(/^L/)) {
 				labArray[Number(slot.substring(1)) - 1].addClass("highlight");

@@ -170,6 +170,29 @@ div.slot-clash {
   #fb-like-share {
     margin: 5px 0;
   }
+
+  #slot-sel-area .list-group-item span:not(.badge):not(.close) {
+    display: block;
+  }
+
+  #slot-sel-area .list-group-item span.slots {
+    font-weight: bolder;
+  }
+
+  #slot-sel-area .list-group-item span.badge {
+    float: right;
+  }
+
+  #slot-sel-area .list-group-item:not(.total) span.badge {
+    margin-top: -60px;
+  }
+
+  #slot-sel-area .list-group-item .close {
+    font-size: 1.5em;
+    position: absolute;
+    bottom: -5px;
+    right: 15px;
+  }
 }
 
 @media (min-width: 768px) {

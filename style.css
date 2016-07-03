@@ -108,6 +108,10 @@
     cursor: pointer;
 }
 
+.row.header {
+  margin-bottom: 10px;
+}
+
 /*
   Custom CSS for slot chooser form and associated elements.
  */
@@ -173,6 +177,14 @@
   margin-left: 0;
 }
 
+#slot-sel-area .panel-body .btn-group {
+  margin-bottom: 15px;
+}
+
+#slot-sel-area .list-group-item-danger .badge {
+  background-color: #a94442;
+}
+
 div.slot-clash {
   background: red !important;
   color: #fff !important;
@@ -217,10 +229,6 @@ div.slot-clash {
 }
 
 @media (min-width: 768px) {
-  #resetButton {
-    margin-top: 25px;
-  }
-
   #fb-like-share {
     margin-top: 30px;
   }

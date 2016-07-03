@@ -88,11 +88,10 @@ Contribute here
         <div class="row header">
             <div class="col-sm-8"><h1>VIT Timetable Visualizer</h1></div>
             <!--Like and Share Facebook buttons-->
-            <div class="col-sm-4 col-xs-7">
+            <div class="col-sm-6 text-right" style="position: relative; top: 3px;">
               <div id="fb-like-share" class="fb-like" data-href="http://ffcsonthego.azurewebsites.net/" data-layout="button_count" data-action="like" data-size="large" data-show-faces="false" data-share="true"></div>
             </div>
-            <!--Reset button-->
-            <div class="col-sm-2 col-xs-7"><button id="resetButton" type="button" class="btn btn-success pull-right" onclick="resetTimeTable()">Reset</button></div>
+
         </div>
 
         <div class="row table-custom">
@@ -208,42 +207,53 @@ Contribute here
       <div class="container">
         <!-- Input slot string to highlight the slots -->
 
-        <div class="row form-horizontal" id="slot-sel-area">
+        <div class="row" id="slot-sel-area">
           <div class="panel panel-default">
-            <div class="panel-body form-horizontal">
+            <div class="panel-body">
 
-              <div class="form-group form-group-lg col-xs-14">
-                <label for="inputSlotString" class="col-md-4 control-label">Enter slot:</label>
-                <div class="col-md-10">
+            <div class="form-horizontal">
+              <!--Reset button-->
+              <div class="form-group form-group-md col-xs-14">
+                <div class="btn-group col-sm-offset-4 col-sm-10">
+                  <button type="button" id="toggleClickToSelect" data-toggle="button" class="btn btn-danger" data-state="disabled">Enable clicking on slots</button>
+                  <button id="resetButton" type="button" class="btn btn-success" onclick="resetTimeTable()">Reset</button>
+                </div>
+              </div>
+
+              <div class="form-group form-group-md col-xs-14">
+                <label for="inputSlotString" class="col-sm-4 control-label">Enter slot:</label>
+                <div class="col-sm-10">
                   <input type="text" placeholder="eg: L1+L2+L3" class="form-control" id="inputSlotString">
                 </div> <!-- input-group -->
               </div> <!-- form-group -->
 
-              <div class="form-group form-group-lg col-xs-14">
-                <label for="inputCourseTitle" class="col-md-4 control-label">Enter course name:</label>
-                <div class="col-md-10">
+              <div class="form-group form-group-md col-xs-14">
+                <label for="inputCourseTitle" class="col-sm-4 control-label">Enter course name:</label>
+                <div class="col-sm-10">
                   <input type="text" class="form-control" placeholder="Basic French" id="inputCourseTitle">
                 </div>
               </div>
 
-              <div class="form-group form-group-lg col-xs-14">
-                <label for="inputFaculty" class="col-md-4 control-label">Enter faculty name:</label>
-                <div class="col-md-10">
+              <div class="form-group form-group-md col-xs-14">
+                <label for="inputFaculty" class="col-sm-4 control-label">Enter faculty name:</label>
+                <div class="col-sm-10">
                   <input type="text" class="form-control" placeholder="John Doe" id="inputFaculty">
                 </div>
               </div>
 
-              <div class="form-group form-group-lg col-xs-14">
-                <label for="inputCourseCredits" class="col-md-4 control-label">Enter credits:</label>
-                <div class="col-md-10">
+              <div class="form-group form-group-md col-xs-14">
+                <label for="inputCourseCredits" class="col-sm-4 control-label">Enter credits:</label>
+                <div class="col-sm-10">
                   <input type="number" class="form-control" placeholder="4" id="inputCourseCredits">
                 </div>
               </div>
 
-              <div class="col-xs-14">
-                <button type="button" class="btn btn-lg btn-success col-sm-offset-4">Mark</button>
+              <div class="form-group">
+                <div class="col-sm-offset-4 col-sm-10">
+                  <button type="button" id="markBtn" class="btn btn-md btn-success">Mark</button>
+                </div>
               </div>
-
+            </div>
             </div> <!-- panel-body -->
 
             <ul class="list-group">

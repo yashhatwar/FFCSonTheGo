@@ -13,10 +13,6 @@ function resetTimeTable(){
 	}
 }
 
-$(".TimetableContent").click(function () {
-   $(this).toggleClass("highlight");
-});
-
 /**
  * Code to generate a custom course list through #slot-sel-area, manage the
  * list and to mark the added slots to the timetable.
@@ -60,8 +56,6 @@ $(".TimetableContent").click(function () {
 
 			this.mark(record, clashes);
 			this.courses.push(record);
-
-			console.log(this.courses);
 
 		},
 
@@ -209,7 +203,6 @@ $(".TimetableContent").click(function () {
 				self.mark(record, clashes);
 				self.courses.push(record);
 
-				console.log(self.courses);
 			});
 
 			totalCredits -= Number($li.find(".badge").text());
@@ -232,11 +225,11 @@ $(".TimetableContent").click(function () {
 	var totalContainer = $("#slot-sel-area .list-group li.total");
 	var totalSpan = totalContainer.find(".badge");
 
-  $("#slot-sel-area .panel-body button").click(function() {
+	function submitSlotData() {
 		var slot, slotArray, i, normSlotString, li;
     slot = slotInput.val().trim();
     if (!slot) {
-        $("#slot-sel-area .form-group").first().addClass("has-error");
+        $("#slot-sel-area .form-group").eq(1).addClass("has-error");
         return;
     }
 
@@ -271,13 +264,25 @@ $(".TimetableContent").click(function () {
 		for (i = 0; i < slotArray.length; ++i) {
 			slotArray[i] = slotArray[i].toUpperCase();
 			if(!isSlotValid(slotArray[i])) {
-				console.log("Invalid slot");
 				return false;
 			}
 		}
 
+		facultyInput.val("");
+		courseInput.val("");
+		slotInput.val("");
+		creditsInput.val("");
+
 		CRM.add(slotArray, course, faculty, credits, li);
-  });
+	}
+
+  $("#slot-sel-area .panel-body #markBtn").click(submitSlotData);
+	$("#slot-sel-area .panel-body input").on("keypress", function(event) {
+		if(event.which === 13) {
+			event.preventDefault();
+			submitSlotData();
+		}
+	});
 
 })();
 
@@ -325,4 +330,19 @@ function makeLabArray() {
 $(".alert-dismissible .close").click(function() {
 	$(this).parent()
 		.toggleClass("hide");
+});
+
+$("#toggleClickToSelect").click(function() {
+	if($(this).attr("data-state") === "disabled") {
+		$(this).text("Disable clicking on slots");
+		$(this).attr("data-state", "enabled");
+
+		$(".TimetableContent").click(function () {
+		   $(this).toggleClass("highlight");
+		});
+	} else {
+		$(this).text("Enable clicking on slots");
+		$(this).attr("data-state", "disabled");
+		$(".TimetableContent").off();
+	}
 });

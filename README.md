@@ -1,4 +1,4 @@
-# ffcsonthego
+# FFCSonTheGo!
 
 Website is for the use of students of VIT University, Vellore.
 

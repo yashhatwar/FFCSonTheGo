@@ -8,42 +8,46 @@ Contribute here
 -->
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <title>FFCS On The Go!</title>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <META NAME="author" CONTENT="Vatsal Joshi">
-    <META NAME="subject" CONTENT="Education">
-    <META NAME="Description" CONTENT="Visualize your timetable in most easy way.
+  <title>FFCS On The Go!</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <META NAME="author" CONTENT="Vatsal Joshi">
+  <META NAME="subject" CONTENT="Education">
+  <META NAME="Description" CONTENT="Visualize your timetable in most easy way.
     Make the most optimum timetable for yourself.">
-    <META NAME="Keywords" CONTENT="VIT, University, FFCS, On, The, Go, TimeTable, Visualizer">
-    <META NAME="distribution" CONTENT="Global">
-    <META NAME="country" CONTENT="India">
+  <META NAME="Keywords" CONTENT="VIT, University, FFCS, On, The, Go, TimeTable, Visualizer">
+  <META NAME="distribution" CONTENT="Global">
+  <META NAME="country" CONTENT="India">
 
-    <meta property="og:title" content="FFCS On The Go" />
-    <meta property="og:url" content="http://ffcsonthego.azurewebsites.net/" />
-    <meta property="og:image" content="https://raw.githubusercontent.com/VaTz88/VIT-Time-Table-Visualizer/master/FFCSonTheGoMetaImg.png" />
-    <meta property="og:description" content="Visualize your timetable in most easy way. Make the most optimum timetable for yourself." />
-    <meta property="og:site_name" content="FFCSonTheGo" />
-    <meta property="fb:app_id" content="1698400863751487" />
+  <meta property="og:title" content="FFCS On The Go" />
+  <meta property="og:url" content="http://ffcsonthego.azurewebsites.net/" />
+  <meta property="og:image" content="https://raw.githubusercontent.com/VaTz88/VIT-Time-Table-Visualizer/master/FFCSonTheGoMetaImg.png"
+  />
+  <meta property="og:description" content="Visualize your timetable in most easy way. Make the most optimum timetable for yourself."
+  />
+  <meta property="og:site_name" content="FFCSonTheGo" />
+  <meta property="fb:app_id" content="1698400863751487" />
 
-    <!--Microsoft jQuery Content Delivery Network (CDN)-->
-    <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.12.0.min.js"></script>
-    <script src="metro.js"></script>
-    <!--Joyride CSS file-->
-    <link rel=" stylesheet" type="text/css" href="joyride-2.1.css">
-    <!--Joyride plugin-->
-    <script src="jquery.joyride-2.1.js"></script>
+  <!--Microsoft jQuery Content Delivery Network (CDN)-->
+  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.12.0.min.js"></script>
+  <script src="metro.js"></script>
+  <!--Joyride CSS file-->
+  <link rel=" stylesheet" type="text/css" href="joyride-2.1.css">
+  <!--Joyride plugin-->
+  <script src="jquery.joyride-2.1.js"></script>
 
-    <link href="metro.css" rel="stylesheet">
-    <link rel="stylesheet" href="custom_bootstrap.css">
-    <link rel="stylesheet" href="style.css">
+  <link href="metro.css" rel="stylesheet">
+  <link rel="stylesheet" href="custom_bootstrap.css">
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body onload="removeHoverCSSRule()">
 
-<!--Google anlytics-->
-<script>
+  <!--Google anlytics-->
+  <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -54,8 +58,8 @@ Contribute here
 
 </script>
 
-<!--Facebook JavaScript SDK-->
-<script>
+  <!--Facebook JavaScript SDK-->
+  <script>
   window.fbAsyncInit = function() {
     FB.init({
       appId      : '1698400863751487',
@@ -73,292 +77,300 @@ Contribute here
    }(document, 'script', 'facebook-jssdk'));
 </script>
 
-<!--Website content-->
-    <div class="container">
+  <!--Website content-->
+  <div class="container-fluid">
 
-        <div class="row text-center">
-          <div class="col-xs-14">
-            <div class="alert alert-info alert-dismissible" role="alert">
-              <button class="close" type="button" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-              <a class="alert-link" href="#">The site was last updated for FFCS registration during Fall Sem 2016</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="row header">
-            <div class="col-sm-8"><h1>VIT Timetable Visualizer</h1></div>
-            <!--Like and Share Facebook buttons-->
-            <div class="col-sm-6 text-right" style="position: relative; top: 3px;">
-              <div id="fb-like-share" class="fb-like" data-href="http://ffcsonthego.azurewebsites.net/" data-layout="button_count" data-action="like" data-size="large" data-show-faces="false" data-share="true"></div>
-            </div>
-
-        </div>
-
-        <div class="row table-custom">
-          <div class="inner">
-            <div class="row text-center">
-                <div class="col-xs-1 ColumnOneDays" style="padding-top:10px; padding-bottom:10px;">THEORY HOURS</div>
-                <div class="col-xs-1 TheoryHours">08:00AM to 08:50AM</div>
-                <div class="col-xs-1 TheoryHours">09:00AM to 09:50AM</div>
-                <div class="col-xs-1 TheoryHours">10:00AM to 10:50AM</div>
-                <div class="col-xs-1 TheoryHours">11:00AM to 11:50AM</div>
-                <div class="col-xs-1 TheoryHours">12:00PM to 12:50PM</div>
-                <div class="col-xs-1 TheoryHours" style="padding:30px;"></div>
-                <div class="col-xs-1" style="padding-top:30.5px; padding-bottom:30.5px; border-top: 1px solid black; background-color: #C0C0C0;"></div>
-                <div class="col-xs-1 TheoryHours">02:00PM to 02:50PM</div>
-                <div class="col-xs-1 TheoryHours">03:00PM to 03:50PM</div>
-                <div class="col-xs-1 TheoryHours">04:00PM to 04:50PM</div>
-                <div class="col-xs-1 TheoryHours">05:00PM to 05:50PM</div>
-                <div class="col-xs-1 TheoryHours">06:00PM to 06:50PM</div>
-                <div class="col-xs-1 TheoryHours" style="padding:30px;"></div>
-            </div>
-            <div class="row text-center">
-                <div class="col-xs-1 ColumnOneDays" style="padding-top:10px; padding-bottom:10px;">LAB HOURS</div>
-                <div class="col-xs-2 LabHours" style="padding-top:20px; padding-bottom:20px;">08:00AM to 09:40AM</div>
-                <div class="col-xs-2 LabHours" style="padding-top:20px; padding-bottom:20px;">10:00AM to 11:40AM</div>
-                <div class="col-xs-2 LabHours" style="padding-top:20px; padding-bottom:20px;">11:50AM to 01:30PM</div>
-                <div class="col-xs-1" style="padding-top:30.5px; padding-bottom:31px; background-color: #C0C0C0;"></div>
-                <div class="col-xs-2 LabHours" style="padding-top:20px; padding-bottom:20px;">02:00PM to 03:40PM</div>
-                <div class="col-xs-2 LabHours" style="padding-top:20px; padding-bottom:20px;">04:00PM to 05:40PM</div>
-                <div class="col-xs-2 LabHours" style="padding-top:20px; padding-bottom:20px;">05:50PM to 07:30PM</div>
-            </div>
-            <div class="row text-center">
-                <div class="col-xs-1 ColumnOneDays" style="padding-top:20px; padding-bottom:20px;">MON</div>
-                <div id="A1-id" class="col-xs-1 TimetableContent A1" style="padding-top:20px; padding-bottom:20px;">A1 / L1</div>
-                <div class="col-xs-1 TimetableContent F1" style="padding-top:20px; padding-bottom:20px;">F1 / L2</div>
-                <div class="col-xs-1 TimetableContent D1" style="padding-top:20px; padding-bottom:20px;">D1 / L3</div>
-                <div class="col-xs-1 TimetableContent TB1" style="padding-top:20px; padding-bottom:20px;">TB1 / L4</div>
-                <div class="col-xs-1 TimetableContent TG1" style="padding-top:20px; padding-bottom:20px;">TG1 / L5</div>
-                <div class="col-xs-1 TimetableContent" style="padding-top:20px; padding-bottom:20px;">L6</div>
-                <div class="col-xs-1" style="padding-top:30.5px; padding-bottom:31px; background-color: #C0C0C0;"></div>
-                <div class="col-xs-1 TimetableContent A2" style="padding-top:20px; padding-bottom:20px;">A2 / L31</div>
-                <div class="col-xs-1 TimetableContent F2" style="padding-top:20px; padding-bottom:20px;">F2 / L32</div>
-                <div class="col-xs-1 TimetableContent D2" style="padding-top:20px; padding-bottom:20px;">D2 / L33</div>
-                <div class="col-xs-1 TimetableContent TB2" style="padding-top:10px; padding-bottom:10px;">TB2 / L34</div>
-                <div class="col-xs-1 TimetableContent TG2" style="padding-top:10px; padding-bottom:10px;">TG2 / L35</div>
-                <div class="col-xs-1 TimetableContent" style="padding-top:20px; padding-bottom:20px;">L36</div>
-            </div>
-            <div class="row text-center">
-                <div class="col-xs-1 ColumnOneDays" style="padding-top:20px; padding-bottom:20px;">TUE</div>
-                <div class="col-xs-1 TimetableContent B1" style="padding-top:20px; padding-bottom:20px;">B1 / L7</div>
-                <div class="col-xs-1 TimetableContent G1" style="padding-top:20px; padding-bottom:20px;">G1 / L8</div>
-                <div class="col-xs-1 TimetableContent E1" style="padding-top:20px; padding-bottom:20px;">E1 / L9</div>
-                <div class="col-xs-1 TimetableContent TC1" style="padding-top:10px; padding-bottom:10px;">TC1 / L10</div>
-                <div class="col-xs-1 TimetableContent TAA1" style="padding-top:10px; padding-bottom:10px;">TAA1 / L11</div>
-                <div class="col-xs-1 TimetableContent" style="padding-top:20px; padding-bottom:20px;">L12</div>
-                <div class="col-xs-1" style="padding-top:30.5px; padding-bottom:31px; background-color: #C0C0C0;"></div>
-                <div class="col-xs-1 TimetableContent B2" style="padding-top:20px; padding-bottom:20px;">B2 / L37</div>
-                <div class="col-xs-1 TimetableContent G2" style="padding-top:20px; padding-bottom:20px;">G2 / L38</div>
-                <div class="col-xs-1 TimetableContent E2" style="padding-top:20px; padding-bottom:20px;">E2 / L39</div>
-                <div class="col-xs-1 TimetableContent TC2" style="padding-top:10px; padding-bottom:10px;">TC2 / L40</div>
-                <div class="col-xs-1 TimetableContent TAA2" style="padding-top:10px; padding-bottom:10px;">TAA2 / L41</div>
-                <div class="col-xs-1 TimetableContent" style="padding-top:20px; padding-bottom:20px;">L42</div>
-            </div>
-            <div class="row text-center">
-                <div class="col-xs-1 ColumnOneDays" style="padding-top:20px; padding-bottom:20px;">WED</div>
-                <div class="col-xs-1 TimetableContent C1" style="padding-top:20px; padding-bottom:20px;">C1 / L13</div>
-                <div class="col-xs-1 TimetableContent A1" style="padding-top:20px; padding-bottom:20px;">A1 / L14</div>
-                <div class="col-xs-1 TimetableContent F1" style="padding-top:20px; padding-bottom:20px;">F1</div>
-                <div class="col-xs-3" style="padding-top:20px; padding-bottom:20px; color: grey; background-color: #FFFFCC; border: 1px solid black; cursor: default;">Extramural Hour</div>
-                <div class="col-xs-1" style="font-weight:bold; padding-bottom:41.5px; background-color:#C0C0C0;">LUNCH</div>
-                <div class="col-xs-1 TimetableContent C2" style="padding-top:20px; padding-bottom:20px;">C2 / L43</div>
-                <div class="col-xs-1 TimetableContent A2" style="padding-top:20px; padding-bottom:20px;">A2 / L44</div>
-                <div class="col-xs-1 TimetableContent F2" style="padding-top:20px; padding-bottom:20px;">F2 / L45</div>
-                <div class="col-xs-1 TimetableContent TD2" style="padding-top:10px; padding-bottom:10px;">TD2 / L46</div>
-                <div class="col-xs-1 TimetableContent TBB2" style="padding-top:10px; padding-bottom:10px;">TBB2 / L47</div>
-                <div class="col-xs-1 TimetableContent" style="padding-top:20px; padding-bottom:20px;">L48</div>
-            </div>
-            <div class="row text-center">
-                <div class="col-xs-1 ColumnOneDays" style="padding-top:20px; padding-bottom:20px;">THU</div>
-                <div class="col-xs-1 TimetableContent D1" style="padding-top:20px; padding-bottom:20px;">D1 / L19</div>
-                <div class="col-xs-1 TimetableContent B1" style="padding-top:20px; padding-bottom:20px;">B1 / L20</div>
-                <div class="col-xs-1 TimetableContent G1" style="padding-top:20px; padding-bottom:20px;">G1 / L21</div>
-                <div class="col-xs-1 TimetableContent TE1" style="padding-top:10px; padding-bottom:10px;">TE1 / L22</div>
-                <div class="col-xs-1 TimetableContent TCC1" style="padding-top:10px; padding-bottom:10px;">TCC1 / L23</div>
-                <div class="col-xs-1 TimetableContent" style="padding-top:20px; padding-bottom:20px;">L24</div>
-                <div class="col-xs-1" style="padding-top:30.5px; padding-bottom:31px; background-color: #C0C0C0;"></div>
-                <div class="col-xs-1 TimetableContent D2" style="padding-top:20px; padding-bottom:20px;">D2 / L49</div>
-                <div class="col-xs-1 TimetableContent B2" style="padding-top:20px; padding-bottom:20px;">B2 / L50</div>
-                <div class="col-xs-1 TimetableContent G2" style="padding-top:20px; padding-bottom:20px;">G2 / L51</div>
-                <div class="col-xs-1 TimetableContent TE2" style="padding-top:10px; padding-bottom:10px;">TE2 / L52</div>
-                <div class="col-xs-1 TimetableContent TCC2" style="padding-top:10px; padding-bottom:10px;">TCC2 / L53</div>
-                <div class="col-xs-1 TimetableContent" style="padding-top:20px; padding-bottom:20px;">L54</div>
-            </div>
-            <div class="row text-center">
-                <div class="col-xs-1 ColumnOneDays" style="padding-top:20px; padding-bottom:20px;">FRI</div>
-                <div class="col-xs-1 TimetableContent E1" style="padding-top:20px; padding-bottom:20px;">E1 / L25</div>
-                <div class="col-xs-1 TimetableContent C1" style="padding-top:20px; padding-bottom:20px;">C1 / L26</div>
-                <div class="col-xs-1 TimetableContent TA1" style="padding-top:20px; padding-bottom:20px;">TA1 / L27</div>
-                <div class="col-xs-1 TimetableContent TF1" style="padding-top:10px; padding-bottom:10px;">TF1 / L28</div>
-                <div class="col-xs-1 TimetableContent TD1" style="padding-top:10px; padding-bottom:10px;">TD1 / L29</div>
-                <div class="col-xs-1 TimetableContent" style="padding-top:20px; padding-bottom:20px;">L30</div>
-                <div class="col-xs-1" style="padding:30.5px; border-bottom: 1px solid black; background-color: #C0C0C0;"></div>
-                <div class="col-xs-1 TimetableContent E2" style="padding-top:20px; padding-bottom:20px;">E2 / L55</div>
-                <div class="col-xs-1 TimetableContent C2" style="padding-top:20px; padding-bottom:20px;">C2 / L56</div>
-                <div class="col-xs-1 TimetableContent TA2" style="padding-top:20px; padding-bottom:20px;">TA2 / L57</div>
-                <div class="col-xs-1 TimetableContent TF2" style="padding-top:10px; padding-bottom:10px;">TF2 / L58</div>
-                <div class="col-xs-1 TimetableContent TDD2" style="padding-top:10px; padding-bottom:10px;">TDD2 / L59</div>
-                <div class="col-xs-1 TimetableContent" style="padding-top:20px; padding-bottom:20px;">L60</div>
-            </div>
-          </div>
+    <div class="row text-center">
+      <div class="col-xs-14">
+        <div class="alert alert-info alert-dismissible" role="alert">
+          <button class="close" type="button" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <a class="alert-link" href="#">The site was last updated for FFCS registration during Fall Sem 2016</a>
         </div>
       </div>
+    </div>
 
-      <div class="container">
-        <!-- Input slot string to highlight the slots -->
-
-        <div class="row" id="slot-sel-area">
-          <div class="panel panel-default">
-            <div class="panel-body">
-
-            <div class="form-horizontal">
-              <!--Reset button-->
-              <div class="form-group form-group-md col-xs-14">
-                <div class="btn-group col-sm-offset-4 col-sm-10">
-                  <button type="button" id="toggleClickToSelect" data-toggle="button" class="btn btn-danger" data-state="enabled">Disable clicking on timetable</button>
-                  <button id="resetButton" type="button" class="btn btn-success" onclick="resetTimeTable()">Reset</button>
-                </div>
-              </div>
-
-              <div class="form-group form-group-md col-xs-14">
-                <label for="inputSlotString" class="col-sm-4 control-label">Slot:</label>
-                <div class="col-sm-10">
-                  <input type="text" placeholder="eg: L1+L2+L3" class="form-control" id="inputSlotString">
-                </div> <!-- input-group -->
-              </div> <!-- form-group -->
-
-              <div class="form-group form-group-md col-xs-14">
-                <label for="inputCourseTitle" class="col-sm-4 control-label">Course name:</label>
-                <div class="col-sm-10">
-                  <input type="text" class="form-control" placeholder="Basic French" id="inputCourseTitle">
-                </div>
-              </div>
-
-              <div class="form-group form-group-md col-xs-14">
-                <label for="inputFaculty" class="col-sm-4 control-label">Faculty name:</label>
-                <div class="col-sm-10">
-                  <input type="text" class="form-control" placeholder="John Doe" id="inputFaculty">
-                </div>
-              </div>
-
-              <div class="form-group form-group-md col-xs-14">
-                <label for="inputCourseCredits" class="col-sm-4 control-label">Credits:</label>
-                <div class="col-sm-10">
-                  <input type="number" class="form-control" placeholder="4" id="inputCourseCredits">
-                </div>
-              </div>
-
-              <div class="col-xs-14">
-                <button type="button" id="markBtn" class="btn btn-success col-sm-offset-4">Add Course</button>
-              </div>
-            </div>
-            </div> <!-- panel-body -->
-
-            <ul class="list-group">
-              <li class="list-group-item list-group-item-info total">
-                <div class="row">
-                  <span class="col-xs-7 text-right"><strong>Total Credits:</strong></span>
-                  <span class="col-xs-7 text-left"><span class="badge">0</span></span>
-                </div>
-              </li>
-            </ul>
-
-          </div> <!-- panel -->
-        </div>
-
-        <!--Slot tiles-->
-        <div class="slot-picker row">
-          <div class="inner">
-            <div class="row">
-              <div class="col-xs-7" style="padding-left: 70px;padding-right: 0px;">
-                <div id="A1-tile-id" class="A1-tile tile" data-role="tile" data-click="transform">A1</div>
-                <div class="B1-tile tile" data-role="tile" data-click="transform">B1</div>
-                <div class="C1-tile tile" data-role="tile" data-click="transform">C1</div>
-                <div class="D1-tile tile" data-role="tile" data-click="transform">D1</div>
-                <div class="E1-tile tile" data-role="tile" data-click="transform">E1</div>
-                <div class="F1-tile tile" data-role="tile" data-click="transform">F1</div>
-                <div class="G1-tile tile" style="margin-right: 0px;" data-role="tile" data-click="transform">G1</div>
-            </div>
-              <div class="col-xs-7" style="padding-left: 70px;padding-right: 0px;">
-                <div class="A2-tile tile" data-role="tile" data-click="transform">A2</div>
-                <div class="B2-tile tile" data-role="tile" data-click="transform">B2</div>
-                <div class="C2-tile tile" data-role="tile" data-click="transform">C2</div>
-                <div class="D2-tile tile" data-role="tile" data-click="transform">D2</div>
-                <div class="E2-tile tile" data-role="tile" data-click="transform">E2</div>
-                <div class="F2-tile tile" data-role="tile" data-click="transform">F2</div>
-                <div class="G2-tile tile" data-role="tile" data-click="transform">G2</div>
-            </div>
-            </div>
-            <!--Extta tiles-->
-            <div class="row">
-              <div class="col-xs-7" style="padding-left: 70px;padding-right: 0px;">
-                  <div class="TA1-tile tile" data-role="tile" data-click="transform">TA1</div>
-                  <div class="TB1-tile tile" data-role="tile" data-click="transform">TB1</div>
-                  <div class="TC1-tile tile" data-role="tile" data-click="transform">TC1</div>
-                  <div class="TD1-tile tile" data-role="tile" data-click="transform">TD1</div>
-                  <div class="TE1-tile tile" data-role="tile" data-click="transform">TE1</div>
-                  <div class="TF1-tile tile" data-role="tile" data-click="transform">TF1</div>
-                  <div class="TG1-tile tile" data-role="tile" data-click="transform">TG1</div>
-              </div>
-              <div class="col-xs-7" style="padding-left: 70px;padding-right: 0px;">
-                  <div class="TA2-tile tile" data-role="tile" data-click="transform">TA2</div>
-                  <div class="TB2-tile tile" data-role="tile" data-click="transform">TB2</div>
-                  <div class="TC2-tile tile" data-role="tile" data-click="transform">TC2</div>
-                  <div class="TD2-tile tile" data-role="tile" data-click="transform">TD2</div>
-                  <div class="TE2-tile tile" data-role="tile" data-click="transform">TE2</div>
-                  <div class="TF2-tile tile" data-role="tile" data-click="transform">TF2</div>
-                  <div class="TG2-tile tile" data-role="tile" data-click="transform">TG2</div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-xs-7" style="padding-left: 70px;padding-right: 0px;">
-                  <div class="TAA1-tile tile" data-role="tile" data-click="transform">TAA1</div>
-                  <div class="TBB1-tile tile" style="background-color: grey; cursor: default;">TBB1</div>
-                  <div class="TCC1-tile tile" data-role="tile" data-click="transform">TCC1</div>
-                  <div class="TDD1-tile tile" style="background-color: grey; cursor: default;">TDD1</div>
-                  <div class="TEE1-tile tile" style="background-color: grey; cursor: default;">TEE1</div>
-                  <div class="TFF1-tile tile" style="background-color: grey; cursor: default;">TFF1</div>
-                  <div class="TGG1-tile tile" style="background-color: grey; cursor: default;">TGG1</div>
-              </div>
-              <div class="col-xs-7" style="padding-left: 70px;padding-right: 0px;">
-                  <div class="TAA2-tile tile" data-role="tile" data-click="transform">TAA2</div>
-                  <div class="TBB2-tile tile" data-role="tile" data-click="transform">TBB2</div>
-                  <div class="TCC2-tile tile" data-role="tile" data-click="transform">TCC2</div>
-                  <div class="TDD2-tile tile" data-role="tile" data-click="transform">TDD2</div>
-                  <div class="TEE2-tile tile" style="background-color: grey; cursor: default;">TEE2</div>
-                  <div class="TFF2-tile tile" style="background-color: grey; cursor: default;">TFF2</div>
-                  <div class="TGG2-tile tile" style="background-color: grey; cursor: default;">TGG2</div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!--Embed code Excel online-->
-        <div class="row">
-          <div id="ExcelSheet" class="ExcelSheet" style="padding-bottom: 8px; padding-top: 8px;">
-          	<iframe width="100%" height="600" frameborder="0" scrolling="no" src="https://onedrive.live.com/embed?cid=D67270317C4D2130&resid=D67270317C4D2130%211775&authkey=ANVob4TPnp1sZ7U&em=2&AllowTyping=True&ActiveCell='FALLSEM2016-17_CourseAllotted_R'!A1&wdHideHeaders=True&wdDownloadButton=True"></iframe>
-          </div>
-        </div>
-
-        <div class="row" style="margin-bottom:20px;">
-        	<div class="col-sm-7" style="padding-top:40px;"><textarea class="form-control" id="workspace" style="font-size:22px;" rows="15"  placeholder="Workspace" required></textarea></div>
-        	<!--Facebook comments-->
-          <div class="col-sm-7">
-          	<div id="fb-comment-id" class="fb-comments" data-href="http://ffcsonthego.azurewebsites.net" data-width="100%" data-numposts="5" data-order-by="reverse_time"></div>
-          </div>
-        </div>
-
-        <hr>
-
-        <h4 class="row text-center">15,000+ Hits! Thank you.</h4>
-        <div class="row text-center" style="padding-bottom:15px;">This website is an open source initiative. See on <a href="https://github.com/VaTz88/VIT-Time-Table-Visualizer" target="_blank">GitHub</a>.</div>
+    <div class="row header">
+      <div class="col-sm-8">
+        <h1>VIT Timetable Visualizer</h1>
+      </div>
+      <!--Like and Share Facebook buttons-->
+      <div class="col-sm-6 text-right" style="position: relative; top: 3px;">
+        <div id="fb-like-share" class="fb-like" data-href="http://ffcsonthego.azurewebsites.net/" data-layout="button_count" data-action="like"
+          data-size="large" data-show-faces="false" data-share="true"></div>
+      </div>
 
     </div>
 
-    <script src="colorChange.js"></script>
+    <div class="row table-custom">
+      <div class="inner" style="margin:auto;">
+        <div class="row text-center">
+          <div class="col-xs-1 ColumnOneDays" style="padding-top:10px; padding-bottom:10px;">THEORY HOURS</div>
+          <div class="col-xs-1 TheoryHours">08:00AM to 08:50AM</div>
+          <div class="col-xs-1 TheoryHours">09:00AM to 09:50AM</div>
+          <div class="col-xs-1 TheoryHours">10:00AM to 10:50AM</div>
+          <div class="col-xs-1 TheoryHours">11:00AM to 11:50AM</div>
+          <div class="col-xs-1 TheoryHours">12:00PM to 12:50PM</div>
+          <div class="col-xs-1 TheoryHours" style="padding:30px;"></div>
+          <div class="col-xs-1" style="padding-top:30.5px; padding-bottom:30.5px; border-top: 1px solid black; background-color: #C0C0C0;"></div>
+          <div class="col-xs-1 TheoryHours">02:00PM to 02:50PM</div>
+          <div class="col-xs-1 TheoryHours">03:00PM to 03:50PM</div>
+          <div class="col-xs-1 TheoryHours">04:00PM to 04:50PM</div>
+          <div class="col-xs-1 TheoryHours">05:00PM to 05:50PM</div>
+          <div class="col-xs-1 TheoryHours">06:00PM to 06:50PM</div>
+          <div class="col-xs-1 TheoryHours" style="padding:30px;"></div>
+        </div>
+        <div class="row text-center">
+          <div class="col-xs-1 ColumnOneDays" style="padding-top:10px; padding-bottom:10px;">LAB HOURS</div>
+          <div class="col-xs-2 LabHours" style="padding-top:20px; padding-bottom:20px;">08:00AM to 09:40AM</div>
+          <div class="col-xs-2 LabHours" style="padding-top:20px; padding-bottom:20px;">10:00AM to 11:40AM</div>
+          <div class="col-xs-2 LabHours" style="padding-top:20px; padding-bottom:20px;">11:50AM to 01:30PM</div>
+          <div class="col-xs-1" style="padding-top:30.5px; padding-bottom:31px; background-color: #C0C0C0;"></div>
+          <div class="col-xs-2 LabHours" style="padding-top:20px; padding-bottom:20px;">02:00PM to 03:40PM</div>
+          <div class="col-xs-2 LabHours" style="padding-top:20px; padding-bottom:20px;">04:00PM to 05:40PM</div>
+          <div class="col-xs-2 LabHours" style="padding-top:20px; padding-bottom:20px;">05:50PM to 07:30PM</div>
+        </div>
+        <div class="row text-center">
+          <div class="col-xs-1 ColumnOneDays" style="padding-top:20px; padding-bottom:20px;">MON</div>
+          <div id="A1-id" class="col-xs-1 TimetableContent A1" style="padding-top:20px; padding-bottom:20px;">A1 / L1</div>
+          <div class="col-xs-1 TimetableContent F1" style="padding-top:20px; padding-bottom:20px;">F1 / L2</div>
+          <div class="col-xs-1 TimetableContent D1" style="padding-top:20px; padding-bottom:20px;">D1 / L3</div>
+          <div class="col-xs-1 TimetableContent TB1" style="padding-top:20px; padding-bottom:20px;">TB1 / L4</div>
+          <div class="col-xs-1 TimetableContent TG1" style="padding-top:20px; padding-bottom:20px;">TG1 / L5</div>
+          <div class="col-xs-1 TimetableContent" style="padding-top:20px; padding-bottom:20px;">L6</div>
+          <div class="col-xs-1" style="padding-top:30.5px; padding-bottom:31px; background-color: #C0C0C0;"></div>
+          <div class="col-xs-1 TimetableContent A2" style="padding-top:20px; padding-bottom:20px;">A2 / L31</div>
+          <div class="col-xs-1 TimetableContent F2" style="padding-top:20px; padding-bottom:20px;">F2 / L32</div>
+          <div class="col-xs-1 TimetableContent D2" style="padding-top:20px; padding-bottom:20px;">D2 / L33</div>
+          <div class="col-xs-1 TimetableContent TB2" style="padding-top:10px; padding-bottom:10px;">TB2 / L34</div>
+          <div class="col-xs-1 TimetableContent TG2" style="padding-top:10px; padding-bottom:10px;">TG2 / L35</div>
+          <div class="col-xs-1 TimetableContent" style="padding-top:20px; padding-bottom:20px;">L36</div>
+        </div>
+        <div class="row text-center">
+          <div class="col-xs-1 ColumnOneDays" style="padding-top:20px; padding-bottom:20px;">TUE</div>
+          <div class="col-xs-1 TimetableContent B1" style="padding-top:20px; padding-bottom:20px;">B1 / L7</div>
+          <div class="col-xs-1 TimetableContent G1" style="padding-top:20px; padding-bottom:20px;">G1 / L8</div>
+          <div class="col-xs-1 TimetableContent E1" style="padding-top:20px; padding-bottom:20px;">E1 / L9</div>
+          <div class="col-xs-1 TimetableContent TC1" style="padding-top:10px; padding-bottom:10px;">TC1 / L10</div>
+          <div class="col-xs-1 TimetableContent TAA1" style="padding-top:10px; padding-bottom:10px;">TAA1 / L11</div>
+          <div class="col-xs-1 TimetableContent" style="padding-top:20px; padding-bottom:20px;">L12</div>
+          <div class="col-xs-1" style="padding-top:30.5px; padding-bottom:31px; background-color: #C0C0C0;"></div>
+          <div class="col-xs-1 TimetableContent B2" style="padding-top:20px; padding-bottom:20px;">B2 / L37</div>
+          <div class="col-xs-1 TimetableContent G2" style="padding-top:20px; padding-bottom:20px;">G2 / L38</div>
+          <div class="col-xs-1 TimetableContent E2" style="padding-top:20px; padding-bottom:20px;">E2 / L39</div>
+          <div class="col-xs-1 TimetableContent TC2" style="padding-top:10px; padding-bottom:10px;">TC2 / L40</div>
+          <div class="col-xs-1 TimetableContent TAA2" style="padding-top:10px; padding-bottom:10px;">TAA2 / L41</div>
+          <div class="col-xs-1 TimetableContent" style="padding-top:20px; padding-bottom:20px;">L42</div>
+        </div>
+        <div class="row text-center">
+          <div class="col-xs-1 ColumnOneDays" style="padding-top:20px; padding-bottom:20px;">WED</div>
+          <div class="col-xs-1 TimetableContent C1" style="padding-top:20px; padding-bottom:20px;">C1 / L13</div>
+          <div class="col-xs-1 TimetableContent A1" style="padding-top:20px; padding-bottom:20px;">A1 / L14</div>
+          <div class="col-xs-1 TimetableContent F1" style="padding-top:20px; padding-bottom:20px;">F1</div>
+          <div class="col-xs-3" style="padding-top:20px; padding-bottom:20px; color: grey; background-color: #FFFFCC; border: 1px solid black; cursor: default;">Extramural Hour</div>
+          <div class="col-xs-1" style="font-weight:bold; padding-bottom:41.5px; background-color:#C0C0C0;">LUNCH</div>
+          <div class="col-xs-1 TimetableContent C2" style="padding-top:20px; padding-bottom:20px;">C2 / L43</div>
+          <div class="col-xs-1 TimetableContent A2" style="padding-top:20px; padding-bottom:20px;">A2 / L44</div>
+          <div class="col-xs-1 TimetableContent F2" style="padding-top:20px; padding-bottom:20px;">F2 / L45</div>
+          <div class="col-xs-1 TimetableContent TD2" style="padding-top:10px; padding-bottom:10px;">TD2 / L46</div>
+          <div class="col-xs-1 TimetableContent TBB2" style="padding-top:10px; padding-bottom:10px;">TBB2 / L47</div>
+          <div class="col-xs-1 TimetableContent" style="padding-top:20px; padding-bottom:20px;">L48</div>
+        </div>
+        <div class="row text-center">
+          <div class="col-xs-1 ColumnOneDays" style="padding-top:20px; padding-bottom:20px;">THU</div>
+          <div class="col-xs-1 TimetableContent D1" style="padding-top:20px; padding-bottom:20px;">D1 / L19</div>
+          <div class="col-xs-1 TimetableContent B1" style="padding-top:20px; padding-bottom:20px;">B1 / L20</div>
+          <div class="col-xs-1 TimetableContent G1" style="padding-top:20px; padding-bottom:20px;">G1 / L21</div>
+          <div class="col-xs-1 TimetableContent TE1" style="padding-top:10px; padding-bottom:10px;">TE1 / L22</div>
+          <div class="col-xs-1 TimetableContent TCC1" style="padding-top:10px; padding-bottom:10px;">TCC1 / L23</div>
+          <div class="col-xs-1 TimetableContent" style="padding-top:20px; padding-bottom:20px;">L24</div>
+          <div class="col-xs-1" style="padding-top:30.5px; padding-bottom:31px; background-color: #C0C0C0;"></div>
+          <div class="col-xs-1 TimetableContent D2" style="padding-top:20px; padding-bottom:20px;">D2 / L49</div>
+          <div class="col-xs-1 TimetableContent B2" style="padding-top:20px; padding-bottom:20px;">B2 / L50</div>
+          <div class="col-xs-1 TimetableContent G2" style="padding-top:20px; padding-bottom:20px;">G2 / L51</div>
+          <div class="col-xs-1 TimetableContent TE2" style="padding-top:10px; padding-bottom:10px;">TE2 / L52</div>
+          <div class="col-xs-1 TimetableContent TCC2" style="padding-top:10px; padding-bottom:10px;">TCC2 / L53</div>
+          <div class="col-xs-1 TimetableContent" style="padding-top:20px; padding-bottom:20px;">L54</div>
+        </div>
+        <div class="row text-center">
+          <div class="col-xs-1 ColumnOneDays" style="padding-top:20px; padding-bottom:20px;">FRI</div>
+          <div class="col-xs-1 TimetableContent E1" style="padding-top:20px; padding-bottom:20px;">E1 / L25</div>
+          <div class="col-xs-1 TimetableContent C1" style="padding-top:20px; padding-bottom:20px;">C1 / L26</div>
+          <div class="col-xs-1 TimetableContent TA1" style="padding-top:20px; padding-bottom:20px;">TA1 / L27</div>
+          <div class="col-xs-1 TimetableContent TF1" style="padding-top:10px; padding-bottom:10px;">TF1 / L28</div>
+          <div class="col-xs-1 TimetableContent TD1" style="padding-top:10px; padding-bottom:10px;">TD1 / L29</div>
+          <div class="col-xs-1 TimetableContent" style="padding-top:20px; padding-bottom:20px;">L30</div>
+          <div class="col-xs-1" style="padding:30.5px; border-bottom: 1px solid black; background-color: #C0C0C0;"></div>
+          <div class="col-xs-1 TimetableContent E2" style="padding-top:20px; padding-bottom:20px;">E2 / L55</div>
+          <div class="col-xs-1 TimetableContent C2" style="padding-top:20px; padding-bottom:20px;">C2 / L56</div>
+          <div class="col-xs-1 TimetableContent TA2" style="padding-top:20px; padding-bottom:20px;">TA2 / L57</div>
+          <div class="col-xs-1 TimetableContent TF2" style="padding-top:10px; padding-bottom:10px;">TF2 / L58</div>
+          <div class="col-xs-1 TimetableContent TDD2" style="padding-top:10px; padding-bottom:10px;">TDD2 / L59</div>
+          <div class="col-xs-1 TimetableContent" style="padding-top:20px; padding-bottom:20px;">L60</div>
+        </div>
+      </div>
+    </div>
+  </div>
 
-    <!--disable hover for touch screen devices-->
-    <script type="text/javascript">
+  <div class="container">
+    <!-- Input slot string to highlight the slots -->
+
+    <div class="row" id="slot-sel-area">
+      <div class="panel panel-default">
+        <div class="panel-body">
+
+          <div class="form-horizontal">
+            <!--Reset button-->
+            <div class="form-group form-group-md col-xs-14">
+              <div class="btn-group col-sm-offset-4 col-sm-10">
+                <button type="button" id="toggleClickToSelect" data-toggle="button" class="btn btn-danger" data-state="enabled">Disable clicking on timetable</button>
+                <button id="resetButton" type="button" class="btn btn-success" onclick="resetTimeTable()">Reset</button>
+              </div>
+            </div>
+
+            <div class="form-group form-group-md col-xs-14">
+              <label for="inputSlotString" class="col-sm-4 control-label">Slot:</label>
+              <div class="col-sm-10">
+                <input type="text" placeholder="eg: L1+L2+L3" class="form-control" id="inputSlotString">
+              </div>
+              <!-- input-group -->
+            </div>
+            <!-- form-group -->
+
+            <div class="form-group form-group-md col-xs-14">
+              <label for="inputCourseTitle" class="col-sm-4 control-label">Course name:</label>
+              <div class="col-sm-10">
+                <input type="text" class="form-control" placeholder="Basic French" id="inputCourseTitle">
+              </div>
+            </div>
+
+            <div class="form-group form-group-md col-xs-14">
+              <label for="inputFaculty" class="col-sm-4 control-label">Faculty name:</label>
+              <div class="col-sm-10">
+                <input type="text" class="form-control" placeholder="John Doe" id="inputFaculty">
+              </div>
+            </div>
+
+            <div class="form-group form-group-md col-xs-14">
+              <label for="inputCourseCredits" class="col-sm-4 control-label">Credits:</label>
+              <div class="col-sm-10">
+                <input type="number" class="form-control" placeholder="4" id="inputCourseCredits">
+              </div>
+            </div>
+
+            <div class="col-xs-14">
+              <button type="button" id="markBtn" class="btn btn-success col-sm-offset-4">Add Course</button>
+            </div>
+          </div>
+        </div>
+        <!-- panel-body -->
+
+        <ul class="list-group">
+          <li class="list-group-item list-group-item-info total">
+            <div class="row">
+              <span class="col-xs-7 text-right"><strong>Total Credits:</strong></span>
+              <span class="col-xs-7 text-left"><span class="badge">0</span></span>
+            </div>
+          </li>
+        </ul>
+
+      </div>
+      <!-- panel -->
+    </div>
+
+    <!--Slot tiles-->
+    <div class="slot-picker row">
+      <div class="inner">
+        <div class="row">
+          <div class="col-xs-7" style="padding-left: 70px;padding-right: 0px;">
+            <div id="A1-tile-id" class="A1-tile tile" data-role="tile" data-click="transform">A1</div>
+            <div class="B1-tile tile" data-role="tile" data-click="transform">B1</div>
+            <div class="C1-tile tile" data-role="tile" data-click="transform">C1</div>
+            <div class="D1-tile tile" data-role="tile" data-click="transform">D1</div>
+            <div class="E1-tile tile" data-role="tile" data-click="transform">E1</div>
+            <div class="F1-tile tile" data-role="tile" data-click="transform">F1</div>
+            <div class="G1-tile tile" style="margin-right: 0px;" data-role="tile" data-click="transform">G1</div>
+          </div>
+          <div class="col-xs-7" style="padding-left: 70px;padding-right: 0px;">
+            <div class="A2-tile tile" data-role="tile" data-click="transform">A2</div>
+            <div class="B2-tile tile" data-role="tile" data-click="transform">B2</div>
+            <div class="C2-tile tile" data-role="tile" data-click="transform">C2</div>
+            <div class="D2-tile tile" data-role="tile" data-click="transform">D2</div>
+            <div class="E2-tile tile" data-role="tile" data-click="transform">E2</div>
+            <div class="F2-tile tile" data-role="tile" data-click="transform">F2</div>
+            <div class="G2-tile tile" data-role="tile" data-click="transform">G2</div>
+          </div>
+        </div>
+        <!--Extta tiles-->
+        <div class="row">
+          <div class="col-xs-7" style="padding-left: 70px;padding-right: 0px;">
+            <div class="TA1-tile tile" data-role="tile" data-click="transform">TA1</div>
+            <div class="TB1-tile tile" data-role="tile" data-click="transform">TB1</div>
+            <div class="TC1-tile tile" data-role="tile" data-click="transform">TC1</div>
+            <div class="TD1-tile tile" data-role="tile" data-click="transform">TD1</div>
+            <div class="TE1-tile tile" data-role="tile" data-click="transform">TE1</div>
+            <div class="TF1-tile tile" data-role="tile" data-click="transform">TF1</div>
+            <div class="TG1-tile tile" data-role="tile" data-click="transform">TG1</div>
+          </div>
+          <div class="col-xs-7" style="padding-left: 70px;padding-right: 0px;">
+            <div class="TA2-tile tile" data-role="tile" data-click="transform">TA2</div>
+            <div class="TB2-tile tile" data-role="tile" data-click="transform">TB2</div>
+            <div class="TC2-tile tile" data-role="tile" data-click="transform">TC2</div>
+            <div class="TD2-tile tile" data-role="tile" data-click="transform">TD2</div>
+            <div class="TE2-tile tile" data-role="tile" data-click="transform">TE2</div>
+            <div class="TF2-tile tile" data-role="tile" data-click="transform">TF2</div>
+            <div class="TG2-tile tile" data-role="tile" data-click="transform">TG2</div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-7" style="padding-left: 70px;padding-right: 0px;">
+            <div class="TAA1-tile tile" data-role="tile" data-click="transform">TAA1</div>
+            <div class="TBB1-tile tile" style="background-color: grey; cursor: default;">TBB1</div>
+            <div class="TCC1-tile tile" data-role="tile" data-click="transform">TCC1</div>
+            <div class="TDD1-tile tile" style="background-color: grey; cursor: default;">TDD1</div>
+            <div class="TEE1-tile tile" style="background-color: grey; cursor: default;">TEE1</div>
+            <div class="TFF1-tile tile" style="background-color: grey; cursor: default;">TFF1</div>
+            <div class="TGG1-tile tile" style="background-color: grey; cursor: default;">TGG1</div>
+          </div>
+          <div class="col-xs-7" style="padding-left: 70px;padding-right: 0px;">
+            <div class="TAA2-tile tile" data-role="tile" data-click="transform">TAA2</div>
+            <div class="TBB2-tile tile" data-role="tile" data-click="transform">TBB2</div>
+            <div class="TCC2-tile tile" data-role="tile" data-click="transform">TCC2</div>
+            <div class="TDD2-tile tile" data-role="tile" data-click="transform">TDD2</div>
+            <div class="TEE2-tile tile" style="background-color: grey; cursor: default;">TEE2</div>
+            <div class="TFF2-tile tile" style="background-color: grey; cursor: default;">TFF2</div>
+            <div class="TGG2-tile tile" style="background-color: grey; cursor: default;">TGG2</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Embed code Excel online-->
+    <div class="row">
+      <div id="ExcelSheet" class="ExcelSheet" style="padding-bottom: 8px; padding-top: 8px;">
+        <iframe width="100%" height="600" frameborder="0" scrolling="no" src="https://onedrive.live.com/embed?cid=D67270317C4D2130&resid=D67270317C4D2130%211775&authkey=ANVob4TPnp1sZ7U&em=2&AllowTyping=True&ActiveCell='FALLSEM2016-17_CourseAllotted_R'!A1&wdHideHeaders=True&wdDownloadButton=True"></iframe>
+      </div>
+    </div>
+
+    <div class="row" style="margin-bottom:20px;">
+      <div class="col-sm-7" style="padding-top:40px;"><textarea class="form-control" id="workspace" style="font-size:22px;" rows="15" placeholder="Workspace" required></textarea></div>
+      <!--Facebook comments-->
+      <div class="col-sm-7">
+        <div id="fb-comment-id" class="fb-comments" data-href="http://ffcsonthego.azurewebsites.net" data-width="100%" data-numposts="5"
+          data-order-by="reverse_time"></div>
+      </div>
+    </div>
+
+    <hr>
+
+    <h4 class="row text-center">15,000+ Hits! Thank you.</h4>
+    <div class="row text-center" style="padding-bottom:15px;">This website is an open source initiative. See on <a href="https://github.com/VaTz88/VIT-Time-Table-Visualizer" target="_blank">GitHub</a>.</div>
+
+  </div>
+
+  <script src="colorChange.js"></script>
+
+  <!--disable hover for touch screen devices-->
+  <script type="text/javascript">
     	function removeHoverCSSRule() {
     	  if ('createTouch' in document) {
     	    try {
@@ -382,46 +394,46 @@ Contribute here
     	}
     </script>
 
-    <!--Tour tips-->
-    <ol id="joyRideTipContent">
-      <li data-text="Start">
-        <h1>Welcome to FFCS On The Go!</h1>
-        <h3 style="padding-bottom:15px;padding-top:5px;">Take a tour.</h3>
-      </li>
-      <li data-id="A1-id" data-button="Next">
-        <h4>Easy slot selection</h4>
-        <p>Click the slot to select.</p>
-      </li>
-      <li data-id="A1-tile-id" data-button="Next">
-        <h4>Quick selection</h4>
-        <p>Click the slot tile to select all at once.</p>
-      </li>
-      <li data-id="resetButton" data-button="Next" data-options="tipLocation:left">
-        <h4>Easy reset</h4>
-        <p>Click reset button to clear all selections</p>
-      </li>
-      <li data-id="ExcelSheet" data-button="Next" data-options="tipLocation:top">
-        <h4>Excel sheet is here!</h4>
-        <p>Search and filter courses, slots and faculties.</p>
-      </li>
-      <li data-id="slot-sel-area" data-button="Next" data-options="tipLocation:right">
-        <h4 style="padding-bottom:15px;padding-top:5px;">Copy past slot from excel sheet to select.</h4>
-      </li>
-      <li data-id="workspace" data-button="Next" data-options="tipLocation:top">
-        <h4>Workspace</h4>
-        <p>Keep notes while making your timetable</p>
-      </li>
-      <li data-id="fb-comment-id" data-button="Next" data-options="tipLocation:top">
-        <h4>Interact with others</h4>
-        <p>Comment here, ask queries or give feedback.</p>
-      </li>
-      <li data-id="fb-like-share" data-button="Done">
-        <h3 style="padding-bottom:15px;padding-top:5px;">Like and Share</h3>
-      </li>
-    </ol>
+  <!--Tour tips-->
+  <ol id="joyRideTipContent">
+    <li data-text="Start">
+      <h1>Welcome to FFCS On The Go!</h1>
+      <h3 style="padding-bottom:15px;padding-top:5px;">Take a tour.</h3>
+    </li>
+    <li data-id="A1-id" data-button="Next">
+      <h4>Easy slot selection</h4>
+      <p>Click the slot to select.</p>
+    </li>
+    <li data-id="A1-tile-id" data-button="Next">
+      <h4>Quick selection</h4>
+      <p>Click the slot tile to select all at once.</p>
+    </li>
+    <li data-id="resetButton" data-button="Next" data-options="tipLocation:left">
+      <h4>Easy reset</h4>
+      <p>Click reset button to clear all selections</p>
+    </li>
+    <li data-id="ExcelSheet" data-button="Next" data-options="tipLocation:top">
+      <h4>Excel sheet is here!</h4>
+      <p>Search and filter courses, slots and faculties.</p>
+    </li>
+    <li data-id="slot-sel-area" data-button="Next" data-options="tipLocation:right">
+      <h4 style="padding-bottom:15px;padding-top:5px;">Copy past slot from excel sheet to select.</h4>
+    </li>
+    <li data-id="workspace" data-button="Next" data-options="tipLocation:top">
+      <h4>Workspace</h4>
+      <p>Keep notes while making your timetable</p>
+    </li>
+    <li data-id="fb-comment-id" data-button="Next" data-options="tipLocation:top">
+      <h4>Interact with others</h4>
+      <p>Comment here, ask queries or give feedback.</p>
+    </li>
+    <li data-id="fb-like-share" data-button="Done">
+      <h3 style="padding-bottom:15px;padding-top:5px;">Like and Share</h3>
+    </li>
+  </ol>
 
-    <!--Launching joyride when to page is loaded-->
-    <script>
+  <!--Launching joyride when to page is loaded-->
+  <script>
     $(window).load(function() {
       $("#joyRideTipContent").joyride({
         autoStart : true,
@@ -432,4 +444,5 @@ Contribute here
     </script>
 
 </body>
+
 </html>

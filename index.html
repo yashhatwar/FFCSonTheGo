@@ -3,7 +3,7 @@ Glad you are interested in the code.
 
 Contribute here
 
-	https://github.com/VaTz88/VIT-Time-Table-Visualizer
+	https://github.com/VaTz88/FFCS-on-The-Go
 
 -->
 <!DOCTYPE html>
@@ -16,50 +16,39 @@ Contribute here
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <META NAME="author" CONTENT="Vatsal Joshi">
   <META NAME="subject" CONTENT="Education">
-  <META NAME="Description" CONTENT="Visualize your timetable in most easy way.
-    Make the most optimum timetable for yourself.">
-  <META NAME="Keywords" CONTENT="VIT, University, FFCS, On, The, Go, TimeTable, Visualizer">
+  <META NAME="Description" CONTENT="Visualize your timetable in most easy way. Make the most optimum timetable for yourself.">
+  <META NAME="Keywords" CONTENT="VIT, University, Vellore, FFCS, on, The, Go, TimeTable, Visualizer, course, registration">
   <META NAME="distribution" CONTENT="Global">
   <META NAME="country" CONTENT="India">
-
-  <meta property="og:title" content="FFCS On The Go" />
-  <meta property="og:url" content="http://ffcsonthego.azurewebsites.net/" />
-  <meta property="og:image" content="https://raw.githubusercontent.com/VaTz88/VIT-Time-Table-Visualizer/master/FFCSonTheGoMetaImg.png"
-  />
-  <meta property="og:description" content="Visualize your timetable in most easy way. Make the most optimum timetable for yourself."
-  />
-  <meta property="og:site_name" content="FFCSonTheGo" />
-  <meta property="fb:app_id" content="1698400863751487" />
-
-  <!--Microsoft jQuery Content Delivery Network (CDN)-->
-  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.12.0.min.js"></script>
-  <script src="metro.js"></script>
+  <meta property="og:title" content="FFCSonTheGo!">
+  <meta property="og:url" content="http://ffcsonthego.azurewebsites.net/">
+  <meta property="og:image" content="https://raw.githubusercontent.com/VaTz88/VIT-Time-Table-Visualizer/master/FFCSonTheGoMetaImg.png">
+  <meta property="og:description" content="Visualize your timetable in most easy way. Make the most optimum timetable for yourself.">
+  <meta property="og:site_name" content="FFCSonTheGo">
+  <meta property="fb:app_id" content="1698400863751487">
+  <!-- jQuery CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <!--Joyride CSS file-->
   <link rel=" stylesheet" type="text/css" href="joyride-2.1.css">
   <!--Joyride plugin-->
   <script src="jquery.joyride-2.1.js"></script>
-
   <link href="metro.css" rel="stylesheet">
   <link rel="stylesheet" href="custom_bootstrap.css">
+  <link rel="stylesheet" href="custom_bootstrap-horizon.css">
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body onload="removeHoverCSSRule()">
-
-  <!--Google anlytics-->
   <script>
+  // Google anlytics
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
   })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
   ga('create', 'UA-75111209-1', 'auto');
   ga('send', 'pageview');
-
-</script>
-
-  <!--Facebook JavaScript SDK-->
-  <script>
+  
+  // Facebook JavaScript SDK
   window.fbAsyncInit = function() {
     FB.init({
       appId      : '1698400863751487',
@@ -67,7 +56,6 @@ Contribute here
       version    : 'v2.5'
     });
   };
-
   (function(d, s, id){
      var js, fjs = d.getElementsByTagName(s)[0];
      if (d.getElementById(id)) {return;}
@@ -75,11 +63,9 @@ Contribute here
      js.src = "//connect.facebook.net/en_US/sdk.js";
      fjs.parentNode.insertBefore(js, fjs);
    }(document, 'script', 'facebook-jssdk'));
-</script>
-
+  </script>
   <!--Website content-->
-  <div class="container-fluid">
-
+  <header class="container">
     <div class="row text-center">
       <div class="col-xs-14">
         <div class="alert alert-info alert-dismissible" role="alert">
@@ -88,7 +74,6 @@ Contribute here
         </div>
       </div>
     </div>
-
     <div class="row header">
       <div class="col-sm-8">
         <h1>VIT Timetable Visualizer</h1>
@@ -98,9 +83,75 @@ Contribute here
         <div id="fb-like-share" class="fb-like" data-href="http://ffcsonthego.azurewebsites.net/" data-layout="button_count" data-action="like"
           data-size="large" data-show-faces="false" data-share="true"></div>
       </div>
-
     </div>
-
+  </header>
+  <!-- Quick selection tiles -->
+  <div id="quick-selection" class="container">
+    <div class="row-horizon">
+      <div class="row">
+        <div class="col-sm-7">
+          <button class="A1-tile tile btn btn-default">A1</button>
+          <button class="B1-tile tile btn btn-default">B1</button>
+          <button class="C1-tile tile btn btn-default">C1</button>
+          <button class="D1-tile tile btn btn-default">D1</button>
+          <button class="E1-tile tile btn btn-default">E1</button>
+          <button class="F1-tile tile btn btn-default">F1</button>
+          <button class="G1-tile tile btn btn-default">G1</button>
+        </div>
+        <div class="col-sm-7">
+          <button class="A2-tile tile btn btn-default">A2</button>
+          <button class="B2-tile tile btn btn-default">B2</button>
+          <button class="C2-tile tile btn btn-default">C2</button>
+          <button class="D2-tile tile btn btn-default">D2</button>
+          <button class="E2-tile tile btn btn-default">E2</button>
+          <button class="F2-tile tile btn btn-default">F2</button>
+          <button class="G2-tile tile btn btn-default">G2</button>
+        </div>
+      </div>
+      <div class="row hidden-xs">
+        <div class="col-sm-7">
+          <button class="TA1-tile tile btn btn-default">TA1</button>
+          <button class="TB1-tile tile btn btn-default">TB1</button>
+          <button class="TC1-tile tile btn btn-default">TC1</button>
+          <button class="TD1-tile tile btn btn-default">TD1</button>
+          <button class="TE1-tile tile btn btn-default">TE1</button>
+          <button class="TF1-tile tile btn btn-default">TF1</button>
+          <button class="TG1-tile tile btn btn-default">TG1</button>
+        </div>
+        <div class="col-sm-7">
+          <button class="TA2-tile tile btn btn-default">TA2</button>
+          <button class="TB2-tile tile btn btn-default">TB2</button>
+          <button class="TC2-tile tile btn btn-default">TC2</button>
+          <button class="TD2-tile tile btn btn-default">TD2</button>
+          <button class="TE2-tile tile btn btn-default">TE2</button>
+          <button class="TF2-tile tile btn btn-default">TF2</button>
+          <button class="TG2-tile tile btn btn-default">TG2</button>
+        </div>
+      </div>
+      <div class="row hidden-sm hidden-xs">
+        <div class="col-sm-7">
+          <button class="TAA1-tile tile btn btn-default">TAA1</button>
+          <button class="TBB1-tile tile btn btn-default" disabled="disabled">TBB1</button>
+          <button class="TCC1-tile tile btn btn-default">TCC1</button>
+          <button class="TDD1-tile tile btn btn-default" disabled="disabled">TDD1</button>
+          <button class="TEE1-tile tile btn btn-default" disabled="disabled">TEE1</button>
+          <button class="TFF1-tile tile btn btn-default" disabled="disabled">TFF1</button>
+          <button class="TGG1-tile tile btn btn-default" disabled="disabled">TGG1</button>
+        </div>
+        <div class="col-sm-7">
+          <button class="TAA2-tile tile btn btn-default">TAA2</button>
+          <button class="TBB2-tile tile btn btn-default">TBB2</button>
+          <button class="TCC2-tile tile btn btn-default">TCC2</button>
+          <button class="TDD2-tile tile btn btn-default">TDD2</button>
+          <button class="TEE2-tile tile btn btn-default" disabled="disabled">TEE2</button>
+          <button class="TFF2-tile tile btn btn-default" disabled="disabled">TFF2</button>
+          <button class="TGG2-tile tile btn btn-default" disabled="disabled">TGG2</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- TimeTable -->
+  <div class="container-fluid">
     <div class="row table-custom">
       <div class="inner" style="margin:auto;">
         <div class="row text-center">
@@ -210,14 +261,11 @@ Contribute here
       </div>
     </div>
   </div>
-
+  <!-- Input slot string to highlight the slots -->
   <div class="container">
-    <!-- Input slot string to highlight the slots -->
-
     <div class="row" id="slot-sel-area">
       <div class="panel panel-default">
         <div class="panel-body">
-
           <div class="form-horizontal">
             <!--Reset button-->
             <div class="form-group form-group-md col-xs-14">
@@ -226,7 +274,6 @@ Contribute here
                 <button id="resetButton" type="button" class="btn btn-success" onclick="resetTimeTable()">Reset</button>
               </div>
             </div>
-
             <div class="form-group form-group-md col-xs-14">
               <label for="inputSlotString" class="col-sm-4 control-label">Slot:</label>
               <div class="col-sm-10">
@@ -235,35 +282,30 @@ Contribute here
               <!-- input-group -->
             </div>
             <!-- form-group -->
-
             <div class="form-group form-group-md col-xs-14">
               <label for="inputCourseTitle" class="col-sm-4 control-label">Course name:</label>
               <div class="col-sm-10">
                 <input type="text" class="form-control" placeholder="Basic French" id="inputCourseTitle">
               </div>
             </div>
-
             <div class="form-group form-group-md col-xs-14">
               <label for="inputFaculty" class="col-sm-4 control-label">Faculty name:</label>
               <div class="col-sm-10">
                 <input type="text" class="form-control" placeholder="John Doe" id="inputFaculty">
               </div>
             </div>
-
             <div class="form-group form-group-md col-xs-14">
               <label for="inputCourseCredits" class="col-sm-4 control-label">Credits:</label>
               <div class="col-sm-10">
                 <input type="number" class="form-control" placeholder="4" id="inputCourseCredits">
               </div>
             </div>
-
             <div class="col-xs-14">
               <button type="button" id="markBtn" class="btn btn-success col-sm-offset-4">Add Course</button>
             </div>
           </div>
         </div>
         <!-- panel-body -->
-
         <ul class="list-group">
           <li class="list-group-item list-group-item-info total">
             <div class="row">
@@ -272,104 +314,30 @@ Contribute here
             </div>
           </li>
         </ul>
-
       </div>
       <!-- panel -->
     </div>
-
-    <!--Slot tiles-->
-    <div class="slot-picker row">
-      <div class="inner">
-        <div class="row">
-          <div class="col-xs-7" style="padding-left: 70px;padding-right: 0px;">
-            <div id="A1-tile-id" class="A1-tile tile" data-role="tile" data-click="transform">A1</div>
-            <div class="B1-tile tile" data-role="tile" data-click="transform">B1</div>
-            <div class="C1-tile tile" data-role="tile" data-click="transform">C1</div>
-            <div class="D1-tile tile" data-role="tile" data-click="transform">D1</div>
-            <div class="E1-tile tile" data-role="tile" data-click="transform">E1</div>
-            <div class="F1-tile tile" data-role="tile" data-click="transform">F1</div>
-            <div class="G1-tile tile" style="margin-right: 0px;" data-role="tile" data-click="transform">G1</div>
-          </div>
-          <div class="col-xs-7" style="padding-left: 70px;padding-right: 0px;">
-            <div class="A2-tile tile" data-role="tile" data-click="transform">A2</div>
-            <div class="B2-tile tile" data-role="tile" data-click="transform">B2</div>
-            <div class="C2-tile tile" data-role="tile" data-click="transform">C2</div>
-            <div class="D2-tile tile" data-role="tile" data-click="transform">D2</div>
-            <div class="E2-tile tile" data-role="tile" data-click="transform">E2</div>
-            <div class="F2-tile tile" data-role="tile" data-click="transform">F2</div>
-            <div class="G2-tile tile" data-role="tile" data-click="transform">G2</div>
-          </div>
-        </div>
-        <!--Extta tiles-->
-        <div class="row">
-          <div class="col-xs-7" style="padding-left: 70px;padding-right: 0px;">
-            <div class="TA1-tile tile" data-role="tile" data-click="transform">TA1</div>
-            <div class="TB1-tile tile" data-role="tile" data-click="transform">TB1</div>
-            <div class="TC1-tile tile" data-role="tile" data-click="transform">TC1</div>
-            <div class="TD1-tile tile" data-role="tile" data-click="transform">TD1</div>
-            <div class="TE1-tile tile" data-role="tile" data-click="transform">TE1</div>
-            <div class="TF1-tile tile" data-role="tile" data-click="transform">TF1</div>
-            <div class="TG1-tile tile" data-role="tile" data-click="transform">TG1</div>
-          </div>
-          <div class="col-xs-7" style="padding-left: 70px;padding-right: 0px;">
-            <div class="TA2-tile tile" data-role="tile" data-click="transform">TA2</div>
-            <div class="TB2-tile tile" data-role="tile" data-click="transform">TB2</div>
-            <div class="TC2-tile tile" data-role="tile" data-click="transform">TC2</div>
-            <div class="TD2-tile tile" data-role="tile" data-click="transform">TD2</div>
-            <div class="TE2-tile tile" data-role="tile" data-click="transform">TE2</div>
-            <div class="TF2-tile tile" data-role="tile" data-click="transform">TF2</div>
-            <div class="TG2-tile tile" data-role="tile" data-click="transform">TG2</div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-xs-7" style="padding-left: 70px;padding-right: 0px;">
-            <div class="TAA1-tile tile" data-role="tile" data-click="transform">TAA1</div>
-            <div class="TBB1-tile tile" style="background-color: grey; cursor: default;">TBB1</div>
-            <div class="TCC1-tile tile" data-role="tile" data-click="transform">TCC1</div>
-            <div class="TDD1-tile tile" style="background-color: grey; cursor: default;">TDD1</div>
-            <div class="TEE1-tile tile" style="background-color: grey; cursor: default;">TEE1</div>
-            <div class="TFF1-tile tile" style="background-color: grey; cursor: default;">TFF1</div>
-            <div class="TGG1-tile tile" style="background-color: grey; cursor: default;">TGG1</div>
-          </div>
-          <div class="col-xs-7" style="padding-left: 70px;padding-right: 0px;">
-            <div class="TAA2-tile tile" data-role="tile" data-click="transform">TAA2</div>
-            <div class="TBB2-tile tile" data-role="tile" data-click="transform">TBB2</div>
-            <div class="TCC2-tile tile" data-role="tile" data-click="transform">TCC2</div>
-            <div class="TDD2-tile tile" data-role="tile" data-click="transform">TDD2</div>
-            <div class="TEE2-tile tile" style="background-color: grey; cursor: default;">TEE2</div>
-            <div class="TFF2-tile tile" style="background-color: grey; cursor: default;">TFF2</div>
-            <div class="TGG2-tile tile" style="background-color: grey; cursor: default;">TGG2</div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!--Embed code Excel online-->
+    <!--Embed code Excel online
     <div class="row">
       <div id="ExcelSheet" class="ExcelSheet" style="padding-bottom: 8px; padding-top: 8px;">
         <iframe width="100%" height="600" frameborder="0" scrolling="no" src="https://onedrive.live.com/embed?cid=D67270317C4D2130&resid=D67270317C4D2130%211775&authkey=ANVob4TPnp1sZ7U&em=2&AllowTyping=True&ActiveCell='FALLSEM2016-17_CourseAllotted_R'!A1&wdHideHeaders=True&wdDownloadButton=True"></iframe>
       </div>
-    </div>
-
+    </div>-->
     <div class="row" style="margin-bottom:20px;">
-      <div class="col-sm-7" style="padding-top:40px;"><textarea class="form-control" id="workspace" style="font-size:22px;" rows="15" placeholder="Workspace" required></textarea></div>
+      <!-- Workspace -->
+      <div class="col-sm-7 hidden-sm hidden-xs" style="padding-top:40px;"><textarea class="form-control" id="workspace" style="font-size:22px;" rows="15" placeholder="Workspace" required></textarea></div>
       <!--Facebook comments-->
       <div class="col-sm-7">
         <div id="fb-comment-id" class="fb-comments" data-href="http://ffcsonthego.azurewebsites.net" data-width="100%" data-numposts="5"
           data-order-by="reverse_time"></div>
       </div>
     </div>
-
     <hr>
-
     <h4 class="row text-center">15,000+ Hits! Thank you.</h4>
     <div class="row text-center" style="padding-bottom:15px;">This website is an open source initiative. See on <a href="https://github.com/VaTz88/VIT-Time-Table-Visualizer" target="_blank">GitHub</a>.</div>
-
   </div>
-
   <script src="colorChange.js"></script>
-
-  <!--disable hover for touch screen devices-->
+  <!-- disable hover for touch screen devices -->
   <script type="text/javascript">
     	function removeHoverCSSRule() {
     	  if ('createTouch' in document) {
@@ -392,9 +360,8 @@ Contribute here
     	    }
     	  }
     	}
-    </script>
-
-  <!--Tour tips-->
+  </script>
+  <!-- Tour tips -->
   <ol id="joyRideTipContent">
     <li data-text="Start">
       <h1>Welcome to FFCS On The Go!</h1>
@@ -431,9 +398,8 @@ Contribute here
       <h3 style="padding-bottom:15px;padding-top:5px;">Like and Share</h3>
     </li>
   </ol>
-
-  <!--Launching joyride when to page is loaded-->
-  <script>
+  <!-- Launching joyride when to page is loaded -->
+  <!--<script>
     $(window).load(function() {
       $("#joyRideTipContent").joyride({
         autoStart : true,
@@ -441,8 +407,7 @@ Contribute here
         expose : true
       });
     });
-    </script>
-
+  </script>-->
 </body>
 
 </html>

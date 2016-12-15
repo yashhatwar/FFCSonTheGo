@@ -40,29 +40,39 @@ Contribute here
 
 <body onload="removeHoverCSSRule()">
   <script>
-  // Google anlytics
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-  ga('create', 'UA-75111209-1', 'auto');
-  ga('send', 'pageview');
-  
-  // Facebook JavaScript SDK
-  window.fbAsyncInit = function() {
-    FB.init({
-      appId      : '1698400863751487',
-      xfbml      : true,
-      version    : 'v2.5'
-    });
-  };
-  (function(d, s, id){
-     var js, fjs = d.getElementsByTagName(s)[0];
-     if (d.getElementById(id)) {return;}
-     js = d.createElement(s); js.id = id;
-     js.src = "//connect.facebook.net/en_US/sdk.js";
-     fjs.parentNode.insertBefore(js, fjs);
-   }(document, 'script', 'facebook-jssdk'));
+    // Google anlytics
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r;
+      i[r] = i[r] || function () {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date();
+      a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0];
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+    ga('create', 'UA-75111209-1', 'auto');
+    ga('send', 'pageview');
+
+    // Facebook JavaScript SDK
+    window.fbAsyncInit = function () {
+      FB.init({
+        appId: '1698400863751487',
+        xfbml: true,
+        version: 'v2.5'
+      });
+    };
+    (function (d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) {
+        return;
+      }
+      js = d.createElement(s);
+      js.id = id;
+      js.src = "//connect.facebook.net/en_US/sdk.js";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
   </script>
   <!--Website content-->
   <header class="container">
@@ -86,72 +96,231 @@ Contribute here
     </div>
   </header>
   <!-- Quick selection tiles -->
-  <div id="quick-selection" class="container">
-    <div class="row-horizon">
+  <div id="quick-selection" class="row-horizon">
+    <div class="container">
       <div class="row">
-        <div class="col-sm-7">
-          <button class="A1-tile tile btn btn-default">A1</button>
-          <button class="B1-tile tile btn btn-default">B1</button>
-          <button class="C1-tile tile btn btn-default">C1</button>
-          <button class="D1-tile tile btn btn-default">D1</button>
-          <button class="E1-tile tile btn btn-default">E1</button>
-          <button class="F1-tile tile btn btn-default">F1</button>
-          <button class="G1-tile tile btn btn-default">G1</button>
-        </div>
-        <div class="col-sm-7">
-          <button class="A2-tile tile btn btn-default">A2</button>
-          <button class="B2-tile tile btn btn-default">B2</button>
-          <button class="C2-tile tile btn btn-default">C2</button>
-          <button class="D2-tile tile btn btn-default">D2</button>
-          <button class="E2-tile tile btn btn-default">E2</button>
-          <button class="F2-tile tile btn btn-default">F2</button>
-          <button class="G2-tile tile btn btn-default">G2</button>
-        </div>
+        <div class="col-sm-2"><button class="A1-tile tile btn btn-default">A1</button></div>
+        <div class="col-sm-2"><button class="B1-tile tile btn btn-default">B1</button></div>
+        <div class="col-sm-2"><button class="C1-tile tile btn btn-default">C1</button></div>
+        <div class="col-sm-2"><button class="D1-tile tile btn btn-default">D1</button></div>
+        <div class="col-sm-2"><button class="E1-tile tile btn btn-default">E1</button></div>
+        <div class="col-sm-2"><button class="F1-tile tile btn btn-default">F1</button></div>
+        <div class="col-sm-2"><button class="G1-tile tile btn btn-default">G1</button></div>
       </div>
       <div class="row hidden-xs">
-        <div class="col-sm-7">
-          <button class="TA1-tile tile btn btn-default">TA1</button>
-          <button class="TB1-tile tile btn btn-default">TB1</button>
-          <button class="TC1-tile tile btn btn-default">TC1</button>
-          <button class="TD1-tile tile btn btn-default">TD1</button>
-          <button class="TE1-tile tile btn btn-default">TE1</button>
-          <button class="TF1-tile tile btn btn-default">TF1</button>
-          <button class="TG1-tile tile btn btn-default">TG1</button>
-        </div>
-        <div class="col-sm-7">
-          <button class="TA2-tile tile btn btn-default">TA2</button>
-          <button class="TB2-tile tile btn btn-default">TB2</button>
-          <button class="TC2-tile tile btn btn-default">TC2</button>
-          <button class="TD2-tile tile btn btn-default">TD2</button>
-          <button class="TE2-tile tile btn btn-default">TE2</button>
-          <button class="TF2-tile tile btn btn-default">TF2</button>
-          <button class="TG2-tile tile btn btn-default">TG2</button>
-        </div>
+        <div class="col-sm-2"><button class="TA1-tile tile btn btn-default">TA1</button></div>
+        <div class="col-sm-2"><button class="TB1-tile tile btn btn-default">TB1</button></div>
+        <div class="col-sm-2"><button class="TC1-tile tile btn btn-default">TC1</button></div>
+        <div class="col-sm-2"><button class="TD1-tile tile btn btn-default">TD1</button></div>
+        <div class="col-sm-2"><button class="TE1-tile tile btn btn-default">TE1</button></div>
+        <div class="col-sm-2"><button class="TF1-tile tile btn btn-default">TF1</button></div>
+        <div class="col-sm-2"><button class="TG1-tile tile btn btn-default">TG1</button></div>
       </div>
       <div class="row hidden-sm hidden-xs">
-        <div class="col-sm-7">
-          <button class="TAA1-tile tile btn btn-default">TAA1</button>
-          <button class="TBB1-tile tile btn btn-default" disabled="disabled">TBB1</button>
-          <button class="TCC1-tile tile btn btn-default">TCC1</button>
-          <button class="TDD1-tile tile btn btn-default" disabled="disabled">TDD1</button>
-          <button class="TEE1-tile tile btn btn-default" disabled="disabled">TEE1</button>
-          <button class="TFF1-tile tile btn btn-default" disabled="disabled">TFF1</button>
-          <button class="TGG1-tile tile btn btn-default" disabled="disabled">TGG1</button>
-        </div>
-        <div class="col-sm-7">
-          <button class="TAA2-tile tile btn btn-default">TAA2</button>
-          <button class="TBB2-tile tile btn btn-default">TBB2</button>
-          <button class="TCC2-tile tile btn btn-default">TCC2</button>
-          <button class="TDD2-tile tile btn btn-default">TDD2</button>
-          <button class="TEE2-tile tile btn btn-default" disabled="disabled">TEE2</button>
-          <button class="TFF2-tile tile btn btn-default" disabled="disabled">TFF2</button>
-          <button class="TGG2-tile tile btn btn-default" disabled="disabled">TGG2</button>
-        </div>
+        <div class="col-sm-2"><button class="TAA1-tile tile btn btn-default">TAA1</button></div>
+        <div class="col-sm-2"><button class="TBB1-tile tile btn btn-default" disabled="disabled">TBB1</button></div>
+        <div class="col-sm-2"><button class="TCC1-tile tile btn btn-default">TCC1</button></div>
+        <div class="col-sm-2"><button class="TDD1-tile tile btn btn-default" disabled="disabled">TDD1</button></div>
+        <div class="col-sm-2"><button class="TEE1-tile tile btn btn-default" disabled="disabled">TEE1</button></div>
+        <div class="col-sm-2"><button class="TFF1-tile tile btn btn-default" disabled="disabled">TFF1</button></div>
+        <div class="col-sm-2"><button class="TGG1-tile tile btn btn-default" disabled="disabled">TGG1</button></div>
       </div>
     </div>
   </div>
+  <!-- testing timetable-->
+  <div class="container-fluid text-center">
+    <div class="row table-responsive">
+      <table class="table table-bordered">
+        <tr>
+          <td class="ColumnOneDays">THEORY HOURS</td>
+          <td class="TheoryHours">08:00 AM<br>to<br>08:50 AM</td>
+          <td class="TheoryHours">09:00 AM<br>to<br>09:50 AM</td>
+          <td class="TheoryHours">10:00 AM<br>to<br>10:50 AM</td>
+          <td class="TheoryHours">11:00 AM<br>to<br>11:50 AM</td>
+          <td class="TheoryHours">12:00 PM<br>to<br>12:50 PM</td>
+          <td class="TheoryHours"></td>
+          <td width="8px" rowspan="9" class="ColumnOneDays"><strong>L<br>U<br>N<br>C<br>H</strong></td>
+          <td class="TheoryHours">02:00 PM<br>to<br>02:50 PM</td>
+          <td class="TheoryHours">03:00 PM<br>to<br>03:50 PM</td>
+          <td class="TheoryHours">04:00 PM<br>to<br>04:50 PM</td>
+          <td class="TheoryHours">05:00 PM<br>to<br>05:50 PM</td>
+          <td class="TheoryHours">05:50 PM<br>to<br>06:40 PM</td>
+          <td class="TheoryHours"></td>
+          <td class="TheoryHours">07:00 PM<br>to<br>07:50 PM</td>
+          <td class="TheoryHours">08:00 PM<br>to<br>08:50 PM</td>
+        </tr>
+        <tr>
+          <td class="ColumnOneDays">LAB HOURS</td>
+          <td class="LabHours">08:00 AM<br>to<br>08:50 AM</td>
+          <td class="LabHours">08:50 AM<br>to<br>09:40 AM</td>
+          <td class="LabHours">10:00 AM<br>to<br>10:50 AM</td>
+          <td class="LabHours">10:50 AM<br>to<br>11:40 AM</td>
+          <td class="LabHours">11:50 AM<br>to<br>12:40 PM</td>
+          <td class="LabHours">12:40 PM<br>to<br>01:30 PM</td>
+          <td class="LabHours">02:00 PM<br>to<br>02:50 PM</td>
+          <td class="LabHours">02:50 PM<br>to<br>03:40 PM</td>
+          <td class="LabHours">04:00 PM<br>to<br>04:50 PM</td>
+          <td class="LabHours">04:50 PM<br>to<br>05:40 PM</td>
+          <td class="LabHours">05:50 PM<br>to<br>06:40 PM</td>
+          <td class="LabHours">06:40 PM<br>to<br>07:30 PM</td>
+          <td class="LabHours">07:30 PM<br>to<br>08:20 PM</td>
+          <td class="LabHours">08:20 PM<br>to<br>09:10 PM</td>
+        </tr>
+        <tr>
+          <td class="ColumnOneDays">MON</td>
+          <td class="TimetableContent A1">A1 / L1</td>
+          <td class="TimetableContent F1">F1 / L2</td>
+          <td class="TimetableContent D1">D1 / L3</td>
+          <td class="TimetableContent TB1">TB1 / L4</td>
+          <td class="TimetableContent TG1">TG1 / L5</td>
+          <td class="TimetableContent L6">L6</td>
+          <td class="TimetableContent A2">A2 / L31</td>
+          <td class="TimetableContent F2">F2 / L32</td>
+          <td class="TimetableContent D2">D2 / L33</td>
+          <td class="TimetableContent TB2">TB2 / L34</td>
+          <td class="TimetableContent TG2">TG2 / L35</td>
+          <td class="TimetableContent L36">L36</td>
+          <td class="TimetableContent">H1 / L61</td>
+          <td class="TimetableContent">K1 / L62</td>
+        </tr>
+        <tr>
+          <td class="ColumnOneDays">TUE</td>
+          <td class="TimetableContent B1">B1 / L7</td>
+          <td class="TimetableContent G1">G1 / L8</td>
+          <td class="TimetableContent E1">E1 / L9</td>
+          <td class="TimetableContent TC1">TC1 / L10</td>
+          <td class="TimetableContent TAA1">TAA1 / L11</td>
+          <td class="TimetableContent L12">L12</td>
+          <td class="TimetableContent B2">B2 / L37</td>
+          <td class="TimetableContent G2">G2 / L38</td>
+          <td class="TimetableContent E2">E2 / L39</td>
+          <td class="TimetableContent TC2">TC2 / L40</td>
+          <td class="TimetableContent TAA2">TAA2 / L41</td>
+          <td class="TimetableContent">L42</td>
+          <td class="TimetableContent">H2 / L63</td>
+          <td class="TimetableContent">K2 / L64</td>
+        </tr>
+        <tr>
+          <td class="ColumnOneDays">WED</td>
+          <td class="TimetableContent C1">C1 / L13</td>
+          <td class="TimetableContent A1">A1 / L14</td>
+          <td class="TimetableContent F1">F1</td>
+          <td style="color: grey; background-color: #FFFFCC; cursor: default;" colspan="3">Extramural Hour</td>
+          <td class="TimetableContent C2">C2 / L43</td>
+          <td class="TimetableContent A2">A2 / L44</td>
+          <td class="TimetableContent F2">F2 / L45</td>
+          <td class="TimetableContent TD2">TD2 / L46</td>
+          <td class="TimetableContent TBB2">TBB2 / L47</td>
+          <td class="TimetableContent">L48</td>
+          <td class="TimetableContent">H3 / L65</td>
+          <td class="TimetableContent">K3 / L66</td>
+        </tr>
+        <tr>
+          <td class="ColumnOneDays">THU</td>
+          <td class="TimetableContent D1">D1 / L19</td>
+          <td class="TimetableContent B1">B1 / L20</td>
+          <td class="TimetableContent G1">G1 / L21</td>
+          <td class="TimetableContent TE1">TE1 / L22</td>
+          <td class="TimetableContent TCC1">TCC1 / L23</td>
+          <td class="TimetableContent">L24</td>
+          <td class="TimetableContent D2">D2 / L49</td>
+          <td class="TimetableContent B2">B2 / L50</td>
+          <td class="TimetableContent G2">G2 / L51</td>
+          <td class="TimetableContent TE2">TE2 / L52</td>
+          <td class="TimetableContent TCC2">TCC2 / L53</td>
+          <td class="TimetableContent">L54</td>
+          <td class="TimetableContent">H4 / L67</td>
+          <td class="TimetableContent">K4 / L68</td>
+        </tr>
+        <tr>
+          <td class="ColumnOneDays">FRI</td>
+          <td class="TimetableContent E1">E1 / L25</td>
+          <td class="TimetableContent C1">C1 / L26</td>
+          <td class="TimetableContent TA1">TA1 / L27</td>
+          <td class="TimetableContent TF1">TF1 / L28</td>
+          <td class="TimetableContent TD1">TD1 / L29</td>
+          <td class="TimetableContent">L30</td>
+          <td class="TimetableContent E2">E2 / L55</td>
+          <td class="TimetableContent C2">C2 / L56</td>
+          <td class="TimetableContent TA2">TA2 / L57</td>
+          <td class="TimetableContent TF2">TF2 / L58</td>
+          <td class="TimetableContent TDD2">TDD2 / L59</td>
+          <td class="TimetableContent">L60</td>
+          <td class="TimetableContent">H5 / L69</td>
+          <td class="TimetableContent">K5 / L70</td>
+        </tr>
+        <tr>
+          <td class="ColumnOneDays">SAT</td>
+          <td class="TimetableContent">L71</td>
+          <td class="TimetableContent">L72</td>
+          <td class="TimetableContent">L73</td>
+          <td class="TimetableContent">L74</td>
+          <td class="TimetableContent">L75</td>
+          <td class="TimetableContent">L76</td>
+          <td class="TimetableContent">L77</td>
+          <td class="TimetableContent">L78</td>
+          <td class="TimetableContent">L79</td>
+          <td class="TimetableContent">L80</td>
+          <td class="TimetableContent">L81</td>
+          <td class="TimetableContent">L82</td>
+          <td class="TimetableContent"></td>
+          <td class="TimetableContent"></td>
+        </tr>
+        <tr>
+          <td class="ColumnOneDays">SUN</td>
+          <td class="TimetableContent">L83</td>
+          <td class="TimetableContent">L84</td>
+          <td class="TimetableContent">L85</td>
+          <td class="TimetableContent">L86</td>
+          <td class="TimetableContent">L87</td>
+          <td class="TimetableContent">L88</td>
+          <td class="TimetableContent">L89</td>
+          <td class="TimetableContent">L90</td>
+          <td class="TimetableContent">L91</td>
+          <td class="TimetableContent">L92</td>
+          <td class="TimetableContent">L93</td>
+          <td class="TimetableContent">L94</td>
+          <td class="TimetableContent"></td>
+          <td class="TimetableContent"></td>
+        </tr>
+      </table>
+    </div>
+  </div>
+  <!-- quick selection evening slot -->
+  <div id="quick-selection" class="row-horizon">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-2"><button class="A2-tile tile btn btn-default">A2</button></div>
+        <div class="col-sm-2"><button class="B2-tile tile btn btn-default">B2</button></div>
+        <div class="col-sm-2"><button class="C2-tile tile btn btn-default">C2</button></div>
+        <div class="col-sm-2"><button class="D2-tile tile btn btn-default">D2</button></div>
+        <div class="col-sm-2"><button class="E2-tile tile btn btn-default">E2</button></div>
+        <div class="col-sm-2"><button class="F2-tile tile btn btn-default">F2</button></div>
+        <div class="col-sm-2"><button class="G2-tile tile btn btn-default">G2</button></div>
+      </div>
+      <div class="row hidden-xs">
+        <div class="col-sm-2"><button class="TA2-tile tile btn btn-default">TA2</button></div>
+        <div class="col-sm-2"><button class="TB2-tile tile btn btn-default">TB2</button></div>
+        <div class="col-sm-2"><button class="TC2-tile tile btn btn-default">TC2</button></div>
+        <div class="col-sm-2"><button class="TD2-tile tile btn btn-default">TD2</button></div>
+        <div class="col-sm-2"><button class="TE2-tile tile btn btn-default">TE2</button></div>
+        <div class="col-sm-2"><button class="TF2-tile tile btn btn-default">TF2</button></div>
+        <div class="col-sm-2"><button class="TG2-tile tile btn btn-default">TG2</button></div>
+      </div>
+      <div class="row hidden-sm hidden-xs">
+        <div class="col-sm-2"><button class="TAA2-tile tile btn btn-default">TAA2</button></div>
+        <div class="col-sm-2"><button class="TBB2-tile tile btn btn-default">TBB2</button></div>
+        <div class="col-sm-2"><button class="TCC2-tile tile btn btn-default">TCC2</button></div>
+        <div class="col-sm-2"><button class="TDD2-tile tile btn btn-default">TDD2</button></div>
+        <div class="col-sm-2"><button class="TEE2-tile tile btn btn-default" disabled="disabled">TEE2</button></div>
+        <div class="col-sm-2"><button class="TFF2-tile tile btn btn-default" disabled="disabled">TFF2</button></div>
+        <div class="col-sm-2"><button class="TGG2-tile tile btn btn-default" disabled="disabled">TGG2</button></div>
+      </div>
+    </div>
+  </div>
+  <!-- testing timetable -->
   <!-- TimeTable -->
-  <div class="container-fluid">
+  <!--<div class="container-fluid">
     <div class="row table-custom">
       <div class="inner" style="margin:auto;">
         <div class="row text-center">
@@ -260,7 +429,7 @@ Contribute here
         </div>
       </div>
     </div>
-  </div>
+  </div>-->
   <!-- Input slot string to highlight the slots -->
   <div class="container">
     <div class="row" id="slot-sel-area">
@@ -332,34 +501,39 @@ Contribute here
           data-order-by="reverse_time"></div>
       </div>
     </div>
-    <hr>
-    <h4 class="row text-center">15,000+ Hits! Thank you.</h4>
-    <div class="row text-center" style="padding-bottom:15px;">This website is an open source initiative. See on <a href="https://github.com/VaTz88/VIT-Time-Table-Visualizer" target="_blank">GitHub</a>.</div>
   </div>
+  <footer class="container-fluid text-center">
+    <div class="row">
+      <div class="col-sm-7">
+        Made with ♥ for VITians. See <a href="https://github.com/VaTz88/FFCS-on-The-Go/graphs/contributors" target="_blank">Credits/Developers</a>.
+      </div>
+      <div class="col-sm-7">
+        This project is an open source initiative. See on <a href="https://github.com/VaTz88/VIT-Time-Table-Visualizer" target="_blank">GitHub</a>.
+      </div>
+    </div>
+  </footer>
   <script src="colorChange.js"></script>
   <!-- disable hover for touch screen devices -->
   <script type="text/javascript">
-    	function removeHoverCSSRule() {
-    	  if ('createTouch' in document) {
-    	    try {
-    	      var ignore = /:hover/;
-    	      for (var i = 0; i < document.styleSheets.length; i++) {
-    	        var sheet = document.styleSheets[i];
-    	        if (!sheet.cssRules) {
-    	          continue;
-    	        }
-    	        for (var j = sheet.cssRules.length - 1; j >= 0; j--) {
-    	          var rule = sheet.cssRules[j];
-    	          if (rule.type === CSSRule.STYLE_RULE && ignore.test(rule.selectorText)) {
-    	            sheet.deleteRule(j);
-    	          }
-    	        }
-    	      }
-    	    }
-    	    catch(e) {
-    	    }
-    	  }
-    	}
+    function removeHoverCSSRule() {
+      if ('createTouch' in document) {
+        try {
+          var ignore = /:hover/;
+          for (var i = 0; i < document.styleSheets.length; i++) {
+            var sheet = document.styleSheets[i];
+            if (!sheet.cssRules) {
+              continue;
+            }
+            for (var j = sheet.cssRules.length - 1; j >= 0; j--) {
+              var rule = sheet.cssRules[j];
+              if (rule.type === CSSRule.STYLE_RULE && ignore.test(rule.selectorText)) {
+                sheet.deleteRule(j);
+              }
+            }
+          }
+        } catch (e) {}
+      }
+    }
   </script>
   <!-- Tour tips -->
   <ol id="joyRideTipContent">

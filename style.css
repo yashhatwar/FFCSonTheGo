@@ -1,21 +1,21 @@
 .LabHours {
   font-weight: bold;
   background-color: #99CCFF;
-  border: 1px solid black;
+  /*border: 1px solid black;*/
   cursor: default;
 }
 
 .TheoryHours {
   font-weight: bold;
   background-color: #CCCCFF;
-  border: 1px solid black;
+  /*border: 1px solid black;*/
   cursor: default;
 }
 
 .ColumnOneDays {
   font-weight: bold;
   background-color: #C0C0C0;
-  border: 1px solid black;
+  /*border: 1px solid black;*/
   cursor: default;
 }
 
@@ -50,7 +50,7 @@
 .TG2 {
   color: grey;
   background-color: #FFFFCC;
-  border: 1px solid black;
+  /*border: 1px solid black;*/
   cursor: pointer;
 }
 
@@ -102,11 +102,6 @@
 .E2-tile,
 .F2-tile,
 .G2-tile {
-  /*padding-left: 17.5px;
-  padding-right: 17.5px;
-  padding-top: 16px;
-  padding-bottom: 16px;
-  margin: 12.5px;*/
   background-color: #1DE9B6;
 }
 
@@ -124,11 +119,6 @@
 .E2-tile.highlight,
 .F2-tile.highlight,
 .G2-tile.highlight {
-  /*padding-left: 17.5px;
-  padding-right: 17.5px;
-  padding-top: 16px;
-  padding-bottom: 16px;
-  margin: 12.5px;*/
   background-color: #76FF03;
 }
 
@@ -146,11 +136,6 @@
 .TE2-tile,
 .TF2-tile,
 .TG2-tile {
-  /*padding-top: 16px;
-  padding-bottom: 16px;
-  padding-left: 13.2px;
-  padding-right: 13.2px;
-  margin: 12.5px;*/
   background-color: #1DE9B6;
 }
 
@@ -168,11 +153,6 @@
 .TE2-tile.highlight,
 .TF2-tile.highlight,
 .TG2-tile.highlight {
-  /*padding-top: 16px;
-  padding-bottom: 16px;
-  padding-left: 13.2px;
-  padding-right: 13.2px;
-  margin: 12.5px;*/
   background-color: #76FF03;
 }
 
@@ -190,11 +170,6 @@
 .TEE2-tile,
 .TFF2-tile,
 .TGG2-tile {
-  /*padding-top: 19px;
-  padding-bottom: 19px;
-  padding-left: 13px;
-  padding-right: 13px;
-  margin: 8px;*/
   background-color: #1DE9B6;
 }
 
@@ -212,11 +187,6 @@
 .TEE2-tile.highlight,
 .TFF2-tile.highlight,
 .TGG2-tile.highlight {
-  /*padding-top: 19px;
-  padding-bottom: 19px;
-  padding-left: 13px;
-  padding-right: 13px;
-  margin: 8px;*/
   background-color: #76FF03;
 }
 
@@ -294,8 +264,37 @@
   cursor: pointer;
 }
 
+td {
+  vertical-align: middle!important;
+}
+
 .row.header {
   margin-bottom: 10px;
+}
+
+footer {
+  background-color: #00897B;
+  color: #fff;
+  padding-top: 0.25em;
+  padding-bottom: 0.25em;
+}
+
+footer a {
+  color: #e0e0e0;
+}
+
+.table-bordered td,
+.table-bordered th {
+  border: 1px solid #616161 !important;
+}
+
+.btn[disabled] {
+  cursor: default;
+  background-color: grey
+}
+
+.btn[disabled]:hover {
+  background-color: grey;
 }
 
 
@@ -315,13 +314,14 @@
   margin-right: auto;
 }
 
-.row.table-custom {
+
+/*.row.table-custom {
   overflow-x: scroll;
 }
 
 .row.table-custom>.inner {
   width: 1250px;
-}
+}*/
 
 .alert.alert-dismissible {
   margin-top: 5px;
@@ -444,4 +444,16 @@ div.slot-clash {
    ::-webkit-scrollbar-thumb {
     background: #2196F3;
   }
+}
+
+.container-fluid {
+  padding-right: 0 !important;
+  padding-left: 0 !important;
+  margin-right: auto!important;
+  margin-left: auto!important;
+}
+
+.container-fluid .row {
+  margin-right: 0!important;
+  margin-left: 0!important;
 }

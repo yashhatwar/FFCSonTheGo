@@ -23,19 +23,16 @@ Contribute here
   <meta property="og:title" content="FFCSonTheGo!">
   <meta property="og:url" content="http://ffcsonthego.azurewebsites.net/">
   <meta property="og:image" content="https://raw.githubusercontent.com/VaTz88/VIT-Time-Table-Visualizer/master/FFCSonTheGoMetaImg.png">
-  <meta property="og:description" content="Visualize your timetable in most easy way. Make the most optimum timetable for yourself.">
+  <meta property="og:description" content="Visualizeand make the most optimum timetable for yourself.">
   <meta property="og:site_name" content="FFCSonTheGo">
   <meta property="fb:app_id" content="1698400863751487">
   <!-- jQuery CDN -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-  <!--Joyride CSS file-->
-  <link rel=" stylesheet" type="text/css" href="joyride-2.1.css">
-  <!--Joyride plugin-->
-  <script src="jquery.joyride-2.1.js"></script>
-  <link href="metro.css" rel="stylesheet">
-  <link rel="stylesheet" href="custom_bootstrap.css">
-  <link rel="stylesheet" href="custom_bootstrap-horizon.css">
-  <link rel="stylesheet" href="style.css">
+  <!--Bootstrap CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-horizon/0.1.1/bootstrap-horizon.min.css" />
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css" />
 </head>
 
 <body onload="removeHoverCSSRule()">
@@ -75,55 +72,54 @@ Contribute here
     }(document, 'script', 'facebook-jssdk'));
   </script>
   <!--Website content-->
-  <header class="container">
+  <header class="container-fluid">
     <div class="row text-center">
-      <div class="col-xs-14">
+      <div class="col-xs-12">
         <div class="alert alert-info alert-dismissible" role="alert">
           <button class="close" type="button" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
           <a class="alert-link" href="#">The site was last updated for FFCS registration during Fall Sem 2016</a>
         </div>
       </div>
     </div>
-    <div class="row header">
-      <div class="col-sm-8">
-        <h1>VIT Timetable Visualizer</h1>
-      </div>
+    <div class="row">
+      <span>VIT Timetable Visualizer</span>
       <!--Like and Share Facebook buttons-->
-      <div class="col-sm-6 text-right" style="position: relative; top: 3px;">
+      <div class="text-right">
         <div id="fb-like-share" class="fb-like" data-href="http://ffcsonthego.azurewebsites.net/" data-layout="button_count" data-action="like"
           data-size="large" data-show-faces="false" data-share="true"></div>
       </div>
     </div>
   </header>
+  <hr>
   <!-- Quick selection tiles -->
   <div id="quick-selection" class="row-horizon">
     <div class="container">
-      <div class="row">
-        <div class="col-sm-2"><button class="A1-tile tile btn btn-default">A1</button></div>
-        <div class="col-sm-2"><button class="B1-tile tile btn btn-default">B1</button></div>
-        <div class="col-sm-2"><button class="C1-tile tile btn btn-default">C1</button></div>
-        <div class="col-sm-2"><button class="D1-tile tile btn btn-default">D1</button></div>
-        <div class="col-sm-2"><button class="E1-tile tile btn btn-default">E1</button></div>
-        <div class="col-sm-2"><button class="F1-tile tile btn btn-default">F1</button></div>
-        <div class="col-sm-2"><button class="G1-tile tile btn btn-default">G1</button></div>
+      <div class="row row-horizon">
+        <div class="col-sm-1"><button class="A1-tile tile btn btn-default">A1</button></div>
+        <div class="col-sm-1"><button class="B1-tile tile btn btn-default">B1</button></div>
+        <div class="col-sm-1"><button class="C1-tile tile btn btn-default">C1</button></div>
+        <div class="col-sm-1"><button class="D1-tile tile btn btn-default">D1</button></div>
+        <div class="col-sm-1"><button class="E1-tile tile btn btn-default">E1</button></div>
+        <div class="col-sm-1"><button class="F1-tile tile btn btn-default">F1</button></div>
+        <div class="col-sm-1"><button class="G1-tile tile btn btn-default">G1</button></div>
       </div>
-      <div class="row hidden-xs">
-        <div class="col-sm-2"><button class="TA1-tile tile btn btn-default">TA1</button></div>
-        <div class="col-sm-2"><button class="TB1-tile tile btn btn-default">TB1</button></div>
-        <div class="col-sm-2"><button class="TC1-tile tile btn btn-default">TC1</button></div>
-        <div class="col-sm-2"><button class="TD1-tile tile btn btn-default">TD1</button></div>
-        <div class="col-sm-2"><button class="TE1-tile tile btn btn-default">TE1</button></div>
-        <div class="col-sm-2"><button class="TF1-tile tile btn btn-default">TF1</button></div>
-        <div class="col-sm-2"><button class="TG1-tile tile btn btn-default">TG1</button></div>
+      <div class="row row-horizon hidden-xs">
+        <div class="col-sm-1"><button class="TA1-tile tile btn btn-default">TA1</button></div>
+        <div class="col-sm-1"><button class="TB1-tile tile btn btn-default">TB1</button></div>
+        <div class="col-sm-1"><button class="TC1-tile tile btn btn-default">TC1</button></div>
+        <div class="col-sm-1"><button class="TD1-tile tile btn btn-default">TD1</button></div>
+        <div class="col-sm-1"><button class="TE1-tile tile btn btn-default">TE1</button></div>
+        <div class="col-sm-1"><button class="TF1-tile tile btn btn-default">TF1</button></div>
+        <div class="col-sm-1"><button class="TG1-tile tile btn btn-default">TG1</button></div>
       </div>
-      <div class="row hidden-sm hidden-xs">
-        <div class="col-sm-2"><button class="TAA1-tile tile btn btn-default">TAA1</button></div>
-        <div class="col-sm-2"><button class="TBB1-tile tile btn btn-default" disabled="disabled">TBB1</button></div>
-        <div class="col-sm-2"><button class="TCC1-tile tile btn btn-default">TCC1</button></div>
-        <div class="col-sm-2"><button class="TDD1-tile tile btn btn-default" disabled="disabled">TDD1</button></div>
-        <div class="col-sm-2"><button class="TEE1-tile tile btn btn-default" disabled="disabled">TEE1</button></div>
-        <div class="col-sm-2"><button class="TFF1-tile tile btn btn-default" disabled="disabled">TFF1</button></div>
-        <div class="col-sm-2"><button class="TGG1-tile tile btn btn-default" disabled="disabled">TGG1</button></div>
+      <div class="row row-horizon hidden-sm hidden-xs">
+        <div class="col-sm-1"><button class="TAA1-tile tile btn btn-default">TAA1</button></div>
+        <div class="col-sm-1"><button class="TBB1-tile tile btn btn-default" disabled="disabled">TBB1</button></div>
+        <div class="col-sm-1"><button class="TCC1-tile tile btn btn-default">TCC1</button></div>
+        <div class="col-sm-1"><button class="TDD1-tile tile btn btn-default" disabled="disabled">TDD1</button></div>
+        <div class="col-sm-1"><button class="TEE1-tile tile btn btn-default" disabled="disabled">TEE1</button></div>
+        <div class="col-sm-1"><button class="TFF1-tile tile btn btn-default" disabled="disabled">TFF1</button></div>
+        <div class="col-sm-1"><button class="TGG1-tile tile btn btn-default" disabled="disabled">TGG1</button></div>
       </div>
     </div>
   </div>
@@ -287,149 +283,37 @@ Contribute here
     </div>
   </div>
   <!-- quick selection evening slot -->
-  <div id="quick-selection" class="row-horizon">
+  <div id="quick-selection">
     <div class="container">
-      <div class="row">
-        <div class="col-sm-2"><button class="A2-tile tile btn btn-default">A2</button></div>
-        <div class="col-sm-2"><button class="B2-tile tile btn btn-default">B2</button></div>
-        <div class="col-sm-2"><button class="C2-tile tile btn btn-default">C2</button></div>
-        <div class="col-sm-2"><button class="D2-tile tile btn btn-default">D2</button></div>
-        <div class="col-sm-2"><button class="E2-tile tile btn btn-default">E2</button></div>
-        <div class="col-sm-2"><button class="F2-tile tile btn btn-default">F2</button></div>
-        <div class="col-sm-2"><button class="G2-tile tile btn btn-default">G2</button></div>
+      <div class="row row-horizon">
+        <div class="col-sm-1"><button class="A2-tile tile btn btn-default">A2</button></div>
+        <div class="col-sm-1"><button class="B2-tile tile btn btn-default">B2</button></div>
+        <div class="col-sm-1"><button class="C2-tile tile btn btn-default">C2</button></div>
+        <div class="col-sm-1"><button class="D2-tile tile btn btn-default">D2</button></div>
+        <div class="col-sm-1"><button class="E2-tile tile btn btn-default">E2</button></div>
+        <div class="col-sm-1"><button class="F2-tile tile btn btn-default">F2</button></div>
+        <div class="col-sm-1"><button class="G2-tile tile btn btn-default">G2</button></div>
       </div>
-      <div class="row hidden-xs">
-        <div class="col-sm-2"><button class="TA2-tile tile btn btn-default">TA2</button></div>
-        <div class="col-sm-2"><button class="TB2-tile tile btn btn-default">TB2</button></div>
-        <div class="col-sm-2"><button class="TC2-tile tile btn btn-default">TC2</button></div>
-        <div class="col-sm-2"><button class="TD2-tile tile btn btn-default">TD2</button></div>
-        <div class="col-sm-2"><button class="TE2-tile tile btn btn-default">TE2</button></div>
-        <div class="col-sm-2"><button class="TF2-tile tile btn btn-default">TF2</button></div>
-        <div class="col-sm-2"><button class="TG2-tile tile btn btn-default">TG2</button></div>
+      <div class="row row-horizon hidden-xs">
+        <div class="col-sm-1"><button class="TA2-tile tile btn btn-default">TA2</button></div>
+        <div class="col-sm-1"><button class="TB2-tile tile btn btn-default">TB2</button></div>
+        <div class="col-sm-1"><button class="TC2-tile tile btn btn-default">TC2</button></div>
+        <div class="col-sm-1"><button class="TD2-tile tile btn btn-default">TD2</button></div>
+        <div class="col-sm-1"><button class="TE2-tile tile btn btn-default">TE2</button></div>
+        <div class="col-sm-1"><button class="TF2-tile tile btn btn-default">TF2</button></div>
+        <div class="col-sm-1"><button class="TG2-tile tile btn btn-default">TG2</button></div>
       </div>
-      <div class="row hidden-sm hidden-xs">
-        <div class="col-sm-2"><button class="TAA2-tile tile btn btn-default">TAA2</button></div>
-        <div class="col-sm-2"><button class="TBB2-tile tile btn btn-default">TBB2</button></div>
-        <div class="col-sm-2"><button class="TCC2-tile tile btn btn-default">TCC2</button></div>
-        <div class="col-sm-2"><button class="TDD2-tile tile btn btn-default">TDD2</button></div>
-        <div class="col-sm-2"><button class="TEE2-tile tile btn btn-default" disabled="disabled">TEE2</button></div>
-        <div class="col-sm-2"><button class="TFF2-tile tile btn btn-default" disabled="disabled">TFF2</button></div>
-        <div class="col-sm-2"><button class="TGG2-tile tile btn btn-default" disabled="disabled">TGG2</button></div>
+      <div class="row row-horizon hidden-sm hidden-xs">
+        <div class="col-sm-1"><button class="TAA2-tile tile btn btn-default">TAA2</button></div>
+        <div class="col-sm-1"><button class="TBB2-tile tile btn btn-default">TBB2</button></div>
+        <div class="col-sm-1"><button class="TCC2-tile tile btn btn-default">TCC2</button></div>
+        <div class="col-sm-1"><button class="TDD2-tile tile btn btn-default">TDD2</button></div>
+        <div class="col-sm-1"><button class="TEE2-tile tile btn btn-default" disabled="disabled">TEE2</button></div>
+        <div class="col-sm-1"><button class="TFF2-tile tile btn btn-default" disabled="disabled">TFF2</button></div>
+        <div class="col-sm-1"><button class="TGG2-tile tile btn btn-default" disabled="disabled">TGG2</button></div>
       </div>
     </div>
   </div>
-  <!-- testing timetable -->
-  <!-- TimeTable -->
-  <!--<div class="container-fluid">
-    <div class="row table-custom">
-      <div class="inner" style="margin:auto;">
-        <div class="row text-center">
-          <div class="col-xs-1 ColumnOneDays" style="padding-top:10px; padding-bottom:10px;">THEORY HOURS</div>
-          <div class="col-xs-1 TheoryHours">08:00AM to 08:50AM</div>
-          <div class="col-xs-1 TheoryHours">09:00AM to 09:50AM</div>
-          <div class="col-xs-1 TheoryHours">10:00AM to 10:50AM</div>
-          <div class="col-xs-1 TheoryHours">11:00AM to 11:50AM</div>
-          <div class="col-xs-1 TheoryHours">12:00PM to 12:50PM</div>
-          <div class="col-xs-1 TheoryHours" style="padding:30px;"></div>
-          <div class="col-xs-1" style="padding-top:30.5px; padding-bottom:30.5px; border-top: 1px solid black; background-color: #C0C0C0;"></div>
-          <div class="col-xs-1 TheoryHours">02:00PM to 02:50PM</div>
-          <div class="col-xs-1 TheoryHours">03:00PM to 03:50PM</div>
-          <div class="col-xs-1 TheoryHours">04:00PM to 04:50PM</div>
-          <div class="col-xs-1 TheoryHours">05:00PM to 05:50PM</div>
-          <div class="col-xs-1 TheoryHours">06:00PM to 06:50PM</div>
-          <div class="col-xs-1 TheoryHours" style="padding:30px;"></div>
-        </div>
-        <div class="row text-center">
-          <div class="col-xs-1 ColumnOneDays" style="padding-top:10px; padding-bottom:10px;">LAB HOURS</div>
-          <div class="col-xs-2 LabHours" style="padding-top:20px; padding-bottom:20px;">08:00AM to 09:40AM</div>
-          <div class="col-xs-2 LabHours" style="padding-top:20px; padding-bottom:20px;">10:00AM to 11:40AM</div>
-          <div class="col-xs-2 LabHours" style="padding-top:20px; padding-bottom:20px;">11:50AM to 01:30PM</div>
-          <div class="col-xs-1" style="padding-top:30.5px; padding-bottom:31px; background-color: #C0C0C0;"></div>
-          <div class="col-xs-2 LabHours" style="padding-top:20px; padding-bottom:20px;">02:00PM to 03:40PM</div>
-          <div class="col-xs-2 LabHours" style="padding-top:20px; padding-bottom:20px;">04:00PM to 05:40PM</div>
-          <div class="col-xs-2 LabHours" style="padding-top:20px; padding-bottom:20px;">05:50PM to 07:30PM</div>
-        </div>
-        <div class="row text-center">
-          <div class="col-xs-1 ColumnOneDays" style="padding-top:20px; padding-bottom:20px;">MON</div>
-          <div id="A1-id" class="col-xs-1 TimetableContent A1" style="padding-top:20px; padding-bottom:20px;">A1 / L1</div>
-          <div class="col-xs-1 TimetableContent F1" style="padding-top:20px; padding-bottom:20px;">F1 / L2</div>
-          <div class="col-xs-1 TimetableContent D1" style="padding-top:20px; padding-bottom:20px;">D1 / L3</div>
-          <div class="col-xs-1 TimetableContent TB1" style="padding-top:20px; padding-bottom:20px;">TB1 / L4</div>
-          <div class="col-xs-1 TimetableContent TG1" style="padding-top:20px; padding-bottom:20px;">TG1 / L5</div>
-          <div class="col-xs-1 TimetableContent" style="padding-top:20px; padding-bottom:20px;">L6</div>
-          <div class="col-xs-1" style="padding-top:30.5px; padding-bottom:31px; background-color: #C0C0C0;"></div>
-          <div class="col-xs-1 TimetableContent A2" style="padding-top:20px; padding-bottom:20px;">A2 / L31</div>
-          <div class="col-xs-1 TimetableContent F2" style="padding-top:20px; padding-bottom:20px;">F2 / L32</div>
-          <div class="col-xs-1 TimetableContent D2" style="padding-top:20px; padding-bottom:20px;">D2 / L33</div>
-          <div class="col-xs-1 TimetableContent TB2" style="padding-top:10px; padding-bottom:10px;">TB2 / L34</div>
-          <div class="col-xs-1 TimetableContent TG2" style="padding-top:10px; padding-bottom:10px;">TG2 / L35</div>
-          <div class="col-xs-1 TimetableContent" style="padding-top:20px; padding-bottom:20px;">L36</div>
-        </div>
-        <div class="row text-center">
-          <div class="col-xs-1 ColumnOneDays" style="padding-top:20px; padding-bottom:20px;">TUE</div>
-          <div class="col-xs-1 TimetableContent B1" style="padding-top:20px; padding-bottom:20px;">B1 / L7</div>
-          <div class="col-xs-1 TimetableContent G1" style="padding-top:20px; padding-bottom:20px;">G1 / L8</div>
-          <div class="col-xs-1 TimetableContent E1" style="padding-top:20px; padding-bottom:20px;">E1 / L9</div>
-          <div class="col-xs-1 TimetableContent TC1" style="padding-top:10px; padding-bottom:10px;">TC1 / L10</div>
-          <div class="col-xs-1 TimetableContent TAA1" style="padding-top:10px; padding-bottom:10px;">TAA1 / L11</div>
-          <div class="col-xs-1 TimetableContent" style="padding-top:20px; padding-bottom:20px;">L12</div>
-          <div class="col-xs-1" style="padding-top:30.5px; padding-bottom:31px; background-color: #C0C0C0;"></div>
-          <div class="col-xs-1 TimetableContent B2" style="padding-top:20px; padding-bottom:20px;">B2 / L37</div>
-          <div class="col-xs-1 TimetableContent G2" style="padding-top:20px; padding-bottom:20px;">G2 / L38</div>
-          <div class="col-xs-1 TimetableContent E2" style="padding-top:20px; padding-bottom:20px;">E2 / L39</div>
-          <div class="col-xs-1 TimetableContent TC2" style="padding-top:10px; padding-bottom:10px;">TC2 / L40</div>
-          <div class="col-xs-1 TimetableContent TAA2" style="padding-top:10px; padding-bottom:10px;">TAA2 / L41</div>
-          <div class="col-xs-1 TimetableContent" style="padding-top:20px; padding-bottom:20px;">L42</div>
-        </div>
-        <div class="row text-center">
-          <div class="col-xs-1 ColumnOneDays" style="padding-top:20px; padding-bottom:20px;">WED</div>
-          <div class="col-xs-1 TimetableContent C1" style="padding-top:20px; padding-bottom:20px;">C1 / L13</div>
-          <div class="col-xs-1 TimetableContent A1" style="padding-top:20px; padding-bottom:20px;">A1 / L14</div>
-          <div class="col-xs-1 TimetableContent F1" style="padding-top:20px; padding-bottom:20px;">F1</div>
-          <div class="col-xs-3" style="padding-top:20px; padding-bottom:20px; color: grey; background-color: #FFFFCC; border: 1px solid black; cursor: default;">Extramural Hour</div>
-          <div class="col-xs-1" style="font-weight:bold; padding-bottom:41.5px; background-color:#C0C0C0;">LUNCH</div>
-          <div class="col-xs-1 TimetableContent C2" style="padding-top:20px; padding-bottom:20px;">C2 / L43</div>
-          <div class="col-xs-1 TimetableContent A2" style="padding-top:20px; padding-bottom:20px;">A2 / L44</div>
-          <div class="col-xs-1 TimetableContent F2" style="padding-top:20px; padding-bottom:20px;">F2 / L45</div>
-          <div class="col-xs-1 TimetableContent TD2" style="padding-top:10px; padding-bottom:10px;">TD2 / L46</div>
-          <div class="col-xs-1 TimetableContent TBB2" style="padding-top:10px; padding-bottom:10px;">TBB2 / L47</div>
-          <div class="col-xs-1 TimetableContent" style="padding-top:20px; padding-bottom:20px;">L48</div>
-        </div>
-        <div class="row text-center">
-          <div class="col-xs-1 ColumnOneDays" style="padding-top:20px; padding-bottom:20px;">THU</div>
-          <div class="col-xs-1 TimetableContent D1" style="padding-top:20px; padding-bottom:20px;">D1 / L19</div>
-          <div class="col-xs-1 TimetableContent B1" style="padding-top:20px; padding-bottom:20px;">B1 / L20</div>
-          <div class="col-xs-1 TimetableContent G1" style="padding-top:20px; padding-bottom:20px;">G1 / L21</div>
-          <div class="col-xs-1 TimetableContent TE1" style="padding-top:10px; padding-bottom:10px;">TE1 / L22</div>
-          <div class="col-xs-1 TimetableContent TCC1" style="padding-top:10px; padding-bottom:10px;">TCC1 / L23</div>
-          <div class="col-xs-1 TimetableContent" style="padding-top:20px; padding-bottom:20px;">L24</div>
-          <div class="col-xs-1" style="padding-top:30.5px; padding-bottom:31px; background-color: #C0C0C0;"></div>
-          <div class="col-xs-1 TimetableContent D2" style="padding-top:20px; padding-bottom:20px;">D2 / L49</div>
-          <div class="col-xs-1 TimetableContent B2" style="padding-top:20px; padding-bottom:20px;">B2 / L50</div>
-          <div class="col-xs-1 TimetableContent G2" style="padding-top:20px; padding-bottom:20px;">G2 / L51</div>
-          <div class="col-xs-1 TimetableContent TE2" style="padding-top:10px; padding-bottom:10px;">TE2 / L52</div>
-          <div class="col-xs-1 TimetableContent TCC2" style="padding-top:10px; padding-bottom:10px;">TCC2 / L53</div>
-          <div class="col-xs-1 TimetableContent" style="padding-top:20px; padding-bottom:20px;">L54</div>
-        </div>
-        <div class="row text-center">
-          <div class="col-xs-1 ColumnOneDays" style="padding-top:20px; padding-bottom:20px;">FRI</div>
-          <div class="col-xs-1 TimetableContent E1" style="padding-top:20px; padding-bottom:20px;">E1 / L25</div>
-          <div class="col-xs-1 TimetableContent C1" style="padding-top:20px; padding-bottom:20px;">C1 / L26</div>
-          <div class="col-xs-1 TimetableContent TA1" style="padding-top:20px; padding-bottom:20px;">TA1 / L27</div>
-          <div class="col-xs-1 TimetableContent TF1" style="padding-top:10px; padding-bottom:10px;">TF1 / L28</div>
-          <div class="col-xs-1 TimetableContent TD1" style="padding-top:10px; padding-bottom:10px;">TD1 / L29</div>
-          <div class="col-xs-1 TimetableContent" style="padding-top:20px; padding-bottom:20px;">L30</div>
-          <div class="col-xs-1" style="padding:30.5px; border-bottom: 1px solid black; background-color: #C0C0C0;"></div>
-          <div class="col-xs-1 TimetableContent E2" style="padding-top:20px; padding-bottom:20px;">E2 / L55</div>
-          <div class="col-xs-1 TimetableContent C2" style="padding-top:20px; padding-bottom:20px;">C2 / L56</div>
-          <div class="col-xs-1 TimetableContent TA2" style="padding-top:20px; padding-bottom:20px;">TA2 / L57</div>
-          <div class="col-xs-1 TimetableContent TF2" style="padding-top:10px; padding-bottom:10px;">TF2 / L58</div>
-          <div class="col-xs-1 TimetableContent TDD2" style="padding-top:10px; padding-bottom:10px;">TDD2 / L59</div>
-          <div class="col-xs-1 TimetableContent" style="padding-top:20px; padding-bottom:20px;">L60</div>
-        </div>
-      </div>
-    </div>
-  </div>-->
   <!-- Input slot string to highlight the slots -->
   <div class="container">
     <div class="row" id="slot-sel-area">
@@ -437,39 +321,39 @@ Contribute here
         <div class="panel-body">
           <div class="form-horizontal">
             <!--Reset button-->
-            <div class="form-group form-group-md col-xs-14">
-              <div class="btn-group col-sm-offset-4 col-sm-10">
+            <div class="form-group form-group-md col-xs-12">
+              <div class="btn-group col-sm-offset-4 col-sm-8">
                 <button type="button" id="toggleClickToSelect" data-toggle="button" class="btn btn-danger" data-state="enabled">Disable clicking on timetable</button>
                 <button id="resetButton" type="button" class="btn btn-success" onclick="resetTimeTable()">Reset</button>
               </div>
             </div>
-            <div class="form-group form-group-md col-xs-14">
-              <label for="inputSlotString" class="col-sm-4 control-label">Slot:</label>
-              <div class="col-sm-10">
+            <div class="form-group form-group-md col-xs-12">
+              <label for="inputSlotString" class="col-sm-3 control-label">Slot:</label>
+              <div class="col-sm-9">
                 <input type="text" placeholder="eg: L1+L2+L3" class="form-control" id="inputSlotString">
               </div>
               <!-- input-group -->
             </div>
             <!-- form-group -->
-            <div class="form-group form-group-md col-xs-14">
-              <label for="inputCourseTitle" class="col-sm-4 control-label">Course name:</label>
-              <div class="col-sm-10">
+            <div class="form-group form-group-md col-xs-12">
+              <label for="inputCourseTitle" class="col-sm-3 control-label">Course name:</label>
+              <div class="col-sm-9">
                 <input type="text" class="form-control" placeholder="Basic French" id="inputCourseTitle">
               </div>
             </div>
-            <div class="form-group form-group-md col-xs-14">
-              <label for="inputFaculty" class="col-sm-4 control-label">Faculty name:</label>
-              <div class="col-sm-10">
+            <div class="form-group form-group-md col-xs-12">
+              <label for="inputFaculty" class="col-sm-3 control-label">Faculty name:</label>
+              <div class="col-sm-9">
                 <input type="text" class="form-control" placeholder="John Doe" id="inputFaculty">
               </div>
             </div>
-            <div class="form-group form-group-md col-xs-14">
-              <label for="inputCourseCredits" class="col-sm-4 control-label">Credits:</label>
-              <div class="col-sm-10">
+            <div class="form-group form-group-md col-xs-12">
+              <label for="inputCourseCredits" class="col-sm-3 control-label">Credits:</label>
+              <div class="col-sm-9">
                 <input type="number" class="form-control" placeholder="4" id="inputCourseCredits">
               </div>
             </div>
-            <div class="col-xs-14">
+            <div class="col-xs-12">
               <button type="button" id="markBtn" class="btn btn-success col-sm-offset-4">Add Course</button>
             </div>
           </div>
@@ -478,8 +362,8 @@ Contribute here
         <ul class="list-group">
           <li class="list-group-item list-group-item-info total">
             <div class="row">
-              <span class="col-xs-7 text-right"><strong>Total Credits:</strong></span>
-              <span class="col-xs-7 text-left"><span class="badge">0</span></span>
+              <span class="col-xs-6 text-right"><strong>Total Credits:</strong></span>
+              <span class="col-xs-6 text-left"><span class="badge">0</span></span>
             </div>
           </li>
         </ul>
@@ -494,20 +378,21 @@ Contribute here
     </div>-->
     <div class="row" style="margin-bottom:20px;">
       <!-- Workspace -->
-      <div class="col-sm-7 hidden-sm hidden-xs" style="padding-top:40px;"><textarea class="form-control" id="workspace" style="font-size:22px;" rows="15" placeholder="Workspace" required></textarea></div>
+      <div class="col-md-6 hidden-sm hidden-xs" style="padding-top:40px;"><textarea class="form-control" id="workspace" style="font-size:22px;" rows="15" placeholder="Workspace" required></textarea></div>
       <!--Facebook comments-->
-      <div class="col-sm-7">
+      <div class="col-md-6 col-xs-12">
         <div id="fb-comment-id" class="fb-comments" data-href="http://ffcsonthego.azurewebsites.net" data-width="100%" data-numposts="5"
           data-order-by="reverse_time"></div>
       </div>
     </div>
   </div>
+  <!--container-->
   <footer class="container-fluid text-center">
     <div class="row">
-      <div class="col-sm-7">
+      <div class="col-sm-6">
         Made with ♥ for VITians. See <a href="https://github.com/VaTz88/FFCS-on-The-Go/graphs/contributors" target="_blank">Credits/Developers</a>.
       </div>
-      <div class="col-sm-7">
+      <div class="col-sm-6">
         This project is an open source initiative. See on <a href="https://github.com/VaTz88/VIT-Time-Table-Visualizer" target="_blank">GitHub</a>.
       </div>
     </div>
@@ -535,53 +420,6 @@ Contribute here
       }
     }
   </script>
-  <!-- Tour tips -->
-  <ol id="joyRideTipContent">
-    <li data-text="Start">
-      <h1>Welcome to FFCS On The Go!</h1>
-      <h3 style="padding-bottom:15px;padding-top:5px;">Take a tour.</h3>
-    </li>
-    <li data-id="A1-id" data-button="Next">
-      <h4>Easy slot selection</h4>
-      <p>Click the slot to select.</p>
-    </li>
-    <li data-id="A1-tile-id" data-button="Next">
-      <h4>Quick selection</h4>
-      <p>Click the slot tile to select all at once.</p>
-    </li>
-    <li data-id="resetButton" data-button="Next" data-options="tipLocation:left">
-      <h4>Easy reset</h4>
-      <p>Click reset button to clear all selections</p>
-    </li>
-    <li data-id="ExcelSheet" data-button="Next" data-options="tipLocation:top">
-      <h4>Excel sheet is here!</h4>
-      <p>Search and filter courses, slots and faculties.</p>
-    </li>
-    <li data-id="slot-sel-area" data-button="Next" data-options="tipLocation:right">
-      <h4 style="padding-bottom:15px;padding-top:5px;">Copy past slot from excel sheet to select.</h4>
-    </li>
-    <li data-id="workspace" data-button="Next" data-options="tipLocation:top">
-      <h4>Workspace</h4>
-      <p>Keep notes while making your timetable</p>
-    </li>
-    <li data-id="fb-comment-id" data-button="Next" data-options="tipLocation:top">
-      <h4>Interact with others</h4>
-      <p>Comment here, ask queries or give feedback.</p>
-    </li>
-    <li data-id="fb-like-share" data-button="Done">
-      <h3 style="padding-bottom:15px;padding-top:5px;">Like and Share</h3>
-    </li>
-  </ol>
-  <!-- Launching joyride when to page is loaded -->
-  <!--<script>
-    $(window).load(function() {
-      $("#joyRideTipContent").joyride({
-        autoStart : true,
-        modal : false,
-        expose : true
-      });
-    });
-  </script>-->
 </body>
 
 </html>

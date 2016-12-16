@@ -10,7 +10,7 @@ Contribute here
 <html lang="en">
 
 <head>
-  <title>FFCS On The Go!</title>
+  <title>FFCSonTheGo!</title>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=Edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -31,6 +31,8 @@ Contribute here
   <!--Bootstrap CDN -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-horizon/0.1.1/bootstrap-horizon.min.css" />
+  <!-- html2canvas -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.min.js"></script>
   <!-- CSS -->
   <link rel="stylesheet" href="style.css" />
 </head>
@@ -82,51 +84,59 @@ Contribute here
       </div>
     </div>
     <div class="row">
-      <span id="site_heading">VIT Timetable Visualizer</span>
+      <span class="col-md-8 col-xs-12" id="site_heading">VIT Timetable Visualizer</span>
       <!--Like and Share Facebook buttons-->
-      <div class="text-right">
-        <div id="fb-like-share" class="fb-like" data-href="http://ffcsonthego.azurewebsites.net/" data-layout="button_count" data-action="like"
-          data-size="large" data-show-faces="false" data-share="true"></div>
-      </div>
+      <span class="text-right col-md-4 col-xs-12">
+        <span id="fb-like-share" class="fb-like" data-href="http://ffcsonthego.azurewebsites.net/" data-layout="button_count" data-action="like"
+          data-size="large" data-show-faces="false" data-share="true"></span>
+      </span>
     </div>
   </header>
   <hr>
+  <!-- option buttons -->
+  <div class="container">
+    <div class="row text-center">
+      <button type="button" id="takeScreenShot" class="btn btn-primary">Take Timetable Screenshot</button>
+      <button type="button" id="toggleClickToSelect" data-toggle="button" class="btn btn-danger" data-state="enabled">Disable Clicking On Timetable</button>
+      <button type="button" id="resetButton" class="btn btn-success" onclick="resetTimeTable()">Reset</button>
+    </div>
+  </div>
   <!-- Quick selection tiles -->
   <div id="quick-selection" class="row-horizon">
     <div class="container">
       <div class="row row-horizon">
-        <div class="col-sm-1"><button class="A1-tile tile btn btn-default">A1</button></div>
-        <div class="col-sm-1"><button class="B1-tile tile btn btn-default">B1</button></div>
-        <div class="col-sm-1"><button class="C1-tile tile btn btn-default">C1</button></div>
-        <div class="col-sm-1"><button class="D1-tile tile btn btn-default">D1</button></div>
-        <div class="col-sm-1"><button class="E1-tile tile btn btn-default">E1</button></div>
-        <div class="col-sm-1"><button class="F1-tile tile btn btn-default">F1</button></div>
-        <div class="col-sm-1"><button class="G1-tile tile btn btn-default">G1</button></div>
+        <div class="col-sm-1"><button class="A1-tile tile btn btn-default btn-block">A1</button></div>
+        <div class="col-sm-1"><button class="B1-tile tile btn btn-default btn-block">B1</button></div>
+        <div class="col-sm-1"><button class="C1-tile tile btn btn-default btn-block">C1</button></div>
+        <div class="col-sm-1"><button class="D1-tile tile btn btn-default btn-block">D1</button></div>
+        <div class="col-sm-1"><button class="E1-tile tile btn btn-default btn-block">E1</button></div>
+        <div class="col-sm-1"><button class="F1-tile tile btn btn-default btn-block">F1</button></div>
+        <div class="col-sm-1"><button class="G1-tile tile btn btn-default btn-block">G1</button></div>
       </div>
       <div class="row row-horizon">
-        <div class="col-sm-1"><button class="TA1-tile tile btn btn-default">TA1</button></div>
-        <div class="col-sm-1"><button class="TB1-tile tile btn btn-default">TB1</button></div>
-        <div class="col-sm-1"><button class="TC1-tile tile btn btn-default">TC1</button></div>
-        <div class="col-sm-1"><button class="TD1-tile tile btn btn-default">TD1</button></div>
-        <div class="col-sm-1"><button class="TE1-tile tile btn btn-default">TE1</button></div>
-        <div class="col-sm-1"><button class="TF1-tile tile btn btn-default">TF1</button></div>
-        <div class="col-sm-1"><button class="TG1-tile tile btn btn-default">TG1</button></div>
+        <div class="col-sm-1"><button class="TA1-tile tile btn btn-default btn-block">TA1</button></div>
+        <div class="col-sm-1"><button class="TB1-tile tile btn btn-default btn-block">TB1</button></div>
+        <div class="col-sm-1"><button class="TC1-tile tile btn btn-default btn-block">TC1</button></div>
+        <div class="col-sm-1"><button class="TD1-tile tile btn btn-default btn-block">TD1</button></div>
+        <div class="col-sm-1"><button class="TE1-tile tile btn btn-default btn-block">TE1</button></div>
+        <div class="col-sm-1"><button class="TF1-tile tile btn btn-default btn-block">TF1</button></div>
+        <div class="col-sm-1"><button class="TG1-tile tile btn btn-default btn-block">TG1</button></div>
       </div>
       <div class="row row-horizon">
-        <div class="col-sm-1"><button class="TAA1-tile tile btn btn-default">TAA1</button></div>
-        <div class="col-sm-1"><button class="TBB1-tile tile btn btn-default" disabled="disabled">TBB1</button></div>
-        <div class="col-sm-1"><button class="TCC1-tile tile btn btn-default">TCC1</button></div>
-        <div class="col-sm-1"><button class="TDD1-tile tile btn btn-default" disabled="disabled">TDD1</button></div>
-        <div class="col-sm-1"><button class="TEE1-tile tile btn btn-default" disabled="disabled">TEE1</button></div>
-        <div class="col-sm-1"><button class="TFF1-tile tile btn btn-default" disabled="disabled">TFF1</button></div>
-        <div class="col-sm-1"><button class="TGG1-tile tile btn btn-default" disabled="disabled">TGG1</button></div>
+        <div class="col-sm-1"><button class="TAA1-tile tile btn btn-default btn-block">TAA1</button></div>
+        <div class="col-sm-1"><button class="TBB1-tile tile btn btn-default btn-block" disabled="disabled">TBB1</button></div>
+        <div class="col-sm-1"><button class="TCC1-tile tile btn btn-default btn-block">TCC1</button></div>
+        <div class="col-sm-1"><button class="TDD1-tile tile btn btn-default btn-block" disabled="disabled">TDD1</button></div>
+        <div class="col-sm-1"><button class="TEE1-tile tile btn btn-default btn-block" disabled="disabled">TEE1</button></div>
+        <div class="col-sm-1"><button class="TFF1-tile tile btn btn-default btn-block" disabled="disabled">TFF1</button></div>
+        <div class="col-sm-1"><button class="TGG1-tile tile btn btn-default btn-block" disabled="disabled">TGG1</button></div>
       </div>
     </div>
   </div>
   <!-- testing timetable-->
   <div class="container-fluid text-center">
     <div class="row table-responsive">
-      <table class="table table-bordered">
+      <table id="timetable" class="table table-bordered">
         <tr>
           <td class="ColumnOneDays">THEORY HOURS</td>
           <td class="TheoryHours">08:00 AM<br>to<br>08:50 AM</td>
@@ -286,47 +296,43 @@ Contribute here
   <div id="quick-selection">
     <div class="container">
       <div class="row row-horizon">
-        <div class="col-sm-1"><button class="A2-tile tile btn btn-default">A2</button></div>
-        <div class="col-sm-1"><button class="B2-tile tile btn btn-default">B2</button></div>
-        <div class="col-sm-1"><button class="C2-tile tile btn btn-default">C2</button></div>
-        <div class="col-sm-1"><button class="D2-tile tile btn btn-default">D2</button></div>
-        <div class="col-sm-1"><button class="E2-tile tile btn btn-default">E2</button></div>
-        <div class="col-sm-1"><button class="F2-tile tile btn btn-default">F2</button></div>
-        <div class="col-sm-1"><button class="G2-tile tile btn btn-default">G2</button></div>
+        <div class="col-sm-1"><button class="A2-tile tile btn btn-default btn-block">A2</button></div>
+        <div class="col-sm-1"><button class="B2-tile tile btn btn-default btn-block">B2</button></div>
+        <div class="col-sm-1"><button class="C2-tile tile btn btn-default btn-block">C2</button></div>
+        <div class="col-sm-1"><button class="D2-tile tile btn btn-default btn-block">D2</button></div>
+        <div class="col-sm-1"><button class="E2-tile tile btn btn-default btn-block">E2</button></div>
+        <div class="col-sm-1"><button class="F2-tile tile btn btn-default btn-block">F2</button></div>
+        <div class="col-sm-1"><button class="G2-tile tile btn btn-default btn-block">G2</button></div>
       </div>
       <div class="row row-horizon">
-        <div class="col-sm-1"><button class="TA2-tile tile btn btn-default">TA2</button></div>
-        <div class="col-sm-1"><button class="TB2-tile tile btn btn-default">TB2</button></div>
-        <div class="col-sm-1"><button class="TC2-tile tile btn btn-default">TC2</button></div>
-        <div class="col-sm-1"><button class="TD2-tile tile btn btn-default">TD2</button></div>
-        <div class="col-sm-1"><button class="TE2-tile tile btn btn-default">TE2</button></div>
-        <div class="col-sm-1"><button class="TF2-tile tile btn btn-default">TF2</button></div>
-        <div class="col-sm-1"><button class="TG2-tile tile btn btn-default">TG2</button></div>
+        <div class="col-sm-1"><button class="TA2-tile tile btn btn-default btn-block">TA2</button></div>
+        <div class="col-sm-1"><button class="TB2-tile tile btn btn-default btn-block">TB2</button></div>
+        <div class="col-sm-1"><button class="TC2-tile tile btn btn-default btn-block">TC2</button></div>
+        <div class="col-sm-1"><button class="TD2-tile tile btn btn-default btn-block">TD2</button></div>
+        <div class="col-sm-1"><button class="TE2-tile tile btn btn-default btn-block">TE2</button></div>
+        <div class="col-sm-1"><button class="TF2-tile tile btn btn-default btn-block">TF2</button></div>
+        <div class="col-sm-1"><button class="TG2-tile tile btn btn-default btn-block">TG2</button></div>
       </div>
       <div class="row row-horizon">
-        <div class="col-sm-1"><button class="TAA2-tile tile btn btn-default">TAA2</button></div>
-        <div class="col-sm-1"><button class="TBB2-tile tile btn btn-default">TBB2</button></div>
-        <div class="col-sm-1"><button class="TCC2-tile tile btn btn-default">TCC2</button></div>
-        <div class="col-sm-1"><button class="TDD2-tile tile btn btn-default">TDD2</button></div>
-        <div class="col-sm-1"><button class="TEE2-tile tile btn btn-default" disabled="disabled">TEE2</button></div>
-        <div class="col-sm-1"><button class="TFF2-tile tile btn btn-default" disabled="disabled">TFF2</button></div>
-        <div class="col-sm-1"><button class="TGG2-tile tile btn btn-default" disabled="disabled">TGG2</button></div>
+        <div class="col-sm-1"><button class="TAA2-tile tile btn btn-default btn-block">TAA2</button></div>
+        <div class="col-sm-1"><button class="TBB2-tile tile btn btn-default btn-block">TBB2</button></div>
+        <div class="col-sm-1"><button class="TCC2-tile tile btn btn-default btn-block">TCC2</button></div>
+        <div class="col-sm-1"><button class="TDD2-tile tile btn btn-default btn-block">TDD2</button></div>
+        <div class="col-sm-1"><button class="TEE2-tile tile btn btn-default btn-block" disabled="disabled">TEE2</button></div>
+        <div class="col-sm-1"><button class="TFF2-tile tile btn btn-default btn-block" disabled="disabled">TFF2</button></div>
+        <div class="col-sm-1"><button class="TGG2-tile tile btn btn-default btn-block" disabled="disabled">TGG2</button></div>
       </div>
     </div>
   </div>
   <!-- Input slot string to highlight the slots -->
   <div class="container">
     <div class="row" id="slot-sel-area">
-      <div class="panel panel-default">
+      <div class="panel panel-primary">
+        <div class="panel-heading text-center">
+          <h4>Add Courses To Timetable</h4>
+        </div>
         <div class="panel-body">
           <div class="form-horizontal">
-            <!--Reset button-->
-            <div class="form-group form-group-md col-xs-12">
-              <div class="btn-group col-sm-offset-4 col-sm-8">
-                <button type="button" id="toggleClickToSelect" data-toggle="button" class="btn btn-danger" data-state="enabled">Disable clicking on timetable</button>
-                <button id="resetButton" type="button" class="btn btn-success" onclick="resetTimeTable()">Reset</button>
-              </div>
-            </div>
             <div class="form-group form-group-md col-xs-12">
               <label for="inputSlotString" class="col-sm-3 control-label">Slot:</label>
               <div class="col-sm-9">
@@ -336,7 +342,7 @@ Contribute here
             </div>
             <!-- form-group -->
             <div class="form-group form-group-md col-xs-12">
-              <label for="inputCourseTitle" class="col-sm-3 control-label">Course name:</label>
+              <label for="inputCourseTitle" class="col-sm-3 control-label">Course code:</label>
               <div class="col-sm-9">
                 <input type="text" class="form-control" placeholder="Basic French" id="inputCourseTitle">
               </div>
@@ -390,33 +396,13 @@ Contribute here
   <footer class="container-fluid text-center">
     <div class="row">
       <div class="col-sm-12">
-        Made with ♥ for VITians. See <a href="https://github.com/VaTz88/FFCS-on-The-Go/graphs/contributors" target="_blank">Credits/Developers</a>.
+        Made with ♥ for VITians. See <a href="https://github.com/VaTz88/FFCS-on-The-Go/graphs/contributors" target="_blank">Contributors</a>.
       </div>
     </div>
   </footer>
+  <!-- js -->
   <script src="colorChange.js"></script>
-  <!-- disable hover for touch screen devices -->
-  <script type="text/javascript">
-    function removeHoverCSSRule() {
-      if ('createTouch' in document) {
-        try {
-          var ignore = /:hover/;
-          for (var i = 0; i < document.styleSheets.length; i++) {
-            var sheet = document.styleSheets[i];
-            if (!sheet.cssRules) {
-              continue;
-            }
-            for (var j = sheet.cssRules.length - 1; j >= 0; j--) {
-              var rule = sheet.cssRules[j];
-              if (rule.type === CSSRule.STYLE_RULE && ignore.test(rule.selectorText)) {
-                sheet.deleteRule(j);
-              }
-            }
-          }
-        } catch (e) {}
-      }
-    }
-  </script>
+  <script src="script.js"></script>
 </body>
 
 </html>

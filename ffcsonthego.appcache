@@ -1,0 +1,16 @@
+CACHE MANIFEST
+# 2016-12-17
+
+css/style.css
+js/script.js
+js/colorChange.js
+https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js
+https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css
+https://cdnjs.cloudflare.com/ajax/libs/bootstrap-horizon/0.1.1/bootstrap-horizon.min.css
+https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.min.js
+
+CACHE:
+images/favicon.png
+images/whatsapp.png
+images/icon192x192.png
+index.html

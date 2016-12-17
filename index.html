@@ -8,24 +8,32 @@ Contribute here
 -->
 <!DOCTYPE html>
 <html lang="en">
+<!-- TODO -->
+<!--
+    Add AppCache
+    http://docs.webplatform.org/wiki/apis/appcache/ApplicationCache
+    https://www.html5rocks.com/en/tutorials/appcache/beginner/
+  -->
 
 <head>
-  <title>FFCSonTheGo!</title>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=Edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <META NAME="author" CONTENT="Vatsal Joshi">
-  <META NAME="subject" CONTENT="Education">
-  <META NAME="Description" CONTENT="Visualize your timetable in most easy way. Make the most optimum timetable for yourself.">
-  <META NAME="Keywords" CONTENT="VIT, University, Vellore, FFCS, on, The, Go, TimeTable, Visualizer, course, registration">
-  <META NAME="distribution" CONTENT="Global">
-  <META NAME="country" CONTENT="India">
-  <meta property="og:title" content="FFCSonTheGo!">
-  <meta property="og:url" content="http://ffcsonthego.azurewebsites.net/">
-  <meta property="og:image" content="https://raw.githubusercontent.com/VaTz88/VIT-Time-Table-Visualizer/master/FFCSonTheGoMetaImg.png">
-  <meta property="og:description" content="Visualizeand make the most optimum timetable for yourself.">
-  <meta property="og:site_name" content="FFCSonTheGo">
-  <meta property="fb:app_id" content="1698400863751487">
+  <title>FFCSonTheGo!</title>
+  <link rel="icon" sizes="192x192" href="images/icon192x192.png">
+  <link rel="icon" href="images/favicon.png">
+  <meta name="author" content="Vatsal Joshi" />
+  <meta name="subject" content="Education" />
+  <meta name="Description" content="Visualize and make the most optimum timetable for yourself." />
+  <meta name="Keywords" content="VIT,University,Vellore,FFCS,course,registration,on,The,Go,timetable,visualizer" />
+  <meta name="distribution" content="Global" />
+  <meta name="country" content="India" />
+  <meta property="og:title" content="FFCSonTheGo!" />
+  <meta property="og:url" content="http://ffcsonthego.azurewebsites.net/" />
+  <meta property="og:image" content="images/og_image.png" />
+  <meta property="og:description" content="Visualizeand make the most optimum timetable for yourself." />
+  <meta property="og:site_name" content="FFCSonTheGo!" />
+  <meta property="fb:app_id" content="1698400863751487" />
   <!-- jQuery CDN -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <!--Bootstrap CDN -->
@@ -34,7 +42,7 @@ Contribute here
   <!-- html2canvas -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.min.js"></script>
   <!-- CSS -->
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 
 <body onload="removeHoverCSSRule()">
@@ -87,9 +95,13 @@ Contribute here
       <span class="col-md-8 col-xs-12" id="site_heading">VIT Timetable Visualizer</span>
       <!--Like and Share Facebook buttons-->
       <span class="text-right col-md-4 col-xs-12">
-        <span id="fb-like-share" class="fb-like" data-href="http://ffcsonthego.azurewebsites.net/" data-layout="button_count" data-action="like"
-          data-size="large" data-show-faces="false" data-share="true"></span>
+        <span id="fb-like-share" class="fb-like" data-href="http://ffcsonthego.azurewebsites.net/" data-layout="button_count" data-action="like" data-size="large" data-show-faces="false" data-share="true"></span>
       </span>
+      <!-- TODO -->
+      <!--
+        Add whatsapp share button
+        whatsapp://send?text=FFCS made hassle free! Check this out http://ffcsonthego.azurewebsites.net/
+      -->
     </div>
   </header>
   <hr>
@@ -401,8 +413,8 @@ Contribute here
     </div>
   </footer>
   <!-- js -->
-  <script src="colorChange.js"></script>
-  <script src="script.js"></script>
+  <script src="js/colorChange.js"></script>
+  <script src="js/script.js"></script>
 </body>
 
 </html>

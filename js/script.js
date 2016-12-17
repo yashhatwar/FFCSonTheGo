@@ -1,3 +1,5 @@
+$('#timetable_msg').hide(); // hide msg
+
 // disable hover for touch screen devices
 function removeHoverCSSRule() {
     if ('createTouch' in document) {
@@ -23,6 +25,7 @@ function removeHoverCSSRule() {
 $('#takeScreenShot').on('click', function () {
     var original_width = $('body').width();
     $('body').width('1500');
+    $('#timetable_msg').show();
     html2canvas(document.getElementById('timetable'), {
         onrendered: function (canvas) {
             var img_src = canvas.toDataURL("image/jpeg");
@@ -33,6 +36,7 @@ $('#takeScreenShot').on('click', function () {
                 '</body></html>';
             var newWindow = window.open();
             newWindow.document.write(data);
+            $('#timetable_msg').hide();
             $('body').width(original_width);
         }
     });

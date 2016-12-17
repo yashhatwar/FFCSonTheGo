@@ -462,3 +462,15 @@ div.slot-clash {
   margin-right: 0!important;
   margin-left: 0!important;
 }
+
+#timetable_msg {
+  color: black;
+  background-color: white;
+}
+
+#timetable_msg tr,
+#timetable_msg td {
+  padding: 0!important;
+  border-color: white!important;
+  margin: 0!important;
+}

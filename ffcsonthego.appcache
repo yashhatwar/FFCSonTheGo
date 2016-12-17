@@ -1,5 +1,6 @@
 CACHE MANIFEST
 # 2016-12-17
+# v1
 
 css/style.css
 js/script.js
@@ -8,6 +9,12 @@ https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js
 https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css
 https://cdnjs.cloudflare.com/ajax/libs/bootstrap-horizon/0.1.1/bootstrap-horizon.min.css
 https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.min.js
+
+NETWORK:
+*
+
+FALLBACK:
+/ /
 
 CACHE:
 images/favicon.png

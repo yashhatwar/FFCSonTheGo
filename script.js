@@ -21,6 +21,8 @@ function removeHoverCSSRule() {
 
 // take timetable screenshot
 $('#takeScreenShot').on('click', function () {
+    var original_width = $('body').width();
+    $('body').width('1500');
     html2canvas(document.getElementById('timetable'), {
         onrendered: function (canvas) {
             var img_src = canvas.toDataURL("image/jpeg");
@@ -31,6 +33,7 @@ $('#takeScreenShot').on('click', function () {
                 '</body></html>';
             var newWindow = window.open();
             newWindow.document.write(data);
+            $('body').width(original_width);
         }
     });
 });

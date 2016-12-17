@@ -281,14 +281,18 @@ td {
 }
 
 footer {
-  background-color: #00897B;
+  background-color: #9C27B0;
   color: #fff;
   padding-top: 0.25em;
   padding-bottom: 0.25em;
 }
 
 footer a {
-  color: #e0e0e0;
+  color: #fff;
+}
+
+footer a:hover {
+  color: #fff;
 }
 
 .table-bordered td,
@@ -337,6 +341,10 @@ footer a {
 
 
 /* Styles for the slot input form and the associated components. */
+
+#fb-like-share {
+  margin-top: 0.25em;
+}
 
 #slot-sel-area .list-group {
   font-size: 1em;
@@ -392,9 +400,6 @@ div.slot-clash {
   .container {
     width: auto;
   }
-  #fb-like-share {
-    margin: 5px 0;
-  }
   #slot-sel-area .list-group-item span:not(.badge):not(.close) {
     display: block;
   }
@@ -412,12 +417,6 @@ div.slot-clash {
     position: absolute;
     bottom: -5px;
     right: 15px;
-  }
-}
-
-@media (min-width: 768px) {
-  #fb-like-share {
-    margin-top: 30px;
   }
 }
 

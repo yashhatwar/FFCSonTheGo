@@ -4,21 +4,12 @@ $(function () {
 	makeLabArray();
 });
 
-function resetTimeTable() {
-	if ($(".TimetableContent").hasClass("highlight")) {
-		$(".TimetableContent").removeClass("highlight");
-	}
-	if ($(".tile").hasClass("highlight")) {
-		$(".tile").removeClass("highlight");
-	}
-}
-
 /**
  * Code to generate a custom course list through #slot-sel-area, manage the
  * list and to mark the added slots to the timetable.
  */
 
-(function () {
+var CRM = (function () {
 	function CourseRecord(slots, title, fac, credits, $li) {
 		this.slots = slots;
 		this.title = title;
@@ -225,10 +216,11 @@ function resetTimeTable() {
 	var totalSpan = totalContainer.find(".badge");
 
 	function submitSlotData() {
+		debugger;
 		var slot, slotArray, i, normSlotString, li;
 		slot = slotInput.val().trim();
 		if (!slot) {
-			$("#slot-sel-area .form-group").eq(1).addClass("has-error");
+			$("#slot-sel-area .form-group").eq(0).addClass("has-error");
 			return;
 		}
 
@@ -283,6 +275,17 @@ function resetTimeTable() {
 		}
 	});
 
+	$("#resetButton").on("click", function resetTimeTable() {
+		$(".TimetableContent").removeClass("highlight slot-clash");
+		$(".tile").removeClass("highlight");
+		$("#slot-sel-area").find(".list-group-item").not(totalContainer).remove();
+
+		CRM.courses = [];
+
+		totalSpan.text(0);
+	});
+
+	return CRM;
 })();
 
 /**

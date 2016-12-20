@@ -1,5 +1,5 @@
 var courseTitleOption = {
-    url: "https://gist.githubusercontent.com/VaTz88/3695dc5c95feed4c94430887e32f9c73/raw/0f3daa273854a52cdb3beecf5505125e5489981d/all_vit_courses.json",
+    url: "https://vatz88.github.io/FFCSonTheGo/all_vit_courses.json",
 
     getValue: "title",
 
@@ -7,8 +7,9 @@ var courseTitleOption = {
         match: {
             enabled: true
         },
-        maxNumberOfElements: 8,
         onSelectItemEvent: function () {
+            // TODO
+            // inputCourseCode should change accordingly
 
         }
     },
@@ -24,7 +25,7 @@ var courseTitleOption = {
 };
 
 var courseCodeOption = {
-    url: "https://gist.githubusercontent.com/VaTz88/3695dc5c95feed4c94430887e32f9c73/raw/0f3daa273854a52cdb3beecf5505125e5489981d/all_vit_courses.json",
+    url: "https://vatz88.github.io/FFCSonTheGo/all_vit_courses.json",
 
     getValue: "code",
 
@@ -32,8 +33,10 @@ var courseCodeOption = {
         match: {
             enabled: true
         },
-        maxNumberOfElements: 8,
+        maxNumberOfElements: 10,
         onSelectItemEvent: function () {
+            // TODO
+            // inputCourseTitle should change accordingly
 
         }
     },

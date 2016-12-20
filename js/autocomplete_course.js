@@ -1,5 +1,5 @@
 var courseTitleOption = {
-    url: "https://vatz88.github.io/FFCSonTheGo/all_vit_courses.json",
+    url: "http://vatz88.in/FFCSonTheGo/all_vit_courses.json",
 
     getValue: "title",
 
@@ -25,7 +25,7 @@ var courseTitleOption = {
 };
 
 var courseCodeOption = {
-    url: "https://vatz88.github.io/FFCSonTheGo/all_vit_courses.json",
+    url: "http://vatz88.in/FFCSonTheGo/all_vit_courses.json",
 
     getValue: "code",
 

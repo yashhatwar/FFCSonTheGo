@@ -312,17 +312,29 @@ function markSlot(slot) {
  */
 function makeLabArray() {
 	var left = $(),
-		right = $();
+		right = $(),
+		extended = $();
 	var slots = $(".TimetableContent");
-	slots.splice(26, 0, null, null, null);
+	slots.splice(30, 1, null, null, null, null);
 	var length = slots.length;
 	var i;
-	for (i = 0; i < 60; ++i) {
-		if (i % 12 < 6) left.push(slots.eq(i));
-		else right.push(slots.eq(i));
+	for (i = 0; i < 70; ++i) {
+		if (i % 14 < 6) left.push(slots.eq(i));
+		else {
+			if(i % 14 <= 11)
+				right.push(slots.eq(i))
+			else
+				extended.push(slots.eq(i));
+		}
 	}
 
 	labArray = left.add(right);
+	labArray = labArray.add(extended);
+
+	for (i = 70; i < 98; ++i) {
+		if (i % 14 <= 11)
+			labArray.push(slots.eq(i));
+	}
 }
 
 $(".alert-dismissible .close").click(function () {

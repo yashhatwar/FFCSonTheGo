@@ -216,7 +216,6 @@ var CRM = (function () {
 	var totalSpan = totalContainer.find(".badge");
 
 	function submitSlotData() {
-		debugger;
 		var slot, slotArray, i, normSlotString, li;
 		slot = slotInput.val().trim();
 		if (!slot) {

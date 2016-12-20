@@ -377,9 +377,8 @@ footer a:hover {
 
 /* Excel sheet */
 
-.ExcelSheet {
-  margin-top: 24px;
-  margin-bottom: 24px;
+#ExcelSheet {
+  margin: 1em;
 }
 
 

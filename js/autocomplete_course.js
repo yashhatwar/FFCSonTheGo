@@ -8,9 +8,8 @@ var courseTitleOption = {
             enabled: true
         },
         onSelectItemEvent: function () {
-            // TODO
-            // inputCourseCode should change accordingly
-
+            var code = $("#inputCourseTitle").getSelectedItemData().code;
+            $("#inputCourseCode").val(code).trigger("change");
         }
     },
 
@@ -35,9 +34,8 @@ var courseCodeOption = {
         },
         maxNumberOfElements: 10,
         onSelectItemEvent: function () {
-            // TODO
-            // inputCourseTitle should change accordingly
-
+            var title = $("#inputCourseCode").getSelectedItemData().title;
+            $("#inputCourseTitle").val(title).trigger("change");
         }
     },
 

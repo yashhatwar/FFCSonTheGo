@@ -1,0 +1,6700 @@
+[{
+    "code": "ARB1001",
+    "title": "ARABIC FOR BEGINNERS"
+}, {
+    "code": "ARB2001",
+    "title": "INTERMEDIATE ARABIC"
+}, {
+    "code": "BHM1002",
+    "title": "FOUNDATION COURSE IN FOOD PRODUCTION"
+}, {
+    "code": "BHM1003",
+    "title": "FOUNDATION COURSE IN ACCOMODATION OPERATION"
+}, {
+    "code": "BHM1004",
+    "title": "FOUNDATION COURSE IN FRONT OFFICE OPERATION"
+}, {
+    "code": "BHM1005",
+    "title": "FOUNDATION COURSE IN FOOD AND BEVERAGE SERVICE"
+}, {
+    "code": "BIF201",
+    "title": "BIOLOGICAL DATABASES"
+}, {
+    "code": "BIF202",
+    "title": "ANALYTICAL BIOINFORMATICS"
+}, {
+    "code": "BIF203",
+    "title": "BIOINFORMATICS"
+}, {
+    "code": "BIF204",
+    "title": "BIOPROCESS PRINCIPLES"
+}, {
+    "code": "BIF205",
+    "title": "PERL FOR BIOINFORMATICS"
+}, {
+    "code": "BIF301",
+    "title": "COMPUTATIONAL METHODS FOR BIOMOLECULES"
+}, {
+    "code": "BIF302",
+    "title": "SYSTEM BIOLOGY"
+}, {
+    "code": "BIF303",
+    "title": "GENOMICS AND PROTEOMICS"
+}, {
+    "code": "BIF304",
+    "title": "COMPUTATIONAL BIOLOGY"
+}, {
+    "code": "BIF305",
+    "title": "PHARMACOLOGY AND PHARMACOINFORMATICS"
+}, {
+    "code": "BIF306",
+    "title": "IMMUNOLOGY AND IMMUNOINFORMATICS"
+}, {
+    "code": "BIF307",
+    "title": "ECOINFORMATICS"
+}, {
+    "code": "BIF308",
+    "title": "AGROINFORMATICS"
+}, {
+    "code": "BIF309",
+    "title": "MOLECULAR EVOLUTION AND PHYLOGENY"
+}, {
+    "code": "BIF310",
+    "title": "STRUCTURE AND MOLECULAR MODELING"
+}, {
+    "code": "BIF311",
+    "title": "PROTEIN ENGINEERING"
+}, {
+    "code": "BIF312",
+    "title": "ADVANCED PROGRAMMING IN BIOINFORMATICS"
+}, {
+    "code": "BIF401",
+    "title": "MOLECULAR DYNAMICS AND SIMULATIONS"
+}, {
+    "code": "BIF402",
+    "title": "BIOMEDICAL INFORMATICS"
+}, {
+    "code": "BIF403",
+    "title": "STATISTICAL ANALYSIS AND MICROARRAY"
+}, {
+    "code": "BIF404",
+    "title": "CANCER INFORMATICS"
+}, {
+    "code": "BIF405",
+    "title": "MICROBIAL INFORMATICS"
+}, {
+    "code": "BIF406",
+    "title": "CHEMOINFORMATICS"
+}, {
+    "code": "BIF407",
+    "title": "NEUROINFORMATICS"
+}, {
+    "code": "BIF409",
+    "title": "PYTHON FOR BIOINFORMATICS"
+}, {
+    "code": "BIT1002",
+    "title": "FUNDAMENTALS OF ELECTRIC AND MAGNETIC CIRCUITS"
+}, {
+    "code": "BIT1004",
+    "title": "CELL BIOLOGY AND BIOCHEMISTRY"
+}, {
+    "code": "BIT1005",
+    "title": "BIOCHEMISTRY"
+}, {
+    "code": "BIT1006",
+    "title": "CELL BIOLOGY AND GENETICS"
+}, {
+    "code": "BIT1007",
+    "title": "MICROBIOLOGY"
+}, {
+    "code": "BIT1008",
+    "title": "PRINCIPLES OF CHEMICAL ENGINEERING"
+}, {
+    "code": "BIT101",
+    "title": "INTRODUCTION TO LIFE SCIENCES"
+}, {
+    "code": "BIT1012",
+    "title": "HUMAN ANATOMY AND PHYSIOLOGY"
+}, {
+    "code": "BIT1013",
+    "title": "SEMICONDUCTOR DEVICES AND CIRCUITS"
+}, {
+    "code": "BIT1016",
+    "title": "BIOCHEMICAL ANALYSIS AND TECHNIQUES"
+}, {
+    "code": "BIT102",
+    "title": "BIOCHEMISTRY"
+}, {
+    "code": "BIT1026",
+    "title": "FOOD, NUTRITION AND HEALTH"
+}, {
+    "code": "BIT1027",
+    "title": "INTRODUCTION TO RESEARCH TECHNIQUES"
+}, {
+    "code": "BIT1028",
+    "title": "BIO-INSPIRED DESIGN"
+}, {
+    "code": "BIT103",
+    "title": "BIOCHEMISTRY AND BIOPHYSICS"
+}, {
+    "code": "BIT104",
+    "title": "ELECTRIC AND MAGNETIC CIRCUITS"
+}, {
+    "code": "BIT105",
+    "title": "ANATOMY AND PHYSIOLOGY"
+}, {
+    "code": "BIT106",
+    "title": "BIOSTATISTICS"
+}, {
+    "code": "BIT107",
+    "title": "CELL BIOLOGY AND GENETICS"
+}, {
+    "code": "BIT108",
+    "title": "FUNDAMENTALS OF BEHAVIOURAL SCIENCE"
+}, {
+    "code": "BIT109",
+    "title": "MICROBIOLOGY"
+}, {
+    "code": "BIT112",
+    "title": "CHEMICAL REACTION ENGINEERING AND UNIT OPERATIONS"
+}, {
+    "code": "BIT2004",
+    "title": "BIOINFORMATICS"
+}, {
+    "code": "BIT201",
+    "title": "BIOETHICS AND IPR"
+}, {
+    "code": "BIT202",
+    "title": "PLANT PHYSIOLOGY AND BIOTECHNOLOGY"
+}, {
+    "code": "BIT203",
+    "title": "ANIMAL PHYSIOLOGY AND BIOTECHNOLOGY"
+}, {
+    "code": "BIT204",
+    "title": "ANALYTICAL TECHNIQUES IN BIOTECHNOLOGY"
+}, {
+    "code": "BIT205",
+    "title": "FOOD BIOTECHNOLOGY"
+}, {
+    "code": "BIT206",
+    "title": "INDUSTRIAL BIOTECHNOLOGY"
+}, {
+    "code": "BIT207",
+    "title": "MOLECULAR BIOLOGY"
+}, {
+    "code": "BIT208",
+    "title": "ANIMAL BIOTECHNOLOGY"
+}, {
+    "code": "BIT209",
+    "title": "PRINCIPLES OF CHEMICAL ENGINEERING"
+}, {
+    "code": "BIT210",
+    "title": "FOOD CHEMISTRY"
+}, {
+    "code": "BIT212",
+    "title": "NUTRITION AND HEALTH"
+}, {
+    "code": "BIT214",
+    "title": "BIO-INSPIRED DESIGN"
+}, {
+    "code": "BIT301",
+    "title": "STRUCTURAL BIOLOGY"
+}, {
+    "code": "BIT302",
+    "title": "ENVIRONMENTAL BIOTECHNOLOGY"
+}, {
+    "code": "BIT303",
+    "title": "BIOPROCESS ENGINEERING"
+}, {
+    "code": "BIT304",
+    "title": "DOWNSTREAM PROCESSING"
+}, {
+    "code": "BIT305",
+    "title": "GENETIC ENGINEERING AND GENOMICS"
+}, {
+    "code": "BIT306",
+    "title": "IMMUNOLOGY AND IMMUNOTECHNOLOGY"
+}, {
+    "code": "BIT307",
+    "title": "NANOBIOTECHNOLOGY"
+}, {
+    "code": "BIT308",
+    "title": "PHARMACEUTICAL BIOTECHNOLOGY"
+}, {
+    "code": "BIT309",
+    "title": "PROTEIN ENGINEERING AND PROTEOMICS"
+}, {
+    "code": "BIT310",
+    "title": "BIOBUSINESS"
+}, {
+    "code": "BIT311",
+    "title": "BIOMATERIALS AND ARTIFICIAL ORGANS"
+}, {
+    "code": "BIT312",
+    "title": "BIOMEMS"
+}, {
+    "code": "BIT313",
+    "title": "BIOLOGICAL SPECTROSCOPY"
+}, {
+    "code": "BIT314",
+    "title": "COMPUTER SIMULATION AND MOLECULAR MODELING"
+}, {
+    "code": "BIT315",
+    "title": "DEVELOPMENTAL BIOLOGY"
+}, {
+    "code": "BIT316",
+    "title": "GENETIC ENGINEERING"
+}, {
+    "code": "BIT317",
+    "title": "PROTEIN ENGINEERING"
+}, {
+    "code": "BIT318",
+    "title": "PLANT BIOTECHNOLOGY"
+}, {
+    "code": "BIT319",
+    "title": "BIOLOGICAL THERMODYNAMICS"
+}, {
+    "code": "BIT320",
+    "title": "MASS AND HEAT TRANSFER OPERATIONS"
+}, {
+    "code": "BIT321",
+    "title": "FORENSIC SCIENCE AND TECHNOLOGY"
+}, {
+    "code": "BIT322",
+    "title": "FOOD PROCESSING TECHNOLOGY"
+}, {
+    "code": "BIT323",
+    "title": "STEM CELL TECHNOLOGY"
+}, {
+    "code": "BIT324",
+    "title": "GENE AND CELL THERAPY"
+}, {
+    "code": "BIT325",
+    "title": "PLANT CELL AND TISSUE CULTURE"
+}, {
+    "code": "BIT326",
+    "title": "PLANT TRANSGENIC TECHNOLOGY"
+}, {
+    "code": "BIT327",
+    "title": "PROGRAMMING AND DATABASE MANAGEMENT FOR BIOLOGIST"
+}, {
+    "code": "BIT328",
+    "title": "COMPUTATIONAL BIOCHEMISTRY"
+}, {
+    "code": "BIT401",
+    "title": "METABOLIC ENGINEERING"
+}, {
+    "code": "BIT402",
+    "title": "BIOPROCESS ECONOMICS AND PLANT DESIGN"
+}, {
+    "code": "BIT403",
+    "title": "CANCER BIOLOGY"
+}, {
+    "code": "BIT404",
+    "title": "INDUSTRIAL ENZYMOLOGY"
+}, {
+    "code": "BIT405",
+    "title": "MEDICAL DIAGNOSTICS"
+}, {
+    "code": "BIT406",
+    "title": "MOLECULAR MODELING AND DRUG DESIGN"
+}, {
+    "code": "BIT408",
+    "title": "TISSUE ENGINEERING"
+}, {
+    "code": "BIT409",
+    "title": "FOOD PROCESS ENGINEERING"
+}, {
+    "code": "BIT410",
+    "title": "SOCIAL ENTREPRENUERSHIP"
+}, {
+    "code": "BIT411",
+    "title": "GENOMICS AND PROTEOMICS"
+}, {
+    "code": "BIT413",
+    "title": "NEUROBIOLOGY AND COGNITIVE SCIENCE"
+}, {
+    "code": "BIT414",
+    "title": "FOOD PRODUCT DEVELOPMENT"
+}, {
+    "code": "BIT415",
+    "title": "ENGINEERING PRINCIPLES IN FOOD PROCESSING"
+}, {
+    "code": "BIT5001",
+    "title": "ADVANCED BIOCHEMISTRY"
+}, {
+    "code": "BIT5003",
+    "title": "COMPUTATIONAL BIOLOGY"
+}, {
+    "code": "BIT5005",
+    "title": "GENETIC ENGINEERING"
+}, {
+    "code": "BIT501",
+    "title": "ADVANCED BIOCHEMISTRY"
+}, {
+    "code": "BIT502",
+    "title": "INDUSTRIAL BIOTECHNOLOGY"
+}, {
+    "code": "BIT503",
+    "title": "PRINCIPLES OF CHEMICAL ENGINEERING"
+}, {
+    "code": "BIT504",
+    "title": "COMPUTER PROGRAMMING"
+}, {
+    "code": "BIT505",
+    "title": "BIOSTATISTICS"
+}, {
+    "code": "BIT507",
+    "title": "MOLECULAR BIOLOGY"
+}, {
+    "code": "BIT508",
+    "title": "GENE TECHNOLOGY"
+}, {
+    "code": "BIT509",
+    "title": "MOLECULAR BIOLOGY AND GENE TECHNOLOGY LAB"
+}, {
+    "code": "BIT510",
+    "title": "UPSTREAM AND DOWNSTREAM TECHNOLOGY"
+}, {
+    "code": "BIT511",
+    "title": "IMMUNOTECHNOLOGY"
+}, {
+    "code": "BIT512",
+    "title": "ETHICS, BIOSAFETY AND PATENTS"
+}, {
+    "code": "BIT513",
+    "title": "GENOMICS AND PROTEOMICS"
+}, {
+    "code": "BIT514",
+    "title": "NANO-BIOTECHNOLOGY"
+}, {
+    "code": "BIT515",
+    "title": "PROTEIN ENGINEERING"
+}, {
+    "code": "BIT516",
+    "title": "BIO BUSINESS"
+}, {
+    "code": "BIT517",
+    "title": "CELL BIOLOGY AND BIOCHEMISTRY"
+}, {
+    "code": "BIT518",
+    "title": "BIOCHEMICAL ENGINEERING"
+}, {
+    "code": "BIT519",
+    "title": "MOLECULAR BIOTECHNOLOGY"
+}, {
+    "code": "BIT520",
+    "title": "BIOREACTOR DESIGN AND BIOPROCESS TECHNOLOGY"
+}, {
+    "code": "BIT521",
+    "title": "GENETIC ENGINEERING"
+}, {
+    "code": "BIT522",
+    "title": "ADVANCES IN BIOSEPARATION TECHNIQUES"
+}, {
+    "code": "BIT523",
+    "title": "FOOD PROCESS TECHNOLOGY"
+}, {
+    "code": "BIT524",
+    "title": "NATURAL PRODUCTS TECHNOLOGY"
+}, {
+    "code": "BIT525",
+    "title": "IN SILICO DRUG DESIGN"
+}, {
+    "code": "BIT526",
+    "title": "BIOPROCESS PLANT DESIGN"
+}, {
+    "code": "BIT527",
+    "title": "BIOBUSINESS MANAGEMENT"
+}, {
+    "code": "BIT528",
+    "title": "STATISTICS FOR BIOLOGICAL APPLICATIONS"
+}, {
+    "code": "BIT529",
+    "title": "METABOLIC ENGINEERING AND METABOLOMICS"
+}, {
+    "code": "BIT530",
+    "title": "PLANT BIOTECHNOLOGY"
+}, {
+    "code": "BIT531",
+    "title": "ANIMAL BIOTECHNOLOGY"
+}, {
+    "code": "BIT532",
+    "title": "PHARMACEUTICAL BIOTECHNOLOGY"
+}, {
+    "code": "BIT533",
+    "title": "ENVIRONMENTAL BIOTECHNOLOGY"
+}, {
+    "code": "BIT534",
+    "title": "SYSTEM BIOLOGY"
+}, {
+    "code": "BIT535",
+    "title": "TQM ISSUES IN BIOPRODUCTS"
+}, {
+    "code": "BIT536",
+    "title": "MEDICAL BIOTECHNOLOGY"
+}, {
+    "code": "BIT537",
+    "title": "BIOETHICS, BIOSAFETY AND PATENTS"
+}, {
+    "code": "BIT538",
+    "title": "MICROBIAL TECHNOLOGY"
+}, {
+    "code": "BIT539",
+    "title": "MARINE AND AQUATIC BIOTECHNOLOGY"
+}, {
+    "code": "BIT540",
+    "title": "APPLIED BIOINFORMATICS"
+}, {
+    "code": "BIT541",
+    "title": "BIODIVERSITY AND CONSERVATION"
+}, {
+    "code": "BIT701",
+    "title": "MOLECULAR CELL BIOLOGY"
+}, {
+    "code": "BIT702",
+    "title": "RECOMBINANT DNA TECHNOLOGY"
+}, {
+    "code": "BIY101",
+    "title": "CELL BIOLOGY"
+}, {
+    "code": "BIY102",
+    "title": "FUNDAMENTAL BIOCHEMISTRY"
+}, {
+    "code": "BIY103",
+    "title": "FUNDAMENTALS OF GENETICS"
+}, {
+    "code": "BIY104",
+    "title": "GENERAL MICROBIOLOGY"
+}, {
+    "code": "BIY105",
+    "title": "BIODIVERSITY AND BIORESOURCES CONSERVATION"
+}, {
+    "code": "BIY201",
+    "title": "MOLECULAR BIOLOGY"
+}, {
+    "code": "BIY202",
+    "title": "ANATOMY AND PHYSIOLOGY"
+}, {
+    "code": "BIY203",
+    "title": "MEDICAL BIOCHEMISTRY"
+}, {
+    "code": "BIY204",
+    "title": "MICROBIAL GENETICS"
+}, {
+    "code": "BIY205",
+    "title": "DEVELOPMENTAL BIOLOGY"
+}, {
+    "code": "BIY206",
+    "title": "IMMUNOLOGY"
+}, {
+    "code": "BIY207",
+    "title": "ENZYMOLOGY"
+}, {
+    "code": "BIY208",
+    "title": "BIOPHYSICS"
+}, {
+    "code": "BIY209",
+    "title": "BIOSTATISTICS"
+}, {
+    "code": "BIY210",
+    "title": "FUNDAMENTALS OF CHEMICAL ENGINEERING"
+}, {
+    "code": "BIY211",
+    "title": "MOLECULAR ENDOCRINOLOGY"
+}, {
+    "code": "BIY212",
+    "title": "ENVIRONMENTAL GENETICS"
+}, {
+    "code": "BIY213",
+    "title": "BIOINFORMATICS"
+}, {
+    "code": "BIY301",
+    "title": "CONCEPTS IN BIOTECHNOLOGY"
+}, {
+    "code": "BIY302",
+    "title": "GENETIC ENGINEERING"
+}, {
+    "code": "BIY303",
+    "title": "FOOD SCIENCE"
+}, {
+    "code": "BIY304",
+    "title": "GENOMICS AND PROTEOMICS"
+}, {
+    "code": "BIY305",
+    "title": "BEHAVIORAL SCIENCES"
+}, {
+    "code": "BIY306",
+    "title": "MOLECULAR MODELING AND DRUG DESIGN"
+}, {
+    "code": "BIY307",
+    "title": "ENZYME TECHNOLOGY"
+}, {
+    "code": "BIY308",
+    "title": "ANALYTICAL TECHNIQUES"
+}, {
+    "code": "BIY309",
+    "title": "BIOPROCESS PRINCIPLES"
+}, {
+    "code": "BIY401",
+    "title": "PLANT BIOTECHNOLOGY"
+}, {
+    "code": "BIY402",
+    "title": "ANIMAL BIOTECHNOLOGY"
+}, {
+    "code": "BIY403",
+    "title": "FOOD BIOTECHNOLOGY"
+}, {
+    "code": "BIY404",
+    "title": "PROTEIN ENGINEERING"
+}, {
+    "code": "BIY405",
+    "title": "INDUSTRIAL BIOTECHNOLOGY"
+}, {
+    "code": "BIY406",
+    "title": "PHARMACEUTICAL BIOTECHNOLOGY"
+}, {
+    "code": "BIY407",
+    "title": "FERMENTATION TECHNOLOGY"
+}, {
+    "code": "BIY408",
+    "title": "ANALYTICAL INSTRUMENTATION"
+}, {
+    "code": "BIY409",
+    "title": "DOWNSTREAM PROCESSING"
+}, {
+    "code": "BIY410",
+    "title": "NANOBIOTECHNOLOGY"
+}, {
+    "code": "BIY411",
+    "title": "MEDICAL BIOTECHNOLOGY"
+}, {
+    "code": "BIY412",
+    "title": "ENVIRONMENTAL BIOTECHNOLOGY"
+}, {
+    "code": "BIY413",
+    "title": "BIOETHICS AND IPR"
+}, {
+    "code": "BIY414",
+    "title": "RESEARCH METHODOLOGY"
+}, {
+    "code": "BIY416",
+    "title": "GENE THERAPY"
+}, {
+    "code": "BIY501",
+    "title": "GENETICS"
+}, {
+    "code": "BIY502",
+    "title": "ADVANCED BIOCHEMISTRY"
+}, {
+    "code": "BIY503",
+    "title": "AQUATIC BIOTECHNOLOGY"
+}, {
+    "code": "BIY504",
+    "title": "BIOLOGICAL SPECTROSCOPY"
+}, {
+    "code": "BIY505",
+    "title": "BIORESOURCE MANAGEMENT"
+}, {
+    "code": "BIY506",
+    "title": "BIOLOGICAL DATABASES"
+}, {
+    "code": "BIY507",
+    "title": "SYSTEMS BIOLOGY"
+}, {
+    "code": "BIY508",
+    "title": "TRANSGENIC ENGINEERING"
+}, {
+    "code": "BIY509",
+    "title": "CANCER BIOLOGY"
+}, {
+    "code": "BIY510",
+    "title": "NEUROBIOLOGY"
+}, {
+    "code": "BIY511",
+    "title": "VACCINOLOGY"
+}, {
+    "code": "BIY512",
+    "title": "STEM CELL TECHNOLOGY"
+}, {
+    "code": "BIY513",
+    "title": "BIOREMEDIATION"
+}, {
+    "code": "BIY514",
+    "title": "ENVIRONMENTAL HEALTH"
+}, {
+    "code": "BIY515",
+    "title": "BIOBUSINESS"
+}, {
+    "code": "BME201",
+    "title": "SEMICONDUCTOR DEVICES AND CIRCUITS"
+}, {
+    "code": "BME202",
+    "title": "BIOTRANSDUCERS AND ELECTRODES"
+}, {
+    "code": "BME203",
+    "title": "BIOMATERIALS AND COMPONENTS"
+}, {
+    "code": "BME204",
+    "title": "CLINICAL ENGINEERING"
+}, {
+    "code": "BME205",
+    "title": "MEDICAL PHYSICS"
+}, {
+    "code": "BME206",
+    "title": "INTEGRATED CIRCUITS"
+}, {
+    "code": "BME207",
+    "title": "BASIC MEDICAL INSTRUMENTATION"
+}, {
+    "code": "BME208",
+    "title": "CONTROL SYSTEMS IN MEDICINE"
+}, {
+    "code": "BME209",
+    "title": "BIOMECHANICS"
+}, {
+    "code": "BME210",
+    "title": "ARTIFICIAL ORGANS"
+}, {
+    "code": "BME211",
+    "title": "LASER AND FIBER OPTICS IN MEDICINE"
+}, {
+    "code": "BME212",
+    "title": "MEDICAL INFORMATICS"
+}, {
+    "code": "BME213",
+    "title": "HEALTH TECHNOLOGY MANAGEMENT"
+}, {
+    "code": "BME214",
+    "title": "MEDICAL OPTICS"
+}, {
+    "code": "BME320",
+    "title": "ARTIFICIAL NEURAL NETWORKS"
+}, {
+    "code": "BME321",
+    "title": "BIOMEDICAL INSTRUMENTATION"
+}, {
+    "code": "BME322",
+    "title": "BIOMEDICAL IMAGE PROCESSING"
+}, {
+    "code": "BME323",
+    "title": "BIOMEDICAL SIGNAL PROCESSING"
+}, {
+    "code": "BME324",
+    "title": "COMPUTERS IN MEDICINE"
+}, {
+    "code": "BME325",
+    "title": "DIGITAL SIGNAL PROCESSING"
+}, {
+    "code": "BME326",
+    "title": "MICROPROCESSORS AND MICRO-CONTROLLERS IN MEDICAL APPLICATIONS"
+}, {
+    "code": "BME327",
+    "title": "PATTERN RECOGNITION"
+}, {
+    "code": "BME328",
+    "title": "PHYSIOLOGICAL SYSTEM MODELING"
+}, {
+    "code": "BME329",
+    "title": "REHABILITATION ENGINEERING"
+}, {
+    "code": "BME401",
+    "title": "MEDICAL IMAGING TECHNIQUES"
+}, {
+    "code": "BME402",
+    "title": "SPEECH SIGNAL PROCESSING"
+}, {
+    "code": "BME403",
+    "title": "TELEMEDICINE"
+}, {
+    "code": "BME404",
+    "title": "BIO FLUID DYNAMICS"
+}, {
+    "code": "BME405",
+    "title": "BIOMEMS"
+}, {
+    "code": "BME406",
+    "title": "TISSUE ENGINEERING"
+}, {
+    "code": "BME407",
+    "title": "EMBEDDED SYSTEMS IN MEDICINE"
+}, {
+    "code": "BME408",
+    "title": "BIOMETRICS"
+}, {
+    "code": "BME499",
+    "title": "PROJECT WORK"
+}, {
+    "code": "BME501",
+    "title": "BIOMEDICAL INSTRUMENTATION AND SYSTEMS"
+}, {
+    "code": "BME502",
+    "title": "ANATOMY AND PHYSIOLOGY"
+}, {
+    "code": "BME503",
+    "title": "BIO-SIGNAL PROCESSING"
+}, {
+    "code": "BME504",
+    "title": "MEDICAL PHYSICS AND BIOCHEMISTRY"
+}, {
+    "code": "BME505",
+    "title": "BIOMEDICAL SENSORS AND SIGNAL CONDITIONING"
+}, {
+    "code": "BME506",
+    "title": "BIOMATERIALS AND MEDICAL DEVICES"
+}, {
+    "code": "BME507",
+    "title": "MEDICAL IMAGE PROCESSING"
+}, {
+    "code": "BME508",
+    "title": "MICROCONTROLLERS IN MEDICAL APPLICATIONS"
+}, {
+    "code": "BME509",
+    "title": "ARTIFICIAL INTELLIGENCE AND EXPERT SYSTEMS IN MEDICINE"
+}, {
+    "code": "BME510",
+    "title": "BIOMEMS AND NANOBIOMEDICINE"
+}, {
+    "code": "BME511",
+    "title": "REHABILITATION ENGINEERING"
+}, {
+    "code": "BME512",
+    "title": "EMBEDDED SYSTEMS FOR MEDICAL APPLICATIONS"
+}, {
+    "code": "BME513",
+    "title": "PHYSIOLOGICAL SYSTEM MODELING"
+}, {
+    "code": "BME514",
+    "title": "ARTIFICIAL ORGANS"
+}, {
+    "code": "BME515",
+    "title": "TISSUE ENGINEERING"
+}, {
+    "code": "BME516",
+    "title": "HOSPITAL MANAGEMENT"
+}, {
+    "code": "BME517",
+    "title": "BIOINFORMATICS"
+}, {
+    "code": "BME518",
+    "title": "FIBRE OPTICS AND LASER FOR MEDICAL APPLICATIONS"
+}, {
+    "code": "BME519",
+    "title": "HEALTHCARE MANAGEMENT"
+}, {
+    "code": "BME520",
+    "title": "ARTIFICIAL ORGANS AND TISSUE ENGINEERING"
+}, {
+    "code": "BME521",
+    "title": "ADVANCED BIOMECHANICS"
+}, {
+    "code": "BME522",
+    "title": "ERGONOMICS"
+}, {
+    "code": "BME523",
+    "title": "BIOTECHNOLOGY FOR BIOMEDICAL ENGINEERS"
+}, {
+    "code": "BME524",
+    "title": "SPORTS BIOMECHANICS"
+}, {
+    "code": "BMG501",
+    "title": "STATISTICS FOR BIOLOGISTS"
+}, {
+    "code": "BMG502",
+    "title": "COMPUTER APPLICATIONS"
+}, {
+    "code": "BMG503",
+    "title": "BIOCHEMISTRY"
+}, {
+    "code": "BMG504",
+    "title": "CELL AND MOLECULAR BIOLOGY"
+}, {
+    "code": "BMG505",
+    "title": "PRINCIPLES OF GENETICS"
+}, {
+    "code": "BMG506",
+    "title": "ANALYTICAL TECHNIQUES FOR GENETICS"
+}, {
+    "code": "BMG507",
+    "title": "HUMAN IMMUNOLOGY"
+}, {
+    "code": "BMG508",
+    "title": "GENETICS OF HUMAN INFERTILITY"
+}, {
+    "code": "BMG509",
+    "title": "PRENATAL DIAGNOSIS AND GENETIC COUNSELING"
+}, {
+    "code": "BMG510",
+    "title": "ETHICAL, LEGAL AND SOCIAL ISSUES IN GENETIC COUNSELING"
+}, {
+    "code": "BMG511",
+    "title": "RADIATION GENETICS"
+}, {
+    "code": "BMG512",
+    "title": "COGNITIVE AND BEHAVIORAL GENETICS"
+}, {
+    "code": "BMG513",
+    "title": "BIOINFORMATICS"
+}, {
+    "code": "BMG514",
+    "title": "FORENSIC SCIENCE"
+}, {
+    "code": "BMG515",
+    "title": "STEM CELL BIOLOGY"
+}, {
+    "code": "BMG601",
+    "title": "GENETIC ENGINEERING"
+}, {
+    "code": "BMG602",
+    "title": "CLINICAL CYTOGENETICS"
+}, {
+    "code": "BMG603",
+    "title": "HUMAN MOLECULAR GENETICS"
+}, {
+    "code": "BMG604",
+    "title": "HUMAN BIOCHEMICAL GENETICS"
+}, {
+    "code": "BMG605",
+    "title": "CANCER GENETICS"
+}, {
+    "code": "BMG606",
+    "title": "DEVELOPMENTAL GENETICS"
+}, {
+    "code": "BMG607",
+    "title": "ENVIRONMENTAL GENETICS"
+}, {
+    "code": "BMG609",
+    "title": "CLINICAL ROTATION"
+}, {
+    "code": "BMT1001",
+    "title": "MANAGEMENT CONCEPT"
+}, {
+    "code": "BMT1002",
+    "title": "ORGANISATIONAL BEHAVIOUR"
+}, {
+    "code": "BMT1003",
+    "title": "MICRO ECONOMICS"
+}, {
+    "code": "BMT101",
+    "title": "INTRODUCTION TO INFORMATION TECHNOLOGY"
+}, {
+    "code": "BMT102",
+    "title": "PRINCIPLES OF MANAGEMENT"
+}, {
+    "code": "BMT1021",
+    "title": "INTRODUCTION TO ENTERPRISE RESOURCE PLANNING"
+}, {
+    "code": "BMT103",
+    "title": "SOCIAL TRANSFORMATION IN INDIA"
+}, {
+    "code": "BMT104",
+    "title": "BUSINESS CONCEPT"
+}, {
+    "code": "BMT105",
+    "title": "SOFT SKILLS"
+}, {
+    "code": "BMT106",
+    "title": "PRINCIPLES OF ACCOUNTING"
+}, {
+    "code": "BMT107",
+    "title": "INTRODUCTION TO HUMAN RESOURCE MANAGEMENT"
+}, {
+    "code": "BMT108",
+    "title": "BUSINESS COMMUNICATION"
+}, {
+    "code": "BMT109",
+    "title": "PRINCIPLES OF MARKETING"
+}, {
+    "code": "BMT201",
+    "title": "MANAGERIAL COMMUNICATION"
+}, {
+    "code": "BMT202",
+    "title": "MICRO ECONOMICS"
+}, {
+    "code": "BMT203",
+    "title": "DATABASE MANAGEMENT SYSTEM"
+}, {
+    "code": "BMT204",
+    "title": "INTRODUCTION TO FINANCE"
+}, {
+    "code": "BMT205",
+    "title": "BUSINESS LAW"
+}, {
+    "code": "BMT206",
+    "title": "BUSINESS MODELING AND PLANNING"
+}, {
+    "code": "BMT207",
+    "title": "BUSINESS STATISTICS"
+}, {
+    "code": "BMT208",
+    "title": "MACRO ECONOMICS"
+}, {
+    "code": "BMT209",
+    "title": "PROJECT MANAGEMENT"
+}, {
+    "code": "BMT210",
+    "title": "INTRODUCTION TO ERP"
+}, {
+    "code": "BMT211",
+    "title": "INTRODUCTION TO COST ACCOUNTING"
+}, {
+    "code": "BMT212",
+    "title": "BUSINESS PLAN DEVELOPMENT"
+}, {
+    "code": "BMT301",
+    "title": "RESEARCH METHODS IN MANAGEMENT"
+}, {
+    "code": "BMT302",
+    "title": "MANAGEMENT ACCOUNTING"
+}, {
+    "code": "BMT303",
+    "title": "PRODUCTION AND MATERIALS MANAGEMENT"
+}, {
+    "code": "BMT304",
+    "title": "ERP - HUMAN RESOURCE MANAGEMENT"
+}, {
+    "code": "BMT305",
+    "title": "BUSINESS PLAN IMPLEMENTATION"
+}, {
+    "code": "BMT306",
+    "title": "ACCOUNTING SOFTWARE APPLICATION"
+}, {
+    "code": "BMT307",
+    "title": "ERP - SUPPLY CHAIN MANAGEMENT"
+}, {
+    "code": "BMT320",
+    "title": "PRINCIPLES OF TAXATION"
+}, {
+    "code": "BMT321",
+    "title": "PRINCIPLES OF AUDITING"
+}, {
+    "code": "BMT322",
+    "title": "COMPANY LAW"
+}, {
+    "code": "BMT323",
+    "title": "MARKETING METRICS"
+}, {
+    "code": "BMT324",
+    "title": "CONSUMER BEHAVIOR"
+}, {
+    "code": "BMT325",
+    "title": "MODERN BANKING PRACTICES"
+}, {
+    "code": "BMT326",
+    "title": "E - COMMERCE"
+}, {
+    "code": "BMT327",
+    "title": "INDUSTRIAL LAW"
+}, {
+    "code": "BMT328",
+    "title": "BANKING AND INSURANCE"
+}, {
+    "code": "BMT329",
+    "title": "EXPORT AND IMPORT MANAGEMENT"
+}, {
+    "code": "BMT330",
+    "title": "TRAINING AND DEVELOPMENT"
+}, {
+    "code": "BMT5004",
+    "title": "SHORT FILM MAKING"
+}, {
+    "code": "BST503",
+    "title": "BIOPROCESS TECHNOLOGY"
+}, {
+    "code": "BST504",
+    "title": "BIOINFORMATICS AND SOFTWARE"
+}, {
+    "code": "BST506",
+    "title": "GENETIC ENGINEERING"
+}, {
+    "code": "BST507",
+    "title": "CELL AND MOLECULAR BIOLOGY"
+}, {
+    "code": "BST509",
+    "title": "BIOPHYSICS"
+}, {
+    "code": "BST511",
+    "title": "HUMAN ANATOMY AND PHYSIOLOGY"
+}, {
+    "code": "BST603",
+    "title": "MEDICAL BIOTECHNOLOGY"
+}, {
+    "code": "BST613",
+    "title": "BIOETHICS AND BIOSAFETY"
+}, {
+    "code": "BST614",
+    "title": "IPR AND BIOBUSINESS"
+}, {
+    "code": "CCA1001",
+    "title": "FINANCIAL ACCOUNTING"
+}, {
+    "code": "CCA1002",
+    "title": "BUSINESS ECONOMICS"
+}, {
+    "code": "CCA1003",
+    "title": "BUSINESS ORGANIZATION AND MANAGEMENT"
+}, {
+    "code": "CCA1004",
+    "title": "INTRODUCTION TO COMPUTERS"
+}, {
+    "code": "CCA101",
+    "title": "BUSINESS ECONOMICS"
+}, {
+    "code": "CCA1014",
+    "title": "BUSINESS MATHEMATICS"
+}, {
+    "code": "CCA102",
+    "title": "FINANCIAL ACCOUNTING"
+}, {
+    "code": "CCA103",
+    "title": "BUSINESS ORGANIZATION AND MANAGEMENT"
+}, {
+    "code": "CCA104",
+    "title": "INTRODUCTION TO COMPUTERS"
+}, {
+    "code": "CCA106",
+    "title": "BUSINESS MATHEMATICS"
+}, {
+    "code": "CCA107",
+    "title": "PROGRAMMING LANGUAGES: CONCEPTS AND THEORY"
+}, {
+    "code": "CCA108",
+    "title": "ENTREPRENEURSHIP DEVELOPMENT"
+}, {
+    "code": "CCA109",
+    "title": "INSURANCE AND RISK MANAGEMENT"
+}, {
+    "code": "CCA110",
+    "title": "RURAL MARKETING"
+}, {
+    "code": "CCA111",
+    "title": "WORKING CAPITAL MANAGEMENT"
+}, {
+    "code": "CCA112",
+    "title": "COMPUTER AIDED TOOLS AND TECHNIQUES"
+}, {
+    "code": "CCA113",
+    "title": "SOFT SKILLS"
+}, {
+    "code": "CCA114",
+    "title": "SERVICES MARKETING"
+}, {
+    "code": "CCA115",
+    "title": "FUNDAMENTALS OF INVESTMENT"
+}, {
+    "code": "CCA116",
+    "title": "INDIAN ECONOMY"
+}, {
+    "code": "CCA117",
+    "title": "MACRO ECONOMICS"
+}, {
+    "code": "CCA118",
+    "title": "COMPUTER FUNDAMENTALS AND PROGRAMMING IN C"
+}, {
+    "code": "CCA119",
+    "title": "OBJECT ORIENTED PROGRAMMING IN C++"
+}, {
+    "code": "CCA201",
+    "title": "CORPORATE ACCOUNTING"
+}, {
+    "code": "CCA202",
+    "title": "BUSINESS STATISTICS AND APPLICATIONS"
+}, {
+    "code": "CCA203",
+    "title": "BUSINESS LAW"
+}, {
+    "code": "CCA204",
+    "title": "COMMERCIAL DATABASE AND APPLICATIONS"
+}, {
+    "code": "CCA205",
+    "title": "ADVANCED CORPORATE ACCOUNTING"
+}, {
+    "code": "CCA206",
+    "title": "COMPANY LAW"
+}, {
+    "code": "CCA207",
+    "title": "SOFTWARE DEVELOPMENT"
+}, {
+    "code": "CCA208",
+    "title": "BUSINESS PROCESS OUTSOURCING AND KNOWLEDGE PROCESS OUTSOURCING"
+}, {
+    "code": "CCA209",
+    "title": "EXPORT AND IMPORT MANAGEMENT"
+}, {
+    "code": "CCA210",
+    "title": "WORLD TRADE ORGANIZATION"
+}, {
+    "code": "CCA211",
+    "title": "CUSTOMS, EXCISE AND VAT"
+}, {
+    "code": "CCA212",
+    "title": "CAPITAL AND MONEY MARKET"
+}, {
+    "code": "CCA213",
+    "title": "COST MANAGEMENT"
+}, {
+    "code": "CCA214",
+    "title": "PROJECT REPORT – PREPARATION, EVALUATION AND APPRAISAL"
+}, {
+    "code": "CCA215",
+    "title": "MULTIMEDIA"
+}, {
+    "code": "CCA216",
+    "title": "INDIRECT TAXATION"
+}, {
+    "code": "CCA217",
+    "title": "ADVANCED FINANCIAL ACCOUNTING"
+}, {
+    "code": "CCA218",
+    "title": "CORPORATE AND SECURITIES LAW"
+}, {
+    "code": "CCA301",
+    "title": "FUNDAMENTALS OF FINANCIAL MANAGEMENT"
+}, {
+    "code": "CCA302",
+    "title": "INCOME TAX LAW"
+}, {
+    "code": "CCA303",
+    "title": "INDIAN BANKING SYSTEM"
+}, {
+    "code": "CCA304",
+    "title": "INTERNET AND WEB DEVELOPMENT"
+}, {
+    "code": "CCA305",
+    "title": "COST ACCOUNTING"
+}, {
+    "code": "CCA306",
+    "title": "PRINCIPLES OF MARKETING"
+}, {
+    "code": "CCA307",
+    "title": "E-COMMERCE"
+}, {
+    "code": "CCA308",
+    "title": "AUDITING"
+}, {
+    "code": "CCA309",
+    "title": "ACCOUNTING PACKAGES"
+}, {
+    "code": "CCA310",
+    "title": "CORPORATE GOVERNANCE"
+}, {
+    "code": "CCA311",
+    "title": "INFORMATION SYSTEMS AND AUDIT"
+}, {
+    "code": "CCA312",
+    "title": "INTERNATIONAL FINANCIAL REPORT SYSTEM"
+}, {
+    "code": "CCA314",
+    "title": "FDI AND EXTERNAL COMMERCIAL BORROWINGS"
+}, {
+    "code": "CCA315",
+    "title": "PRIVATE EQUITY AND VENTURE CAPITAL"
+}, {
+    "code": "CCA316",
+    "title": "SECURITY ANALYSIS AND DERIVATIVES"
+}, {
+    "code": "CCA317",
+    "title": "INDUSTRIAL LAW"
+}, {
+    "code": "CCA318",
+    "title": "MANAGEMENT ACCOUNTING"
+}, {
+    "code": "CCA319",
+    "title": "AUDITING AND ASSURANCE"
+}, {
+    "code": "CHE1001",
+    "title": "MATERIAL SCIENCE AND STRENGTH OF MATERIALS"
+}, {
+    "code": "CHE1002",
+    "title": "PROCESS CALCULATIONS"
+}, {
+    "code": "CHE1005",
+    "title": "MOMENTUM TRANSFER"
+}, {
+    "code": "CHE1006",
+    "title": "HEAT TRANSFER"
+}, {
+    "code": "CHE1007",
+    "title": "SAFETY AND HAZARD ANALYSIS"
+}, {
+    "code": "CHE1011",
+    "title": "OPTIMIZATION OF CHEMICAL PROCESSES"
+}, {
+    "code": "CHE1022",
+    "title": "MECHANICAL OPERATIONS"
+}, {
+    "code": "CHE2006",
+    "title": "FUELS AND COMBUSTION"
+}, {
+    "code": "CHI1001",
+    "title": "CHINESE FOR ENGINEERS"
+}, {
+    "code": "CHI101",
+    "title": "BASIC CHINESE"
+}, {
+    "code": "CHI5001",
+    "title": "CHINESE FOR ENGINEERS"
+}, {
+    "code": "CHY1001",
+    "title": "ENGINEERING CHEMISTRY"
+}, {
+    "code": "CHY1002",
+    "title": "ENVIRONMENTAL SCIENCES"
+}, {
+    "code": "CHY1003",
+    "title": "ENVIRONMENTAL STUDIES (FOR 3 YR. UG PROGRAMMES)"
+}, {
+    "code": "CHY1004",
+    "title": "MATERIALS AND INSTRUMENTAL TECHNIQUES"
+}, {
+    "code": "CHY101",
+    "title": "ENGINEERING CHEMISTRY"
+}, {
+    "code": "CHY102",
+    "title": "MATERIALS AND INSTRUMENTAL TECHNIQUES"
+}, {
+    "code": "CHY103",
+    "title": "ORGANIC CHEMISTRY"
+}, {
+    "code": "CHY104",
+    "title": "ENVIRONMENTAL STUDIES"
+}, {
+    "code": "CHY108",
+    "title": "ALLIED CHEMISTRY"
+}, {
+    "code": "CHY501",
+    "title": "GENERAL INORGANIC CHEMISTRY"
+}, {
+    "code": "CHY502",
+    "title": "BASIC ANALYTICAL CHEMISTRY"
+}, {
+    "code": "CHY503",
+    "title": "CHEMICAL KINETICS AND SURFACE CHEMISTRY"
+}, {
+    "code": "CHY504",
+    "title": "STEREOCHEMISTRY AND SUBSTITUTION REACTIONS OF ORGANIC COMPOUNDS"
+}, {
+    "code": "CHY505",
+    "title": "INORGANIC CHEMISTRY PRACTICAL - I"
+}, {
+    "code": "CHY506",
+    "title": "ANALYTICAL CHEMISTRY PRACTICAL - I"
+}, {
+    "code": "CHY507",
+    "title": "PHYSICAL CHEMISTRY PRACTICAL - I"
+}, {
+    "code": "CHY508",
+    "title": "ORGANIC CHEMISTRY PRACTICAL - I"
+}, {
+    "code": "CHY509",
+    "title": "ADVANCED NMR AND MASS SPECTROSCOPY"
+}, {
+    "code": "CHY510",
+    "title": "BIOORGANIC AND MEDICINAL CHEMISTRY"
+}, {
+    "code": "CHY511",
+    "title": "GREEN CHEMISTRY"
+}, {
+    "code": "CHY521",
+    "title": "COMPUTATIONAL CHEMISTRY"
+}, {
+    "code": "CHY601",
+    "title": "ADVANCED INORGANIC CHEMISTRY"
+}, {
+    "code": "CHY602",
+    "title": "QUANTUM CHEMISTRY, STATISTICAL THERMODYNAMICS AND GROUP THEORY"
+}, {
+    "code": "CHY603",
+    "title": "ELECTROCHEMICAL AND INSTRUMENTAL METHODS OF ANALYSIS"
+}, {
+    "code": "CHY604",
+    "title": "ORGANIC REACTION MECHANISMS AND SYNTHETICALLY USEFUL REACTIONS"
+}, {
+    "code": "CHY605",
+    "title": "MOLECULAR SPECTROSCOPY"
+}, {
+    "code": "CHY606",
+    "title": "ADVANCED SPECTROSCOPY"
+}, {
+    "code": "CHY607",
+    "title": "QUALITY CONTROL AND QUALITY ASSURANCE IN PROCESS INDUSTRY"
+}, {
+    "code": "CHY608",
+    "title": "IMMUNOCHEMICAL AND FORENSIC ANALYSIS"
+}, {
+    "code": "CHY609",
+    "title": "ADVANCED ELECTROANALYTICAL AND SEPARATION TECHNIQUES"
+}, {
+    "code": "CHY610",
+    "title": "ENVIRONMENTAL ANALYTICAL CHEMISTRY"
+}, {
+    "code": "CHY611",
+    "title": "SPECTROSCOPIC METHODS IN INORGANIC CHEMISTRY"
+}, {
+    "code": "CHY612",
+    "title": "BIO-INORGANIC CHEMISTRY"
+}, {
+    "code": "CHY613",
+    "title": "NANOMATERIALS"
+}, {
+    "code": "CHY614",
+    "title": "MATERIALS CHEMISTRY"
+}, {
+    "code": "CHY615",
+    "title": "ADVANCED MATERIALS AND TECHNIQUES"
+}, {
+    "code": "CHY616",
+    "title": "ORGANIC SPECTROSCOPY"
+}, {
+    "code": "CHY617",
+    "title": "PHOTO-CHEMISTRY AND PERICYCLIC  REACTIONS"
+}, {
+    "code": "CHY618",
+    "title": "CHEMISTRY OF HETEROCYCLIC COMPOUNDS"
+}, {
+    "code": "CHY619",
+    "title": "ORGANIC SYNTHESIS  AND METHODOLOGIES"
+}, {
+    "code": "CHY620",
+    "title": "CHEMISTRY OF NATURAL PRODUCTS"
+}, {
+    "code": "CHY624",
+    "title": "ANALYTICAL CHEMISTRY PRACTICAL - II"
+}, {
+    "code": "CHY625",
+    "title": "ANALYTICAL CHEMISTRY PRACTICAL - III"
+}, {
+    "code": "CHY626",
+    "title": "INORGANIC CHEMISTRY PRACTICAL - II"
+}, {
+    "code": "CHY627",
+    "title": "INORGANIC CHEMISTRY PRACTICAL - III"
+}, {
+    "code": "CHY628",
+    "title": "ORGANIC CHEMISTRY PRACTICAL - II"
+}, {
+    "code": "CHY629",
+    "title": "ORGANIC CHEMISTRY PRACTICAL - III"
+}, {
+    "code": "CLE1003",
+    "title": "SURVEYING"
+}, {
+    "code": "CLE1004",
+    "title": "SOIL MECHANICS AND FOUNDATION ENGINEERING"
+}, {
+    "code": "CLE1006",
+    "title": "ENVIRONMENTAL ENGINEERING"
+}, {
+    "code": "CLE1007",
+    "title": "CONSTRUCTION MATERIALS AND TECHNIQUES"
+}, {
+    "code": "CLE1011",
+    "title": "ENGINEERING GEOLOGY"
+}, {
+    "code": "CLE1013",
+    "title": "ENVIRONMENTAL IMPACT ASSESSMENT"
+}, {
+    "code": "CLE2002",
+    "title": "STRENGTH OF MATERIALS"
+}, {
+    "code": "CLE2004",
+    "title": "WATER RESOURCE ENGINEERING"
+}, {
+    "code": "CLE2007",
+    "title": "ADVANCED CONCRETE TECHNOLOGY"
+}, {
+    "code": "CLE2008",
+    "title": "CONSTRUCTION PLANNING AND MANAGEMENT"
+}, {
+    "code": "CLE201",
+    "title": "ENGINEERING MECHANICS"
+}, {
+    "code": "CLE202",
+    "title": "ENGINEERING GEOLOGY"
+}, {
+    "code": "CLE203",
+    "title": "STRENGTH OF MATERIALS"
+}, {
+    "code": "CLE204",
+    "title": "CONSTRUCTION MATERIALS AND TECHNOLOGY"
+}, {
+    "code": "CLE205",
+    "title": "SOIL MECHANICS"
+}, {
+    "code": "CLE206",
+    "title": "CONCRETE TECHNOLOGY"
+}, {
+    "code": "CLE207",
+    "title": "SURVEYING"
+}, {
+    "code": "CLE208",
+    "title": "STRUCTURAL ANALYSIS"
+}, {
+    "code": "CLE209",
+    "title": "BUILDING DRAWING"
+}, {
+    "code": "CLE210",
+    "title": "AIR AND NOISE POLLUTION"
+}, {
+    "code": "CLE211",
+    "title": "CONSTRUCTION MANAGEMENT"
+}, {
+    "code": "CLE212",
+    "title": "FUNDAMENTALS OF ENERGY, ENVIRONMENT AND CLIMATE CHANGE"
+}, {
+    "code": "CLE213",
+    "title": "ECONOMICS"
+}, {
+    "code": "CLE214",
+    "title": "HYDRAULIC STRUCTURES AND MACHINERY"
+}, {
+    "code": "CLE215",
+    "title": "GIS AND REMOTE SENSING"
+}, {
+    "code": "CLE216",
+    "title": "ADVANCED STRUCTURAL ANALYSIS"
+}, {
+    "code": "CLE217",
+    "title": "ENVIRONMENTAL ENGINEERING"
+}, {
+    "code": "CLE218",
+    "title": "ATMOSPHERIC PROCESSES AND CLIMATE CHANGE"
+}, {
+    "code": "CLE219",
+    "title": "RENEWABLE SOURCES OF ENERGY"
+}, {
+    "code": "CLE301",
+    "title": "REINFORCED CONCRETE STRUCTURES"
+}, {
+    "code": "CLE302",
+    "title": "HIGHWAY ENGINEERING"
+}, {
+    "code": "CLE303",
+    "title": "FOUNDATION ENGINEERING"
+}, {
+    "code": "CLE304",
+    "title": "FUNDAMENTALS OF STRUCTURAL DESIGNS"
+}, {
+    "code": "CLE305",
+    "title": "QUANTITY SURVEYING AND ESTIMATING"
+}, {
+    "code": "CLE306",
+    "title": "ADVANCED FLUID MECHANICS"
+}, {
+    "code": "CLE308",
+    "title": "APPLICATIONS OF MATRIX METHODS IN STRUCTURAL ANALYSIS"
+}, {
+    "code": "CLE309",
+    "title": "ARCHITECTURE AND TOWN PLANNING"
+}, {
+    "code": "CLE310",
+    "title": "DESIGN OF CONCRETE STRUCTURES"
+}, {
+    "code": "CLE311",
+    "title": "EARTHQUAKE ENGINEERING"
+}, {
+    "code": "CLE312",
+    "title": "ECONOMICS AND BUSINESS FINANCE FOR CIVIL ENGINEERS"
+}, {
+    "code": "CLE313",
+    "title": "ENVIRONMENTAL IMPACT ASSESSMENT"
+}, {
+    "code": "CLE314",
+    "title": "INDUSTRIAL WASTES TREATMENT AND DISPOSAL"
+}, {
+    "code": "CLE315",
+    "title": "GROUND IMPROVEMENT TECHNIQUES"
+}, {
+    "code": "CLE316",
+    "title": "WATER RESOURCES ENGINEERING"
+}, {
+    "code": "CLE317",
+    "title": "HYDROLOGY"
+}, {
+    "code": "CLE318",
+    "title": "MASS TRANSPORT MANAGEMENT"
+}, {
+    "code": "CLE319",
+    "title": "OPERATIONS RESEARCH"
+}, {
+    "code": "CLE320",
+    "title": "POLLUTION CONTROL AND MONITORING"
+}, {
+    "code": "CLE321",
+    "title": "STRUCTURES ON EXPANSIVE SOILS"
+}, {
+    "code": "CLE322",
+    "title": "SYSTEMS APPROACH IN ENGINEERING DESIGN"
+}, {
+    "code": "CLE323",
+    "title": "TRANSPORT PLANNING AND MANAGEMENT"
+}, {
+    "code": "CLE324",
+    "title": "NATURAL DISASTER MITIGATION AND MANAGEMENT"
+}, {
+    "code": "CLE325",
+    "title": "HIGHWAY PAVEMENT DESIGN"
+}, {
+    "code": "CLE326",
+    "title": "GEOTECHNICAL EARTHQUAKE ENGINEERING"
+}, {
+    "code": "CLE327",
+    "title": "SOLID WASTE MANAGEMENT"
+}, {
+    "code": "CLE401",
+    "title": "DESIGN OF STEEL STRUCTURES"
+}, {
+    "code": "CLE402",
+    "title": "GROUND WATER ENGINEERING"
+}, {
+    "code": "CLE499",
+    "title": "PROJECT WORK"
+}, {
+    "code": "CLE5001",
+    "title": "THEORY OF ELASTICITY AND PLASTICITY"
+}, {
+    "code": "CLE5002",
+    "title": "DESIGN OF CONCRETE STRUCTURAL SYSTEMS"
+}, {
+    "code": "CLE506",
+    "title": "MATRIX METHODS OF STRUCTURAL ANALYSIS"
+}, {
+    "code": "CLE509",
+    "title": "FINITE ELEMENT ANALYSIS"
+}, {
+    "code": "CLE513",
+    "title": "ADVANCED CONCRETE TECHNOLOGY"
+}, {
+    "code": "CLE518",
+    "title": "LIMIT STATE DESIGN OF STEEL STRUCTURES"
+}, {
+    "code": "CLE531",
+    "title": "SOLAR ENERGY TECHNOLOGIES"
+}, {
+    "code": "CLE537",
+    "title": "EXPERIMENTAL STRESS ANALYSIS"
+}, {
+    "code": "CLE701",
+    "title": "RESEARCH METHODOLOGY"
+}, {
+    "code": "CSC1001",
+    "title": "COMPUTATIONAL THINKING"
+}, {
+    "code": "CSC1002",
+    "title": "DIGITAL LOGIC AND DESIGN"
+}, {
+    "code": "CSC1003",
+    "title": "PROGRAMMING FUNDAMENTALS"
+}, {
+    "code": "CSC1004",
+    "title": "OPERATING SYSTEMS"
+}, {
+    "code": "CSC1007",
+    "title": "MOBILE APPLICATION DEVELOPMENT"
+}, {
+    "code": "CSC1008",
+    "title": "2D ANIMATION"
+}, {
+    "code": "CSC2002",
+    "title": "OBJECT ORIENTED PROGRAMMING"
+}, {
+    "code": "CSC2004",
+    "title": "COMPUTER ARCHITECTURE"
+}, {
+    "code": "CSC318",
+    "title": "DATA MINING"
+}, {
+    "code": "CSC502",
+    "title": "FORMAL LANGUAGES AND AUTOMATA THEORY"
+}, {
+    "code": "CSC503",
+    "title": "DATA STRUCTURES AND ALGORITHMS"
+}, {
+    "code": "CSC505",
+    "title": "COMPUTER ARCHITECTURE AND ORGANIZATION"
+}, {
+    "code": "CSC506",
+    "title": "OPERATING SYSTEMS"
+}, {
+    "code": "CSC508",
+    "title": "DATABASE MANAGEMENT SYSTEMS"
+}, {
+    "code": "CSC510",
+    "title": "COMPUTER NETWORKS"
+}, {
+    "code": "CSC512",
+    "title": "OBJECT ORIENTED ANALYSIS AND DESIGN"
+}, {
+    "code": "CSC513",
+    "title": "MOBILE COMPUTING AND NETWORKING"
+}, {
+    "code": "CSC514",
+    "title": "DATA COMPRESSION"
+}, {
+    "code": "CSC515",
+    "title": "EMBEDDED SYSTEMS"
+}, {
+    "code": "CSC516",
+    "title": "IMAGE PROCESSING"
+}, {
+    "code": "CSC518",
+    "title": "CRYPTOGRAPHY AND NETWORK SECURITY"
+}, {
+    "code": "CSC519",
+    "title": "COMPILER DESIGN"
+}, {
+    "code": "CSC520",
+    "title": "PROGRAMMING PRACTICES USING C AND C++"
+}, {
+    "code": "CSC521",
+    "title": "KNOWLEDGE BASED SYSTEM"
+}, {
+    "code": "CSC522",
+    "title": "DATA WAREHOUSING AND DATA MINING"
+}, {
+    "code": "CSC523",
+    "title": "DECISION SUPPORT SYSTEM"
+}, {
+    "code": "CSC524",
+    "title": "MULTIMEDIA SYSTEM"
+}, {
+    "code": "CSC601",
+    "title": "SOFTWARE ENGINEERING"
+}, {
+    "code": "CSC603",
+    "title": "OPEN SOURCE PROGRAMMING"
+}, {
+    "code": "CSC605",
+    "title": "ADVANCED DATABASE MANAGEMENT SYSTEMS"
+}, {
+    "code": "CSC606",
+    "title": "DISTRIBUTED COMPUTING"
+}, {
+    "code": "CSC607",
+    "title": "NATURAL LANGUAGE PROCESSING"
+}, {
+    "code": "CSC608",
+    "title": "SOFT COMPUTING"
+}, {
+    "code": "CSC609",
+    "title": "REAL TIME SYSTEMS"
+}, {
+    "code": "CSC611",
+    "title": "COMPUTER GRAPHICS"
+}, {
+    "code": "CSC612",
+    "title": "WEB SERVICES"
+}, {
+    "code": "CSC613",
+    "title": "SYSTEM MODELING AND SIMULATION"
+}, {
+    "code": "CSC614",
+    "title": "CLOUD COMPUTING"
+}, {
+    "code": "CSC615",
+    "title": "MULTICORE SYSTEMS PROGRAMMING"
+}, {
+    "code": "CSE1001",
+    "title": "PROBLEM SOLVING AND PROGRAMMING"
+}, {
+    "code": "CSE1002",
+    "title": "PROBLEM SOLVING WITH OBJECT ORIENTED PROGRAMMING"
+}, {
+    "code": "CSE1003",
+    "title": "DIGITAL LOGIC AND DESIGN"
+}, {
+    "code": "CSE101",
+    "title": "COMPUTER PROGRAMMING AND PROBLEM SOLVING"
+}, {
+    "code": "CSE102",
+    "title": "DATA STRUCTURES AND ALGORITHMS"
+}, {
+    "code": "CSE103",
+    "title": "PROGRAMMING FUNDAMENTALS"
+}, {
+    "code": "CSE106",
+    "title": "DIGITAL LOGIC"
+}, {
+    "code": "CSE107",
+    "title": "DIGITAL LOGIC LABORATORY"
+}, {
+    "code": "CSE109",
+    "title": "DIGITAL LOGIC"
+}, {
+    "code": "CSE2003",
+    "title": "DATA STRUCTURES AND ALGORITHMS"
+}, {
+    "code": "CSE201",
+    "title": "INTRODUCTION TO ALGORITHMS"
+}, {
+    "code": "CSE202",
+    "title": "ALGORITHM DESIGN AND ANALYSIS"
+}, {
+    "code": "CSE203",
+    "title": "THE OBJECT ORIENTED PARADIGM"
+}, {
+    "code": "CSE204",
+    "title": "DATA STRUCTURES AND ALGORITHMS"
+}, {
+    "code": "CSE205",
+    "title": "COMPUTER ARCHITECTURE AND ORGANIZATION"
+}, {
+    "code": "CSE206",
+    "title": "OBJECT ORIENTED PROGRAMMING LAB"
+}, {
+    "code": "CSE208",
+    "title": "THEORY OF COMPUTATION"
+}, {
+    "code": "CSE209",
+    "title": "CGI AND WEB PROGRAMMING"
+}, {
+    "code": "CSE210",
+    "title": "DATA BASE MANAGEMENT SYSTEM"
+}, {
+    "code": "CSE211",
+    "title": "OPERATING SYSTEMS"
+}, {
+    "code": "CSE212",
+    "title": "OPERATING SYSTEMS LAB"
+}, {
+    "code": "CSE213",
+    "title": "MICROPROCESSOR AND INTERFACING"
+}, {
+    "code": "CSE214",
+    "title": "MICROPROCESSOR AND INTERFACING LAB"
+}, {
+    "code": "CSE215",
+    "title": "C++ PROGRAMMING"
+}, {
+    "code": "CSE216",
+    "title": "JAVA PROGRAMMING"
+}, {
+    "code": "CSE217",
+    "title": "LINUX PROGRAMMING"
+}, {
+    "code": "CSE218",
+    "title": ".NET PROGRAMMING"
+}, {
+    "code": "CSE219",
+    "title": "OBJECT ORIENTED PARADIGM AND PROGRAMMING"
+}, {
+    "code": "CSE220",
+    "title": "DATA STRUCTURES AND ALGORITHMS"
+}, {
+    "code": "CSE221",
+    "title": "MICROPROCESSOR AND INTERFACING"
+}, {
+    "code": "CSE222",
+    "title": "OPERATING SYSTEMS"
+}, {
+    "code": "CSE223",
+    "title": "PRINCIPLES OF PROGRAMMING"
+}, {
+    "code": "CSE302",
+    "title": "ARTIFICIAL INTELLIGENCE"
+}, {
+    "code": "CSE303",
+    "title": "COMPUTER NETWORKS"
+}, {
+    "code": "CSE304",
+    "title": "COMPUTER NETWORKS LAB"
+}, {
+    "code": "CSE305",
+    "title": "EMBEDDED SYSTEMS"
+}, {
+    "code": "CSE306",
+    "title": "EMBEDDED SYSTEMS LAB"
+}, {
+    "code": "CSE307",
+    "title": "INTERNET AND WEB PROGRAMMING"
+}, {
+    "code": "CSE308",
+    "title": "INTERNET AND WEB PROGRAMMING LAB"
+}, {
+    "code": "CSE309",
+    "title": "PROGRAMMING LANGUAGE TRANSLATORS"
+}, {
+    "code": "CSE310",
+    "title": "SOFTWARE ENGINEERING"
+}, {
+    "code": "CSE311",
+    "title": "SOFTWARE ENGINEERING LAB"
+}, {
+    "code": "CSE312",
+    "title": "DATABASE SYSTEMS"
+}, {
+    "code": "CSE314",
+    "title": "ADVANCED COMPUTER ARCHITECTURE"
+}, {
+    "code": "CSE315",
+    "title": "SCRIPTING LANGUAGES"
+}, {
+    "code": "CSE316",
+    "title": "DATABASE DESIGN"
+}, {
+    "code": "CSE317",
+    "title": "DATA COMMUNICATIONS"
+}, {
+    "code": "CSE318",
+    "title": "DATABASE SYSTEMS LAB"
+}, {
+    "code": "CSE319",
+    "title": "SOFT COMPUTING"
+}, {
+    "code": "CSE320",
+    "title": "MULTICORE SYSTEMS PROGRAMMING"
+}, {
+    "code": "CSE322",
+    "title": "EMBEDDED SYSTEMS"
+}, {
+    "code": "CSE323",
+    "title": "COMPUTER NETWORKS"
+}, {
+    "code": "CSE324",
+    "title": "DATABASE SYSTEMS"
+}, {
+    "code": "CSE325",
+    "title": "SOFTWARE ENGINEERING"
+}, {
+    "code": "CSE326",
+    "title": "INTERNET AND WEB PROGRAMMING"
+}, {
+    "code": "CSE327",
+    "title": "IMAGE AND VISION COMPUTING"
+}, {
+    "code": "CSE328",
+    "title": "SOFTWARE PROJECT MANAGEMENT"
+}, {
+    "code": "CSE329",
+    "title": "MANAGEMENT INFORMATION SYSTEMS"
+}, {
+    "code": "CSE330",
+    "title": "AGENT BASED INTELLIGENT SYSTEMS"
+}, {
+    "code": "CSE331",
+    "title": "PATTERN CLASSIFICATION"
+}, {
+    "code": "CSE332",
+    "title": "INFORMATION STORAGE AND MANAGEMENT"
+}, {
+    "code": "CSE401",
+    "title": "NEURAL NETWORK IN BIOINFORMATICS"
+}, {
+    "code": "CSE402",
+    "title": "GRAPHICS AND MULTIMEDIA SYSTEMS"
+}, {
+    "code": "CSE403",
+    "title": "HUMAN COMPUTER INTERACTION"
+}, {
+    "code": "CSE404",
+    "title": "BIO-INFORMATICS"
+}, {
+    "code": "CSE405",
+    "title": "PARALLEL ALGORITHMS"
+}, {
+    "code": "CSE406",
+    "title": "CONCURRENT AND DISTRIBUTED SYSTEMS"
+}, {
+    "code": "CSE407",
+    "title": "SOFTWARE PRACTICE AND TESTING"
+}, {
+    "code": "CSE408",
+    "title": "DATA WAREHOUSING AND DATA MINING"
+}, {
+    "code": "CSE409",
+    "title": "MODELING AND SIMULATION"
+}, {
+    "code": "CSE410",
+    "title": "HARDWARE SOFTWARE CO-DESIGN"
+}, {
+    "code": "CSE411",
+    "title": "COMPUTER ORGANIZATION AND DESIGN"
+}, {
+    "code": "CSE412",
+    "title": "IMAGE PROCESSING"
+}, {
+    "code": "CSE413",
+    "title": "COMPUTER GRAPHICS"
+}, {
+    "code": "CSE414",
+    "title": "MULTIMEDIA SYSTEMS AND ALGORITHMS"
+}, {
+    "code": "CSE415",
+    "title": "INFORMATION SECURITY"
+}, {
+    "code": "CSE416",
+    "title": "CLOUD COMPUTING"
+}, {
+    "code": "CSE417",
+    "title": "DIGITAL SIGNAL PROCESSING"
+}, {
+    "code": "CSE418",
+    "title": "GRAPHICS AND MULTIMEDIA"
+}, {
+    "code": "CSE419",
+    "title": "MOBILE COMPUTING"
+}, {
+    "code": "CSE420",
+    "title": "GREEN COMPUTING"
+}, {
+    "code": "CSE421",
+    "title": "INFORMATION RETRIEVAL"
+}, {
+    "code": "CSE422",
+    "title": "MEDICAL IMAGE PROCESSING"
+}, {
+    "code": "CSE423",
+    "title": "GAMING ENGINEERING"
+}, {
+    "code": "CSE424",
+    "title": "ADHOC WIRELESS NETWORKS"
+}, {
+    "code": "CSE499",
+    "title": "PROJECT WORK"
+}, {
+    "code": "CSE501",
+    "title": "PROGRAMMING IN C"
+}, {
+    "code": "CSE502",
+    "title": "ADVANCED SOFTWARE ENGINEERING"
+}, {
+    "code": "CSE503",
+    "title": "ADVANCED ALGORITHMIC ANALYSIS"
+}, {
+    "code": "CSE504",
+    "title": "ADVANCED COMPUTER GRAPHICS"
+}, {
+    "code": "CSE505",
+    "title": "DATA STRUCTURES AND ALGORITHM LAB"
+}, {
+    "code": "CSE506",
+    "title": "WEB SERVICES"
+}, {
+    "code": "CSE507",
+    "title": "ADVANCED COMPUTER ARCHITECTURE"
+}, {
+    "code": "CSE508",
+    "title": "WEB SERVICES LAB"
+}, {
+    "code": "CSE509",
+    "title": "ADVANCED OPERATING SYSTEMS"
+}, {
+    "code": "CSE510",
+    "title": "DISTRIBUTED SYSTEMS"
+}, {
+    "code": "CSE511",
+    "title": "ADVANCED COMPUTER NETWORKS"
+}, {
+    "code": "CSE512",
+    "title": "MULTI-CORE PROGRAMMING LAB"
+}, {
+    "code": "CSE513",
+    "title": "OPERATING SYSTEM AND NETWORKING LAB"
+}, {
+    "code": "CSE514",
+    "title": "PERVASIVE COMPUTING"
+}, {
+    "code": "CSE515",
+    "title": "ADVANCED DATABASE SYSTEMS"
+}, {
+    "code": "CSE516",
+    "title": "NETWORK PERFORMANCE EVALUATIONS"
+}, {
+    "code": "CSE517",
+    "title": "DATABASE TUNING"
+}, {
+    "code": "CSE518",
+    "title": "PARALLEL ALGORITHMS"
+}, {
+    "code": "CSE519",
+    "title": "SOFTWARE DESIGN"
+}, {
+    "code": "CSE520",
+    "title": "GRID COMPUTING"
+}, {
+    "code": "CSE521",
+    "title": "SOFTWARE QUALITY AND TESTING"
+}, {
+    "code": "CSE522",
+    "title": "DATA COMPRESSION"
+}, {
+    "code": "CSE523",
+    "title": "SOFTWARE REQUIREMENTS ENGINEERING"
+}, {
+    "code": "CSE524",
+    "title": "ADVANCES IN COMPILER DESIGN"
+}, {
+    "code": "CSE525",
+    "title": "SOFTWARE PROJECT MANAGEMENT"
+}, {
+    "code": "CSE526",
+    "title": "TRANSACTION PROCESSING"
+}, {
+    "code": "CSE527",
+    "title": "ADVANCE FPGA DESIGN"
+}, {
+    "code": "CSE528",
+    "title": "NATURAL LANGUAGE PROCESSING"
+}, {
+    "code": "CSE529",
+    "title": "MULTI-CORE PROGRAMMING"
+}, {
+    "code": "CSE530",
+    "title": "HIGH PERFORMANCE COMPUTER SYSTEMS"
+}, {
+    "code": "CSE531",
+    "title": "OBJECT ORIENTED PROGRAMMING"
+}, {
+    "code": "CSE532",
+    "title": "ADHOC WIRELESS NETWORKS"
+}, {
+    "code": "CSE533",
+    "title": "COMPUTATIONAL INTELLIGENCE"
+}, {
+    "code": "CSE534",
+    "title": "DATA WAREHOUSING AND DATA MINING"
+}, {
+    "code": "CSE535",
+    "title": "CLOUD BASED COMPUTING"
+}, {
+    "code": "CSE536",
+    "title": "PATTERN RECOGNITION"
+}, {
+    "code": "CSE601",
+    "title": "KNOWLEDGE REPRESENTATION AND REASONING"
+}, {
+    "code": "CSE602",
+    "title": "ALGORITHMS FOR VLSI DESIGN AUTOMATION"
+}, {
+    "code": "CSE603",
+    "title": "CLOUD COMPUTING ARCHITECTURE"
+}, {
+    "code": "CSE604",
+    "title": "VIRTUALIZATION"
+}, {
+    "code": "CSE605",
+    "title": "DATA CLOUDS AND STORAGE TECHNOLOGIES"
+}, {
+    "code": "CSE606",
+    "title": "CLOUD COMPUTING PATTERNS"
+}, {
+    "code": "CSE607",
+    "title": "DESIGN AND DEVELOPMENT OF CLOUD APPLICATIONS"
+}, {
+    "code": "CSE608",
+    "title": "CLOUD SECURITY AND GOVERNANCE"
+}, {
+    "code": "CSE609",
+    "title": "INFORMATION RETRIEVAL AND DATA MINING"
+}, {
+    "code": "CSE610",
+    "title": "BIG DATA ESSENTIALS"
+}, {
+    "code": "CSE611",
+    "title": "MACHINE LEARNING"
+}, {
+    "code": "CSE612",
+    "title": "BIG DATA ANALYTICS"
+}, {
+    "code": "CSE613",
+    "title": "DATA VISUALIZATION"
+}, {
+    "code": "CSE614",
+    "title": "LARGE SCALE DATA MANAGEMENT TECHNIQUES"
+}, {
+    "code": "ECE1001",
+    "title": "FUNDAMENTALS OF ELECTRICAL CIRCUITS"
+}, {
+    "code": "ECE1002",
+    "title": "SEMICONDUCTOR DEVICES AND CIRCUITS"
+}, {
+    "code": "ECE1006",
+    "title": "INTRODUCTION TO NANOSCIENCE AND NANOTECHNOLOGY"
+}, {
+    "code": "ECE101",
+    "title": "ELECTRON DEVICES AND CIRCUITS"
+}, {
+    "code": "ECE1010",
+    "title": "FUNDAMENTALS OF ELECTRIC AND MAGNETIC CIRCUITS"
+}, {
+    "code": "ECE1014",
+    "title": "SENSORS AND MEASUREMENTS"
+}, {
+    "code": "ECE1016",
+    "title": "CIRCUIT THEORY"
+}, {
+    "code": "ECE1017",
+    "title": "ANALYSIS OF DATA STRUCTURES AND ALGORITHMS"
+}, {
+    "code": "ECE102",
+    "title": "FUNDAMENTALS OF ELECTRICAL ENGINEERING"
+}, {
+    "code": "ECE103",
+    "title": "DIGITAL LOGIC DESIGN"
+}, {
+    "code": "ECE104",
+    "title": "DISCRETE TIME SYSTEMS AND PROCESSING"
+}, {
+    "code": "ECE105",
+    "title": "NETWORK ANALYSIS"
+}, {
+    "code": "ECE106",
+    "title": "EMBEDDED C AND LINUX"
+}, {
+    "code": "ECE2001",
+    "title": "NETWORK THEORY"
+}, {
+    "code": "ECE201",
+    "title": "PROBABILITY THEORY AND RANDOM PROCESS"
+}, {
+    "code": "ECE202",
+    "title": "TRANSMISSION LINES AND FIELDS"
+}, {
+    "code": "ECE2020",
+    "title": "DIGITAL ELECTRONICS"
+}, {
+    "code": "ECE203",
+    "title": "MODULATION TECHNIQUES"
+}, {
+    "code": "ECE204",
+    "title": "ANALOG CIRCUIT DESIGN"
+}, {
+    "code": "ECE205",
+    "title": "ELECTRICAL AND ELECTRONIC MEASUREMENTS"
+}, {
+    "code": "ECE206",
+    "title": "SIGNALS AND SYSTEMS"
+}, {
+    "code": "ECE207",
+    "title": "ANALOG ELECTRONIC CIRCUITS"
+}, {
+    "code": "ECE208",
+    "title": "ENGINEERING ELECTROMAGNETICS"
+}, {
+    "code": "ECE209",
+    "title": "INTRODUCTION TO NANO SCIENCE AND NANOTECHNOLOGY"
+}, {
+    "code": "ECE210",
+    "title": "CONTROL SYSTEMS ENGINEERING"
+}, {
+    "code": "ECE301",
+    "title": "VLSI SYSTEM DESIGN"
+}, {
+    "code": "ECE302",
+    "title": "COMPUTER ORGANISATION AND ARCHITECTURE"
+}, {
+    "code": "ECE303",
+    "title": "DIGITAL SIGNAL PROCESSING"
+}, {
+    "code": "ECE304",
+    "title": "MICROCONTROLLER AND APPLICATIONS"
+}, {
+    "code": "ECE305",
+    "title": "DIGITAL COMMUNICATION"
+}, {
+    "code": "ECE306",
+    "title": "ANTENNAS AND WAVE PROPAGATION"
+}, {
+    "code": "ECE307",
+    "title": "INFORMATION THEORY AND CODING"
+}, {
+    "code": "ECE308",
+    "title": "COMPUTER COMMUNICATION"
+}, {
+    "code": "ECE309",
+    "title": "BIOMEDICAL INSTRUMENTATION AND ANALYSIS"
+}, {
+    "code": "ECE310",
+    "title": "DIGITAL SYSTEM DESIGN"
+}, {
+    "code": "ECE311",
+    "title": "ROBOTICS AND AUTOMATION"
+}, {
+    "code": "ECE312",
+    "title": "OPERATING SYSTEM"
+}, {
+    "code": "ECE313",
+    "title": "DETECTION AND ESTIMATION THEORY"
+}, {
+    "code": "ECE401",
+    "title": "OPTICAL COMMUNICATION AND NETWORKS"
+}, {
+    "code": "ECE402",
+    "title": "MICROWAVE ENGINEERING"
+}, {
+    "code": "ECE403",
+    "title": "WIRELESS AND MOBILE COMMUNICATION"
+}, {
+    "code": "ECE404",
+    "title": "DIGITAL IMAGE PROCESSING"
+}, {
+    "code": "ECE405",
+    "title": "SATELLITE COMMUNICATION"
+}, {
+    "code": "ECE406",
+    "title": "EMBEDDED SYSTEM DESIGN"
+}, {
+    "code": "ECE407",
+    "title": "NEURAL NETWORKS AND FUZZY CONTROL"
+}, {
+    "code": "ECE408",
+    "title": "ADVANCED MICROCONTROLLERS (ARM, DSP)"
+}, {
+    "code": "ECE409",
+    "title": "MICRO AND SMART SYSTEMS TECHNOLOGY"
+}, {
+    "code": "ECE410",
+    "title": "WIRELESS SENSOR NETWORKS"
+}, {
+    "code": "ECE411",
+    "title": "RADAR AND NAVIGATIONAL AIDS"
+}, {
+    "code": "ECE499",
+    "title": "PROJECT WORK"
+}, {
+    "code": "ECE5001",
+    "title": "PRINCIPLES OF SENSORS"
+}, {
+    "code": "ECE5002",
+    "title": "DATA ACQUISITION AND HARDWARE INTERFACES"
+}, {
+    "code": "ECE5003",
+    "title": "CONTROL SYSTEMS"
+}, {
+    "code": "ECE5004",
+    "title": "SOFTWARE FOR EMBEDDED SYSTEMS"
+}, {
+    "code": "ECE501",
+    "title": "SYSTEM-ON-CHIP DESIGN"
+}, {
+    "code": "ECE502",
+    "title": "MATHEMATICS FOR COMMUNICATIONS"
+}, {
+    "code": "ECE503",
+    "title": "DESIGN AND ANALYSIS OF ALGORITHMS"
+}, {
+    "code": "ECE504",
+    "title": "EMBEDDED PROGRAMMING"
+}, {
+    "code": "ECE5046",
+    "title": "BIOMEDICAL SENSORS AND DATA ACQUISITION TECHNIQUES"
+}, {
+    "code": "ECE5047",
+    "title": "BIOSIGNAL PROCESSING AND ANALYSIS"
+}, {
+    "code": "ECE5048",
+    "title": "EMBEDDED SYSTEMS AND IOT FOR BIOMEDICAL APPLICATIONS"
+}, {
+    "code": "ECE505",
+    "title": "VIRTUAL INSTRUMENTATION SYSTEMS"
+}, {
+    "code": "ECE5050",
+    "title": "PHYSIOLOGICAL CONTROL SYSTEMS"
+}, {
+    "code": "ECE5052",
+    "title": "MEDICAL IMAGE PROCESSING"
+}, {
+    "code": "ECE506",
+    "title": "HARDWARE-SOFTWARE CO-DESIGN"
+}, {
+    "code": "ECE507",
+    "title": "REAL-TIME OPERATING SYSTEMS"
+}, {
+    "code": "ECE508",
+    "title": "VLSI TESTING AND TESTABILITY"
+}, {
+    "code": "ECE509",
+    "title": "PRODUCT DESIGN, MANAGEMENT TECHNIQUES AND ENTREPRENEURSHIP"
+}, {
+    "code": "ECE510",
+    "title": "MICROCONTROLLER SYSTEM DESIGN AND ITS APPLICATIONS"
+}, {
+    "code": "ECE512",
+    "title": "EMBEDDED SYSTEM DESIGN USING FPGA"
+}, {
+    "code": "ECE513",
+    "title": "ENVIRONMENTAL SENSORS"
+}, {
+    "code": "ECE514",
+    "title": "INDUSTRIAL AUTOMATION"
+}, {
+    "code": "ECE515",
+    "title": "THIN-FILM TECHNOLOGY"
+}, {
+    "code": "ECE517",
+    "title": "CHEMICAL AND BIO SENSORS"
+}, {
+    "code": "ECE601",
+    "title": "SENSOR TECHNOLOGY"
+}, {
+    "code": "ECE602",
+    "title": "EMBEDDED SYSTEMS AND APPLICATIONS"
+}, {
+    "code": "ECE603",
+    "title": "PRINCIPLES OF VLSI SYSTEM DESIGN"
+}, {
+    "code": "ECE604",
+    "title": "RFIC DESIGN"
+}, {
+    "code": "ECE605",
+    "title": "ADVANCED SIGNAL PROCESSING"
+}, {
+    "code": "ECE606",
+    "title": "ADVANCED PROCESSORS AND ITS APPLICATIONS"
+}, {
+    "code": "ECE607",
+    "title": "MOBILE COMPUTING"
+}, {
+    "code": "ECE608",
+    "title": "EMI COMPATIBILITY IN ESD"
+}, {
+    "code": "ECE609",
+    "title": "ADVANCED DIGITAL IMAGE PROCESSING"
+}, {
+    "code": "ECE610",
+    "title": "NEURAL NETWORKS AND FUZZY SYSTEMS"
+}, {
+    "code": "ECE611",
+    "title": "PATTERN RECOGNITION AND CLASSIFICATION"
+}, {
+    "code": "ECE612",
+    "title": "AUTOMOTIVE STANDARDS"
+}, {
+    "code": "ECE613",
+    "title": "ADVANCED EMBEDDED PROGRAMMING"
+}, {
+    "code": "ECE614",
+    "title": "DSP ARCHITECTURES"
+}, {
+    "code": "ECE615",
+    "title": "ELECTROMAGNETIC INTERFERENCE AND COMPATIBILITY IN ELECTRONIC SYSTEM DESIGN"
+}, {
+    "code": "ECE616",
+    "title": "WIRELESS SENSOR NETWORKS"
+}, {
+    "code": "ECE617",
+    "title": "ADVANCES IN WIRELESS NETWORKS"
+}, {
+    "code": "ECE618",
+    "title": "ROUTING ALGORITHMS"
+}, {
+    "code": "ECE619",
+    "title": "ADVANCED OPTICAL BROAD BAND ACCESS NETWORK"
+}, {
+    "code": "ECE620",
+    "title": "NANOELECTRONICS"
+}, {
+    "code": "ECE621",
+    "title": "WIRELESS MIMO COMMUNICATIONS"
+}, {
+    "code": "ECE622",
+    "title": "INDEPENDENT COMPONENT ANALYSIS AND ITS APPLICATION"
+}, {
+    "code": "ECE623",
+    "title": "IMAGE PROCESSING AND FEATURE EXTRACTION"
+}, {
+    "code": "EEE1001",
+    "title": "BASIC ELECTRICAL AND ELECTRONICS ENGINEERING"
+}, {
+    "code": "EEE1002",
+    "title": "ELECTRIC CIRCUITS"
+}, {
+    "code": "EEE1003",
+    "title": "ELECTRICAL WORKSHOP"
+}, {
+    "code": "EEE1004",
+    "title": "ENGINEERING ELECTROMAGNETICS"
+}, {
+    "code": "EEE1005",
+    "title": "SIGNALS  AND SYSTEMS"
+}, {
+    "code": "EEE1007",
+    "title": "NEURAL NETWORK AND FUZZY CONTROL"
+}, {
+    "code": "EEE101",
+    "title": "BASIC ELECTRICAL AND ELECTRONIC ENGINEERING"
+}, {
+    "code": "EEE1018",
+    "title": "NANOTECHNOLOGY FUNDAMENTALS AND ITS APPLICATIONS"
+}, {
+    "code": "EEE1019",
+    "title": "FOUNDATIONS OF ELECTRICAL AND ELECTRONICS ENGINEERING"
+}, {
+    "code": "EEE102",
+    "title": "SEMICONDUCTOR DEVICES AND CIRCUITS"
+}, {
+    "code": "EEE103",
+    "title": "ELECTRONICS"
+}, {
+    "code": "EEE104",
+    "title": "ELECTRIC AND MAGNETIC CIRCUITS"
+}, {
+    "code": "EEE105",
+    "title": "BASIC ELECTRICAL ENGINEERING"
+}, {
+    "code": "EEE106",
+    "title": "DIGITAL LOGIC"
+}, {
+    "code": "EEE108",
+    "title": "NETWORK THEORY"
+}, {
+    "code": "EEE109",
+    "title": "ENGINEERING ELECTROMAGNETICS"
+}, {
+    "code": "EEE110",
+    "title": "ELECTRONIC CIRCUITS"
+}, {
+    "code": "EEE111",
+    "title": "ELECTRICAL TECHNOLOGY"
+}, {
+    "code": "EEE112",
+    "title": "DIGITAL DESIGN"
+}, {
+    "code": "EEE113",
+    "title": "ANALOG ELECTRONIC CIRCUITS"
+}, {
+    "code": "EEE114",
+    "title": "DC MACHINES AND TRANSFORMERS"
+}, {
+    "code": "EEE115",
+    "title": "ELECTROMAGNETIC FIELD THEORY"
+}, {
+    "code": "EEE116",
+    "title": "DIGITAL LOGIC SYSTEM DESIGN"
+}, {
+    "code": "EEE2001",
+    "title": "NETWORK THEORY"
+}, {
+    "code": "EEE2002",
+    "title": "SEMICONDUCTOR DEVICES AND CIRCUITS"
+}, {
+    "code": "EEE2003",
+    "title": "ELECTROMECHANICAL ENERGY CONVERSION"
+}, {
+    "code": "EEE201",
+    "title": "ANALOG INTEGRATED CIRCUITS"
+}, {
+    "code": "EEE202",
+    "title": "OPTO ELECTRONICS"
+}, {
+    "code": "EEE204",
+    "title": "NANOTECHNOLOGY - FUNDAMENTALS AND APPLICATIONS"
+}, {
+    "code": "EEE205",
+    "title": "TRANSFORM TECHNIQUES FOR SIGNALS"
+}, {
+    "code": "EEE207",
+    "title": "ELECTRONICS AND MICROCONTROLLERS"
+}, {
+    "code": "EEE224",
+    "title": "ELECTROMECHANICAL ENERGY CONVERSION"
+}, {
+    "code": "EEE226",
+    "title": "CONTROL SYSTEMS"
+}, {
+    "code": "EEE227",
+    "title": "AC MACHINES"
+}, {
+    "code": "EEE228",
+    "title": "POWER SYSTEMS ENGINEERING"
+}, {
+    "code": "EEE229",
+    "title": "MEASUREMENT AND INSTRUMENTATION"
+}, {
+    "code": "EEE230",
+    "title": "ENGINEERING OPTIMIZATION USING SOFT COMPUTING"
+}, {
+    "code": "EEE231",
+    "title": "MEASUREMENTS AND INSTRUMENTATION (FOR 2012 BATCH)"
+}, {
+    "code": "EEE3002",
+    "title": "ANALOG AND DIGITAL CIRCUITS"
+}, {
+    "code": "EEE301",
+    "title": "DIGITAL SIGNAL PROCESSING"
+}, {
+    "code": "EEE302",
+    "title": "POWER SYSTEM ANALYSIS"
+}, {
+    "code": "EEE303",
+    "title": "MICROCONTROLLER AND ITS APPLICATIONS"
+}, {
+    "code": "EEE304",
+    "title": "POWER ELECTRONICS"
+}, {
+    "code": "EEE305",
+    "title": "RENEWABLE ENERGY SOURCES"
+}, {
+    "code": "EEE306",
+    "title": "GENERATION AND UTILIZATION OF ELECTRICAL ENERGY"
+}, {
+    "code": "EEE307",
+    "title": "BIOMEDICAL INSTRUMENTATION"
+}, {
+    "code": "EEE308",
+    "title": "VLSI SYSTEM DESIGN"
+}, {
+    "code": "EEE309",
+    "title": "INTRODUCTION TO ELECTROMAGNETIC COMPATIBILITY"
+}, {
+    "code": "EEE310",
+    "title": "DESIGN OF ELECTRICAL APPARATUS"
+}, {
+    "code": "EEE311",
+    "title": "INDUSTRIAL POWER ELECTRONICS"
+}, {
+    "code": "EEE312",
+    "title": "AUTOMATED TEST ENGINEERING"
+}, {
+    "code": "EEE401",
+    "title": "POWER SYSTEM PROTECTION AND SWITCHGEAR"
+}, {
+    "code": "EEE402",
+    "title": "ELECTRIC DRIVES AND CONTROL"
+}, {
+    "code": "EEE4021",
+    "title": "SENSORS AND SIGNAL CONDITIONING"
+}, {
+    "code": "EEE403",
+    "title": "ADVANCED CONTROL THEORY"
+}, {
+    "code": "EEE404",
+    "title": "POWER SYSTEM OPERATION AND CONTROL"
+}, {
+    "code": "EEE405",
+    "title": "SPECIAL MACHINES"
+}, {
+    "code": "EEE406",
+    "title": "DEREGULATION AND RESTRUCTURED POWER SYSTEMS"
+}, {
+    "code": "EEE407",
+    "title": "ENERGY MANAGEMENT SYSTEMS AND SCADA"
+}, {
+    "code": "EEE408",
+    "title": "NEURAL NETWORKS AND FUZZY CONTROL"
+}, {
+    "code": "EEE409",
+    "title": "HIGH VOLTAGE ENGINEERING"
+}, {
+    "code": "EEE410",
+    "title": "ROBOTICS AND AUTOMATION"
+}, {
+    "code": "EEE411",
+    "title": "DISTRIBUTED GENERATION"
+}, {
+    "code": "EEE412",
+    "title": "POWER QUALITY"
+}, {
+    "code": "EEE413",
+    "title": "RPC AND FACTS"
+}, {
+    "code": "EEE414",
+    "title": "SOFTWARE SYSTEMS FOR ENERGY MANAGEMENT"
+}, {
+    "code": "EEE499",
+    "title": "PROJECT WORK"
+}, {
+    "code": "EEE5001",
+    "title": "ANALYSIS OF POWER CONVERTERS"
+}, {
+    "code": "EEE5002",
+    "title": "GENERALIZED MACHINE THEORY"
+}, {
+    "code": "EEE5003",
+    "title": "ADVANCED PROCESSORS FOR POWER CONVERTERS"
+}, {
+    "code": "EEE5005",
+    "title": "ADVANCED SEMICONDUCTOR DEVICES"
+}, {
+    "code": "EEE5008",
+    "title": "MODERN CONTROL THEORY"
+}, {
+    "code": "EEE501",
+    "title": "MICROCONTROLLER AND APPLICATIONS"
+}, {
+    "code": "EEE5012",
+    "title": "SYSTEM THEORY"
+}, {
+    "code": "EEE5013",
+    "title": "RANDOM VARIABLES AND STATE ESTIMATION"
+}, {
+    "code": "EEE5014",
+    "title": "SMART SENSOR SYSTEMS"
+}, {
+    "code": "EEE5015",
+    "title": "PROCESS DYNAMICS AND CONTROL"
+}, {
+    "code": "EEE5019",
+    "title": "CONTROL OF ELECTRIC DRIVES"
+}, {
+    "code": "EEE502",
+    "title": "ADVANCED INSTRUMENTATION AND DATA ACQUISITION SYSTEMS"
+}, {
+    "code": "EEE503",
+    "title": "EMBEDDED SENSORS AND SYSTEM DESIGN"
+}, {
+    "code": "EEE504",
+    "title": "POWER ELECTRONICS AND DRIVES"
+}, {
+    "code": "EEE505",
+    "title": "DIGITAL CONTROL SYSTEMS"
+}, {
+    "code": "EEE506",
+    "title": "QUANTUM PHYSICS AND QUANTUM PHENOMENA IN NANOSTRUCTURES"
+}, {
+    "code": "EEE507",
+    "title": "PHYSICS AND CHEMISTRY OF SOLIDS"
+}, {
+    "code": "EEE508",
+    "title": "SYNTHESIS OF NANOMATERIALS AND THIN FILM DEPOSITION"
+}, {
+    "code": "EEE509",
+    "title": "NANOMATERIAL CHARACTERIZATION AND LITHOGRAPHY TECHNIQUES"
+}, {
+    "code": "EEE510",
+    "title": "SEMICONDUCTOR DEVICE PHYSICS"
+}, {
+    "code": "EEE511",
+    "title": "PROPERTIES OF NANOMATERIALS"
+}, {
+    "code": "EEE512",
+    "title": "NANOELECTRONICS"
+}, {
+    "code": "EEE513",
+    "title": "NANO-PHOTONICS"
+}, {
+    "code": "EEE514",
+    "title": "CARBON NANOTUBES, INORGANIC NANOWIRES AND FUNCTIONALIZATION"
+}, {
+    "code": "EEE515",
+    "title": "BIO AND CHEMICAL NANOSYSTEMS"
+}, {
+    "code": "EEE516",
+    "title": "SINGLE ELECTRONICS DEVICE APPLICATIONS AND MODELING"
+}, {
+    "code": "EEE517",
+    "title": "VLSI SYSTEM DESIGN"
+}, {
+    "code": "EEE518",
+    "title": "NANOSENSORS"
+}, {
+    "code": "EEE519",
+    "title": "MEMS TO NEMS"
+}, {
+    "code": "EEE520",
+    "title": "ADVANCED NANOMATERIAL CHARACTERIZATION TECHNIQUES"
+}, {
+    "code": "EEE521",
+    "title": "SPINTRONICS"
+}, {
+    "code": "EEE522",
+    "title": "PLASMONICS"
+}, {
+    "code": "EEE523",
+    "title": "COMPUTER NETWORKS"
+}, {
+    "code": "EEE524",
+    "title": "INFORMATION THEORY AND CODING"
+}, {
+    "code": "EEE525",
+    "title": "DIGITAL COMMUNICATION SYSTEM DESIGN"
+}, {
+    "code": "EEE526",
+    "title": "MICROWAVE AND OPTICAL COMMUNICATION COMPONENTS AND DEVICES"
+}, {
+    "code": "EEE530",
+    "title": "SPREAD SPECTRUM TECHNIQUES"
+}, {
+    "code": "EEE531",
+    "title": "MODERN DIGITAL SIGNAL PROCESSING"
+}, {
+    "code": "EEE532",
+    "title": "NETWORK SECURITY"
+}, {
+    "code": "EEE533",
+    "title": "ADVANCED RADIATION SYSTEMS"
+}, {
+    "code": "EEE534",
+    "title": "NETWORK MANAGEMENT"
+}, {
+    "code": "EEE535",
+    "title": "WIRELESS AND MOBILE COMMUNICATION"
+}, {
+    "code": "EEE536",
+    "title": "FIBER OPTIC COMMUNICATION NETWORKS"
+}, {
+    "code": "EEE537",
+    "title": "RF MEMS"
+}, {
+    "code": "EEE538",
+    "title": "COMMUNICATION ICS AND DESIGN APPLICATIONS"
+}, {
+    "code": "EEE539",
+    "title": "ELECTRONIC HARDWARE SYSTEM DESIGN"
+}, {
+    "code": "EEE540",
+    "title": "EMBEDDED SYSTEM DESIGN"
+}, {
+    "code": "EEE541",
+    "title": "AUTOMOTIVE TECHNOLOGY - I"
+}, {
+    "code": "EEE542",
+    "title": "AUTOMOTIVE TECHNOLOGY - II"
+}, {
+    "code": "EEE543",
+    "title": "AUTOMOTIVE ELECTRICAL SYSTEMS"
+}, {
+    "code": "EEE544",
+    "title": "DATA ACQUISITION AND SIGNAL CONDITIONING"
+}, {
+    "code": "EEE545",
+    "title": "MICROCONTROLLERS AND APPLICATIONS"
+}, {
+    "code": "EEE546",
+    "title": "AUTOMOTIVE CONTROL SYSTEMS"
+}, {
+    "code": "EEE547",
+    "title": "IN-VEHICLE NETWORKING"
+}, {
+    "code": "EEE548",
+    "title": "AUTOMOTIVE SENSORS"
+}, {
+    "code": "EEE550",
+    "title": "TECHNICAL COMMUNICATIONS"
+}, {
+    "code": "EEE551",
+    "title": "EMBEDDED C AND LINUX"
+}, {
+    "code": "EEE552",
+    "title": "ARM PROCESSORS"
+}, {
+    "code": "EEE553",
+    "title": "HYBRID VEHICLE TECHNOLOGY"
+}, {
+    "code": "EEE554",
+    "title": "QUALITY, RELIABILITY AND SAFETY"
+}, {
+    "code": "EEE555",
+    "title": "COMMUNICATION ICS AND DESIGN APPLICATIONS"
+}, {
+    "code": "EEE556",
+    "title": "NEURAL NETWORKS AND FUZZY LOGIC"
+}, {
+    "code": "EEE557",
+    "title": "PHYSICAL SENSORS"
+}, {
+    "code": "EEE558",
+    "title": "DATA ACQUISITION AND HARDWARE INTERFACES"
+}, {
+    "code": "EEE559",
+    "title": "MICROCONTROLLERS AND APPLICATIONS"
+}, {
+    "code": "EEE560",
+    "title": "CONTROL SYSTEMS"
+}, {
+    "code": "EEE561",
+    "title": "MICRO AND SMART SYSTEMS TECHNOLOGY"
+}, {
+    "code": "EEE562",
+    "title": "SENSOR NETWORKS"
+}, {
+    "code": "EEE563",
+    "title": "OPTICAL SENSORS"
+}, {
+    "code": "EEE564",
+    "title": "CHEMICAL SENSORS"
+}, {
+    "code": "EEE565",
+    "title": "RF AND MICROWAVE SENSORS"
+}, {
+    "code": "EEE566",
+    "title": "SENSORS FOR TRANSPORTATION"
+}, {
+    "code": "EEE567",
+    "title": "BIOMEDICAL SENSORS"
+}, {
+    "code": "EEE568",
+    "title": "BIO SENSORS"
+}, {
+    "code": "EEE569",
+    "title": "ANALYSIS OF POWER ELECTRONICS CIRCUITS"
+}, {
+    "code": "EEE570",
+    "title": "SWITCH MODE POWER SUPPLIES AND RESONANT CONVERTERS"
+}, {
+    "code": "EEE571",
+    "title": "GENERALIZED MACHINE THEORY"
+}, {
+    "code": "EEE572",
+    "title": "SOLID STATE CONTROL AND AC AND DC DRIVES"
+}, {
+    "code": "EEE573",
+    "title": "MICROCONTROLLER APPLICATIONS IN POWER ELECTRONICS"
+}, {
+    "code": "EEE574",
+    "title": "POWER ELECTRONICS APPLICATIONS IN POWER SYSTEMS"
+}, {
+    "code": "EEE575",
+    "title": "SCRIPTING LANGUAGES AND VERIFICATION"
+}, {
+    "code": "EEE576",
+    "title": "DIGITAL CONTROL"
+}, {
+    "code": "EEE577",
+    "title": "INTELLIGENT CONTROL"
+}, {
+    "code": "EEE578",
+    "title": "SPECIAL MACHINES AND CONTROL"
+}, {
+    "code": "EEE579",
+    "title": "POWER ELECTRONICS LAB I"
+}, {
+    "code": "EEE580",
+    "title": "POWER ELECTRONICS LAB II"
+}, {
+    "code": "EEE582",
+    "title": "SENSORS AND INSTRUMENTATION"
+}, {
+    "code": "EEE583",
+    "title": "MODELING, SIMULATION AND CONTROL OF POWER ELECTRONIC SYSTEMS"
+}, {
+    "code": "EEE584",
+    "title": "POWER ELECTRONICS APPLICATIONS IN RENEWABLE ENERGY SYSTEMS"
+}, {
+    "code": "EEE585",
+    "title": "DSP BASED ELECTROMECHANICAL MOTION CONTROL"
+}, {
+    "code": "EEE586",
+    "title": "COMPUTATIONAL TECHNIQUES IN MICROELECTRONICS"
+}, {
+    "code": "EEE587",
+    "title": "PHYSICS AND MODELING OF SEMICONDUCTOR DEVICES"
+}, {
+    "code": "EEE588",
+    "title": "DIGITAL IC DESIGN"
+}, {
+    "code": "EEE589",
+    "title": "ANALOG IC DESIGN"
+}, {
+    "code": "EEE590",
+    "title": "IC TECHNOLOGY"
+}, {
+    "code": "EEE591",
+    "title": "VLSI DIGITAL SIGNAL PROCESSING"
+}, {
+    "code": "EEE592",
+    "title": "VLSI LAB - I"
+}, {
+    "code": "EEE593",
+    "title": "VLSI LAB - II"
+}, {
+    "code": "EEE594",
+    "title": "VLSI LAB - III"
+}, {
+    "code": "EEE596",
+    "title": "ASIC DESIGN"
+}, {
+    "code": "EEE597",
+    "title": "LOW POWER IC DESIGN"
+}, {
+    "code": "EEE598",
+    "title": "COMPUTER AIDED DESIGN FOR VLSI"
+}, {
+    "code": "EEE599",
+    "title": "MIXED SIGNAL IC DESIGN"
+}, {
+    "code": "EEE600",
+    "title": "VLSI DESIGN VERIFICATION AND TESTING"
+}, {
+    "code": "EEE6003",
+    "title": "POWER QUALITY ANALYSIS AND MITIGATION TECHNIQUES"
+}, {
+    "code": "EEE6004",
+    "title": "MICROGRID TECHNOLOGIES"
+}, {
+    "code": "EEE601",
+    "title": "MEMORY DESIGN AND TESTING"
+}, {
+    "code": "EEE6010",
+    "title": "INDUSTRIAL ELECTRICAL DRIVES"
+}, {
+    "code": "EEE602",
+    "title": "HARDWARE / SOFTWARE CO-DESIGN"
+}, {
+    "code": "EEE603",
+    "title": "ADVANCED COMPUTER ARCHITECTURE"
+}, {
+    "code": "EEE604",
+    "title": "SCRIPTING LANGUAGES FOR VLSI DESIGN AUTOMATION"
+}, {
+    "code": "EEE605",
+    "title": "FAULT-TOLERANT AND DEPENDABLE SYSTEMS"
+}, {
+    "code": "EEE608",
+    "title": "TECHNICAL COMMUNICATIONS"
+}, {
+    "code": "EEE611",
+    "title": "ASIC DESIGN LAB"
+}, {
+    "code": "EEE612",
+    "title": "VLSI DIGITAL SIGNAL PROCESSING LAB"
+}, {
+    "code": "EEE613",
+    "title": "EMBEDDED SYSTEM DESIGN LAB"
+}, {
+    "code": "EEE615",
+    "title": "MICROCONTROLLER ARCHITECTURE AND ORGANISATION"
+}, {
+    "code": "EEE616",
+    "title": "AUTOMOTIVE TECHNOLOGY"
+}, {
+    "code": "EEE619",
+    "title": "PROBABILITY THEORY AND RANDOM PROCESS"
+}, {
+    "code": "EEE620",
+    "title": "WIRELESS MOBILE NETWORKS"
+}, {
+    "code": "EEE621",
+    "title": "MODERN DIGITAL COMMUNICATION"
+}, {
+    "code": "EEE622",
+    "title": "HIGH PERFORMANCE NETWORKS"
+}, {
+    "code": "EEE623",
+    "title": "IMAGE PROCESSING AND COMPRESSION TECHNIQUES"
+}, {
+    "code": "EEE624",
+    "title": "RF AND MICROWAVE CIRCUIT DESIGN"
+}, {
+    "code": "EEE625",
+    "title": "ADVANCED SEMICONDUCTOR DEVICES"
+}, {
+    "code": "EEE626",
+    "title": "ANALYSIS OF CONVERTER"
+}, {
+    "code": "EEE627",
+    "title": "ANALYSIS OF INVERTERS"
+}, {
+    "code": "EEE628",
+    "title": "SOLID STATE DC DRIVES"
+}, {
+    "code": "EEE629",
+    "title": "SOLID STATE AC DRIVES"
+}, {
+    "code": "EEE630",
+    "title": "POWER ELECTRONICS HARDWARE LAB"
+}, {
+    "code": "EEE631",
+    "title": "POWER ELECTRONICS SIMULATION LAB"
+}, {
+    "code": "EEE632",
+    "title": "MICROCONTROLLER APPLICATIONS IN POWER ELECTRONICS LAB"
+}, {
+    "code": "EEE633",
+    "title": "DSP BASED MOTION CONTROL LAB"
+}, {
+    "code": "EEE634",
+    "title": "COMPUTER COMMUNICATION AND NETWORKS"
+}, {
+    "code": "EEE635",
+    "title": "HIGH VOLTAGE DIRECT CURRENT TRANSMISSION"
+}, {
+    "code": "EEE636",
+    "title": "MOBILE AD HOCK NETWORKS"
+}, {
+    "code": "EEE637",
+    "title": "MODERN SATELLITE COMMUNICATION"
+}, {
+    "code": "EEE639",
+    "title": "ADAPTIVE SIGNAL PROCESSING"
+}, {
+    "code": "EEE640",
+    "title": "MICROWAVE INTEGRATED CIRCUITS"
+}, {
+    "code": "EEE641",
+    "title": "MODELING OF WIRELESS COMMUNICATION SYSTEMS"
+}, {
+    "code": "EEE642",
+    "title": "MULTIMEDIA NETWORKING"
+}, {
+    "code": "EEE645",
+    "title": "MOBILE COMPUTING"
+}, {
+    "code": "EEE646",
+    "title": "FPGA BASED SYSTEM DESIGN"
+}, {
+    "code": "EEE648",
+    "title": "ADVANCED DIGITAL SIGNAL PROCESSING"
+}, {
+    "code": "EEE649",
+    "title": "ADVANCED DIGITAL COMMUNICATION"
+}, {
+    "code": "EEE652",
+    "title": "SYSTEM THEORY"
+}, {
+    "code": "EEE653",
+    "title": "PROCESS DYNAMICS AND CONTROL"
+}, {
+    "code": "EEE654",
+    "title": "INDUSTRIAL ROBOTICS"
+}, {
+    "code": "EEE655",
+    "title": "CONTROL OF ELECTRIC DRIVES"
+}, {
+    "code": "EEE656",
+    "title": "RANDOM PROCESS IN CONTROL AND ESTIMATION"
+}, {
+    "code": "EEE657",
+    "title": "DISCRETE CONTROL SYSTEMS"
+}, {
+    "code": "EEE658",
+    "title": "INDUSTRIAL AUTOMATION"
+}, {
+    "code": "EEE659",
+    "title": "MULTIVARIABLE CONTROL SYSTEMS"
+}, {
+    "code": "EEE660",
+    "title": "SCADA SYSTEMS AND APPLICATIONS"
+}, {
+    "code": "EEE661",
+    "title": "OPTIMAL CONTROL SYSTEMS"
+}, {
+    "code": "EEE662",
+    "title": "SYSTEM IDENTIFICATION AND ADAPTIVE CONTROL"
+}, {
+    "code": "EEE663",
+    "title": "MACHINE LEARNING"
+}, {
+    "code": "EEE664",
+    "title": "AUTOMATION IN DATA ACQUISITION"
+}, {
+    "code": "EEE665",
+    "title": "REAL TIME EMBEDDED SYSTEMS"
+}, {
+    "code": "EEE666",
+    "title": "FAULT DETECTION AND DIAGNOSIS"
+}, {
+    "code": "EEE667",
+    "title": "INDUSTRIAL DATA NETWORKS"
+}, {
+    "code": "EEE668",
+    "title": "MODERN CONTROL THEORY"
+}, {
+    "code": "EEE669",
+    "title": "DESIGN AND CONTROL OF POWER CONVERTERS"
+}, {
+    "code": "EEE670",
+    "title": "SWITCH MODE POWER CONVERSION"
+}, {
+    "code": "EEE671",
+    "title": "INDUSTRIAL ELECTRIC DRIVES"
+}, {
+    "code": "EEE672",
+    "title": "ADVANCED PROCESSORS FOR POWER ELECTRONICS AND DRIVES"
+}, {
+    "code": "EEE673",
+    "title": "ANALOG CIRCUIT DESIGN"
+}, {
+    "code": "EEE674",
+    "title": "MICROGRID TECHNOLOGIES"
+}, {
+    "code": "EEE675",
+    "title": "POWER QUALITY ANALYSIS AND MITIGATION TECHNIQUES"
+}, {
+    "code": "EEE676",
+    "title": "ENERGY STORAGE SYSTEMS"
+}, {
+    "code": "EEE677",
+    "title": "NONLINEAR CONTROL"
+}, {
+    "code": "EEE678",
+    "title": "ADVANCED POWER SYSTEM PROTECTION"
+}, {
+    "code": "EEE679",
+    "title": "VHDL AND FPGA - PROGRAMMING AND DESIGN"
+}, {
+    "code": "EEE680",
+    "title": "ELECTRIC AND HYBRID ELECTRIC VEHICLES"
+}, {
+    "code": "EEE681",
+    "title": "CONTROL SYSTEM DESIGN"
+}, {
+    "code": "EIE201",
+    "title": "COMMUNICATION ENGINEERING"
+}, {
+    "code": "EIE202",
+    "title": "COMPUTER ARCHITECTURE AND ORGANIZATION"
+}, {
+    "code": "EIE203",
+    "title": "SENSORS AND SIGNAL CONDITIONING"
+}, {
+    "code": "EIE204",
+    "title": "ELECTRICAL AND ELECTRONIC INSTRUMENTATION"
+}, {
+    "code": "EIE205",
+    "title": "INDUSTRIAL INSTRUMENTATION"
+}, {
+    "code": "EIE206",
+    "title": "PROCESS CONTROL"
+}, {
+    "code": "EIE207",
+    "title": "PROCESS AUTOMATION"
+}, {
+    "code": "EIE301",
+    "title": "VLSI DESIGN"
+}, {
+    "code": "EIE302",
+    "title": "EMBEDDED SYSTEM DESIGN"
+}, {
+    "code": "EIE303",
+    "title": "BIOMEDICAL INSTRUMENTATION"
+}, {
+    "code": "EIE304",
+    "title": "NON-DESTRUCTIVE TESTING"
+}, {
+    "code": "EIE305",
+    "title": "ANALYTICAL INSTRUMENTATION"
+}, {
+    "code": "EIE306",
+    "title": "FIBER OPTIC SENSORS"
+}, {
+    "code": "EIE307",
+    "title": "OPTOELECTRONIC INSTRUMENTATION"
+}, {
+    "code": "EIE310",
+    "title": "ANALOG VLSI DESIGN"
+}, {
+    "code": "EIE311",
+    "title": "INDUSTRIAL COMMUNICATION NETWORKS"
+}, {
+    "code": "EIE312",
+    "title": "LOW POWER VLSI DESIGN"
+}, {
+    "code": "EIE313",
+    "title": "DIGITAL IMAGE PROCESSING"
+}, {
+    "code": "EIE314",
+    "title": "INDUSTRIAL POWER ELECTRONICS"
+}, {
+    "code": "EIE401",
+    "title": "MICRO ELECTRO MECHANICAL SYSTEMS"
+}, {
+    "code": "EIE402",
+    "title": "WIRELESS SENSOR NETWORKS"
+}, {
+    "code": "EIE403",
+    "title": "INSTRUMENTATION AND CONTROL IN PETROCHEMICAL INDUSTRIES"
+}, {
+    "code": "EIE404",
+    "title": "POWER PLANT INSTRUMENTATION"
+}, {
+    "code": "EIE405",
+    "title": "SYSTEM ON CHIP DESIGN"
+}, {
+    "code": "EIE406",
+    "title": "ADVANCED MICROCONTROLLERS"
+}, {
+    "code": "EIE407",
+    "title": "DIGITAL SYSTEM DESIGN"
+}, {
+    "code": "EIE499",
+    "title": "PROJECT WORK"
+}, {
+    "code": "ELS501",
+    "title": "PHYSICS OF SEMICONDUCTOR DEVICES"
+}, {
+    "code": "ELS502",
+    "title": "ANALOG AND DIGITAL ELECTRONICS"
+}, {
+    "code": "ELS503",
+    "title": "ANALOG AND DIGITAL ELECTRONICS LAB"
+}, {
+    "code": "ELS504",
+    "title": "ELECTROMAGNETIC THEORY AND WAVE PROPAGATION"
+}, {
+    "code": "ELS505",
+    "title": "SIGNALS SYSTEMS AND CONTROLS"
+}, {
+    "code": "ELS506",
+    "title": "SOLID STATE PHYSICS"
+}, {
+    "code": "ELS507",
+    "title": "INTRODUCTION TO COMMUNICATION SYSTEMS"
+}, {
+    "code": "ELS508",
+    "title": "QUANTUM MECHANICS"
+}, {
+    "code": "ELS509",
+    "title": "VACUUM TECHNOLOGY"
+}, {
+    "code": "ELS510",
+    "title": "MATERIAL SCIENCE"
+}, {
+    "code": "ELS511",
+    "title": "COMMUNICATION NETWORKING"
+}, {
+    "code": "ELS512",
+    "title": "ELECTRONIC MATERIALS"
+}, {
+    "code": "ELS513",
+    "title": "NANO ELECTRONICS"
+}, {
+    "code": "ELS601",
+    "title": "ELECTRONICS INSTRUMENTATION"
+}, {
+    "code": "ELS602",
+    "title": "VLSI DESIGNING"
+}, {
+    "code": "ELS603",
+    "title": "MICROWAVE THEORY AND TECHNIQUES"
+}, {
+    "code": "ELS604",
+    "title": "OPTOELECTRONICS"
+}, {
+    "code": "ELS605",
+    "title": "MICROPROCESSOR AND MICROCONTROLLERS"
+}, {
+    "code": "ELS606",
+    "title": "NUCLEAR AND MEDICAL INSTRUMENTATION"
+}, {
+    "code": "ELS607",
+    "title": "EMBEDDED SYSTEMS"
+}, {
+    "code": "ELS608",
+    "title": "DIGITAL SIGNAL PROCESSING"
+}, {
+    "code": "ELS609",
+    "title": "IMAGING PROCESSING"
+}, {
+    "code": "ELS610",
+    "title": "ADVANCED INSTRUMENTATION SYSTEM"
+}, {
+    "code": "ELS611",
+    "title": "CMOS DESIGN AND IC TECHNOLOGY"
+}, {
+    "code": "ENG001",
+    "title": "EFFECTIVE ENGLISH"
+}, {
+    "code": "ENG002",
+    "title": "FUNDAMENTALS OF COMMUNICATION SKILLS"
+}, {
+    "code": "ENG003",
+    "title": "ENGLISH BRIDGE COURSE FOR THE CHINESE"
+}, {
+    "code": "ENG1001",
+    "title": "BASIC ENGLISH"
+}, {
+    "code": "ENG1002",
+    "title": "EFFECTIVE ENGLISH"
+}, {
+    "code": "ENG101",
+    "title": "ENGLISH FOR ENGINEERS - I"
+}, {
+    "code": "ENG1011",
+    "title": "ENGLISH FOR ENGINEERS"
+}, {
+    "code": "ENG1012",
+    "title": "COMMUNICATIVE ENGLISH"
+}, {
+    "code": "ENG1015",
+    "title": "BASIC GENERAL AND LEGAL ENGLISH"
+}, {
+    "code": "ENG102",
+    "title": "ENGLISH FOR ENGINEERS - II"
+}, {
+    "code": "ENG103",
+    "title": "HISTORY OF INDIAN INDEPENDENCE MOVEMENT"
+}, {
+    "code": "ENG104",
+    "title": "BASIC ENGLISH"
+}, {
+    "code": "ENG105",
+    "title": "FUNCTIONAL ENGLISH"
+}, {
+    "code": "ENG106",
+    "title": "BUSINESS COMMUNICATION"
+}, {
+    "code": "ENG107",
+    "title": "MANAGERIAL COMMUNICATION"
+}, {
+    "code": "ENG108",
+    "title": "COMMUNICATIVE ENGLISH"
+}, {
+    "code": "ENG109",
+    "title": "PROFESSIONAL ENGLISH"
+}, {
+    "code": "ENG110",
+    "title": "CREATIVE ENGLISH"
+}, {
+    "code": "ENG111",
+    "title": "ENGLISH FOR COMMUNICATION"
+}, {
+    "code": "ENG112",
+    "title": "SOFT SKILLS FOR PROFESSIONAL DEVELOPMENT"
+}, {
+    "code": "ENG113",
+    "title": "ENGLISH I"
+}, {
+    "code": "ENG114",
+    "title": "ENGLISH II"
+}, {
+    "code": "ENG2003",
+    "title": "ADVANCED GENERAL AND LEGAL ENGLISH"
+}, {
+    "code": "ENG2004",
+    "title": "COMMUNICATIVE ENGLISH FOR LAWYERS"
+}, {
+    "code": "ENG2005",
+    "title": "ENGLISH FOR LAWYERS"
+}, {
+    "code": "ENG2006",
+    "title": "ADVANCED ENGLISH FOR LAWYERS"
+}, {
+    "code": "ENG2007",
+    "title": "ENGLISH FOR DRAFTING"
+}, {
+    "code": "ENG201",
+    "title": "DRAMA AND THEATRE"
+}, {
+    "code": "ENG202",
+    "title": "EXECUTIVE ENGLISH SKILLS"
+}, {
+    "code": "ENG5001",
+    "title": "FUNDAMENTALS OF COMMUNICATION SKILLS"
+}, {
+    "code": "ENG5002",
+    "title": "PROFESSIONAL AND COMMUNICATION SKILLS"
+}, {
+    "code": "ENG5003",
+    "title": "ENGLISH FOR SCIENCE AND TECHNOLOGY"
+}, {
+    "code": "ENG501",
+    "title": "ENGLISH"
+}, {
+    "code": "ENG502",
+    "title": "TECHNICAL COMMUNICATION"
+}, {
+    "code": "ENG601",
+    "title": "PROFESSIONAL AND COMMUNICATION SKILLS"
+}, {
+    "code": "ESP101",
+    "title": "BASIC SPANISH"
+}, {
+    "code": "FRE1001",
+    "title": "FRANCAIS QUOTIDIEN"
+}, {
+    "code": "FRE101",
+    "title": "BASIC FRENCH"
+}, {
+    "code": "FRE102",
+    "title": "FRENCH"
+}, {
+    "code": "FRE103",
+    "title": "FRENCH - II"
+}, {
+    "code": "FRE501",
+    "title": "COMMUNICATIVE FRENCH"
+}, {
+    "code": "GER101",
+    "title": "BASIC GERMAN"
+}, {
+    "code": "GER204",
+    "title": "FUNCTIONAL GERMAN"
+}, {
+    "code": "GER501",
+    "title": "GERMAN FOR BEGINNERS"
+}, {
+    "code": "HIN101",
+    "title": "HINDI - I"
+}, {
+    "code": "HIN102",
+    "title": "HINDI - II"
+}, {
+    "code": "HUM101",
+    "title": "PSYCHOLOGY AND SOCIOLOGY"
+}, {
+    "code": "HUM1021",
+    "title": "ETHICS AND VALUES"
+}, {
+    "code": "HUM103",
+    "title": "BUSINESS ECONOMICS"
+}, {
+    "code": "HUM1032",
+    "title": "ETHICS AND VALUES"
+}, {
+    "code": "HUM1033",
+    "title": "FUNDAMENTALS OF CYBER LAWS"
+}, {
+    "code": "HUM104",
+    "title": "MACRO ECONOMICS"
+}, {
+    "code": "HUM105",
+    "title": "INDIAN ECONOMY"
+}, {
+    "code": "HUM106",
+    "title": "CORPORATE ECONOMICS"
+}, {
+    "code": "HUM107",
+    "title": "PRODUCTION ECONOMICS"
+}, {
+    "code": "HUM108",
+    "title": "WEALTH MANAGEMENT"
+}, {
+    "code": "HUM109",
+    "title": "INTERNATIONAL BUSINESS"
+}, {
+    "code": "HUM110",
+    "title": "FOREIGN EXCHANGE MANAGEMENT"
+}, {
+    "code": "HUM111",
+    "title": "INDIAN POLITICAL ECONOMY"
+}, {
+    "code": "HUM112",
+    "title": "BUSINESS ACCOUNTING FOR ENGINEERS"
+}, {
+    "code": "HUM113",
+    "title": "COST ACCOUNTING FOR ENGINEERS"
+}, {
+    "code": "HUM114",
+    "title": "TAX MANAGEMENT FOR ENGINEERS"
+}, {
+    "code": "HUM115",
+    "title": "BUSINESS TAXATION"
+}, {
+    "code": "HUM116",
+    "title": "PRACTICAL BANKING"
+}, {
+    "code": "HUM117",
+    "title": "BUSINESS LAW"
+}, {
+    "code": "HUM118",
+    "title": "FUNDAMENTALS OF CYBER LAWS"
+}, {
+    "code": "HUM119",
+    "title": "ELEMENTS OF CONSTITUTIONAL LAW OF INDIA"
+}, {
+    "code": "HUM120",
+    "title": "ECONOMICS OF INFORMATION TECHNOLOGY"
+}, {
+    "code": "HUM121",
+    "title": "ETHICS AND VALUES"
+}, {
+    "code": "HUM122",
+    "title": "INTERNATIONAL ECONOMICS"
+}, {
+    "code": "HUM123",
+    "title": "ENGINEERING ECONOMICS"
+}, {
+    "code": "HUM124",
+    "title": "INDIAN HERITAGE AND CULTURE"
+}, {
+    "code": "HUM125",
+    "title": "INDIAN CLASSICAL MUSIC"
+}, {
+    "code": "HUM126",
+    "title": "INDUSTRIAL AND ORGANIZATIONAL PSYCHOLOGY"
+}, {
+    "code": "HUM130",
+    "title": "ECONOMETRICS"
+}, {
+    "code": "HUM131",
+    "title": "MATHEMATICAL ECONOMICS"
+}, {
+    "code": "IT205",
+    "title": "DIGITAL ELECTRONICS AND MICROPROCESSOR"
+}, {
+    "code": "IT206",
+    "title": "DIGITAL ELECTRONICS AND MICROPROCESSOR LAB"
+}, {
+    "code": "IT207",
+    "title": "PROGRAMMING IN JAVA"
+}, {
+    "code": "IT209",
+    "title": "DATA COMMUNICATIONS"
+}, {
+    "code": "ITA1001",
+    "title": "COMPUTATIONAL THINKING"
+}, {
+    "code": "ITA1002",
+    "title": "DIGITAL COMPUTER FUNDAMENTALS"
+}, {
+    "code": "ITA1003",
+    "title": "PRINCIPLES OF ACCOUNTING"
+}, {
+    "code": "ITA1004",
+    "title": "SOFTWARE ENGINEERING"
+}, {
+    "code": "ITA1005",
+    "title": "DATABASE MANAGEMENT SYSTEMS"
+}, {
+    "code": "ITA1008",
+    "title": "M-COMMERCE"
+}, {
+    "code": "ITA101",
+    "title": "INTRODUCTION TO INFORMATION TECHNOLOGY"
+}, {
+    "code": "ITA102",
+    "title": "BUSINESS PROCESS MANAGEMENT"
+}, {
+    "code": "ITA103",
+    "title": "E-COMMERCE"
+}, {
+    "code": "ITA104",
+    "title": "PROGRAMMING IN C"
+}, {
+    "code": "ITA105",
+    "title": "DIGITAL COMPUTER FUNDAMENTALS"
+}, {
+    "code": "ITA107",
+    "title": "OBJECT ORIENTED PROGRAMMING"
+}, {
+    "code": "ITA108",
+    "title": "OBJECT ORIENTED PROGRAMMING LAB"
+}, {
+    "code": "ITA109",
+    "title": "VISUAL PROGRAMMING"
+}, {
+    "code": "ITA111",
+    "title": "DATA STRUCTURES"
+}, {
+    "code": "ITA114",
+    "title": "MANAGEMENT INFORMATION SYSTEM"
+}, {
+    "code": "ITA126",
+    "title": "PRINCIPLES OF ACCOUNTING"
+}, {
+    "code": "ITA2001",
+    "title": "PROGRAMMING IN C"
+}, {
+    "code": "ITA2003",
+    "title": "COMPUTER ARCHITECTURE"
+}, {
+    "code": "ITA201",
+    "title": "DESIGN AND ANALYSIS OF ALGORITHMS"
+}, {
+    "code": "ITA202",
+    "title": "OPERATING SYSTEMS"
+}, {
+    "code": "ITA203",
+    "title": "PROGRAMMING IN JAVA"
+}, {
+    "code": "ITA204",
+    "title": "SYSTEM SOFTWARE"
+}, {
+    "code": "ITA205",
+    "title": "SOFTWARE ENGINEERING"
+}, {
+    "code": "ITA206",
+    "title": "DATABASE MANAGEMENT SYSTEMS"
+}, {
+    "code": "ITA207",
+    "title": "LINUX/UNIX PROGRAMMING"
+}, {
+    "code": "ITA208",
+    "title": "OPERATING SYSTEMS LAB"
+}, {
+    "code": "ITA209",
+    "title": "COMPUTER ARCHITECTURE"
+}, {
+    "code": "ITA210",
+    "title": "SCRIPTING LANGUAGES"
+}, {
+    "code": "ITA211",
+    "title": "COMPUTER GRAPHICS"
+}, {
+    "code": "ITA212",
+    "title": "DATA COMMUNICATION AND NETWORKING"
+}, {
+    "code": "ITA213",
+    "title": "WEB TECHNOLOGY"
+}, {
+    "code": "ITA214",
+    "title": "MULTIMEDIA SYSTEMS"
+}, {
+    "code": "ITA215",
+    "title": "MICROPROCESSOR AND ASSEMBLY LANGUAGE PROGRAMMING"
+}, {
+    "code": "ITA216",
+    "title": "MICROPROCESSOR LAB"
+}, {
+    "code": "ITA301",
+    "title": "SOFTWARE TESTING"
+}, {
+    "code": "ITA302",
+    "title": "EXPERT SYSTEMS"
+}, {
+    "code": "ITA303",
+    "title": "DATA WAREHOUSING AND DATA MINING"
+}, {
+    "code": "ITA304",
+    "title": "SOFTWARE PROJECT MANAGEMENT"
+}, {
+    "code": "ITA305",
+    "title": "DATABASE ADMINISTRATION"
+}, {
+    "code": "ITA306",
+    "title": "NETWORK SECURITY"
+}, {
+    "code": "ITA307",
+    "title": "STRUCTURED SYSTEM ANALYSIS AND DESIGN"
+}, {
+    "code": "ITA308",
+    "title": "PROGRAMMING IN C#"
+}, {
+    "code": "ITA309",
+    "title": "DECISION SUPPORT SYSTEM"
+}, {
+    "code": "ITA310",
+    "title": "SERVICE ORIENTED ARCHITECTURE"
+}, {
+    "code": "ITA311",
+    "title": "OPEN SOURCE PROGRAMMING"
+}, {
+    "code": "ITA401",
+    "title": "INTRODUCTION TO COMPUTER ORGANIZATION"
+}, {
+    "code": "ITA403",
+    "title": "ACCOUNTING AND FINANCIAL MANAGEMENT"
+}, {
+    "code": "ITA404",
+    "title": "DATA STRUCTURES"
+}, {
+    "code": "ITA405",
+    "title": "MICROPROCESSORS"
+}, {
+    "code": "ITA406",
+    "title": "OBJECT ORIENTED PROGRAMMING IN C++"
+}, {
+    "code": "ITA407",
+    "title": "COMPUTER ARCHITECTURE"
+}, {
+    "code": "ITA408",
+    "title": "DATABASE MANAGEMENT SYSTEMS"
+}, {
+    "code": "ITA409",
+    "title": "PROGRAMMING IN JAVA"
+}, {
+    "code": "ITA410",
+    "title": "OPERATING SYSTEMS"
+}, {
+    "code": "ITA411",
+    "title": "SOFTWARE ENGINEERING"
+}, {
+    "code": "ITA412",
+    "title": "COMPUTER NETWORKS"
+}, {
+    "code": "ITA413",
+    "title": "COMPUTER GRAPHICS AND MULTIMEDIA SYSTEMS"
+}, {
+    "code": "ITA414",
+    "title": "THEORY OF COMPUTATION"
+}, {
+    "code": "ITA416",
+    "title": "DATA STRUCTURE USING C++ LABORATORY"
+}, {
+    "code": "ITA417",
+    "title": "DATABASE MANAGEMENT SYSTEMS LABORATORY"
+}, {
+    "code": "ITA418",
+    "title": "PROGRAMMING IN JAVA LABORATORY"
+}, {
+    "code": "ITA419",
+    "title": "PROGRAMMING IN C AND ALGORITHM DESIGN"
+}, {
+    "code": "ITA5002",
+    "title": "PROBLEM SOLVING WITH DATA STRUCTURES AND ALGORITHMS"
+}, {
+    "code": "ITA5003",
+    "title": "DATA COMMUNICATION AND NETWORKING"
+}, {
+    "code": "ITA5004",
+    "title": "OBJECT ORIENTED PROGRAMMING USING JAVA"
+}, {
+    "code": "ITA5005",
+    "title": "OBJECT ORIENTED SOFTWARE ENGINEERING"
+}, {
+    "code": "ITA501",
+    "title": "ADVANCED DATABASE MANAGEMENT SYSTEMS"
+}, {
+    "code": "ITA502",
+    "title": "UNIFIED MODELING LANGUAGE"
+}, {
+    "code": "ITA503",
+    "title": "MOBILE COMPUTING"
+}, {
+    "code": "ITA504",
+    "title": "PROGRAMMING IN C# WITH VISUAL STUDIO .NET"
+}, {
+    "code": "ITA505",
+    "title": "DIGITAL IMAGE PROCESSING"
+}, {
+    "code": "ITA506",
+    "title": "COMPILER CONSTRUCTION"
+}, {
+    "code": "ITA507",
+    "title": "DATA WAREHOUSING AND DATA MINING"
+}, {
+    "code": "ITA508",
+    "title": "BUSINESS PROCESS MANAGEMENT"
+}, {
+    "code": "ITA509",
+    "title": "OPEN SOURCE PROGRAMMING"
+}, {
+    "code": "ITA510",
+    "title": "AGENT BASED INTELLIGENT SYSTEMS"
+}, {
+    "code": "ITA511",
+    "title": "ENTERPRISE COMPUTING"
+}, {
+    "code": "ITA512",
+    "title": "SOFTWARE PROJECT MANAGEMENT"
+}, {
+    "code": "ITA513",
+    "title": "PERVASIVE COMPUTING"
+}, {
+    "code": "ITA514",
+    "title": "EMBEDDED SYSTEMS"
+}, {
+    "code": "ITA515",
+    "title": "DISTRIBUTED COMPUTING"
+}, {
+    "code": "ITA516",
+    "title": "SECURITY IN COMPUTING"
+}, {
+    "code": "ITA517",
+    "title": "FUZZY LOGIC AND NEURAL NETWORKS"
+}, {
+    "code": "ITA518",
+    "title": "PERFORMANCE EVALUATION OF COMPUTER SYSTEM"
+}, {
+    "code": "ITA519",
+    "title": "GRID COMPUTING"
+}, {
+    "code": "ITA520",
+    "title": "SOFTWARE TESTING"
+}, {
+    "code": "ITA521",
+    "title": "PATTERN RECOGNITION"
+}, {
+    "code": "ITA522",
+    "title": "SERVICE ORIENTED ARCHITECTURE"
+}, {
+    "code": "ITA523",
+    "title": "MAINFRAME COMPUTING"
+}, {
+    "code": "ITA524",
+    "title": "ADVANCED JAVA PROGRAMMING"
+}, {
+    "code": "ITA525",
+    "title": "ADVANCED DATA STRUCTURES AND ALGORITHMS"
+}, {
+    "code": "ITA526",
+    "title": "ADVANCED COMPUTER ARCHITECTURE"
+}, {
+    "code": "ITA527",
+    "title": "ADVANCED OPERATING SYSTEMS"
+}, {
+    "code": "ITA528",
+    "title": "ADVANCED JAVA PROGRAMMING"
+}, {
+    "code": "ITA529",
+    "title": "DATABASE SYSTEMS"
+}, {
+    "code": "ITA530",
+    "title": "OBJECT ORIENTED SOFTWARE ENGINEERING"
+}, {
+    "code": "ITA531",
+    "title": "WEB TECHNOLOGIES"
+}, {
+    "code": "ITA601",
+    "title": "ADVANCED COMPUTER NETWORKS"
+}, {
+    "code": "ITA602",
+    "title": "MOBILE APPLICATION - DESIGN AND DEVELOPMENT"
+}, {
+    "code": "ITA603",
+    "title": "COMPUTER VISUALIZATION TECHNIQUES"
+}, {
+    "code": "ITA604",
+    "title": "INFORMATION AND CYBER SECURITY"
+}, {
+    "code": "ITA606",
+    "title": "WIRELESS TECHNOLOGIES"
+}, {
+    "code": "ITA607",
+    "title": "COMPILER DESIGN"
+}, {
+    "code": "ITA608",
+    "title": "DATA MINING, DATA WAREHOUSING AND BUSINESS INTELLIGENCE"
+}, {
+    "code": "ITA609",
+    "title": "SOFT COMPUTING"
+}, {
+    "code": "ITA610",
+    "title": "ARTIFICIAL INTELLIGENCE"
+}, {
+    "code": "ITA611",
+    "title": "CLOUD COMPUTING"
+}, {
+    "code": "ITA612",
+    "title": "SUPPLY CHAIN MANAGEMENT"
+}, {
+    "code": "ITA613",
+    "title": "COMPONENT BASED SOFTWARE DEVELOPMENT"
+}, {
+    "code": "ITA614",
+    "title": "INFORMATION RETRIEVAL"
+}, {
+    "code": "ITA615",
+    "title": "HUMAN COMPUTER INTERACTION"
+}, {
+    "code": "ITA616",
+    "title": "BIG DATA ANALYTICS"
+}, {
+    "code": "ITA617",
+    "title": "INTERACTIVE GAME DESIGN"
+}, {
+    "code": "ITE1001",
+    "title": "DIGITAL LOGIC AND MICROPROCESSOR"
+}, {
+    "code": "ITE1002",
+    "title": "WEB TECHNOLOGIES"
+}, {
+    "code": "ITE1003",
+    "title": "DATABASE MANAGEMENT SYSTEMS"
+}, {
+    "code": "ITE1004",
+    "title": "DATA STRUCTURES AND ALGORITHMS"
+}, {
+    "code": "ITE1005",
+    "title": "SOFTWARE ENGINEERING-PRINCIPLES AND PRACTICES"
+}, {
+    "code": "ITE1006",
+    "title": "THEORY OF COMPUTATION"
+}, {
+    "code": "ITE101",
+    "title": "PROBLEM SOLVING USING C"
+}, {
+    "code": "ITE102",
+    "title": "INFORMATION TECHNOLOGY FUNDAMENTALS"
+}, {
+    "code": "ITE103",
+    "title": "DATA STRUCTURES AND ALGORITHMS"
+}, {
+    "code": "ITE104",
+    "title": "DATA STRUCTURES AND ALGORITHMS LAB"
+}, {
+    "code": "ITE2001",
+    "title": "COMPUTER ARCHITECTURE AND ORGANIZATION"
+}, {
+    "code": "ITE2002",
+    "title": "OPERATING SYSTEMS"
+}, {
+    "code": "ITE201",
+    "title": "OBJECT ORIENTED PROGRAMMING CONCEPTS"
+}, {
+    "code": "ITE202",
+    "title": "OBJECT ORIENTED PROGRAMMING IN C++ LAB"
+}, {
+    "code": "ITE203",
+    "title": "THEORY OF COMPUTATION"
+}, {
+    "code": "ITE204",
+    "title": "COMPUTER ARCHITECTURE AND ORGANIZATION"
+}, {
+    "code": "ITE205",
+    "title": "DIGITAL ELECTRONICS AND MICROPROCESSORS"
+}, {
+    "code": "ITE206",
+    "title": "DIGITAL ELECTRONICS AND MICROPROCESSORS LAB"
+}, {
+    "code": "ITE207",
+    "title": "PROGRAMMING IN JAVA"
+}, {
+    "code": "ITE208",
+    "title": "OPERATING SYSTEMS"
+}, {
+    "code": "ITE209",
+    "title": "OPERATING SYSTEMS LAB"
+}, {
+    "code": "ITE210",
+    "title": "HUMAN COMPUTER INTERACTION"
+}, {
+    "code": "ITE301",
+    "title": "OBJECT ORIENTED ANALYSIS AND DESIGN"
+}, {
+    "code": "ITE302",
+    "title": "DATABASE SYSTEMS"
+}, {
+    "code": "ITE303",
+    "title": "DATA COMMUNICATION AND COMPUTER NETWORKS"
+}, {
+    "code": "ITE304",
+    "title": "COMPUTER NETWORKS LAB"
+}, {
+    "code": "ITE305",
+    "title": "EMBEDDED SYSTEMS"
+}, {
+    "code": "ITE306",
+    "title": "EMBEDDED SYSTEMS LAB"
+}, {
+    "code": "ITE307",
+    "title": "ARTIFICIAL INTELLIGENCE"
+}, {
+    "code": "ITE308",
+    "title": "DISTRIBUTED SYSTEMS"
+}, {
+    "code": "ITE309",
+    "title": "WEB TECHNOLOGIES"
+}, {
+    "code": "ITE311",
+    "title": "NETWORK PROGRAMMING"
+}, {
+    "code": "ITE313",
+    "title": "REAL-TIME SYSTEMS"
+}, {
+    "code": "ITE314",
+    "title": "OPEN SOURCE PROGRAMMING"
+}, {
+    "code": "ITE316",
+    "title": "SOFTWARE PROJECT MANAGEMENT"
+}, {
+    "code": "ITE317",
+    "title": "GRAPH THEORY AND ITS APPLICATIONS"
+}, {
+    "code": "ITE318",
+    "title": "SOFTWARE ENGINEERING - PRINCIPLES AND PRACTICE"
+}, {
+    "code": "ITE320",
+    "title": "NETWORK AND INFORMATION SECURITY"
+}, {
+    "code": "ITE401",
+    "title": "COMPUTER GRAPHICS AND MULTIMEDIA"
+}, {
+    "code": "ITE403",
+    "title": "NETWORK ADMINISTRATION"
+}, {
+    "code": "ITE404",
+    "title": "DATA WAREHOUSING AND DATA MINING"
+}, {
+    "code": "ITE407",
+    "title": "SOFT COMPUTING"
+}, {
+    "code": "ITE408",
+    "title": "MOBILE COMPUTING"
+}, {
+    "code": "ITE411",
+    "title": "ADVANCED DATABASE MANAGEMENT SYSTEMS"
+}, {
+    "code": "ITE412",
+    "title": "SOFTWARE AGENTS"
+}, {
+    "code": "ITE414",
+    "title": "KNOWLEDGE MANAGEMENT"
+}, {
+    "code": "ITE418",
+    "title": "VIRTUALIZATION TECHNIQUES"
+}, {
+    "code": "ITE419",
+    "title": "CLOUD COMPUTING TECHNIQUES"
+}, {
+    "code": "ITE420",
+    "title": "CLOUD COMPUTING ARCHITECTURE"
+}, {
+    "code": "ITE421",
+    "title": "CLOUD DEPLOYMENT MODEL"
+}, {
+    "code": "ITE422",
+    "title": "SECURITY IN CLOUD"
+}, {
+    "code": "ITE423",
+    "title": "CLOUD PERFORMANCE TUNING"
+}, {
+    "code": "ITE424",
+    "title": "ENTERPRISE INFORMATION ARCHITECTURE"
+}, {
+    "code": "ITE425",
+    "title": "PREDICTING MODELING"
+}, {
+    "code": "ITE426",
+    "title": "BUSINESS INTELLIGENCE"
+}, {
+    "code": "ITE427",
+    "title": "BUSINESS STRATEGY AND ANALYTICS"
+}, {
+    "code": "ITE428",
+    "title": "BIG DATA ANALYTICS"
+}, {
+    "code": "ITE446",
+    "title": "ENTERPRISE NETWORKING"
+}, {
+    "code": "ITE447",
+    "title": "ROUTING AND SWITCHING"
+}, {
+    "code": "ITE499",
+    "title": "PROJECT WORK"
+}, {
+    "code": "ITE5001",
+    "title": "ADVANCED DATA STRUCTURES AND ALGORITHMS"
+}, {
+    "code": "ITE5002",
+    "title": "CLOUD COMPUTING AND VIRTUALIZATION"
+}, {
+    "code": "ITE5004",
+    "title": "COMPUTER NETWORKS"
+}, {
+    "code": "ITE501",
+    "title": "DATA STRUCTURES AND ALGORITHMS"
+}, {
+    "code": "ITE502",
+    "title": "WIRELESS MOBILE NETWORKING"
+}, {
+    "code": "ITE503",
+    "title": "ADVANCED COMPUTER NETWORKING"
+}, {
+    "code": "ITE504",
+    "title": "NETWORK SIMULATOR LAB"
+}, {
+    "code": "ITE505",
+    "title": "ADVANCED OPERATING SYSTEMS"
+}, {
+    "code": "ITE506",
+    "title": "NETWORK MANAGEMENT AND ADMINISTRATION"
+}, {
+    "code": "ITE507",
+    "title": "HIGH SPEED NETWORKS"
+}, {
+    "code": "ITE508",
+    "title": "ADVANCED DATABASE SYSTEMS"
+}, {
+    "code": "ITE509",
+    "title": "MULTIMEDIA NETWORKS"
+}, {
+    "code": "ITE510",
+    "title": "CURRENT TRENDS IN IT"
+}, {
+    "code": "ITE511",
+    "title": "INTERACTIVE SYSTEMS DEVELOPMENT"
+}, {
+    "code": "ITE512",
+    "title": "OPEN SOURCE PROGRAMMING"
+}, {
+    "code": "ITE513",
+    "title": "ENTERPRISE SYSTEMS"
+}, {
+    "code": "ITE514",
+    "title": "DISTRIBUTED SYSTEMS"
+}, {
+    "code": "ITE515",
+    "title": "INFORMATION RETRIEVAL"
+}, {
+    "code": "ITE516",
+    "title": "ADVANCED DATA STRUCTURES AND ALGORITHM DESIGN"
+}, {
+    "code": "ITE517",
+    "title": "ADVANCED NETWORKS AND COMMUNICATION SYSTEMS"
+}, {
+    "code": "ITE518",
+    "title": "OBJECT ORIENTED SYSTEM ANALYSIS AND DESIGN"
+}, {
+    "code": "ITE519",
+    "title": "SOFTWARE ARCHITECTURE AND DESIGN"
+}, {
+    "code": "ITE520",
+    "title": "CASE TOOLS LAB"
+}, {
+    "code": "ITE521",
+    "title": "ADVANCED DATABASE MANAGEMENT SYSTEMS"
+}, {
+    "code": "ITE522",
+    "title": "OPERATING SYSTEMS AND UNIX PROGRAMMING"
+}, {
+    "code": "ITE524",
+    "title": "SOFTWARE TESTING AND QUALITY ASSURANCE"
+}, {
+    "code": "ITE525",
+    "title": "SOFTWARE CONSTRUCTION AND MAINTENANCE"
+}, {
+    "code": "ITE526",
+    "title": "ADVANCED DIGITAL COMMUNICATION TECHNIQUES"
+}, {
+    "code": "ITE527",
+    "title": "ADVANCED COMPUTER ARCHITECTURE"
+}, {
+    "code": "ITE528",
+    "title": "MICROCONTROLLERS AND COMMUNICATION INTERFACING TECHNIQUES"
+}, {
+    "code": "ITE529",
+    "title": "WEB TECHNOLOGY AND MOBILE APPLICATION"
+}, {
+    "code": "ITE530",
+    "title": "ADVANCED DIGITAL SIGNAL PROCESSING"
+}, {
+    "code": "ITE531",
+    "title": "ADVANCED CRYPTOGRAPHY AND DIGITAL SECURITY"
+}, {
+    "code": "ITE532",
+    "title": "ADVANCED COMPUTER NETWORKS"
+}, {
+    "code": "ITE533",
+    "title": "ADVANCED DATABASE MANAGEMENT SYSTEMS"
+}, {
+    "code": "ITE535",
+    "title": "BIG DATA ANALYTICS"
+}, {
+    "code": "ITE536",
+    "title": "INTERNET OF THINGS"
+}, {
+    "code": "ITE537",
+    "title": "MACHINE LEARNING ALGORITHMS"
+}, {
+    "code": "ITE6001",
+    "title": "NETWORK MANAGEMENT"
+}, {
+    "code": "ITE6002",
+    "title": "ADVANCED EMBEDDED SYSTEMS"
+}, {
+    "code": "ITE602",
+    "title": "NETWORK SECURITY"
+}, {
+    "code": "ITE603",
+    "title": "DATABASE ADMINISTRATION"
+}, {
+    "code": "ITE604",
+    "title": "INFORMATION AND SYSTEMS SECURITY"
+}, {
+    "code": "ITE605",
+    "title": "REAL TIME SYSTEMS"
+}, {
+    "code": "ITE606",
+    "title": "CODING AND INFORMATION THEORY"
+}, {
+    "code": "ITE607",
+    "title": "HIGH PERFORMANCE TCP/IP NETWORKING"
+}, {
+    "code": "ITE608",
+    "title": "SOFTWARE PROJECT AND CONFIGURATION MANAGEMENT"
+}, {
+    "code": "ITE609",
+    "title": "EMBEDDED AND REAL TIME SYSTEMS"
+}, {
+    "code": "ITE612",
+    "title": "SOFTWARE APPLICATION FOR ERP"
+}, {
+    "code": "ITE613",
+    "title": "SOFTWARE RELIABILITY AND PERFORMANCE ENGINEERING"
+}, {
+    "code": "ITE614",
+    "title": "ADVANCED SOFTWARE DEVELOPMENT AND MANAGEMENT"
+}, {
+    "code": "ITE616",
+    "title": "SOFTWARE APPLICATION IN SUPPLY CHAIN MANAGEMENT"
+}, {
+    "code": "ITE617",
+    "title": "SOFTWARE METRICS AND VERIFICATION"
+}, {
+    "code": "ITE619",
+    "title": "INFORMATION SECURITY"
+}, {
+    "code": "ITE620",
+    "title": "ENTERPRISE TECHNOLOGIES AND ARCHITECTURES"
+}, {
+    "code": "ITE621",
+    "title": "MULTICORE ARCHITECTURE AND PROGRAMMING"
+}, {
+    "code": "ITE622",
+    "title": "PRINCIPLES OF COMPILER DESIGN"
+}, {
+    "code": "ITE623",
+    "title": "ADVANCED COMPUTER ARCHITECTURE AND ORGANIZATION"
+}, {
+    "code": "ITE624",
+    "title": "WEB APPLICATION ARCHITECTURE AND DEVELOPMENT"
+}, {
+    "code": "ITE625",
+    "title": "OPEN SOURCE APPLICATION DEVELOPMENT TECHNIQUES"
+}, {
+    "code": "ITE626",
+    "title": "CLOUD COMPUTING"
+}, {
+    "code": "ITE629",
+    "title": "SOFT COMPUTING"
+}, {
+    "code": "ITE630",
+    "title": "FORMAL METHODS IN SOFTWARE ENGINEERING"
+}, {
+    "code": "ITE631",
+    "title": "NATURAL LANGUAGE PROCESSING"
+}, {
+    "code": "ITE635",
+    "title": "DATA WAREHOUSING, MINING AND BUSINESS INTELLIGENCE"
+}, {
+    "code": "ITE636",
+    "title": "CLOUD COMPUTING AND VIRTUALIZATION"
+}, {
+    "code": "ITE637",
+    "title": "WIRELESS AND SENSOR NETWORKS"
+}, {
+    "code": "ITE638",
+    "title": "WIRELESS NETWORK SECURITY"
+}, {
+    "code": "ITE639",
+    "title": "NETWORK PERFORMANCE ANALYSIS"
+}, {
+    "code": "ITE640",
+    "title": "MOBILE INTELLIGENT NETWORKS"
+}, {
+    "code": "ITE641",
+    "title": "SENSING TECHNIQUES AND EMBEDDED SYTEMS"
+}, {
+    "code": "ITE642",
+    "title": "WIRELESS AND MOBILE COMMUNICATION"
+}, {
+    "code": "ITE643",
+    "title": "PYTHON PROGRAMMING"
+}, {
+    "code": "ITE644",
+    "title": "COMPUTER VISION AND IMAGE PROCESSING"
+}, {
+    "code": "ITE645",
+    "title": "OPTICAL FIBER COMMUNICATION"
+}, {
+    "code": "ITE646",
+    "title": "MICROWAVE COMMUNICATION AND NAVIGATION SYSTEMS"
+}, {
+    "code": "ITE648",
+    "title": "MULTICORE PROGRAMMING"
+}, {
+    "code": "ITE649",
+    "title": "ENTERPRISE OPERATING SYSTEM"
+}, {
+    "code": "ITY212",
+    "title": "DISCRETE MATHEMATICAL STRUCTURES"
+}, {
+    "code": "ITY213",
+    "title": "OBJECT ORIENTED PROGRAMMING"
+}, {
+    "code": "ITY214",
+    "title": "COMPUTER ARCHITECTURE AND ORGANIZATION"
+}, {
+    "code": "ITY301",
+    "title": "OPERATING SYSTEMS"
+}, {
+    "code": "ITY302",
+    "title": "OBJECT ORIENTED ANALYSIS AND DESIGN"
+}, {
+    "code": "ITY303",
+    "title": "OPEN SOURCE PROGRAMMING"
+}, {
+    "code": "ITY304",
+    "title": "EMBEDDED SYSTEMS"
+}, {
+    "code": "ITY305",
+    "title": "DATABASE MANAGEMENT SYSTEMS"
+}, {
+    "code": "ITY306",
+    "title": "DATA COMMUNICATION AND COMPUTER NETWORKS"
+}, {
+    "code": "ITY307",
+    "title": "COMPUTER GRAPHICS AND MULTIMEDIA"
+}, {
+    "code": "ITY308",
+    "title": "PRINCIPLES OF COMPILER DESIGN"
+}, {
+    "code": "ITY309",
+    "title": "PRINCIPLES OF SOFTWARE ENGINEERING"
+}, {
+    "code": "ITY310",
+    "title": "WEB TECHNOLOGY"
+}, {
+    "code": "ITY311",
+    "title": "NETWORK PROGRAMMING"
+}, {
+    "code": "ITY312",
+    "title": "WIRELESS NETWORKS AND MOBILE COMPUTING"
+}, {
+    "code": "ITY401",
+    "title": "SOFTWARE TESTING"
+}, {
+    "code": "ITY402",
+    "title": "NETWORK SECURITY"
+}, {
+    "code": "ITY404",
+    "title": "WEB SERVICES AND SERVICE ORIENTED ARCHITECTURE"
+}, {
+    "code": "ITY405",
+    "title": "SOFTWARE PROJECT MANAGEMENT"
+}, {
+    "code": "ITY406",
+    "title": "CLOUD COMPUTING"
+}, {
+    "code": "ITY501",
+    "title": "MULTI-CORE ARCHITECTURES AND PARALLEL PROGRAMMING"
+}, {
+    "code": "ITY502",
+    "title": "ARTIFICIAL INTELLIGENCE"
+}, {
+    "code": "ITY503",
+    "title": "DIGITAL IMAGE PROCESSING"
+}, {
+    "code": "ITY504",
+    "title": "SOFTWARE AGENTS"
+}, {
+    "code": "ITY505",
+    "title": "DATA COMPRESSION TECHNIQUES"
+}, {
+    "code": "ITY506",
+    "title": "PATTERN RECOGNITION"
+}, {
+    "code": "ITY507",
+    "title": "REAL TIME SYSTEMS"
+}, {
+    "code": "JAP101",
+    "title": "BASIC JAPANESE"
+}, {
+    "code": "LAW1001",
+    "title": "POLITICAL THEORY"
+}, {
+    "code": "LAW1002",
+    "title": "MICRO ECONOMICS"
+}, {
+    "code": "LAW1003",
+    "title": "ESSENTIALS OF SOCIOLOGY"
+}, {
+    "code": "LAW1004",
+    "title": "FUNDAMENTALS OF PSYCHOLOGY"
+}, {
+    "code": "LAW1005",
+    "title": "CONSTITUTIONAL LAW - PREAMBLE, FUNDAMENTAL RIGHTS,DUTIES AND DIRECTIVE PRINCIPLES OF STATE POLICY"
+}, {
+    "code": "LAW1006",
+    "title": "LAW OF CONTRACTS"
+}, {
+    "code": "LAW1007",
+    "title": "JURISPRUDENCE"
+}, {
+    "code": "LAW1008",
+    "title": "INTRODUCTION TO LAW"
+}, {
+    "code": "LAW101",
+    "title": "PRINCIPLES OF MANAGEMENT"
+}, {
+    "code": "LAW1011",
+    "title": "PUBLIC INTERNATIONAL LAW"
+}, {
+    "code": "LAW1012",
+    "title": "LAW OF TORTS, CONSUMER PROTECTION AND MOTOR VEHICLES LAW"
+}, {
+    "code": "LAW1013",
+    "title": "LABOUR AND INDUSTRIAL LAW - COLLECTIVE BARGAINING, TRADE UNION AND INDUSTRIAL DISPUTES"
+}, {
+    "code": "LAW1014",
+    "title": "FAMILY LAW – MARRIAGE, LEGITIMACY AND GUARDIANSHIP"
+}, {
+    "code": "LAW1015",
+    "title": "COMPANY LAW"
+}, {
+    "code": "LAW1016",
+    "title": "INTERPRETATION OF STATUTES"
+}, {
+    "code": "LAW1017",
+    "title": "INTELLECTUAL PROPERTY LAW"
+}, {
+    "code": "LAW1018",
+    "title": "CYBER LAW"
+}, {
+    "code": "LAW1019",
+    "title": "ENVIRONMENTAL LAW"
+}, {
+    "code": "LAW102",
+    "title": "MANAGERIAL ECONOMICS"
+}, {
+    "code": "LAW1020",
+    "title": "LEGAL AND CONSTITUTIONAL HISTORY"
+}, {
+    "code": "LAW1021",
+    "title": "LAW OF CRIMES"
+}, {
+    "code": "LAW1022",
+    "title": "LAW OF TAXATION"
+}, {
+    "code": "LAW1023",
+    "title": "CODE OF CIVIL PROCEDURE AND LIMITATION"
+}, {
+    "code": "LAW1024",
+    "title": "CODE OF CRIMINAL PROCEDURE, JUVENILE JUSTICE AND PROBATION OF OFFENDERS"
+}, {
+    "code": "LAW1025",
+    "title": "PROFESSIONAL ETHICS AND PROFESSIONAL ACCOUNTING SYSTEM"
+}, {
+    "code": "LAW1026",
+    "title": "ALTERNATIVE DISPUTE RESOLUTION"
+}, {
+    "code": "LAW1027",
+    "title": "DRAFTING PLEADING AND CONVEYANCING"
+}, {
+    "code": "LAW1028",
+    "title": "PRINCIPLES OF MANAGEMENT"
+}, {
+    "code": "LAW1029",
+    "title": "BUSINESS STATISTICS"
+}, {
+    "code": "LAW103",
+    "title": "BUSINESS STATISTICS"
+}, {
+    "code": "LAW1030",
+    "title": "MANAGERIAL ECONOMICS"
+}, {
+    "code": "LAW1031",
+    "title": "FINANCIAL ACCOUNTING"
+}, {
+    "code": "LAW1032",
+    "title": "COST AND MANAGEMENT ACCOUNTING"
+}, {
+    "code": "LAW1033",
+    "title": "MARKETING MANAGEMENT"
+}, {
+    "code": "LAW1034",
+    "title": "FINANCIAL MANAGEMENT"
+}, {
+    "code": "LAW1035",
+    "title": "OPERATIONAL RESEARCH IN MANAGEMENT"
+}, {
+    "code": "LAW1037",
+    "title": "HUMAN RESOURCES MANAGEMENT"
+}, {
+    "code": "LAW1038",
+    "title": "ORGANIZATIONAL BEHAVIOUR"
+}, {
+    "code": "LAW1039",
+    "title": "BUSINESS POLICY AND STRATEGIC MANAGEMENT"
+}, {
+    "code": "LAW104",
+    "title": "INTRODUCTION TO LAW"
+}, {
+    "code": "LAW105",
+    "title": "JURISPRUDENCE"
+}, {
+    "code": "LAW106",
+    "title": "FINANCIAL ACCOUNTING"
+}, {
+    "code": "LAW107",
+    "title": "FINANCIAL MANAGEMENT"
+}, {
+    "code": "LAW108",
+    "title": "CONSTITUTIONAL LAW I"
+}, {
+    "code": "LAW109",
+    "title": "LAW OF TORTS, CONSUMER PROTECTION AND MOTOR VEHICLES LAW"
+}, {
+    "code": "LAW110",
+    "title": "LAW OF CONTRACTS"
+}, {
+    "code": "MAT001",
+    "title": "BASIC MATHEMATICS"
+}, {
+    "code": "MAT1001",
+    "title": "FUNDAMENTALS OF MATHEMATICS"
+}, {
+    "code": "MAT101",
+    "title": "MULTIVARIABLE CALCULUS AND DIFFERENTIAL EQUATIONS"
+}, {
+    "code": "MAT1011",
+    "title": "CALCULUS FOR ENGINEERS"
+}, {
+    "code": "MAT1012",
+    "title": "STATISTICAL APPLICATIONS"
+}, {
+    "code": "MAT1013",
+    "title": "DISCRETE MATHEMATICS FOR COMPUTER SCIENCE"
+}, {
+    "code": "MAT1014",
+    "title": "DISCRETE MATHEMATICS AND GRAPH THEORY"
+}, {
+    "code": "MAT1015",
+    "title": "MATHEMATICS FOR BUILT ENVIRONMENT"
+}, {
+    "code": "MAT1016",
+    "title": "APPLIED DISCRETE MATHEMATICAL STRUCTURES"
+}, {
+    "code": "MAT102",
+    "title": "LINEAR ALGEBRA AND COMPLEX ANALYSIS"
+}, {
+    "code": "MAT103",
+    "title": "METHODS OF DIFFERENTIAL EQUATIONS"
+}, {
+    "code": "MAT104",
+    "title": "PROBABILITY AND STATISTICS"
+}, {
+    "code": "MAT105",
+    "title": "DIFFERENTIAL AND DIFFERENCE EQUATIONS"
+}, {
+    "code": "MAT106",
+    "title": "DISCRETE MATHEMATICAL STRUCTURES"
+}, {
+    "code": "MAT107",
+    "title": "COMPUTATIONAL METHODS"
+}, {
+    "code": "MAT108",
+    "title": "DISCRETE MATHEMATICS"
+}, {
+    "code": "MAT109",
+    "title": "TRANSFORMATION AND NUMERICAL METHODS"
+}, {
+    "code": "MAT110",
+    "title": "MATHEMATICAL BIOLOGY"
+}, {
+    "code": "MAT111",
+    "title": "MATHEMATICS FOR MULTIMEDIA AND ANIMATION"
+}, {
+    "code": "MAT112",
+    "title": "APPLIED ALGEBRA"
+}, {
+    "code": "MAT113",
+    "title": "BUSINESS MATHEMATICS"
+}, {
+    "code": "MAT114",
+    "title": "MULTIVARIABLE CALCULUS AND DIFFERENTIAL EQUATIONS"
+}, {
+    "code": "MAT115",
+    "title": "DIFFERENTIAL AND DIFFERENCE EQUATIONS"
+}, {
+    "code": "MAT2001",
+    "title": "STATISTICS FOR ENGINEERS"
+}, {
+    "code": "MAT2002",
+    "title": "APPLICATIONS OF DIFFERENTIAL AND DIFFERENCE EQUATIONS"
+}, {
+    "code": "MAT201",
+    "title": "COMPLEX VARIABLES AND PARTIAL DIFFERENTIAL EQUATIONS"
+}, {
+    "code": "MAT202",
+    "title": "LINEAR ALGEBRA"
+}, {
+    "code": "MAT203",
+    "title": "NUMERICAL ANALYSIS"
+}, {
+    "code": "MAT204",
+    "title": "NUMERICAL METHODS"
+}, {
+    "code": "MAT205",
+    "title": "APPLIED NUMERICAL METHODS"
+}, {
+    "code": "MAT206",
+    "title": "GRAPH THEORY AND ITS APPLICATIONS"
+}, {
+    "code": "MAT207",
+    "title": "APPLIED PROBABILITY, STATISTICS AND RELIABILITY"
+}, {
+    "code": "MAT209",
+    "title": "DISCRETE STRUCTURES"
+}, {
+    "code": "MAT210",
+    "title": "LINEAR SPACES AND TRANSFORMATIONS"
+}, {
+    "code": "MAT211",
+    "title": "APPLIED PROBABILITY AND STATISTICS"
+}, {
+    "code": "MAT212",
+    "title": "OPERATIONS RESEARCH"
+}, {
+    "code": "MAT213",
+    "title": "BUSINESS STATISTICS"
+}, {
+    "code": "MAT3001",
+    "title": "ADVANCED MATHEMATICS"
+}, {
+    "code": "MAT3003",
+    "title": "COMPLEX VARIABLES AND PARTIAL DIFFERENTIAL EQUATIONS"
+}, {
+    "code": "MAT3004",
+    "title": "APPLIED LINEAR ALGEBRA"
+}, {
+    "code": "MAT3005",
+    "title": "APPLIED NUMERICAL METHODS"
+}, {
+    "code": "MAT5001",
+    "title": "FOUNDATIONS OF MATHEMATICS"
+}, {
+    "code": "MAT5002",
+    "title": "MATHEMATICS FOR COMPUTER ENGINEERING"
+}, {
+    "code": "MAT5003",
+    "title": "METHODS OF APPLIED MATHEMATICS"
+}, {
+    "code": "MAT5004",
+    "title": "ADVANCED DISCRETE MATHEMATICS"
+}, {
+    "code": "MAT5005",
+    "title": "ADVANCED MATHEMATICAL METHODS"
+}, {
+    "code": "MAT5006",
+    "title": "MATHEMATICS FOR COMMUNICATION ENGINEERING"
+}, {
+    "code": "MAT5007",
+    "title": "APPLIED STATISTICAL METHODS"
+}, {
+    "code": "MAT5008",
+    "title": "ADVANCED STATISTICAL MODELLING"
+}, {
+    "code": "MAT501",
+    "title": "MATHEMATICAL METHODS"
+}, {
+    "code": "MAT502",
+    "title": "APPLIED ENGINEERING MATHEMATICS"
+}, {
+    "code": "MAT503",
+    "title": "HIGHER MATHEMATICS"
+}, {
+    "code": "MAT504",
+    "title": "MATHEMATICS APPLIED TO NANOSCIENCE"
+}, {
+    "code": "MAT505",
+    "title": "PROBABILITY, RANDOM AND STOCHASTIC PROCESSES"
+}, {
+    "code": "MAT506",
+    "title": "ADVANCED  MATHEMATICS"
+}, {
+    "code": "MAT507",
+    "title": "ADVANCED MATHEMATICS FOR BIOMEDICAL ENGINEERING"
+}, {
+    "code": "MAT508",
+    "title": "MATHEMATICAL FOUNDATIONS FOR SCIENCES"
+}, {
+    "code": "MAT509",
+    "title": "PROBABILITY, STATISTICS AND OPERATIONAL RESEARCH"
+}, {
+    "code": "MAT510",
+    "title": "DISCRETE MATHEMATICS AND LINEAR ALGEBRA"
+}, {
+    "code": "MAT511",
+    "title": "ADVANCED NUMERICAL METHODS"
+}, {
+    "code": "MAT512",
+    "title": "ADVANCED MATHEMATICS FOR SOFTWARE TECHNOLOGY"
+}, {
+    "code": "MAT513",
+    "title": "MATHEMATICAL FOUNDATION FOR COMPUTER SCIENCE"
+}, {
+    "code": "MAT514",
+    "title": "MATHEMATICS FOR SOFTWARE TECHNOLOGY"
+}, {
+    "code": "MAT515",
+    "title": "COMPUTATIONAL MATHEMATICS"
+}, {
+    "code": "MAT516",
+    "title": "COMPUTATIONAL TECHNIQUES"
+}, {
+    "code": "MAT518",
+    "title": "MATHEMATICAL FOUNDATIONS FOR COMPUTER APPLICATIONS"
+}, {
+    "code": "MBA504",
+    "title": "SHORT FILM MAKING"
+}, {
+    "code": "MBY501",
+    "title": "MICROBIAL DIVERSITY"
+}, {
+    "code": "MBY502",
+    "title": "BACTERIOLOGY AND VIROLOGY"
+}, {
+    "code": "MBY503",
+    "title": "MYCOLOGY AND PARASITOLOGY"
+}, {
+    "code": "MBY506",
+    "title": "ANALYTICAL TECHNIQUES"
+}, {
+    "code": "MBY507",
+    "title": "MOLECULAR BIOLOGY"
+}, {
+    "code": "MBY601",
+    "title": "IMMUNOLOGY AND IMMUNOTECHNOLOGY"
+}, {
+    "code": "MBY603",
+    "title": "FOOD MICROBIOLOGY"
+}, {
+    "code": "MBY604",
+    "title": "MICROBIAL PHYSIOLOGY AND METABOLISM"
+}, {
+    "code": "MBY605",
+    "title": "FERMENTATION TECHNOLOGY"
+}, {
+    "code": "MBY606",
+    "title": "ENVIRONMENTAL MICROBIOLOGY"
+}, {
+    "code": "MBY610",
+    "title": "MARINE MICROBIOLOGY"
+}, {
+    "code": "MBY611",
+    "title": "FUNGAL BIOTECHNOLOGY"
+}, {
+    "code": "MBY613",
+    "title": "BIOREMEDIATION"
+}, {
+    "code": "MBY615",
+    "title": "INDUSTRIAL MICROBIOLOGY"
+}, {
+    "code": "MBY617",
+    "title": "CELLULAR MICROBIOLOGY"
+}, {
+    "code": "MBY618",
+    "title": "BIO BUSINESS AND ENTREPRENEURSHIP"
+}, {
+    "code": "MBY619",
+    "title": "MEDICAL MICROBIOLOGY"
+}, {
+    "code": "MBY620",
+    "title": "INTRODUCTION TO BIONANOTECHNOLOGY"
+}, {
+    "code": "MBY621",
+    "title": "INTRODUCTION TO HUMAN PSYCHOLOGY"
+}, {
+    "code": "MEE1001",
+    "title": "ENGINEERING DRAWING"
+}, {
+    "code": "MEE1002",
+    "title": "ENGINEERING MECHANICS"
+}, {
+    "code": "MEE1003",
+    "title": "ENGINEERING THERMODYNAMICS"
+}, {
+    "code": "MEE1004",
+    "title": "FLUID MECHANICS"
+}, {
+    "code": "MEE1005",
+    "title": "MATERIALS ENGINEERING AND TECHNOLOGY"
+}, {
+    "code": "MEE1006",
+    "title": "APPLIED MECHANICS AND THERMAL ENGINEERING"
+}, {
+    "code": "MEE1007",
+    "title": "MANUFACTURING PROCESSES"
+}, {
+    "code": "MEE1008",
+    "title": "MEMS"
+}, {
+    "code": "MEE101",
+    "title": "ENGINEERING GRAPHICS"
+}, {
+    "code": "MEE1011",
+    "title": "RENEWABLE ENERGY SOURCES"
+}, {
+    "code": "MEE1012",
+    "title": "ALTERNATIVE FUELS"
+}, {
+    "code": "MEE1014",
+    "title": "INDUSTRIAL ENGINEERING AND MANAGEMENT"
+}, {
+    "code": "MEE102",
+    "title": "WORKSHOP PRACTICE"
+}, {
+    "code": "MEE103",
+    "title": "ENGINEERING GRAPHICS II"
+}, {
+    "code": "MEE1030",
+    "title": "ROBOTICS"
+}, {
+    "code": "MEE1032",
+    "title": "MECHANICS OF SOLIDS AND FLUIDS"
+}, {
+    "code": "MEE1033",
+    "title": "THERMODYNAMICS AND HEAT TRANSFER"
+}, {
+    "code": "MEE1035",
+    "title": "AUTOMOTIVE ELECTRICALS"
+}, {
+    "code": "MEE1036",
+    "title": "AUTOMOTIVE CHASSIS"
+}, {
+    "code": "MEE104",
+    "title": "WORKSHOP PRACTICE - II"
+}, {
+    "code": "MEE106",
+    "title": "FUNDAMENTALS OF ENGINEERING GRAPHICS"
+}, {
+    "code": "MEE107",
+    "title": "ENGINEERING DRAWING - I"
+}, {
+    "code": "MEE1074",
+    "title": "ENERGY, ENVIRONMENT AND IMPACT ASSESSMENT"
+}, {
+    "code": "MEE108",
+    "title": "ENGINEERING DRAWING - II"
+}, {
+    "code": "MEE109",
+    "title": "MATERIAL SCIENCE AND METALLURGY"
+}, {
+    "code": "MEE110",
+    "title": "AUTOMOTIVE ELECTRICALS"
+}, {
+    "code": "MEE111",
+    "title": "ADVANCED AUTOMOTIVE POWER PLANTS"
+}, {
+    "code": "MEE2002",
+    "title": "STRENGTH OF MATERIALS"
+}, {
+    "code": "MEE2003",
+    "title": "THERMAL ENGINEERING SYSTEMS"
+}, {
+    "code": "MEE2004",
+    "title": "MECHANICS OF MACHINES"
+}, {
+    "code": "MEE2006",
+    "title": "MACHINING PROCESSES AND METROLOGY"
+}, {
+    "code": "MEE2014",
+    "title": "METAL CASTING TECHNOLOGY"
+}, {
+    "code": "MEE202",
+    "title": "ENGINEERING MECHANICS"
+}, {
+    "code": "MEE2022",
+    "title": "POWER PLANT ENGINEERING"
+}, {
+    "code": "MEE203",
+    "title": "MATERIALS ENGINEERING AND TECHNOLOGY"
+}, {
+    "code": "MEE2031",
+    "title": "THEORY OF METAL CUTTING AND FORMING"
+}, {
+    "code": "MEE2038",
+    "title": "THERMAL AND HEAT TRANSFER"
+}, {
+    "code": "MEE204",
+    "title": "ENGINEERING THERMODYNAMICS"
+}, {
+    "code": "MEE205",
+    "title": "FUNDAMENTALS OF MANUFACTURING PROCESS"
+}, {
+    "code": "MEE206",
+    "title": "FLUID MECHANICS"
+}, {
+    "code": "MEE207",
+    "title": "COMPUTER AIDED MACHINE DRAWING"
+}, {
+    "code": "MEE208",
+    "title": "APPLIED MECHANICS"
+}, {
+    "code": "MEE209",
+    "title": "INSTRUMENTATION AND CONTROL ENGINEERING"
+}, {
+    "code": "MEE210",
+    "title": "MATERIALS SCIENCE AND STRENGTH OF MATERIALS"
+}, {
+    "code": "MEE211",
+    "title": "CHEMICAL PROCESS CALCULATIONS"
+}, {
+    "code": "MEE212",
+    "title": "UNIT PROCESSES IN ORGANIC SYNTHESIS"
+}, {
+    "code": "MEE213",
+    "title": "ROBOTICS"
+}, {
+    "code": "MEE214",
+    "title": "STRENGTH OF MATERIALS"
+}, {
+    "code": "MEE215",
+    "title": "KINEMATICS OF MACHINERY"
+}, {
+    "code": "MEE216",
+    "title": "THERMAL ENGINEERING SYSTEMS"
+}, {
+    "code": "MEE217",
+    "title": "MACHINING PROCESSES AND METROLOGY"
+}, {
+    "code": "MEE220",
+    "title": "CONVENTIONAL ENERGY TECHNOLOGIES - I"
+}, {
+    "code": "MEE222",
+    "title": "PRINCIPLES OF MECHANICAL DESIGN"
+}, {
+    "code": "MEE223",
+    "title": "CHEMICAL ENGINEERING THERMODYNAMICS"
+}, {
+    "code": "MEE224",
+    "title": "CHEMICAL PROCESS TECHNOLOGY"
+}, {
+    "code": "MEE225",
+    "title": "MOMENTUM TRANSFER"
+}, {
+    "code": "MEE226",
+    "title": "MECHANICAL OPERATIONS"
+}, {
+    "code": "MEE227",
+    "title": "SAFETY AND HAZARD ANALYSIS"
+}, {
+    "code": "MEE228",
+    "title": "POWER PLANT ENGINEERING"
+}, {
+    "code": "MEE229",
+    "title": "MECHATRONICS"
+}, {
+    "code": "MEE230",
+    "title": "RENEWABLE ENERGY SOURCES"
+}, {
+    "code": "MEE231",
+    "title": "PROGRAMMABLE AUTOMATION CONTROLLERS"
+}, {
+    "code": "MEE232",
+    "title": "REMOTE SENSING AND GIS IN RESOURCE MANAGEMENT"
+}, {
+    "code": "MEE233",
+    "title": "HEAT TRANSFER"
+}, {
+    "code": "MEE234",
+    "title": "MANUFACTURING PROCESSES"
+}, {
+    "code": "MEE235",
+    "title": "ALTERNATIVE FUELS"
+}, {
+    "code": "MEE236",
+    "title": "BIO-ENERGY TECHNOLOGY"
+}, {
+    "code": "MEE237",
+    "title": "PROCESS ENGINEERING THERMODYNAMICS"
+}, {
+    "code": "MEE239",
+    "title": "PROJECT MANAGEMENT"
+}, {
+    "code": "MEE240",
+    "title": "FLUID MECHANICS AND MACHINERY"
+}, {
+    "code": "MEE241",
+    "title": "AUTOMOTIVE ELECTRONIC AND INSTRUMENTATION SYSTEMS"
+}, {
+    "code": "MEE242",
+    "title": "RENEWABLE ENERGY SOURCES LABORATORY"
+}, {
+    "code": "MEE245",
+    "title": "THEORY OF METAL JOINING"
+}, {
+    "code": "MEE246",
+    "title": "THEORY OF METAL CASTING"
+}, {
+    "code": "MEE247",
+    "title": "THEORY OF METAL CUTTING"
+}, {
+    "code": "MEE248",
+    "title": "MECHANICS OF SOLIDS AND FLUIDS"
+}, {
+    "code": "MEE249",
+    "title": "THEORY OF METAL FORMING"
+}, {
+    "code": "MEE250",
+    "title": "THERMAL ENGINEERING AND HEAT TRANSFER"
+}, {
+    "code": "MEE251",
+    "title": "ENGINEERING METROLOGY"
+}, {
+    "code": "MEE252",
+    "title": "SIMULATION MODELING AND ANALYSIS"
+}, {
+    "code": "MEE253",
+    "title": "RELIABILITY, MAINTENANCE AND SAFETY ENGINEERING"
+}, {
+    "code": "MEE254",
+    "title": "STATISTICAL QUALITY CONTROL"
+}, {
+    "code": "MEE255",
+    "title": "INDUSTRIAL ECONOMICS"
+}, {
+    "code": "MEE301",
+    "title": "DYNAMICS OF MACHINERY"
+}, {
+    "code": "MEE302",
+    "title": "DESIGN OF MACHINE ELEMENTS"
+}, {
+    "code": "MEE303",
+    "title": "HEAT AND MASS TRANSFER"
+}, {
+    "code": "MEE304",
+    "title": "TURBOMACHINES"
+}, {
+    "code": "MEE306",
+    "title": "DESIGN OF TRANSMISSION SYSTEMS"
+}, {
+    "code": "MEE307",
+    "title": "CAD/CAM"
+}, {
+    "code": "MEE308",
+    "title": "INDUSTRIAL ENGINEERING AND MANAGEMENT"
+}, {
+    "code": "MEE309",
+    "title": "INTERNAL COMBUSTION ENGINES"
+}, {
+    "code": "MEE310",
+    "title": "SURFACE MODIFICATION TECHNOLOGIES"
+}, {
+    "code": "MEE311",
+    "title": "NON-DESTRUCTIVE EVALUATION AND TESTING"
+}, {
+    "code": "MEE312",
+    "title": "REFRIGERATION AND AIR CONDITIONING"
+}, {
+    "code": "MEE313",
+    "title": "COMPUTATIONAL METHODS IN PROCESS ENGINEERING"
+}, {
+    "code": "MEE314",
+    "title": "CHEMICAL REACTION ENGINEERING"
+}, {
+    "code": "MEE315",
+    "title": "PROCESS INSTRUMENTATION AND CONTROL"
+}, {
+    "code": "MEE316",
+    "title": "MASS TRANSFER"
+}, {
+    "code": "MEE317",
+    "title": "BIOCHEMICAL ENGINEERING"
+}, {
+    "code": "MEE318",
+    "title": "EQUILIBRIUM STAGED OPERATIONS"
+}, {
+    "code": "MEE319",
+    "title": "PROCESS EQUIPMENT DESIGN"
+}, {
+    "code": "MEE320",
+    "title": "PROCESS PLANT ECONOMICS"
+}, {
+    "code": "MEE321",
+    "title": "DESIGN PROJECT FOR CHEMICAL PROCESS ENGINEERING"
+}, {
+    "code": "MEE322",
+    "title": "FUELS AND COMBUSTION"
+}, {
+    "code": "MEE323",
+    "title": "CHEMICAL PRODUCT DESIGN"
+}, {
+    "code": "MEE324",
+    "title": "COMPLEX FLUIDS ENGINEERING"
+}, {
+    "code": "MEE326",
+    "title": "MATLAB APPLICATIONS IN CHEMICAL ENGINEERING"
+}, {
+    "code": "MEE327",
+    "title": "ENERGY IN BUILT ENVIRONMENT"
+}, {
+    "code": "MEE328",
+    "title": "NATURAL DISASTER MITIGATION AND MANAGEMENT"
+}, {
+    "code": "MEE329",
+    "title": "ELECTRICAL ENERGY MANAGEMENT"
+}, {
+    "code": "MEE330",
+    "title": "SMALL HYDRO POWER SYSTEMS"
+}, {
+    "code": "MEE331",
+    "title": "RENEWABLE ENERGY TECHNOLOGIES"
+}, {
+    "code": "MEE332",
+    "title": "CONVENTIONAL ENERGY TECHNOLOGIES - II"
+}, {
+    "code": "MEE333",
+    "title": "HYDROGEN AND FUEL CELLS"
+}, {
+    "code": "MEE334",
+    "title": "MECHANICS OF MACHINES"
+}, {
+    "code": "MEE335",
+    "title": "WIND ENERGY ENGINEERING"
+}, {
+    "code": "MEE336",
+    "title": "FINITE ELEMENT ANALYSIS"
+}, {
+    "code": "MEE337",
+    "title": "NANOMATERIALS / MEMS"
+}, {
+    "code": "MEE338",
+    "title": "DESIGN OF COMPOSITE MATERIALS"
+}, {
+    "code": "MEE339",
+    "title": "TRIBOLOGY"
+}, {
+    "code": "MEE340",
+    "title": "PRODUCT DESIGN FOR MANUFACTURING"
+}, {
+    "code": "MEE341",
+    "title": "METAL CASTING TECHNOLOGY"
+}, {
+    "code": "MEE342",
+    "title": "WELDING ENGINEERING"
+}, {
+    "code": "MEE343",
+    "title": "METAL FORMING THEORY AND PRACTICE"
+}, {
+    "code": "MEE344",
+    "title": "MODELING AND SIMULATION OF MANUFACTURING SYSTEMS"
+}, {
+    "code": "MEE345",
+    "title": "GAS DYNAMICS AND JET PROPULSION"
+}, {
+    "code": "MEE346",
+    "title": "FLUID POWER SYSTEMS"
+}, {
+    "code": "MEE347",
+    "title": "ADVANCED MACHINING PROCESSES"
+}, {
+    "code": "MEE348",
+    "title": "CRYOGENIC ENGINEERING"
+}, {
+    "code": "MEE349",
+    "title": "NEW VENTURE PLANNING AND MANAGEMENT"
+}, {
+    "code": "MEE350",
+    "title": "FACILITIES AND PROCESS PLANNING"
+}, {
+    "code": "MEE351",
+    "title": "RAPID MANUFACTURING TECHNOLOGIES"
+}, {
+    "code": "MEE352",
+    "title": "COMBUSTION SCIENCE AND TECHNOLOGY"
+}, {
+    "code": "MEE353",
+    "title": "VEHICLE TECHNOLOGY (AUTOMOTIVE CHASSIS AND BODY ENGINEERING)"
+}, {
+    "code": "MEE354",
+    "title": "KINEMATICS AND DYNAMICS OF MACHINERY"
+}, {
+    "code": "MEE355",
+    "title": "AUTOMOTIVE TRANSMISSION SYSTEMS"
+}, {
+    "code": "MEE356",
+    "title": "ENGINE DESIGN AND DEVELOPMENT"
+}, {
+    "code": "MEE357",
+    "title": "FUNDAMENTALS OF NOISE AND VIBRATION"
+}, {
+    "code": "MEE358",
+    "title": "VEHICLE DYNAMICS AND STRUCTURES"
+}, {
+    "code": "MEE359",
+    "title": "AUTO MATERIAL AND COMPONENT TESTING LAB"
+}, {
+    "code": "MEE360",
+    "title": "AUTO ELECTRONICS AND EMC LAB"
+}, {
+    "code": "MEE361",
+    "title": "ENGINE AND VEHICLE EVALUATION LAB"
+}, {
+    "code": "MEE362",
+    "title": "TWO AND THREE WHEELER"
+}, {
+    "code": "MEE363",
+    "title": "VEHICLE INSPECTION AND MAINTENANCE"
+}, {
+    "code": "MEE364",
+    "title": "AUTOMOTIVE AERODYNAMICS"
+}, {
+    "code": "MEE365",
+    "title": "COMPUTER SIMULATION OF ENGINES"
+}, {
+    "code": "MEE366",
+    "title": "AUTO CERTIFICATION AND HOMOLOGATION"
+}, {
+    "code": "MEE367",
+    "title": "AUTOMOTIVE HVAC"
+}, {
+    "code": "MEE368",
+    "title": "AUTO MATERIALS AND MANUFACTURING"
+}, {
+    "code": "MEE369",
+    "title": "ERGONOMICS AND STYLING"
+}, {
+    "code": "MEE370",
+    "title": "CONVENTIONAL AND SOLAR REFRIGERATION AND AIR-CONDITIONING"
+}, {
+    "code": "MEE371",
+    "title": "EXERGY ANALYSIS OF ENERGY SYSTEMS"
+}, {
+    "code": "MEE372",
+    "title": "ENERGY SYSTEMS MODELLING LABORATORY"
+}, {
+    "code": "MEE373",
+    "title": "HETEROGENEOUS REACTION ENGINEERING"
+}, {
+    "code": "MEE374",
+    "title": "PROCESS PLANT UTILITIES"
+}, {
+    "code": "MEE376",
+    "title": "PETROCHEMICAL TECHNOLOGY"
+}, {
+    "code": "MEE377",
+    "title": "FERTILIZER TECHNOLOGY"
+}, {
+    "code": "MEE378",
+    "title": "INDUSTRIAL POLLUTION ENGINEERING"
+}, {
+    "code": "MEE380",
+    "title": "SURFACE ENGINEERING"
+}, {
+    "code": "MEE381",
+    "title": "NANOTECHNOLOGY"
+}, {
+    "code": "MEE382",
+    "title": "ELECTROCHEMICAL ENERGY CONVERSION AND STORAGE"
+}, {
+    "code": "MEE383",
+    "title": "THERMAL POWER AND COOLING CYCLES"
+}, {
+    "code": "MEE384",
+    "title": "PETROLEUM CHEMISTRY"
+}, {
+    "code": "MEE385",
+    "title": "NATURAL GAS ENGINEERING"
+}, {
+    "code": "MEE386",
+    "title": "CNC MACHINES AND PROGRAMMING"
+}, {
+    "code": "MEE387",
+    "title": "MANUFACTURING AUTOMATION"
+}, {
+    "code": "MEE388",
+    "title": "ADVANCED METAL FORMING"
+}, {
+    "code": "MEE389",
+    "title": "MICRO AND NANO MACHINING"
+}, {
+    "code": "MEE390",
+    "title": "DESIGN OF MACHINE TOOL STRUCTURE"
+}, {
+    "code": "MEE401",
+    "title": "TOTAL QUALITY MANAGEMENT AND RELIABILITY"
+}, {
+    "code": "MEE402",
+    "title": "TRANSPORT PHENOMENA"
+}, {
+    "code": "MEE403",
+    "title": "MODELING AND SIMULATION IN PROCESS ENGINEERING"
+}, {
+    "code": "MEE404",
+    "title": "PRODUCTION AND OPERATIONS MANAGEMENT"
+}, {
+    "code": "MEE405",
+    "title": "COMPUTATIONAL FLUID DYNAMICS"
+}, {
+    "code": "MEE406",
+    "title": "FERMENTATION TECHNOLOGY"
+}, {
+    "code": "MEE407",
+    "title": "FLUIDIZATION ENGINEERING"
+}, {
+    "code": "MEE408",
+    "title": "MEMBRANE SEPARATIONS TECHNOLOGY"
+}, {
+    "code": "MEE409",
+    "title": "OPTIMIZATION OF CHEMICAL PROCESSES"
+}, {
+    "code": "MEE410",
+    "title": "PETROLEUM TECHNOLOGY"
+}, {
+    "code": "MEE411",
+    "title": "POLYMER TECHNOLOGY"
+}, {
+    "code": "MEE412",
+    "title": "PROCESS PLANT SIMULATION"
+}, {
+    "code": "MEE413",
+    "title": "SURFACTANT TECHNOLOGY"
+}, {
+    "code": "MEE414",
+    "title": "CHEMICAL PROCESS INTEGRATION"
+}, {
+    "code": "MEE415",
+    "title": "MULTIPHASE FLOW"
+}, {
+    "code": "MEE416",
+    "title": "SOLAR THERMAL POWER ENGINEERING"
+}, {
+    "code": "MEE417",
+    "title": "SOLAR PHOTOVOLTAIC SYSTEM DESIGN"
+}, {
+    "code": "MEE418",
+    "title": "FLUIDIZED BED COMBUSTION TECHNOLOGY"
+}, {
+    "code": "MEE419",
+    "title": "STANDARDS, CODES AND LEGAL ISSUES"
+}, {
+    "code": "MEE420",
+    "title": "NUCLEAR POWER ENGINEERING"
+}, {
+    "code": "MEE421",
+    "title": "ENERGY SYSTEMS MODELLING AND ANALYSIS"
+}, {
+    "code": "MEE422",
+    "title": "DESIGN OF THERMAL SYSTEMS"
+}, {
+    "code": "MEE423",
+    "title": "ENERGY PROJECT PROPOSAL EVALUATION"
+}, {
+    "code": "MEE424",
+    "title": "ELECTRICAL DRIVES AND CONTROL"
+}, {
+    "code": "MEE425",
+    "title": "INTEGRATED ENERGY SYSTEMS"
+}, {
+    "code": "MEE426",
+    "title": "DESIGN AND SELECTION OF HEAT TRANSFER EQUIPMENT"
+}, {
+    "code": "MEE427",
+    "title": "POLICY, PLANNING AND ECONOMICS"
+}, {
+    "code": "MEE428",
+    "title": "AUTOMOBILE ENGINEERING"
+}, {
+    "code": "MEE429",
+    "title": "ENERGY CONSERVATION, AUDIT AND MANAGEMENT"
+}, {
+    "code": "MEE430",
+    "title": "ACOUSTICS AND NOISE CONTROL ENGINEERING"
+}, {
+    "code": "MEE431",
+    "title": "PRODUCT DESIGN"
+}, {
+    "code": "MEE432",
+    "title": "TOOL DESIGN"
+}, {
+    "code": "MEE433",
+    "title": "MECHANICAL VIBRATIONS"
+}, {
+    "code": "MEE434",
+    "title": "PRODUCTION PLANNING AND CONTROL"
+}, {
+    "code": "MEE435",
+    "title": "LEAN ENTERPRISES AND ADVANCED MANUFACTURING TECHNOLOGY"
+}, {
+    "code": "MEE437",
+    "title": "OPERATIONS RESEARCH"
+}, {
+    "code": "MEE438",
+    "title": "COMPUTATIONAL FLUID DYNAMICS LABORATORY"
+}, {
+    "code": "MEE439",
+    "title": "SOFT SKILLS"
+}, {
+    "code": "MEE440",
+    "title": "CHEMICAL MODELING OF THE ATMOSPHERE"
+}, {
+    "code": "MEE441",
+    "title": "LINEAR SYSTEMS THEORY WITH APPLICATIONS"
+}, {
+    "code": "MEE444",
+    "title": "FOOD PROCESS ENGINEERING"
+}, {
+    "code": "MEE445",
+    "title": "ADVANCED COMPUTATIONAL FLUID DYNAMICS LABORATORY"
+}, {
+    "code": "MEE446",
+    "title": "OPTIMIZATION TECHNIQUES"
+}, {
+    "code": "MEE447",
+    "title": "TOTAL QUALITY MANAGEMENT"
+}, {
+    "code": "MEE448",
+    "title": "PROJECT MANAGEMENT AND CONTROL"
+}, {
+    "code": "MEE449",
+    "title": "ADVANCED MANUFACTURING MANAGEMENT"
+}, {
+    "code": "MEE450",
+    "title": "ENTERPRISE RESOURCE PLANNING"
+}, {
+    "code": "MEE451",
+    "title": "AGILE MANUFACTURING"
+}, {
+    "code": "MEE452",
+    "title": "LOGISTICS AND SUPPLY CHAIN MANAGEMENT"
+}, {
+    "code": "MEE453",
+    "title": "COMPOSITES TECHNOLOGY"
+}, {
+    "code": "MEE454",
+    "title": "MECHANICS OF FRACTURE"
+}, {
+    "code": "MEE499",
+    "title": "PROJECT WORK"
+}, {
+    "code": "MEE501",
+    "title": "AUTOMOTIVE MATERIALS"
+}, {
+    "code": "MEE502",
+    "title": "VEHICLE ENGINE TECHNOLOGY"
+}, {
+    "code": "MEE503",
+    "title": "INSTRUMENTATION AND AUTOMOTIVE ELECTRONICS"
+}, {
+    "code": "MEE504",
+    "title": "AUTOMOTIVE CHASSIS SYSTEMS"
+}, {
+    "code": "MEE505",
+    "title": "VEHICLE DYNAMICS"
+}, {
+    "code": "MEE506",
+    "title": "COMPUTATIONAL FLUID DYNAMICS"
+}, {
+    "code": "MEE507",
+    "title": "FINITE ELEMENT ANALYSIS"
+}, {
+    "code": "MEE508",
+    "title": "NOISE, VIBRATION AND HARSHNESS"
+}, {
+    "code": "MEE509",
+    "title": "AUTOMOTIVE FUELS AND EMISSION"
+}, {
+    "code": "MEE510",
+    "title": "AUTOMOTIVE SAFETY AND LIGHTING"
+}, {
+    "code": "MEE511",
+    "title": "MECHATRONICS AND ROBOTICS"
+}, {
+    "code": "MEE512",
+    "title": "COMPUTER AIDED DESIGN LABORATORY"
+}, {
+    "code": "MEE513",
+    "title": "COMPUTER AIDED ENGINEERING LABORATORY"
+}, {
+    "code": "MEE514",
+    "title": "COMPUTATIONAL FLUID DYNAMICS LABORATORY"
+}, {
+    "code": "MEE515",
+    "title": "PRODUCT DESIGN AND LIFE CYCLE MANAGEMENT"
+}, {
+    "code": "MEE516",
+    "title": "TRIBOLOGY"
+}, {
+    "code": "MEE517",
+    "title": "AUTOMOTIVE REFRIGERATION AND AIR CONDITIONING"
+}, {
+    "code": "MEE518",
+    "title": "VEHICLE BODY ENGINEERING"
+}, {
+    "code": "MEE519",
+    "title": "VEHICLE AERODYNAMICS"
+}, {
+    "code": "MEE520",
+    "title": "AUTOMOTIVE POWER TRANSMISSION SYSTEMS"
+}, {
+    "code": "MEE521",
+    "title": "FINITE ELEMENT METHODS"
+}, {
+    "code": "MEE522",
+    "title": "COMPUTER INTEGRATED MANUFACTURING"
+}, {
+    "code": "MEE523",
+    "title": "ADVANCED STRENGTH OF MATERIALS"
+}, {
+    "code": "MEE524",
+    "title": "COMPUTER PROGRAMMING LAB"
+}, {
+    "code": "MEE525",
+    "title": "AUTOMATION LAB"
+}, {
+    "code": "MEE526",
+    "title": "ADVANCED COMPUTER AIDED DESIGN LAB"
+}, {
+    "code": "MEE527",
+    "title": "ADVANCED COMPUTER INTEGRATED MANUFACTURING LAB"
+}, {
+    "code": "MEE528",
+    "title": "FLUID POWER SYSTEMS AND FACTORY AUTOMATION"
+}, {
+    "code": "MEE529",
+    "title": "AUTOTRONICS AND VEHICLE INTELLIGENCE"
+}, {
+    "code": "MEE530",
+    "title": "PRINCIPLES OF MECHANICAL SYSTEMS"
+}, {
+    "code": "MEE531",
+    "title": "PRINCIPLES OF ELECTRONIC DEVICES"
+}, {
+    "code": "MEE532",
+    "title": "ADVANCED FINITE ELEMENT METHODS"
+}, {
+    "code": "MEE533",
+    "title": "ROBOT DYNAMICS AND ANALYSIS"
+}, {
+    "code": "MEE534",
+    "title": "MACHINE VISION SYSTEM"
+}, {
+    "code": "MEE535",
+    "title": "FUZZY LOGIC AND NEURAL NETWORKS"
+}, {
+    "code": "MEE536",
+    "title": "MICRO ELECTRO-MECHANICAL SYSTEMS"
+}, {
+    "code": "MEE537",
+    "title": "MECHATRONICS SYSTEM DESIGN"
+}, {
+    "code": "MEE538",
+    "title": "APPLIED NUMERICAL ANALYSIS"
+}, {
+    "code": "MEE539",
+    "title": "RENEWABLE ENERGY TECHNOLOGIES"
+}, {
+    "code": "MEE540",
+    "title": "ENERGY AUDIT, CONSERVATION AND MANAGEMENT"
+}, {
+    "code": "MEE541",
+    "title": "BIO-ENERGY TECHNOLOGIES"
+}, {
+    "code": "MEE542",
+    "title": "HYDROGEN AND FUEL CELLS"
+}, {
+    "code": "MEE543",
+    "title": "COMPUTATIONAL FLUID DYNAMICS"
+}, {
+    "code": "MEE544",
+    "title": "POWER PLANT ENGINEERING"
+}, {
+    "code": "MEE545",
+    "title": "MODELLING AND CONTROL OF MECHATRONIC SYSTEMS"
+}, {
+    "code": "MEE546",
+    "title": "MOBILE AND AUTONOMOUS ROBOTS"
+}, {
+    "code": "MEE547",
+    "title": "QUALITY MANAGEMENT"
+}, {
+    "code": "MEE548",
+    "title": "METROLOGY AND NON-DESTRUCTIVE TESTING"
+}, {
+    "code": "MEE549",
+    "title": "ADVANCED VIBRATION ENGINEERING"
+}, {
+    "code": "MEE550",
+    "title": "DESIGN FOR MANUFACTURING"
+}, {
+    "code": "MEE551",
+    "title": "ADVANCED MANUFACTURING TECHNOLOGY"
+}, {
+    "code": "MEE552",
+    "title": "OPTIMIZATION METHODS"
+}, {
+    "code": "MEE553",
+    "title": "INDUSTRIAL AUTOMATION"
+}, {
+    "code": "MEE554",
+    "title": "ELECTRO-OPTIC SYSTEMS"
+}, {
+    "code": "MEE555",
+    "title": "COMPUTER AIDED PROCESS PLANNING"
+}, {
+    "code": "MEE557",
+    "title": "ADVANCED MATERIALS AND PROCESSING"
+}, {
+    "code": "MEE558",
+    "title": "ADVANCED COMPUTER AIDED ENGINEERING LABORATORY"
+}, {
+    "code": "MEE559",
+    "title": "COMPUTER AIDED MANUFACTURING LAB"
+}, {
+    "code": "MEE560",
+    "title": "VIRTUAL PROTOTYPE MODELING LAB "
+}, {
+    "code": "MEE561",
+    "title": "ADVANCED MECHANICAL VIBRATIONS"
+}, {
+    "code": "MEE562",
+    "title": "SMALL HYDRO POWER SYSTEMS"
+}, {
+    "code": "MEE563",
+    "title": "ADVANCED HEAT TRANSFER"
+}, {
+    "code": "MEE565",
+    "title": "ADVANCED JOINING PROCESSES"
+}, {
+    "code": "MEE566",
+    "title": "MODERN MACHINING PROCESSES"
+}, {
+    "code": "MEE567",
+    "title": "CNC TECHNOLOGY AND PROGRAMMING"
+}, {
+    "code": "MEE568",
+    "title": "MACHINE TOOL METROLOGY"
+}, {
+    "code": "MEE569",
+    "title": "MECHATRONICS IN MANUFACTURING"
+}, {
+    "code": "MEE570",
+    "title": "DESIGN AND METALLURGY OF WELDED JOINTS"
+}, {
+    "code": "MEE571",
+    "title": "VIRTUAL MANUFACTURING"
+}, {
+    "code": "MEE572",
+    "title": "RESEARCH METHODOLOGY"
+}, {
+    "code": "MEE573",
+    "title": "THEORY OF METAL FORMING"
+}, {
+    "code": "MEE574",
+    "title": "ADDITIVE MANUFACTURING TECHNOLOGY"
+}, {
+    "code": "MEE575",
+    "title": "MANUFACTURING OF COMPOSITE MATERIALS"
+}, {
+    "code": "MEE576",
+    "title": "SURFACE ENGINEERED MATERIALS TECHNOLOGY"
+}, {
+    "code": "MEE577",
+    "title": "ENTERPRISE RESOURCE PLANNING AND SUPPLY CHAIN MANAGEMENT"
+}, {
+    "code": "MEE578",
+    "title": "MANUFACTURING SYSTEM AND SIMULATION"
+}, {
+    "code": "MEE579",
+    "title": "MAINTENANCE ENGINEERING AND MANAGEMENT"
+}, {
+    "code": "MEE580",
+    "title": "CONCURRENT ENGINEERING"
+}, {
+    "code": "MEE581",
+    "title": "MANUFACTURING INFORMATION SYSTEMS"
+}, {
+    "code": "MEE582",
+    "title": "ROBOTICS AND INDUSTRIAL AUTOMATION"
+}, {
+    "code": "MEE583",
+    "title": "STATISTICAL QUALITY CONTROL AND RELIABILITY"
+}, {
+    "code": "MEE584",
+    "title": "WIND ENERGY TECHNOLOGY"
+}, {
+    "code": "MEE585",
+    "title": "THERMODYNAMICS, HEAT TRANSFER AND FLUID FLOW"
+}, {
+    "code": "MEE586",
+    "title": "POWER TRAIN ENGINEERING"
+}, {
+    "code": "MEE587",
+    "title": "THERMODYNAMIC ANALYSIS OF IC ENGINES"
+}, {
+    "code": "MEE588",
+    "title": "ADVANCED FLUID MECHANICS"
+}, {
+    "code": "MEE589",
+    "title": "ENGINE DESIGN AND DEVELOPMENT"
+}, {
+    "code": "MEE590",
+    "title": "ENGINE MATERIAL AND FAILURES ANALYSIS"
+}, {
+    "code": "MEE591",
+    "title": "COMPUTATIONAL METHODS IN HEAT AND FLUID FLOW"
+}, {
+    "code": "MEE592",
+    "title": "COMPUTATIONAL FLUID FLOW AND HEAT TRANSFER"
+}, {
+    "code": "MEE593",
+    "title": "FINITE ELEMENT METHODS AND ANALYSIS"
+}, {
+    "code": "MEE594",
+    "title": "ADVANCED EMBEDDED SYSTEM DESIGN"
+}, {
+    "code": "MEE595",
+    "title": "SENSORS AND ACTUATORS"
+}, {
+    "code": "MEE596",
+    "title": "SOFTWARE DEVELOPMENT LIFE CYCLE MANAGEMENT"
+}, {
+    "code": "MEE597",
+    "title": "FUNCTIONAL SAFETY"
+}, {
+    "code": "MEE598",
+    "title": "ADVANCED MODEL BASED DEVELOPMENT"
+}, {
+    "code": "MEE599",
+    "title": "ENGINE CONTROL SYSTEMS"
+}, {
+    "code": "MEE600",
+    "title": "TRANSMISSION CONTROL SYSTEMS"
+}, {
+    "code": "MEE602",
+    "title": "FRACTURE MECHANICS AND FATIGUE"
+}, {
+    "code": "MEE603",
+    "title": "RELIABILITY ENGINEERING"
+}, {
+    "code": "MEE604",
+    "title": "DESIGN AND ANALYSIS OF EXPERIMENTS"
+}, {
+    "code": "MEE605",
+    "title": "TOOL ENGINEERING"
+}, {
+    "code": "MEE606",
+    "title": "ADVANCED STRESS ANALYSIS"
+}, {
+    "code": "MEE607",
+    "title": "REAL-TIME SYSTEMS"
+}, {
+    "code": "MEE613",
+    "title": "POWER TRAIN NVH"
+}, {
+    "code": "MEE614",
+    "title": "ENGINE ELECTRONICS AND MANAGEMENT SYSTEMS"
+}, {
+    "code": "MEE616",
+    "title": "ENGINE TESTING AND CERTIFICATION"
+}, {
+    "code": "MEE617",
+    "title": "LASER MATERIAL PROCESSING"
+}, {
+    "code": "MEE618",
+    "title": "ELECTRONIC MANUFACTURING ASSEMBLY AND PACKAGING"
+}, {
+    "code": "MEE619",
+    "title": "COMPUTER GRAPHICS AND GEOMETRIC MODELLING"
+}, {
+    "code": "MEE620",
+    "title": "MECHANICS OF COMPOSITE MATERIALS"
+}, {
+    "code": "MEE621",
+    "title": "AUTOMOTIVE FUELS  AND ENERGY"
+}, {
+    "code": "MEE622",
+    "title": "ENGINE EMISSIONS AND CONTROL"
+}, {
+    "code": "MEE623",
+    "title": "MATERIALS FAILURE MODES AND ANALYSIS"
+}, {
+    "code": "MEE624",
+    "title": "SYSTEMS ENGINEERING"
+}, {
+    "code": "MEE625",
+    "title": "NEW PRODUCT DEVELOPMENT"
+}, {
+    "code": "MEE630",
+    "title": "ENERGY SYSTEMS MODELLING AND ANALYSIS"
+}, {
+    "code": "MEE633",
+    "title": "ADVANCED IN-VEHICLE NETWORKING"
+}, {
+    "code": "MEE634",
+    "title": "HYBRID DRIVES, TRACTION AND CONTROLS"
+}, {
+    "code": "MEE635",
+    "title": "ELECTRO MAGNETIC INTERFERENCE AND COMPATIBILITY"
+}, {
+    "code": "MEE636",
+    "title": "CONTROL SYSTEMS ENGINEERING"
+}, {
+    "code": "MEE637",
+    "title": "INTELLECTUAL PROPERTY RIGHTS"
+}, {
+    "code": "MEE638",
+    "title": "INTELLIGENT TRANSPORT SYSTEMS"
+}, {
+    "code": "MEE639",
+    "title": "SIZING OF SOLAR PHOTOVOLTAIC SYSTEMS"
+}, {
+    "code": "MEP106",
+    "title": "MODERN PHYSICS"
+}, {
+    "code": "MGT1016",
+    "title": "INTELLECTUAL PROPERTY RIGHTS"
+}, {
+    "code": "MGT1017",
+    "title": "BUSINESS REGULATORY FRAMEWORK FOR START-UPS"
+}, {
+    "code": "MGT1018",
+    "title": "CONSUMER BEHAVIOR"
+}, {
+    "code": "MGT1019",
+    "title": "SERVICES MARKETING"
+}, {
+    "code": "MGT1020",
+    "title": "MARKETING ANALYTICS"
+}, {
+    "code": "MGT1021",
+    "title": "DIGITAL AND SOCIAL MEDIA MARKETING"
+}, {
+    "code": "MGT1028",
+    "title": "ACCOUNTING AND FINANCIAL MANAGEMENT"
+}, {
+    "code": "MGT1039",
+    "title": "FINANCIAL MARKETS AND INSTITUTIONS"
+}, {
+    "code": "MGT1048",
+    "title": "POLITICAL ECONOMY OF GLOBALIZATION"
+}, {
+    "code": "MGT201",
+    "title": "PRINCIPLES OF MANAGEMENT"
+}, {
+    "code": "MGT302",
+    "title": "TOTAL QUALITY MANAGEMENT"
+}, {
+    "code": "MGT303",
+    "title": "COST ACCOUNTING"
+}, {
+    "code": "MGT304",
+    "title": "RESEARCH METHODS FOR MANAGEMENT"
+}, {
+    "code": "MGT305",
+    "title": "CROSS-CULTURAL MANAGEMENT"
+}, {
+    "code": "MGT306",
+    "title": "CREATIVITY AND INNOVATION IN MANAGEMENT"
+}, {
+    "code": "MGT307",
+    "title": "PRINCIPLES OF MARKETING"
+}, {
+    "code": "MGT308",
+    "title": "OPERATIONS MANAGEMENT"
+}, {
+    "code": "MGT309",
+    "title": "BASIC LAW FOR ENGINEERS"
+}, {
+    "code": "MGT310",
+    "title": "ORGANIZATIONAL BEHAVIOUR"
+}, {
+    "code": "MGT311",
+    "title": "FUNDAMENTALS OF HUMAN RESOURCE MANAGEMENT"
+}, {
+    "code": "MGT312",
+    "title": "ENTREPRENEURSHIP DEVELOPMENT"
+}, {
+    "code": "MGT313",
+    "title": "PROJECT MANAGEMENT"
+}, {
+    "code": "MGT314",
+    "title": "ACCOUNTING FOR ENGINEERS"
+}, {
+    "code": "MGT315",
+    "title": "MANAGING ASIAN BUSINESS"
+}, {
+    "code": "MGT316",
+    "title": "FUNDAMENTALS OF FINANCIAL MANAGEMENT"
+}, {
+    "code": "MGT317",
+    "title": "MANAGING PERSONAL FINANCE"
+}, {
+    "code": "MGT318",
+    "title": "INTERNATIONAL BUSINESS"
+}, {
+    "code": "MGT319",
+    "title": "FOUNDATIONS OF MANAGEMENT AND ORGANIZATIONAL BEHAVIOUR"
+}, {
+    "code": "MGT402",
+    "title": "STOCK MARKETS AND TRADING TECHNIQUES"
+}, {
+    "code": "MGT501",
+    "title": "CREATIVITY AND INNOVATION IN MANAGEMENT"
+}, {
+    "code": "MMA1001",
+    "title": "MULTIMEDIA SYSTEMS"
+}, {
+    "code": "MMA1002",
+    "title": "MEDIA ETHICS"
+}, {
+    "code": "MMA1003",
+    "title": "DESIGN FUNDAMENTALS"
+}, {
+    "code": "MMA1004",
+    "title": "FUNDAMENTALS OF ART"
+}, {
+    "code": "MMA1005",
+    "title": "PROGRAMMING FUNDAMENTALS"
+}, {
+    "code": "MMA1006",
+    "title": "GRAPHIC DESIGN TECHNIQUES"
+}, {
+    "code": "MMA1007",
+    "title": "ROLE OF MEDIA IN ENVIRONMENTAL STUDIES"
+}, {
+    "code": "MMA101",
+    "title": "INTRODUCTION TO MULTIMEDIA"
+}, {
+    "code": "MMA102",
+    "title": "DESIGN FUNDAMENTALS"
+}, {
+    "code": "MMA103",
+    "title": "INTRODUCTION TO COMPUTERS"
+}, {
+    "code": "MMA106",
+    "title": "IMAGE EDITING TECHNIQUES"
+}, {
+    "code": "MMA107",
+    "title": "GRAPHIC DESIGN TECHNIQUES"
+}, {
+    "code": "MMA108",
+    "title": "WEB DESIGN TECHNIQUES"
+}, {
+    "code": "MMA109",
+    "title": "FUNDAMENTALS OF ART"
+}, {
+    "code": "MMA110",
+    "title": "CONCEPTS OF STORYBOARDING"
+}, {
+    "code": "MMA111",
+    "title": "PRINCIPLES OF ANIMATION"
+}, {
+    "code": "MMA112",
+    "title": "BASIC PHOTOGRAPHY"
+}, {
+    "code": "MMA2001",
+    "title": "ART FOR ANIMATION"
+}, {
+    "code": "MMA2002",
+    "title": "INTERACTIVE ANIMATION TECHNIQUES"
+}, {
+    "code": "MMA2003",
+    "title": "WEB DESIGN TECHNIQUES"
+}, {
+    "code": "MMA2004",
+    "title": "BASIC PHOTOGRAPHY"
+}, {
+    "code": "MMA201",
+    "title": "INTERACTIVE ANIMATION TECHNIQUES"
+}, {
+    "code": "MMA202",
+    "title": "PROGRAMMING FUNDAMENTALS"
+}, {
+    "code": "MMA203",
+    "title": "2D ANIMATION"
+}, {
+    "code": "MMA204",
+    "title": "ART FOR ANIMATION"
+}, {
+    "code": "MMA205",
+    "title": "DIGITAL MEDIA FUNDAMENTALS"
+}, {
+    "code": "MMA206",
+    "title": "MODELING AND TEXTURING"
+}, {
+    "code": "MMA207",
+    "title": "GAME DESIGN"
+}, {
+    "code": "MMA208",
+    "title": "DIGITAL CINEMATOGRAPHY"
+}, {
+    "code": "MMA209",
+    "title": "AUDIO EDITING TECHNIQUES"
+}, {
+    "code": "MMA210",
+    "title": "VIDEO EDITING TECHNIQUES"
+}, {
+    "code": "MMA301",
+    "title": "LIGHTING AND RENDERING"
+}, {
+    "code": "MMA303",
+    "title": "3D ANIMATION"
+}, {
+    "code": "MMA304",
+    "title": "VISUAL EFFECTS"
+}, {
+    "code": "MMA308",
+    "title": "BOARD GAME DESIGN"
+}, {
+    "code": "MMA309",
+    "title": "LEVEL DESIGN"
+}, {
+    "code": "MMA310",
+    "title": "MATTE PAINTING"
+}, {
+    "code": "MMA311",
+    "title": "ADVANCED COMPOSITING AND DYNAMICS"
+}, {
+    "code": "MMA312",
+    "title": "ARCHITECTURAL VISUALIZATION"
+}, {
+    "code": "MMA314",
+    "title": "ADVANCED MODELING"
+}, {
+    "code": "MMA315",
+    "title": "ADVANCED TEXTURING AND LIGHTING"
+}, {
+    "code": "MMA316",
+    "title": "ADVANCED RIGGING"
+}, {
+    "code": "MMA317",
+    "title": "ADVANCED 3D ANIMATION"
+}, {
+    "code": "MMA318",
+    "title": "MODELING FOR GAMES"
+}, {
+    "code": "MMA319",
+    "title": "2D GAME PROGRAMMING"
+}, {
+    "code": "MMA320",
+    "title": "DIGITAL IMAGE PROCESSING"
+}, {
+    "code": "MMA321",
+    "title": "MULTIMEDIA SYSTEMS"
+}, {
+    "code": "PCH501",
+    "title": "ANALYTICAL METHODS IN PHARMACEUTICAL CHEMISTRY"
+}, {
+    "code": "PCH502",
+    "title": "SPECTROSCOPIC METHODS OF ANALYSIS"
+}, {
+    "code": "PCH503",
+    "title": "PHARMACEUTICAL ORGANIC CHEMISTRY"
+}, {
+    "code": "PCH504",
+    "title": "CHROMATOGRAPHY TECHNIQUES"
+}, {
+    "code": "PCH505",
+    "title": "MEDICINAL CHEMISTRY - DRUGS ACTING ON NERVOUS SYSTEM"
+}, {
+    "code": "PCH506",
+    "title": "APPROACHES IN ORGANIC SYNTHESIS"
+}, {
+    "code": "PCH507",
+    "title": "MEDICINAL CHEMISTRY - SELECTED CLASS OF DRUGS"
+}, {
+    "code": "PCH508",
+    "title": "INTELLECTUAL PROPERTY RIGHTS"
+}, {
+    "code": "PCH509",
+    "title": "PHARMACEUTICAL MANAGEMENT"
+}, {
+    "code": "PCH510",
+    "title": "COSMETICOLOGY"
+}, {
+    "code": "PCH511",
+    "title": "DRUG DELIVERY SYSTEMS"
+}, {
+    "code": "PCH601",
+    "title": "MEDICINAL CHEMISTRY - ANTI INFECTIVE AGENTS"
+}, {
+    "code": "PCH602",
+    "title": "PHYTOCHEMISTRY"
+}, {
+    "code": "PCH603",
+    "title": "DRUG DESIGN"
+}, {
+    "code": "PCH604",
+    "title": "BIOPHARMACEUTICS"
+}, {
+    "code": "PCH605",
+    "title": "CANCER CHEMOTHERAPY"
+}, {
+    "code": "PCH606",
+    "title": "BIOORGANIC CHEMISTRY"
+}, {
+    "code": "PCH607",
+    "title": "PROCESS CHEMISTRY IN PHARMACEUTICAL INDUSTRY"
+}, {
+    "code": "PCH609",
+    "title": "FOOD CHEMISTRY"
+}, {
+    "code": "PCH610",
+    "title": "QUALITY CONTROL AND QUALITY ASSURANCE"
+}, {
+    "code": "PCH611",
+    "title": "PHARMACEUTICAL TECHNOLOGY"
+}, {
+    "code": "PHY1001",
+    "title": "ENGINEERING PHYSICS"
+}, {
+    "code": "PHY101",
+    "title": "MODERN PHYSICS"
+}, {
+    "code": "PHY102",
+    "title": "MATERIALS SCIENCE"
+}, {
+    "code": "PHY103",
+    "title": "BIOPHYSICS"
+}, {
+    "code": "PHY104",
+    "title": "SEMICONDUCTOR DEVICE PHYSICS"
+}, {
+    "code": "PHY1999",
+    "title": "INTRODUCTION TO INNOVATIVE PROJECTS"
+}, {
+    "code": "PHY201",
+    "title": "QUANTUM MECHANICS"
+}, {
+    "code": "PHY501",
+    "title": "CLASSICAL MECHANICS"
+}, {
+    "code": "PHY502",
+    "title": "METHODS OF SPECTROSCOPY"
+}, {
+    "code": "PHY503",
+    "title": "QUANTUM MECHANICS"
+}, {
+    "code": "PHY504",
+    "title": "ANALOG AND DIGITAL ELECTRONICS"
+}, {
+    "code": "RES701",
+    "title": "RESEARCH METHODOLOGY"
+}, {
+    "code": "RES705",
+    "title": "RESEARCH METHODOLOGY FOR ENGLISH"
+}, {
+    "code": "RES710",
+    "title": "RESEARCH METHODOLOGY FOR COMMERCE AND SOCIAL SCIENCES"
+}, {
+    "code": "SDM501",
+    "title": "COMMUNICATION SKILLS"
+}, {
+    "code": "SDM502",
+    "title": "PROGRAMMING METHODOLOGIES"
+}, {
+    "code": "SDM503",
+    "title": "SOFTWARE ENGINEERING"
+}, {
+    "code": "SDM504",
+    "title": "ADVANCED DATABASE MANAGEMENT SYSTEMS"
+}, {
+    "code": "SDM505",
+    "title": "SOFTWARE ARCHITECTURE AND DESIGN"
+}, {
+    "code": "SDM506",
+    "title": "WEB TECHNOLOGIES"
+}, {
+    "code": "SDM507",
+    "title": "HUMAN RESOURCE MANAGEMENT"
+}, {
+    "code": "SDM508",
+    "title": "SOFTWARE PROJECT MANAGEMENT"
+}, {
+    "code": "SDM509",
+    "title": "SOFTWARE TESTING AND QUALITY MANAGEMENT"
+}, {
+    "code": "SDM510",
+    "title": "SOFTWARE RELIABILITY AND METRICS"
+}, {
+    "code": "SDM511",
+    "title": "FRAMEWORK BASED APPLICATION PROGRAMMING"
+}, {
+    "code": "SDM512",
+    "title": "DYNAMIC WEB PROGRAMMING"
+}, {
+    "code": "SDM513",
+    "title": "SERVER PROGRAMMING"
+}, {
+    "code": "SDM514",
+    "title": "INTERNET PROGRAMMING - DESIGN PATTERNS"
+}, {
+    "code": "SDM515",
+    "title": "PROGRAMMING IN C#"
+}, {
+    "code": "SDM516",
+    "title": "APPLICATION SERVICES"
+}, {
+    "code": "SDM517",
+    "title": "WEB SERVICES"
+}, {
+    "code": "SDM518",
+    "title": "WINDOWS APPLICATION DEVELOPMENT"
+}, {
+    "code": "SDM519",
+    "title": "DISTRIBUTED APPLICATION DEVELOPMENT"
+}, {
+    "code": "SDM520",
+    "title": "APPLICATION FRAMEWORK"
+}, {
+    "code": "SDM521",
+    "title": "SECURE INTERNET PROGRAMMING"
+}, {
+    "code": "SDM522",
+    "title": "ADVANCED SECURE INTERNET PROGRAMMING"
+}, {
+    "code": "SDM524",
+    "title": "ENTERPRISE APPLICATION DEVELOPMENT"
+}, {
+    "code": "SDM525",
+    "title": "PROGRAM DEVELOPMENT WITH THE FRAMEWORK -1"
+}, {
+    "code": "SDM526",
+    "title": "PROGRAM DEVELOPMENT WITH THE FRAMEWORK -2"
+}, {
+    "code": "SDM527",
+    "title": "ENTERPRISE SYSTEM CONCEPTS"
+}, {
+    "code": "SDM528",
+    "title": "TIME SHARING OPTION / INTERACTIVE SYSTEM PRODUCTIVITY FACILITY"
+}, {
+    "code": "SDM529",
+    "title": "JOB CONTROL LANGUAGE AND IBM UTILITIES"
+}, {
+    "code": "SDM530",
+    "title": "VIRTUAL STORAGE ACCESS METHOD"
+}, {
+    "code": "SDM531",
+    "title": "PROGRAMMING IN COBOL"
+}, {
+    "code": "SDM532",
+    "title": "ENTERPRISE DATABASE MANAGEMENT"
+}, {
+    "code": "SDM533",
+    "title": "CUSTOMER INFORMATION CONTROL SYSTEM"
+}, {
+    "code": "SDM534",
+    "title": "LARGE SERVER EXECUTOR PROGRAMMING"
+}, {
+    "code": "SDM535",
+    "title": "DATA MODELING AND WAREHOUSING FUNDAMENTALS"
+}, {
+    "code": "SDM536",
+    "title": "INFORMATICA"
+}, {
+    "code": "SDM537",
+    "title": "BUSINESS INTELLIGENCE AND ANALYTICS"
+}, {
+    "code": "SDM538",
+    "title": "STATISTICAL ANALYSIS SYSTEM"
+}, {
+    "code": "SDM539",
+    "title": "METADATA AND DATA QUALITY"
+}, {
+    "code": "SDM540",
+    "title": "TERADATA AND ENTERPRISE DATA MANAGEMENT"
+}, {
+    "code": "SDM541",
+    "title": "DATA STAGE"
+}, {
+    "code": "SDM542",
+    "title": "SQL SERVER INTEGRATION SERVICES"
+}, {
+    "code": "SDM543",
+    "title": "BUSNINESS INTELLIGENCE REPORTING TOOLS"
+}, {
+    "code": "SDM547",
+    "title": "FRENCH"
+}, {
+    "code": "STS1001",
+    "title": "SOFT SKILLS"
+}, {
+    "code": "STS101",
+    "title": "SOFT SKILLS"
+}, {
+    "code": "STS1011",
+    "title": "SOFT SKILLS"
+}, {
+    "code": "STS1021",
+    "title": "SOFT SKILLS"
+}, {
+    "code": "STS121",
+    "title": "SOFT SKILLS"
+}, {
+    "code": "STS2001",
+    "title": "SOFT SKILLS"
+}, {
+    "code": "STS2002",
+    "title": "SOFT SKILLS"
+}, {
+    "code": "STS201",
+    "title": "SOFT SKILLS"
+}, {
+    "code": "STS2011",
+    "title": "SOFT SKILLS"
+}, {
+    "code": "STS2012",
+    "title": "SOFT SKILLS"
+}, {
+    "code": "STS202",
+    "title": "SOFT SKILLS"
+}, {
+    "code": "STS2021",
+    "title": "SOFT SKILLS"
+}, {
+    "code": "STS2022",
+    "title": "SOFT SKILLS"
+}, {
+    "code": "STS2112",
+    "title": "PREPARATION FOR INDIAN SERVICES"
+}, {
+    "code": "STS221",
+    "title": "SOFT SKILLS"
+}, {
+    "code": "STS222",
+    "title": "SOFT SKILLS"
+}, {
+    "code": "STS3001",
+    "title": "SOFT SKILLS"
+}, {
+    "code": "STS3002",
+    "title": "SOFT SKILLS"
+}, {
+    "code": "STS301",
+    "title": "SOFT SKILLS"
+}, {
+    "code": "STS302",
+    "title": "SOFT SKILLS"
+}, {
+    "code": "STS3021",
+    "title": "SOFT SKILLS"
+}, {
+    "code": "STS3022",
+    "title": "SOFT SKILLS"
+}, {
+    "code": "STS3102",
+    "title": "PREPARATION FOR INDIAN SERVICES"
+}, {
+    "code": "STS321",
+    "title": "SOFT SKILLS"
+}, {
+    "code": "STS322",
+    "title": "SOFT SKILLS"
+}, {
+    "code": "STS4001",
+    "title": "SOFT SKILLS"
+}, {
+    "code": "STS4002",
+    "title": "SOFT SKILLS"
+}, {
+    "code": "STS401",
+    "title": "SOFT SKILLS"
+}, {
+    "code": "STS4011",
+    "title": "SOFT SKILLS"
+}, {
+    "code": "STS4012",
+    "title": "SOFT SKILLS"
+}, {
+    "code": "STS402",
+    "title": "SOFT SKILLS"
+}, {
+    "code": "STS4021",
+    "title": "SOFT SKILLS"
+}, {
+    "code": "STS4022",
+    "title": "SOFT SKILLS"
+}, {
+    "code": "STS411",
+    "title": "SOFT SKILLS"
+}, {
+    "code": "STS412",
+    "title": "SOFT SKILLS"
+}, {
+    "code": "STS4122",
+    "title": "PREPARATION FOR INDIAN SERVICES"
+}, {
+    "code": "STS421",
+    "title": "SOFT SKILLS"
+}, {
+    "code": "STS422",
+    "title": "SOFT SKILLS"
+}, {
+    "code": "STS5001",
+    "title": "SOFT SKILLS"
+}, {
+    "code": "STS5002",
+    "title": "SOFT SKILLS"
+}, {
+    "code": "STS501",
+    "title": "SOFT SKILLS"
+}, {
+    "code": "STS502",
+    "title": "SOFT SKILLS"
+}, {
+    "code": "SWE1001",
+    "title": "SOFTWARE ENGINEERING"
+}, {
+    "code": "SWE1003",
+    "title": "DIGITAL LOGIC AND MICROPROCESSOR"
+}, {
+    "code": "SWE1004",
+    "title": "DATABASE MANAGEMENT SYSTEMS"
+}, {
+    "code": "SWE1005",
+    "title": "COMPUTER ARCHITECTURE AND ORGANIZATION"
+}, {
+    "code": "SWE1007",
+    "title": "PROGRAMMING IN JAVA"
+}, {
+    "code": "SWE101",
+    "title": "OBJECT ORIENTED PROGRAMMING USING C++"
+}, {
+    "code": "SWE1012",
+    "title": "E-GOVERNANCE"
+}, {
+    "code": "SWE1014",
+    "title": "ENTERPRISE RESOURCE PLANNING"
+}, {
+    "code": "SWE1018",
+    "title": "HUMAN COMPUTER INTERACTION"
+}, {
+    "code": "SWE102",
+    "title": "OBJECT ORIENTED PROGRAMMING LAB"
+}, {
+    "code": "SWE2001",
+    "title": "DATA STRUCTURES AND ALGORITHMS"
+}, {
+    "code": "SWE2003",
+    "title": "REQUIREMENTS ENGINEERING AND MANAGEMENT"
+}, {
+    "code": "SWE2004",
+    "title": "SOFTWARE ARCHITECTURE AND DESIGN"
+}, {
+    "code": "SWE203",
+    "title": "COMPUTER ARCHITECTURE AND ORGANIZATION"
+}, {
+    "code": "SWE204",
+    "title": "PROGRAMMING IN JAVA"
+}, {
+    "code": "SWE205",
+    "title": "PROGRAMMING IN JAVA LAB"
+}, {
+    "code": "SWE206",
+    "title": "OBJECT ORIENTED ANALYSIS AND DESIGN"
+}, {
+    "code": "SWE207",
+    "title": "OBJECT ORIENTED ANALYSIS AND DESIGN LAB"
+}, {
+    "code": "SWE301",
+    "title": "THEORY OF COMPUTATION"
+}, {
+    "code": "SWE303",
+    "title": "DATABASE MANAGEMENT SYSTEMS"
+}, {
+    "code": "SWE304",
+    "title": "DATABASE MANAGEMENT SYSTEMS LAB"
+}, {
+    "code": "SWE305",
+    "title": "OPERATING SYSTEMS"
+}, {
+    "code": "SWE306",
+    "title": "OPERATING SYSTEMS LAB"
+}, {
+    "code": "SWE307",
+    "title": "PRINCIPLES OF SOFTWARE ENGINEERING"
+}, {
+    "code": "SWE308",
+    "title": "COMPUTER NETWORKS"
+}, {
+    "code": "SWE309",
+    "title": "COMPUTER NETWORKS LAB"
+}, {
+    "code": "SWE310",
+    "title": "REQUIREMENTS ENGINEERING AND MANAGEMENT"
+}, {
+    "code": "SWE311",
+    "title": "INTERNET AND WEB PROGRAMMING"
+}, {
+    "code": "SWE312",
+    "title": "INTERNET AND WEB PROGRAMMING LAB"
+}, {
+    "code": "SWE314",
+    "title": "SOFT COMPUTING"
+}, {
+    "code": "SWE401",
+    "title": "SOFTWARE ARCHITECTURE AND DESIGN"
+}, {
+    "code": "SWE402",
+    "title": "CASE TOOLS LAB-1"
+}, {
+    "code": "SWE403",
+    "title": "SYSTEM PROGRAMMING"
+}, {
+    "code": "SWE404",
+    "title": "SYSTEM PROGRAMMING LAB"
+}, {
+    "code": "SWE405",
+    "title": "SOFTWARE CONSTRUCTION AND MAINTENANCE"
+}, {
+    "code": "SWE406",
+    "title": "SOFTWARE PROJECT MANAGEMENT"
+}, {
+    "code": "SWE407",
+    "title": "OPEN SOURCE PROGRAMMING"
+}, {
+    "code": "SWE408",
+    "title": "OPEN SOURCE PROGRAMMING LAB"
+}, {
+    "code": "SWE409",
+    "title": "WEB SERVICES AND SERVICE ORIENTED ARCHITECTURE"
+}, {
+    "code": "SWE410",
+    "title": "WEB SERVICES LAB"
+}, {
+    "code": "SWE411",
+    "title": "SOFTWARE TESTING"
+}, {
+    "code": "SWE412",
+    "title": "SOFTWARE TESTING LAB"
+}, {
+    "code": "SWE413",
+    "title": "DATA WAREHOUSING AND DATA MINING"
+}, {
+    "code": "SWE414",
+    "title": "E-COMMERCE"
+}, {
+    "code": "SWE415",
+    "title": "BIOMETRIC SYSTEMS"
+}, {
+    "code": "SWE416",
+    "title": "ENTERPRISE RESOURCE PLANNING"
+}, {
+    "code": "SWE417",
+    "title": "GEOGRAPHIC INFORMATION SYSTEMS"
+}, {
+    "code": "SWE418",
+    "title": "BASIC BIO-INFORMATICS"
+}, {
+    "code": "SWE419",
+    "title": "MULTIMEDIA COMPUTING"
+}, {
+    "code": "SWE420",
+    "title": "NATURAL LANGUAGE PROCESSING"
+}, {
+    "code": "SWE421",
+    "title": "EMBEDDED SYSTEMS"
+}, {
+    "code": "SWE422",
+    "title": "SEMANTIC WEB TECHNOLOGIES"
+}, {
+    "code": "SWE423",
+    "title": "MOBILE DEVICE PROGRAMMING"
+}, {
+    "code": "SWE424",
+    "title": "MULTI-CORE ARCHITECTURES AND PROGRAMMING"
+}, {
+    "code": "SWE425",
+    "title": "MANAGEMENT INFORMATION SYSTEMS"
+}, {
+    "code": "SWE426",
+    "title": "SERVICE SCIENCE"
+}, {
+    "code": "SWE427",
+    "title": "FORMAL METHODS IN SOFTWARE ENGINEERING"
+}, {
+    "code": "SWE428",
+    "title": "E-GOVERNANCE"
+}, {
+    "code": "SWE429",
+    "title": "SOFTWARE STANDARDS, BENCHMARKS AND GUIDELINES"
+}, {
+    "code": "SWE430",
+    "title": "DATA ANALYTICS"
+}, {
+    "code": "SWE431",
+    "title": ".NET PROGRAMMING"
+}, {
+    "code": "SWE432",
+    "title": "AGILE SOFTWARE DEVELOPMENT"
+}, {
+    "code": "SWE433",
+    "title": "MAINFRAME COMPUTING"
+}, {
+    "code": "SWE501",
+    "title": "DESIGN PATTERNS"
+}, {
+    "code": "SWE502",
+    "title": "PRINCIPLES OF USER INTERFACE DESIGN"
+}, {
+    "code": "SWE503",
+    "title": "SOFTWARE CONFIGURATION MANAGEMENT"
+}, {
+    "code": "SWE504",
+    "title": "SOFTWARE QUALITY AND RELIABILITY"
+}, {
+    "code": "SWE505",
+    "title": "SOFTWARE METRICS"
+}, {
+    "code": "SWE506",
+    "title": "SOFTWARE METRICS LAB"
+}, {
+    "code": "SWE509",
+    "title": "DISTRIBUTED COMPUTING"
+}, {
+    "code": "SWE510",
+    "title": "ARTIFICIAL INTELLIGENCE AND INTELLIGENT SYSTEMS"
+}, {
+    "code": "SWE511",
+    "title": "INFORMATION AND SYSTEM SECURITY"
+}, {
+    "code": "SWE512",
+    "title": "SOFTWARE ENGINEERING PROCESS, TOOLS AND METHODS"
+}, {
+    "code": "SWE513",
+    "title": "CASE TOOLS LAB-2"
+}, {
+    "code": "SWE514",
+    "title": "AUTOMOTIVE SOFTWARE ENGINEERING"
+}, {
+    "code": "SWE515",
+    "title": "ADVANCED DATABASE TECHNOLOGY"
+}, {
+    "code": "SWE516",
+    "title": "DOMAIN ENGINEERING"
+}, {
+    "code": "SWE517",
+    "title": "ADVANCED JAVA PROGRAMMING"
+}, {
+    "code": "SWE518",
+    "title": "SOFTWARE INSPECTION"
+}, {
+    "code": "SWE519",
+    "title": "SENSOR NETWORKS"
+}, {
+    "code": "SWE520",
+    "title": "REAL TIME SYSTEMS"
+}, {
+    "code": "SWE521",
+    "title": "INDUSTRIAL AUTOMATION SYSTEMS"
+}, {
+    "code": "SWE522",
+    "title": "STORAGE TECHNOLOGIES"
+}, {
+    "code": "SWE523",
+    "title": "HIGH PERFORMANCE COMPUTING"
+}, {
+    "code": "SWE524",
+    "title": "LINUX SYSTEM PROGRAMMING"
+}, {
+    "code": "SWE525",
+    "title": "MOBILE AND PERVASIVE COMPUTING"
+}, {
+    "code": "SWE526",
+    "title": "DIGITAL IMAGE PROCESSING"
+}, {
+    "code": "SWE527",
+    "title": "KNOWLEDGE MANAGEMENT SYSTEMS"
+}, {
+    "code": "SWE528",
+    "title": "SOFTWARE REUSE"
+}, {
+    "code": "SWE529",
+    "title": "CLOUD COMPUTING"
+}, {
+    "code": "SWE530",
+    "title": "PYTHON PROGRAMMING"
+}, {
+    "code": "SWE531",
+    "title": "ADVANCED SOFTWARE TESTING"
+}, {
+    "code": "SWT511",
+    "title": "DATABASE MANAGEMENT SYSTEMS"
+}, {
+    "code": "SWT517",
+    "title": "OPERATING SYSTEMS"
+}, {
+    "code": "SWT518",
+    "title": "OPERATING SYSTEMS LAB"
+}, {
+    "code": "SWT535",
+    "title": "PRINCIPLES OF SOFTWARE ARCHITECTURE AND DESIGN"
+}, {
+    "code": "SWT536",
+    "title": "CASE TOOLS LAB"
+}, {
+    "code": "SWT537",
+    "title": "DATABASE MANAGEMENT SYSTEMS LAB"
+}, {
+    "code": "SWT539",
+    "title": "SOFTWARE TESTING AND VERIFICATION LAB"
+}, {
+    "code": "SWT540",
+    "title": "SOFTWARE METRICS AND RELIABILITY"
+}, {
+    "code": "SWT542",
+    "title": "SOFTWARE APPLICATION FOR ERP AND SUPPLY CHAIN MANAGEMENT"
+}, {
+    "code": "SWT545",
+    "title": "ENTERPRISE COMPUTING"
+}, {
+    "code": "SWT546",
+    "title": "WEB APPLICATION ARCHITECTURES AND TECHNOLOGIES"
+}, {
+    "code": "SWT547",
+    "title": "OPEN SOURCE PROGRAMMING"
+}, {
+    "code": "SWT549",
+    "title": "DATA MINING AND BUSINESS INTELLIGENCE"
+}, {
+    "code": "SWT550",
+    "title": "PARALLEL ALGORITHMS AND CONCURRENT PROGRAMMING"
+}, {
+    "code": "SWT551",
+    "title": "OBJECT ORIENTED ANALYSIS AND DESIGN PATTERNS"
+}]

@@ -28,14 +28,14 @@ Contribute here
   <meta property="og:description" content="Visualizeand make the most optimum timetable for yourself." />
   <meta property="og:site_name" content="FFCSonTheGo!" />
   <meta property="fb:app_id" content="1698400863751487" />
-  <!-- jQuery CDN -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-  <!--Bootstrap CDN -->
+  <!--bootstrap cdn -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-horizon/0.1.1/bootstrap-horizon.min.css" />
-  <!-- html2canvas -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.min.js"></script>
-  <!-- CSS -->
+  <!-- easy-autocomplete -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/easy-autocomplete/1.3.5/easy-autocomplete.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/easy-autocomplete/1.3.5/easy-autocomplete.themes.min.css"
+  />
+  <!-- css -->
   <link rel="stylesheet" href="css/style.css" />
 </head>
 
@@ -332,7 +332,7 @@ Contribute here
       </div>
     </div>
   </div>
-  <!-- Input slot string to highlight the slots -->
+  <!-- Slot selection area -->
   <div class="container">
     <div class="row" id="slot-sel-area">
       <div class="panel panel-primary">
@@ -340,37 +340,37 @@ Contribute here
           <h4>Add Courses To Timetable</h4>
         </div>
         <div class="panel-body">
-          <div class="form-horizontal">
-            <div class="form-group form-group-md col-xs-12">
-              <label for="inputSlotString" class="col-sm-3 control-label">Slot:</label>
-              <div class="col-sm-9">
-                <input type="text" placeholder="eg: L1+L2+L3" class="form-control" id="inputSlotString">
-              </div>
-              <!-- input-group -->
-            </div>
-            <!-- form-group -->
-            <div class="form-group form-group-md col-xs-12">
-              <label for="inputCourseTitle" class="col-sm-3 control-label">Course code:</label>
-              <div class="col-sm-9">
-                <input type="text" class="form-control" placeholder="Basic French" id="inputCourseTitle">
+          <form>
+            <div class="form-group col-xs-12">
+              <label for="inputSlotString" class="control-label">Slot:</label>
+              <div>
+                <input type="text" placeholder="eg: L1+L2+L3" class="form-control" id="inputSlotString" required>
               </div>
             </div>
-            <div class="form-group form-group-md col-xs-12">
-              <label for="inputFaculty" class="col-sm-3 control-label">Faculty name:</label>
-              <div class="col-sm-9">
-                <input type="text" class="form-control" placeholder="John Doe" id="inputFaculty">
+            <div class="form-group col-xs-12 col-md-6">
+              <label for="inputCourseCode" class="control-label">Course code:</label>
+              <div>
+                <input type="text" class="form-control" id="inputCourseCode">
               </div>
             </div>
-            <div class="form-group form-group-md col-xs-12">
-              <label for="inputCourseCredits" class="col-sm-3 control-label">Credits:</label>
-              <div class="col-sm-9">
-                <input type="number" class="form-control" placeholder="4" id="inputCourseCredits">
+            <div class="form-group col-xs-12 col-md-6">
+              <label for="inputCourseTitle" class="control-label">Course title:</label>
+              <div>
+                <input type="text" class="form-control" id="inputCourseTitle">
               </div>
             </div>
-            <div class="col-xs-12">
-              <button type="button" id="markBtn" class="btn btn-success col-sm-offset-4">Add Course</button>
+            <div class="form-group col-xs-12">
+              <label for="inputCourseCredits" class="control-label">Credits:</label>
+              <div>
+                <input type="number" class="form-control" placeholder="eg: 4" id="inputCourseCredits">
+              </div>
             </div>
-          </div>
+            <div class="form-group">
+              <div class="col-xs-offset-3">
+                <button type="button" id="markBtn" class="btn btn-success">Add Course</button>
+              </div>
+            </div>
+          </form>
         </div>
         <!-- panel-body -->
         <ul class="list-group">
@@ -392,7 +392,7 @@ Contribute here
     </div>-->
     <div class="row" style="margin-bottom:20px;">
       <!-- Workspace -->
-      <div class="col-md-6 hidden-sm hidden-xs" style="padding-top:40px;"><textarea class="form-control" id="workspace" style="font-size:22px;" rows="15" placeholder="Workspace" required></textarea></div>
+      <div class="col-md-6 hidden-sm hidden-xs" style="padding-top:40px;"><textarea class="form-control" id="workspace" style="font-size:22px;" rows="15" placeholder="Workspace"></textarea></div>
       <!--Facebook comments-->
       <div class="col-md-6 col-xs-12">
         <div id="fb-comment-id" class="fb-comments" data-href="http://ffcsonthego.azurewebsites.net" data-width="100%" data-numposts="5"
@@ -408,8 +408,17 @@ Contribute here
       </div>
     </div>
   </footer>
+  <!-- jquery cdn -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <!-- bootstrap cdn -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <!-- html2canvas -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.min.js"></script>
+  <!-- Easy Autocomplete -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/easy-autocomplete/1.3.5/jquery.easy-autocomplete.min.js"></script>
   <!-- js -->
   <script src="js/colorChange.js"></script>
+  <script src="js/autocomplete_course.js"></script>
   <script src="js/script.js"></script>
 </body>
 

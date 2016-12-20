@@ -1,3 +1,7 @@
+$('.btn').mouseup(function () {
+    this.blur()
+});
+
 $('#timetable_msg').hide(); // hide msg
 
 // disable hover for touch screen devices

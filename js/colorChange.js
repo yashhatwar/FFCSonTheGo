@@ -4,21 +4,12 @@ $(function () {
 	makeLabArray();
 });
 
-function resetTimeTable() {
-	if ($(".TimetableContent").hasClass("highlight")) {
-		$(".TimetableContent").removeClass("highlight");
-	}
-	if ($(".tile").hasClass("highlight")) {
-		$(".tile").removeClass("highlight");
-	}
-}
-
 /**
  * Code to generate a custom course list through #slot-sel-area, manage the
  * list and to mark the added slots to the timetable.
  */
 
-(function () {
+var CRM = (function () {
 	function CourseRecord(slots, title, fac, credits, $li) {
 		this.slots = slots;
 		this.title = title;
@@ -228,7 +219,7 @@ function resetTimeTable() {
 		var slot, slotArray, i, normSlotString, li;
 		slot = slotInput.val().trim();
 		if (!slot) {
-			$("#slot-sel-area .form-group").eq(1).addClass("has-error");
+			$("#slot-sel-area .form-group").eq(0).addClass("has-error");
 			return;
 		}
 
@@ -242,15 +233,17 @@ function resetTimeTable() {
 		normSlotString = slotArray.join(" + ");
 		li = $('<li class="list-group-item">' +
 			'<div class="row">' +
-			'<span class="slots col-sm-3">' + normSlotString + '</span>' +
-			'<span class="course col-sm-5">' + course + '</span>' +
-			'<span class="faculty col-sm-4">' + faculty + '</span>' +
-			'<span class= col-sm-1 text-right">' +
+			'<div class="slots col-xs-2">' + normSlotString + '</div>' +
+			'<div class="course col-xs-4">' + course + '</div>' +
+			'<div class="faculty col-xs-4">' + faculty + '</div>' +
+			'<div class="col-xs-2"><div class="row">' +
+			'<div class="col-xs-12 col-sm-6 text-right">' +
 			'<span class="badge">' + (credits ? credits : 0) + '</span>' +
-			'</span>' +
-			'<span class= col-sm-1 text-right">' +
+			'</div>' +
+			'<div class="col-xs-12 col-sm-6 text-right">' +
 			'<span class="close">&times;</span>' +
-			'</span>' +
+			'</div>' +
+			'</div></div>' +
 			'</div>' +
 			'</li>');
 
@@ -283,6 +276,17 @@ function resetTimeTable() {
 		}
 	});
 
+	$("#resetButton").on("click", function resetTimeTable() {
+		$(".TimetableContent").removeClass("highlight slot-clash");
+		$(".tile").removeClass("highlight");
+		$("#slot-sel-area").find(".list-group-item").not(totalContainer).remove();
+
+		CRM.courses = [];
+
+		totalSpan.text(0);
+	});
+
+	return CRM;
 })();
 
 /**
@@ -312,17 +316,29 @@ function markSlot(slot) {
  */
 function makeLabArray() {
 	var left = $(),
-		right = $();
+		right = $(),
+		extended = $();
 	var slots = $(".TimetableContent");
-	slots.splice(26, 0, null, null, null);
+	slots.splice(30, 1, null, null, null, null);
 	var length = slots.length;
 	var i;
-	for (i = 0; i < 60; ++i) {
-		if (i % 12 < 6) left.push(slots.eq(i));
-		else right.push(slots.eq(i));
+	for (i = 0; i < 70; ++i) {
+		if (i % 14 < 6) left.push(slots.eq(i));
+		else {
+			if(i % 14 <= 11)
+				right.push(slots.eq(i))
+			else
+				extended.push(slots.eq(i));
+		}
 	}
 
 	labArray = left.add(right);
+	labArray = labArray.add(extended);
+
+	for (i = 70; i < 98; ++i) {
+		if (i % 14 <= 11)
+			labArray.push(slots.eq(i));
+	}
 }
 
 $(".alert-dismissible .close").click(function () {

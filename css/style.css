@@ -335,7 +335,7 @@ footer a:hover {
   background-color: #a94442;
 }
 
-div.slot-clash {
+.slot-clash {
   background: red !important;
   color: #fff !important;
 }

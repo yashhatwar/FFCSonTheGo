@@ -1,18 +1,13 @@
-var labArray = null;
-
-$(function () {
-	makeLabArray();
-});
-
 /**
  * Code to generate a custom course list through #slot-sel-area, manage the
  * list and to mark the added slots to the timetable.
  */
 
 var CRM = (function () {
-	function CourseRecord(slots, title, fac, credits, $li) {
+	function CourseRecord(slots, title, code, fac, credits, $li) {
 		this.slots = slots;
 		this.title = title;
+		this.code = code;
 		this.fac = fac;
 		this.credits = credits;
 		this.$li = $li;
@@ -22,12 +17,8 @@ var CRM = (function () {
 	function isSlotValid(slot) {
 		var labSlotPattern = /^L\d{1,2}$/;
 		var slotNum;
-		if (labSlotPattern.test(slot)) {
-			if (!labArray) makeLabArray();
-			slotNum = Number(slot.substring(1));
-			if (slotNum >= 15 && slotNum <= 18)
-				return false;
-		} else if (!$("." + slot).length) {
+		
+		if (!$("." + slot).length) {
 			return false;
 		}
 
@@ -36,9 +27,9 @@ var CRM = (function () {
 
 	var CRM = {
 		courses: [],
-		add: function (slots, title, fac, credits, $li) {
+		add: function (slots, title, code, fac, credits, $li) {
 			slots = this.expandSlots(slots);
-			var record = new CourseRecord(slots, title, fac, credits, $li);
+			var record = new CourseRecord(slots, title, code, fac, credits, $li);
 			var clashes = this.getClashingSlots(record);
 			if (clashes.length()) {
 				record.isClashing = true;
@@ -46,7 +37,6 @@ var CRM = (function () {
 
 			this.mark(record, clashes);
 			this.courses.push(record);
-
 		},
 
 		getClashingSlots: function (newRecord) {
@@ -104,12 +94,13 @@ var CRM = (function () {
 		},
 		mark: function (record, clashes) {
 			var i, loopSlot;
-			if (!record.isClashing) {
-				record.slots.forEach(function (slot) {
-					this.highlight(slot);
-				}, this);
-			} else {
 
+			record.slots.forEach(function (slot) {
+				this.highlight(slot);
+				this.appendCourseCode(slot, record.code);
+			}, this);
+
+			if (record.isClashing) {
 				for (i = 0; i < clashes.length(); ++i) {
 					clashes.get(i).records.forEach(function (record) {
 						record.$li.addClass("list-group-item-danger");
@@ -118,28 +109,23 @@ var CRM = (function () {
 					this.highlight(loopSlot);
 					this.clashSlot(loopSlot);
 				}
-
-				record.slots.forEach(function (slot) {
-					this.highlight(slot);
-				}, this);
-
 			}
 		},
 
 		highlight: function (slot) {
-			if (slot.match(/^L/)) {
-				labArray[Number(slot.substring(1)) - 1].addClass("highlight");
-			} else {
-				$("." + slot).addClass("highlight");
+			$("." + slot).addClass("highlight");
+		},
+
+		appendCourseCode: function (slot, code) {
+			var $slot = $("." + slot);
+
+			if(!~$slot.text().indexOf(code)) {
+				$slot.append('<span class="tt-course-code">' + code + '</span>');
 			}
 		},
 
 		clashSlot: function (slot) {
-			if (slot.match(/^L/)) {
-				labArray[Number(slot.substring(1)) - 1].addClass("slot-clash");
-			} else {
-				$("." + slot).addClass("slot-clash");
-			}
+			$("." + slot).addClass("slot-clash");
 		}
 	};
 
@@ -176,6 +162,7 @@ var CRM = (function () {
 				if (self.courses[i].$li.get(0) === liDom) {
 					self.courses.splice(i, 1);
 					$(".TimetableContent").removeClass("highlight slot-clash");
+					$(".TimetableContent").find(".tt-course-code").remove();
 					$("#slot-sel-area .list-group li").removeClass("list-group-item-danger");
 					break;
 				}
@@ -211,6 +198,7 @@ var CRM = (function () {
 	var facultyInput = $("#inputFaculty");
 	var courseInput = $("#inputCourseTitle");
 	var creditsInput = $("#inputCourseCredits");
+	var courseCodeInput = $("#inputCourseCode");
 	var slotInput = $("#inputSlotString");
 	var totalContainer = $("#slot-sel-area .list-group li.total");
 	var totalSpan = totalContainer.find(".badge");
@@ -225,6 +213,7 @@ var CRM = (function () {
 
 		faculty = facultyInput.val().trim();
 		course = courseInput.val().trim();
+		courseCode = courseCodeInput.val().trim();
 		credits = Number(creditsInput.val());
 
 		slotArray = slot.split(/\s*\+\s*/);
@@ -260,12 +249,13 @@ var CRM = (function () {
 			}
 		}
 
+		courseCodeInput.val("");
 		facultyInput.val("");
 		courseInput.val("");
 		slotInput.val("");
 		creditsInput.val("");
 
-		CRM.add(slotArray, course, faculty, credits, li);
+		CRM.add(slotArray, course, courseCode, faculty, credits, li);
 	}
 
 	$("#slot-sel-area .panel-body #markBtn").click(submitSlotData);
@@ -278,6 +268,7 @@ var CRM = (function () {
 
 	$("#resetButton").on("click", function resetTimeTable() {
 		$(".TimetableContent").removeClass("highlight slot-clash");
+		$(".TimetableContent").find(".tt-course-code").remove();
 		$(".tile").removeClass("highlight");
 		$("#slot-sel-area").find(".list-group-item").not(totalContainer).remove();
 
@@ -297,47 +288,8 @@ var CRM = (function () {
 function markSlot(slot) {
 	var labSlotPattern = /^L\d{1,2}$/;
 	var slotNum;
-	if (labSlotPattern.test(slot)) {
-		if (!labArray) makeLabArray();
-		slotNum = Number(slot.substring(1));
-		if (!(slotNum >= 15 && slotNum <= 18))
-			labArray.eq(slotNum - 1)
-			.toggleClass("highlight");
-	} else if ($("." + slot)) {
+	if ($("." + slot)) {
 		$("." + slot).toggleClass("highlight");
-	}
-}
-
-/**
- * Prepares a $ collection of all the slots in the table in ascending order
- * and pads 3 null objects to compensate for missing slots. The result is
- * stored in labArray.
- * @return {undefined}
- */
-function makeLabArray() {
-	var left = $(),
-		right = $(),
-		extended = $();
-	var slots = $(".TimetableContent");
-	slots.splice(30, 1, null, null, null, null);
-	var length = slots.length;
-	var i;
-	for (i = 0; i < 70; ++i) {
-		if (i % 14 < 6) left.push(slots.eq(i));
-		else {
-			if(i % 14 <= 11)
-				right.push(slots.eq(i))
-			else
-				extended.push(slots.eq(i));
-		}
-	}
-
-	labArray = left.add(right);
-	labArray = labArray.add(extended);
-
-	for (i = 70; i < 98; ++i) {
-		if (i % 14 <= 11)
-			labArray.push(slots.eq(i));
 	}
 }
 

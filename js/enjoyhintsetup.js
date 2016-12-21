@@ -9,9 +9,9 @@ var enjoyhint_script_steps = [{
 }, {
     "next .quick-selection": "Use quick selection to select all at once"
 }, {
-    "next #slot-sel-area": "<span style=\"color:white; background-color:grey\">Search and add courses</span>"
+    "next #slot-sel-area": "<span style=\"color:white; background-color:grey\">Add courses to timetable</span>"
 }, {
-    "next #starGitHub": "Star the repo on GitHub"
+    "next #takeScreenShot": "Take timetable screenshot and share with friends"
 }, {
     "click #fb-like-share": 'Like and Share',
     showSkip: false

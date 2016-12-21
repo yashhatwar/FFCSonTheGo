@@ -263,6 +263,10 @@ header {
   padding-right: 15px;
 }
 
+header .alert {
+  margin-top: 1em;
+}
+
 #site_heading {
   font-size: 2em;
 }
@@ -324,6 +328,12 @@ footer a:hover {
   margin-right: auto;
 }
 
+/* Styles for individual table cells */
+
+.tt-course-code {
+  display: block;
+  text-align: center;
+}
 
 /* Styles for the slot input form and the associated components. */
 

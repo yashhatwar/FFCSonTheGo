@@ -4,9 +4,10 @@
  */
 
 var CRM = (function () {
-	function CourseRecord(slots, title, fac, credits, $li) {
+	function CourseRecord(slots, title, code, fac, credits, $li) {
 		this.slots = slots;
 		this.title = title;
+		this.code = code;
 		this.fac = fac;
 		this.credits = credits;
 		this.$li = $li;
@@ -26,9 +27,9 @@ var CRM = (function () {
 
 	var CRM = {
 		courses: [],
-		add: function (slots, title, fac, credits, $li) {
+		add: function (slots, title, code, fac, credits, $li) {
 			slots = this.expandSlots(slots);
-			var record = new CourseRecord(slots, title, fac, credits, $li);
+			var record = new CourseRecord(slots, title, code, fac, credits, $li);
 			var clashes = this.getClashingSlots(record);
 			if (clashes.length()) {
 				record.isClashing = true;
@@ -36,7 +37,6 @@ var CRM = (function () {
 
 			this.mark(record, clashes);
 			this.courses.push(record);
-
 		},
 
 		getClashingSlots: function (newRecord) {
@@ -94,12 +94,13 @@ var CRM = (function () {
 		},
 		mark: function (record, clashes) {
 			var i, loopSlot;
-			if (!record.isClashing) {
-				record.slots.forEach(function (slot) {
-					this.highlight(slot);
-				}, this);
-			} else {
 
+			record.slots.forEach(function (slot) {
+				this.highlight(slot);
+				this.appendCourseCode(slot, record.code);
+			}, this);
+
+			if (record.isClashing) {
 				for (i = 0; i < clashes.length(); ++i) {
 					clashes.get(i).records.forEach(function (record) {
 						record.$li.addClass("list-group-item-danger");
@@ -108,17 +109,19 @@ var CRM = (function () {
 					this.highlight(loopSlot);
 					this.clashSlot(loopSlot);
 				}
-
-				record.slots.forEach(function (slot) {
-					this.highlight(slot);
-				}, this);
-
 			}
 		},
 
 		highlight: function (slot) {
 			$("." + slot).addClass("highlight");
-			// $("." + slot).text($('#inputCourseCode') + " - " + slot);
+		},
+
+		appendCourseCode: function (slot, code) {
+			var $slot = $("." + slot);
+
+			if(!~$slot.text().indexOf(code)) {
+				$slot.append('<span class="tt-course-code">' + code + '</span>');
+			}
 		},
 
 		clashSlot: function (slot) {
@@ -159,6 +162,7 @@ var CRM = (function () {
 				if (self.courses[i].$li.get(0) === liDom) {
 					self.courses.splice(i, 1);
 					$(".TimetableContent").removeClass("highlight slot-clash");
+					$(".TimetableContent").find(".tt-course-code").remove();
 					$("#slot-sel-area .list-group li").removeClass("list-group-item-danger");
 					break;
 				}
@@ -194,6 +198,7 @@ var CRM = (function () {
 	var facultyInput = $("#inputFaculty");
 	var courseInput = $("#inputCourseTitle");
 	var creditsInput = $("#inputCourseCredits");
+	var courseCodeInput = $("#inputCourseCode");
 	var slotInput = $("#inputSlotString");
 	var totalContainer = $("#slot-sel-area .list-group li.total");
 	var totalSpan = totalContainer.find(".badge");
@@ -208,6 +213,7 @@ var CRM = (function () {
 
 		faculty = facultyInput.val().trim();
 		course = courseInput.val().trim();
+		courseCode = courseCodeInput.val().trim();
 		credits = Number(creditsInput.val());
 
 		slotArray = slot.split(/\s*\+\s*/);
@@ -243,12 +249,13 @@ var CRM = (function () {
 			}
 		}
 
+		courseCodeInput.val("");
 		facultyInput.val("");
 		courseInput.val("");
 		slotInput.val("");
 		creditsInput.val("");
 
-		CRM.add(slotArray, course, faculty, credits, li);
+		CRM.add(slotArray, course, courseCode, faculty, credits, li);
 	}
 
 	$("#slot-sel-area .panel-body #markBtn").click(submitSlotData);
@@ -261,6 +268,7 @@ var CRM = (function () {
 
 	$("#resetButton").on("click", function resetTimeTable() {
 		$(".TimetableContent").removeClass("highlight slot-clash");
+		$(".TimetableContent").find(".tt-course-code").remove();
 		$(".tile").removeClass("highlight");
 		$("#slot-sel-area").find(".list-group-item").not(totalContainer).remove();
 

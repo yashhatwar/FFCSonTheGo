@@ -35,6 +35,7 @@ $('#takeScreenShot').on('click', function () {
     var original_width = $('body').width();
     $('body').width('1500');
     $('#timetable_msg').show();
+    var newWindow = window.open();
     html2canvas(document.getElementById('timetable'), {
         onrendered: function (canvas) {
             var img_src = canvas.toDataURL("image/jpeg");
@@ -43,7 +44,6 @@ $('#takeScreenShot').on('click', function () {
                 '<html><head><title>FFCSonTheGo!</title></head><body><a href="' + img_src + '" download="FFCSonTheGo"><img style="width:100%;" src="' + img_src + '" alt="FFCSonTheGo"/></a>' +
                 '<h1>Click on the image to download.</h1>' +
                 '</body></html>';
-            var newWindow = window.open();
             newWindow.document.write(data);
             $('#timetable_msg').hide();
             $('body').width(original_width);

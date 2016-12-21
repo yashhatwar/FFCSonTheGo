@@ -129,8 +129,10 @@ var CRM = (function () {
 		highlight: function (slot) {
 			if (slot.match(/^L/)) {
 				labArray[Number(slot.substring(1)) - 1].addClass("highlight");
+				labArray[Number(slot.substring(1)) - 1].text($('#inputCourseCode') + " - " + slot);
 			} else {
 				$("." + slot).addClass("highlight");
+				$("." + slot).text($('#inputCourseCode') + " - " + slot);
 			}
 		},
 
@@ -325,7 +327,7 @@ function makeLabArray() {
 	for (i = 0; i < 70; ++i) {
 		if (i % 14 < 6) left.push(slots.eq(i));
 		else {
-			if(i % 14 <= 11)
+			if (i % 14 <= 11)
 				right.push(slots.eq(i))
 			else
 				extended.push(slots.eq(i));

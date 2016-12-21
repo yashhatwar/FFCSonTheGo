@@ -328,12 +328,14 @@ footer a:hover {
   margin-right: auto;
 }
 
+
 /* Styles for individual table cells */
 
 .tt-course-code {
   display: block;
   text-align: center;
 }
+
 
 /* Styles for the slot input form and the associated components. */
 
@@ -360,6 +362,13 @@ footer a:hover {
 .container-fluid .row {
   margin-right: 0!important;
   margin-left: 0!important;
+}
+
+#inputCourseCode,
+#inputCourseTitle,
+#inputSlotString,
+#inputFaculty {
+  text-transform: uppercase;
 }
 
 

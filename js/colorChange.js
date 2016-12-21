@@ -117,8 +117,6 @@ var CRM = (function () {
 		},
 
 		appendCourseCode: function (slot, code) {
-			// TODO
-			debugger;
 			var $slot = $("." + slot);
 
 			if(!~$slot.text().indexOf(code)) {
@@ -164,6 +162,7 @@ var CRM = (function () {
 				if (self.courses[i].$li.get(0) === liDom) {
 					self.courses.splice(i, 1);
 					$(".TimetableContent").removeClass("highlight slot-clash");
+					$(".TimetableContent").find(".tt-course-code").remove();
 					$("#slot-sel-area .list-group li").removeClass("list-group-item-danger");
 					break;
 				}
@@ -269,6 +268,7 @@ var CRM = (function () {
 
 	$("#resetButton").on("click", function resetTimeTable() {
 		$(".TimetableContent").removeClass("highlight slot-clash");
+		$(".TimetableContent").find(".tt-course-code").remove();
 		$(".tile").removeClass("highlight");
 		$("#slot-sel-area").find(".list-group-item").not(totalContainer).remove();
 

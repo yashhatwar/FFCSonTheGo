@@ -15,6 +15,7 @@ Found a bug or have a new idea? Feel free to open [issues](https://github.com/Va
 ## Authors
 
 * **Vatsal Joshi** - *Initial work* - [VaTz88](https://github.com/VaTz88)
+* **Sangeeth Sudheer** - [sangeeth96](https://github.com/sangeeth96)
 
 See also the list of [contributors](https://github.com/VaTz88/V-TOP-Easy/contributors) who participated in this project.
 

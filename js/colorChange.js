@@ -1,9 +1,3 @@
-var labArray = null;
-
-$(function () {
-	makeLabArray();
-});
-
 /**
  * Code to generate a custom course list through #slot-sel-area, manage the
  * list and to mark the added slots to the timetable.
@@ -22,12 +16,8 @@ var CRM = (function () {
 	function isSlotValid(slot) {
 		var labSlotPattern = /^L\d{1,2}$/;
 		var slotNum;
-		if (labSlotPattern.test(slot)) {
-			if (!labArray) makeLabArray();
-			slotNum = Number(slot.substring(1));
-			if (slotNum >= 15 && slotNum <= 18)
-				return false;
-		} else if (!$("." + slot).length) {
+		
+		if (!$("." + slot).length) {
 			return false;
 		}
 
@@ -127,21 +117,12 @@ var CRM = (function () {
 		},
 
 		highlight: function (slot) {
-			if (slot.match(/^L/)) {
-				labArray[Number(slot.substring(1)) - 1].addClass("highlight");
-				labArray[Number(slot.substring(1)) - 1].text($('#inputCourseCode') + " - " + slot);
-			} else {
-				$("." + slot).addClass("highlight");
-				$("." + slot).text($('#inputCourseCode') + " - " + slot);
-			}
+			$("." + slot).addClass("highlight");
+			// $("." + slot).text($('#inputCourseCode') + " - " + slot);
 		},
 
 		clashSlot: function (slot) {
-			if (slot.match(/^L/)) {
-				labArray[Number(slot.substring(1)) - 1].addClass("slot-clash");
-			} else {
-				$("." + slot).addClass("slot-clash");
-			}
+			$("." + slot).addClass("slot-clash");
 		}
 	};
 
@@ -299,47 +280,8 @@ var CRM = (function () {
 function markSlot(slot) {
 	var labSlotPattern = /^L\d{1,2}$/;
 	var slotNum;
-	if (labSlotPattern.test(slot)) {
-		if (!labArray) makeLabArray();
-		slotNum = Number(slot.substring(1));
-		if (!(slotNum >= 15 && slotNum <= 18))
-			labArray.eq(slotNum - 1)
-			.toggleClass("highlight");
-	} else if ($("." + slot)) {
+	if ($("." + slot)) {
 		$("." + slot).toggleClass("highlight");
-	}
-}
-
-/**
- * Prepares a $ collection of all the slots in the table in ascending order
- * and pads 3 null objects to compensate for missing slots. The result is
- * stored in labArray.
- * @return {undefined}
- */
-function makeLabArray() {
-	var left = $(),
-		right = $(),
-		extended = $();
-	var slots = $(".TimetableContent");
-	slots.splice(30, 1, null, null, null, null);
-	var length = slots.length;
-	var i;
-	for (i = 0; i < 70; ++i) {
-		if (i % 14 < 6) left.push(slots.eq(i));
-		else {
-			if (i % 14 <= 11)
-				right.push(slots.eq(i))
-			else
-				extended.push(slots.eq(i));
-		}
-	}
-
-	labArray = left.add(right);
-	labArray = labArray.add(extended);
-
-	for (i = 70; i < 98; ++i) {
-		if (i % 14 <= 11)
-			labArray.push(slots.eq(i));
 	}
 }
 

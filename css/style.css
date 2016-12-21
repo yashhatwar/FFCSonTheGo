@@ -263,6 +263,10 @@ header {
   padding-right: 15px;
 }
 
+header .alert {
+  margin-top: 1em;
+}
+
 #site_heading {
   font-size: 2em;
 }

@@ -11,7 +11,7 @@ var enjoyhint_script_steps = [{
 }, {
     "next #slot-sel-area": "<span style=\"color:white; background-color:grey\">Search and add courses</span>"
 }, {
-    "next #starGitHub": "Star the repo on GitHub"
+    "next #takeScreenShot": "Take timetable screenshot and share with friends"
 }, {
     "click #fb-like-share": 'Like and Share',
     showSkip: false

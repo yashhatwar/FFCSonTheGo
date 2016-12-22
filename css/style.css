@@ -364,6 +364,14 @@ footer a:hover {
   margin-left: 0!important;
 }
 
+input {
+  color: black !important;
+}
+
+#insertSlotBtn {
+  margin: 1em;
+}
+
 #inputCourseCode,
 #inputCourseTitle,
 #inputSlotString,

@@ -1,5 +1,21 @@
+var correspondingSlots = [];
+correspondingUniqueSlots = [];
+
+function getSlots(searchCode) {
+    $.each(correspondingSlots, function (key, value) {
+        if (correspondingSlots[key].CODE == searchCode) {
+            if ($.inArray(value.SLOT, correspondingUniqueSlots) == -1) correspondingUniqueSlots.push(value.SLOT);
+        }
+    });
+    // append slots to add course panel
+    // addSlotSelectionButtons function called from colorChange.js
+    addSlotSelectionButtons(correspondingUniqueSlots);
+    correspondingUniqueSlots = [];
+
+}
+
 var slotOption = {
-    url: "http://vatz88.in/FFCSonTheGo/unique_slots.json",
+    url: "http://vatz88.in/FFCSonTheGo/data/unique_slots.json",
 
     getValue: "SLOT",
 
@@ -15,7 +31,7 @@ var slotOption = {
 };
 
 var courseTitleOption = {
-    url: "http://vatz88.in/FFCSonTheGo/all_vit_courses.json",
+    url: "http://vatz88.in/FFCSonTheGo/data/all_vit_courses.json",
 
     getValue: "title",
 
@@ -26,6 +42,7 @@ var courseTitleOption = {
         onSelectItemEvent: function () {
             var code = $("#inputCourseTitle").getSelectedItemData().code;
             $("#inputCourseCode").val(code).trigger("change");
+            getSlots(code);
         }
     },
 
@@ -42,7 +59,7 @@ var courseTitleOption = {
 };
 
 var courseCodeOption = {
-    url: "http://vatz88.in/FFCSonTheGo/all_vit_courses.json",
+    url: "http://vatz88.in/FFCSonTheGo/data/all_vit_courses.json",
 
     getValue: "code",
 
@@ -54,6 +71,8 @@ var courseCodeOption = {
         onSelectItemEvent: function () {
             var title = $("#inputCourseCode").getSelectedItemData().title;
             $("#inputCourseTitle").val(title).trigger("change");
+            var searchCode = $("#inputCourseCode").getSelectedItemData().code;
+            getSlots(searchCode);
         }
     },
 
@@ -72,3 +91,7 @@ var courseCodeOption = {
 $("#inputCourseTitle").easyAutocomplete(courseTitleOption);
 $("#inputCourseCode").easyAutocomplete(courseCodeOption);
 $("#inputSlotString").easyAutocomplete(slotOption);
+
+$.getJSON("http://vatz88.in/FFCSonTheGo/data/course_and_slot.json", function (result) {
+    correspondingSlots = result;
+});

@@ -1,7 +1,8 @@
 var slotOption = {
-    data: ["A1", "B1", "C1", "D1", "E1", "F1", "G1", "TA1", "TB1", "TC1", "TD1", "TE1", "TF1", "TG1", "TAA1", "TCC1",
-        "A2", "B2", "C2", "D2", "E2", "F2", "G2", "TA2", "TB2", "TC2", "TD2", "TE2", "TF2", "TG2", "TAA2", "TBB2", "TCC2", "TDD2"
-    ],
+    url: "http://vatz88.in/FFCSonTheGo/unique_slots.json",
+
+    getValue: "SLOT",
+
     list: {
         match: {
             enabled: true

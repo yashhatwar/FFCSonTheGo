@@ -367,7 +367,8 @@ footer a:hover {
 #inputCourseCode,
 #inputCourseTitle,
 #inputSlotString,
-#inputFaculty {
+#inputFaculty,
+.list-group-item {
   text-transform: uppercase;
 }
 

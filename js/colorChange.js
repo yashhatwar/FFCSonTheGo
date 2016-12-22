@@ -1,4 +1,24 @@
 /**
+ * Add slot selection buttons from array of slots
+ * function is called in autocomplete_course.js
+ */
+
+function addSlotSelectionButtons(slotSelectionArray) {
+
+	var insert = '';
+
+	for (var i = 0; i < slotSelectionArray.length; i++) {
+		insert = insert +
+			'<button class="btn btn-default slotSelectionBtn" type="button" value="' + slotSelectionArray[i] + '" onclick="slotSelectionBtnClicked(this.value)">' + slotSelectionArray[i] + '</button>';
+	}
+	$('#insertSlotBtn').html(insert);
+}
+
+function slotSelectionBtnClicked(value) {
+	$('#inputSlotString').val(value);
+}
+
+/**
  * Code to generate a custom course list through #slot-sel-area, manage the
  * list and to mark the added slots to the timetable.
  */
@@ -17,7 +37,7 @@ var CRM = (function () {
 	function isSlotValid(slot) {
 		var labSlotPattern = /^L\d{1,2}$/;
 		var slotNum;
-		
+
 		if (!$("." + slot).length) {
 			return false;
 		}
@@ -119,7 +139,7 @@ var CRM = (function () {
 		appendCourseCode: function (slot, code) {
 			var $slot = $("." + slot);
 
-			if(!~$slot.text().indexOf(code)) {
+			if (!~$slot.text().indexOf(code)) {
 				$slot.append('<span class="tt-course-code">' + code + '</span>');
 			}
 		},
@@ -267,6 +287,7 @@ var CRM = (function () {
 	});
 
 	$("#resetButton").on("click", function resetTimeTable() {
+		$('#insertSlotBtn').text('');
 		$(".TimetableContent").removeClass("highlight slot-clash");
 		$(".TimetableContent").find(".tt-course-code").remove();
 		$(".tile").removeClass("highlight");

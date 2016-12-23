@@ -372,6 +372,10 @@ input {
   margin: 1em;
 }
 
+#insertSlotBtn .btn {
+  white-space: normal!important;
+}
+
 #inputCourseCode,
 #inputCourseTitle,
 #inputSlotString,

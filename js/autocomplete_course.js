@@ -1,31 +1,70 @@
-var correspondingSlots = [];
-correspondingUniqueSlots = [];
+/**
+ * Add slot selection buttons from array of slots
+ * function is called in autocomplete_course.js
+ */
 
-function getSlots(searchCode) {
-    $.each(correspondingSlots, function (key, value) {
-        if (correspondingSlots[key].CODE == searchCode) {
-            if ($.inArray(value.SLOT, correspondingUniqueSlots) == -1) correspondingUniqueSlots.push(value.SLOT);
-        }
-    });
-    // append slots to add course panel
-    // addSlotSelectionButtons function called from colorChange.js
-    addSlotSelectionButtons(correspondingUniqueSlots);
-    correspondingUniqueSlots = [];
+function addSlotSelectionButtons(type, slot, faculty, credits, venue) {
+    var btnValue = '';
+    var btnText = '';
+    btnText = slot + '<strong> | </strong>' + faculty + '<strong> | </strong>' + type + '<strong> | </strong>' + venue;
+    btnValue = slot + '|' + faculty + '|' + type + '|' + venue + '|' + credits;
 
+    var insert = '';
+
+    insert =
+        '<div class="col-xs-12 col-sm-6 col-md-4">' +
+        '<button class="btn btn-default btn-block" type="button" value="' + btnValue + '" onclick="slotSelectionBtnClicked(this.value)">' + btnText + '</button>' +
+        '</div>';
+    $('#insertSlotBtn').append(insert);
 }
 
-var slotOption = {
-    url: "http://vatz88.in/FFCSonTheGo/data/unique_slots.json",
+// append input fields according to slotBtn click
 
-    getValue: "SLOT",
+function slotSelectionBtnClicked(value) {
+    value = value.split('|');
+    $('#inputSlotString').val(value[0]);
+    $('#inputFaculty').val(value[1]);
+    $('#inputCourseCredits').val(value[4]);
+}
+
+function getSlots(searchCode) {
+    $('#insertSlotBtn').html('');
+    $.each(all_data, function (key, value) {
+        if (value.CODE == searchCode) {
+            // append slots to add course panel
+            addSlotSelectionButtons(value.TYPE, value.SLOT, value.FACULTY, value.CREDITS.toString(), value.VENUE);
+        }
+    });
+}
+
+// autocomplete options
+
+var courseCodeOption = {
+    url: "http://vatz88.in/FFCSonTheGo/data/all_vit_courses.json",
+
+    getValue: "code",
 
     list: {
         match: {
             enabled: true
+        },
+        maxNumberOfElements: 10,
+        onSelectItemEvent: function () {
+            var title = $("#inputCourseCode").getSelectedItemData().title;
+            $("#inputCourseTitle").val(title).trigger("change");
+            var searchCode = $("#inputCourseCode").getSelectedItemData().code;
+            getSlots(searchCode);
         }
     },
 
-    placeholder: "eg: L1+L2+L3",
+    template: {
+        type: "description",
+        fields: {
+            description: "title"
+        }
+    },
+
+    placeholder: "eg: ITE208",
 
     theme: "round"
 };
@@ -58,32 +97,18 @@ var courseTitleOption = {
     theme: "round"
 };
 
-var courseCodeOption = {
-    url: "http://vatz88.in/FFCSonTheGo/data/all_vit_courses.json",
+var slotOption = {
+    url: "http://vatz88.in/FFCSonTheGo/data/unique_slots.json",
 
-    getValue: "code",
+    getValue: "SLOT",
 
     list: {
         match: {
             enabled: true
-        },
-        maxNumberOfElements: 10,
-        onSelectItemEvent: function () {
-            var title = $("#inputCourseCode").getSelectedItemData().title;
-            $("#inputCourseTitle").val(title).trigger("change");
-            var searchCode = $("#inputCourseCode").getSelectedItemData().code;
-            getSlots(searchCode);
         }
     },
 
-    template: {
-        type: "description",
-        fields: {
-            description: "title"
-        }
-    },
-
-    placeholder: "eg: ITE208",
+    placeholder: "eg: L1+L2+L3",
 
     theme: "round"
 };
@@ -91,7 +116,3 @@ var courseCodeOption = {
 $("#inputCourseTitle").easyAutocomplete(courseTitleOption);
 $("#inputCourseCode").easyAutocomplete(courseCodeOption);
 $("#inputSlotString").easyAutocomplete(slotOption);
-
-$.getJSON("http://vatz88.in/FFCSonTheGo/data/course_and_slot.json", function (result) {
-    correspondingSlots = result;
-});

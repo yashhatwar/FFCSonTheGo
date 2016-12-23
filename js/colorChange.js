@@ -1,24 +1,4 @@
 /**
- * Add slot selection buttons from array of slots
- * function is called in autocomplete_course.js
- */
-
-function addSlotSelectionButtons(slotSelectionArray) {
-
-	var insert = '';
-
-	for (var i = 0; i < slotSelectionArray.length; i++) {
-		insert = insert +
-			'<button class="btn btn-default slotSelectionBtn" type="button" value="' + slotSelectionArray[i] + '" onclick="slotSelectionBtnClicked(this.value)">' + slotSelectionArray[i] + '</button>';
-	}
-	$('#insertSlotBtn').html(insert);
-}
-
-function slotSelectionBtnClicked(value) {
-	$('#inputSlotString').val(value);
-}
-
-/**
  * Code to generate a custom course list through #slot-sel-area, manage the
  * list and to mark the added slots to the timetable.
  */

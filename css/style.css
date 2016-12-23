@@ -339,7 +339,8 @@ footer a:hover {
 
 /* Styles for the slot input form and the associated components. */
 
-#fb-like-share {
+#fb-like-share,
+#like-micpage {
   margin-top: 0.25em;
 }
 

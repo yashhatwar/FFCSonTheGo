@@ -1,12 +1,3 @@
-$('.btn').mouseup(function () {
-    this.blur()
-});
-
-$('#CourseAllocationReport-btn').click(function () {
-    $('#ExcelSheet').html('<iframe width="100%" height="550" frameborder="0" scrolling="no" src="https://onedrive.live.com/embed?cid=D67270317C4D2130&resid=D67270317C4D2130%211967&authkey=ADWe39IGNxfx25A&em=2&ActiveCell=\'WINSEM2016-17_CourseAllotted_Re\'!A1&Item=\'WINSEM2016-17_CourseAllotted_Re\'!A%3AL&wdHideGridlines=True&wdDownloadButton=True"></iframe>');
-    $(this).hide();
-});
-
 $('#timetable_msg').hide(); // hide msg
 
 // disable hover for touch screen devices
@@ -29,6 +20,21 @@ function removeHoverCSSRule() {
         } catch (e) {}
     }
 }
+
+$('.btn').mouseup(function () {
+    this.blur()
+});
+
+$('input[type="text"]').keyup(function (e) {
+    if (e.which === 13) {
+        $(this).blur();
+    }
+});
+
+$('#CourseAllocationReport-btn').click(function () {
+    $('#ExcelSheet').html('<iframe width="100%" height="550" frameborder="0" scrolling="no" src="https://onedrive.live.com/embed?cid=D67270317C4D2130&resid=D67270317C4D2130%211967&authkey=ADWe39IGNxfx25A&em=2&ActiveCell=\'WINSEM2016-17_CourseAllotted_Re\'!A1&Item=\'WINSEM2016-17_CourseAllotted_Re\'!A%3AL&wdHideGridlines=True&wdDownloadButton=True"></iframe>');
+    $(this).hide();
+});
 
 // take timetable screenshot
 $('#takeScreenShot').on('click', function () {

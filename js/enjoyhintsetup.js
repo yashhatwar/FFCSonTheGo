@@ -1,20 +1,17 @@
 //initialize instance
 var enjoyhint_instance = new EnjoyHint({});
 
-//simple config.
-//Only one step - highlighting(with description) "New" button
-//hide EnjoyHint after a click on the button.
+//config.
 var enjoyhint_script_steps = [{
-    "next .A1": 'Click slots to select'
+    "next .A1": '<p>Click slots to select</p>'
 }, {
-    "next .quick-selection": "Use quick selection to select all at once"
+    "next .B1-tile": "<p>Use quick selection to select all at once</p>"
 }, {
-    "next .panel-heading": "<span style=\"color:white; background-color:grey\">Add courses to timetable</span>"
+    "next .panel-heading": "<p>Add courses to timetable</p>"
 }, {
-    "next #takeScreenShot": "Take timetable screenshot and share with friends"
+    "next #takeScreenShot": "<p>Take timetable screenshot to share with friends</p>"
 }, {
-    "click #fb-like-share": 'Like and Share',
-    showSkip: false
+    "click #fb-like-share": '<p>Like and Share</p>'
 }];
 
 //set script config

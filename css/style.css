@@ -1,21 +1,18 @@
 .LabHours {
   font-weight: bold;
   background-color: #99CCFF;
-  /*border: 1px solid black;*/
   cursor: default;
 }
 
 .TheoryHours {
   font-weight: bold;
   background-color: #CCCCFF;
-  /*border: 1px solid black;*/
   cursor: default;
 }
 
 .ColumnOneDays {
   font-weight: bold;
   background-color: #C0C0C0;
-  /*border: 1px solid black;*/
   cursor: default;
 }
 
@@ -50,7 +47,6 @@
 .TG2 {
   color: grey;
   background-color: #FFFFCC;
-  /*border: 1px solid black;*/
   cursor: pointer;
 }
 
@@ -328,6 +324,15 @@ footer a:hover {
   margin-right: auto;
 }
 
+#fb-like-share {
+  margin-top: 0.25em;
+}
+
+#like-micpage {
+  margin-top: 0.25em;
+  margin-bottom: 0.25em;
+}
+
 
 /* Styles for individual table cells */
 
@@ -338,11 +343,6 @@ footer a:hover {
 
 
 /* Styles for the slot input form and the associated components. */
-
-#fb-like-share,
-#like-micpage {
-  margin-top: 0.25em;
-}
 
 #slot-sel-area .list-group-item-danger .badge {
   background-color: #a94442;

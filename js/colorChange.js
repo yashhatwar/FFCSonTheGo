@@ -254,17 +254,18 @@ var CRM = (function () {
 		courseInput.val("");
 		slotInput.val("");
 		creditsInput.val("");
+		$('#insertSlotBtn').html('');
 
 		CRM.add(slotArray, course, courseCode, faculty, credits, li);
 	}
 
 	$("#slot-sel-area .panel-body #markBtn").click(submitSlotData);
-	$("#slot-sel-area .panel-body input").on("keypress", function (event) {
-		if (event.which === 13) {
-			event.preventDefault();
-			submitSlotData();
-		}
-	});
+	// $("#slot-sel-area .panel-body input").on("keypress", function (event) {
+	// 	if (event.which === 13) {
+	// 		event.preventDefault();
+	// 		submitSlotData();
+	// 	}
+	// });
 
 	$("#resetButton").on("click", function resetTimeTable() {
 		$('#insertSlotBtn').text('');

@@ -40,7 +40,7 @@ function getSlots(searchCode) {
 // autocomplete options
 
 var courseCodeOption = {
-    url: "http://vatz88.in/FFCSonTheGo/data/all_vit_courses.json",
+    data: unique_courses,
 
     getValue: "code",
 
@@ -48,7 +48,9 @@ var courseCodeOption = {
         match: {
             enabled: true
         },
+
         maxNumberOfElements: 10,
+
         onSelectItemEvent: function () {
             var title = $("#inputCourseCode").getSelectedItemData().title;
             $("#inputCourseTitle").val(title).trigger("change");
@@ -70,7 +72,7 @@ var courseCodeOption = {
 };
 
 var courseTitleOption = {
-    url: "http://vatz88.in/FFCSonTheGo/data/all_vit_courses.json",
+    data: unique_courses,
 
     getValue: "title",
 
@@ -78,6 +80,7 @@ var courseTitleOption = {
         match: {
             enabled: true
         },
+
         onSelectItemEvent: function () {
             var code = $("#inputCourseTitle").getSelectedItemData().code;
             $("#inputCourseCode").val(code).trigger("change");
@@ -98,7 +101,7 @@ var courseTitleOption = {
 };
 
 var slotOption = {
-    url: "http://vatz88.in/FFCSonTheGo/data/unique_slots.json",
+    data: unique_slots,
 
     getValue: "SLOT",
 

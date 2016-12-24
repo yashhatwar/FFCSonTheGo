@@ -100,22 +100,5 @@ var courseTitleOption = {
     theme: "round"
 };
 
-var slotOption = {
-    data: unique_slots,
-
-    getValue: "SLOT",
-
-    list: {
-        match: {
-            enabled: true
-        }
-    },
-
-    placeholder: "eg: L1+L2+L3",
-
-    theme: "round"
-};
-
 $("#inputCourseTitle").easyAutocomplete(courseTitleOption);
 $("#inputCourseCode").easyAutocomplete(courseCodeOption);
-$("#inputSlotString").easyAutocomplete(slotOption);

@@ -3,6 +3,8 @@
  * list and to mark the added slots to the timetable.
  */
 
+var totalCredits = 0;
+
 var CRM = (function () {
 	function CourseRecord(slots, title, code, fac, credits, $li) {
 		this.slots = slots;
@@ -193,7 +195,7 @@ var CRM = (function () {
 
 	CRM.listenForRemove();
 
-	var totalCredits = 0;
+
 
 	var facultyInput = $("#inputFaculty");
 	var courseInput = $("#inputCourseTitle");
@@ -273,6 +275,8 @@ var CRM = (function () {
 		$(".TimetableContent").find(".tt-course-code").remove();
 		$(".tile").removeClass("highlight");
 		$("#slot-sel-area").find(".list-group-item").not(totalContainer).remove();
+
+		totalCredits = 0;
 
 		CRM.courses = [];
 

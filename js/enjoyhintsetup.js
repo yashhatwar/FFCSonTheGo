@@ -7,7 +7,7 @@ var enjoyhint_script_steps = [{
 }, {
     "next .B1-tile": "<p>Use quick selection to select all at once</p>"
 }, {
-    "next .panel-heading": "<p>Search and add courses to timetable</p>"
+    "next #inputCourseCode": "<p>Search and add courses to timetable</p>"
 }, {
     "next #takeScreenShot": "<p>Take timetable screenshot to share with friends</p>"
 }, {

@@ -1,4 +1,4 @@
-$('#timetable_msg').hide(); // hide msg
+$('.screenshot_msg').hide(); // hide msg
 
 // disable hover for touch screen devices
 function removeHoverCSSRule() {
@@ -38,21 +38,32 @@ $('#CourseAllocationReport-btn').click(function () {
 
 // take timetable screenshot
 $('#takeScreenShot').on('click', function () {
+    var timetable_img_src;
+    var courseList_img_src;
+    var newWindow_data = "";
     var original_width = $('body').width();
     $('body').width('1500');
-    $('#timetable_msg').show();
+    $('.screenshot_msg').show();
     var newWindow = window.open();
+    // timetable screenshot
     html2canvas(document.getElementById('timetable'), {
         onrendered: function (canvas) {
-            var img_src = canvas.toDataURL("image/jpeg");
-            // open new window with image
-            var data =
-                '<html><head><title>FFCSonTheGo!</title></head><body><a href="' + img_src + '" download="FFCSonTheGo"><img style="width:100%;" src="' + img_src + '" alt="FFCSonTheGo"/></a>' +
-                '<h1>Click on the image to download.</h1>' +
-                '</body></html>';
-            newWindow.document.write(data);
-            $('#timetable_msg').hide();
-            $('body').width(original_width);
+            timetable_img_src = canvas.toDataURL("image/jpeg");
+            newWindow_data =
+                '<html><head><title>FFCSonTheGo!</title></head><body><a href="' + timetable_img_src + '" download="FFCSOTG_MyTimeTable"><img style="width:100%;" src="' + timetable_img_src + '" alt="FFCSonTheGo"/></a>' +
+                '<h1>Click on the image to download.</h1>';
+            html2canvas(document.getElementById('courseList'), {
+                onrendered: function (canvas) {
+                    courseList_img_src = canvas.toDataURL("image/jpeg");
+                    newWindow_data = newWindow_data +
+                        '<a href="' + courseList_img_src + '" download="FFCSOTG_MyCourses"><img style="width:100%;" src="' + courseList_img_src + '" alt="FFCSonTheGo"/></a>' +
+                        '<h1>Click on the image to download.</h1>' +
+                        '</body></html>';
+                    newWindow.document.write(newWindow_data);
+                    $('.screenshot_msg').hide();
+                    $('body').width(original_width);
+                }
+            });
         }
     });
 });

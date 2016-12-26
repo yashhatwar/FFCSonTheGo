@@ -32,7 +32,7 @@ $('input[type="text"]').keyup(function (e) {
 });
 
 $('#CourseAllocationReport-btn').click(function () {
-    $('#ExcelSheet').html('<iframe width="100%" height="550" frameborder="0" scrolling="no" src="https://onedrive.live.com/embed?cid=D67270317C4D2130&resid=D67270317C4D2130%211967&authkey=ADWe39IGNxfx25A&em=2&ActiveCell=\'WINSEM2016-17_CourseAllotted_Re\'!A1&Item=\'WINSEM2016-17_CourseAllotted_Re\'!A%3AL&wdHideGridlines=True&wdDownloadButton=True"></iframe>');
+    $('#ExcelSheet').html('<iframe width="100%" height="550" frameborder="0" scrolling="no" src="https://onedrive.live.com/embed?cid=D67270317C4D2130&resid=D67270317C4D2130%211971&authkey=AOBukor57oPwDlU&em=2&ActiveCell=\'WINSEM2016-17_CourseAllotted_Re\'!A1&Item=\'WINSEM2016-17_CourseAllotted_Re\'!A%3AN&wdHideGridlines=True&wdDownloadButton=True"></iframe>');
     $(this).hide();
 });
 

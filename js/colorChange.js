@@ -227,7 +227,7 @@ var CRM = (function () {
 
 		li = $('<li class="list-group-item text-center">' +
 			'<div class="row">' +
-			'<div class="col-xs-4 col-sm-2">' + normSlotString + '</div>' +
+			'<div class="col-xs-3 col-sm-2">' + normSlotString + '</div>' +
 			'<div class="col-xs-2 col-sm-1">' + courseCode + '</div>' +
 			'<div class="hidden-xs col-sm-3">' + course + '</div>' +
 			'<div class="col-xs-5 col-sm-3">' + faculty + '</div>' +
@@ -235,7 +235,7 @@ var CRM = (function () {
 			'<div class="hidden-xs col-sm-1">' +
 			'<span class="badge">' + (credits ? credits : 0) + '</span>' +
 			'</div>' +
-			'<div class="col-xs-1 col-sm-1 text-right">' +
+			'<div class="col-xs-2 col-sm-1 text-right">' +
 			'<span class="close">&times;</span>' +
 			'</div>' +
 			'</div>' +

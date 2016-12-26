@@ -45,7 +45,7 @@ function getSlots(searchCode) {
 var courseCodeOption = {
     data: unique_courses,
 
-    getValue: "code",
+    getValue: "CODE",
 
     list: {
         match: {
@@ -55,9 +55,9 @@ var courseCodeOption = {
         maxNumberOfElements: 10,
 
         onSelectItemEvent: function () {
-            var title = $("#inputCourseCode").getSelectedItemData().title;
+            var title = $("#inputCourseCode").getSelectedItemData().TITLE;
             $("#inputCourseTitle").val(title).trigger("change");
-            var searchCode = $("#inputCourseCode").getSelectedItemData().code;
+            var searchCode = $("#inputCourseCode").getSelectedItemData().CODE;
             getSlots(searchCode);
         }
     },
@@ -65,11 +65,11 @@ var courseCodeOption = {
     template: {
         type: "description",
         fields: {
-            description: "title"
+            description: "TITLE"
         }
     },
 
-    placeholder: "eg: ITE208",
+    placeholder: "eg: ITE1008",
 
     theme: "round"
 };
@@ -77,7 +77,7 @@ var courseCodeOption = {
 var courseTitleOption = {
     data: unique_courses,
 
-    getValue: "title",
+    getValue: "TITLE",
 
     list: {
         match: {
@@ -85,7 +85,7 @@ var courseTitleOption = {
         },
 
         onSelectItemEvent: function () {
-            var code = $("#inputCourseTitle").getSelectedItemData().code;
+            var code = $("#inputCourseTitle").getSelectedItemData().CODE;
             $("#inputCourseCode").val(code).trigger("change");
             getSlots(code);
         }
@@ -94,11 +94,11 @@ var courseTitleOption = {
     template: {
         type: "description",
         fields: {
-            description: "code"
+            description: "CODE"
         }
     },
 
-    placeholder: "eg: Computer Networks",
+    placeholder: "eg: Open Source programming",
 
     theme: "round"
 };

@@ -6,10 +6,11 @@
 var totalCredits = 0;
 
 var CRM = (function () {
-	function CourseRecord(slots, title, code, fac, credits, $li) {
+	function CourseRecord(slots, title, code, venue, fac, credits, $li) {
 		this.slots = slots;
 		this.title = title;
 		this.code = code;
+		this.venue = venue;
 		this.fac = fac;
 		this.credits = credits;
 		this.$li = $li;
@@ -29,9 +30,9 @@ var CRM = (function () {
 
 	var CRM = {
 		courses: [],
-		add: function (slots, title, code, fac, credits, $li) {
+		add: function (slots, title, code, venue, fac, credits, $li) {
 			slots = this.expandSlots(slots);
-			var record = new CourseRecord(slots, title, code, fac, credits, $li);
+			var record = new CourseRecord(slots, title, code, venue, fac, credits, $li);
 			var clashes = this.getClashingSlots(record);
 			if (clashes.length()) {
 				record.isClashing = true;
@@ -99,7 +100,7 @@ var CRM = (function () {
 
 			record.slots.forEach(function (slot) {
 				this.highlight(slot);
-				this.appendCourseCode(slot, record.code);
+				this.appendCourseCode(slot, record.code, record.venue);
 			}, this);
 
 			if (record.isClashing) {
@@ -118,11 +119,11 @@ var CRM = (function () {
 			$("." + slot).addClass("highlight");
 		},
 
-		appendCourseCode: function (slot, code) {
+		appendCourseCode: function (slot, code, venue) {
 			var $slot = $("." + slot);
 
 			if (!~$slot.text().indexOf(code)) {
-				$slot.append('<span class="tt-course-code">' + code + '</span>');
+				$slot.append('<span class="tt-course-code">' + code + '<br>' + venue + '</span>');
 			}
 		},
 
@@ -201,6 +202,7 @@ var CRM = (function () {
 	var courseInput = $("#inputCourseTitle");
 	var creditsInput = $("#inputCourseCredits");
 	var courseCodeInput = $("#inputCourseCode");
+	var venueInput = $("#inputVenue");
 	var slotInput = $("#inputSlotString");
 	var totalContainer = $("#slot-sel-area .list-group li.total");
 	var totalSpan = totalContainer.find(".badge");
@@ -216,25 +218,26 @@ var CRM = (function () {
 		faculty = facultyInput.val().trim();
 		course = courseInput.val().trim();
 		courseCode = courseCodeInput.val().trim();
+		venue = venueInput.val().trim();
 		credits = Number(creditsInput.val());
 
 		slotArray = slot.split(/\s*\+\s*/);
 
-
 		normSlotString = slotArray.join(" + ");
-		li = $('<li class="list-group-item">' +
+
+		li = $('<li class="list-group-item text-center">' +
 			'<div class="row">' +
-			'<div class="slots col-xs-2">' + normSlotString + '</div>' +
-			'<div class="course col-xs-4">' + course + '</div>' +
-			'<div class="faculty col-xs-4">' + faculty + '</div>' +
-			'<div class="col-xs-2"><div class="row">' +
-			'<div class="col-xs-12 col-sm-6 text-right">' +
+			'<div class="col-xs-3 col-sm-2">' + normSlotString + '</div>' +
+			'<div class="col-xs-2 col-sm-1">' + courseCode + '</div>' +
+			'<div class="hidden-xs col-sm-3">' + course + '</div>' +
+			'<div class="col-xs-5 col-sm-3">' + faculty + '</div>' +
+			'<div class="hidden-xs col-sm-1">' + venue + '</div>' +
+			'<div class="hidden-xs col-sm-1">' +
 			'<span class="badge">' + (credits ? credits : 0) + '</span>' +
 			'</div>' +
-			'<div class="col-xs-12 col-sm-6 text-right">' +
+			'<div class="col-xs-2 col-sm-1 text-right">' +
 			'<span class="close">&times;</span>' +
 			'</div>' +
-			'</div></div>' +
 			'</div>' +
 			'</li>');
 
@@ -252,13 +255,14 @@ var CRM = (function () {
 		}
 
 		courseCodeInput.val("");
+		venueInput.val("");
 		facultyInput.val("");
 		courseInput.val("");
 		slotInput.val("");
 		creditsInput.val("");
 		$('#insertSlotBtn').html('');
 
-		CRM.add(slotArray, course, courseCode, faculty, credits, li);
+		CRM.add(slotArray, course, courseCode, venue, faculty, credits, li);
 	}
 
 	$("#slot-sel-area .panel-body #markBtn").click(submitSlotData);

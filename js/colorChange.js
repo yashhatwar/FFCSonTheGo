@@ -225,14 +225,14 @@ var CRM = (function () {
 
 		normSlotString = slotArray.join(" + ");
 
-		li = $('<li class="list-group-item text-center">' +
+		li = $('<li class="list-group-item">' +
 			'<div class="row">' +
-			'<div class="col-xs-3 col-sm-2">' + normSlotString + '</div>' +
-			'<div class="col-xs-2 col-sm-1">' + courseCode + '</div>' +
-			'<div class="hidden-xs col-sm-3">' + course + '</div>' +
-			'<div class="col-xs-5 col-sm-3">' + faculty + '</div>' +
-			'<div class="hidden-xs col-sm-1">' + venue + '</div>' +
-			'<div class="hidden-xs col-sm-1">' +
+			'<div class="col-xs-3 col-sm-2 text-left">' + normSlotString + '</div>' +
+			'<div class="col-xs-2 col-sm-1 text-center">' + courseCode + '</div>' +
+			'<div class="hidden-xs col-sm-3 text-center">' + course + '</div>' +
+			'<div class="col-xs-5 col-sm-3 text-center">' + faculty + '</div>' +
+			'<div class="hidden-xs col-sm-1 text-center">' + venue + '</div>' +
+			'<div class="hidden-xs col-sm-1 text-center">' +
 			'<span class="badge">' + (credits ? credits : 0) + '</span>' +
 			'</div>' +
 			'<div class="col-xs-2 col-sm-1 text-right">' +

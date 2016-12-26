@@ -353,6 +353,23 @@ footer a:hover {
   color: #fff !important;
 }
 
+#courseList .row {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+#courseList .list-group {
+  margin-bottom: 0;
+}
+
+#listHearder {
+  color: white;
+  background-color: #009688;
+  font-weight: 600;
+  padding-top: 0.25em;
+  padding-bottom: 0.25em;
+}
+
 .container-fluid {
   padding-right: 0 !important;
   padding-left: 0 !important;
@@ -389,13 +406,13 @@ input {
 
 /* timetable screenshot msg */
 
-#timetable_msg {
+.screenshot_msg {
   color: black;
   background-color: white;
 }
 
-#timetable_msg tr,
-#timetable_msg td {
+.screenshot_msg tr,
+.screenshot_msg td {
   padding: 0!important;
   border-color: white!important;
   margin: 0!important;

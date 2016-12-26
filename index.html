@@ -137,7 +137,7 @@
   <div class="container-fluid text-center">
     <div class="row table-responsive">
       <table id="timetable" class="table table-bordered">
-        <tr id="timetable_msg">
+        <tr class="screenshot_msg">
           <td colspan="16">FFCS on The Go | bit.ly/FFCSOTG</td>
         </tr>
         <tr>
@@ -349,9 +349,7 @@
               </div>
             </div>
             <!-- inserted slot buttons here -->
-            <div class="btn-group" role="group">
-              <div id="insertSlotBtn" class="row">
-              </div>
+            <div id="insertSlotBtn" class="row">
             </div>
             <div class="form-group col-xs-12 col-md-6">
               <label for="inputSlotString" class="control-label">Slot:</label>
@@ -385,14 +383,33 @@
           </form>
         </div>
         <!-- panel-body -->
-        <ul class="list-group">
-          <li class="list-group-item list-group-item-info total">
+        <div id="courseList">
+          <div class="screenshot_msg text-center">
             <div class="row">
-              <span class="col-xs-6 text-right"><strong>Total Credits:</strong></span>
-              <span class="col-xs-6 text-left"><span class="badge">0</span></span>
+              <div class="col-xs-11">
+                FFCS on The Go | bit.ly/FFCSOTG
+              </div>
             </div>
-          </li>
-        </ul>
+          </div>
+          <div id="listHearder" class="text-center">
+            <div class="row">
+              <div class="col-xs-3 col-sm-2">Slot</div>
+              <div class="col-xs-2 col-sm-1">Code </div>
+              <div class="hidden-xs col-sm-3">Title</div>
+              <div class="col-xs-5 col-sm-3">Faculty</div>
+              <div class="hidden-xs col-sm-1">Venue</div>
+              <div class="hidden-xs col-sm-1">Credits</div>
+            </div>
+          </div>
+          <ul class="list-group">
+            <li class="list-group-item list-group-item-info total">
+              <div class="row">
+                <span class="col-xs-6 text-right"><strong>Total Credits:</strong></span>
+                <span class="col-xs-6 text-left"><span class="badge">0</span></span>
+              </div>
+            </li>
+          </ul>
+        </div>
       </div>
       <!-- panel -->
     </div>

@@ -9,13 +9,12 @@ function addSlotSelectionButtons(type, slot, faculty, credits, venue) {
     btnText = slot + '<strong> | </strong>' + faculty + '<strong> | </strong>' + type + '<strong> | </strong>' + venue;
     btnValue = slot + '|' + faculty + '|' + type + '|' + venue + '|' + credits;
 
-    var insert = '';
-
-    insert =
+    var insert =
         '<div class="col-xs-12 col-sm-6 col-md-4">' +
         '<button class="btn btn-default btn-block" type="button" value="' + btnValue + '" onclick="slotSelectionBtnClicked(this.value)">' + btnText + '</button>' +
         '</div>';
-    $('#insertSlotBtn').append(insert);
+
+    return insert;
 }
 
 // append input fields according to slotBtn click
@@ -30,12 +29,15 @@ function slotSelectionBtnClicked(value) {
 
 function getSlots(searchCode) {
     $('#insertSlotBtn').html('');
+    var insert = '<div class="btn-group" role="group">';
     $.each(all_data, function (key, value) {
         if (value.CODE == searchCode) {
             // append slots to add course panel
-            addSlotSelectionButtons(value.TYPE, value.SLOT, value.FACULTY, value.CREDITS.toString(), value.VENUE);
+            insert = insert + addSlotSelectionButtons(value.TYPE, value.SLOT, value.FACULTY, value.CREDITS.toString(), value.VENUE);
         }
     });
+    insert = insert + '</div>'
+    $('#insertSlotBtn').append(insert);
 }
 
 // autocomplete options

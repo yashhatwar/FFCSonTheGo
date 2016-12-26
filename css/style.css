@@ -381,6 +381,7 @@ input {
 #inputCourseTitle,
 #inputSlotString,
 #inputFaculty,
+#inputVenue,
 .list-group-item {
   text-transform: uppercase;
 }

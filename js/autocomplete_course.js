@@ -24,6 +24,7 @@ function slotSelectionBtnClicked(value) {
     value = value.split('|');
     $('#inputSlotString').val(value[0]);
     $('#inputFaculty').val(value[1]);
+    $('#inputVenue').val(value[3]);
     $('#inputCourseCredits').val(value[4]);
 }
 

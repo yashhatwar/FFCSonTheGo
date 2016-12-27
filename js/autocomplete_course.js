@@ -10,9 +10,7 @@ function addSlotSelectionButtons(type, slot, faculty, credits, venue) {
     btnValue = slot + '|' + faculty + '|' + type + '|' + venue + '|' + credits;
 
     var insert =
-        '<div class="col-xs-12 col-sm-6 col-md-4">' +
-        '<button class="btn btn-default btn-block" type="button" value="' + btnValue + '" onclick="slotSelectionBtnClicked(this.value)">' + btnText + '</button>' +
-        '</div>';
+        '<a class="btn btn-default" href="#" data-value="' + btnValue + '" onclick="event.preventDefault();slotSelectionBtnClicked(this.getAttribute(\'data-value\'));">' + btnText + '</a>';
 
     return insert;
 }
@@ -28,15 +26,30 @@ function slotSelectionBtnClicked(value) {
 }
 
 function getSlots(searchCode) {
+    var BUTTONS_PER_ROW = 3;
+    var total = 0;
+    var btnGrpHtml = '';
+    var insert = '';
+
     $('#insertSlotBtn').html('');
-    var insert = '<div class="btn-group" role="group">';
     $.each(all_data, function (key, value) {
         if (value.CODE == searchCode) {
             // append slots to add course panel
-            insert = insert + addSlotSelectionButtons(value.TYPE, value.SLOT, value.FACULTY, value.CREDITS.toString(), value.VENUE);
+            if (total % BUTTONS_PER_ROW === 0) {
+                btnGrpHtml += btnGrpHtml ? '</div>' : '';
+                insert += btnGrpHtml;
+                btnGrpHtml = '';
+                btnGrpHtml += '<div class="btn-group btn-group-justified" role="group">';
+            }
+
+            btnGrpHtml += addSlotSelectionButtons(value.TYPE, value.SLOT, value.FACULTY, value.CREDITS.toString(), value.VENUE);
+            ++total;
         }
     });
-    insert = insert + '</div>'
+
+    btnGrpHtml += '</div>';
+    insert += btnGrpHtml;
+
     $('#insertSlotBtn').append(insert);
 }
 
@@ -69,9 +82,7 @@ var courseCodeOption = {
         }
     },
 
-    placeholder: "eg: ITE1008",
-
-    theme: "round"
+    placeholder: "Search..."
 };
 
 var courseTitleOption = {
@@ -98,10 +109,9 @@ var courseTitleOption = {
         }
     },
 
-    placeholder: "eg: Open Source programming",
-
-    theme: "round"
+    placeholder: "Search..."
 };
 
 $("#inputCourseTitle").easyAutocomplete(courseTitleOption);
 $("#inputCourseCode").easyAutocomplete(courseCodeOption);
+$("div.easy-autocomplete").attr("style", "");

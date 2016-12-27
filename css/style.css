@@ -339,6 +339,7 @@ footer a:hover {
 .tt-course-code {
   display: block;
   text-align: center;
+  font-size: 0.9em;
 }
 
 
@@ -386,12 +387,12 @@ input {
   color: black !important;
 }
 
-#insertSlotBtn {
-  margin: 1em;
+#insertSlotBtn .btn {
+  white-space: normal;
 }
 
-#insertSlotBtn .btn {
-  white-space: normal!important;
+#insertSlotBtn:empty {
+  margin-bottom: 0;
 }
 
 #inputCourseCode,

@@ -123,7 +123,7 @@ var CRM = (function () {
 			var $slot = $("." + slot);
 
 			if (!~$slot.text().indexOf(code)) {
-				$slot.append('<span class="tt-course-code">' + code + '<br>' + venue + '</span>');
+				$slot.append('<span class="tt-course-code">' + code + ' - ' + venue + '</span>');
 			}
 		},
 

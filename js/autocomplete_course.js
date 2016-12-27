@@ -35,7 +35,7 @@ function getSlots(searchCode) {
     $.each(all_data, function (key, value) {
         if (value.CODE == searchCode) {
             // append slots to add course panel
-            if(total % BUTTONS_PER_ROW === 0) {
+            if (total % BUTTONS_PER_ROW === 0) {
                 btnGrpHtml += btnGrpHtml ? '</div>' : '';
                 insert += btnGrpHtml;
                 btnGrpHtml = '';
@@ -82,7 +82,7 @@ var courseCodeOption = {
         }
     },
 
-    placeholder: "eg: ITE1008"
+    placeholder: "Search..."
 };
 
 var courseTitleOption = {
@@ -109,7 +109,7 @@ var courseTitleOption = {
         }
     },
 
-    placeholder: "eg: Open Source programming"
+    placeholder: "Search..."
 };
 
 $("#inputCourseTitle").easyAutocomplete(courseTitleOption);

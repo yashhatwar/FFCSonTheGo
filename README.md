@@ -1,6 +1,7 @@
 # FFCSonTheGo!
 
 [![ghit.me](https://ghit.me/badge.svg?repo=VaTz88/FFCSonTheGo)](https://ghit.me/repo/VaTz88/FFCSonTheGo)
+[![Code Climate](https://codeclimate.com/github/VaTz88/FFCSonTheGo/badges/gpa.svg)](https://codeclimate.com/github/VaTz88/FFCSonTheGo)
 
 Website to visualize VIT timetable. Helpful to students of VIT University, Vellore campus during FFCS course registrations.
 

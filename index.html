@@ -3,6 +3,14 @@
 
 <head>
   <meta charset="utf-8">
+  <!-- redirect http to https -->
+  <script type="text/javascript">
+      var x = window.location.href.split(":");
+      if (x[0] == "http") {
+          x[0] = "https";
+          window.location.href = x.join(":");
+      }
+  </script>
   <meta http-equiv="X-UA-Compatible" content="IE=Edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>FFCS on The Go</title>

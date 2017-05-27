@@ -1,3 +1,12 @@
+// Check for cache update
+function onUpdateReady() {
+    window.location.reload();
+}
+window.applicationCache.addEventListener('updateready', onUpdateReady);
+if (window.applicationCache.status === window.applicationCache.UPDATEREADY) {
+    onUpdateReady();
+}
+
 $('.screenshot_msg').hide(); // hide msg
 
 // disable hover for touch screen devices

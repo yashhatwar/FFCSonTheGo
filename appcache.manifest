@@ -1,5 +1,5 @@
 CACHE MANIFEST
-# 2017-05-27
+# 2017-06-09
 
 css/style.css
 js/script.js
@@ -22,4 +22,5 @@ FALLBACK:
 CACHE:
 images/favicon.png
 images/icon192x192.png
+images/whatsapp.png
 index.html

@@ -1,3 +1,18 @@
+.container-fluid {
+  padding-right: 0 !important;
+  padding-left: 0 !important;
+  margin-right: auto!important;
+  margin-left: auto!important;
+}
+
+.container-fluid .row {
+  margin-right: 0!important;
+  margin-left: 0!important;
+}
+
+
+/* Timetable */
+
 .LabHours {
   font-weight: bold;
   background-color: #99CCFF;
@@ -16,7 +31,43 @@
   cursor: default;
 }
 
-.TimetableContent,
+.TimetableContent {
+  text-transform: uppercase;
+  color: grey;
+  background-color: #FFFFCC;
+  cursor: pointer;
+}
+
+.TimetableContent:hover {
+  color: black;
+  background-color: #CCFF33;
+  cursor: pointer;
+}
+
+.TimetableContent.highlight {
+  color: black;
+  background-color: #CCFF33;
+  cursor: pointer;
+}
+
+.TimetableContent.highlight:hover {
+  color: grey;
+  background-color: #CCFF33;
+  cursor: pointer;
+}
+
+.TimetableContent[disabled] {
+  text-transform: capitalize;
+  color: grey;
+  background-color: #FFFFCC;
+  cursor: default;
+}
+
+#timetable .table-bordered td,
+#timetable .table-bordered th {
+  border: 1px solid #616161 !important;
+}
+
 .A1,
 .B1,
 .C1,
@@ -44,149 +95,26 @@
 .TD2,
 .TE2,
 .TF2,
-.TG2 {
+.TG2,
+.TAA1,
+.TBB1,
+.TCC1,
+.TDD1,
+.TEE1,
+.TFF1,
+.TGG1,
+.TAA2,
+.TBB2,
+.TCC2,
+.TDD2,
+.TEE2,
+.TFF2,
+.TGG2 {
   color: grey;
   background-color: #FFFFCC;
   cursor: pointer;
 }
 
-.TimetableContent.highlight,
-.A1.highlight,
-.B1.highlight,
-.C1.highlight,
-.D1.highlight,
-.E1.highlight,
-.F1.highlight,
-.G1.highlight,
-.A2.highlight,
-.B2.highlight,
-.C2.highlight,
-.D2.highlight,
-.E2.highlight,
-.F2.highlight,
-.G2.highlight,
-.TA1.highlight,
-.TB1.highlight,
-.TC1.highlight,
-.TD1.highlight,
-.TE1.highlight,
-.TF1.highlight,
-.TG1.highlight,
-.TA2.highlight,
-.TB2.highlight,
-.TC2.highlight,
-.TD2.highlight,
-.TE2.highlight,
-.TF2.highlight,
-.TG2.highlight {
-  color: black;
-  background-color: #CCFF33;
-  cursor: pointer;
-}
-
-.A1-tile,
-.B1-tile,
-.C1-tile,
-.D1-tile,
-.E1-tile,
-.F1-tile,
-.G1-tile,
-.A2-tile,
-.B2-tile,
-.C2-tile,
-.D2-tile,
-.E2-tile,
-.F2-tile,
-.G2-tile {
-  background-color: #FFC107;
-}
-
-.A1-tile.highlight,
-.B1-tile.highlight,
-.C1-tile.highlight,
-.D1-tile.highlight,
-.E1-tile.highlight,
-.F1-tile.highlight,
-.G1-tile.highlight,
-.A2-tile.highlight,
-.B2-tile.highlight,
-.C2-tile.highlight,
-.D2-tile.highlight,
-.E2-tile.highlight,
-.F2-tile.highlight,
-.G2-tile.highlight {
-  background-color: #64DD17;
-}
-
-.TA1-tile,
-.TB1-tile,
-.TC1-tile,
-.TD1-tile,
-.TE1-tile,
-.TF1-tile,
-.TG1-tile,
-.TA2-tile,
-.TB2-tile,
-.TC2-tile,
-.TD2-tile,
-.TE2-tile,
-.TF2-tile,
-.TG2-tile {
-  background-color: #FFC107;
-}
-
-.TA1-tile.highlight,
-.TB1-tile.highlight,
-.TC1-tile.highlight,
-.TD1-tile.highlight,
-.TE1-tile.highlight,
-.TF1-tile.highlight,
-.TG1-tile.highlight,
-.TA2-tile.highlight,
-.TB2-tile.highlight,
-.TC2-tile.highlight,
-.TD2-tile.highlight,
-.TE2-tile.highlight,
-.TF2-tile.highlight,
-.TG2-tile.highlight {
-  background-color: #64DD17;
-}
-
-.TAA1-tile,
-.TBB1-tile,
-.TCC1-tile,
-.TDD1-tile,
-.TEE1-tile,
-.TFF1-tile,
-.TGG1-tile,
-.TAA2-tile,
-.TBB2-tile,
-.TCC2-tile,
-.TDD2-tile,
-.TEE2-tile,
-.TFF2-tile,
-.TGG2-tile {
-  background-color: #FFC107;
-}
-
-.TAA1-tile.highlight,
-.TBB1-tile.highlight,
-.TCC1-tile.highlight,
-.TDD1-tile.highlight,
-.TEE1-tile.highlight,
-.TFF1-tile.highlight,
-.TGG1-tile.highlight,
-.TAA2-tile.highlight,
-.TBB2-tile.highlight,
-.TCC2-tile.highlight,
-.TDD2-tile.highlight,
-.TEE2-tile.highlight,
-.TFF2-tile.highlight,
-.TGG2-tile.highlight {
-  background-color: #64DD17;
-}
-
-.TimetableContent:hover,
 .A1:hover,
 .B1:hover,
 .C1:hover,
@@ -214,13 +142,73 @@
 .TD2:hover,
 .TE2:hover,
 .TF2:hover,
-.TG2:hover {
+.TG2:hover,
+.TAA1:hover,
+.TBB1:hover,
+.TCC1:hover,
+.TDD1:hover,
+.TEE1:hover,
+.TFF1:hover,
+.TGG1:hover,
+.TAA2:hover,
+.TBB2:hover,
+.TCC2:hover,
+.TDD2:hover,
+.TEE2:hover,
+.TFF2:hover,
+.TGG2:hover {
   color: black;
   background-color: #CCFF33;
   cursor: pointer;
 }
 
-.TimetableContent.highlight:hover,
+.A1.highlight,
+.B1.highlight,
+.C1.highlight,
+.D1.highlight,
+.E1.highlight,
+.F1.highlight,
+.G1.highlight,
+.A2.highlight,
+.B2.highlight,
+.C2.highlight,
+.D2.highlight,
+.E2.highlight,
+.F2.highlight,
+.G2.highlight,
+.TA1.highlight,
+.TB1.highlight,
+.TC1.highlight,
+.TD1.highlight,
+.TE1.highlight,
+.TF1.highlight,
+.TG1.highlight,
+.TA2.highlight,
+.TB2.highlight,
+.TC2.highlight,
+.TD2.highlight,
+.TE2.highlight,
+.TF2.highlight,
+.TG2.highlight,
+.TAA1.highlight,
+.TBB1.highlight,
+.TCC1.highlight,
+.TDD1.highlight,
+.TEE1.highlight,
+.TFF1.highlight,
+.TGG1.highlight,
+.TAA2.highlight,
+.TBB2.highlight,
+.TCC2.highlight,
+.TDD2.highlight,
+.TEE2.highlight,
+.TFF2.highlight,
+.TGG2.highlight {
+  color: black;
+  background-color: #CCFF33;
+  cursor: pointer;
+}
+
 .A1.highlight:hover,
 .B1.highlight:hover,
 .C1.highlight:hover,
@@ -248,111 +236,139 @@
 .TD2.highlight:hover,
 .TE2.highlight:hover,
 .TF2.highlight:hover,
-.TG2.highlight:hover {
+.TG2.highlight:hover,
+.TAA1.highlight:hover,
+.TBB1.highlight:hover,
+.TCC1.highlight:hover,
+.TDD1.highlight:hover,
+.TEE1.highlight:hover,
+.TFF1.highlight:hover,
+.TGG1.highlight:hover,
+.TAA2.highlight:hover,
+.TBB2.highlight:hover,
+.TCC2.highlight:hover,
+.TDD2.highlight:hover,
+.TEE2.highlight:hover,
+.TFF2.highlight:hover,
+.TGG2.highlight:hover {
   color: grey;
   background-color: #CCFF33;
   cursor: pointer;
 }
 
-header {
-  padding-left: 15px;
-  padding-right: 15px;
+.A1-tile,
+.B1-tile,
+.C1-tile,
+.D1-tile,
+.E1-tile,
+.F1-tile,
+.G1-tile,
+.A2-tile,
+.B2-tile,
+.C2-tile,
+.D2-tile,
+.E2-tile,
+.F2-tile,
+.G2-tile,
+.TA1-tile,
+.TB1-tile,
+.TC1-tile,
+.TD1-tile,
+.TE1-tile,
+.TF1-tile,
+.TG1-tile,
+.TA2-tile,
+.TB2-tile,
+.TC2-tile,
+.TD2-tile,
+.TE2-tile,
+.TF2-tile,
+.TG2-tile,
+.TAA1-tile,
+.TBB1-tile,
+.TCC1-tile,
+.TDD1-tile,
+.TEE1-tile,
+.TFF1-tile,
+.TGG1-tile,
+.TAA2-tile,
+.TBB2-tile,
+.TCC2-tile,
+.TDD2-tile,
+.TEE2-tile,
+.TFF2-tile,
+.TGG2-tile {
+  background-color: #FFC107;
 }
 
-header .alert {
-  margin-top: 1em;
+.A1-tile.highlight,
+.B1-tile.highlight,
+.C1-tile.highlight,
+.D1-tile.highlight,
+.E1-tile.highlight,
+.F1-tile.highlight,
+.G1-tile.highlight,
+.A2-tile.highlight,
+.B2-tile.highlight,
+.C2-tile.highlight,
+.D2-tile.highlight,
+.E2-tile.highlight,
+.F2-tile.highlight,
+.G2-tile.highlight,
+.TA1-tile.highlight,
+.TB1-tile.highlight,
+.TC1-tile.highlight,
+.TD1-tile.highlight,
+.TE1-tile.highlight,
+.TF1-tile.highlight,
+.TG1-tile.highlight,
+.TA2-tile.highlight,
+.TB2-tile.highlight,
+.TC2-tile.highlight,
+.TD2-tile.highlight,
+.TE2-tile.highlight,
+.TF2-tile.highlight,
+.TG2-tile.highlight,
+.TAA1-tile.highlight,
+.TBB1-tile.highlight,
+.TCC1-tile.highlight,
+.TDD1-tile.highlight,
+.TEE1-tile.highlight,
+.TFF1-tile.highlight,
+.TGG1-tile.highlight,
+.TAA2-tile.highlight,
+.TBB2-tile.highlight,
+.TCC2-tile.highlight,
+.TDD2-tile.highlight,
+.TEE2-tile.highlight,
+.TFF2-tile.highlight,
+.TGG2-tile.highlight {
+  background-color: #64DD17;
 }
 
-#site_heading {
-  font-size: 2em;
-}
 
-td {
-  vertical-align: middle!important;
-  padding-left: 0.25em!important;
-  padding-right: 0.25em!important;
-  padding-top: 1.25em!important;
-  padding-bottom: 1.25em!important;
-}
+/* Quick selection tiles/buttons */
 
-footer {
-  background-color: #9C27B0;
-  color: #fff;
-  padding-top: 0.25em;
-  padding-bottom: 0.25em;
-}
-
-footer a {
-  color: #fff;
-}
-
-footer a:hover {
-  color: #fff;
-}
-
-.table-bordered td,
-.table-bordered th {
-  border: 1px solid #616161 !important;
-}
-
-#option_buttons .btn {
-  margin: 0.25em;
+.quick-selection {
+  text-align: center;
+  margin-bottom: 1rem;
 }
 
 .quick-selection .btn:hover {
   background-color: #64DD17;
 }
 
-.quick-selection .btn[disabled] {
-  cursor: default;
-  background-color: grey
-}
-
-.quick-selection .btn[disabled]:hover {
-  background-color: grey;
-}
-
 .quick-selection .btn {
-  min-width: 50px;
-}
-
-.quick-selection {
-  text-align: center;
-  margin-bottom: 5px;
-  margin-top: 10px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-#fb-like-share {
-  margin-top: 0.25em;
-}
-
-#like-micpage {
-  margin-top: 0.25em;
-  margin-bottom: 0.25em;
+  min-width: 4em;
 }
 
 
-/* Styles for individual table cells */
-
-.tt-course-code {
-  display: block;
-  text-align: center;
-  font-size: 0.9em;
-}
+/* slot selection panel */
 
 
-/* Styles for the slot input form and the associated components. */
-
-#slot-sel-area .list-group-item-danger .badge {
-  background-color: #a94442;
-}
-
-.slot-clash {
-  background: red !important;
-  color: #fff !important;
-}
+/*#slot-sel-area {
+  margin-top: 0.5em;
+}*/
 
 #courseList .row {
   margin-right: 0;
@@ -371,22 +387,6 @@ footer a:hover {
   padding-bottom: 0.25em;
 }
 
-.container-fluid {
-  padding-right: 0 !important;
-  padding-left: 0 !important;
-  margin-right: auto!important;
-  margin-left: auto!important;
-}
-
-.container-fluid .row {
-  margin-right: 0!important;
-  margin-left: 0!important;
-}
-
-input {
-  color: black !important;
-}
-
 #insertSlotBtn .btn {
   white-space: normal;
 }
@@ -395,13 +395,31 @@ input {
   margin-bottom: 0;
 }
 
-#inputCourseCode,
-#inputCourseTitle,
-#inputSlotString,
-#inputFaculty,
-#inputVenue,
+#slot-sel-area input,
 .list-group-item {
   text-transform: uppercase;
+}
+
+#slot-sel-area input {
+  color: black !important;
+}
+
+#slot-sel-area .list-group-item-danger .badge {
+  background-color: #a94442;
+}
+
+
+/* Styles for individual table cells */
+
+.tt-course-code {
+  display: block;
+  text-align: center;
+  font-size: 0.9em;
+}
+
+.slot-clash {
+  background: red !important;
+  color: #fff !important;
 }
 
 
@@ -420,17 +438,72 @@ input {
 }
 
 
-/* slot selection panel */
-
-#slot-sel-area {
-  margin-top: 0.5em;
-}
-
-
 /* Excel sheet */
 
 #ExcelSheet {
-  margin: 1em;
+  margin: 1em 0 1em 0;
+  height: 35vh;
+}
+
+#CourseAllocationReport-btn {
+  width: 60%;
+}
+
+
+/* Other elemtents */
+
+header .alert {
+  margin-top: 1em;
+}
+
+#site_heading {
+  font-size: 2em;
+}
+
+footer {
+  background-color: #9C27B0;
+  color: #fff;
+  padding-top: 0.25em;
+  padding-bottom: 0.25em;
+}
+
+footer a {
+  color: #fff;
+}
+
+footer a:hover {
+  color: #fff;
+}
+
+#option_buttons .btn {
+  margin: 0.25em;
+}
+
+#fb-like-share {
+  margin-top: 0.25em;
+}
+
+#like-micpage {
+  margin-top: 0.25em;
+  margin-bottom: 0.25em;
+}
+
+
+/* disable text selection */
+
+.noselect {
+  -webkit-touch-callout: none;
+  /* iOS Safari */
+  -webkit-user-select: none;
+  /* Safari */
+  -khtml-user-select: none;
+  /* Konqueror HTML */
+  -moz-user-select: none;
+  /* Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer/Edge */
+  user-select: none;
+  /* Non-prefixed version, currently supported by Chrome and Opera */
 }
 
 
@@ -447,22 +520,4 @@ input {
 
 ::-webkit-scrollbar-thumb {
   background: #9C27B0;
-}
-
-@media (min-width:992px) {
-  .quick-selection:hover> ::-webkit-scrollbar-thumb {
-    background: #9C27B0;
-  }
-  .quick-selection> ::-webkit-scrollbar-thumb {
-    background: transparent;
-  }
-   ::-webkit-scrollbar-thumb {
-    background: #9C27B0;
-  }
-}
-
-@media (max-width: 767px) {
-  .container {
-    width: auto;
-  }
 }

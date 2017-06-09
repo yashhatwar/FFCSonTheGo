@@ -6,7 +6,7 @@ $(function () {
         $(this).parent().toggleClass("hide");
     });
 
-    $('.btn').click(function () {
+    $('.quick-selection .btn').click(function () {
         $(this).blur();
     });
     $('.btn,#timetable').contextmenu(function () {

@@ -6,6 +6,7 @@ $(function () {
 		if ($(this).attr("data-state") === "enabled") {
 			$(this).text("Enable Clicking On Timetable");
 			$(this).attr("data-state", "disabled");
+			$('.quick-selection *[class*="-tile"]').off();
 			$("#timetable .TimetableContent").off();
 		} else {
 			$(this).text("Disable Clicking On Timetable");
@@ -287,7 +288,7 @@ $(function () {
 			$('#insertSlotBtn').text('');
 			$(".TimetableContent").removeClass("highlight slot-clash");
 			$(".TimetableContent").find(".tt-course-code").remove();
-			$('*[class*="-tile"]').removeClass("highlight");
+			$('.quick-selection *[class*="-tile"]').removeClass("highlight");
 			$("#slot-sel-area").find(".list-group-item").not(totalContainer).remove();
 
 			totalCredits = 0;

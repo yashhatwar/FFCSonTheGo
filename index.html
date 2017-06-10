@@ -34,7 +34,7 @@
   <meta property="og:description" content="Visualize and make the most optimum timetable for yourself." />
   <meta property="og:site_name" content="FFCS on The Go" />
   <meta property="fb:app_id" content="1698400863751487" />
-  <!--bootstrap cdn -->
+  <!--bootstrap -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-horizon/0.1.1/bootstrap-horizon.min.css" />
   <!-- easy-autocomplete -->
@@ -87,26 +87,39 @@
 
   <!-- Header -->
   <header class="container-fluid">
-    <div class="row text-center">
-      <div class="col-xs-12">
+
+    <div class="row">
+      <div class="col-xs-12 text-center">
         <div class="alert alert-info alert-dismissible" role="alert">
           <button class="close" type="button" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-          <a href="https://github.com/VaTz88/FFCSonTheGo" target="_blank">Loved it? Star the repository on GitHub <span class="glyphicon glyphicon-new-window" aria-hidden="true"></span></a>
+          <a href="https://github.com/VaTz88/FFCSonTheGo" target="_blank">Loved it? Contribute or star the repo on GitHub <span class="glyphicon glyphicon-new-window" aria-hidden="true"></span></a>
         </div>
       </div>
     </div>
+
     <div class="row">
-      <div class="col-sm-6 col-xs-12 text-center" id="site_heading">FFCS on The Go</div>
-      <div class="text-left col-xs-4 visible-xs">
-        <!-- WhatsApp Share-->
-        <a href="whatsapp://send?text=FFCS made hassle free! Check this out http://ffcsonthego.azurewebsites.net/" class="btn btn-success"><strong>Share </strong><img src="images/whatsapp.png" alt="WhatsApp"></a>
-      </div>
-      <div class="text-right col-sm-6 col-xs-8">
-        <!--Like and Share Facebook buttons-->
-        <iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fffcsonthego.azurewebsites.net%2F&width=147&layout=button_count&action=like&size=large&show_faces=true&share=true&height=46&appId=1698400863751487"
-          width="100%" height="46" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+      <div class="col-sm-12 text-center">
+        <h2>FFCS on The Go</h2>
       </div>
     </div>
+
+    <div id="shareWhatsApp" class="row">
+      <div class="col-xs-12 visible-xs text-center">
+        <!-- WhatsApp Share-->
+        <a href="whatsapp://send?text=FFCS made hassle free! Check this out http://ffcsonthego.azurewebsites.net/" class="btn btn-success">
+          <strong>Share</strong><img src="images/whatsapp.png" alt="Share on WhatsApp">
+        </a>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-12">
+        <!--Recommend and Share Facebook buttons-->
+        <iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fffcsonthego.azurewebsites.net&width=450&layout=standard&action=recommend&size=large&show_faces=true&share=true&height=80&appId=1698400863751487"
+          width="100%" height="64" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+      </div>
+    </div>
+
   </header>
   <!-- End of container-fluid -->
 
@@ -115,8 +128,8 @@
   <!-- option buttons -->
   <div id="option_buttons" class="container">
     <div class="row text-center">
-      <button type="button" id="takeScreenShot" class="btn btn-primary">Take Timetable Screenshot</button>
-      <button type="button" id="toggleClickToSelect" data-toggle="button" class="btn btn-danger" data-state="enabled">Disable Clicking On Timetable</button>
+      <button type="button" id="takeScreenShot" class="btn btn-primary">Take Screenshot</button>
+      <button type="button" id="toggleClickToSelect" data-toggle="button" class="btn btn-danger" data-state="enabled">Disable On Click Selection</button>
       <button type="button" id="resetButton" class="btn btn-success">Reset</button>
     </div>
   </div>
@@ -128,7 +141,6 @@
     <!-- Quick selection tiles - morning slots -->
     <div class="quick-selection noselect">
       <div class="row row-horizon">
-        <!-- IMPORTANT: There should be no other class with name having '-tile'-->
         <div class="col-sm-1"><button class="A1-tile btn btn-default btn-block">A1</button></div>
         <div class="col-sm-1"><button class="B1-tile btn btn-default btn-block">B1</button></div>
         <div class="col-sm-1"><button class="C1-tile btn btn-default btn-block">C1</button></div>
@@ -419,35 +431,40 @@
           </form>
         </div>
         <!-- End of panel-body -->
-        <div id="courseList">
-          <div style="display:none" class="screenshot_msg text-center">
-            <div class="row">
-              <div class="col-xs-11">
-                FFCS on The Go | bit.ly/FFCSOTG
-              </div>
-            </div>
-          </div>
-          <div id="listHearder" class="text-center">
-            <div class="row">
-              <div class="col-xs-3 col-sm-2">Slot</div>
-              <div class="col-xs-2 col-sm-1">Code </div>
-              <div class="hidden-xs col-sm-3">Title</div>
-              <div class="col-xs-5 col-sm-3">Faculty</div>
-              <div class="hidden-xs col-sm-1">Venue</div>
-              <div class="hidden-xs col-sm-1">Credits</div>
-            </div>
-          </div>
-          <ul class="list-group">
-            <li class="list-group-item list-group-item-info total">
-              <div class="row">
-                <span class="col-xs-6 text-right"><strong>Total Credits:</strong></span>
-                <span class="col-xs-6 text-left"><span class="badge">0</span></span>
-              </div>
-            </li>
-          </ul>
-        </div>
       </div>
       <!-- End of panel -->
+    </div>
+  </div>
+  <!-- End of container-->
+
+  <!-- Courses added from panel -->
+  <div class="container">
+    <div id="courseList">
+      <div style="display:none" class="screenshot_msg text-center">
+        <div class="row">
+          <div class="col-xs-11">
+            FFCS on The Go | bit.ly/FFCSOTG
+          </div>
+        </div>
+      </div>
+      <div id="listHearder" class="text-center">
+        <div class="row">
+          <div class="col-xs-3 col-sm-2">Slot</div>
+          <div class="col-xs-2 col-sm-1">Code </div>
+          <div class="hidden-xs col-sm-3">Title</div>
+          <div class="col-xs-5 col-sm-3">Faculty</div>
+          <div class="hidden-xs col-sm-1">Venue</div>
+          <div class="hidden-xs col-sm-1">Credits</div>
+        </div>
+      </div>
+      <ul class="list-group">
+        <li class="list-group-item list-group-item-info total">
+          <div class="row">
+            <span class="col-xs-6 text-right"><strong>Total Credits:</strong></span>
+            <span class="col-xs-6 text-left"><span class="badge">0</span></span>
+          </div>
+        </li>
+      </ul>
     </div>
   </div>
   <!-- End of container-->
@@ -477,7 +494,7 @@
           <div class="col-xs-12">
             <!-- like mic page -->
             <iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2Fmicvitvellore&width=450&layout=standard&action=like&size=large&show_faces=true&share=false&height=80&appId=1698400863751487"
-              width="100%" height="80" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+              width="100%" height="64" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
           </div>
         </div>
         <div class="row">
@@ -516,9 +533,9 @@
   <!-- Easy Autocomplete -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/easy-autocomplete/1.3.5/jquery.easy-autocomplete.min.js"></script>
   <!-- js -->
+  <script src="js/colorChange.js"></script>
   <script src="data/all_data.js"></script>
   <script src="data/unique_courses.js"></script>
-  <script src="js/colorChange.js"></script>
   <script src="js/autocomplete_course.js"></script>
   <script src="js/script.js"></script>
   <!-- enjoy hint -->

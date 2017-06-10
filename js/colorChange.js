@@ -4,12 +4,12 @@ $(function () {
 	// Disable clicking on timetable
 	$("#toggleClickToSelect").click(function () {
 		if ($(this).attr("data-state") === "enabled") {
-			$(this).text("Enable Clicking On Timetable");
+			$(this).text("Enable On Click Selection");
 			$(this).attr("data-state", "disabled");
 			$('.quick-selection *[class*="-tile"]').off();
 			$("#timetable .TimetableContent").off();
 		} else {
-			$(this).text("Disable Clicking On Timetable");
+			$(this).text("Disable On Click Selection");
 			$(this).attr("data-state", "enabled");
 			addColorChangeEvents();
 		}

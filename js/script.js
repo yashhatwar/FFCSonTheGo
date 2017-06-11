@@ -21,14 +21,13 @@ $(function () {
 
     $('#CourseAllocationReport-btn').click(function () {
         $('#ExcelSheet').html('<iframe width="100%" height="100%" frameborder="0" scrolling="no" src="https://onedrive.live.com/embed?cid=D67270317C4D2130&resid=D67270317C4D2130%211971&authkey=AOBukor57oPwDlU&em=2&ActiveCell=\'WINSEM2016-17_CourseAllotted_Re\'!A1&Item=\'WINSEM2016-17_CourseAllotted_Re\'!A%3AN&wdHideGridlines=True&wdDownloadButton=True"></iframe>');
-        $('#ExcelSheet').show();
-        $(this).hide();
+        $('#ExcelSheet').css('height', '35vh');
     });
 
-    // take timetable screenshot
-    $('#takeScreenShot').click(function () {
+    // Timetable screenshot
+    $('#takeScreenshotBtn').click(function () {
         var timetable_img_src;
-        var courseList_img_src;
+        var courseListTable_img_src;
         var newWindow_data = "";
         var original_width = $('body').width();
         $('body').width('1500');
@@ -41,11 +40,11 @@ $(function () {
                 newWindow_data =
                     '<html><head><title>FFCS on The Go</title></head><body><a href="' + timetable_img_src + '" download="FFCSOTG_MyTimeTable"><img src="' + timetable_img_src + '" alt="FFCSonTheGo"/></a>' +
                     '<h1>Click on the image to download.</h1>';
-                html2canvas(document.getElementById('courseList'), {
+                html2canvas(document.getElementById('courseListTable'), {
                     onrendered: function (canvas) {
-                        courseList_img_src = canvas.toDataURL("image/jpeg");
+                        courseListTable_img_src = canvas.toDataURL("image/jpeg");
                         newWindow_data = newWindow_data +
-                            '<a href="' + courseList_img_src + '" download="FFCSOTG_MyCourses"><img src="' + courseList_img_src + '" alt="FFCSonTheGo"/></a>' +
+                            '<a href="' + courseListTable_img_src + '" download="FFCSOTG_MyCourses"><img src="' + courseListTable_img_src + '" alt="FFCSonTheGo"/></a>' +
                             '<h1>Click on the image to download.</h1>' +
                             '</body></html>';
                         newWindow.document.write(newWindow_data);

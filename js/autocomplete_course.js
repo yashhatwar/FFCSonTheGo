@@ -31,7 +31,7 @@ function getSlots(searchCode) {
     var btnGrpHtml = '';
     var insert = '';
 
-    $('#insertSlotBtn').html('');
+    $('#insertCourseSelectionOptions').html('');
     $.each(all_data, function (key, value) {
         if (value.CODE == searchCode) {
             // append slots to add course panel
@@ -50,7 +50,7 @@ function getSlots(searchCode) {
     btnGrpHtml += '</div>';
     insert += btnGrpHtml;
 
-    $('#insertSlotBtn').append(insert);
+    $('#insertCourseSelectionOptions').append(insert);
 }
 
 // autocomplete options

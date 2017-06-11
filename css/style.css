@@ -43,7 +43,8 @@ header .alert {
 }
 
 #option_buttons .btn {
-  margin: 0.25em;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
 }
 
 #timetable .table {
@@ -51,7 +52,8 @@ header .alert {
 }
 
 .quick-selection .btn {
-  min-width: 4em;
+  min-width: 4.5em;
+  margin: 0.25em;
 }
 
 #insertSlotBtn:empty {
@@ -63,12 +65,12 @@ header .alert {
   margin-left: 0;
 }
 
-#courseList .list-group {
-  margin-bottom: 0;
+#courseListTable .table {
+  margin-bottom: 0!important;
 }
 
-#ExcelSheet {
-  height: 35vh;
+#courseListTable .table-responsive {
+  margin-bottom: 0px!important;
 }
 
 #CourseAllocationReport-btn {
@@ -93,6 +95,19 @@ footer {
 .screenshot_msg {
   color: black;
   background-color: white;
+}
+
+
+/* remove collapse of button in #option_buttons and add scroll on overflow */
+
+#option_buttons {
+  white-space: nowrap;
+  overflow-x: auto;
+}
+
+#option_buttons .btn {
+  float: none;
+  display: inline-block;
 }
 
 .screenshot_msg tr,
@@ -153,6 +168,16 @@ footer {
 #timetable .table-bordered td,
 #timetable .table-bordered th {
   border: 1px solid #616161 !important;
+  vertical-align: middle;
+}
+
+
+/* .tt-course-code used when inserting course code in timetable */
+
+#timetable .tt-course-code {
+  display: block;
+  text-align: center;
+  font-size: 1em;
 }
 
 .A1,
@@ -453,23 +478,26 @@ footer {
   color: black !important;
 }
 
-#listHearder {
-  color: white;
-  background-color: #009688;
-  font-weight: 600;
-}
-
 #insertSlotBtn .btn {
   white-space: normal;
-}
-
-#slot-sel-area .list-group-item-danger .badge {
-  background-color: #a94442;
 }
 
 .slot-clash {
   background: red !important;
   color: #fff !important;
+}
+
+#courseListTable {
+  border: 1px solid #e5e5e5;
+}
+
+#courseListTable table th,
+#courseListTable table tr {
+  text-align: center;
+}
+
+#courseListTable .close {
+  float: none;
 }
 
 footer {
@@ -487,8 +515,8 @@ footer a:hover {
 
 
 /**
-* Disable text selection
-*/
+ * Disable text selection
+ */
 
 .noselect {
   -webkit-touch-callout: none;
@@ -507,8 +535,28 @@ footer a:hover {
 
 
 /**
-* Custom scrollbar 
-*/
+ * Add horizontal scroll and don't collapse the elements
+ */
+
+.horizontal-scroll-no-collapse {
+  white-space: nowrap;
+  overflow-x: auto;
+}
+
+.horizontal-scroll-no-collapse>* {
+  float: none;
+  display: inline-block;
+}
+
+.container .horizontal-scroll-no-collapse {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+
+/**
+ * Custom scrollbar 
+ */
 
 ::-webkit-scrollbar {
   height: 0.2em;

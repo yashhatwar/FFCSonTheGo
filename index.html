@@ -36,7 +36,7 @@
   <meta property="fb:app_id" content="1698400863751487" />
   <!--bootstrap -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-horizon/0.1.1/bootstrap-horizon.min.css" />
+  <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-horizon/0.1.1/bootstrap-horizon.min.css" />-->
   <!-- easy-autocomplete -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/easy-autocomplete/1.3.5/easy-autocomplete.min.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/easy-autocomplete/1.3.5/easy-autocomplete.themes.min.css"
@@ -114,7 +114,7 @@
 
     <div class="row">
       <div class="col-sm-12">
-        <!--Recommend and Share Facebook buttons-->
+        <!-- Recommend and Share Facebook buttons -->
         <iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fffcsonthego.azurewebsites.net&width=450&layout=standard&action=recommend&size=large&show_faces=true&share=true&height=80&appId=1698400863751487"
           width="100%" height="64" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
       </div>
@@ -126,46 +126,46 @@
   <hr>
 
   <!-- option buttons -->
-  <div id="option_buttons" class="container">
-    <div class="row text-center">
-      <button type="button" id="takeScreenShot" class="btn btn-primary">Take Screenshot</button>
+  <div class="container-fluid">
+    <div id="option_buttons" class="text-center">
+      <button type="button" id="takeScreenshotBtn" class="btn btn-primary">Screenshot</button>
       <button type="button" id="toggleClickToSelect" data-toggle="button" class="btn btn-danger" data-state="enabled">Disable On Click Selection</button>
       <button type="button" id="resetButton" class="btn btn-success">Reset</button>
     </div>
   </div>
-  <!-- End of container -->
+  <!-- End of container-fluid -->
 
   <hr>
 
   <div class="container">
     <!-- Quick selection tiles - morning slots -->
     <div class="quick-selection noselect">
-      <div class="row row-horizon">
-        <div class="col-sm-1"><button class="A1-tile btn btn-default btn-block">A1</button></div>
-        <div class="col-sm-1"><button class="B1-tile btn btn-default btn-block">B1</button></div>
-        <div class="col-sm-1"><button class="C1-tile btn btn-default btn-block">C1</button></div>
-        <div class="col-sm-1"><button class="D1-tile btn btn-default btn-block">D1</button></div>
-        <div class="col-sm-1"><button class="E1-tile btn btn-default btn-block">E1</button></div>
-        <div class="col-sm-1"><button class="F1-tile btn btn-default btn-block">F1</button></div>
-        <div class="col-sm-1"><button class="G1-tile btn btn-default btn-block">G1</button></div>
+      <div class="horizontal-scroll-no-collapse">
+        <button class="A1-tile btn">A1</button>
+        <button class="B1-tile btn">B1</button>
+        <button class="C1-tile btn">C1</button>
+        <button class="D1-tile btn">D1</button>
+        <button class="E1-tile btn">E1</button>
+        <button class="F1-tile btn">F1</button>
+        <button class="G1-tile btn">G1</button>
       </div>
-      <div class="row row-horizon">
-        <div class="col-sm-1"><button class="TA1-tile btn btn-default btn-block">TA1</button></div>
-        <div class="col-sm-1"><button class="TB1-tile btn btn-default btn-block">TB1</button></div>
-        <div class="col-sm-1"><button class="TC1-tile btn btn-default btn-block">TC1</button></div>
-        <div class="col-sm-1"><button class="TD1-tile btn btn-default btn-block">TD1</button></div>
-        <div class="col-sm-1"><button class="TE1-tile btn btn-default btn-block">TE1</button></div>
-        <div class="col-sm-1"><button class="TF1-tile btn btn-default btn-block">TF1</button></div>
-        <div class="col-sm-1"><button class="TG1-tile btn btn-default btn-block">TG1</button></div>
+      <div class="horizontal-scroll-no-collapse">
+        <button class="TA1-tile btn">TA1</button>
+        <button class="TB1-tile btn">TB1</button>
+        <button class="TC1-tile btn">TC1</button>
+        <button class="TD1-tile btn">TD1</button>
+        <button class="TE1-tile btn">TE1</button>
+        <button class="TF1-tile btn">TF1</button>
+        <button class="TG1-tile btn">TG1</button>
       </div>
-      <div class="row row-horizon">
-        <div class="col-sm-1"><button class="TAA1-tile btn btn-default btn-block">TAA1</button></div>
-        <div class="col-sm-1"><button class="TBB1-tile btn btn-default btn-block" disabled>TBB1</button></div>
-        <div class="col-sm-1"><button class="TCC1-tile btn btn-default btn-block">TCC1</button></div>
-        <div class="col-sm-1"><button class="TDD1-tile btn btn-default btn-block" disabled>TDD1</button></div>
-        <div class="col-sm-1"><button class="TEE1-tile btn btn-default btn-block" disabled>TEE1</button></div>
-        <div class="col-sm-1"><button class="TFF1-tile btn btn-default btn-block" disabled>TFF1</button></div>
-        <div class="col-sm-1"><button class="TGG1-tile btn btn-default btn-block" disabled>TGG1</button></div>
+      <div class="horizontal-scroll-no-collapse">
+        <button class="TAA1-tile btn">TAA1</button>
+        <button class="TBB1-tile btn" disabled>TBB1</button>
+        <button class="TCC1-tile btn">TCC1</button>
+        <button class="TDD1-tile btn" disabled>TDD1</button>
+        <button class="TEE1-tile btn" disabled>TEE1</button>
+        <button class="TFF1-tile btn" disabled>TFF1</button>
+        <button class="TGG1-tile btn" disabled>TGG1</button>
       </div>
     </div>
   </div>
@@ -340,95 +340,101 @@
   <div class="container">
     <!-- Quick selection tiles - evening slots -->
     <div class="quick-selection noselect">
-      <div class="row row-horizon">
-        <div class="col-sm-1"><button class="A2-tile btn btn-default btn-block">A2</button></div>
-        <div class="col-sm-1"><button class="B2-tile btn btn-default btn-block">B2</button></div>
-        <div class="col-sm-1"><button class="C2-tile btn btn-default btn-block">C2</button></div>
-        <div class="col-sm-1"><button class="D2-tile btn btn-default btn-block">D2</button></div>
-        <div class="col-sm-1"><button class="E2-tile btn btn-default btn-block">E2</button></div>
-        <div class="col-sm-1"><button class="F2-tile btn btn-default btn-block">F2</button></div>
-        <div class="col-sm-1"><button class="G2-tile btn btn-default btn-block">G2</button></div>
+      <div class="horizontal-scroll-no-collapse">
+        <button class="A2-tile btn">A2</button>
+        <button class="B2-tile btn">B2</button>
+        <button class="C2-tile btn">C2</button>
+        <button class="D2-tile btn">D2</button>
+        <button class="E2-tile btn">E2</button>
+        <button class="F2-tile btn">F2</button>
+        <button class="G2-tile btn">G2</button>
       </div>
-      <div class="row row-horizon">
-        <div class="col-sm-1"><button class="TA2-tile btn btn-default btn-block">TA2</button></div>
-        <div class="col-sm-1"><button class="TB2-tile btn btn-default btn-block">TB2</button></div>
-        <div class="col-sm-1"><button class="TC2-tile btn btn-default btn-block">TC2</button></div>
-        <div class="col-sm-1"><button class="TD2-tile btn btn-default btn-block">TD2</button></div>
-        <div class="col-sm-1"><button class="TE2-tile btn btn-default btn-block">TE2</button></div>
-        <div class="col-sm-1"><button class="TF2-tile btn btn-default btn-block">TF2</button></div>
-        <div class="col-sm-1"><button class="TG2-tile btn btn-default btn-block">TG2</button></div>
+      <div class="horizontal-scroll-no-collapse">
+        <button class="TA2-tile btn">TA2</button>
+        <button class="TB2-tile btn">TB2</button>
+        <button class="TC2-tile btn">TC2</button>
+        <button class="TD2-tile btn">TD2</button>
+        <button class="TE2-tile btn">TE2</button>
+        <button class="TF2-tile btn">TF2</button>
+        <button class="TG2-tile btn">TG2</button>
       </div>
-      <div class="row row-horizon">
-        <div class="col-sm-1"><button class="TAA2-tile btn btn-default btn-block">TAA2</button></div>
-        <div class="col-sm-1"><button class="TBB2-tile btn btn-default btn-block">TBB2</button></div>
-        <div class="col-sm-1"><button class="TCC2-tile btn btn-default btn-block">TCC2</button></div>
-        <div class="col-sm-1"><button class="TDD2-tile btn btn-default btn-block">TDD2</button></div>
-        <div class="col-sm-1"><button class="TEE2-tile btn btn-default btn-block" disabled>TEE2</button></div>
-        <div class="col-sm-1"><button class="TFF2-tile btn btn-default btn-block" disabled>TFF2</button></div>
-        <div class="col-sm-1"><button class="TGG2-tile btn btn-default btn-block" disabled>TGG2</button></div>
+      <div class="horizontal-scroll-no-collapse">
+        <button class="TAA2-tile btn">TAA2</button>
+        <button class="TBB2-tile btn">TBB2</button>
+        <button class="TCC2-tile btn">TCC2</button>
+        <button class="TDD2-tile btn">TDD2</button>
+        <button class="TEE2-tile btn" disabled>TEE2</button>
+        <button class="TFF2-tile btn" disabled>TFF2</button>
+        <button class="TGG2-tile btn" disabled>TGG2</button>
       </div>
     </div>
   </div>
   <!-- End of container -->
 
-
-  <!-- Slot selection area -->
   <div class="container">
-    <div class="row" id="slot-sel-area">
+    <!-- Slot selection area -->
+    <div id="slot-sel-area" class="row">
       <div class="panel panel-primary">
         <div class="panel-heading text-center">
           <h4>Add Courses To Timetable</h4>
         </div>
         <div class="panel-body">
+
           <form>
-            <div class="form-group col-xs-12 col-md-6">
+
+            <div class="form-group col-xs-12 col-sm-6">
               <label for="inputCourseCode" class="control-label">Course code:</label>
               <div>
                 <input type="text" class="form-control" id="inputCourseCode">
               </div>
             </div>
-            <div class="form-group col-xs-12 col-md-6">
+
+            <div class="form-group col-xs-12 col-sm-6">
               <label for="inputCourseTitle" class="control-label">Course title:</label>
               <div>
                 <input type="text" class="form-control" id="inputCourseTitle">
               </div>
             </div>
-            <!-- inserted slot buttons here -->
-            <div id="insertSlotBtn" class="form-group col-xs-12"></div>
-            <!-- Hide other input fields on mobile devices -->
-            <div class="hidden-xs">
-              <div class="form-group col-xs-12 col-md-6">
-                <label for="inputSlotString" class="control-label">Slot:</label>
-                <div>
-                  <input type="text" class="form-control" id="inputSlotString" placeholder="eg: L1+L2+L3">
-                </div>
-              </div>
-              <div class="form-group col-xs-12 col-md-6">
-                <label for="inputFaculty" class="control-label">Faculty:</label>
-                <div>
-                  <input type="text" placeholder="eg: John Doe" class="form-control" id="inputFaculty">
-                </div>
-              </div>
-              <div class="form-group col-xs-12 col-md-6">
-                <label for="inputVenue" class="control-label">Venue:</label>
-                <div>
-                  <input type="text" placeholder="eg: SJTG01" class="form-control" id="inputVenue">
-                </div>
-              </div>
-              <div class="form-group col-xs-12 col-md-6">
-                <label for="inputCourseCredits" class="control-label">Credits:</label>
-                <div>
-                  <input type="number" class="form-control" placeholder="eg: 4" id="inputCourseCredits">
-                </div>
+
+            <!-- Inserted select course buttons here -->
+            <div id="insertCourseSelectionOptions" class="form-group col-xs-12"></div>
+
+            <div class="form-group hidden-xs col-sm-6">
+              <label for="inputSlotString" class="control-label">Slot:</label>
+              <div>
+                <input type="text" class="form-control" id="inputSlotString" placeholder="eg: L1+L2+L3">
               </div>
             </div>
-            <!-- Add course button -->
+
+            <div class="form-group hidden-xs col-sm-6">
+              <label for="inputFaculty" class="control-label">Faculty:</label>
+              <div>
+                <input type="text" placeholder="eg: John Doe" class="form-control" id="inputFaculty">
+              </div>
+            </div>
+
+            <div class="form-group hidden-xs col-sm-6">
+              <label for="inputVenue" class="control-label">Venue:</label>
+              <div>
+                <input type="text" placeholder="eg: SJTG01" class="form-control" id="inputVenue">
+              </div>
+            </div>
+
+            <div class="form-group hidden-xs col-sm-6">
+              <label for="inputCourseCredits" class="control-label">Credits:</label>
+              <div>
+                <input type="number" class="form-control" placeholder="eg: 4" id="inputCourseCredits">
+              </div>
+            </div>
+
             <div class="form-group col-xs-12">
               <div class="text-right">
-                <button type="button" id="markBtn" class="btn btn-success">Add Course</button>
+                <button type="button" id="addCourseBtn" class="btn btn-success">Add Course</button>
               </div>
             </div>
+
           </form>
+
         </div>
         <!-- End of panel-body -->
       </div>
@@ -437,10 +443,43 @@
   </div>
   <!-- End of container-->
 
-  <!-- Courses added from panel -->
   <div class="container">
-    <div id="courseList">
-      <div style="display:none" class="screenshot_msg text-center">
+    <!-- Courses added from panel -->
+    <div id="courseListTable" class="row">
+      <div class="table-responsive">
+        <table class="table">
+          <thead>
+            <tr style="display:none" class="screenshot_msg">
+              <td colspan="7">FFCS on The Go | bit.ly/FFCSOTG</td>
+            </tr>
+            <tr class="success">
+              <th>Slot</th>
+              <th>Code</th>
+              <th>Title</th>
+              <th>Faculty</th>
+              <th>Venue</th>
+              <th>Credits</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Added Courses Record -->
+            <tr>
+              <td>Slot</td>
+              <td>Code</td>
+              <td>Title</td>
+              <td>Faculty</td>
+              <td>Venue</td>
+              <td>Credits</td>
+              <td><span class="close">&times;</span></td>
+            </tr>
+            <tr class="active" id="totalCreditsTr">
+              <td colspan="7"><strong>Total Credits: <span id="totalCredits">0</span></strong></td>
+            </tr>
+          </tbody>
+        </table>
+
+        <!--<div style="display:none" class="screenshot_msg text-center">
         <div class="row">
           <div class="col-xs-11">
             FFCS on The Go | bit.ly/FFCSOTG
@@ -464,20 +503,18 @@
             <span class="col-xs-6 text-left"><span class="badge">0</span></span>
           </div>
         </li>
-      </ul>
-    </div>
-  </div>
-  <!-- End of container-->
-
-  <div class="container-fluid hidden-xs">
-    <div class="row text-center">
-      <div class="col-sm-12">
-        <button id="CourseAllocationReport-btn" type="button" class="btn btn-info">Load Course Allocation Report</button>
+      </ul>-->
       </div>
     </div>
+  </div>
+  <!-- End of container -->
+
+  <div class="container-fluid hidden-xs">
     <!-- Embed code Excel online -->
-    <div class="row">
-      <div id="ExcelSheet" style="display:none" class="col-sm-12"></div>
+    <div class="row text-center">
+      <div id="ExcelSheet" class="col-sm-12">
+        <button id="CourseAllocationReport-btn" type="button" class="btn btn-info">Load Course Allocation Report</button>
+      </div>
     </div>
   </div>
   <!-- End of container-fluid-->
@@ -538,6 +575,8 @@
   <script src="data/unique_courses.js"></script>
   <script src="js/autocomplete_course.js"></script>
   <script src="js/script.js"></script>
+  <!-- localForage -->
+  <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/localforage/1.5.0/localforage.min.js"></script>-->
   <!-- enjoy hint -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/enjoyhint/3.1.0/enjoyhint.min.js"></script>
   <script src="js/enjoyhintsetup.js"></script>

@@ -1,6 +1,5 @@
-var totalCredits = 0;
-var allAddedCourses = [];
-var courseCounter = 0;
+var allAddedCourses = {};
+var courseCounter = 0; // use for unique data-course attribute
 
 $(function () {
 	addColorChangeEvents();
@@ -22,17 +21,17 @@ $(function () {
 	});
 
 	$('#slot-sel-area #addCourseBtn').click(function () {
-		var courseCode = $('inputCourseCode').val().trim();
-		var courseTile = $('inputCourseTitle').val().trim();
-		var faculty = $('inputFaculty').val().trim();
-		var slotString = $('inputSlotString').val().trim();
-		var venue = $('inputVenue').val().trim();
-		var credits = $('inputCourseCredits').val().trim();
+		var courseCode = $('#inputCourseCode').val().trim();
+		var courseTile = $('#inputCourseTitle').val().trim();
+		var faculty = $('#inputFaculty').val().trim();
+		var slotString = $('#inputSlotString').val().trim();
+		var venue = $('#inputVenue').val().trim();
+		var credits = $('#inputCourseCredits').val().trim();
 
 		var slotArray = (function () {
 			var arr = [];
 			slotString.split(/\s*\+\s*/).forEach(function (el) {
-				if ($('.' + el)) {
+				if (el && $('.' + el)) {
 					arr.push(el);
 				}
 			});
@@ -42,276 +41,24 @@ $(function () {
 
 		addCourseToTimetable(courseCode, venue, slotArray);
 		insertCourseToCourseListTable(courseCode, courseTile, faculty, slotArray, venue, credits);
+		checkSlotClash();
+
+		// ('course' + courseCounter) will be unique class to div inserted in timetable and course list
+		allAddedCourses['course' + courseCounter] = [courseCode, courseTile, faculty, slotArray, venue, credits];
 	});
 
-	/**
-	 * Code to generate a custom course list through #slot-sel-area, manage the
-	 * list and to mark the added slots to the timetable.
-	 */
+	$('#resetButton').click(function () {
+		$('#timetable .TimetableContent').removeClass("highlight clash");
+		$('.quick-selection *[class*="-tile"]').removeClass("highlight");
+		if ($('#timetable tr div[data-course]')) {
+			$('#timetable tr div[data-course]').remove();
+		}
+		if ($('#courseListTable tbody tr[data-course]')) {
+			$('#courseListTable tbody tr[data-course]').remove();
+		}
 
-	// (function () {
-
-	// 	var totalCredits = 0;
-
-	// 	function CourseRecord(slots, title, code, venue, fac, credits, $li) {
-	// 		this.slots = slots;
-	// 		this.title = title;
-	// 		this.code = code;
-	// 		this.venue = venue;
-	// 		this.fac = fac;
-	// 		this.credits = credits;
-	// 		this.$li = $li;
-	// 		this.isClashing = false;
-	// 	}
-
-	// 	function isSlotValid(slot) {
-	// 		if ($("." + slot)) {
-	// 			return true;
-	// 		}
-	// 		return false;
-	// 	}
-
-	// 	var CRM = {
-	// 		courses: [],
-	// 		add: function (slots, title, code, venue, fac, credits, $li) {
-	// 			slots = this.expandSlots(slots);
-	// 			var record = new CourseRecord(slots, title, code, venue, fac, credits, $li);
-	// 			var clashes = this.getClashingSlots(record);
-	// 			if (clashes.length()) {
-	// 				record.isClashing = true;
-	// 			}
-
-	// 			this.mark(record, clashes);
-	// 			this.courses.push(record);
-	// 		},
-
-	// 		getClashingSlots: function (newRecord) {
-	// 			var clashes = {
-	// 				arr: [],
-	// 				get: function (index) {
-	// 					return this.arr[index];
-	// 				},
-
-	// 				length: function () {
-	// 					return this.arr.length;
-	// 				},
-
-	// 				add: function (slot, rec1, rec2) {
-	// 					var isAdded = false;
-	// 					if (this.arr.length === 0) {
-	// 						this.arr.push({
-	// 							slot: slot,
-	// 							records: [rec1, rec2]
-	// 						});
-	// 						return;
-	// 					}
-
-	// 					this.arr.forEach(function (clash) {
-	// 						if (slot === clash.slot) {
-	// 							isAdded = true;
-	// 							if (clash.records.indexOf(rec1) === -1) {
-	// 								clash.records.push(rec1);
-	// 							}
-	// 							if (clash.records.indexOf(rec2) === -1) {
-	// 								clash.records.push(rec2);
-	// 							}
-	// 						}
-	// 					});
-
-	// 					if (!isAdded) {
-	// 						this.arr.push({
-	// 							slot: slot,
-	// 							records: [rec1, rec2]
-	// 						});
-	// 					}
-
-	// 				}
-	// 			};
-
-	// 			this.courses.forEach(function (otherRecord) {
-	// 				newRecord.slots.forEach(function (newSlot) {
-	// 					if (otherRecord.slots.indexOf(newSlot) >= 0) {
-	// 						clashes.add(newSlot, newRecord, otherRecord);
-	// 					}
-	// 				});
-	// 			});
-
-	// 			return clashes;
-	// 		},
-	// 		mark: function (record, clashes) {
-	// 			var i, loopSlot;
-
-	// 			record.slots.forEach(function (slot) {
-	// 				this.highlight(slot);
-	// 				this.appendCourseCode(slot, record.code, record.venue);
-	// 			}, this);
-
-	// 			if (record.isClashing) {
-	// 				for (i = 0; i < clashes.length(); ++i) {
-	// 					clashes.get(i).records.forEach(function (record) {
-	// 						record.$li.addClass("list-group-item-danger");
-	// 					});
-	// 					loopSlot = clashes.get(i).slot;
-	// 					this.highlight(loopSlot);
-	// 					this.clashSlot(loopSlot);
-	// 				}
-	// 			}
-	// 		},
-
-	// 		highlight: function (slot) {
-	// 			$("." + slot).addClass("highlight");
-	// 		},
-
-	// 		appendCourseCode: function (slot, code, venue) {
-	// 			var $slot = $("." + slot);
-
-	// 			if (!~$slot.text().indexOf(code)) {
-	// 				$slot.append('<span class="tt-course-code">' + code + ' - ' + venue + '</span>');
-	// 			}
-	// 		},
-
-	// 		clashSlot: function (slot) {
-	// 			$("." + slot).addClass("slot-clash");
-	// 		}
-	// 	};
-
-	// 	CRM.expandSlots = function (slots) {
-	// 		var i, length = slots.length;
-	// 		for (i = 0; i < length; ++i) {
-	// 			if (this.getSlotType(slots[i]) === "lab") continue;
-	// 			else {
-	// 				slots = slots.concat(this.convertToLab(slots[i]));
-	// 			}
-	// 		}
-	// 		return slots;
-	// 	};
-
-	// 	CRM.getSlotType = function (slot) {
-	// 		return /^L/.test(slot) ? "lab" : "theory";
-	// 	};
-
-	// 	CRM.convertToLab = function (slot) {
-	// 		var arr = [];
-	// 		$("." + slot).each(function () {
-	// 			arr.push($(this).text().replace(/^.*(L\d{1,2}).*$/, "$1"));
-	// 		});
-	// 		return arr;
-	// 	};
-
-	// 	CRM.listenForRemove = function () {
-	// 		var self = this;
-	// 		$("#slot-sel-area ul").on("click", "span.close", function () {
-	// 			var $li = $(this).parents().filter("li.list-group-item");
-	// 			var liDom = $li.get(0);
-	// 			var i;
-	// 			for (i = 0; i < self.courses.length; ++i) {
-	// 				if (self.courses[i].$li.get(0) === liDom) {
-	// 					self.courses.splice(i, 1);
-	// 					$(".TimetableContent").removeClass("highlight slot-clash");
-	// 					$(".TimetableContent").find(".tt-course-code").remove();
-	// 					$("#slot-sel-area .list-group li").removeClass("list-group-item-danger");
-	// 					break;
-	// 				}
-	// 			}
-
-	// 			var backupCourses = self.courses;
-	// 			self.courses = [];
-
-	// 			backupCourses.forEach(function (record) {
-	// 				var clashes = self.getClashingSlots(record);
-	// 				if (clashes.length()) {
-	// 					record.isClashing = true;
-	// 				}
-
-	// 				self.mark(record, clashes);
-	// 				self.courses.push(record);
-
-	// 			});
-
-	// 			totalCredits -= Number($li.find(".badge").text());
-
-	// 			totalSpan.text(totalCredits);
-
-	// 			$li.detach();
-
-	// 		});
-	// 	};
-
-	// 	CRM.listenForRemove();
-
-	// 	var totalContainer = $("#slot-sel-area .list-group li.total");
-	// 	var totalSpan = totalContainer.find(".badge");
-
-	// 	$("#slot-sel-area .panel-body #markBtn").click(function () {
-	// 		var slot, slotArray, i, normSlotString;
-	// 		slot = $("#inputSlotString").val().trim();
-	// 		if (!slot) {
-	// 			$("#slot-sel-area .form-group").eq(0).addClass("has-error");
-	// 			return;
-	// 		}
-
-	// 		faculty = $("#inputFaculty").val().trim();
-	// 		course = $("#inputCourseTitle").val().trim();
-	// 		courseCode = $("#inputCourseCode").val().trim();
-	// 		venue = $("#inputVenue").val().trim();
-	// 		credits = Number($("#inputCourseCredits").val());
-
-	//  	slotArray = slot.split(/\s*\+\s*/);
-
-	// 		normSlotString = slotArray.join(" + ");
-
-	// 		var $li = $('<li class="list-group-item">' +
-	// 			'<div class="row">' +
-	// 			'<div class="col-xs-3 col-sm-2 text-left">' + normSlotString + '</div>' +
-	// 			'<div class="col-xs-2 col-sm-1 text-center">' + courseCode + '</div>' +
-	// 			'<div class="hidden-xs col-sm-3 text-center">' + course + '</div>' +
-	// 			'<div class="col-xs-5 col-sm-3 text-center">' + faculty + '</div>' +
-	// 			'<div class="hidden-xs col-sm-1 text-center">' + venue + '</div>' +
-	// 			'<div class="hidden-xs col-sm-1 text-center">' +
-	// 			'<span class="badge">' + (credits ? credits : 0) + '</span>' +
-	// 			'</div>' +
-	// 			'<div class="col-xs-2 col-sm-1 text-right">' +
-	// 			'<span class="close">&times;</span>' +
-	// 			'</div>' +
-	// 			'</div>' +
-	// 			'</li>');
-
-	// 		totalContainer.before($li);
-
-	// 		totalCredits += credits;
-
-	// 		totalSpan.text(totalCredits);
-
-	// 		for (i = 0; i < slotArray.length; ++i) {
-	// 			slotArray[i] = slotArray[i].toUpperCase();
-	// 			if (!isSlotValid(slotArray[i])) {
-	// 				return false;
-	// 			}
-	// 		}
-
-	// 		$("#inputCourseCode").val("");
-	// 		$("#inputVenue").val("");
-	// 		$("#inputFaculty").val("");
-	// 		$("#inputCourseTitle").val("");
-	// 		$("#inputSlotString").val("");
-	// 		$("#inputCourseCredits").val("");
-	// 		$('#insertCourseSelectionOptions').html('');
-
-	// 		CRM.add(slotArray, course, courseCode, venue, faculty, credits, $li);
-	// 	});
-
-	// 	$("#resetButton").click(function () {
-	// 		$('#insertCourseSelectionOptions').text('');
-	// 		$(".TimetableContent").removeClass("highlight slot-clash");
-	// 		$(".TimetableContent").find(".tt-course-code").remove();
-	// 		$('.quick-selection *[class*="-tile"]').removeClass("highlight");
-	// 		$("#slot-sel-area").find(".list-group-item").not(totalContainer).remove();
-	// 		totalCredits = 0;
-	// 		CRM.courses = [];
-	// 		totalSpan.text(0);
-	// 	});
-	// })();
-	// // End of anonymous function block
+		courseCounter = 0; // not really need to be initialized again
+	});
 });
 
 function addColorChangeEvents() {
@@ -336,6 +83,74 @@ function addColorChangeEvents() {
 	});
 }
 
-function addCourseToTimetable(courseCode, venue, slotArray) {}
+function addCourseToTimetable(courseCode, venue, slotArray) {
+	slotArray.forEach(function (slot) {
+		var $divElement = $('<div data-course="' + 'course' + courseCounter + '">' + courseCode + '-' + venue + '</div>');
+		$('#timetable tr .' + slot).addClass('highlight').append($divElement);
+	});
+}
 
-function insertCourseToCourseListTable(courseCode, courseTile, faculty, slotArray, venue, credits) {}
+function insertCourseToCourseListTable(courseCode, courseTile, faculty, slotArray, venue, credits) {
+	var $trElement = $('<tr data-course="' + 'course' + courseCounter + '">' +
+		'<td>' + slotArray.join('+') + '</td>' +
+		'<td>' + courseCode + '</td>' +
+		'<td>' + courseTile + '</td>' +
+		'<td>' + faculty + '</td>' +
+		'<td>' + venue + '</td>' +
+		'<td>' + credits + '</td>' +
+		'<td><span class="close">&times;</span></td>' +
+		'</tr>');
+
+	// attach course removal listener
+	$trElement.find('.close').click(removeCourse);
+
+	$('#courseListTable tbody #totalCreditsTr').before($trElement);
+
+	// update credits
+	updateCredits();
+}
+
+function updateCredits() {
+	var totalCredits = 0;
+	$('#courseListTable tbody tr').not('#totalCreditsTr').each(function () {
+		// 6th column in credits column
+		totalCredits += Number($(this).children('td').eq(5).text());
+	});
+	$('#totalCredits').text(totalCredits);
+}
+
+function checkSlotClash() {
+	// Remove danger class (shows clashing) form tr in course list table.
+	$('#courseListTable tbody tr').removeClass('danger');
+
+	// Check clash from timetable in each slot area
+	$('#timetable tr .highlight').each(function () {
+		if ($(this).children('div[data-course]').length > 1) {
+			// clash
+			// remove highlight, add clash in timetable
+			$(this).addClass('clash');
+			// show clash in course list table
+			$(this).children('div[data-course]').each(function () {
+				var dataCourse = $(this).attr("data-course");
+				// Add danger class to tr of clashing course list table.
+				$('#courseListTable tbody tr[data-course="' + dataCourse + '"]').addClass('danger');
+			});
+		} else if ($(this).children('div[data-course]').length === 1) {
+			// no clash
+			$(this).removeClass('clash').addClass('highlight');
+		} else {
+			// no course present
+			$(this).removeClass('clash highlight');
+		}
+	});
+}
+
+function removeCourse() {
+	var dataCourse = $(this).closest('tr').attr('data-course');
+
+	$('#timetable tr td div[data-course="' + dataCourse + '"]').remove();
+	$('#courseListTable tbody tr[data-course="' + dataCourse + '"]').remove();
+
+	checkSlotClash();
+	updateCredits();
+}

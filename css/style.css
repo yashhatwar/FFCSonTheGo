@@ -174,10 +174,13 @@ footer {
 
 /* .tt-course-code used when inserting course code in timetable */
 
-#timetable .tt-course-code {
-  display: block;
-  text-align: center;
-  font-size: 1em;
+#timetable td div {
+  font-size: 0.9em;
+}
+
+#timetable td.clash {
+  background: red !important;
+  color: #fff !important;
 }
 
 .A1,
@@ -482,11 +485,6 @@ footer {
   white-space: normal;
 }
 
-.slot-clash {
-  background: red !important;
-  color: #fff !important;
-}
-
 #courseListTable {
   border: 1px solid #e5e5e5;
 }
@@ -494,6 +492,10 @@ footer {
 #courseListTable table th,
 #courseListTable table tr {
   text-align: center;
+}
+
+#courseListTable table tr:not(first) {
+  background-color: white;
 }
 
 #courseListTable .close {

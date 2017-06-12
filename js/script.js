@@ -38,13 +38,13 @@ $(function () {
             onrendered: function (canvas) {
                 timetable_img_src = canvas.toDataURL("image/jpeg");
                 newWindow_data =
-                    '<html><head><title>FFCS on The Go</title></head><body><a href="' + timetable_img_src + '" download="FFCSOTG_MyTimeTable"><img src="' + timetable_img_src + '" alt="FFCSonTheGo"/></a>' +
+                    '<html><head><title>FFCS on The Go</title></head><body><a href="' + timetable_img_src + '" download="FFCSOTG_MyTimeTable"><img width="100%" src="' + timetable_img_src + '" alt="FFCSonTheGo"/></a>' +
                     '<h1>Click on the image to download.</h1>';
                 html2canvas(document.getElementById('courseListTable'), {
                     onrendered: function (canvas) {
                         courseListTable_img_src = canvas.toDataURL("image/jpeg");
                         newWindow_data = newWindow_data +
-                            '<a href="' + courseListTable_img_src + '" download="FFCSOTG_MyCourses"><img src="' + courseListTable_img_src + '" alt="FFCSonTheGo"/></a>' +
+                            '<a href="' + courseListTable_img_src + '" download="FFCSOTG_MyCourses"><img width="100%" src="' + courseListTable_img_src + '" alt="FFCSonTheGo"/></a>' +
                             '<h1>Click on the image to download.</h1>' +
                             '</body></html>';
                         newWindow.document.write(newWindow_data);

@@ -153,4 +153,6 @@ function removeCourse() {
 
 	checkSlotClash();
 	updateCredits();
+
+	delete allAddedCourses["course" + dataCourse];
 }

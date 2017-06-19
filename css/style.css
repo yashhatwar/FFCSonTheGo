@@ -481,6 +481,26 @@ footer {
   color: black !important;
 }
 
+#slot-sel-area blockquote {
+  color: #9E9E9E;
+  font-size: 1.5rem;
+}
+
+#slot-sel-area #insertCourseSelectionOptions div {
+  display: flex;
+  margin-bottom: 0.13rem;
+  word-wrap: break-word;
+  white-space: normal;
+}
+
+#slot-sel-area #insertCourseSelectionOptions div button {
+  min-width: 20rem;
+}
+
+#slot-sel-area #insertCourseSelectionOptions p {
+  color: #616161;
+}
+
 #insertSlotBtn .btn {
   white-space: normal;
 }

@@ -24,9 +24,14 @@ $(function () {
 		var courseCode = $('#inputCourseCode').val().trim();
 		var courseTile = $('#inputCourseTitle').val().trim();
 		var faculty = $('#inputFaculty').val().trim();
-		var slotString = $('#inputSlotString').val().trim();
+		var slotString = $('#inputSlotString').val().toUpperCase().trim();
 		var venue = $('#inputVenue').val().trim();
 		var credits = $('#inputCourseCredits').val().trim();
+
+		if (slotString === '') {
+			$('#inputSlotString').focus();
+			return;
+		}
 
 		var slotArray = (function () {
 			var arr = [];
@@ -50,6 +55,7 @@ $(function () {
 	$('#resetButton').click(function () {
 		$('#timetable .TimetableContent').removeClass("highlight clash");
 		$('.quick-selection *[class*="-tile"]').removeClass("highlight");
+		$('#slot-sel-area input').val("");
 		if ($('#timetable tr div[data-course]')) {
 			$('#timetable tr div[data-course]').remove();
 		}

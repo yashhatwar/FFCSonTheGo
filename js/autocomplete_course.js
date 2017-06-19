@@ -1,8 +1,68 @@
-/**
- * Add slot selection buttons from array of slots
- * function is called in autocomplete_course.js
- */
+$(function () {
+    // autocomplete options
+    var courseCodeOption = {
+        data: unique_courses,
 
+        getValue: "CODE",
+
+        list: {
+            match: {
+                enabled: true
+            },
+
+            maxNumberOfElements: 10,
+
+            onSelectItemEvent: function () {
+                var title = $("#inputCourseCode").getSelectedItemData().TITLE;
+                $("#inputCourseTitle").val(title).trigger("change");
+                var searchCode = $("#inputCourseCode").getSelectedItemData().CODE;
+                getSlots(searchCode);
+            }
+        },
+
+        template: {
+            type: "description",
+            fields: {
+                description: "TITLE"
+            }
+        },
+
+        placeholder: "Search..."
+    };
+
+    var courseTitleOption = {
+        data: unique_courses,
+
+        getValue: "TITLE",
+
+        list: {
+            match: {
+                enabled: true
+            },
+
+            onSelectItemEvent: function () {
+                var code = $("#inputCourseTitle").getSelectedItemData().CODE;
+                $("#inputCourseCode").val(code).trigger("change");
+                getSlots(code);
+            }
+        },
+
+        template: {
+            type: "description",
+            fields: {
+                description: "CODE"
+            }
+        },
+
+        placeholder: "Search..."
+    };
+
+    $("#inputCourseTitle").easyAutocomplete(courseTitleOption);
+    $("#inputCourseCode").easyAutocomplete(courseCodeOption);
+    $("div.easy-autocomplete").attr("style", "");
+});
+
+// Add slot selection buttons from array of slots
 function addSlotSelectionButtons(type, slot, faculty, credits, venue) {
     var btnValue = '';
     var btnText = '';
@@ -16,7 +76,6 @@ function addSlotSelectionButtons(type, slot, faculty, credits, venue) {
 }
 
 // append input fields according to slotBtn click
-
 function slotSelectionBtnClicked(value) {
     value = value.split('|');
     $('#inputSlotString').val(value[0]);
@@ -52,66 +111,3 @@ function getSlots(searchCode) {
 
     $('#insertCourseSelectionOptions').append(insert);
 }
-
-// autocomplete options
-
-var courseCodeOption = {
-    data: unique_courses,
-
-    getValue: "CODE",
-
-    list: {
-        match: {
-            enabled: true
-        },
-
-        maxNumberOfElements: 10,
-
-        onSelectItemEvent: function () {
-            var title = $("#inputCourseCode").getSelectedItemData().TITLE;
-            $("#inputCourseTitle").val(title).trigger("change");
-            var searchCode = $("#inputCourseCode").getSelectedItemData().CODE;
-            getSlots(searchCode);
-        }
-    },
-
-    template: {
-        type: "description",
-        fields: {
-            description: "TITLE"
-        }
-    },
-
-    placeholder: "Search..."
-};
-
-var courseTitleOption = {
-    data: unique_courses,
-
-    getValue: "TITLE",
-
-    list: {
-        match: {
-            enabled: true
-        },
-
-        onSelectItemEvent: function () {
-            var code = $("#inputCourseTitle").getSelectedItemData().CODE;
-            $("#inputCourseCode").val(code).trigger("change");
-            getSlots(code);
-        }
-    },
-
-    template: {
-        type: "description",
-        fields: {
-            description: "CODE"
-        }
-    },
-
-    placeholder: "Search..."
-};
-
-$("#inputCourseTitle").easyAutocomplete(courseTitleOption);
-$("#inputCourseCode").easyAutocomplete(courseCodeOption);
-$("div.easy-autocomplete").attr("style", "");

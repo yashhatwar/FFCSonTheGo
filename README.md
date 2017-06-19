@@ -7,7 +7,7 @@ Website to visualize VIT timetable. Helpful to students of VIT University, Vello
 
 ## Getting Started
 
-Visit the site here https://ffcsonthego.azurewebsites.net/
+Visit the site here [ffcsonthego.azurewebsites.net](https://ffcsonthego.azurewebsites.net/)
 
 ## Contributing
 

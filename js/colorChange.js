@@ -7,13 +7,13 @@ $(function () {
 	// Disable On Click Selection
 	$("#toggleClickToSelect").click(function () {
 		if ($(this).attr("data-state") === "enabled") {
-			$(this).text("Enable On Click Selection");
+			$(this).text("Enable Quick Visualization");
 			$(this).attr("data-state", "disabled");
 			$('.quick-selection *[class*="-tile"]').off();
 			$("#timetable .TimetableContent").off();
 			$('.quick-selection').hide(500);
 		} else {
-			$(this).text("Disable On Click Selection");
+			$(this).text("Disable Quick Visualization");
 			addColorChangeEvents();
 			$(this).attr("data-state", "enabled");
 			$('.quick-selection').show(500);
@@ -57,29 +57,33 @@ $(function () {
 			$('#courseListTable tbody tr[data-course]').remove();
 		}
 
-		courseCounter = 0; // not really need to be initialized again
+		courseCounter = 0; // not really needed to be initialized again
 	});
 });
 
 function addColorChangeEvents() {
 	$("#timetable .TimetableContent:not([disabled])").click(function () {
-		$(this).toggleClass("highlight");
-		if (!$(this).hasClass("highlight")) {
-			$(".quick-selection ." + this.classList[1] + "-tile").removeClass("highlight");
-			return;
-		}
-		if ($("#timetable ." + this.classList[1]).not(".highlight").length === 0) {
-			$(".quick-selection ." + this.classList[1] + "-tile").addClass("highlight");
+		if ((!$(this).hasClass("clash")) && $(this).children("div").length === 0) {
+			$(this).toggleClass("highlight");
+			if (!$(this).hasClass("highlight")) {
+				$(".quick-selection ." + this.classList[1] + "-tile").removeClass("highlight");
+				return;
+			}
+			if ($("#timetable ." + this.classList[1]).not(".highlight").length === 0) {
+				$(".quick-selection ." + this.classList[1] + "-tile").addClass("highlight");
+			}
 		}
 	});
 
 	$('.quick-selection *[class*="-tile"]').click(function () {
-		if ($(this).hasClass("highlight")) {
-			$("#timetable ." + this.classList[0].split('-')[0]).removeClass("highlight");
-		} else {
-			$("#timetable ." + this.classList[0].split('-')[0]).addClass("highlight");
+		if ((!$("#timetable ." + this.classList[0].split('-')[0]).hasClass("clash")) && ($("#timetable ." + this.classList[0].split('-')[0]).children("div").length === 0)) {
+			if ($(this).hasClass("highlight")) {
+				$("#timetable ." + this.classList[0].split('-')[0]).removeClass("highlight");
+			} else {
+				$("#timetable ." + this.classList[0].split('-')[0]).addClass("highlight");
+			}
+			$(this).toggleClass("highlight");
 		}
-		$(this).toggleClass("highlight");
 	});
 }
 
@@ -87,6 +91,9 @@ function addCourseToTimetable(courseCode, venue, slotArray) {
 	slotArray.forEach(function (slot) {
 		var $divElement = $('<div data-course="' + 'course' + courseCounter + '">' + courseCode + '-' + venue + '</div>');
 		$('#timetable tr .' + slot).addClass('highlight').append($divElement);
+		if ($(".quick-selection ." + slot + "-tile")) {
+			$(".quick-selection ." + slot + "-tile").addClass("highlight");
+		}
 	});
 }
 
@@ -127,7 +134,7 @@ function checkSlotClash() {
 	$('#timetable tr .highlight').each(function () {
 		if ($(this).children('div[data-course]').length > 1) {
 			// clash
-			// remove highlight, add clash in timetable
+			// remove, add clash in timetable
 			$(this).addClass('clash');
 			// show clash in course list table
 			$(this).children('div[data-course]').each(function () {
@@ -137,10 +144,11 @@ function checkSlotClash() {
 			});
 		} else if ($(this).children('div[data-course]').length === 1) {
 			// no clash
-			$(this).removeClass('clash').addClass('highlight');
+			$(this).removeClass('clash').addClass("highlight");
 		} else {
 			// no course present
-			$(this).removeClass('clash highlight');
+			$(this).removeClass("clash highlight");
+			$(".quick-selection ." + this.classList[1] + "-tile").removeClass("highlight")
 		}
 	});
 }
@@ -154,5 +162,5 @@ function removeCourse() {
 	checkSlotClash();
 	updateCredits();
 
-	delete allAddedCourses["course" + dataCourse];
+	delete allAddedCourses[dataCourse];
 }

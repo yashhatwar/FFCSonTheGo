@@ -63,6 +63,8 @@ $(function () {
 			$('#courseListTable tbody tr[data-course]').remove();
 		}
 
+		$('#insertCourseSelectionOptions').html("");
+
 		courseCounter = 0; // not really needed to be initialized again
 	});
 });

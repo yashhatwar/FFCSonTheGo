@@ -107,7 +107,7 @@ function removeTouchHoverCSSRule() {
 }
 
 // save data through localForage before close
-window.addEventListener("beforeunload", function (e) {
+function updateLocalForage() {
     var courses = [];
 
     $.each(allAddedCourses, function (key, value) {
@@ -115,4 +115,4 @@ window.addEventListener("beforeunload", function (e) {
     });
 
     localforage.setItem('addedCourses', courses);
-});
+}

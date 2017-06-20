@@ -50,6 +50,7 @@ $(function () {
 		addCourseToTimetable(courseCode, venue, slotArray);
 		insertCourseToCourseListTable(courseCode, courseTile, faculty, slotArray, venue, credits);
 		checkSlotClash();
+		updateLocalForage();
 	});
 
 	$('#resetButton').click(function () {
@@ -67,6 +68,7 @@ $(function () {
 
 		courseCounter = 0; // not really needed to be initialized again
 		allAddedCourses = {};
+		updateLocalForage();
 	});
 });
 
@@ -157,7 +159,7 @@ function checkSlotClash() {
 		} else {
 			// no course present
 			$(this).removeClass("clash highlight");
-			$(".quick-selection ." + this.classList[1] + "-tile").removeClass("highlight")
+			$(".quick-selection ." + this.classList[1] + "-tile").removeClass("highlight");
 		}
 	});
 }
@@ -172,4 +174,5 @@ function removeCourse() {
 	updateCredits();
 
 	delete allAddedCourses[dataCourse];
+	updateLocalForage();
 }

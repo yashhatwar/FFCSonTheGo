@@ -1,5 +1,5 @@
-var allAddedCourses = {};
-var courseCounter = 0; // use for unique data-course attribute
+allAddedCourses = {};
+courseCounter = 0; // use for unique data-course attribute
 
 $(function () {
 	addColorChangeEvents();
@@ -42,14 +42,14 @@ $(function () {
 			});
 			return arr;
 		})();
+
 		courseCounter++;
+		// ('course' + courseCounter) will be unique class to div inserted in timetable and course list
+		allAddedCourses['course' + courseCounter] = [courseCode, courseTile, faculty, slotArray, venue, credits];
 
 		addCourseToTimetable(courseCode, venue, slotArray);
 		insertCourseToCourseListTable(courseCode, courseTile, faculty, slotArray, venue, credits);
 		checkSlotClash();
-
-		// ('course' + courseCounter) will be unique class to div inserted in timetable and course list
-		allAddedCourses['course' + courseCounter] = [courseCode, courseTile, faculty, slotArray, venue, credits];
 	});
 
 	$('#resetButton').click(function () {
@@ -66,6 +66,7 @@ $(function () {
 		$('#insertCourseSelectionOptions').html("");
 
 		courseCounter = 0; // not really needed to be initialized again
+		allAddedCourses = {};
 	});
 });
 

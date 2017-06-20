@@ -24,6 +24,29 @@ $(function () {
         $('#ExcelSheet').css('height', '35vh');
     });
 
+    // load localForage data
+    (function () {
+        localforage.getItem('addedCourses').then(function (value) {
+            if (value !== []) {
+                $.each(value, function (index, arr) {
+                    var courseCode = arr[0];
+                    var courseTile = arr[1];
+                    var faculty = arr[2];
+                    var slotArray = arr[3];
+                    var venue = arr[4];
+                    var credits = arr[5];
+
+                    courseCounter++;
+                    allAddedCourses['course' + courseCounter] = [courseCode, courseTile, faculty, slotArray, venue, credits];
+
+                    addCourseToTimetable(courseCode, venue, slotArray);
+                    insertCourseToCourseListTable(courseCode, courseTile, faculty, slotArray, venue, credits);
+                });
+                checkSlotClash();
+            }
+        });
+    })();
+
     // select all text of input field on focus
     $("input:text").focus(function () {
         $(this).select();
@@ -82,3 +105,14 @@ function removeTouchHoverCSSRule() {
         } catch (e) {}
     }
 }
+
+// save data through localForage before close
+window.addEventListener("beforeunload", function (e) {
+    var courses = [];
+
+    $.each(allAddedCourses, function (key, value) {
+        courses.push(value);
+    });
+
+    localforage.setItem('addedCourses', courses);
+});

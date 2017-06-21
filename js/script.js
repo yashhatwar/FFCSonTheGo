@@ -47,11 +47,6 @@ $(function () {
         });
     })();
 
-    // select all text of input field on focus
-    $("input:text").focus(function () {
-        $(this).select();
-    });
-
     // Timetable screenshot
     $('#takeScreenshotBtn').click(function () {
         var timetable_img_src;

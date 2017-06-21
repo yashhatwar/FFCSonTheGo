@@ -1,6 +1,5 @@
 ﻿<!DOCTYPE html>
-<html lang="en">
-<!--<html lang="en" manifest="appcache.manifest">-->
+<html lang="en" manifest="appcache.manifest">
 
 <head>
   <meta charset="utf-8">
@@ -46,6 +45,8 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/enjoyhint/3.1.0/enjoyhint.css" />
   <!-- css -->
   <link rel="stylesheet" href="css/style.css" />
+  <!-- chat css -->
+  <link rel="stylesheet" href="css/chat.css" />
 </head>
 
 <body>
@@ -376,11 +377,12 @@
     <!-- Slot selection area -->
     <div id="slot-sel-area" class="row">
       <div class="panel panel-primary">
+
         <div class="panel-heading text-center">
           <h4>Add Courses To Timetable</h4>
         </div>
-        <div class="panel-body">
 
+        <div class="panel-body">
           <form>
 
             <div class="form-group col-xs-12 col-sm-6">
@@ -403,26 +405,11 @@
               <div id="insertCourseSelectionOptions" class="list-group horizontal-scroll-no-collapse">
                 <!--<div>
                   <button type="button" class="list-group-item">
-                    <h5 class="list-group-item-heading">F1+TF1+TF1+TF1+TF1+TF1+TF1+TF1+TF1+TF1</h5>
-                    <p class="list-group-item-text">AARTHY S.L | SJTG04 | ETH</p>
-                  </button>
-                  <button type="button" class="list-group-item">
-                    <h5 class="list-group-item-heading">F1+TF1</h5>
-                    <p class="list-group-item-text">AARTHY S.L | SJTG04 | ETH</p>
-                  </button>
-                </div>
-                <div>
-                  <button type="button" class="list-group-item">
-                    <h5 class="list-group-item-heading">F1+TF1+TF1+TF1+TF1+TF1+TF1+TF1+TF1+TF1</h5>
-                    <p class="list-group-item-text">AARTHY S.L | SJTG04 | ETH</p>
-                  </button>
-                  <button type="button" class="list-group-item">
                     <h5 class="list-group-item-heading">F1+TF1</h5>
                     <p class="list-group-item-text">AARTHY S.L | SJTG04 | ETH</p>
                   </button>
                 </div>-->
               </div>
-
             </div>
 
             <div class="form-group hidden-xs col-sm-6">
@@ -460,7 +447,6 @@
             </div>
 
           </form>
-
         </div>
         <!-- End of panel-body -->
       </div>
@@ -553,6 +539,14 @@
   </footer>
   <!-- End of container-fluid -->
 
+  <!-- chat -->
+  <div id="chatbox">
+    <span id="chat-text">Live Chat</span>
+    <div id="minim-chat"><span>&#8595;</span></div>
+    <div id="maxi-chat"><span>&#8593;</span></div>
+    <div id="tlkio" data-channel="VIT-FFCSonTheGo" data-theme="theme--minimal"></div>
+  </div>
+
   <!-- jQuery -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <!-- Bootstrap -->
@@ -569,146 +563,11 @@
   <script src="data/unique_courses.js"></script>
   <script src="js/autocomplete_course.js"></script>
   <script src="js/script.js"></script>
+  <!-- chat js -->
+  <script src="js/chat.js"></script>
   <!-- enjoy hint -->
   <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/enjoyhint/3.1.0/enjoyhint.min.js"></script>
   <script src="js/enjoyhintsetup.js"></script>-->
-
-  <!-- Live Chat -->
-  <div class="chatbox" id="chatbox">
-    <style>
-      .chatbox {
-        width: 100%;
-        max-width: 425px;
-        right: 0;
-        transition: all .4s ease-in-out
-      }
-
-      #close-chat,
-      .minim-button,
-      .maxi-button,
-      .chat-text {
-        font-weight: 700;
-        cursor: pointer;
-        font-family: Arial, sans-serif;
-        text-align: center;
-        height: 20px;
-        line-height: 20px
-      }
-
-      #close-chat,
-      .chatbox {
-        border: 1px solid #A8A8A8
-      }
-
-      .chatbox {
-        position: fixed;
-        bottom: 0;
-        margin: 0 0 -81.4vh 0;
-        background: #fff;
-        border-bottom: none;
-        padding: 28px 10px 10px;
-        z-index: 100000
-      }
-
-      #close-chat {
-        position: absolute;
-        top: 2px;
-        right: 2px;
-        font-size: 24px;
-        border: 1px solid #dedede;
-        width: 20px;
-        background: #fefefe;
-        z-index: 2
-      }
-
-      #minim-chat,
-      #maxi-chat {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 20px;
-        line-height: 20px;
-        cursor: pointer;
-        z-index: 1
-      }
-
-      .minim-button {
-        position: absolute;
-        top: 2px;
-        right: 26px;
-        font-size: 24px;
-        border: 1px solid #dedede;
-        width: 20px;
-        background: #fefefe
-      }
-
-      .maxi-button {
-        position: absolute;
-        top: 2px;
-        right: 26px;
-        font-size: 24px;
-        border: 1px solid #dedede;
-        width: 20px;
-        background: #fefefe;
-      }
-
-      .chat-text {
-        position: absolute;
-        top: 5px;
-        left: 10px;
-        font-size: 16px;
-      }
-
-      @-webkit-keyframes hvr-pulse-grow {
-        to {
-          -webkit-transform: scale(1.1);
-          transform: scale(1.1)
-        }
-      }
-
-      @keyframes hvr-pulse-grow {
-        to {
-          -webkit-transform: scale(1.1);
-          transform: scale(1.1)
-        }
-      }
-    </style>
-    <span class="chat-text">Live Chat</span>
-    <div id="close-chat" onclick="closeChatbox()">&times;</div>
-    <div id="minim-chat" onclick="minimChatbox()"><span class="minim-button">&minus;</span></div>
-    <div id="maxi-chat" onclick="loadChatbox()"><span class="maxi-button">&plus;</span></div>
-    <div id="tlkio" data-channel="VIT-FFCSonTheGo" data-theme="theme--minimal" style="width:100%;height:80vh;"></div>
-  </div>
-
-  <script>
-    //<![CDATA[
-    function loadChatbox() {
-      var e = document.getElementById("minim-chat");
-      e.style.display = "block";
-      var e = document.getElementById("maxi-chat");
-      e.style.display = "none";
-      var e = document.getElementById("chatbox");
-      e.style.margin = "0";
-    }
-
-    function closeChatbox() {
-      var e = document.getElementById("chatbox");
-      e.style.margin = "0 0 -81.4vh 0";
-    }
-
-    function minimChatbox() {
-      var e = document.getElementById("minim-chat");
-      e.style.display = "none";
-      var e = document.getElementById("maxi-chat");
-      e.style.display = "block";
-      var e = document.getElementById("chatbox");
-      e.style.margin = "0 0 -81.4vh 0";
-    }
-    //]]>
-  </script>
-  <script async src="http://tlk.io/embed.js" type="text/javascript"></script>
-  <!-- End of chat -->
 
 </body>
 

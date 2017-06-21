@@ -1,0 +1,22 @@
+.message-button--submit {
+    display: block!important;
+}
+
+.theme--minimal .header-channel {
+    color: #9C27B0!important;
+    text-transform: uppercase!important;
+}
+
+.post-name {
+    font-family: monospace!important;
+    color: #0091EA!important;
+}
+
+.post-message {
+    color: #212121!important;
+}
+
+.header-bar {
+    background: white!important;
+    box-shadow: none!important;
+}

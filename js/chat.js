@@ -1,5 +1,3 @@
-$.getScript("https://tlk.io/embed.js");
-
 $(function () {
     $("#minim-chat").click(function () {
         // $("#minim-chat").css("display", "none");

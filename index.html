@@ -28,6 +28,7 @@
   <meta name="Keywords" content="VIT,University,Vellore,FFCS,ffcsonthego,course,registration,timetable,visualize" />
   <meta name="distribution" content="Global" />
   <meta name="country" content="India" />
+  <meta name="theme-color" content="#9C27B0" />
   <meta property="og:title" content="FFCS on The Go" />
   <meta property="og:url" content="http://ffcsonthego.azurewebsites.net/" />
   <meta property="og:image" content="https://vatz88.github.io/FFCSonTheGo/images/og_image.png" />
@@ -38,8 +39,6 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" />
   <!-- easy-autocomplete -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/easy-autocomplete/1.3.5/easy-autocomplete.min.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/easy-autocomplete/1.3.5/easy-autocomplete.themes.min.css"
-  />
   <!-- enjoy hints -->
   <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/enjoyhint/3.1.0/enjoyhint.css" />-->
   <!-- css -->
@@ -128,10 +127,30 @@
 
   <!-- option buttons -->
   <div class="container-fluid">
-    <div id="option_buttons" class="text-center">
-      <button type="button" id="takeScreenshotBtn" class="btn btn-primary">Timetable Screenshot</button>
-      <button type="button" id="toggleClickToSelect" data-toggle="button" class="btn btn-danger" data-state="enabled">Disable Quick Visualization</button>
-      <button type="button" id="resetButton" class="btn btn-success">Reset</button>
+    <div id="option_buttons" class="horizontal-scroll-no-collapse text-center">
+      <!-- Add timetables button-->
+      <div class="btn-group" role="group">
+        <div class="btn-group">
+          <button id="saved-tt-picker-label" type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+            aria-expanded="false">
+            <span class="btn-text">Table 1</span>
+            <span class="caret"></span>
+          </button>
+          <ul id="saved-tt-picker" class="dropdown-menu">
+            <li><a href="JavaScript:void(0);" data-table-id="0">Table 1</a></li>
+          </ul>
+        </div>
+        <button id="saved-tt-picker-add" type="button" class="btn btn-primary">+</button>
+      </div>
+      <!-- Screenshot button -->
+      <button type="button" id="takeScreenshotBtn" class="btn btn-success">Timetable Screenshot</button>
+      <!-- Quick visualization button -->
+      <button type="button" id="toggleClickToSelect" data-toggle="button" class="btn btn-warning" data-state="enabled">Disable Quick Visualization</button>
+      <!-- Reset button -->
+      <button type="button" id="resetButton" class="btn btn-danger">Reset</button>
+      <!-- Tour button -->
+      <!--<button type="button" id="tourButton" class="btn btn-info">Take A Tour</button>-->
+
     </div>
   </div>
   <!-- End of container-fluid -->
@@ -499,8 +518,6 @@
 
   <div class="container">
     <div class="row">
-      <!-- Workspace -->
-      <!--<div class="col-md-6 hidden-sm hidden-xs"><textarea class="form-control" id="workspace" style="font-size:22px;" rows="15" placeholder="Workspace"></textarea></div>-->
       <!-- facebook -->
       <!--<div class="col-md-6 col-sm-12 col-xs-12">-->
       <div class="col-xs-12">
@@ -559,17 +576,16 @@
   <!-- localForage -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/localforage/1.5.0/localforage.min.js"></script>
   <!-- js -->
-  <script src="js/colorChange.js"></script>
   <script src="data/all_data.js"></script>
   <script src="data/unique_courses.js"></script>
   <script src="js/autocomplete_course.js"></script>
+  <script src="js/colorChange.js"></script>
   <script src="js/script.js"></script>
   <!-- chat js -->
   <script src="js/chat.js"></script>
   <!-- enjoy hint -->
-  <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/enjoyhint/3.1.0/enjoyhint.min.js"></script>
-  <script src="js/enjoyhintsetup.js"></script>-->
-
+  <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/enjoyhint/3.1.0/enjoyhint.min.js"></script>-->
+  <!--<script src="js/enjoyhintsetup.js"></script>-->
 </body>
 
 </html>

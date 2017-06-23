@@ -42,7 +42,7 @@ header .alert {
   width: 80%;
 }
 
-#option_buttons .btn {
+#option_buttons {
   margin-left: 0.5rem;
   margin-right: 0.5rem;
 }
@@ -92,22 +92,21 @@ footer {
   vertical-align: bottom;
 }
 
+
+/* scroll support for dropdown button */
+
+@media screen and (max-width:768px) {
+  #option_buttons .dropdown-menu {
+    position: fixed;
+    top: auto;
+    left: 0;
+    right: 0;
+  }
+}
+
 .screenshot_msg {
   color: black;
   background-color: white;
-}
-
-
-/* remove collapse of button in #option_buttons and add scroll on overflow */
-
-#option_buttons {
-  white-space: nowrap;
-  overflow-x: auto;
-}
-
-#option_buttons .btn {
-  float: none;
-  display: inline-block;
 }
 
 .screenshot_msg tr,
@@ -559,21 +558,22 @@ footer a:hover {
 
 /**
  * Add horizontal scroll and don't collapse the elements
+ * Putting it under @media preserve the original bootstrap properties when there is no overflow
  */
 
-.horizontal-scroll-no-collapse {
-  white-space: nowrap;
-  overflow-x: auto;
-}
-
-.horizontal-scroll-no-collapse>* {
-  float: none;
-  display: inline-block;
-}
-
-.container .horizontal-scroll-no-collapse {
-  margin-left: -15px;
-  margin-right: -15px;
+@media screen and (max-width:768px) {
+  .horizontal-scroll-no-collapse {
+    white-space: nowrap;
+    overflow-x: auto;
+  }
+  .horizontal-scroll-no-collapse>* {
+    float: none;
+    display: inline-block;
+  }
+  .container .horizontal-scroll-no-collapse {
+    margin-left: -15px;
+    margin-right: -15px;
+  }
 }
 
 
@@ -583,10 +583,6 @@ footer a:hover {
 
 ::-webkit-scrollbar {
   height: 0.2em;
-  background: transparent;
-}
-
-::-webkit-scrollbar-thumb {
   background: transparent;
 }
 

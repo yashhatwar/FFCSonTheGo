@@ -24,29 +24,6 @@ $(function () {
         $('#ExcelSheet').css('height', '35vh');
     });
 
-    // load localForage data
-    (function () {
-        localforage.getItem('addedCourses').then(function (value) {
-            if (value !== []) {
-                $.each(value, function (index, arr) {
-                    var courseCode = arr[0];
-                    var courseTile = arr[1];
-                    var faculty = arr[2];
-                    var slotArray = arr[3];
-                    var venue = arr[4];
-                    var credits = arr[5];
-
-                    courseCounter++;
-                    allAddedCourses['course' + courseCounter] = [courseCode, courseTile, faculty, slotArray, venue, credits];
-
-                    addCourseToTimetable(courseCode, venue, slotArray);
-                    insertCourseToCourseListTable(courseCode, courseTile, faculty, slotArray, venue, credits);
-                });
-                checkSlotClash();
-            }
-        });
-    })();
-
     // Timetable screenshot
     $('#takeScreenshotBtn').click(function () {
         var timetable_img_src;
@@ -101,13 +78,12 @@ function removeTouchHoverCSSRule() {
     }
 }
 
-// save data through localForage before close
-function updateLocalForage() {
-    var courses = [];
-
-    $.each(allAddedCourses, function (key, value) {
-        courses.push(value);
-    });
-
-    localforage.setItem('addedCourses', courses);
-}
+// open github repo on ctrl+u
+document.onkeydown = function (e) {
+    if (e.ctrlKey && ((e.keyCode === 117 || e.keyCode === 85))) {
+        window.open("https://github.com/vatz88/FFCSonTheGo");
+        return false;
+    } else {
+        return true;
+    }
+};

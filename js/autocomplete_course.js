@@ -1,117 +1,138 @@
-/**
- * Add slot selection buttons from array of slots
- * function is called in autocomplete_course.js
- */
+$(function () {
+    // autocomplete options
+    var courseCodeOption = {
+        data: unique_courses,
 
-function addSlotSelectionButtons(type, slot, faculty, credits, venue) {
-    var btnValue = '';
-    var btnText = '';
-    btnText = slot + '<strong> | </strong>' + faculty + '<strong> | </strong>' + type + '<strong> | </strong>' + venue;
-    btnValue = slot + '|' + faculty + '|' + type + '|' + venue + '|' + credits;
+        getValue: "CODE",
 
-    var insert =
-        '<a class="btn btn-default" href="#" data-value="' + btnValue + '" onclick="event.preventDefault();slotSelectionBtnClicked(this.getAttribute(\'data-value\'));">' + btnText + '</a>';
+        list: {
+            match: {
+                enabled: true
+            },
 
-    return insert;
-}
+            maxNumberOfElements: 10,
 
-// append input fields according to slotBtn click
-
-function slotSelectionBtnClicked(value) {
-    value = value.split('|');
-    $('#inputSlotString').val(value[0]);
-    $('#inputFaculty').val(value[1]);
-    $('#inputVenue').val(value[3]);
-    $('#inputCourseCredits').val(value[4]);
-}
-
-function getSlots(searchCode) {
-    var BUTTONS_PER_ROW = 3;
-    var total = 0;
-    var btnGrpHtml = '';
-    var insert = '';
-
-    $('#insertSlotBtn').html('');
-    $.each(all_data, function (key, value) {
-        if (value.CODE == searchCode) {
-            // append slots to add course panel
-            if (total % BUTTONS_PER_ROW === 0) {
-                btnGrpHtml += btnGrpHtml ? '</div>' : '';
-                insert += btnGrpHtml;
-                btnGrpHtml = '';
-                btnGrpHtml += '<div class="btn-group btn-group-justified" role="group">';
+            onSelectItemEvent: function () {
+                var title = $("#inputCourseCode").getSelectedItemData().TITLE;
+                $("#inputCourseTitle").val(title).trigger("change");
+                var code = $("#inputCourseCode").getSelectedItemData().CODE;
+                addSlotButtons(code);
             }
+        },
 
-            btnGrpHtml += addSlotSelectionButtons(value.TYPE, value.SLOT, value.FACULTY, value.CREDITS.toString(), value.VENUE);
-            ++total;
-        }
+        template: {
+            type: "description",
+            fields: {
+                description: "TITLE"
+            }
+        },
+
+        placeholder: "Search..."
+    };
+
+    var courseTitleOption = {
+        data: unique_courses,
+
+        getValue: "TITLE",
+
+        list: {
+            match: {
+                enabled: true
+            },
+
+            onSelectItemEvent: function () {
+                var code = $("#inputCourseTitle").getSelectedItemData().CODE;
+                $("#inputCourseCode").val(code).trigger("change");
+                addSlotButtons(code);
+            }
+        },
+
+        template: {
+            type: "description",
+            fields: {
+                description: "CODE"
+            }
+        },
+
+        placeholder: "Search..."
+    };
+
+    $("#insertCourseSelectionOptions").on("click", "button", function () {
+        var code = $(this).data('code');
+        var title = $(this).data('title');
+        var slot = $(this).data('slot');
+        var faculty = $(this).data('faculty');
+        // var type = $(this).data('type');
+        var venue = $(this).data('venue');
+        var credits = $(this).data('credits');
+
+        $('#inputCourseCode').val(code);
+        $('#inputCourseTitle').val(title);
+        $('#inputSlotString').val(slot);
+        $('#inputFaculty').val(faculty);
+        $('#inputVenue').val(venue);
+        $('#inputCourseCredits').val(credits);
     });
 
-    btnGrpHtml += '</div>';
-    insert += btnGrpHtml;
+    $("#insertCourseSelectionOptions").on("dblclick", "button", function () {
+        $('#slot-sel-area #addCourseBtn').click();
+    });
 
-    $('#insertSlotBtn').append(insert);
+    $("#inputCourseTitle").easyAutocomplete(courseTitleOption);
+    $("#inputCourseCode").easyAutocomplete(courseCodeOption);
+    $("div.easy-autocomplete").removeAttr("style"); // for dynamic width
+
+    $('#slot-sel-area input[type="text"]').keyup(function (e) {
+        if (e.which === 13) {
+            $(this).blur();
+        }
+    });
+});
+
+// Add slot selection buttons from array of slots
+function getSlotSelectionButton(code, title, type, slot, faculty, credits, venue) {
+    var $slotButton = $('<button type="button" class="list-group-item"></button>');
+    var $h5 = $('<h5 class="list-group-item-heading"></h5>');
+    var $p = $('<p class="list-group-item-text"></p>');
+
+    $h5.text(slot);
+    $p.text([faculty, venue, type].join(' | '));
+    $slotButton.append($h5);
+    $slotButton.append($p);
+
+    $slotButton.data('code', code);
+    $slotButton.data('title', title);
+    $slotButton.data('slot', slot);
+    $slotButton.data('faculty', faculty);
+    // $slotButton.data('type', type);
+    $slotButton.data('venue', venue);
+    $slotButton.data('credits', credits);
+
+    return $slotButton;
 }
 
-// autocomplete options
+function addSlotButtons(code) {
+    var BUTTONS_PER_DIV = 4;
 
-var courseCodeOption = {
-    data: unique_courses,
+    $('#insertCourseSelectionOptions').html('');
 
-    getValue: "CODE",
+    var buttonsPerDiv = BUTTONS_PER_DIV;
+    var $buttonDiv = $('<div></div>');
+    $('#insertCourseSelectionOptions').append($buttonDiv);
 
-    list: {
-        match: {
-            enabled: true
-        },
+    $.each(all_data, function (key, value) {
+        if (value.CODE === code) {
 
-        maxNumberOfElements: 10,
+            var $slotButton = getSlotSelectionButton(value.CODE, value.TITLE, value.TYPE, value.SLOT, value.FACULTY, value.CREDITS.toString(), value.VENUE);
+            $buttonDiv.append($slotButton);
 
-        onSelectItemEvent: function () {
-            var title = $("#inputCourseCode").getSelectedItemData().TITLE;
-            $("#inputCourseTitle").val(title).trigger("change");
-            var searchCode = $("#inputCourseCode").getSelectedItemData().CODE;
-            getSlots(searchCode);
+            buttonsPerDiv--;
+
+            if (buttonsPerDiv === 0) {
+                $buttonDiv = $('<div></div>');
+                $('#insertCourseSelectionOptions').append($buttonDiv);
+                buttonsPerDiv = BUTTONS_PER_DIV;
+            }
         }
-    },
-
-    template: {
-        type: "description",
-        fields: {
-            description: "TITLE"
-        }
-    },
-
-    placeholder: "Search..."
-};
-
-var courseTitleOption = {
-    data: unique_courses,
-
-    getValue: "TITLE",
-
-    list: {
-        match: {
-            enabled: true
-        },
-
-        onSelectItemEvent: function () {
-            var code = $("#inputCourseTitle").getSelectedItemData().CODE;
-            $("#inputCourseCode").val(code).trigger("change");
-            getSlots(code);
-        }
-    },
-
-    template: {
-        type: "description",
-        fields: {
-            description: "CODE"
-        }
-    },
-
-    placeholder: "Search..."
-};
-
-$("#inputCourseTitle").easyAutocomplete(courseTitleOption);
-$("#inputCourseCode").easyAutocomplete(courseCodeOption);
-$("div.easy-autocomplete").attr("style", "");
+    });
+}

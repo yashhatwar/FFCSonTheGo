@@ -47,6 +47,15 @@ header .alert {
   margin-right: 0.5rem;
 }
 
+.tt-picker-edit-input {
+  /* margin same as bootstrap padding default for .dropdown-menu>li>a*/
+  margin: 3px 20px;
+}
+
+.tt-picker-edit-button {
+  margin-right: 1rem;
+}
+
 #timetable .table {
   margin-bottom: 0!important;
 }
@@ -92,33 +101,8 @@ footer {
   vertical-align: bottom;
 }
 
-
-/* scroll support for dropdown button */
-
-@media screen and (max-width:768px) {
-  #option_buttons .dropdown-menu {
-    position: fixed;
-    top: auto;
-    left: 0;
-    right: 0;
-  }
-}
-
-#option_buttons .saved-tt-picker-btn-group>* {
-  min-width: 20rem;
-}
-
 #option_buttons .dropdown-menu>li:not(:last-child) {
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-}
-
-.tt-picker-edit-input {
-  /* margin same as bootstrap padding default for .dropdown-menu>li>a*/
-  margin: 3px 20px;
-}
-
-.tt-picker-edit-button {
-  margin-right: 1rem;
 }
 
 .screenshot_msg {

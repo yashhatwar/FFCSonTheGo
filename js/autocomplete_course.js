@@ -81,6 +81,12 @@ $(function () {
     $("#inputCourseTitle").easyAutocomplete(courseTitleOption);
     $("#inputCourseCode").easyAutocomplete(courseCodeOption);
     $("div.easy-autocomplete").removeAttr("style"); // for dynamic width
+
+    $('#slot-sel-area input[type="text"]').keyup(function (e) {
+        if (e.which === 13) {
+            $(this).blur();
+        }
+    });
 });
 
 // Add slot selection buttons from array of slots

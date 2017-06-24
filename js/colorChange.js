@@ -1,5 +1,6 @@
 timeTableStorage = [{
 	"id": 0,
+	"name": "Table Default",
 	"data": []
 }];
 
@@ -13,10 +14,10 @@ $(function () {
 			activeTable = timeTableStorage[0];
 
 			fillPage(activeTable.data);
-			updateTableDropdownLabel(0);
+			updateTableDropdownLabel(activeTable.name);
 
 			timeTableStorage.slice(1).forEach(function (table) {
-				addTableDropdownButton(table.id);
+				addTableDropdownButton(table.id, table.name);
 			});
 		});
 	})();
@@ -92,7 +93,7 @@ $(function () {
 		switchTable(selectedTableId);
 	});
 
-	// Remove table button
+	// Remove table
 	$("#saved-tt-picker").on("click", ".tt-picker-remove", function (e) {
 		e.preventDefault();
 		e.stopPropagation();
@@ -101,14 +102,45 @@ $(function () {
 		removeTable(tableId);
 	});
 
+	// Rename table button
+	$("#saved-tt-picker").on("click", ".tt-picker-edit-button", function (e) {
+		e.preventDefault();
+		e.stopPropagation();
+		var tableName = $(this).closest("a").children(".tt-table-name").text().trim();
+		$(this).closest("a").siblings("input").val(tableName);
+		$(this).closest("a").siblings("input").show().focus();
+		$(this).closest("a").hide();
+	});
+
+	// Rename input focus out
+	$("#saved-tt-picker").on("focusout", ".tt-picker-edit-input", function (e) {
+		e.preventDefault();
+		e.stopPropagation();
+		var tableId = Number($(this).siblings("a").data("table-id"));
+		var tableName = $(this).val();
+		$(this).siblings("a").children(".tt-table-name").text(tableName);
+		$(this).siblings("a").show();
+		$(this).hide();
+		renameTable(tableId, tableName);
+	});
+
+	$("#saved-tt-picker").on("keydown", ".tt-picker-edit-input", function (e) {
+		// enter or Esc key
+		if (e.which === 13 || e.which === 27) {
+			$(this).blur();
+		}
+	});
+
 	// Add table button
 	$("#saved-tt-picker-add").click(function () {
 		var newTableId = timeTableStorage[timeTableStorage.length - 1].id + 1;
+		var newTableName = "Table " + newTableId;
 		timeTableStorage.push({
 			"id": newTableId,
+			"name": newTableName,
 			"data": []
 		});
-		addTableDropdownButton(newTableId);
+		addTableDropdownButton(newTableId, newTableName);
 		switchTable(newTableId);
 		updateLocalForage();
 	});
@@ -262,20 +294,18 @@ function fillPage(data) {
 function switchTable(tableId) {
 	clearPage();
 
-	updateTableDropdownLabel(tableId);
-
 	for (var i = 0; i < timeTableStorage.length; i++) {
 		if (tableId == timeTableStorage[i].id) {
 			activeTable = timeTableStorage[i];
+			updateTableDropdownLabel(activeTable.name);
 			fillPage(activeTable.data);
 			return;
 		}
 	}
 }
 
-function updateTableDropdownLabel(tableId) {
-	var labelText = tableId ? "Table " + (tableId + 1) : "Table 1";
-	$("#saved-tt-picker-label .btn-text").text(labelText);
+function updateTableDropdownLabel(tableName) {
+	$("#saved-tt-picker-label .btn-text").text(tableName);
 }
 
 function removeTable(tableId) {
@@ -286,18 +316,34 @@ function removeTable(tableId) {
 				switchTable(timeTableStorage[i - 1].id);
 			}
 			timeTableStorage.splice(i, 1);
-			break;
+			updateLocalForage();
+			return;
 		}
 	}
-
-	updateLocalForage();
 }
 
-function addTableDropdownButton(tableId) {
+function renameTable(tableId, tableName) {
+	for (var i = 0; i < timeTableStorage.length; i++) {
+		if (timeTableStorage[i].id == tableId) {
+			timeTableStorage[i].name = tableName;
+			updateLocalForage();
+			// If active table is renamed
+			if (activeTable.id == tableId) {
+				updateTableDropdownLabel(tableName);
+			}
+			return;
+		}
+	}
+}
+
+function addTableDropdownButton(tableId, tableName) {
 	$("#saved-tt-picker").append(
 		'<li>' +
-		'<a href="JavaScript:void(0);" data-table-id="' + tableId + '">Table ' + (tableId + 1) +
+		'<input class="tt-picker-edit-input" style="display:none;" type="text">' +
+		'<a href="JavaScript:void(0);" data-table-id="' + tableId + '">' +
+		'<span class="tt-table-name">' + tableName + '</span>' +
 		'<button title="Remove" type="button" class="close tt-picker-remove" aria-label="Remove"><span aria-hidden="true">&times;</span></button>' +
+		'<button title="Rename" type="button" class="close tt-picker-edit-button" aria-label="Rename"><span aria-hidden="true">&#9998;</span></button>' +
 		'</a>' +
 		'</li>'
 	);

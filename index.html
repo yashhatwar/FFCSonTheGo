@@ -130,14 +130,19 @@
     <div id="option_buttons" class="horizontal-scroll-no-collapse text-center">
       <!-- Add timetables button-->
       <div class="btn-group" role="group">
-        <div class="btn-group">
+        <div class="btn-group saved-tt-picker-btn-group">
           <button id="saved-tt-picker-label" type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
             aria-expanded="false">
             <span class="btn-text">Table 1</span>
             <span class="caret"></span>
           </button>
           <ul id="saved-tt-picker" class="dropdown-menu">
-            <li><a href="JavaScript:void(0);" data-table-id="0">Table 1</a></li>
+            <li>
+              <!--<input class="tt-picker-edit-input" style="display:none;" type="text">-->
+              <a href="JavaScript:void(0);" data-table-id="0"><span class="tt-table-name">Table Default</span>
+                <!--<button title="Rename" type="button" class="close tt-picker-edit-button"><span>&#9998;</span></button>-->
+              </a>
+            </li>
           </ul>
         </div>
         <button id="saved-tt-picker-add" type="button" class="btn btn-primary">+</button>

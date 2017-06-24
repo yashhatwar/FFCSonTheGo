@@ -13,12 +13,6 @@ $(function () {
         return false;
     });
 
-    $('input[type="text"]').keyup(function (e) {
-        if (e.which === 13) {
-            $(this).blur();
-        }
-    });
-
     $('#CourseAllocationReport-btn').click(function () {
         $('#ExcelSheet').html('<iframe width="100%" height="100%" frameborder="0" scrolling="no" src="https://onedrive.live.com/embed?cid=D67270317C4D2130&resid=D67270317C4D2130%211971&authkey=AOBukor57oPwDlU&em=2&ActiveCell=\'WINSEM2016-17_CourseAllotted_Re\'!A1&Item=\'WINSEM2016-17_CourseAllotted_Re\'!A%3AN&wdHideGridlines=True&wdDownloadButton=True"></iframe>');
         $('#ExcelSheet').css('height', '35vh');

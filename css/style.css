@@ -104,6 +104,23 @@ footer {
   }
 }
 
+#option_buttons .saved-tt-picker-btn-group>* {
+  min-width: 20rem;
+}
+
+#option_buttons .dropdown-menu>li:not(:last-child) {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.tt-picker-edit-input {
+  /* margin same as bootstrap padding default for .dropdown-menu>li>a*/
+  margin: 3px 20px;
+}
+
+.tt-picker-edit-button {
+  margin-right: 1rem;
+}
+
 .screenshot_msg {
   color: black;
   background-color: white;

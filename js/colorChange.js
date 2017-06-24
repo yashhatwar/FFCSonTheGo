@@ -29,19 +29,19 @@ var highlighted = {
 
 $(function () {
 	// load localForage data
-	(function () {
-		localforage.getItem('timeTableStorage').then(function (storedValue) {
-			timeTableStorage = storedValue || timeTableStorage;
-			activeTable = timeTableStorage[0];
+	// (function () {
+	// 	localforage.getItem('timeTableStorage').then(function (storedValue) {
+	// 		timeTableStorage = storedValue || timeTableStorage;
+	// 		activeTable = timeTableStorage[0];
 
-			fillPage(activeTable.data);
-			updateTableDropdownLabel(activeTable.name);
+	// 		fillPage(activeTable.data);
+	// 		updateTableDropdownLabel(activeTable.name);
 
-			timeTableStorage.slice(1).forEach(function (table) {
-				addTableDropdownButton(table.id, table.name);
-			});
-		});
-	})();
+	// 		timeTableStorage.slice(1).forEach(function (table) {
+	// 			addTableDropdownButton(table.id, table.name);
+	// 		});
+	// 	});
+	// })();
 
 	addColorChangeEvents();
 
@@ -396,5 +396,6 @@ function addTableDropdownButton(tableId, tableName) {
 
 // save data through localForage
 function updateLocalForage() {
-	localforage.setItem('timeTableStorage', timeTableStorage);
+	// localforage.setItem('timeTableStorage', timeTableStorage);
+	return;
 }

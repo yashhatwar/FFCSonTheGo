@@ -131,6 +131,7 @@ $(function () {
 		var tableName = $(this).closest("a").children(".tt-table-name").text().trim();
 		$(this).closest("a").siblings("input").val(tableName);
 		$(this).closest("a").siblings("input").show().focus();
+		$(this).closest("a").siblings(".tt-picker-edit-ok").show();
 		$(this).closest("a").hide();
 	});
 
@@ -143,6 +144,7 @@ $(function () {
 		$(this).siblings("a").children(".tt-table-name").text(tableName);
 		$(this).siblings("a").show();
 		$(this).hide();
+		$(this).siblings(".tt-picker-edit-ok").hide();
 		renameTable(tableId, tableName);
 	});
 
@@ -382,9 +384,10 @@ function addTableDropdownButton(tableId, tableName) {
 	$("#saved-tt-picker").append(
 		'<li>' +
 		'<input class="tt-picker-edit-input" style="display:none;" type="text">' +
+		'<button title="Ok" type="button" class="close tt-picker-edit-ok" style="display:none;" aria-label="Ok"><span aria-hidden="true">&#10004;</span></button>' +
 		'<a href="JavaScript:void(0);" data-table-id="' + tableId + '">' +
 		'<span class="tt-table-name">' + tableName + '</span>' +
-		'<button title="Remove" type="button" class="close tt-picker-remove" aria-label="Remove"><span aria-hidden="true">&times;</span></button>' +
+		'<button title="Remove" type="button" class="close tt-picker-remove" aria-label="Remove"><span aria-hidden="true">&#10008;</span></button>' +
 		'<button title="Rename" type="button" class="close tt-picker-edit-button" aria-label="Rename"><span aria-hidden="true">&#9998;</span></button>' +
 		'</a>' +
 		'</li>'

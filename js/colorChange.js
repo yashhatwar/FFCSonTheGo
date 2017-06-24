@@ -1,10 +1,31 @@
 timeTableStorage = [{
 	"id": 0,
 	"name": "Table Default",
-	"data": []
+	"data": [],
 }];
 
 activeTable = timeTableStorage[0];
+
+var highlighted = {
+	0: [],
+	"highlight": function (id) {
+		if (highlighted[id]) {
+			highlighted[id].forEach(function (slot) {
+				$("#timetable ." + slot).addClass("highlight");
+				if ($(".quick-selection ." + slot + "-tile")) {
+					$(".quick-selection ." + slot + "-tile").addClass("highlight");
+				}
+			});
+			$(".quick-selection button").not("[disabled]").each(function () {
+				if ($("#timetable ." + this.classList[0].split('-')[0]).not(".highlight").length === 0) {
+					$(this).addClass("highlight");
+				}
+			});
+		} else {
+			highlighted[id] = [];
+		}
+	}
+};
 
 $(function () {
 	// load localForage data
@@ -85,6 +106,7 @@ $(function () {
 		clearPage();
 		activeTable.data = [];
 		updateLocalForage();
+		highlighted[activeTable.id] = [];
 	});
 
 	// switch table menu option on click
@@ -143,6 +165,7 @@ $(function () {
 		addTableDropdownButton(newTableId, newTableName);
 		switchTable(newTableId);
 		updateLocalForage();
+		highlighted[newTableId] = [];
 	});
 
 });
@@ -153,7 +176,19 @@ function addColorChangeEvents() {
 			$(this).toggleClass("highlight");
 			if (!$(this).hasClass("highlight")) {
 				$(".quick-selection ." + this.classList[1] + "-tile").removeClass("highlight");
+				// remove slots from highlighted
+				var index = highlighted[activeTable.id].indexOf(this.classList[2]);
+				highlighted[activeTable.id].splice(index, 1);
 				return;
+			} else {
+				// add slots to highlighted
+				if (this.classList.length === 3) {
+					// some course may only have lab slot
+					highlighted[activeTable.id].push(this.classList[1]);
+				} else {
+					highlighted[activeTable.id].push(this.classList[2]);
+				}
+
 			}
 			if ($("#timetable ." + this.classList[1]).not(".highlight").length === 0) {
 				$(".quick-selection ." + this.classList[1] + "-tile").addClass("highlight");
@@ -164,8 +199,13 @@ function addColorChangeEvents() {
 		if ((!$("#timetable ." + this.classList[0].split('-')[0]).hasClass("clash")) && ($("#timetable ." + this.classList[0].split('-')[0]).children("div").length === 0)) {
 			if ($(this).hasClass("highlight")) {
 				$("#timetable ." + this.classList[0].split('-')[0]).removeClass("highlight");
+				// remove slots from highlighted
+				var index = highlighted[activeTable.id].indexOf(this.classList[0].split('-')[0]);
+				highlighted[activeTable.id].splice(index, 1);
 			} else {
 				$("#timetable ." + this.classList[0].split('-')[0]).addClass("highlight");
+				// add slots to highlighted
+				highlighted[activeTable.id].push(this.classList[0].split('-')[0]);
 			}
 			$(this).toggleClass("highlight");
 		}
@@ -299,9 +339,11 @@ function switchTable(tableId) {
 			activeTable = timeTableStorage[i];
 			updateTableDropdownLabel(activeTable.name);
 			fillPage(activeTable.data);
-			return;
+			// return;
+			break;
 		}
 	}
+	highlighted.highlight(tableId);
 }
 
 function updateTableDropdownLabel(tableName) {

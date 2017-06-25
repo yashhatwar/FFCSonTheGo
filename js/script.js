@@ -48,6 +48,21 @@ $(function () {
                 });
             }
         });
+        ga('send', {
+            hitType: 'event',
+            eventCategory: 'Timetable',
+            eventAction: 'click',
+            eventLabel: 'Screenshot'
+        });
+    });
+
+    $("#shareWhatsApp a").click(function () {
+        ga('send', {
+            hitType: 'event',
+            eventCategory: 'Share',
+            eventAction: 'click',
+            eventLabel: 'WhatsApp'
+        });
     });
 });
 

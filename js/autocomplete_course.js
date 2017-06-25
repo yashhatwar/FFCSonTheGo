@@ -1,4 +1,52 @@
-$(function () {
+function checkIfDataAvailable(callback) {
+    
+    function getUniqueCourses(callback, all_data) {
+        $.ajax("data/unique_courses.js", {
+            success: function(unique_js, textStatus) {
+                "use strict";
+                var unique_courses;
+                var outdated = false;
+
+                try {
+                    eval(unique_js);
+                    
+                    if(outdated) return;                    
+                    
+                    callback(all_data, unique_courses);
+                } catch(exc) {
+                    console.log(exc);
+                }
+            }
+        })
+    }
+
+    $.ajax("data/all_data.js", {
+        dataType: "text",
+        success: function(all_js) {
+            "use strict";
+            var all_data;
+            var outdated = false;
+
+            try {
+                eval(all_js);
+
+                if(outdated) return;
+
+                getUniqueCourses(callback, all_data);
+            } catch(exc) {
+                console.log(exc);
+            }
+        }
+    });
+}
+
+$(function() {
+    checkIfDataAvailable(initAutocomplete);    
+});
+
+function initAutocomplete(allData, uniqueData) {
+    unique_courses = uniqueData;
+    all_data = allData;
     // autocomplete options
     var courseCodeOption = {
         data: unique_courses,
@@ -87,7 +135,7 @@ $(function () {
             $(this).blur();
         }
     });
-});
+}
 
 // Add slot selection buttons from array of slots
 function getSlotSelectionButton(code, title, type, slot, faculty, credits, venue) {

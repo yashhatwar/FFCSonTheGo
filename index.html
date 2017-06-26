@@ -42,7 +42,7 @@
   <!-- easy-autocomplete -->
   <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/easy-autocomplete/1.3.5/easy-autocomplete.min.css" />-->
   <!-- enjoy hints -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/enjoyhint/3.1.0/enjoyhint.css" />
+  <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/enjoyhint/3.1.0/enjoyhint.css" />-->
   <!-- css -->
   <link rel="stylesheet" href="css/style.css" />
   <!-- chat css -->
@@ -431,7 +431,7 @@
             </div>
 
             <div class="form-group col-xs-12">
-              <!--<blockquote>Search, select then add or double click to quickly add.</blockquote>-->
+              <!--<blockquote class="myBlockquote">Search, select then add or double click to quickly add.</blockquote>-->
               <!-- Inserted select course buttons here -->
               <div id="insertCourseSelectionOptions" class="list-group horizontal-scroll-no-collapse">
                 <!--<div>
@@ -487,10 +487,15 @@
   <!-- End of container-->
 
   <div class="container">
+    <!--<div class="row">
+      <div class="col-xs-12">
+        <blockquote class="myBlockquote">Double tap the course to load it back into the panel.</blockquote>
+      </div>
+    </div>-->
     <!-- Courses added from panel -->
     <div id="courseListTable" class="row">
       <div class="table-responsive">
-        <table class="table">
+        <table class="table table-hover">
           <thead>
             <tr style="display:none" class="screenshot_msg">
               <td colspan="7">FFCS on The Go | bit.ly/FFCSOTG</td>
@@ -585,20 +590,20 @@
   <!-- html2canvas -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.min.js"></script>
   <!-- Easy Autocomplete -->
-  <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/easy-autocomplete/1.3.5/jquery.easy-autocomplete.min.js"></script>-->
+  <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/easy-autocomplete/1.3.5/jquery.easy-autocomplete.min.js"></script>
+  <script src="data/all_data.js"></script>
+  <script src="data/unique_courses.js"></script>
+  <script src="js/autocomplete_course.js"></script>-->
   <!-- localForage -->
   <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/localforage/1.5.0/localforage.min.js"></script>-->
   <!-- js -->
-  <!--<script src="data/all_data.js"></script>
-  <script src="data/unique_courses.js"></script>-->
-  <!--<script src="js/autocomplete_course.js"></script>-->
   <script src="js/colorChange.js"></script>
   <script src="js/script.js"></script>
   <!-- chat js -->
   <!--<script src="js/chat.js"></script>-->
   <!-- enjoy hint -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/enjoyhint/3.1.0/enjoyhint.min.js"></script>
-  <script src="js/enjoyhintsetup.js"></script>
+  <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/enjoyhint/3.1.0/enjoyhint.min.js"></script>
+  <script src="js/enjoyhintsetup.js"></script>-->
 </body>
 
 </html>

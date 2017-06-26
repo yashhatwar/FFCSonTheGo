@@ -101,6 +101,35 @@ $(function () {
 		updateLocalForage();
 	});
 
+	// Load course again in the panel
+	$("#courseListTable table").on("dblclick", "tr", function () {
+		var slotString = $(this).find("td").not("[colspan]").eq(0).text();
+		var courseCode = $(this).find("td").eq(1).text();
+		var courseTile = $(this).find("td").eq(2).text();
+		var faculty = $(this).find("td").eq(3).text();
+		var venue = $(this).find("td").eq(4).text();
+		var credits = $(this).find("td").eq(5).text();
+
+		$('#inputCourseCode').val(courseCode).trigger("change");
+		$('#inputCourseTitle').val(courseTile).trigger("change");
+		$('#inputFaculty').val(faculty).trigger("change");
+		$('#inputSlotString').val(slotString).trigger("change");
+		$('#inputVenue').val(venue).trigger("change");
+		$('#inputCourseCredits').val(credits).trigger("change");
+
+		try {
+			// Function may not work if autocomplete file is commented.
+			addSlotButtons(courseCode);
+		} catch (error) {
+
+		}
+
+		$(this).find(".close").click();
+	});
+
+	// delete course from table
+	$("#courseListTable table").on("click", ".close", removeCourse);
+
 	// Reset current table not all tables
 	$('#resetButton').click(function () {
 		clearPage();
@@ -235,9 +264,6 @@ function insertCourseToCourseListTable(courseId, courseCode, courseTile, faculty
 		'<td><span class="close">&times;</span></td>' +
 		'</tr>');
 
-	// attach course removal listener
-	$trElement.find('.close').click(removeCourse);
-
 	$('#courseListTable tbody #totalCreditsTr').before($trElement);
 
 	// update credits
@@ -280,7 +306,8 @@ function checkSlotClash() {
 	});
 }
 
-function removeCourse() {
+function removeCourse(e) {
+	e.stopPropagation();
 	var dataCourse = $(this).closest('tr').attr('data-course');
 
 	$('#timetable tr td div[data-course="' + dataCourse + '"]').remove();

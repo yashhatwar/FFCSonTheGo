@@ -64,6 +64,15 @@ $(function () {
             eventLabel: 'WhatsApp'
         });
     });
+
+    $("footer a").click(function () {
+        ga('send', {
+            hitType: 'event',
+            eventCategory: 'Promotion',
+            eventAction: 'click',
+            eventLabel: 'VES'
+        });
+    });
 });
 
 // disable hover for touch screen devices

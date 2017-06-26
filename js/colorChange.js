@@ -27,86 +27,21 @@ var highlighted = {
 	}
 };
 
-function loadCourseData() {
-	var isDataAvailable = false;
-
-	function createScript() {
-		var scriptTag = document.createElement("script");
-		scriptTag.async = false;
-		document.body.appendChild(scriptTag);
-		return scriptTag;
-	}
-	
-	function loadAssets(callback) {
-		var scripts = [
-			"https://cdnjs.cloudflare.com/ajax/libs/easy-autocomplete/1.3.5/jquery.easy-autocomplete.min.js",
-			"js/autocomplete_course.js"
-		];
-
-		var stylesheets = [
-			"https://cdnjs.cloudflare.com/ajax/libs/easy-autocomplete/1.3.5/easy-autocomplete.min.css"			
-		];
-
-		stylesheets.forEach(function(link) {
-			$('<link rel="stylesheet" href="' + link + '">').appendTo("head");
-		});
-
-		scripts.slice(0, -1).forEach(function(src) {
-			var scriptTag = createScript();
-			scriptTag.src = src;
-		});
-
-		var scriptTag = createScript();
-		scriptTag.addEventListener("load", callback);		
-		scriptTag.src = scripts[scripts.length - 1];				
-	}
-
-    if(isDataAvailable) {
-		function prepareGetRequest(url) {
-			return $.get(url, {
-				dataType: "json"
-			});
-		}
-
-		var $getRequests = [
-				"data/all_data.json",
-				"data/unique_courses.json"
-			].map(function(url) {
-				return prepareGetRequest(url);
-			});
-
-        $.when.apply($, $getRequests)
-			.done(function(args1, args2) {
-				all_data = args1[0];
-				unique_courses = args2[0];
-
-				loadAssets(function loadAssetsHandler() {
-					initAutocomplete(all_data, unique_courses);
-				});
-			})
-			.fail(function() {
-				console.error("Failed to load course data.");
-			});
-    }
-}
-
 $(function () {
 	// load localForage data
-	// (function () {
-	// 	localforage.getItem('timeTableStorage').then(function (storedValue) {
-	// 		timeTableStorage = storedValue || timeTableStorage;
-	// 		activeTable = timeTableStorage[0];
+	(function () {
+		localforage.getItem('timeTableStorage').then(function (storedValue) {
+			timeTableStorage = storedValue || timeTableStorage;
+			activeTable = timeTableStorage[0];
 
-	// 		fillPage(activeTable.data);
-	// 		updateTableDropdownLabel(activeTable.name);
+			fillPage(activeTable.data);
+			updateTableDropdownLabel(activeTable.name);
 
-	// 		timeTableStorage.slice(1).forEach(function (table) {
-	// 			addTableDropdownButton(table.id, table.name);
-	// 		});
-	// 	});
-	// })();
-
-	loadCourseData();
+			timeTableStorage.slice(1).forEach(function (table) {
+				addTableDropdownButton(table.id, table.name);
+			});
+		});
+	})();
 
 	addColorChangeEvents();
 
@@ -141,11 +76,15 @@ $(function () {
 
 		var slotArray = (function () {
 			var arr = [];
-			slotString.split(/\s*\+\s*/).forEach(function (el) {
-				if (el && $('.' + el)) {
-					arr.push(el);
-				}
-			});
+			try {
+				slotString.split(/\s*\+\s*/).forEach(function (el) {
+					if (el && $('.' + el)) {
+						arr.push(el);
+					}
+				});
+			} catch (error) {
+				arr = [];
+			}
 			return arr;
 		})();
 
@@ -183,7 +122,7 @@ $(function () {
 		$('#inputCourseCredits').val(credits).trigger("change");
 
 		try {
-			// Function may not work if autocomplete file is commented.
+			// Function may not work if autocomplete is not loaded
 			addSlotButtons(courseCode);
 		} catch (error) {
 
@@ -264,6 +203,8 @@ $(function () {
 		highlighted[newTableId] = [];
 	});
 
+	// load course data with autocomplete
+	loadCourseData();
 });
 
 function addColorChangeEvents() {
@@ -488,6 +429,70 @@ function addTableDropdownButton(tableId, tableName) {
 
 // save data through localForage
 function updateLocalForage() {
-	// localforage.setItem('timeTableStorage', timeTableStorage);
+	localforage.setItem('timeTableStorage', timeTableStorage);
 	return;
+}
+
+// load course data with autocomplete
+function loadCourseData() {
+	var isDataAvailable = false;
+
+	function createScript() {
+		var scriptTag = document.createElement("script");
+		scriptTag.async = false;
+		document.body.appendChild(scriptTag);
+		return scriptTag;
+	}
+
+	function loadAssets(callback) {
+		var scripts = [
+			"https://cdnjs.cloudflare.com/ajax/libs/easy-autocomplete/1.3.5/jquery.easy-autocomplete.min.js",
+			"js/autocomplete_course.js"
+		];
+
+		var stylesheets = [
+			"https://cdnjs.cloudflare.com/ajax/libs/easy-autocomplete/1.3.5/easy-autocomplete.min.css"
+		];
+
+		stylesheets.forEach(function (link) {
+			$('<link rel="stylesheet" href="' + link + '">').appendTo("head");
+		});
+
+		scripts.slice(0, -1).forEach(function (src) {
+			var scriptTag = createScript();
+			scriptTag.src = src;
+		});
+
+		var scriptTag = createScript();
+		scriptTag.addEventListener("load", callback);
+		scriptTag.src = scripts[scripts.length - 1];
+	}
+
+	if (isDataAvailable) {
+		var prepareGetRequest = function (url) {
+			return $.get(url, {
+				dataType: "json"
+			});
+		};
+
+		var $getRequests = [
+			"data/all_data.json",
+			"data/unique_courses.json"
+		].map(function (url) {
+			return prepareGetRequest(url);
+		});
+
+		$.when.apply($, $getRequests)
+			.done(function (args1, args2) {
+				all_data = args1[0];
+				unique_courses = args2[0];
+
+				loadAssets(function loadAssetsHandler() {
+					initAutocomplete(all_data, unique_courses);
+				});
+			})
+			.fail(function () {
+				console.error("Failed to load course data.");
+			});
+	}
 }

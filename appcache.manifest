@@ -1,12 +1,11 @@
 CACHE MANIFEST
-# 2017-06-25
-# v1
+# 2017-06-27
 
 css/style.css
 js/script.js
 js/colorChange.js
-data/all_data.js
-data/unique_courses.js
+data/all_data.json
+data/unique_courses.json
 js/autocomplete_course.js
 https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js
 https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css

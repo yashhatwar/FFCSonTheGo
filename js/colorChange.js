@@ -435,7 +435,7 @@ function updateLocalForage() {
 
 // load course data with autocomplete
 function loadCourseData() {
-	var isDataAvailable = false;
+	var isDataAvailable = true;
 
 	function createScript() {
 		var scriptTag = document.createElement("script");
@@ -476,8 +476,8 @@ function loadCourseData() {
 		};
 
 		var $getRequests = [
-			"data/all_data.json",
-			"data/unique_courses.json"
+			"https://ffcsonthego.vatz88.in/data/all_data.json",
+			"https://ffcsonthego.vatz88.in/data/unique_courses.json"
 		].map(function (url) {
 			return prepareGetRequest(url);
 		});

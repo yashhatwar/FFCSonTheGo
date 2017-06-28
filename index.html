@@ -440,31 +440,37 @@
                 </div>
               </div>
 
-              <div class="form-group col-xs-12 col-sm-6 hidden">
-                <label for="inputSlotString" class="control-label">Slot:</label>
-                <div>
-                  <input type="text" class="form-control" id="inputSlotString" placeholder="eg: L1+L2+L3">
-                </div>
+              <div class="form-group col-xs-12 text-center">
+                <button id="slot-sel-area-toggle-fields-btn" type="button" class="btn btn-link">Toggle Other Fields</button>
               </div>
 
-              <div class="form-group col-xs-12 col-sm-6 hidden">
-                <label for="inputFaculty" class="control-label">Faculty:</label>
-                <div>
-                  <input type="text" placeholder="eg: John Doe" class="form-control" id="inputFaculty">
+              <div id="slot-sel-area-toggle-fields" style="display:none;">
+                <div class="form-group col-xs-12 col-sm-6">
+                  <label for="inputSlotString" class="control-label">Slot:</label>
+                  <div>
+                    <input type="text" class="form-control" id="inputSlotString" placeholder="eg: L1+L2+L3">
+                  </div>
                 </div>
-              </div>
 
-              <div class="form-group col-xs-12 col-sm-6 hidden">
-                <label for="inputVenue" class="control-label">Venue:</label>
-                <div>
-                  <input type="text" placeholder="eg: SJTG01" class="form-control" id="inputVenue">
+                <div class="form-group col-xs-12 col-sm-6">
+                  <label for="inputFaculty" class="control-label">Faculty:</label>
+                  <div>
+                    <input type="text" placeholder="eg: John Doe" class="form-control" id="inputFaculty">
+                  </div>
                 </div>
-              </div>
 
-              <div class="form-group col-xs-12 col-sm-6 hidden">
-                <label for="inputCourseCredits" class="control-label">Credits:</label>
-                <div>
-                  <input type="number" class="form-control" placeholder="eg: 4" id="inputCourseCredits">
+                <div class="form-group col-xs-12 col-sm-6">
+                  <label for="inputVenue" class="control-label">Venue:</label>
+                  <div>
+                    <input type="text" placeholder="eg: SJTG01" class="form-control" id="inputVenue">
+                  </div>
+                </div>
+
+                <div class="form-group col-xs-12 col-sm-6">
+                  <label for="inputCourseCredits" class="control-label">Credits:</label>
+                  <div>
+                    <input type="number" class="form-control" placeholder="eg: 4" id="inputCourseCredits">
+                  </div>
                 </div>
               </div>
 
@@ -490,7 +496,7 @@
       </div>
     </div>
     <!-- Courses added from panel -->
-    <div id="courseListTable" class="row">
+    <div id="courseListTable" class="row noselect">
       <div class="table-responsive">
         <table class="table table-hover">
           <thead>

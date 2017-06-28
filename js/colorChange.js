@@ -61,6 +61,11 @@ $(function () {
 		}
 	});
 
+	// Toggle extra fields in slot selection area
+	$("#slot-sel-area-toggle-fields-btn").click(function () {
+		$("#slot-sel-area-toggle-fields").fadeToggle();
+	});
+
 	$('#slot-sel-area #addCourseBtn').click(function () {
 		var courseCode = $('#inputCourseCode').val().trim();
 		var courseTile = $('#inputCourseTitle').val().trim();

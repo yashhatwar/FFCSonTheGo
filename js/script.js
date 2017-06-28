@@ -56,6 +56,15 @@ $(function () {
         });
     });
 
+    $("header .alert-dismissible a").click(function () {
+        ga('send', {
+            hitType: 'event',
+            eventCategory: 'Promotion',
+            eventAction: 'click',
+            eventLabel: 'GitHub'
+        });
+    });
+
     $("#shareWhatsApp a").click(function () {
         ga('send', {
             hitType: 'event',

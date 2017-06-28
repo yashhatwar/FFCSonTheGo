@@ -513,6 +513,8 @@ footer {
 }
 
 #courseListTable {
+  /* background-color important for screenshot */
+  background-color: white;
   border: 1px solid #e5e5e5;
 }
 

@@ -483,6 +483,8 @@ function loadCourseData() {
 		var $getRequests = [
 			"https://ffcsonthego.vatz88.in/data/all_data.json",
 			"https://ffcsonthego.vatz88.in/data/unique_courses.json"
+			// "data/all_data.json",
+			// "data/unique_courses.json"
 		].map(function (url) {
 			return prepareGetRequest(url);
 		});

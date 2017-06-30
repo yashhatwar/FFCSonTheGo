@@ -1,14 +1,11 @@
 CACHE MANIFEST
-# 2017-06-28
-# v1
+# 2017-06-30
 
 css/style.css
 css/chat.css
 js/script.js
 js/colorChange.js
 js/autocomplete_course.js
-https://ffcsonthego.vatz88.in/data/all_data.json
-https://ffcsonthego.vatz88.in/data/unique_courses.json
 https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js
 https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css
 https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.min.js

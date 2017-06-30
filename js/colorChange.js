@@ -43,7 +43,7 @@ $(function () {
 		});
 	})();
 
-	addColorChangeEvents();
+	// addColorChangeEvents(); quick visualization disabled
 
 	// Disable On Click Selection
 	$("#toggleClickToSelect").click(function () {

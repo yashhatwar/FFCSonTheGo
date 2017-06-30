@@ -43,7 +43,7 @@
   <!-- css -->
   <link rel="stylesheet" href="css/style.css" />
   <!-- chat css -->
-  <!--<link rel="stylesheet" href="css/chat.css" />-->
+  <link rel="stylesheet" href="css/chat.css" />
 </head>
 
 <body>
@@ -130,7 +130,7 @@
       <!-- Screenshot button -->
       <button type="button" id="takeScreenshotBtn" class="btn btn-success">Timetable Screenshot</button>
       <!-- Quick visualization button -->
-      <button type="button" id="toggleClickToSelect" data-toggle="button" class="btn btn-warning" data-state="enabled">Disable Quick Visualization</button>
+      <button type="button" id="toggleClickToSelect" data-toggle="button" class="btn btn-warning" data-state="disabled">Enable Quick Visualization</button>
       <!-- Reset button -->
       <button type="button" id="resetButton" class="btn btn-danger">Reset</button>
       <!-- Tour button -->
@@ -169,7 +169,7 @@
 
   <div class="container">
     <!-- Quick selection tiles - morning slots -->
-    <div class="quick-selection noselect">
+    <div class="quick-selection noselect" style="display:none">
       <div class="horizontal-scroll-no-collapse">
         <button class="A1-tile btn">A1</button>
         <button class="B1-tile btn">B1</button>
@@ -369,7 +369,7 @@
 
   <div class="container">
     <!-- Quick selection tiles - evening slots -->
-    <div class="quick-selection noselect">
+    <div class="quick-selection noselect" style="display:none">
       <div class="horizontal-scroll-no-collapse">
         <button class="A2-tile btn">A2</button>
         <button class="B2-tile btn">B2</button>
@@ -577,14 +577,14 @@
   <!-- End of container-fluid -->
 
   <!-- chat -->
-  <!--<div id="chatbox">
+  <div id="chatbox">
     <span id="chat-text">Live Chat</span>
     <div id="minim-chat"><span>&#8595;</span></div>
-    <div id="maxi-chat"><span>&#8593;</span></div>-->
-  <!-- tlk.io -->
-  <!--<div id="tlkio" data-channel="vit-ffcsonthego" data-theme="theme--minimal" data-custom-css="https://ffcsonthego.vatz88.in/css/tlkio.css"></div>
+    <div id="maxi-chat"><span>&#8593;</span></div>
+    <!-- tlk.io -->
+    <div id="tlkio" data-channel="vit-ffcsonthego" data-theme="theme--minimal" data-custom-css="https://ffcsonthego.vatz88.in/css/tlkio.css"></div>
     <script async src="http://tlk.io/embed.js" type="text/javascript"></script>
-  </div>-->
+  </div>
 
   <!-- jQuery -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
@@ -598,7 +598,7 @@
   <script src="js/colorChange.js"></script>
   <script src="js/script.js"></script>
   <!-- chat js -->
-  <!--<script src="js/chat.js"></script>-->
+  <script src="js/chat.js"></script>
   <!-- enjoy hint -->
   <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/enjoyhint/3.1.0/enjoyhint.min.js"></script>
   <script src="js/enjoyhintsetup.js"></script>-->

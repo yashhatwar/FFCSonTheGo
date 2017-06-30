@@ -78,6 +78,7 @@ function initAutocomplete(allData, uniqueData) {
 
     $("#insertCourseSelectionOptions").on("dblclick", "button", function () {
         $('#slot-sel-area #addCourseBtn').click();
+        $(this).blur();
     });
 
     $("#inputCourseTitle").easyAutocomplete(courseTitleOption);

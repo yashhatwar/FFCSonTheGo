@@ -492,6 +492,11 @@ footer {
   font-size: 1.5rem;
 }
 
+.horizontal-scroll-no-collapse {
+  overflow: auto;
+  white-space: nowrap;
+}
+
 #slot-sel-area #insertCourseSelectionOptions div {
   display: flex;
   margin-bottom: 0.13rem;
@@ -571,10 +576,6 @@ footer a:hover {
  */
 
 @media screen and (max-width:768px) {
-  .horizontal-scroll-no-collapse {
-    white-space: nowrap;
-    overflow-x: auto;
-  }
   .horizontal-scroll-no-collapse>* {
     float: none;
     display: inline-block;

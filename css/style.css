@@ -492,11 +492,6 @@ footer {
   font-size: 1.5rem;
 }
 
-.horizontal-scroll-no-collapse {
-  overflow: auto;
-  white-space: nowrap;
-}
-
 #slot-sel-area #insertCourseSelectionOptions div {
   display: flex;
   margin-bottom: 0.13rem;
@@ -574,6 +569,11 @@ footer a:hover {
  * Add horizontal scroll and don't collapse the elements
  * Putting it under @media preserve the original bootstrap properties when there is no overflow
  */
+
+.horizontal-scroll-no-collapse {
+  overflow: auto;
+  white-space: nowrap;
+}
 
 @media screen and (max-width:768px) {
   .horizontal-scroll-no-collapse>* {

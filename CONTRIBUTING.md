@@ -2,7 +2,7 @@
 
 **:+1: :tada: First off, thanks for taking the time to contribute! :tada: :+1:**
 
-## How to contribute? Start sending PRs!
+## Starting to Contribute
 
 - Make sure you create an issue before sending PR. Issue can be anything a bug or a feature request.
 

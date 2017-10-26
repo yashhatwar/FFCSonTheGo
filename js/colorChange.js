@@ -134,6 +134,11 @@ $(function () {
 		}
 
 		$(this).find(".close").click();
+
+		// scroll back to panel
+		$('html, body').animate({
+			scrollTop: $("#slot-sel-area").offset().top
+		});
 	});
 
 	// delete course from table
@@ -145,6 +150,12 @@ $(function () {
 		activeTable.data = [];
 		updateLocalForage();
 		highlighted[activeTable.id] = [];
+	});
+
+	// Clear course from panel
+	$("#clearCourseBtn").click(function () {
+		$('#slot-sel-area input').val("");
+		$('#insertCourseSelectionOptions').html("");
 	});
 
 	// switch table menu option on click

@@ -18,7 +18,7 @@ Found a bug or have a new idea? Feel free to open [issues](https://github.com/Va
 
 ## Authors
 
-* **Vatsal Joshi** - *Initial work* - [VaTz88](https://github.com/vatz88)
+* **Vatsal Joshi** - *Initial work* - [vatz88](https://github.com/vatz88)
 * **Sangeeth Sudheer** - [sangeeth96](https://github.com/sangeeth96)
 
 <!--

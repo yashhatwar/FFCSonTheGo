@@ -64,7 +64,7 @@ function initAutocomplete(allData, uniqueData) {
         var title = $(this).data('title');
         var slot = $(this).data('slot');
         var faculty = $(this).data('faculty');
-        // var type = $(this).data('type');
+        var type = $(this).data('type');
         var venue = $(this).data('venue');
         var credits = $(this).data('credits');
 
@@ -74,6 +74,7 @@ function initAutocomplete(allData, uniqueData) {
         $('#inputFaculty').val(faculty);
         $('#inputVenue').val(venue);
         $('#inputCourseCredits').val(credits);
+        $('#inputIsProject').val(type === 'EPJ' ? 'true' : 'false');
     });
 
     $("#insertCourseSelectionOptions").on("dblclick", "button", function () {
@@ -107,7 +108,7 @@ function getSlotSelectionButton(code, title, type, slot, faculty, credits, venue
     $slotButton.data('title', title);
     $slotButton.data('slot', slot);
     $slotButton.data('faculty', faculty);
-    // $slotButton.data('type', type);
+    $slotButton.data('type', type);
     $slotButton.data('venue', venue);
     $slotButton.data('credits', credits);
 

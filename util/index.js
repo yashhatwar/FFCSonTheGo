@@ -2,8 +2,8 @@ var fs = require("fs");
 var node_xj = require("xls-to-json");
 
 node_xj({
-    input: __dirname + "/../data/report.xlsx", // input xls 
-    output: __dirname + "/../data/all_data.json", // output json 
+    input: "report.xlsx", // input xls 
+    output: "output.json", // output json 
     sheet: "Sheet 1" // specific sheetname 
 }, function (err, result) {
     if (err) {

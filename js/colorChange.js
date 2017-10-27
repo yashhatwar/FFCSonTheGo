@@ -68,11 +68,13 @@ $(function () {
 
 	$('#slot-sel-area #addCourseBtn').click(function () {
 		var courseCode = $('#inputCourseCode').val().trim();
-		var courseTile = $('#inputCourseTitle').val().trim();
+		var courseTitle = $('#inputCourseTitle').val().trim();
 		var faculty = $('#inputFaculty').val().trim();
 		var slotString = $('#inputSlotString').val().toUpperCase().trim();
 		var venue = $('#inputVenue').val().trim();
 		var credits = $('#inputCourseCredits').val().trim();
+		var isProject = $('#inputIsProject').val();
+		$('#inputIsProject').val('false'); // Reset the value once we read it.
 
 		if (slotString === '') {
 			$('#inputSlotString').focus();
@@ -102,10 +104,11 @@ $(function () {
 			courseId = lastAddedCourse[0] + 1;
 		}
 
-		activeTable.data.push([courseId, courseCode, courseTile, faculty, slotArray, venue, credits]);
+		// [0: courseId, 1: courseCode, 2:courseTitle, 3: faculty, 4: slotArray, 5: venue, 6: credits, 7: isProject]
+		activeTable.data.push([courseId, courseCode, courseTitle, faculty, slotArray, venue, credits, isProject]);
 
-		addCourseToTimetable(courseId, courseCode, venue, slotArray);
-		insertCourseToCourseListTable(courseId, courseCode, courseTile, faculty, slotArray, venue, credits);
+		addCourseToTimetable(courseId, courseCode, venue, slotArray, isProject);
+		insertCourseToCourseListTable(courseId, courseCode, courseTitle, faculty, slotArray, venue, credits, isProject);
 		checkSlotClash();
 		updateLocalForage();
 	});
@@ -114,13 +117,13 @@ $(function () {
 	$("#courseListTable table").on("dblclick", "tr", function () {
 		var slotString = $(this).find("td").not("[colspan]").eq(0).text();
 		var courseCode = $(this).find("td").eq(1).text();
-		var courseTile = $(this).find("td").eq(2).text();
+		var courseTitle = $(this).find("td").eq(2).text();
 		var faculty = $(this).find("td").eq(3).text();
 		var venue = $(this).find("td").eq(4).text();
 		var credits = $(this).find("td").eq(5).text();
 
 		$('#inputCourseCode').val(courseCode).trigger("change");
-		$('#inputCourseTitle').val(courseTile).trigger("change");
+		$('#inputCourseTitle').val(courseTitle).trigger("change");
 		$('#inputFaculty').val(faculty).trigger("change");
 		$('#inputSlotString').val(slotString).trigger("change");
 		$('#inputVenue').val(venue).trigger("change");
@@ -265,9 +268,9 @@ function addColorChangeEvents() {
 	});
 }
 
-function addCourseToTimetable(courseId, courseCode, venue, slotArray) {
+function addCourseToTimetable(courseId, courseCode, venue, slotArray, isProject) {
 	slotArray.forEach(function (slot) {
-		var $divElement = $('<div data-course="' + 'course' + courseId + '">' + courseCode + '-' + venue + '</div>');
+		var $divElement = $('<div data-course="' + 'course' + courseId + '" data-is-project="' + isProject + '">' + courseCode + '-' + venue + '</div>');
 		$('#timetable tr .' + slot).addClass('highlight').append($divElement);
 		if ($(".quick-selection ." + slot + "-tile")) {
 			$(".quick-selection ." + slot + "-tile").addClass("highlight");
@@ -275,8 +278,8 @@ function addCourseToTimetable(courseId, courseCode, venue, slotArray) {
 	});
 }
 
-function insertCourseToCourseListTable(courseId, courseCode, courseTile, faculty, slotArray, venue, credits) {
-	var $trElement = $('<tr data-course="' + 'course' + courseId + '">' +
+function insertCourseToCourseListTable(courseId, courseCode, courseTile, faculty, slotArray, venue, credits, isProject) {
+	var $trElement = $('<tr data-course="' + 'course' + courseId + '" data-is-project="' + isProject + '">' +
 		'<td>' + slotArray.join('+') + '</td>' +
 		'<td>' + courseCode + '</td>' +
 		'<td>' + courseTile + '</td>' +
@@ -304,20 +307,61 @@ function updateCredits() {
 function checkSlotClash() {
 	// Remove danger class (shows clashing) form tr in course list table.
 	$('#courseListTable tbody tr').removeClass('danger');
+	$('#timetable tr .hidden').removeClass('hidden');
 
 	// Check clash from timetable in each slot area
 	$('#timetable tr .highlight').each(function () {
-		if ($(this).children('div[data-course]').length > 1) {
-			// clash
-			// remove, add clash in timetable
-			$(this).addClass('clash');
-			// show clash in course list table
-			$(this).children('div[data-course]').each(function () {
-				var dataCourse = $(this).attr("data-course");
-				// Add danger class to tr of clashing course list table.
-				$('#courseListTable tbody tr[data-course="' + dataCourse + '"]').addClass('danger');
-			});
-		} else if ($(this).children('div[data-course]').length === 1) {
+		let $highlightedCell = $(this);
+		let $highlightedCellDivs = $(this).children('div[data-course]');
+
+		if ($highlightedCellDivs.length > 1) {
+			let isClashing = true;
+
+			// Check if there are two dissimilar courses or if there is a J
+			// component course and a sibling in this cell.
+			if ($highlightedCellDivs.length === 2) {
+				let $firstCellDiv = $highlightedCellDivs.eq(0),
+					$secondCellDiv = $highlightedCellDivs.eq(1);
+
+				let isFirstCourseJComp = $firstCellDiv.data('is-project'),
+					isSecondCourseJComp = $secondCellDiv.data('is-project');
+				
+				if (isFirstCourseJComp && isSecondCourseJComp) {} // Two J components in the same slot is a clash.
+				else if (isFirstCourseJComp || isSecondCourseJComp) { // Otherwise, check for similarity.
+					let firstCourseId = +$firstCellDiv.data('course').split(/(\d+)/)[1];
+					let secondCourseId = +$secondCellDiv.data('course').split(/(\d+)/)[1];
+
+					let firstCourseIdx = getIndexByCourseId(firstCourseId);
+					let secondCourseIdx = getIndexByCourseId(secondCourseId);
+
+					let firstCourse = activeTable.data[firstCourseIdx];
+					let secondCourse = activeTable.data[secondCourseIdx];
+
+					// Check to see if two courses are similar.
+					if (firstCourse[1] === secondCourse[1] && // Course Code
+						firstCourse[2] === secondCourse[2] 	  // Course Title
+					) {
+						// console.log('Hidden setting');
+						$highlightedCell.removeClass('clash');
+						let $projectDiv = isFirstCourseJComp ? $firstCellDiv : $secondCellDiv;
+						$projectDiv.addClass('hidden');
+						isClashing = false;
+					}
+				}
+			}
+
+			if (isClashing) {
+				// clash
+				// remove, add clash in timetable
+				$(this).addClass('clash');
+				// show clash in course list table
+				$(this).children('div[data-course]').each(function () {
+					var dataCourse = $(this).attr("data-course");
+					// Add danger class to tr of clashing course list table.
+					$('#courseListTable tbody tr[data-course="' + dataCourse + '"]').addClass('danger');
+				});
+			}
+		} else if ($highlightedCellDivs.length === 1) {
 			// no clash
 			$(this).removeClass('clash').addClass("highlight");
 		} else {
@@ -338,7 +382,7 @@ function removeCourse(e) {
 	checkSlotClash();
 	updateCredits();
 
-	var courseId = Number(dataCourse.substr(-1));
+	var courseId = Number(dataCourse.split(/(\d+)/)[1]);
 	for (var i = 0; i < activeTable.data.length; ++i) {
 		if (activeTable.data[i][0] == courseId) {
 			activeTable.data.splice(i, 1);
@@ -347,6 +391,12 @@ function removeCourse(e) {
 	}
 
 	updateLocalForage();
+}
+
+function getIndexByCourseId(courseId) {
+	return activeTable.data.findIndex(function(elem) {
+		return elem[0] === courseId;
+	});
 }
 
 // Simply clears all the added content in the page but doesn't reset the data in memory.
@@ -374,10 +424,11 @@ function fillPage(data) {
 		var slotArray = arr[4];
 		var venue = arr[5];
 		var credits = arr[6];
+		var isProject = arr[7];
 
 		// index is basically courseId
-		addCourseToTimetable(courseId, courseCode, venue, slotArray);
-		insertCourseToCourseListTable(courseId, courseCode, courseTile, faculty, slotArray, venue, credits);
+		addCourseToTimetable(courseId, courseCode, venue, slotArray, isProject);
+		insertCourseToCourseListTable(courseId, courseCode, courseTile, faculty, slotArray, venue, credits, isProject);
 	});
 	checkSlotClash();
 }

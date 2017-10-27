@@ -4,7 +4,7 @@
 
     npm install
 
-`index.js` has the neccessary script to convert excel to JSON.
+`index.js` has the necessary script to convert excel to JSON.
 
     node index.js
 

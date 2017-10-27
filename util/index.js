@@ -10,10 +10,9 @@ node_xj({
         console.error(err);
     } else {
         var unique = [];
-        // remove number from faculty name
         result.forEach(function (element) {
+            // remove number from faculty name
             element.FACULTY = element.FACULTY.split(" - ").pop();
-
             unique.push({
                 "CODE": element.CODE,
                 "TITLE": element.TITLE

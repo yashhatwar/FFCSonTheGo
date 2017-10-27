@@ -12,7 +12,7 @@ Visit the website here [ffcsonthego.azurewebsites.net](https://ffcsonthego.azure
 
 ## Contributing
 
-Please go through [CONTRIBUTING](CONTRIBUTING.md) guidelines.
+Please go through [CONTRIBUTING](.github/CONTRIBUTING.md) guidelines.
 
 Found a bug or have a new idea? Feel free to open [issues](https://github.com/VaTz88/FFCS-on-The-Go/issues).
 

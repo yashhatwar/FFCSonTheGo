@@ -2,18 +2,17 @@ var fs = require("fs");
 var node_xj = require("xls-to-json");
 
 node_xj({
-    input: "report.xlsx", // input xls 
-    output: "output.json", // output json 
+    input: __dirname + "/../data/report.xlsx", // input xls 
+    output: __dirname + "/../data/all_data.json", // output json 
     sheet: "Sheet 1" // specific sheetname 
 }, function (err, result) {
     if (err) {
         console.error(err);
     } else {
         var unique = [];
-        // remove number from faculty name
         result.forEach(function (element) {
+            // remove number from faculty name
             element.FACULTY = element.FACULTY.split(" - ").pop();
-
             unique.push({
                 "CODE": element.CODE,
                 "TITLE": element.TITLE

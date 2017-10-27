@@ -1,7 +1,6 @@
-# ISSUE_TITLE
-
+Issue description here...
 <!--
-Explain the issue. Add relavent screenshots or GIFs for better understanding of the issue.
+Explain the issue. Add relevant screenshots or GIFs for better understanding of the issue.
 -->
 
 ---

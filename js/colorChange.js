@@ -325,7 +325,7 @@ function checkSlotClash() {
 
 				let isFirstCourseJComp = $firstCellDiv.data('is-project'),
 					isSecondCourseJComp = $secondCellDiv.data('is-project');
-				
+
 				if (isFirstCourseJComp && isSecondCourseJComp) {} // Two J components in the same slot is a clash.
 				else if (isFirstCourseJComp || isSecondCourseJComp) { // Otherwise, check for similarity.
 					let firstCourseId = +$firstCellDiv.data('course').split(/(\d+)/)[1];
@@ -339,7 +339,7 @@ function checkSlotClash() {
 
 					// Check to see if two courses are similar.
 					if (firstCourse[1] === secondCourse[1] && // Course Code
-						firstCourse[2] === secondCourse[2] 	  // Course Title
+						firstCourse[2] === secondCourse[2] // Course Title
 					) {
 						// console.log('Hidden setting');
 						$highlightedCell.removeClass('clash');
@@ -394,7 +394,7 @@ function removeCourse(e) {
 }
 
 function getIndexByCourseId(courseId) {
-	return activeTable.data.findIndex(function(elem) {
+	return activeTable.data.findIndex(function (elem) {
 		return elem[0] === courseId;
 	});
 }

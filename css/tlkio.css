@@ -16,6 +16,10 @@
     color: #212121!important;
 }
 
+.post-message.deleted {
+    display: none!important;
+}
+
 .header-bar {
     background: white!important;
     box-shadow: none!important;

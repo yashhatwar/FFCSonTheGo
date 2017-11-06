@@ -130,7 +130,7 @@ $(function () {
 		$('#inputCourseCredits').val(credits).trigger("change");
 
 		try {
-			// Function may not work if autocompvare is not loaded
+			// Function may not work if autocomplete is not loaded
 			addSlotButtons(courseCode);
 		} catch (error) {
 
@@ -144,7 +144,7 @@ $(function () {
 		});
 	});
 
-	// devare course from table
+	// delete course from table
 	$("#courseListTable table").on("click", ".close", removeCourse);
 
 	$("#courseListTable table").on("click", "th", function () {
@@ -274,7 +274,7 @@ $(function () {
 		highlighted[newTableId] = [];
 	});
 
-	// load course data with autocompvare
+	// load course data with autocomplete
 	loadCourseData();
 });
 
@@ -593,7 +593,7 @@ function updateLocalForage() {
 	return;
 }
 
-// load course data with autocompvare
+// load course data with autocomplete
 function loadCourseData() {
 	var isDataAvailable = true;
 
@@ -606,12 +606,12 @@ function loadCourseData() {
 
 	function loadAssets(callback) {
 		var scripts = [
-			"https://cdnjs.cloudflare.com/ajax/libs/easy-autocompvare/1.3.5/jquery.easy-autocompvare.min.js",
-			"js/autocompvare_course.js"
+			"https://cdnjs.cloudflare.com/ajax/libs/easy-autocomplete/1.3.5/jquery.easy-autocomplete.min.js",
+			"js/autocomplete_course.js"
 		];
 
 		var stylesheets = [
-			"https://cdnjs.cloudflare.com/ajax/libs/easy-autocompvare/1.3.5/easy-autocompvare.min.css"
+			"https://cdnjs.cloudflare.com/ajax/libs/easy-autocomplete/1.3.5/easy-autocomplete.min.css"
 		];
 
 		stylesheets.forEach(function (link) {
@@ -648,7 +648,7 @@ function loadCourseData() {
 				unique_courses = args2[0];
 
 				loadAssets(function loadAssetsHandler() {
-					initAutocompvare(all_data, unique_courses);
+					initAutocomplete(all_data, unique_courses);
 				});
 			})
 			.fail(function () {

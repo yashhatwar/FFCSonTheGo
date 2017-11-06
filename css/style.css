@@ -527,8 +527,20 @@ footer {
   cursor: pointer;
 }
 
-#courseListTable table tr th.sorted {
+#courseListTable table tr th.sorted,
+#courseListTable table tr th:hover {
   background-color: #f1f7ee;
+}
+
+#courseListTable table tr th.ascending::after {
+  content: ' ↓';
+  font-size: larger;
+}
+
+#courseListTable table tr th.descending::after {
+  content: ' ↑';
+  font-size: larger;
+  font-weight: bold;
 }
 
 #courseListTable table tr:not(:last-of-type) {

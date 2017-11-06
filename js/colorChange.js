@@ -130,7 +130,7 @@ $(function () {
 		$('#inputCourseCredits').val(credits).trigger("change");
 
 		try {
-			// Function may not work if autocomplete is not loaded
+			// Function may not work if autocompvare is not loaded
 			addSlotButtons(courseCode);
 		} catch (error) {
 
@@ -144,58 +144,59 @@ $(function () {
 		});
 	});
 
-	// delete course from table
+	// devare course from table
 	$("#courseListTable table").on("click", ".close", removeCourse);
 
-  $("#courseListTable table").on("click", "th", function () {
-    var $this = $(this);
-    var isSorted = false;
+	$("#courseListTable table").on("click", "th", function () {
+		var $this = $(this);
+		var isSorted = false;
 
-    // check if the column is already sorted
-    if ($this.hasClass('sorted')) {
-      isSorted = true;
-    }
+		// check if the column is already sorted
+		if ($this.hasClass('sorted')) {
+			isSorted = true;
+		}
 
-    $("#courseListTable table th.sorted").removeClass('sorted');
-    $this.addClass('sorted');
+		$("#courseListTable table th.sorted").removeClass('sorted ascending descending');
 
-    var items = retrieveColumnItems($this);
-    var ascending = false;
+		var items = retrieveColumnItems($this);
+		var ascending = false;
 
-    // check if the column is sorted in ascending order
-    if (isSorted) {
-      for (var i = 0; i < items.length; i++) {
-        var current = $(items[i]).text();
-        var next = $(items[i + 1]).text();
+		// check if the column is sorted in ascending order
+		if (isSorted) {
+			for (var i = 0; i < items.length; i++) {
+				var current = $(items[i]).text();
+				var next = $(items[i + 1]).text();
 
-        if (current < next) {
-          ascending = true;
-          break;
-        }
-      }
-    }
+				if (current < next) {
+					ascending = true;
+					break;
+				}
+			}
+		}
 
-    // if sorted in ascending order
-    if (isSorted && ascending) {
-      // sort in descending order
-      items.sort(function (a, b) {
-        return $(a).text() < $(b).text();
-      });
-    } else {
-      // sort in ascending order
-      items.sort(function (a, b) {
-        return $(a).text() > $(b).text();
-      });
-    }
+		// if sorted in ascending order
+		if (isSorted && ascending) {
+			// sort in descending order
+			items.sort(function (a, b) {
+				return $(a).text() < $(b).text();
+			});
+			$this.addClass('sorted descending');
+		} else {
+			// sort in ascending order
+			items.sort(function (a, b) {
+				return $(a).text() > $(b).text();
+			});
+			$this.addClass('sorted ascending');
+		}
 
-    // get the corresponding rows of the sorted column items
-    var sortedCourseRows = $(items).map(function (i, item) {
-      return $(item).parent().get();
-    });
+		// get the corresponding rows of the sorted column items
+		var sortedCourseRows = $(items).map(function (i, item) {
+			return $(item).parent().get();
+		});
 
-    // rerender the rows
-    $("#courseListTable table tbody tr").not("tr:last").remove();
-    $('#courseListTable tbody #totalCreditsTr').before(sortedCourseRows);
+		// rerender the rows
+		$("#courseListTable table tbody tr").not("tr:last").remove();
+		$('#courseListTable tbody #totalCreditsTr').before(sortedCourseRows);
 	});
 
 	// Reset current table not all tables
@@ -273,7 +274,7 @@ $(function () {
 		highlighted[newTableId] = [];
 	});
 
-	// load course data with autocomplete
+	// load course data with autocompvare
 	loadCourseData();
 });
 
@@ -340,51 +341,51 @@ function insertCourseToCourseListTable(courseId, courseCode, courseTile, faculty
 		'<td><span class="close">&times;</span></td>' +
 		'</tr>');
 
-  var previousRow = $('#courseListTable tbody #totalCreditsTr');
-  var sortedColumn = $("#courseListTable table th.sorted")[0];
+	var previousRow = $('#courseListTable tbody #totalCreditsTr');
+	var sortedColumn = $("#courseListTable table th.sorted")[0];
 
-  // if any column is sorted, find the position of this course
-  if (sortedColumn) {
-    var index = getColumnIndex(sortedColumn);
-    var items = retrieveColumnItems(sortedColumn)
-    var currentElement = $trElement.find('td')[index];
+	// if any column is sorted, find the position of this course
+	if (sortedColumn) {
+		var index = getColumnIndex(sortedColumn);
+		var items = retrieveColumnItems(sortedColumn);
+		var currentElement = $trElement.find('td')[index];
 
-    // a variation of insertion sort
-    for (var i = 0; i < items.length; i++) {
-      var item = items[i];
+		// a variation of insertion sort
+		for (var i = 0; i < items.length; i++) {
+			var item = items[i];
 
-      if ($(currentElement).text() <= $(item).text()) {
-        previousRow = $(item).parent();
-        break;
-      }
-    }
-  }
+			if ($(currentElement).text() <= $(item).text()) {
+				previousRow = $(item).parent();
+				break;
+			}
+		}
+	}
 
-  previousRow.before($trElement);
+	previousRow.before($trElement);
 
 	// update credits
 	updateCredits();
 }
 
 function getColumnIndex(column) {
-  var columns = ['Slot', 'Code', 'Title', 'Faculty', 'Venue', 'Credits'];
-  var columnText = $(column).text();
-  var index = columns.indexOf(columnText);
+	var columns = ['Slot', 'Code', 'Title', 'Faculty', 'Venue', 'Credits'];
+	var columnText = $(column).text();
+	var index = columns.indexOf(columnText);
 
-  return index;
+	return index;
 }
 
 function retrieveColumnItems(column) {
-  var index = getColumnIndex(column);
+	var index = getColumnIndex(column);
 
-  var courseRows = $("#courseListTable table tbody").find("tr");
-  courseRows = courseRows.slice(0, -1);
+	var courseRows = $("#courseListTable table tbody").find("tr");
+	courseRows = courseRows.slice(0, -1);
 
-  var items = $(courseRows).map(function (i, row) {
-    return $(row).find("td")[index];
-  });
+	var items = $(courseRows).map(function (i, row) {
+		return $(row).find("td")[index];
+	});
 
-  return items;
+	return items;
 }
 
 function updateCredits() {
@@ -403,31 +404,31 @@ function checkSlotClash() {
 
 	// Check clash from timetable in each slot area
 	$('#timetable tr .highlight').each(function () {
-		let $highlightedCell = $(this);
-		let $highlightedCellDivs = $(this).children('div[data-course]');
+		var $highlightedCell = $(this);
+		var $highlightedCellDivs = $(this).children('div[data-course]');
 
 		if ($highlightedCellDivs.length > 1) {
-			let isClashing = true;
+			var isClashing = true;
 
 			// Check if there are two dissimilar courses or if there is a J
 			// component course and a sibling in this cell.
 			if ($highlightedCellDivs.length === 2) {
-				let $firstCellDiv = $highlightedCellDivs.eq(0),
+				var $firstCellDiv = $highlightedCellDivs.eq(0),
 					$secondCellDiv = $highlightedCellDivs.eq(1);
 
-				let isFirstCourseJComp = $firstCellDiv.data('is-project'),
+				var isFirstCourseJComp = $firstCellDiv.data('is-project'),
 					isSecondCourseJComp = $secondCellDiv.data('is-project');
 
 				if (isFirstCourseJComp && isSecondCourseJComp) {} // Two J components in the same slot is a clash.
 				else if (isFirstCourseJComp || isSecondCourseJComp) { // Otherwise, check for similarity.
-					let firstCourseId = +$firstCellDiv.data('course').split(/(\d+)/)[1];
-					let secondCourseId = +$secondCellDiv.data('course').split(/(\d+)/)[1];
+					var firstCourseId = +$firstCellDiv.data('course').split(/(\d+)/)[1];
+					var secondCourseId = +$secondCellDiv.data('course').split(/(\d+)/)[1];
 
-					let firstCourseIdx = getIndexByCourseId(firstCourseId);
-					let secondCourseIdx = getIndexByCourseId(secondCourseId);
+					var firstCourseIdx = getIndexByCourseId(firstCourseId);
+					var secondCourseIdx = getIndexByCourseId(secondCourseId);
 
-					let firstCourse = activeTable.data[firstCourseIdx];
-					let secondCourse = activeTable.data[secondCourseIdx];
+					var firstCourse = activeTable.data[firstCourseIdx];
+					var secondCourse = activeTable.data[secondCourseIdx];
 
 					// Check to see if two courses are similar.
 					if (firstCourse[1] === secondCourse[1] && // Course Code
@@ -435,7 +436,7 @@ function checkSlotClash() {
 					) {
 						// console.log('Hidden setting');
 						$highlightedCell.removeClass('clash');
-						let $projectDiv = isFirstCourseJComp ? $firstCellDiv : $secondCellDiv;
+						var $projectDiv = isFirstCourseJComp ? $firstCellDiv : $secondCellDiv;
 						$projectDiv.addClass('hidden');
 						isClashing = false;
 					}
@@ -592,7 +593,7 @@ function updateLocalForage() {
 	return;
 }
 
-// load course data with autocomplete
+// load course data with autocompvare
 function loadCourseData() {
 	var isDataAvailable = true;
 
@@ -605,12 +606,12 @@ function loadCourseData() {
 
 	function loadAssets(callback) {
 		var scripts = [
-			"https://cdnjs.cloudflare.com/ajax/libs/easy-autocomplete/1.3.5/jquery.easy-autocomplete.min.js",
-			"js/autocomplete_course.js"
+			"https://cdnjs.cloudflare.com/ajax/libs/easy-autocompvare/1.3.5/jquery.easy-autocompvare.min.js",
+			"js/autocompvare_course.js"
 		];
 
 		var stylesheets = [
-			"https://cdnjs.cloudflare.com/ajax/libs/easy-autocomplete/1.3.5/easy-autocomplete.min.css"
+			"https://cdnjs.cloudflare.com/ajax/libs/easy-autocompvare/1.3.5/easy-autocompvare.min.css"
 		];
 
 		stylesheets.forEach(function (link) {
@@ -647,7 +648,7 @@ function loadCourseData() {
 				unique_courses = args2[0];
 
 				loadAssets(function loadAssetsHandler() {
-					initAutocomplete(all_data, unique_courses);
+					initAutocompvare(all_data, unique_courses);
 				});
 			})
 			.fail(function () {

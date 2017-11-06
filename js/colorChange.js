@@ -114,7 +114,7 @@ $(function () {
 	});
 
 	// Load course again in the panel
-	$("#courseListTable table").on("dblclick", "tr", function () {
+	$("#courseListTable table").on("dblclick", "tr", function (e) {
 		var slotString = $(this).find("td").not("[colspan]").eq(0).text();
 		var courseCode = $(this).find("td").eq(1).text();
 		var courseTitle = $(this).find("td").eq(2).text();
@@ -139,15 +139,17 @@ $(function () {
 		$(this).find(".close").click();
 
 		// scroll back to panel
-		$('html, body').animate({
-			scrollTop: $("#slot-sel-area").offset().top
-		});
+		if (e.target.localName !== "th") {
+			$('html, body').animate({
+				scrollTop: $("#slot-sel-area").offset().top
+			});
+		}
 	});
 
 	// delete course from table
 	$("#courseListTable table").on("click", ".close", removeCourse);
 
-	$("#courseListTable table").on("click", "th", function () {
+	$("#courseListTable table th").not(":last").click(function () {
 		var $this = $(this);
 		var isSorted = false;
 
@@ -434,7 +436,6 @@ function checkSlotClash() {
 					if (firstCourse[1] === secondCourse[1] && // Course Code
 						firstCourse[2] === secondCourse[2] // Course Title
 					) {
-						// console.log('Hidden setting');
 						$highlightedCell.removeClass('clash');
 						var $projectDiv = isFirstCourseJComp ? $firstCellDiv : $secondCellDiv;
 						$projectDiv.addClass('hidden');

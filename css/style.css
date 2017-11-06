@@ -523,12 +523,12 @@ footer {
   text-align: center;
 }
 
-#courseListTable table tr th {
+#courseListTable table tr th:not(:last-of-type) {
   cursor: pointer;
 }
 
 #courseListTable table tr th.sorted,
-#courseListTable table tr th:hover {
+#courseListTable table tr th:hover:not(:last-of-type) {
   background-color: #f1f7ee;
 }
 

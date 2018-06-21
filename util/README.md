@@ -20,6 +20,10 @@
 
     **CODE**
 
+    **TITLE**
+
+    **TYPE**
+
     **VENUE**
 
     **FACULTY**

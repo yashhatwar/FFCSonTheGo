@@ -10,21 +10,25 @@ node_xj({
         console.error(err);
     } else {
         var unique = [];
-        result.forEach(function (element) {
-            // remove number from faculty name
-            element.FACULTY = element.FACULTY.split(" - ").pop();
-            unique.push({
-                "CODE": element.CODE,
-                "TITLE": element.TITLE
-            });
-        }, this);
+        // result.forEach(function (element) {
+        //     // remove number from faculty name
+        //     element.FACULTY = element.FACULTY.split(" - ").pop();
+        //     unique.push({
+        //         "CODE": element.CODE,
+        //         "TITLE": element.TITLE
+        //     });
+        // }, this);
 
         // overwirte the output file
-        fs.writeFile(__dirname + "/../data/all_data.json", JSON.stringify(result));
+        fs.writeFile(__dirname + "/../data/all_data.json", JSON.stringify(result), () => {
+            console.log('all_data.json updated.');
+        });
 
         // remove repeating courses
-        unique = unique.filter((element, index, self) => self.findIndex(t => t.CODE === element.CODE && t.TITLE === element.TITLE) === index);
+        unique = result.filter((element, index, self) => self.findIndex(t => t.CODE === element.CODE && t.TITLE === element.TITLE) === index);
 
-        fs.writeFile(__dirname + "/../data/unique_courses.json", JSON.stringify(unique));
+        fs.writeFile(__dirname + "/../data/unique_courses.json", JSON.stringify(unique), () => {
+            console.log('unique_courses.json updated.');
+        });
     }
 });

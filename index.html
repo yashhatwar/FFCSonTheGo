@@ -1,5 +1,5 @@
 ﻿<!DOCTYPE html>
-<html lang="en" manifest="appcache.manifest">
+<html lang="en">
 
 <head>
   <meta charset="utf-8">
@@ -8,14 +8,7 @@
     if (window.location.protocol === "http:" && window.location.hostname !== "localhost") {
       window.location.protocol = "https";
     }
-    // Check for cache update
-    function onUpdateReady() {
-      window.location.reload();
-    }
-    window.applicationCache.addEventListener('updateready', onUpdateReady);
-    if (window.applicationCache.status === window.applicationCache.UPDATEREADY) {
-      onUpdateReady();
-    }
+
   </script>
   <meta http-equiv="X-UA-Compatible" content="IE=Edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
@@ -82,6 +75,7 @@
       js.src = "//connect.facebook.net/en_US/sdk.js";
       fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'facebook-jssdk'));
+
   </script>
 
   <!-- Disclaimer modal about using this website for the general audience. -->

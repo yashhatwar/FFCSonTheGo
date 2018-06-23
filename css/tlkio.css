@@ -1,26 +1,37 @@
 .message-button--submit {
-    display: block!important;
+    display: block !important;
+    top: 0.15rem !important;
+    right: 0 !important;
 }
 
 .theme--minimal .header-channel {
-    color: #9C27B0!important;
-    text-transform: uppercase!important;
+    color: #9C27B0 !important;
+    text-transform: uppercase !important;
+}
+
+.theme--minimal .message-input {
+    font-size: 1rem !important;
+    padding: 0.25rem 5.5rem 0.25rem 0.5rem !important;
+}
+
+.header-avatar {
+    display: none !important;
 }
 
 .post-name {
-    font-family: monospace!important;
-    color: #0091EA!important;
+    font-family: monospace !important;
+    color: #0091EA !important;
 }
 
 .post-message {
-    color: #212121!important;
+    color: #212121 !important;
 }
 
 .post-message.deleted {
-    display: none!important;
+    display: none !important;
 }
 
 .header-bar {
-    background: white!important;
-    box-shadow: none!important;
+    background: white !important;
+    box-shadow: none !important;
 }

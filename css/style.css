@@ -16,13 +16,13 @@
 }
 
 .container-fluid .row {
-  margin-right: 0!important;
-  margin-left: 0!important;
+  margin-right: 0 !important;
+  margin-left: 0 !important;
 }
 
 hr {
-  margin-top: 1rem!important;
-  margin-bottom: 1rem!important;
+  margin-top: 1rem !important;
+  margin-bottom: 1rem !important;
 }
 
 header .alert {
@@ -57,7 +57,7 @@ header .alert {
 }
 
 #timetable .table {
-  margin-bottom: 0!important;
+  margin-bottom: 0 !important;
 }
 
 .quick-selection .btn {
@@ -75,11 +75,11 @@ header .alert {
 }
 
 #courseListTable .table {
-  margin-bottom: 0!important;
+  margin-bottom: 0 !important;
 }
 
 #courseListTable .table-responsive {
-  margin-bottom: 0px!important;
+  margin-bottom: 0px !important;
 }
 
 #CourseAllocationReport-btn {
@@ -90,7 +90,6 @@ footer {
   padding-top: 0.25em;
   padding-bottom: 0.25em;
 }
-
 
 /**
 * Font, color and other styling
@@ -108,7 +107,7 @@ footer {
 .tt-picker-edit-ok {
   position: absolute;
   right: 25px;
-  padding-top: 5px!important;
+  padding-top: 5px !important;
 }
 
 .screenshot_msg {
@@ -118,7 +117,7 @@ footer {
 
 .screenshot_msg tr,
 .screenshot_msg td {
-  border-color: white!important;
+  border-color: white !important;
 }
 
 .LabHours {
@@ -176,7 +175,6 @@ footer {
   border: 1px solid #616161 !important;
   vertical-align: middle;
 }
-
 
 /* .tt-course-code used when inserting course code in timetable */
 
@@ -467,7 +465,6 @@ footer {
   background-color: #64DD17;
 }
 
-
 /* Quick selection tiles/buttons */
 
 .quick-selection {
@@ -564,7 +561,6 @@ footer a:hover {
   color: #fff;
 }
 
-
 /**
  * Disable text selection
  */
@@ -583,7 +579,6 @@ footer a:hover {
   user-select: none;
   /* Non-prefixed version, currently supported by Chrome and Opera */
 }
-
 
 /**
  * Add horizontal scroll and don't collapse the elements
@@ -605,7 +600,6 @@ footer a:hover {
     margin-right: -15px;
   }
 }
-
 
 /**
  * Custom scrollbar

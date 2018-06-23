@@ -1,10 +1,10 @@
 footer {
-    padding-bottom: 40px!important;
+    padding-bottom: 40px !important;
 }
 
 #tlkio {
-    width: 100%!important;
-    height: 50vh!important;
+    width: 100% !important;
+    height: 50rem !important;
 }
 
 #chat-text {
@@ -43,7 +43,7 @@ footer {
     position: fixed;
     bottom: 0;
     right: 0;
-    margin: 0 0 -51.3vh 0;
+    margin: 0 0 -51rem 0;
     background: #fff;
     border-bottom: none;
     padding: 38px 10px 10px;
@@ -57,11 +57,11 @@ footer {
 
 @media screen and (max-width: 425px) {
     #tlkio {
-        width: 100%!important;
-        height: 80vh!important;
+        width: 100% !important;
+        height: 50rem !important;
     }
     #chatbox {
         width: 100%;
-        margin: 0 0 -81.6vh 0;
+        margin: 0 0 -51rem 0;
     }
 }

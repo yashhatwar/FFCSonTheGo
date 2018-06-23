@@ -4,10 +4,12 @@
   "description": "Script to help build required JSON from Excel",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "convert": "node convert_to_json.js && node json_to_data_dir.js"
   },
   "author": "Vatsal Joshi",
   "dependencies": {
-    "xls-to-json": "^0.4.0"
+    "xls-to-json": "^0.4.0",
+    "xlsx": "^0.13.1"
   }
 }

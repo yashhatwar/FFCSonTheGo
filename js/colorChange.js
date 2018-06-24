@@ -324,7 +324,7 @@ function addColorChangeEvents() {
 
 function addCourseToTimetable(courseId, courseCode, venue, slotArray, isProject) {
 	slotArray.forEach(function (slot) {
-		var $divElement = $('<div data-course="' + 'course' + courseId + '" data-is-project="' + isProject + '">' + courseCode + '-' + venue + '</div>');
+		var $divElement = $('<div data-course="' + 'course' + courseId + '" data-is-lab="' + (slot[0] === 'L') + '" data-is-project="' + isProject + '">' + courseCode + '-' + venue + '</div>');
 		$('#timetable tr .' + slot).addClass('highlight').append($divElement);
 		if ($(".quick-selection ." + slot + "-tile")) {
 			$(".quick-selection ." + slot + "-tile").addClass("highlight");
@@ -409,7 +409,10 @@ function checkSlotClash() {
 		var $highlightedCell = $(this);
 		var $highlightedCellDivs = $(this).children('div[data-course]');
 
-		if ($highlightedCellDivs.length > 1) {
+		var noPostLabFlag = $(this).hasClass('noPostLab') && $(this).children('div[data-is-lab="false"]').length > 0 && $(this).next().children('div[data-is-lab="true"]').length > 0;
+		var noPreTheoryFlag = $(this).hasClass('noPreTheory') && $(this).children('div[data-is-lab="true"]').length > 0 && $(this).prev().children('div[data-is-lab="false"]').length > 0;
+
+		if ($highlightedCellDivs.length > 1 || noPostLabFlag || noPreTheoryFlag) {
 			var isClashing = true;
 
 			// Check if there are two dissimilar courses or if there is a J

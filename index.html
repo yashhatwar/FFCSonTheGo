@@ -202,22 +202,32 @@
         <div class="panel-body">
           <form class="col-xs-12">
             <div class="row">
-              <div class="form-group col-xs-12 col-sm-6">
+              <div class="form-group col-xs-12 col-sm-4">
                 <label for="inputCourseCode" class="control-label">Course code:</label>
                 <div>
                   <input type="text" class="form-control" id="inputCourseCode" placeholder="eg: CSE1001">
                 </div>
               </div>
 
-              <div class="form-group col-xs-12 col-sm-6">
+              <div class="form-group col-xs-12 col-sm-5">
                 <label for="inputCourseTitle" class="control-label">Course title:</label>
                 <div>
                   <input type="text" class="form-control" id="inputCourseTitle" placeholder="eg: PROBLEM SOLVING AND PROGRAMMING">
                 </div>
               </div>
 
+              <!-- Filter course by slot -->
+              <div class="form-group col-xs-12 col-sm-3">
+                <label for="filter-by-slot" class="control-label">Filter By Slot</label>
+                <div>
+                  <select id="filter-by-slot" multiple="multiple">
+                    <!-- <option value="A1">A1</option> -->
+                  </select>
+                </div>
+              </div>
+
               <div class="form-group col-xs-12">
-                <blockquote class="myBlockquote">Search, select then add or double click to quickly add.</blockquote>
+                <blockquote class="myBlockquote">Search, select then add or double click to quickly add. Select course to enable slot filter.</blockquote>
                 <!-- Inserted select course buttons here -->
                 <div id="insertCourseSelectionOptions" class="list-group horizontal-scroll-no-collapse">
                   <!--<div>

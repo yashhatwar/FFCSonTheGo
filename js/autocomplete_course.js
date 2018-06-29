@@ -1,3 +1,59 @@
+var filterSlotArr = [];
+
+var multiselectConfig = {
+    enableCaseInsensitiveFiltering: true,
+    delimiterText: '; ',
+    enableClickableOptGroups: true,
+    disableIfEmpty: true,
+    disabledText: 'Apply Slot Filter',
+    buttonWidth: '100%',
+    maxHeight: 200,
+    onChange: function (option, checked) {
+        if (checked) {
+            for (var key = 0; key < option.length; key++) {
+                if (option[key.toString()].value) {
+                    filterSlotArr.indexOf(option[key.toString()].value) === -1 && filterSlotArr.push(option[key.toString()].value);
+                } else {
+                    var allSelectOption = option[key.toString()];
+                    for (var innerkey = 0; innerkey < allSelectOption.length; innerkey++) {
+                        if (allSelectOption[innerkey.toString()].value) {
+                            filterSlotArr.indexOf(allSelectOption[innerkey.toString()].value) === -1 && filterSlotArr.push(allSelectOption[innerkey.toString()].value);
+                        }
+                    }
+                }
+            }
+        } else {
+            for (var key = 0; key < option.length; key++) {
+                if (option[key.toString()].value) {
+                    var filterSlotIndex = filterSlotArr.indexOf(option[key.toString()].value);
+                    filterSlotArr.splice(filterSlotIndex, 1);
+                } else {
+                    var allSelectOption = option[key.toString()];
+                    for (var innerkey = 0; innerkey < allSelectOption.length; innerkey++) {
+                        if (allSelectOption[innerkey.toString()].value) {
+                            var filterSlotIndex = filterSlotArr.indexOf(allSelectOption[innerkey.toString()].value);
+                            filterSlotArr.splice(filterSlotIndex, 1);
+                        }
+                    }
+                }
+            }
+
+        }
+        $('#insertCourseSelectionOptions button').show();
+        if (filterSlotArr.length) {
+            $('#insertCourseSelectionOptions button').not(function (i, el) {
+                var elSlot = $(el).data('slot');
+                if (filterSlotArr.indexOf(elSlot) > -1) {
+                    return true;
+                } else {
+                    return false;
+                }
+            }).hide();
+        }
+    }
+};
+
+
 function initAutocomplete(allData, uniqueData) {
     unique_courses = uniqueData;
     all_data = allData;
@@ -91,6 +147,9 @@ function initAutocomplete(allData, uniqueData) {
             $(this).blur();
         }
     });
+
+    // Init Multiselect
+    $('#filter-by-slot').multiselect(multiselectConfig);
 }
 
 // Add slot selection buttons from array of slots
@@ -118,17 +177,32 @@ function getSlotSelectionButton(code, title, type, slot, faculty, credits, venue
 function addSlotButtons(code) {
     var BUTTONS_PER_DIV = 4;
 
-    $('#insertCourseSelectionOptions').html('');
 
     var buttonsPerDiv = BUTTONS_PER_DIV;
     var $buttonDiv = $('<div></div>');
+    $('#insertCourseSelectionOptions').html('');
     $('#insertCourseSelectionOptions').append($buttonDiv);
+
+    $('#filter-by-slot').html('');
+    var theorySlotGroupSelect = [];
+    var labSlotGroupSelect = [];
 
     $.each(all_data, function (key, value) {
         if (value.CODE === code) {
 
             var $slotButton = getSlotSelectionButton(value.CODE, value.TITLE, value.TYPE, value.SLOT, value.FACULTY, value.CREDITS.toString(), value.VENUE);
             $buttonDiv.append($slotButton);
+
+            // Build Multiselect group list
+            if (value.SLOT[0] === 'L') {
+                if (labSlotGroupSelect.indexOf(value.SLOT) === -1) {
+                    labSlotGroupSelect.push(value.SLOT);
+                }
+            } else {
+                if (theorySlotGroupSelect.indexOf(value.SLOT) === -1) {
+                    theorySlotGroupSelect.push(value.SLOT);
+                }
+            }
 
             buttonsPerDiv--;
 
@@ -139,4 +213,24 @@ function addSlotButtons(code) {
             }
         }
     });
+
+    // Multiselect Theory
+    if (theorySlotGroupSelect.length) {
+        var $theorySlotGroupSelect = $('<optgroup label="Theory"></optgroup>');
+        theorySlotGroupSelect.forEach(function (el) {
+            var $option = $('<option value="' + el + '">' + el + '</option>');
+            $theorySlotGroupSelect.append($option);
+        });
+        $('#filter-by-slot').append($theorySlotGroupSelect);
+    }
+    if (labSlotGroupSelect.length) {
+        // Multiselect Lab
+        var $labSlotGroupSelect = $('<optgroup label="Lab"></optgroup>');
+        labSlotGroupSelect.forEach(function (el) {
+            var $option = $('<option value="' + el + '">' + el + '</option>');
+            $labSlotGroupSelect.append($option);
+        });
+        $('#filter-by-slot').append($labSlotGroupSelect);
+    }
+    $('#filter-by-slot').multiselect('rebuild');
 }

@@ -207,12 +207,18 @@ $(function () {
 		activeTable.data = [];
 		updateLocalForage();
 		highlighted[activeTable.id] = [];
+		// Clear Multiselect
+		$('#filter-by-slot').html('');
+		$('#filter-by-slot').multiselect && $('#filter-by-slot').multiselect('rebuild');
 	});
 
 	// Clear course from panel
 	$("#clearCourseBtn").click(function () {
 		$('#slot-sel-area input').val("");
 		$('#insertCourseSelectionOptions').html("");
+		// Clear Multiselect
+		$('#filter-by-slot').html('');
+		$('#filter-by-slot').multiselect && $('#filter-by-slot').multiselect('rebuild');
 	});
 
 	// switch table menu option on click
@@ -611,11 +617,13 @@ function loadCourseData() {
 	function loadAssets(callback) {
 		var scripts = [
 			"https://cdnjs.cloudflare.com/ajax/libs/easy-autocomplete/1.3.5/jquery.easy-autocomplete.min.js",
+			"https://cdnjs.cloudflare.com/ajax/libs/bootstrap-multiselect/0.9.15/js/bootstrap-multiselect.min.js",
 			"js/autocomplete_course.js"
 		];
 
 		var stylesheets = [
-			"https://cdnjs.cloudflare.com/ajax/libs/easy-autocomplete/1.3.5/easy-autocomplete.min.css"
+			"https://cdnjs.cloudflare.com/ajax/libs/easy-autocomplete/1.3.5/easy-autocomplete.min.css",
+			"https://cdnjs.cloudflare.com/ajax/libs/bootstrap-multiselect/0.9.15/css/bootstrap-multiselect.css"
 		];
 
 		stylesheets.forEach(function (link) {

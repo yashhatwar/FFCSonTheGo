@@ -40,7 +40,6 @@ var multiselectConfig = {
 
         }
         $('#insertCourseSelectionOptions button').show();
-        console.log(filterSlotArr);
         if (filterSlotArr.length) {
             $('#insertCourseSelectionOptions button').not(function (i, el) {
                 var elSlot = $(el).data('slot');

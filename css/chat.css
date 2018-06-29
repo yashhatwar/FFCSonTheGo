@@ -58,10 +58,10 @@ footer {
 @media screen and (max-width: 425px) {
     #tlkio {
         width: 100% !important;
-        height: 50rem !important;
+        height: 45rem !important;
     }
     #chatbox {
         width: 100%;
-        margin: 0 0 -51rem 0;
+        margin: 0 0 -46rem 0;
     }
 }

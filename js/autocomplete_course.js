@@ -1,4 +1,4 @@
-var filterSlotArr = [];
+filterSlotArr = [];
 
 var multiselectConfig = {
     enableCaseInsensitiveFiltering: true,
@@ -184,6 +184,7 @@ function addSlotButtons(code) {
     $('#insertCourseSelectionOptions').append($buttonDiv);
 
     $('#filter-by-slot').html('');
+    filterSlotArr = [];
     var theorySlotGroupSelect = [];
     var labSlotGroupSelect = [];
 

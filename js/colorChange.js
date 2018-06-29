@@ -209,6 +209,7 @@ $(function () {
 		highlighted[activeTable.id] = [];
 		// Clear Multiselect
 		$('#filter-by-slot').html('');
+		filterSlotArr && (filterSlotArr = []);
 		$('#filter-by-slot').multiselect && $('#filter-by-slot').multiselect('rebuild');
 	});
 
@@ -218,6 +219,7 @@ $(function () {
 		$('#insertCourseSelectionOptions').html("");
 		// Clear Multiselect
 		$('#filter-by-slot').html('');
+		filterSlotArr && (filterSlotArr = []);
 		$('#filter-by-slot').multiselect && $('#filter-by-slot').multiselect('rebuild');
 	});
 

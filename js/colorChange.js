@@ -620,7 +620,7 @@ function loadCourseData() {
 		var scripts = [
 			"https://cdnjs.cloudflare.com/ajax/libs/easy-autocomplete/1.3.5/jquery.easy-autocomplete.min.js",
 			"https://cdnjs.cloudflare.com/ajax/libs/bootstrap-multiselect/0.9.15/js/bootstrap-multiselect.min.js",
-			"js/autocomplete_course.js"
+			"js/autocomplete_course.js?d=30-6-2018"
 		];
 
 		var stylesheets = [

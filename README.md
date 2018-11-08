@@ -2,7 +2,7 @@
 
 Website to visualize VIT timetable. Helpful to students of VIT University, Vellore campus during FFCS course registrations.
 
-> Last updated for Fall Semester 2018-19
+> Last updated for Winter Semester 2018-19
 
 ## Getting Started
 

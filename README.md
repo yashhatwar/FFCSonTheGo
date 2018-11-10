@@ -2,13 +2,13 @@
 
 Website to visualize VIT timetable. Helpful to students of VIT University, Vellore campus during FFCS course registrations.
 
+![Demo](images/demo.gif 'Demo')
+
 > Last updated for Winter Semester 2018-19
 
 ## Getting Started
 
 Visit the website here [ffcsonthego.azurewebsites.net](https://ffcsonthego.azurewebsites.net/)
-
-![Demo](images/demo.gif "Demo")
 
 ## Contributing
 
@@ -18,8 +18,8 @@ Found a bug or have a new idea? Feel free to open [issues](https://github.com/Va
 
 ## Authors
 
-* **Vatsal Joshi** - *Initial work* - [vatz88](https://github.com/vatz88)
-* **Sangeeth Sudheer** - [sangeeth96](https://github.com/sangeeth96)
+- **Vatsal Joshi** - _Initial work_ - [vatz88](https://github.com/vatz88)
+- **Sangeeth Sudheer** - [sangeeth96](https://github.com/sangeeth96)
 
 <!--
 See also the list of [contributors](https://github.com/VaTz88/FFCSonTheGo/contributors) who participated in this project.

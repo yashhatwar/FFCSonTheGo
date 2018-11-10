@@ -650,8 +650,8 @@ function loadCourseData() {
 		};
 
 		var $getRequests = [
-			"data/all_data.json?d=8-11-2018",
-			"data/unique_courses.json?d=d=8-11-2018"
+			"data/all_data.json?d=10-11-2018",
+			"data/unique_courses.json?d=d=10-11-2018"
 		].map(function (url) {
 			return prepareGetRequest(url);
 		});

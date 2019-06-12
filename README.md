@@ -6,6 +6,8 @@ Website to visualize VIT timetable. Helpful to students of VIT University, Vello
 
 > Last updated for Winter Semester 2018-19
 
+🔈 Old site used untill Winter Semester 2018-19 is archived at https://ffcsonthego-archive.vatz88.in/
+
 ## Getting Started
 
 Visit the website here [ffcsonthego.azurewebsites.net](https://ffcsonthego.azurewebsites.net/)

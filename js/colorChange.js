@@ -285,7 +285,7 @@ $(function () {
 	});
 
 	// load course data with autocomplete
-	loadCourseData();
+	// loadCourseData();
 });
 
 function addColorChangeEvents() {

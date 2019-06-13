@@ -10,7 +10,7 @@ Website to visualize VIT timetable. Helpful to students of VIT University, Vello
 
 ## Getting Started
 
-Visit the website here https://ffcsonthego.vatz88.in
+Visit the website here [ffcsonthego.vatz88.in](https://ffcsonthego.vatz88.in)
 
 ## Contributing
 

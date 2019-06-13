@@ -56,40 +56,40 @@ $(function () {
                 });
             }
         });
-        ga('send', {
-            hitType: 'event',
-            eventCategory: 'Timetable',
-            eventAction: 'click',
-            eventLabel: 'Screenshot'
-        });
+        // ga('send', {
+        //     hitType: 'event',
+        //     eventCategory: 'Timetable',
+        //     eventAction: 'click',
+        //     eventLabel: 'Screenshot'
+        // });
     });
 
-    $("header .alert-dismissible a").click(function () {
-        ga('send', {
-            hitType: 'event',
-            eventCategory: 'Promotion',
-            eventAction: 'click',
-            eventLabel: 'GitHub'
-        });
-    });
+    // $("header .alert-dismissible a").click(function () {
+    //     ga('send', {
+    //         hitType: 'event',
+    //         eventCategory: 'Promotion',
+    //         eventAction: 'click',
+    //         eventLabel: 'GitHub'
+    //     });
+    // });
 
-    $("#shareWhatsApp a").click(function () {
-        ga('send', {
-            hitType: 'event',
-            eventCategory: 'Share',
-            eventAction: 'click',
-            eventLabel: 'WhatsApp'
-        });
-    });
+    // $("#shareWhatsApp a").click(function () {
+    //     ga('send', {
+    //         hitType: 'event',
+    //         eventCategory: 'Share',
+    //         eventAction: 'click',
+    //         eventLabel: 'WhatsApp'
+    //     });
+    // });
 
-    $("footer a").click(function () {
-        ga('send', {
-            hitType: 'event',
-            eventCategory: 'Promotion',
-            eventAction: 'click',
-            eventLabel: 'VES'
-        });
-    });
+    // $("footer a").click(function () {
+    //     ga('send', {
+    //         hitType: 'event',
+    //         eventCategory: 'Promotion',
+    //         eventAction: 'click',
+    //         eventLabel: 'VES'
+    //     });
+    // });
 });
 
 // disable hover for touch screen devices

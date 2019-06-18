@@ -1,7 +1,7 @@
 const fs = require('fs');
 
 // overwirte the output file
-const result = fs.readFileSync('output.json');
+const result = fs.readFileSync(__dirname + '/output.json');
 const resultArray = JSON.parse(result);
 
 // const keyMap = {
@@ -17,14 +17,14 @@ const resultArray = JSON.parse(result);
 // removeKeys(courseObj, keysRemove);
 // }
 
-fs.writeFile(__dirname + '/../data/all_data.json', JSON.stringify(resultArray), () => {
+fs.writeFile(__dirname + '/../src/data/all_data.json', JSON.stringify(resultArray), () => {
 	console.log('all_data.json updated.');
 });
 
 // remove repeating courses
 unique = resultArray.filter((element, index, self) => self.findIndex(t => t.CODE === element.CODE && t.TITLE === element.TITLE) === index);
 
-fs.writeFile(__dirname + '/../data/unique_courses.json', JSON.stringify(unique), () => {
+fs.writeFile(__dirname + '/../src/data/unique_courses.json', JSON.stringify(unique), () => {
 	console.log('unique_courses.json updated.');
 });
 

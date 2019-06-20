@@ -1,16 +1,19 @@
-var fs = require("fs");
+var fs = require('fs');
 // var node_xj = require("xls-to-json");
 var XLSX = require('xlsx');
 
 var wb = XLSX.readFile(__dirname + '/report.xlsx');
 var ws = wb.Sheets[wb.SheetNames[0]];
 
-fs.writeFileSync(__dirname + '/output.json', JSON.stringify(XLSX.utils.sheet_to_json(ws)));
+fs.writeFileSync(
+    __dirname + '/output.json',
+    JSON.stringify(XLSX.utils.sheet_to_json(ws)),
+);
 
 // node_xj({
-//     input: "report.xlsx", // input xls 
-//     output: "output.json", // output json 
-//     sheet: "Sheet 1" // specific sheetname 
+//     input: "report.xlsx", // input xls
+//     output: "output.json", // output json
+//     sheet: "Sheet 1" // specific sheetname
 // }, function (err, result) {
 //     if (err) {
 //         console.error(err);

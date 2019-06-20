@@ -2,14 +2,8 @@
 
 ## Usage
 
-    npm install
-
 `convert_to_json.js` is used to convert excel to JSON.
 `json_to_data_dir.js` has the transformation code to adhere to the required JSON format.
-
-To execute all operations, run the following:
-
-    npm run convert
 
 *`data/all_data.json` and `data/all_data.json` will be modified as per the new excel*
 

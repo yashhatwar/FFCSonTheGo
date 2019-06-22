@@ -114,3 +114,8 @@ document.onkeydown = function(e) {
         return true;
     }
 };
+
+const Sentry = require('@sentry/browser');
+Sentry.init({
+    dsn: 'https://2108314c87344a6c9c4d1db1e82b5d05@sentry.io/1487980',
+});

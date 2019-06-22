@@ -236,7 +236,7 @@ function addSlotButtons(code) {
                 value.TYPE,
                 value.SLOT,
                 value.FACULTY,
-                value.CREDITS.toString(),
+                (value.CREDITS || '').toString(),
                 value.VENUE,
             );
             $buttonDiv.append($slotButton);

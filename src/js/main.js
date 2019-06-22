@@ -1,4 +1,4 @@
-import '../../node_modules/bootstrap/dist/css/bootstrap.min.css';
+import '../../node_modules/bootstrap/dist/css/bootstrap.css';
 import '../css/main.scss';
 
 import $ from 'jquery';
@@ -7,17 +7,17 @@ require('bootstrap');
 import html2canvas from 'html2canvas';
 
 import './color_change';
-import { getCookie, setCookie, removeTouchHoverCSSRule } from './utils';
+import { removeTouchHoverCSSRule } from './utils';
 
 $(function() {
     // Disclaimer modal
-    if (getCookie('disclaimer') !== 'shown') {
-        $('#disclaimer-modal').modal({
-            keyboard: false,
-            backdrop: 'static',
-        });
-        setCookie('disclaimer', 'shown', 90);
-    }
+    // if (getCookie('disclaimer') !== 'shown') {
+    //     $('#disclaimer-modal').modal({
+    //         keyboard: false,
+    //         backdrop: 'static',
+    //     });
+    //     setCookie('disclaimer', 'shown', 90);
+    // }
 
     // disable hover for touch screen devices
     removeTouchHoverCSSRule();

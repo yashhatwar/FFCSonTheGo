@@ -5,8 +5,10 @@ export function resetFilterSlotArr(params) {
     filterSlotArr = [];
 }
 
-let unique_courses = [];
-let all_data = [];
+const courses_data = {
+    unique_courses: [],
+    all_data: [],
+};
 
 var multiselectConfig = {
     enableCaseInsensitiveFiltering: true,
@@ -80,13 +82,18 @@ var multiselectConfig = {
     },
 };
 
-export function initAutocomplete() {
-    all_data = require('../data/all_data.json');
-    unique_courses = require('../data/unique_courses.json');
+export function initAutocomplete(isChennai) {
+    if (isChennai) {
+        courses_data.all_data = require('../data/all_data_chennai.json');
+        courses_data.unique_courses = require('../data/unique_courses_chennai.json');
+    } else {
+        courses_data.all_data = require('../data/all_data.json');
+        courses_data.unique_courses = require('../data/unique_courses.json');
+    }
 
     // autocomplete options
     var courseCodeOption = {
-        data: unique_courses,
+        data: courses_data.unique_courses,
 
         getValue: 'CODE',
 
@@ -118,7 +125,7 @@ export function initAutocomplete() {
     };
 
     var courseTitleOption = {
-        data: unique_courses,
+        data: courses_data.unique_courses,
 
         getValue: 'TITLE',
 
@@ -146,6 +153,18 @@ export function initAutocomplete() {
         placeholder: 'Search...',
     };
 
+    $('#inputCourseTitle').easyAutocomplete(courseTitleOption);
+    $('#inputCourseCode').easyAutocomplete(courseCodeOption);
+    $('div.easy-autocomplete').removeAttr('style'); // for dynamic width
+}
+
+export function postInitAutocomplete() {
+    $('#slot-sel-area input[type="text"]').keyup(function(e) {
+        if (e.which === 13) {
+            $(this).blur();
+        }
+    });
+
     $('#insertCourseSelectionOptions').on('click', 'button', function() {
         var code = $(this).data('code');
         var title = $(this).data('title');
@@ -167,16 +186,6 @@ export function initAutocomplete() {
     $('#insertCourseSelectionOptions').on('dblclick', 'button', function() {
         $('#slot-sel-area #addCourseBtn').click();
         $(this).blur();
-    });
-
-    $('#inputCourseTitle').easyAutocomplete(courseTitleOption);
-    $('#inputCourseCode').easyAutocomplete(courseCodeOption);
-    $('div.easy-autocomplete').removeAttr('style'); // for dynamic width
-
-    $('#slot-sel-area input[type="text"]').keyup(function(e) {
-        if (e.which === 13) {
-            $(this).blur();
-        }
     });
 
     // Init Multiselect
@@ -228,7 +237,7 @@ function addSlotButtons(code) {
     var theorySlotGroupSelect = [];
     var labSlotGroupSelect = [];
 
-    $.each(all_data, function(key, value) {
+    $.each(courses_data.all_data, function(key, value) {
         if (value.CODE === code) {
             var $slotButton = getSlotSelectionButton(
                 value.CODE,

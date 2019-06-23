@@ -867,5 +867,29 @@ function loadCourseData() {
     require('./autocomplete_course');
     require('../../node_modules/easy-autocomplete/dist/easy-autocomplete.css');
     require('../../node_modules/bootstrap-multiselect/dist/css/bootstrap-multiselect.css');
-    require('./autocomplete_course').initAutocomplete();
+    const {
+        initAutocomplete,
+        postInitAutocomplete,
+    } = require('./autocomplete_course');
+    // switchCampus(window.location.hash === '#Chennai');
+    initAutocomplete(window.location.hash === '#Chennai');
+    postInitAutocomplete();
+    if (window.location.hash === '#Chennai') {
+        $('#campus-btn').text('Vellore');
+    } else {
+        $('#campus-btn').text('Chennai');
+    }
+    $(window).on('hashchange', () => {
+        initAutocomplete(window.location.hash === '#Chennai');
+        // switchCampus(window.location.hash === '#Chennai');
+        if (window.location.hash === '#Chennai') {
+            $('#campus-btn').text('Vellore');
+        } else {
+            $('#campus-btn').text('Chennai');
+        }
+    });
+
+    $('#campus-btn').click(function() {
+        window.location.hash = $(this).text();
+    });
 }

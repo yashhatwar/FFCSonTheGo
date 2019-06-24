@@ -4,13 +4,13 @@
 
 ![Demo](demo.gif 'Demo')
 
-Website to visualize VIT timetable. Helpful to students of VIT University, Vellore campus during FFCS course registrations.
+Website to visualize VIT timetable. Helpful to students of VIT University, Vellore campus & Chennai campus during FFCS course registrations.
 
 ## Getting Started
 
 Visit the website here [ffcsonthego.vatz88.in](https://ffcsonthego.vatz88.in)
 
-> Last updated for Winter Semester 2018-19
+> Last updated for Fall Semester 2019-20
 
 🔈 Old site used untill Winter Semester 2018-19 is archived at https://ffcsonthego-archive.vatz88.in/
 

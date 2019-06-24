@@ -410,6 +410,9 @@ $(function() {
     });
 
     // load course data with autocomplete
+    $('#campus-btn-group :input').change(function(event) {
+        window.location.hash = event.target.value;
+    });
     loadCourseData();
 });
 
@@ -871,25 +874,23 @@ function loadCourseData() {
         initAutocomplete,
         postInitAutocomplete,
     } = require('./autocomplete_course');
-    // switchCampus(window.location.hash === '#Chennai');
     initAutocomplete(window.location.hash === '#Chennai');
     postInitAutocomplete();
     if (window.location.hash === '#Chennai') {
-        $('#campus-btn').text('Vellore');
+        $('#current-campus').text('Chennai campus');
+        $('#chennai-campus').click();
     } else {
-        $('#campus-btn').text('Chennai');
+        $('#current-campus').text('Vellore campus');
+        $('#vellore-campus').click();
     }
     $(window).on('hashchange', () => {
         initAutocomplete(window.location.hash === '#Chennai');
-        // switchCampus(window.location.hash === '#Chennai');
         if (window.location.hash === '#Chennai') {
-            $('#campus-btn').text('Vellore');
+            $('#current-campus').text('Chennai campus');
+            $('#chennai-campus').click();
         } else {
-            $('#campus-btn').text('Chennai');
+            $('#current-campus').text('Vellore campus');
+            $('#vellore-campus').click();
         }
-    });
-
-    $('#campus-btn').click(function() {
-        window.location.hash = $(this).text();
     });
 }

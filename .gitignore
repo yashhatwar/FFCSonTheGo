@@ -4,3 +4,4 @@ dist
 .cache
 src/data/*.json
 util/.DS_Store
+yarn-error.log

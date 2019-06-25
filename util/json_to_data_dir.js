@@ -1,7 +1,10 @@
 const fs = require('fs');
+const path = require('path');
+
+fs.mkdirSync(path.resolve(__dirname + '/../src/data'));
 
 // overwirte the output file
-const result = fs.readFileSync(__dirname + '/output.json');
+const result = fs.readFileSync(path.resolve(__dirname + '/output.json'));
 const resultArray = JSON.parse(result);
 
 fs.writeFile(
@@ -11,11 +14,13 @@ fs.writeFile(
         console.log('all_data.json updated.');
     },
 );
-const result_chennai = fs.readFileSync(__dirname + '/output_chennai.json');
+const result_chennai = fs.readFileSync(
+    path.resolve(__dirname + '/output_chennai.json'),
+);
 const resultArray_chennai = JSON.parse(result_chennai);
 
 fs.writeFile(
-    __dirname + '/../src/data/all_data_chennai.json',
+    path.resolve(__dirname + '/../src/data/all_data_chennai.json'),
     JSON.stringify(resultArray_chennai),
     () => {
         console.log('all_data_chennai.json updated.');
@@ -31,7 +36,7 @@ const unique = resultArray.filter(
 );
 
 fs.writeFile(
-    __dirname + '/../src/data/unique_courses.json',
+    path.resolve(__dirname + '/../src/data/unique_courses.json'),
     JSON.stringify(unique),
     () => {
         console.log('unique_courses.json updated.');
@@ -45,7 +50,7 @@ const unique_chennai = resultArray_chennai.filter(
 );
 
 fs.writeFile(
-    __dirname + '/../src/data/unique_courses_chennai.json',
+    path.resolve(__dirname + '/../src/data/unique_courses_chennai.json'),
     JSON.stringify(unique_chennai),
     () => {
         console.log('unique_courses_chennai.json updated.');

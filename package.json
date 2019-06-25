@@ -10,7 +10,7 @@
         "start": "yarn convert && parcel src/index.html",
         "start:noconvert": "parcel src/index.html",
         "build": "yarn convert && parcel build src/index.html",
-        "convert": "node util/convert_to_json.js && node util/json_to_data_dir.js && rm util/output.json && rm util/output_chennai.json"
+        "convert": "node util/convert_to_json.js && node util/json_to_data_dir.js"
     },
     "husky": {
         "hooks": {

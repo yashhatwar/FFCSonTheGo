@@ -7,9 +7,11 @@
             name="viewport"
             content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
         />
-        <title>FFCS on The Go - VIT University</title>
-        <link rel="icon" sizes="192x192" href="images/icon192x192.png" />
-        <link rel="icon" href="images/favicon.png" />
+        <title>FFCS On The Go - VIT University</title>
+        <link rel="manifest" href="./manifest.webmanifest" />
+        <link rel="icon" sizes="192x192" href="./images/icon192x192.png" />
+        <link rel="apple-touch-icon" href="./images/icon192x192.png" />
+        <link rel="icon" href="./images/favicon.png" />
         <meta name="author" content="Vatsal Joshi" />
         <meta name="subject" content="Education" />
         <meta
@@ -23,7 +25,7 @@
         <meta name="distribution" content="Global" />
         <meta name="country" content="India" />
         <meta name="theme-color" content="#9C27B0" />
-        <meta property="og:title" content="FFCS on The Go" />
+        <meta property="og:title" content="FFCS On The Go" />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://ffcsonthego.vatz88.in/" />
         <meta
@@ -34,12 +36,23 @@
             property="og:description"
             content="Visualize and make the most optimum timetable for yourself."
         />
-        <meta property="og:site_name" content="FFCS on The Go" />
+        <meta property="og:site_name" content="FFCS On The Go" />
         <!-- enjoy hints -->
         <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/enjoyhint/3.1.0/enjoyhint.css" />-->
     </head>
 
     <body>
+        <script>
+            // Check that service workers are supported
+            if ('serviceWorker' in navigator) {
+                // Use the window load event to keep the page load performant
+                window.addEventListener('load', () => {
+                    navigator.serviceWorker.register(
+                        `${window.location.origin}/sw.js`,
+                    );
+                });
+            }
+        </script>
         <script>
             // Google anlytics
             (function(i, s, o, g, r, a, m) {
@@ -144,7 +157,7 @@
             <div class="row">
                 <div class="col-sm-12 text-center">
                     <h1>
-                        FFCS on The Go
+                        FFCS On The Go
                         <small id="current-campus">Loading...</small>
                     </h1>
                 </div>
@@ -531,7 +544,7 @@
             <div id="timetable" class="row table-responsive">
                 <table class="table table-bordered">
                     <tr style="display:none" class="screenshot_msg">
-                        <td colspan="16">FFCS on The Go | bit.ly/ffcs-vit</td>
+                        <td colspan="16">FFCS On The Go | bit.ly/ffcs-vit</td>
                     </tr>
                     <tr>
                         <td class="ColumnOneDays">THEORY <br />HOURS</td>
@@ -937,7 +950,7 @@
                         <thead>
                             <tr style="display:none" class="screenshot_msg">
                                 <td colspan="7">
-                                    FFCS on The Go | bit.ly/ffcs-vit
+                                    FFCS On The Go | bit.ly/ffcs-vit
                                 </td>
                             </tr>
                             <tr class="success">

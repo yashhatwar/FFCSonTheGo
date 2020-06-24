@@ -3,6 +3,6 @@ module.exports = {
     globPatterns: ['**/*.{css,svg,ttf,woff2,eot,woff,json,png,html,js}'],
     swDest: 'dist/sw.js',
     maximumFileSizeToCacheInBytes: 10000000,
-    // skipWaiting: true,
+    skipWaiting: true,
     cleanupOutdatedCaches: true,
 };

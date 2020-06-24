@@ -44,13 +44,24 @@
     <body>
         <script>
             // Check that service workers are supported
-            if ('serviceWorker' in navigator) {
+            if ('serviceWorker' in window.navigator) {
                 // Use the window load event to keep the page load performant
                 window.addEventListener('load', () => {
-                    navigator.serviceWorker.register(
+                    window.navigator.serviceWorker.register(
                         `${window.location.origin}/sw.js`,
                     );
                 });
+                window.navigator.serviceWorker.addEventListener(
+                    'controllerchange',
+                    function() {
+                        var result = window.confirm(
+                            'A new version available! Do you want to reload?',
+                        );
+                        if (result) {
+                            window.location.reload();
+                        }
+                    },
+                );
             }
         </script>
         <script>

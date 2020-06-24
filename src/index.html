@@ -47,9 +47,13 @@
             if ('serviceWorker' in window.navigator) {
                 // Use the window load event to keep the page load performant
                 window.addEventListener('load', () => {
-                    window.navigator.serviceWorker.register(
-                        `${window.location.origin}/sw.js`,
-                    );
+                    window.navigator.serviceWorker
+                        .register(`${window.location.origin}/sw.js`)
+                        .then((reg) => {
+                            setInterval(() => {
+                                reg.update();
+                            }, 10 * 60 * 1000);
+                        });
                 });
                 window.navigator.serviceWorker.addEventListener(
                     'controllerchange',
@@ -173,8 +177,15 @@
                     </h1>
                 </div>
             </div>
+            <div class="row">
+                <div class="col-sm-12 text-center text-info">
+                    <h5>
+                        Last updated for Winter Semester 2019-20
+                    </h5>
+                </div>
+            </div>
 
-            <div class="row text-center">
+            <div class="row text-center" style="margin-top: 1rem;">
                 <div id="shareWhatsApp" class="col-xs-6 visible-xs">
                     <!-- WhatsApp Share-->
                     <a

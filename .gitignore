@@ -3,6 +3,6 @@ node_modules
 dist
 .cache
 src/data/*.json
-util/.DS_Store
+**/*.DS_Store
 util/output*.json
 yarn-error.log

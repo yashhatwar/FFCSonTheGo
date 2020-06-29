@@ -7,7 +7,7 @@
     "license": "GPL-3.0",
     "private": false,
     "scripts": {
-        "start": "yarn convert && && yarn start:noconvert",
+        "start": "yarn convert && yarn start:noconvert",
         "start:noconvert": "parcel src/index.html",
         "build:sw": "workbox generateSW ./src/workbox-config.js",
         "build": "yarn convert && parcel build src/index.html && yarn build:sw",

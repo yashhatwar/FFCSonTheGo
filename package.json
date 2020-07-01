@@ -7,7 +7,7 @@
     "license": "GPL-3.0",
     "private": false,
     "scripts": {
-        "start": "yarn convert && && yarn start:noconvert",
+        "start": "yarn convert && yarn start:noconvert",
         "start:noconvert": "parcel src/index.html",
         "build:sw": "workbox generateSW ./src/workbox-config.js",
         "build": "yarn convert && parcel build src/index.html && yarn build:sw",
@@ -35,7 +35,7 @@
         "bootstrap": "3.4.1",
         "bootstrap-multiselect": "^0.9.13-1",
         "easy-autocomplete": "1.3.5",
-        "html2canvas": "^1.0.0-rc.3",
+        "html2canvas": "^1.0.0-rc.5",
         "jquery": "3.5.0",
         "localforage": "^1.7.3"
     }

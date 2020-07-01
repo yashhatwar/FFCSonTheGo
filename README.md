@@ -10,7 +10,7 @@ Website to visualize VIT timetable. Helpful to students of VIT University, Vello
 
 Visit the website here [ffcsonthego.vatz88.in](https://ffcsonthego.vatz88.in)
 
-> Last updated for Winter Semester 2019-20
+> Last updated for Fall Semester 2020-21
 
 🔈 Old site used untill Winter Semester 2018-19 is archived at https://ffcsonthego-archive.vatz88.in/
 
@@ -22,8 +22,8 @@ Found a bug or have a new idea? Feel free to open [issues](https://github.com/va
 
 ## Authors
 
-- **Vatsal Joshi** - _Initial work_ - [vatz88](https://github.com/vatz88)
-- **Sangeeth Sudheer** - [sangeeth96](https://github.com/sangeeth96)
+-   **Vatsal Joshi** - _Initial work_ - [vatz88](https://github.com/vatz88)
+-   **Sangeeth Sudheer** - [sangeeth96](https://github.com/sangeeth96)
 
 See also the list of [contributors](https://github.com/vatz88/FFCSonTheGo/contributors) who participated in this project.
 

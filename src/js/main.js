@@ -117,6 +117,12 @@ document.onkeydown = function(e) {
 
 // Setup a listener to track Add to Homescreen events.
 window.addEventListener('beforeinstallprompt', (e) => {
+    ga('send', {
+        hitType: 'event',
+        eventCategory: 'A2H',
+        eventAction: 'Seen',
+        eventLabel: `A2H Shown`,
+    });
     e.userChoice.then((choiceResult) => {
         ga('send', {
             hitType: 'event',

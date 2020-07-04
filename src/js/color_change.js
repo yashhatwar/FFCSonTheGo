@@ -264,13 +264,13 @@ $(function() {
             if (isSorted && ascending) {
                 // sort in descending order
                 items.sort(function(a, b) {
-                    return $(a).text() < $(b).text();
+                    return $(a).text() < $(b).text() ? 1 : -1;
                 });
                 $this.addClass('sorted descending');
             } else {
                 // sort in ascending order
                 items.sort(function(a, b) {
-                    return $(a).text() > $(b).text();
+                    return $(a).text() > $(b).text() ? 1 : -1;
                 });
                 $this.addClass('sorted ascending');
             }

@@ -878,10 +878,8 @@ function loadCourseData() {
     postInitAutocomplete();
     if (window.location.hash === '#Chennai') {
         $('#current-campus').text('Chennai campus');
-        $('#chennai-campus').click();
     } else {
         $('#current-campus').text('Vellore campus');
-        $('#vellore-campus').click();
     }
     $(window).on('hashchange', () => {
         initAutocomplete(window.location.hash === '#Chennai');

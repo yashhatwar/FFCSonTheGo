@@ -115,6 +115,24 @@ document.onkeydown = function(e) {
     }
 };
 
+// Setup a listener to track Add to Homescreen events.
+window.addEventListener('beforeinstallprompt', (e) => {
+    ga('send', {
+        hitType: 'event',
+        eventCategory: 'A2H',
+        eventAction: 'Seen',
+        eventLabel: `A2H Shown`,
+    });
+    e.userChoice.then((choiceResult) => {
+        ga('send', {
+            hitType: 'event',
+            eventCategory: 'A2H',
+            eventAction: 'click',
+            eventLabel: `A2H ${choiceResult.outcome}`,
+        });
+    });
+});
+
 // const Sentry = require('@sentry/browser');
 // Sentry.init({
 //     dsn: 'https://2108314c87344a6c9c4d1db1e82b5d05@sentry.io/1487980',

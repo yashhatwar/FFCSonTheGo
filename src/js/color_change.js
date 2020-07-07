@@ -264,13 +264,13 @@ $(function() {
             if (isSorted && ascending) {
                 // sort in descending order
                 items.sort(function(a, b) {
-                    return $(a).text() < $(b).text();
+                    return $(a).text() < $(b).text() ? 1 : -1;
                 });
                 $this.addClass('sorted descending');
             } else {
                 // sort in ascending order
                 items.sort(function(a, b) {
-                    return $(a).text() > $(b).text();
+                    return $(a).text() > $(b).text() ? 1 : -1;
                 });
                 $this.addClass('sorted ascending');
             }
@@ -878,19 +878,15 @@ function loadCourseData() {
     postInitAutocomplete();
     if (window.location.hash === '#Chennai') {
         $('#current-campus').text('Chennai campus');
-        $('#chennai-campus').click();
     } else {
         $('#current-campus').text('Vellore campus');
-        $('#vellore-campus').click();
     }
     $(window).on('hashchange', () => {
         initAutocomplete(window.location.hash === '#Chennai');
         if (window.location.hash === '#Chennai') {
             $('#current-campus').text('Chennai campus');
-            $('#chennai-campus').click();
         } else {
             $('#current-campus').text('Vellore campus');
-            $('#vellore-campus').click();
         }
     });
 }

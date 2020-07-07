@@ -5,4 +5,6 @@ module.exports = {
     maximumFileSizeToCacheInBytes: 10000000,
     skipWaiting: true,
     cleanupOutdatedCaches: true,
+    offlineGoogleAnalytics: true,
+    sourcemap: true,
 };

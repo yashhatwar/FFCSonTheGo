@@ -48,35 +48,40 @@ $(function() {
         var timetable_img_src;
         var courseListTable_img_src;
         var newWindow_data = '';
-        var original_width = $('body').width();
         $('body').width('1500');
         $('.screenshot_msg').show();
         var newWindow = window.open();
+        newWindow.document.write('<h1>Wait. Capturing screenshot...</h1>');
         // timetable screenshot
         html2canvas(document.getElementById('timetable')).then((canvas) => {
             timetable_img_src = canvas.toDataURL('image/jpeg');
-            newWindow_data =
-                '<html><head><title>FFCS on The Go</title></head><body><a href="' +
-                timetable_img_src +
-                '" download="FFCSOTG_MyTimeTable"><img width="100%" src="' +
-                timetable_img_src +
-                '" alt="FFCSonTheGo"/></a>' +
-                '<h1>Click on the image to download.</h1>';
+            newWindow_data = `<html>
+                <head><title>FFCS on The Go</title></head>
+                <body>
+                    <h1>Click on the respective images to download.</h1>
+                    <br>
+                    <h3>Timetable</h3>
+                    <a href="${timetable_img_src}" download="FFCSOTG_MyTimeTable">
+                        <img width="100%" src="${timetable_img_src}" alt="FFCSOTG_MyTimeTable"/>
+                    </a>`;
             html2canvas(document.getElementById('courseListTable')).then(
                 (canvas) => {
                     courseListTable_img_src = canvas.toDataURL('image/jpeg');
                     newWindow_data =
                         newWindow_data +
-                        '<a href="' +
-                        courseListTable_img_src +
-                        '" download="FFCSOTG_MyCourses"><img width="100%" src="' +
-                        courseListTable_img_src +
-                        '" alt="FFCSonTheGo"/></a>' +
-                        '<h1>Click on the image to download.</h1>' +
-                        '</body></html>';
+                        `<br><br>
+                        <h3>Course List</h3>
+                        <a href="${courseListTable_img_src}" download="FFCSOTG_MyCourses">
+                            <img width="100%" src="${courseListTable_img_src}" alt="FFCSOTG_MyCourses"/>
+                        </a>
+                        </body></html>`;
+
+                    // closing the document to clear the the current content
+                    newWindow.document.close();
                     newWindow.document.write(newWindow_data);
+                    newWindow.document.close();
                     $('.screenshot_msg').hide();
-                    $('body').width(original_width);
+                    $('body').width('initial');
                 },
             );
         });

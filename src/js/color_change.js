@@ -42,6 +42,8 @@ var highlighted = {
     },
 };
 
+let isDefaultDeletable = false;
+
 $(function() {
     // load localForage data
     (function() {
@@ -53,6 +55,14 @@ $(function() {
 
                 fillPage(activeTable.data);
                 updateTableDropdownLabel(activeTable.name);
+
+                // Renaming the 'Table Default' option
+                $('#saved-tt-picker .tt-table-name')
+                    .first()
+                    .text(activeTable.name);
+
+                // After the first table is deleted, the id may not be 0 anymore
+                timeTableStorage[0].id = 0;
 
                 timeTableStorage.slice(1).forEach(function(table) {
                     addTableDropdownButton(table.id, table.name);
@@ -334,6 +344,13 @@ $(function() {
             .closest('li')
             .remove();
         removeTable(tableId);
+
+        if (timeTableStorage.length == 1) {
+            $('#saved-tt-picker .tt-picker-remove')
+                .first()
+                .remove();
+            isDefaultDeletable = false;
+        }
     });
 
     // Rename table button
@@ -815,7 +832,11 @@ function removeTable(tableId) {
         if (timeTableStorage[i].id == tableId) {
             // If it is the active table, change activeTable.
             if (activeTable.id == tableId) {
-                switchTable(timeTableStorage[i - 1].id);
+                if (i == 0) {
+                    switchTable(timeTableStorage[1].id);
+                } else {
+                    switchTable(timeTableStorage[i - 1].id);
+                }
             }
             timeTableStorage.splice(i, 1);
             updateLocalForage();
@@ -854,6 +875,16 @@ function addTableDropdownButton(tableId, tableName) {
             '</a>' +
             '</li>',
     );
+
+    if (!isDefaultDeletable) {
+        $('#saved-tt-picker .tt-picker-edit-button')
+            .first()
+            .before(
+                '<button title="Remove" type="button" class="close tt-picker-remove" aria-label="Remove"><span aria-hidden="true">&#10008;</span></button>',
+            );
+
+        isDefaultDeletable = true;
+    }
 }
 
 // save data through localForage

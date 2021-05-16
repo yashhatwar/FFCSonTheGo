@@ -48,8 +48,8 @@ header .alert {
     margin: 3px 20px;
 }
 
-.tt-picker-edit-button {
-    margin-right: 1rem;
+.tt-picker-remove {
+    margin-left: 1rem;
 }
 
 #timetable .table {
@@ -542,6 +542,10 @@ footer {
 
 #courseListTable .close {
     float: none;
+}
+
+#saved-tt-picker .tt-table-name {
+    margin-right: 2rem;
 }
 
 footer {

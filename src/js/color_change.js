@@ -867,7 +867,7 @@ function addTableDropdownButton(tableId, tableName) {
             '<a href="JavaScript:void(0);" data-table-id="' +
             tableId +
             '">' +
-            '<span class="tt-table-name" style="margin-right: 2rem;">' +
+            '<span class="tt-table-name">' +
             tableName +
             '</span>' +
             '<button title="Remove" type="button" class="close tt-picker-remove" aria-label="Remove"><span aria-hidden="true">&#10008;</span></button>' +

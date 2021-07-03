@@ -92,10 +92,12 @@ export function initAutocomplete(isChennai) {
     }
 
     // autocomplete options
-    var courseCodeOption = {
+    var courseOptions = {
         data: courses_data.unique_courses,
 
-        getValue: 'CODE',
+        getValue: function(el) {
+            return el.CODE + ' - ' + el.TITLE;
+        },
 
         list: {
             match: {
@@ -105,56 +107,17 @@ export function initAutocomplete(isChennai) {
             maxNumberOfElements: 10,
 
             onSelectItemEvent: function() {
-                var title = $('#inputCourseCode').getSelectedItemData().TITLE;
-                $('#inputCourseTitle')
-                    .val(title)
-                    .trigger('change');
-                var code = $('#inputCourseCode').getSelectedItemData().CODE;
-                addSlotButtons(code);
-            },
-        },
-
-        template: {
-            type: 'description',
-            fields: {
-                description: 'TITLE',
-            },
-        },
-
-        placeholder: 'Search...',
-    };
-
-    var courseTitleOption = {
-        data: courses_data.unique_courses,
-
-        getValue: 'TITLE',
-
-        list: {
-            match: {
-                enabled: true,
-            },
-
-            onSelectItemEvent: function() {
-                var code = $('#inputCourseTitle').getSelectedItemData().CODE;
-                $('#inputCourseCode')
-                    .val(code)
+                var title = $('#inputCourse').getSelectedItemData().TITLE;
+                var code = $('#inputCourse').getSelectedItemData().CODE;
+                $('#inputCourse')
+                    .val(code + ' - ' + title)
                     .trigger('change');
                 addSlotButtons(code);
             },
         },
-
-        template: {
-            type: 'description',
-            fields: {
-                description: 'CODE',
-            },
-        },
-
-        placeholder: 'Search...',
     };
 
-    $('#inputCourseTitle').easyAutocomplete(courseTitleOption);
-    $('#inputCourseCode').easyAutocomplete(courseCodeOption);
+    $('#inputCourse').easyAutocomplete(courseOptions);
     $('div.easy-autocomplete').removeAttr('style'); // for dynamic width
 }
 
@@ -166,16 +129,12 @@ export function postInitAutocomplete() {
     });
 
     $('#insertCourseSelectionOptions').on('click', 'button', function() {
-        var code = $(this).data('code');
-        var title = $(this).data('title');
         var slot = $(this).data('slot');
         var faculty = $(this).data('faculty');
         var type = $(this).data('type');
         var venue = $(this).data('venue');
         var credits = $(this).data('credits');
 
-        $('#inputCourseCode').val(code);
-        $('#inputCourseTitle').val(title);
         $('#inputSlotString').val(slot);
         $('#inputFaculty').val(faculty);
         $('#inputVenue').val(venue);

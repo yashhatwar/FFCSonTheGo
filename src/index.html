@@ -220,6 +220,56 @@
             </div>
         </div>
 
+        <!-- The Reset Modal -->
+        <div
+            class="modal fade"
+            id="resetModal"
+            tabindex="-1"
+            aria-labelledby="resetModalLabel"
+            aria-hidden="true"
+        >
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="resetModalLabel">
+                            Reset Table
+                        </h5>
+                        <button
+                            type="button"
+                            class="btn-close"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"
+                        ></button>
+                    </div>
+
+                    <div class="modal-body">
+                        <p>
+                            Are you sure you want to reset this table? All
+                            selected courses will be erased.
+                        </p>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button
+                            type="button"
+                            class="btn btn-secondary"
+                            data-bs-dismiss="modal"
+                        >
+                            Cancel
+                        </button>
+                        <button
+                            id="resetButton"
+                            type="button"
+                            class="btn btn-danger"
+                            data-bs-dismiss="modal"
+                        >
+                            Yes, I'm sure
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <!-- End of container-fluid -->
 
         <!-- <div class="container"> -->
@@ -533,7 +583,8 @@
                         <!-- Reset button -->
                         <button
                             type="button"
-                            id="resetButton"
+                            data-bs-toggle="modal"
+                            data-bs-target="#resetModal"
                             class="btn btn-danger"
                         >
                             Reset

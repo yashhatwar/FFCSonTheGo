@@ -90,140 +90,136 @@
             ga('send', 'pageview');
         </script>
 
-        <!-- Disclaimer modal about using this website for the general audience. -->
-        <!-- <div class="modal fade" tabindex="-1" role="dialog" id="disclaimer-modal">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h4 class="modal-title text-danger text-center">
-              <span class="glyphicon glyphicon-warning-sign"></span> Disclaimer
-            </h4>
-          </div>
-          <div class="modal-body text-danger">
-            <p>
-              <strong>FFCSOTG is not affiliated to VIT University.</strong>
-              We created this website to assist students in preparing time
-              tables before course registration. We try our best to keep the
-              website updated with the changes made by the Academics with
-              respect to aspects like the curriculum and the structure of the
-              time table. However, please note that
-              <strong
-                >FFCSOTG is not the most reliable source for any updates in the
-                course registration process.</strong
-              >
-              Kindly consult the student portal or watch for emails from the
-              Academics personnel for all your updates. We are glad you find
-              this tool useful but we
-              <strong
-                >strongly advise you to refer to official correspondence for any
-                changes that might not be reflected in this website.</strong
-              >
-            </p>
-            <p class="text-italics">
-              — The FFCSOTG Team
-            </p>
-          </div>
-          <div class="modal-footer">
-            <button
-              type="button"
-              class="btn btn-default btn-danger"
-              data-dismiss="modal"
-            >
-              I understand
-            </button>
-          </div>
-        </div>
-      </div>
-    </div> -->
-        <!-- /.modal -->
+        <!-- Navbar -->
+        <!-- TODO: Add functionality to the theme button -->
+        <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="/">FFCS On The Go</a>
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbar"
+                    aria-controls="navbarNavDarkDropdown"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-        <!-- Header -->
-        <header class="container-fluid">
-            <div class="row">
-                <div class="col-xs-12 text-center">
-                    <div
-                        class="alert alert-info alert-dismissible"
-                        role="alert"
-                    >
-                        <button
-                            class="close"
-                            type="button"
-                            data-dismiss="alert"
-                            aria-label="Close"
+                <div id="navbar" class="collapse navbar-collapse">
+                    <ul class="navbar-nav">
+                        <li class="nav-item dropdown">
+                            <a
+                                class="nav-link dropdown-toggle"
+                                href="#"
+                                id="campusDropdown"
+                                role="button"
+                                data-bs-toggle="dropdown"
+                                aria-expanded="false"
+                            ></a>
+                            <ul
+                                class="dropdown-menu dropdown-menu-light"
+                                aria-labelledby="campusDropdown"
+                            >
+                                <li>
+                                    <a class="dropdown-item" href="#Vellore"
+                                        >Vellore Campus</a
+                                    >
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#Chennai"
+                                        >Chennai Campus</a
+                                    >
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <form class="ms-auto">
+                        <div
+                            class="dropdown"
+                            style="display: inline-block; margin-right: 0.5rem;"
                         >
-                            <span aria-hidden="true">&times;</span>
+                            <a
+                                class="btn btn-outline-secondary dropdown-toggle nav-btn-outline"
+                                href="#"
+                                role="button"
+                                id="dropdownMenuLink"
+                                data-bs-toggle="dropdown"
+                                aria-expanded="false"
+                                >Share</a
+                            >
+
+                            <ul
+                                class="dropdown-menu dropdown-menu-light"
+                                aria-labelledby="dropdownMenuLink"
+                            >
+                                <li>
+                                    <a
+                                        class="dropdown-item"
+                                        href="whatsapp://send?text=FFCS made hassle free! https://ffcsonthego.vatz88.in/"
+                                        >WhatsApp</a
+                                    >
+                                </li>
+                            </ul>
+                        </div>
+
+                        <button
+                            class="btn btn-outline-secondary me-2 nav-btn-outline"
+                            type="button"
+                            data-bs-toggle="modal"
+                            data-bs-target="#aboutModal"
+                        >
+                            About
                         </button>
-                        <a
-                            href="https://github.com/vatz88/FFCSonTheGo"
-                            target="_blank"
-                            >Loved it? Contribute or star the repo on GitHub
-                            <span
-                                class="glyphicon glyphicon-new-window"
-                                aria-hidden="true"
-                            ></span>
-                        </a>
+                        <button
+                            id="theme"
+                            class="btn btn-secondary me-2 nav-btn"
+                            type="button"
+                            data-bs-toggle="modal"
+                        >
+                            Dark Mode
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+
+        <!-- The About Modal -->
+        <!-- TODO: Adding the modal content and the GitHub link -->
+        <div
+            class="modal fade"
+            id="aboutModal"
+            tabindex="-1"
+            aria-labelledby="aboutModalLabel"
+            aria-hidden="true"
+        >
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="aboutModalLabel">
+                            About FFCS On The Go
+                        </h5>
+                        <button
+                            type="button"
+                            class="btn-close"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"
+                        ></button>
+                    </div>
+
+                    <div class="modal-body">
+                        <p>...</p>
+                    </div>
+
+                    <div class="modal-footer">
+                        <b>Version:</b> <span>Winter Semester 2020-21</span>
                     </div>
                 </div>
             </div>
+        </div>
 
-            <div class="row">
-                <div class="col-sm-12 text-center">
-                    <h1>
-                        FFCS On The Go
-                        <small id="current-campus">Loading...</small>
-                    </h1>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-12 text-center text-info">
-                    <h5>
-                        Last updated for Winter Semester 2020-21
-                    </h5>
-                </div>
-            </div>
-
-            <div class="row text-center" style="margin-top: 1rem;">
-                <div id="shareWhatsApp" class="col-xs-6 visible-xs">
-                    <!-- WhatsApp Share-->
-                    <a
-                        href="whatsapp://send?text=FFCS made hassle free! https://ffcsonthego.vatz88.in/"
-                        class="btn btn-success"
-                    >
-                        <strong>Share</strong>
-                        <img
-                            src="images/whatsapp.png"
-                            alt="Share on WhatsApp"
-                        />
-                    </a>
-                </div>
-                <div class="col-xs-6 col-sm-4 col-sm-offset-4">
-                    <div
-                        id="campus-btn-group"
-                        class="btn-group"
-                        data-toggle="buttons"
-                    >
-                        <label class="btn btn-primary">
-                            <input
-                                type="radio"
-                                name="campus-option"
-                                id="vellore-campus"
-                                value="Vellore"
-                            />
-                            Vellore
-                        </label>
-                        <label class="btn btn-primary">
-                            <input
-                                type="radio"
-                                name="campus-option"
-                                id="chennai-campus"
-                                value="Chennai"
-                            />
-                            Chennai
-                        </label>
-                    </div>
-                </div>
-            </div>
-        </header>
         <!-- End of container-fluid -->
 
         <!-- <div class="container"> -->

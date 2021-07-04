@@ -908,16 +908,16 @@ function loadCourseData() {
     initAutocomplete(window.location.hash === '#Chennai');
     postInitAutocomplete();
     if (window.location.hash === '#Chennai') {
-        $('#current-campus').text('Chennai campus');
+        $('#campusDropdown').text('Chennai Campus');
     } else {
-        $('#current-campus').text('Vellore campus');
+        $('#campusDropdown').text('Vellore Campus');
     }
     $(window).on('hashchange', () => {
         initAutocomplete(window.location.hash === '#Chennai');
         if (window.location.hash === '#Chennai') {
-            $('#current-campus').text('Chennai campus');
+            $('#campusDropdown').text('Chennai Campus');
         } else {
-            $('#current-campus').text('Vellore campus');
+            $('#campusDropdown').text('Vellore Campus');
         }
     });
 }

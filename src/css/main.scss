@@ -3,16 +3,49 @@
 * All content on site is present in different blocks of div and each div has a class container or container-fluid
 * The order of elements here is the order in which they appear on the page
 */
+body {
+    padding-top: 4.5rem;
+}
 
 .container,
 .container-fluid {
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
+    padding: 0.5rem 2rem 0.5rem 2rem;
 }
 
-.container-fluid {
-    padding-right: 0 !important;
-    padding-left: 0 !important;
+nav {
+    box-shadow: 0 2px 5px #000;
+}
+
+.navbar-brand {
+    color: #9c27b0 !important;
+    font-weight: bold;
+}
+
+.nav-btn {
+    border-color: #9c27b0;
+    background-color: #9c27b0;
+}
+
+.nav-btn-outline {
+    color: #9c27b0;
+    border-color: #9c27b0;
+    border-width: 2px;
+}
+
+.nav-btn-outline:hover,
+.nav-btn-outline:active,
+.nav-btn-outline:focus,
+.nav-btn-outline.show {
+    color: #ffffff;
+    border-color: #9c27b0 !important;
+    background-color: #9c27b0 !important;
+}
+
+.nav-btn:hover,
+.nav-btn:focus,
+.nav-btn:active {
+    border-color: #812092 !important;
+    background-color: #812092 !important;
 }
 
 .container-fluid .row {

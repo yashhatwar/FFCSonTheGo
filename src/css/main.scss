@@ -77,7 +77,7 @@ header .alert {
 }
 
 .tt-picker-edit-input {
-    /* margin same as bootstrap padding default for .dropdown-menu>li>a*/
+    /* Margin same as bootstrap padding default for .dropdown-menu > li > a */
     margin: 3px 20px;
 }
 
@@ -109,6 +109,7 @@ header .alert {
 
 #courseListTable .table-responsive {
     margin-bottom: 0px !important;
+    padding: 0;
 }
 
 #CourseAllocationReport-btn {
@@ -124,7 +125,6 @@ footer {
 * Font, color and other styling
 * Order of elements here is same as they appear on the page
 */
-
 #shareWhatsApp img {
     vertical-align: bottom;
 }
@@ -151,51 +151,51 @@ footer {
 
 .LabHours {
     font-weight: bold;
-    background-color: #99ccff;
+    background-color: #99ccff !important;
     cursor: default;
 }
 
 .TheoryHours {
     font-weight: bold;
-    background-color: #ccccff;
+    background-color: #ccccff !important;
     cursor: default;
 }
 
 .ColumnOneDays {
     font-weight: bold;
-    background-color: #c0c0c0;
+    background-color: #c0c0c0 !important;
     cursor: default;
 }
 
 .TimetableContent {
     text-transform: uppercase;
     color: grey;
-    background-color: #ffffcc;
+    background-color: #ffffcc !important;
     cursor: pointer;
 }
 
 .TimetableContent:hover {
     color: black;
-    background-color: #ccff33;
+    background-color: #ccff33 !important;
     cursor: pointer;
 }
 
 .TimetableContent.highlight {
     color: black;
-    background-color: #ccff33;
+    background-color: #ccff33 !important;
     cursor: pointer;
 }
 
 .TimetableContent.highlight:hover {
     color: grey;
-    background-color: #ccff33;
+    background-color: #ccff33 !important;
     cursor: pointer;
 }
 
 .TimetableContent[disabled] {
     text-transform: capitalize;
     color: grey;
-    background-color: #ffffcc;
+    background-color: #ffffcc !important;
     cursor: default;
 }
 
@@ -206,7 +206,6 @@ footer {
 }
 
 /* .tt-course-code used when inserting course code in timetable */
-
 #timetable td div {
     font-size: 0.9em;
 }
@@ -259,7 +258,7 @@ footer {
 .TFF2,
 .TGG2 {
     color: grey;
-    background-color: #ffffcc;
+    background-color: #ffffcc !important;
     cursor: pointer;
 }
 
@@ -306,7 +305,7 @@ footer {
 .TFF2:hover,
 .TGG2:hover {
     color: black;
-    background-color: #ccff33;
+    background-color: #ccff33 !important;
     cursor: pointer;
 }
 
@@ -353,7 +352,7 @@ footer {
 .TFF2.highlight,
 .TGG2.highlight {
     color: black;
-    background-color: #ccff33;
+    background-color: #ccff33 !important;
     cursor: pointer;
 }
 
@@ -400,7 +399,7 @@ footer {
 .TFF2.highlight:hover,
 .TGG2.highlight:hover {
     color: grey;
-    background-color: #ccff33;
+    background-color: #ccff33 !important;
     cursor: pointer;
 }
 
@@ -446,7 +445,7 @@ footer {
 .TEE2-tile,
 .TFF2-tile,
 .TGG2-tile {
-    background-color: #ffc107;
+    background-color: #ffc107 !important;
 }
 
 .A1-tile.highlight,
@@ -491,17 +490,16 @@ footer {
 .TEE2-tile.highlight,
 .TFF2-tile.highlight,
 .TGG2-tile.highlight {
-    background-color: #64dd17;
+    background-color: #64dd17 !important;
 }
 
 /* Quick selection tiles/buttons */
-
 .quick-selection {
     text-align: center;
 }
 
 .quick-selection .btn:hover {
-    background-color: #64dd17;
+    background-color: #64dd17 !important;
 }
 
 #slot-sel-area input,
@@ -521,7 +519,7 @@ footer {
 #slot-sel-area #insertCourseSelectionOptions div {
     display: flex;
     margin-bottom: 0.13rem;
-    /* break word on overflow */
+    /* Break word on overflow */
     word-wrap: break-word;
     white-space: normal;
 }
@@ -531,7 +529,7 @@ footer {
 }
 
 #slot-sel-area #insertCourseSelectionOptions p {
-    color: #616161;
+    color: #616161 !important;
 }
 
 #insertSlotBtn .btn {
@@ -597,27 +595,25 @@ footer a:hover {
 /**
  * Disable text selection
  */
-
 .noselect {
-    -webkit-touch-callout: none;
     /* iOS Safari */
-    -webkit-user-select: none;
+    -webkit-touch-callout: none;
     /* Safari */
-    -khtml-user-select: none;
+    -webkit-user-select: none;
     /* Konqueror HTML */
-    -moz-user-select: none;
+    -khtml-user-select: none;
     /* Firefox */
-    -ms-user-select: none;
+    -moz-user-select: none;
     /* Internet Explorer/Edge */
-    user-select: none;
+    -ms-user-select: none;
     /* Non-prefixed version, currently supported by Chrome and Opera */
+    user-select: none;
 }
 
 /**
  * Add horizontal scroll and don't collapse the elements
  * Putting it under @media preserve the original bootstrap properties when there is no overflow
  */
-
 .horizontal-scroll-no-collapse {
     overflow: auto;
     white-space: nowrap;

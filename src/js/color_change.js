@@ -634,8 +634,8 @@ function updateCredits() {
 }
 
 function checkSlotClash() {
-    // Remove danger class (shows clashing) form tr in course list table.
-    $('#courseListTable tbody tr').removeClass('danger');
+    // Remove table-danger class (shows clashing) form tr in course list table.
+    $('#courseListTable tbody tr').removeClass('table-danger');
     $('#timetable tr .hidden').removeClass('hidden');
 
     // Check clash from timetable in each slot area
@@ -713,12 +713,12 @@ function checkSlotClash() {
                     .children('div[data-course]')
                     .each(function() {
                         var dataCourse = $(this).attr('data-course');
-                        // Add danger class to tr of clashing course list table.
+                        // Add table-danger class to tr of clashing course list table.
                         $(
                             '#courseListTable tbody tr[data-course="' +
                                 dataCourse +
                                 '"]',
-                        ).addClass('danger');
+                        ).addClass('table-danger');
                     });
             }
         } else if ($highlightedCellDivs.length === 1) {

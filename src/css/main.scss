@@ -604,10 +604,10 @@ footer a:hover {
 /**
  * Custom scrollbar
  */
-
 ::-webkit-scrollbar {
+    width: 10px;
     height: 10px;
-    background: transparent;
+    background: #f8ceff;
 }
 
 ::-webkit-scrollbar-thumb {

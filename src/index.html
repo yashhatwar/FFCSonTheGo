@@ -173,14 +173,23 @@
                         >
                             About
                         </button>
-                        <button
-                            id="theme"
-                            class="btn btn-secondary me-2 nav-btn"
-                            type="button"
-                            data-bs-toggle="modal"
+
+                        <div
+                            class="one-quarter"
+                            id="switch"
+                            style="display: inline-block; margin-left: 0.5rem; vertical-align: middle;"
                         >
-                            Dark Mode
-                        </button>
+                            <input
+                                type="checkbox"
+                                class="checkbox"
+                                id="theme"
+                            />
+                            <label class="label" for="theme">
+                                <i class="fas fa-moon"></i>
+                                <i class="fas fa-sun"></i>
+                                <div class="ball"></div>
+                            </label>
+                        </div>
                     </form>
                 </div>
             </div>

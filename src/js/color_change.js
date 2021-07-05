@@ -144,18 +144,7 @@ $(function() {
 
         var courseSplit = course.split('-');
         var courseCode = courseSplit[0].trim();
-        var courseTitle = '';
-        var i;
-
-        for (i = 1; i < courseSplit.length - 1; ++i) {
-            courseTitle = courseTitle + courseSplit[i] + '-';
-        }
-
-        if (courseSplit.length > 1) {
-            courseTitle = courseTitle + courseSplit[i];
-        }
-
-        courseTitle = courseTitle.trim();
+        var courseTitle = courseSplit.slice(1).join('').trim();
 
         // [0: courseId, 1: courseCode, 2:courseTitle, 3: faculty, 4: slotArray, 5: venue, 6: credits, 7: isProject]
         activeTable.data.push([

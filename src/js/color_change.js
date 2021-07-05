@@ -142,13 +142,21 @@ $(function() {
             courseId = lastAddedCourse[0] + 1;
         }
 
-        var courseCode = course.split('-')[0].trim();
+        var courseSplit = course.split('-');
+        var courseCode = courseSplit[0].trim();
+        var courseTitle = '';
 
-        // [0: courseId, 1: courseCode, 2:course, 3: faculty, 4: slotArray, 5: venue, 6: credits, 7: isProject]
+        for (let i = 1; i < courseSplit.length; ++i) {
+            courseTitle = courseTitle + courseSplit[i];
+        }
+
+        courseTitle = courseTitle.trim();
+
+        // [0: courseId, 1: courseCode, 2:courseTitle, 3: faculty, 4: slotArray, 5: venue, 6: credits, 7: isProject]
         activeTable.data.push([
             courseId,
             courseCode,
-            course,
+            courseTitle,
             faculty,
             slotArray,
             venue,
@@ -159,7 +167,8 @@ $(function() {
         addCourseToTimetable(courseId, courseCode, venue, slotArray, isProject);
         insertCourseToCourseListTable(
             courseId,
-            course,
+            courseCode,
+            courseTitle,
             faculty,
             slotArray,
             venue,
@@ -531,7 +540,8 @@ function addCourseToTimetable(
 
 function insertCourseToCourseListTable(
     courseId,
-    course,
+    courseCode,
+    courseTitle,
     faculty,
     slotArray,
     venue,
@@ -549,7 +559,10 @@ function insertCourseToCourseListTable(
             slotArray.join('+') +
             '</td>' +
             '<td>' +
-            course +
+            courseCode +
+            '</td>' +
+            '<td>' +
+            courseTitle +
             '</td>' +
             '<td>' +
             faculty +
@@ -591,7 +604,14 @@ function insertCourseToCourseListTable(
 }
 
 function getColumnIndex(column) {
-    var columns = ['Slot', 'Course', 'Faculty', 'Venue', 'Credits'];
+    var columns = [
+        'Slot',
+        'Course Code',
+        'Course Title',
+        'Faculty',
+        'Venue',
+        'Credits',
+    ];
     var columnText = $(column).text();
     var index = columns.indexOf(columnText);
 
@@ -616,11 +636,11 @@ function updateCredits() {
     $('#courseListTable tbody tr')
         .not('#totalCreditsTr')
         .each(function() {
-            // 5th column is credits column
+            // 6th column is credits column
             totalCredits += Number(
                 $(this)
                     .children('td')
-                    .eq(4)
+                    .eq(5)
                     .text(),
             );
         });
@@ -779,7 +799,7 @@ function fillPage(data) {
     $.each(data, function(index, arr) {
         var courseId = arr[0];
         var courseCode = arr[1];
-        var course = arr[2];
+        var courseTitle = arr[2];
         var faculty = arr[3];
         var slotArray = arr[4];
         var venue = arr[5];
@@ -790,7 +810,8 @@ function fillPage(data) {
         addCourseToTimetable(courseId, courseCode, venue, slotArray, isProject);
         insertCourseToCourseListTable(
             courseId,
-            course,
+            courseCode,
+            courseTitle,
             faculty,
             slotArray,
             venue,

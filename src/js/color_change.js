@@ -145,8 +145,13 @@ $(function() {
         var courseSplit = course.split('-');
         var courseCode = courseSplit[0].trim();
         var courseTitle = '';
+        var i;
 
-        for (let i = 1; i < courseSplit.length; ++i) {
+        for (i = 1; i < courseSplit.length - 1; ++i) {
+            courseTitle = courseTitle + courseSplit[i] + '-';
+        }
+
+        if (courseSplit.length > 1) {
             courseTitle = courseTitle + courseSplit[i];
         }
 

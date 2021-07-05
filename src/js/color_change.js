@@ -340,6 +340,7 @@ $(function() {
                 .closest('a')
                 .data('table-id'),
         );
+        console.log(tableId);
         $(this)
             .closest('li')
             .remove();
@@ -862,25 +863,26 @@ function renameTable(tableId, tableName) {
 function addTableDropdownButton(tableId, tableName) {
     $('#saved-tt-picker').append(
         '<li>' +
-            '<input class="tt-picker-edit-input" style="display:none;" type="text">' +
-            '<button title="Ok" type="button" class="close tt-picker-edit-ok" style="display:none;" aria-label="Ok"><span aria-hidden="true">&#10004;</span></button>' +
+            '<input class="tt-picker-edit-input" style="display: none;" type="text">' +
+            '<button title="Ok" type="button" class="close tt-picker-edit-ok" style="display: none;" aria-label="Ok"><span aria-hidden="true">&#10004;</span></button>' +
             '<a href="JavaScript:void(0);" data-table-id="' +
             tableId +
             '">' +
             '<span class="tt-table-name">' +
             tableName +
             '</span>' +
-            '<button title="Remove" type="button" class="close tt-picker-remove" aria-label="Remove"><span aria-hidden="true">&#10008;</span></button>' +
-            '<button title="Rename" type="button" class="close tt-picker-edit-button" aria-label="Rename"><span aria-hidden="true">&#9998;</span></button>' +
+            '<button title="Rename" type="button" class="btn-close tt-picker-edit-button" aria-label="Rename"><i class="fas fa-edit"></i></button>' +
+            '<button title="Remove" type="button" class="btn-close tt-picker-remove" aria-label="Remove"><i class="fas fa-times"></i></button>' +
             '</a>' +
+            '</button>' +
             '</li>',
     );
 
     if (!isDefaultDeletable) {
         $('#saved-tt-picker .tt-picker-edit-button')
             .first()
-            .before(
-                '<button title="Remove" type="button" class="close tt-picker-remove" aria-label="Remove"><span aria-hidden="true">&#10008;</span></button>',
+            .after(
+                '<button title="Remove" type="button" class="btn-close tt-picker-remove" aria-label="Remove"><i class="fas fa-times"></i></button>',
             );
 
         isDefaultDeletable = true;

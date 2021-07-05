@@ -122,6 +122,10 @@ header .alert {
     margin-right: 0.5rem;
 }
 
+.btn-close {
+    background-image: none;
+}
+
 .tt-picker-edit-input {
     /* Margin same as bootstrap padding default for .dropdown-menu > li > a */
     margin: 3px 20px;

@@ -507,12 +507,11 @@
                                 id="saved-tt-picker-label"
                                 type="button"
                                 class="btn btn-primary dropdown-toggle"
-                                data-toggle="dropdown"
+                                data-bs-toggle="dropdown"
                                 aria-haspopup="true"
                                 aria-expanded="false"
                             >
                                 <span class="btn-text">Table Default</span>
-                                <span class="caret"></span>
                             </button>
                             <!-- Tables list -->
                             <ul
@@ -523,17 +522,17 @@
                                 <li>
                                     <input
                                         class="tt-picker-edit-input"
-                                        style="display:none;"
+                                        style="display: none;"
                                         type="text"
                                     />
                                     <button
                                         title="Ok"
                                         type="button"
-                                        class="close tt-picker-edit-ok"
-                                        style="display:none;"
+                                        class="btn-close tt-picker-edit-ok"
+                                        style="display: none;"
                                         aria-label="Ok"
                                     >
-                                        <span aria-hidden="true">&#10004;</span>
+                                        <i class="fas fa-check"></i>
                                     </button>
                                     <a
                                         href="JavaScript:void(0);"
@@ -545,12 +544,10 @@
                                         <button
                                             title="Rename"
                                             type="button"
-                                            class="close tt-picker-edit-button"
+                                            class="btn-close tt-picker-edit-button"
                                             aria-label="Rename"
                                         >
-                                            <span aria-hidden="true"
-                                                >&#9998;</span
-                                            >
+                                            <i class="fas fa-edit"></i>
                                         </button>
                                     </a>
                                 </li>
@@ -561,7 +558,7 @@
                             type="button"
                             class="btn btn-primary"
                         >
-                            &#10010;
+                            <i class="fas fa-plus"></i>
                         </button>
                     </div>
 

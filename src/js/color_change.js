@@ -325,9 +325,13 @@ $(function() {
             $('#filter-by-slot').multiselect('rebuild');
     });
 
-    // switch table menu option on click
-    $('#saved-tt-picker').on('click', 'a', function() {
-        var selectedTableId = Number($(this).data('table-id'));
+    // Switch table on click
+    $('#saved-tt-picker').on('click', '.tt-picker-label', function() {
+        var selectedTableId = Number(
+            $(this)
+                .children('a')
+                .data('table-id'),
+        );
         switchTable(selectedTableId);
     });
 

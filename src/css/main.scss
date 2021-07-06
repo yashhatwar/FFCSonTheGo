@@ -48,6 +48,10 @@ nav {
     background-color: #812092 !important;
 }
 
+.btn {
+    margin: 0.15rem;
+}
+
 /**
  * Theme toggle switch
  */
@@ -126,13 +130,28 @@ header .alert {
     background-image: none;
 }
 
+a {
+    color: #000000;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #000000;
+}
+
+.tt-picker-label {
+    padding-right: 1.2rem;
+    width: 100%;
+}
+
+.tt-picker-edit,
+.tt-picker-remove {
+    padding-left: 0.5rem;
+}
+
 .tt-picker-edit-input {
     /* Margin same as bootstrap padding default for .dropdown-menu > li > a */
     margin: 3px 20px;
-}
-
-.tt-picker-remove {
-    margin-left: 1rem;
 }
 
 #timetable .table {

@@ -95,10 +95,7 @@ $(function() {
     });
 
     $('#slot-sel-area #addCourseBtn').click(function() {
-        var courseCode = $('#inputCourseCode')
-            .val()
-            .trim();
-        var courseTitle = $('#inputCourseTitle')
+        var course = $('#inputCourse')
             .val()
             .trim();
         var faculty = $('#inputFaculty')
@@ -144,6 +141,10 @@ $(function() {
             var lastAddedCourse = activeTable.data[activeTable.data.length - 1];
             courseId = lastAddedCourse[0] + 1;
         }
+
+        var courseSplit = course.split('-');
+        var courseCode = courseSplit[0].trim();
+        var courseTitle = courseSplit.slice(1).join('-').trim();
 
         // [0: courseId, 1: courseCode, 2:courseTitle, 3: faculty, 4: slotArray, 5: venue, 6: credits, 7: isProject]
         activeTable.data.push([
@@ -535,7 +536,7 @@ function addCourseToTimetable(
 function insertCourseToCourseListTable(
     courseId,
     courseCode,
-    courseTile,
+    courseTitle,
     faculty,
     slotArray,
     venue,
@@ -556,7 +557,7 @@ function insertCourseToCourseListTable(
             courseCode +
             '</td>' +
             '<td>' +
-            courseTile +
+            courseTitle +
             '</td>' +
             '<td>' +
             faculty +
@@ -598,7 +599,14 @@ function insertCourseToCourseListTable(
 }
 
 function getColumnIndex(column) {
-    var columns = ['Slot', 'Code', 'Title', 'Faculty', 'Venue', 'Credits'];
+    var columns = [
+        'Slot',
+        'Course Code',
+        'Course Title',
+        'Faculty',
+        'Venue',
+        'Credits',
+    ];
     var columnText = $(column).text();
     var index = columns.indexOf(columnText);
 
@@ -786,7 +794,7 @@ function fillPage(data) {
     $.each(data, function(index, arr) {
         var courseId = arr[0];
         var courseCode = arr[1];
-        var courseTile = arr[2];
+        var courseTitle = arr[2];
         var faculty = arr[3];
         var slotArray = arr[4];
         var venue = arr[5];
@@ -798,7 +806,7 @@ function fillPage(data) {
         insertCourseToCourseListTable(
             courseId,
             courseCode,
-            courseTile,
+            courseTitle,
             faculty,
             slotArray,
             venue,

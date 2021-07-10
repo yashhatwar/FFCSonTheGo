@@ -192,7 +192,7 @@ $(function() {
     });
 
     // Load course again in the panel
-    $('#courseListTable table').on('dblclick', 'tr', function(e) {
+    $('#courseListTable').on('dblclick', 'tr', function(e) {
         var slotString = $(this)
             .find('td')
             .not('[colspan]')
@@ -250,15 +250,15 @@ $(function() {
         // scroll back to panel
         if (e.target.localName !== 'th') {
             $('html, body').animate({
-                scrollTop: $('#slot-sel-area').offset().top,
+                scrollTop: 0,
             });
         }
     });
 
     // delete course from table
-    $('#courseListTable table').on('click', '.close', removeCourse);
+    $('#courseListTable').on('click', '.close', removeCourse);
 
-    $('#courseListTable table th')
+    $('#courseListTable th')
         .not(':last')
         .click(function() {
             var $this = $(this);
@@ -269,7 +269,7 @@ $(function() {
                 isSorted = true;
             }
 
-            $('#courseListTable table th.sorted').removeClass(
+            $('#courseListTable th.sorted').removeClass(
                 'sorted ascending descending',
             );
 
@@ -312,7 +312,7 @@ $(function() {
             });
 
             // rerender the rows
-            $('#courseListTable table tbody tr')
+            $('#courseListTable tbody tr')
                 .not('tr:last')
                 .remove();
             $('#courseListTable tbody #totalCreditsTr').before(
@@ -586,12 +586,12 @@ function insertCourseToCourseListTable(
             '<td>' +
             credits +
             '</td>' +
-            '<td><span class="close">&times;</span></td>' +
+            '<td><i class="fas fa-times close"></i></td>' +
             '</tr>',
     );
 
     var previousRow = $('#courseListTable tbody #totalCreditsTr');
-    var sortedColumn = $('#courseListTable table th.sorted')[0];
+    var sortedColumn = $('#courseListTable th.sorted')[0];
 
     // if any column is sorted, find the position of this course
     if (sortedColumn) {
@@ -634,7 +634,7 @@ function getColumnIndex(column) {
 function retrieveColumnItems(column) {
     var index = getColumnIndex(column);
 
-    var courseRows = $('#courseListTable table tbody').find('tr');
+    var courseRows = $('#courseListTable tbody').find('tr');
     courseRows = courseRows.slice(0, -1);
 
     var items = $(courseRows).map(function(i, row) {

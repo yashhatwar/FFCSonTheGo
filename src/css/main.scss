@@ -232,13 +232,14 @@ a:hover {
     margin-left: 0;
 }
 
-#courseListTable .table {
-    margin-bottom: 0 !important;
+#course-list-container {
+    max-width: 1250px;
 }
 
-#courseListTable .table-responsive {
-    margin-bottom: 0px !important;
+#courseListTable {
+    margin-bottom: 0 !important;
     padding: 0;
+    white-space: nowrap;
 }
 
 #CourseAllocationReport-btn {
@@ -671,32 +672,32 @@ footer {
     border: 1px solid #e5e5e5;
 }
 
-#courseListTable table th,
-#courseListTable table tr {
+#courseListTable th,
+#courseListTable tr {
     text-align: center;
 }
 
-#courseListTable table tr th:not(:last-of-type) {
+#courseListTable tr th:not(:last-of-type) {
     cursor: pointer;
 }
 
-#courseListTable table tr th.sorted,
-#courseListTable table tr th:hover:not(:last-of-type) {
+#courseListTable tr th.sorted,
+#courseListTable tr th:hover:not(:last-of-type) {
     background-color: #f1f7ee;
 }
 
-#courseListTable table tr th.ascending::after {
+#courseListTable tr th.ascending::after {
     content: ' ↓';
     font-size: larger;
 }
 
-#courseListTable table tr th.descending::after {
+#courseListTable tr th.descending::after {
     content: ' ↑';
     font-size: larger;
     font-weight: bold;
 }
 
-#courseListTable table tr:not(:last-of-type) {
+#courseListTable tr:not(:last-of-type) {
     cursor: pointer;
 }
 

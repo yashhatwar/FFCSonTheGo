@@ -1050,53 +1050,46 @@
         </div>
         <!-- End of container -->
 
-        <hr />
+        <div id="course-list-container" class="container-fluid">
+            <blockquote>
+                <p class="blockquote">
+                    Double click a course to load it back into the panel.
+                </p>
+            </blockquote>
 
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-12">
-                    <blockquote class="myBlockquote">
-                        Double tap the course to load it back into the panel.
-                    </blockquote>
-                </div>
-            </div>
+            <div style="overflow-x: auto;">
+                <table id="courseListTable" class="table table-hover">
+                    <thead>
+                        <tr style="display:none" class="screenshot_msg">
+                            <td colspan="7">
+                                FFCS On The Go | bit.ly/ffcs-vit
+                            </td>
+                        </tr>
+                        <tr class="table-success">
+                            <th>Slot</th>
+                            <th>Course Code</th>
+                            <th>Course Title</th>
+                            <th>Faculty</th>
+                            <th>Venue</th>
+                            <th>Credits</th>
+                            <th></th>
+                        </tr>
+                    </thead>
 
-            <!-- Courses added from panel -->
-            <div id="courseListTable" class="row noselect">
-                <div class="table-responsive">
-                    <table class="table table-hover">
-                        <thead>
-                            <tr style="display:none" class="screenshot_msg">
-                                <td colspan="7">
-                                    FFCS On The Go | bit.ly/ffcs-vit
-                                </td>
-                            </tr>
-                            <tr class="table-success">
-                                <th>Slot</th>
-                                <th>Course Code</th>
-                                <th>Course Title</th>
-                                <th>Faculty</th>
-                                <th>Venue</th>
-                                <th>Credits</th>
-                                <th></th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <!-- Course Record added here -->
-                            <tr class="table-active" id="totalCreditsTr">
-                                <td colspan="7">
-                                    <strong
-                                        >Total Credits:
-                                        <span id="totalCredits">0</span>
-                                    </strong>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
+                    <tbody>
+                        <!-- Courses will be added here -->
+                        <tr class="table-active" id="totalCreditsTr">
+                            <td colspan="7">
+                                <strong>
+                                    Total Credits:
+                                    <span id="totalCredits">0</span>
+                                </strong>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
         </div>
-        <!-- End of container -->
 
         <!-- Embed code Excel online -->
         <!--<div class="container-fluid hidden-xs">

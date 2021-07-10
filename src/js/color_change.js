@@ -91,10 +91,25 @@ $(function() {
 
     // Toggle extra fields in slot selection area
     $('#slot-sel-area-toggle-fields-btn').click(function() {
+        var toggle = $('#slot-sel-area-toggle-fields-btn');
+
+        if (
+            toggle
+                .text()
+                .toLowerCase()
+                .includes('show')
+        ) {
+            toggle.text('Hide Advanced Options');
+            toggle.attr('class', 'btn btn-secondary');
+        } else {
+            toggle.text('Show Advanced Options');
+            toggle.attr('class', 'btn btn-outline-secondary');
+        }
+
         $('#slot-sel-area-toggle-fields').fadeToggle();
     });
 
-    $('#slot-sel-area #addCourseBtn').click(function() {
+    $('#addCourseBtn').click(function() {
         var course = $('#inputCourse')
             .val()
             .trim();
@@ -144,7 +159,10 @@ $(function() {
 
         var courseSplit = course.split('-');
         var courseCode = courseSplit[0].trim();
-        var courseTitle = courseSplit.slice(1).join('-').trim();
+        var courseTitle = courseSplit
+            .slice(1)
+            .join('-')
+            .trim();
 
         // [0: courseId, 1: courseCode, 2:courseTitle, 3: faculty, 4: slotArray, 5: venue, 6: credits, 7: isProject]
         activeTable.data.push([

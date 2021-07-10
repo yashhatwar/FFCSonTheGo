@@ -403,185 +403,145 @@
   </div> -->
         <!-- End of container -->
 
-        <hr />
+        <div class="container-fluid">
+            <div class="col-xs-12">
+                <form>
+                    <div class="row">
+                        <div class="col-sm-9">
+                            <label for="inputCourse" class="form-label"
+                                >Course</label
+                            >
+                            <input
+                                type="text"
+                                class="form-control"
+                                id="inputCourse"
+                                placeholder="Ex: CSE1001 or Problem Solving and Programming"
+                                oninput="this.value = this.value.toUpperCase();"
+                            />
+                        </div>
 
-        <div class="container">
-            <!-- Slot selection area -->
-            <div id="slot-sel-area" class="row">
-                <div class="panel panel-primary">
-                    <div class="panel-heading text-center">
-                        <h4>Add Courses To Timetable</h4>
+                        <div class="col-sm-3">
+                            <label for="filter-by-slot" class="form-label"
+                                >Filter By Slot</label
+                            >
+                            <select id="filter-by-slot" multiple></select>
+                        </div>
                     </div>
 
-                    <div class="panel-body">
-                        <form class="col-xs-12">
-                            <div class="row">
-                                <div class="form-group col-xs-12 col-sm-9">
-                                    <label
-                                        for="inputCourseCode"
-                                        class="control-label"
-                                        >Course</label
-                                    >
-                                    <div>
-                                        <input
-                                            type="text"
-                                            class="form-control"
-                                            id="inputCourse"
-                                            placeholder="eg: CSE1001 or PROBLEM SOLVING AND PROGRAMMING"
-                                        />
-                                    </div>
-                                </div>
-
-                                <!-- Filter course by slot -->
-                                <div class="form-group col-xs-12 col-sm-3">
-                                    <label
-                                        for="filter-by-slot"
-                                        class="control-label"
-                                        >Filter By Slot</label
-                                    >
-                                    <div>
-                                        <select
-                                            id="filter-by-slot"
-                                            multiple="multiple"
-                                        >
-                                            <!-- <option value="A1">A1</option> -->
-                                        </select>
-                                    </div>
-                                </div>
-
-                                <div class="form-group col-xs-12">
-                                    <blockquote class="myBlockquote">
-                                        Search, select then add or double click
-                                        to quickly add. Select course to enable
-                                        slot filter.
-                                    </blockquote>
-                                    <!-- Inserted select course buttons here -->
-                                    <div
-                                        id="insertCourseSelectionOptions"
-                                        class="list-group horizontal-scroll-no-collapse"
-                                    >
-                                        <!--<div>
-                    <button type="button" class="list-group-item">
-                      <h5 class="list-group-item-heading">F1+TF1</h5>
-                      <p class="list-group-item-text">AARTHY S.L | SJTG04 | ETH</p>
-                    </button>
-                  </div>-->
-                                    </div>
-                                </div>
-
-                                <div class="form-group col-xs-12 text-center">
-                                    <button
-                                        id="slot-sel-area-toggle-fields-btn"
-                                        type="button"
-                                        class="btn btn-link"
-                                    >
-                                        Toggle Other Fields
-                                    </button>
-                                </div>
-
-                                <div
-                                    id="slot-sel-area-toggle-fields"
-                                    style="display:none;"
-                                >
-                                    <div class="form-group col-xs-12 col-sm-6">
-                                        <label
-                                            for="inputSlotString"
-                                            class="control-label"
-                                            >Slot:</label
-                                        >
-                                        <div>
-                                            <input
-                                                type="text"
-                                                class="form-control"
-                                                id="inputSlotString"
-                                                placeholder="eg: L1+L2+L3"
-                                            />
-                                        </div>
-                                    </div>
-
-                                    <div class="form-group col-xs-12 col-sm-6">
-                                        <label
-                                            for="inputFaculty"
-                                            class="control-label"
-                                            >Faculty:</label
-                                        >
-                                        <div>
-                                            <input
-                                                type="text"
-                                                placeholder="eg: John Doe"
-                                                class="form-control"
-                                                id="inputFaculty"
-                                            />
-                                        </div>
-                                    </div>
-
-                                    <div class="form-group col-xs-12 col-sm-6">
-                                        <label
-                                            for="inputVenue"
-                                            class="control-label"
-                                            >Venue:</label
-                                        >
-                                        <div>
-                                            <input
-                                                type="text"
-                                                placeholder="eg: SJTG01"
-                                                class="form-control"
-                                                id="inputVenue"
-                                            />
-                                        </div>
-                                    </div>
-
-                                    <div class="form-group col-xs-12 col-sm-6">
-                                        <label
-                                            for="inputCourseCredits"
-                                            class="control-label"
-                                            >Credits:</label
-                                        >
-                                        <div>
-                                            <input
-                                                type="number"
-                                                class="form-control"
-                                                placeholder="eg: 4"
-                                                id="inputCourseCredits"
-                                            />
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <!-- To prevent clashes when J component is added. -->
-                                <input
-                                    type="hidden"
-                                    id="inputIsProject"
-                                    value="false"
-                                />
-
-                                <div class="form-group col-xs-12">
-                                    <div class="text-right">
-                                        <button
-                                            type="button"
-                                            id="clearCourseBtn"
-                                            class="btn btn-default"
-                                        >
-                                            Clear
-                                        </button>
-                                        <button
-                                            type="button"
-                                            id="addCourseBtn"
-                                            class="btn btn-success"
-                                        >
-                                            Add Course
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                        </form>
+                    <div class="row">
+                        <div class="row col-sm-12">
+                            <blockquote>
+                                <p class="blockquote">
+                                    Search, select then add or double click to
+                                    quickly add. Select course to enable slot
+                                    filter.
+                                </p>
+                            </blockquote>
+                        </div>
                     </div>
-                    <!-- End of panel-body -->
-                </div>
-                <!-- End of panel -->
+
+                    <div class="row" style="margin: 0 -5px;">
+                        <div id="insertCourseSelectionOptions"></div>
+                    </div>
+
+                    <div class="row" style="margin-top: 0.5rem;">
+                        <div class="col-sm-12 text-center">
+                            <button
+                                id="slot-sel-area-toggle-fields-btn"
+                                type="button"
+                                class="btn btn-outline-secondary"
+                            >
+                                Show Advanced Options
+                            </button>
+                        </div>
+                    </div>
+
+                    <div
+                        id="slot-sel-area-toggle-fields"
+                        class="row"
+                        style="display: none;"
+                    >
+                        <div class="col-sm-3">
+                            <label for="inputSlotString" class="form-label"
+                                >Slot</label
+                            >
+                            <input
+                                type="text"
+                                class="form-control"
+                                id="inputSlotString"
+                                placeholder="Ex: A1+TA1"
+                                oninput="this.value = this.value.toUpperCase();"
+                            />
+                        </div>
+
+                        <div class="col-sm-3">
+                            <label for="inputFaculty" class="form-label"
+                                >Faculty</label
+                            >
+                            <input
+                                type="text"
+                                class="form-control"
+                                id="inputFaculty"
+                                placeholder="Ex: JOHN DOE"
+                                oninput="this.value = this.value.toUpperCase();"
+                            />
+                        </div>
+
+                        <div class="col-sm-3">
+                            <label for="inputVenue" class="form-label"
+                                >Venue</label
+                            >
+                            <input
+                                type="text"
+                                class="form-control"
+                                id="inputVenue"
+                                placeholder="Ex: SJTG01"
+                                oninput="this.value = this.value.toUpperCase();"
+                            />
+                        </div>
+
+                        <div class="col-sm-3">
+                            <label for="inputCourseCredits" class="form-label"
+                                >Credits</label
+                            >
+                            <input
+                                type="text"
+                                class="form-control"
+                                id="inputCourseCredits"
+                                placeholder="Ex: 4"
+                                oninput="this.value = this.value.toUpperCase();"
+                            />
+                        </div>
+
+                        <!-- This input field is to store whether the select option is a project -->
+                        <input
+                            id="inputIsProject"
+                            type="hidden"
+                            value="false"
+                        />
+                    </div>
+
+                    <div class="row">
+                        <div class="col-sm-12 text-end">
+                            <button
+                                id="clearCourseBtn"
+                                type="button"
+                                class="btn btn-light"
+                            >
+                                Clear
+                            </button>
+                            <button
+                                id="addCourseBtn"
+                                type="button"
+                                class="btn btn-success"
+                            >
+                                Add Course
+                            </button>
+                        </div>
+                    </div>
+                </form>
             </div>
         </div>
-        <!-- End of container-->
 
         <hr />
 

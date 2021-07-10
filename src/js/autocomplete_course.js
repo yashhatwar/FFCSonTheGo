@@ -129,6 +129,12 @@ export function postInitAutocomplete() {
     });
 
     $('#insertCourseSelectionOptions').on('click', 'button', function() {
+        $('.list-group-item.selected').each(function() {
+            $(this).attr('class', 'list-group-item');
+        });
+
+        $(this).attr('class', 'list-group-item selected');
+
         var slot = $(this).data('slot');
         var faculty = $(this).data('faculty');
         var type = $(this).data('type');
@@ -143,7 +149,7 @@ export function postInitAutocomplete() {
     });
 
     $('#insertCourseSelectionOptions').on('dblclick', 'button', function() {
-        $('#slot-sel-area #addCourseBtn').click();
+        $('#addCourseBtn').click();
         $(this).blur();
     });
 
@@ -184,15 +190,11 @@ function getSlotSelectionButton(
 }
 
 function addSlotButtons(code) {
-    var BUTTONS_PER_DIV = 4;
-
-    var buttonsPerDiv = BUTTONS_PER_DIV;
-    var $buttonDiv = $('<div></div>');
     $('#insertCourseSelectionOptions').html('');
-    $('#insertCourseSelectionOptions').append($buttonDiv);
-
     $('#filter-by-slot').html('');
+
     resetFilterSlotArr();
+
     var theorySlotGroupSelect = [];
     var labSlotGroupSelect = [];
 
@@ -207,7 +209,6 @@ function addSlotButtons(code) {
                 (value.CREDITS || '').toString(),
                 value.VENUE,
             );
-            $buttonDiv.append($slotButton);
 
             // Build Multiselect group list
             if (value.SLOT[0] === 'L') {
@@ -220,13 +221,7 @@ function addSlotButtons(code) {
                 }
             }
 
-            buttonsPerDiv--;
-
-            if (buttonsPerDiv === 0) {
-                $buttonDiv = $('<div></div>');
-                $('#insertCourseSelectionOptions').append($buttonDiv);
-                buttonsPerDiv = BUTTONS_PER_DIV;
-            }
+            $('#insertCourseSelectionOptions').append($slotButton);
         }
     });
 

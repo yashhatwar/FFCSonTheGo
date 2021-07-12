@@ -170,12 +170,12 @@ function getSlotSelectionButton(
     var $slotButton = $(
         '<button type="button" class="list-group-item"></button>',
     );
-    var $h5 = $('<h5 class="list-group-item-heading"></h5>');
+    var $h6 = $('<h6 class="list-group-item-heading"></h6>');
     var $p = $('<p class="list-group-item-text"></p>');
 
-    $h5.text(slot);
+    $h6.text(slot);
     $p.text([faculty, venue, type].join(' | '));
-    $slotButton.append($h5);
+    $slotButton.append($h6);
     $slotButton.append($p);
 
     $slotButton.data('code', code);

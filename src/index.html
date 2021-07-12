@@ -34,11 +34,10 @@
             content="Visualize and make the most optimum timetable for yourself."
         />
         <meta property="og:site_name" content="FFCS On The Go" />
-        <!-- enjoy hints -->
-        <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/enjoyhint/3.1.0/enjoyhint.css" />-->
     </head>
 
     <body>
+        <!-- Service worker to check for an update -->
         <script>
             // Check that service workers are supported
             if ('serviceWorker' in window.navigator) {
@@ -65,8 +64,9 @@
                 );
             }
         </script>
+
+        <!-- Google Analytics -->
         <script>
-            // Google anlytics
             (function(i, s, o, g, r, a, m) {
                 i['GoogleAnalyticsObject'] = r;
                 (i[r] =
@@ -92,8 +92,8 @@
 
         <!-- Navbar -->
         <!-- TODO: Add functionality to the theme button -->
-        <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
-            <div class="container-fluid">
+        <nav class="navbar fixed-top navbar-expand-md navbar-light bg-light">
+            <div class="container-lg">
                 <a class="navbar-brand" href="/">FFCS On The Go</a>
                 <button
                     class="navbar-toggler"
@@ -111,16 +111,15 @@
                     <ul class="navbar-nav">
                         <li class="nav-item dropdown">
                             <a
+                                id="campus"
                                 class="nav-link dropdown-toggle"
-                                href="#"
-                                id="campusDropdown"
                                 role="button"
                                 data-bs-toggle="dropdown"
                                 aria-expanded="false"
                             ></a>
                             <ul
                                 class="dropdown-menu dropdown-menu-light"
-                                aria-labelledby="campusDropdown"
+                                aria-labelledby="campus"
                             >
                                 <li>
                                     <a class="dropdown-item" href="#Vellore"
@@ -136,13 +135,29 @@
                         </li>
                     </ul>
 
-                    <form class="ms-auto">
+                    <ul
+                        class="navbar-nav flex-row flex-wrap ms-auto"
+                        style="margin-right: 0.5rem;"
+                    >
+                        <li class="nav-item col-6 col-md-auto">
+                            <a
+                                class="nav-link"
+                                href="https://github.com/vatz88/FFCSonTheGo"
+                                target="_blank"
+                            >
+                                <i class="fab fa-github"></i>
+                                <small class="d-md-none ms-2">GitHub</small>
+                            </a>
+                        </li>
+                    </ul>
+
+                    <form class="md-auto">
                         <div class="dropdown" style="display: inline-block;">
                             <a
+                                id="share"
                                 class="btn btn-outline-secondary dropdown-toggle nav-btn-outline"
                                 href="#"
                                 role="button"
-                                id="dropdownMenuLink"
                                 data-bs-toggle="dropdown"
                                 aria-expanded="false"
                                 >Share</a
@@ -150,38 +165,73 @@
 
                             <ul
                                 class="dropdown-menu dropdown-menu-light"
-                                aria-labelledby="dropdownMenuLink"
+                                aria-labelledby="share"
                             >
                                 <li>
                                     <a
                                         class="dropdown-item"
-                                        href="whatsapp://send?text=FFCS made hassle free! https://ffcsonthego.vatz88.in/"
-                                        >WhatsApp</a
+                                        href="https://www.facebook.com/sharer/sharer.php?message=FFCS made hassle free!&u=https://ffcsonthego.vatz88.in/"
+                                        target="_blank"
                                     >
+                                        <i class="fab fa-facebook"></i>
+                                        <span>&nbsp;&nbsp;Facebook</span>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a
+                                        class="dropdown-item"
+                                        href="https://www.linkedin.com/sharing/share-offsite/?url=https://ffcsonthego.vatz88.in/"
+                                        target="_blank"
+                                    >
+                                        <i class="fab fa-linkedin"></i>
+                                        <span>&nbsp;&nbsp;LinkedIn</span>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a
+                                        class="dropdown-item"
+                                        href="https://twitter.com/intent/tweet?text=FFCS made hassle free! https://ffcsonthego.vatz88.in/"
+                                        target="_blank"
+                                    >
+                                        <i class="fab fa-twitter"></i>
+                                        <span>&nbsp;&nbsp;Twitter</span>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a
+                                        class="dropdown-item"
+                                        href="whatsapp://send?text=FFCS made hassle free! https://ffcsonthego.vatz88.in/"
+                                        target="_blank"
+                                    >
+                                        <i class="fab fa-whatsapp"></i>
+                                        <span>&nbsp;&nbsp;WhatsApp</span>
+                                    </a>
                                 </li>
                             </ul>
                         </div>
 
                         <button
-                            class="btn btn-outline-secondary me-2 nav-btn-outline"
+                            class="btn btn-outline-secondary nav-btn-outline"
                             type="button"
                             data-bs-toggle="modal"
-                            data-bs-target="#aboutModal"
+                            data-bs-target="#about-modal"
                         >
                             About
                         </button>
 
                         <div
                             class="one-quarter"
-                            id="switch"
-                            style="display: inline-block; margin-left: 0.5rem; vertical-align: middle;"
+                            style="display: inline-block; vertical-align: middle;"
                         >
                             <input
+                                id="theme"
                                 type="checkbox"
                                 class="checkbox"
-                                id="theme"
                             />
-                            <label class="label" for="theme">
+                            <label class="toggle" for="theme">
                                 <i class="fas fa-moon"></i>
                                 <i class="fas fa-sun"></i>
                                 <div class="ball"></div>
@@ -191,20 +241,21 @@
                 </div>
             </div>
         </nav>
+        <!-- End of navbar -->
 
         <!-- The About Modal -->
-        <!-- TODO: Adding the modal content and the GitHub link -->
+        <!-- TODO: Adding the modal content -->
         <div
             class="modal fade"
-            id="aboutModal"
+            id="about-modal"
             tabindex="-1"
-            aria-labelledby="aboutModalLabel"
+            aria-labelledby="about-modal-label"
             aria-hidden="true"
         >
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title" id="aboutModalLabel">
+                        <h5 id="about-modal-label" class="modal-title">
                             About FFCS On The Go
                         </h5>
                         <button
@@ -220,24 +271,26 @@
                     </div>
 
                     <div class="modal-footer">
-                        <b>Version:</b> <span>Winter Semester 2020-21</span>
+                        <b>Version:</b>
+                        <span id="version">Winter Semester 2020-21</span>
                     </div>
                 </div>
             </div>
         </div>
+        <!-- End of about modal -->
 
         <!-- The Edit Modal -->
         <div
+            id="edit-modal"
             class="modal fade"
-            id="editModal"
             tabindex="-1"
-            aria-labelledby="editModalLabel"
+            aria-labelledby="edit-modal-label"
             aria-hidden="true"
         >
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title" id="editModalLabel">
+                        <h5 id="edit-modal-label" class="modal-title">
                             Rename Table
                         </h5>
                         <button
@@ -249,15 +302,16 @@
                     </div>
 
                     <div class="modal-body">
-                        <form>
+                        <form onsubmit="return false;">
                             <div class="mb-3">
-                                <label for="table-name" class="col-form-label"
-                                    >Table Name</label
-                                >
+                                <label for="table-name" class="col-form-label">
+                                    Table Name
+                                </label>
                                 <input
-                                    type="text"
-                                    class="form-control"
                                     id="table-name"
+                                    class="form-control"
+                                    type="text"
+                                    autocomplete="off"
                                     placeholder="Ex: Fall Semester"
                                 />
                             </div>
@@ -273,7 +327,7 @@
                             Cancel
                         </button>
                         <button
-                            id="editButton"
+                            id="edit-table"
                             type="button"
                             class="btn btn-success"
                             data-bs-dismiss="modal"
@@ -284,19 +338,20 @@
                 </div>
             </div>
         </div>
+        <!-- End of edit modal -->
 
         <!-- The Delete Modal -->
         <div
             class="modal fade"
-            id="deleteModal"
+            id="delete-modal"
             tabindex="-1"
-            aria-labelledby="deleteModalLabel"
+            aria-labelledby="delete-modal-label"
             aria-hidden="true"
         >
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title" id="deleteModalLabel">
+                        <h5 class="modal-title" id="delete-modal-label">
                             Delete Table
                         </h5>
                         <button
@@ -323,7 +378,7 @@
                             Cancel
                         </button>
                         <button
-                            id="deleteButton"
+                            id="delete-table"
                             type="button"
                             class="btn btn-danger"
                             data-bs-dismiss="modal"
@@ -334,19 +389,20 @@
                 </div>
             </div>
         </div>
+        <!-- End of delete modal -->
 
         <!-- The Reset Modal -->
         <div
             class="modal fade"
-            id="resetModal"
+            id="reset-modal"
             tabindex="-1"
-            aria-labelledby="resetModalLabel"
+            aria-labelledby="reset-modal-label"
             aria-hidden="true"
         >
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title" id="resetModalLabel">
+                        <h5 class="modal-title" id="reset-modal-label">
                             Reset Table
                         </h5>
                         <button
@@ -373,7 +429,7 @@
                             Cancel
                         </button>
                         <button
-                            id="resetButton"
+                            id="reset-table"
                             type="button"
                             class="btn btn-danger"
                             data-bs-dismiss="modal"
@@ -384,27 +440,12 @@
                 </div>
             </div>
         </div>
+        <!-- End of reset modal -->
 
-        <!-- End of container-fluid -->
+        <!-- #1 - Course Panel -->
 
-        <!-- <div class="container"> -->
-        <!-- Special Alert Message -->
-        <!-- <div class="row">
-      <div class="col-xs-12">
-        <h1>Alerts</h1>
-        <div class="alert alert-danger" role="alert">
-          <strong>TAKE CARE OF ADJACENT THEORY &AMP; LAB COURSES!</strong> Theory and lab timings are now different and hence, you
-          can't take a theory slot which overlaps the lab slot timing. For example, one can't take L59 and TF2 together because
-          L59 starts at 05:31 PM while TF2 ends at 05:50 PM. We strongly advise you to recheck your timetable.
-          <strong>FFCSOTG currently doesn't take timing into consideration when deciding whether a clash occurred or not.</strong>
-        </div>
-      </div>
-    </div>
-  </div> -->
-        <!-- End of container -->
-
-        <div class="container-fluid">
-            <div class="col-xs-12">
+        <div class="container-lg">
+            <div class="col-sm-12">
                 <form>
                     <div class="row">
                         <div class="col-sm-9">
@@ -429,7 +470,7 @@
                     </div>
 
                     <div class="row">
-                        <div class="row col-sm-12">
+                        <div class="col-sm-12">
                             <blockquote>
                                 <p class="blockquote">
                                     Search, select then add or double click to
@@ -440,11 +481,11 @@
                         </div>
                     </div>
 
-                    <div class="row" style="margin: 0 -5px;">
+                    <div class="row">
                         <div id="insertCourseSelectionOptions"></div>
                     </div>
 
-                    <div class="row" style="margin-top: 0.5rem;">
+                    <div class="row" style="margin: 0.5rem 0 1rem 0;">
                         <div class="col-sm-12 text-center">
                             <button
                                 id="slot-sel-area-toggle-fields-btn"
@@ -466,9 +507,10 @@
                                 >Slot</label
                             >
                             <input
-                                type="text"
-                                class="form-control"
                                 id="inputSlotString"
+                                class="form-control"
+                                type="text"
+                                autocomplete="off"
                                 placeholder="Ex: A1+TA1"
                                 oninput="this.value = this.value.toUpperCase();"
                             />
@@ -479,9 +521,10 @@
                                 >Faculty</label
                             >
                             <input
-                                type="text"
-                                class="form-control"
                                 id="inputFaculty"
+                                class="form-control"
+                                type="text"
+                                autocomplete="off"
                                 placeholder="Ex: JOHN DOE"
                                 oninput="this.value = this.value.toUpperCase();"
                             />
@@ -492,9 +535,10 @@
                                 >Venue</label
                             >
                             <input
-                                type="text"
-                                class="form-control"
                                 id="inputVenue"
+                                class="form-control"
+                                type="text"
+                                autocomplete="off"
                                 placeholder="Ex: SJTG01"
                                 oninput="this.value = this.value.toUpperCase();"
                             />
@@ -505,15 +549,16 @@
                                 >Credits</label
                             >
                             <input
-                                type="text"
-                                class="form-control"
                                 id="inputCourseCredits"
+                                class="form-control"
+                                type="number"
+                                autocomplete="off"
                                 placeholder="Ex: 4"
                                 oninput="this.value = this.value.toUpperCase();"
                             />
                         </div>
 
-                        <!-- This input field is to store whether the select option is a project -->
+                        <!-- This input field is to store whether the selected option is a project -->
                         <input
                             id="inputIsProject"
                             type="hidden"
@@ -543,11 +588,15 @@
             </div>
         </div>
 
-        <hr />
+        <!-- End of #1 -->
 
-        <div class="container-fluid col-xs-9">
-            <div class="row justify-content-evenly">
-                <div class="col-sm-3 text-center">
+        <hr />
+        <!-- #2 - Timetable -->
+
+        <!-- Option buttons for the timetable -->
+        <div class="container-xxl col-xl-11">
+            <div class="row justify-content-around">
+                <div class="col-xl-3 text-center" style="padding: 5px;">
                     <div class="btn-group" role="group">
                         <div class="btn-group">
                             <button
@@ -576,7 +625,7 @@
                                                 href="JavaScript:void(0);"
                                                 data-table-id="0"
                                                 data-bs-toggle="modal"
-                                                data-bs-target="#editModal"
+                                                data-bs-target="#edit-modal"
                                                 ><i class="fas fa-edit"></i
                                             ></a>
                                         </td>
@@ -596,70 +645,103 @@
                     </div>
                 </div>
 
-                <div class="col-sm-6 horizontal-scroll-no-collapse text-center">
+                <div
+                    class="col-xl-7 horizontal-scroll-no-collapse text-center"
+                    style="padding: 5px;"
+                >
                     <button
                         id="takeScreenshotBtn"
                         class="btn btn-success"
                         type="button"
                     >
-                        Save Screenshot
+                        <i class="fas fa-camera"></i>
+                        <span>&nbsp;&nbsp;Save Screenshot</span>
                     </button>
                     <button
                         id="toggleClickToSelect"
                         class="btn btn-warning"
                         type="button"
                     >
-                        Enable Quick Visualization
+                        <i class="fas fa-eye"></i>
+                        <span>&nbsp;&nbsp;Enable Quick Visualization</span>
                     </button>
                     <button
                         class="btn btn-danger"
                         type="button"
                         data-bs-toggle="modal"
-                        data-bs-target="#resetModal"
+                        data-bs-target="#reset-modal"
                     >
-                        Reset Table
+                        <i class="fas fa-power-off"></i>
+                        <span>&nbsp;&nbsp;Reset Table</span>
                     </button>
                 </div>
             </div>
         </div>
 
-        <div class="container">
-            <!-- Quick selection tiles - morning slots -->
-            <div class="quick-selection noselect" style="display:none">
-                <div class="horizontal-scroll-no-collapse">
-                    <button class="A1-tile btn">A1</button>
-                    <button class="B1-tile btn">B1</button>
-                    <button class="C1-tile btn">C1</button>
-                    <button class="D1-tile btn">D1</button>
-                    <button class="E1-tile btn">E1</button>
-                    <button class="F1-tile btn">F1</button>
-                    <button class="G1-tile btn">G1</button>
-                </div>
-                <div class="horizontal-scroll-no-collapse">
-                    <button class="TA1-tile btn">TA1</button>
-                    <button class="TB1-tile btn">TB1</button>
-                    <button class="TC1-tile btn">TC1</button>
-                    <button class="TD1-tile btn">TD1</button>
-                    <button class="TE1-tile btn">TE1</button>
-                    <button class="TF1-tile btn">TF1</button>
-                    <button class="TG1-tile btn">TG1</button>
-                </div>
-                <div class="horizontal-scroll-no-collapse">
-                    <button class="TAA1-tile btn">TAA1</button>
-                    <button class="TBB1-tile btn" disabled>TBB1</button>
-                    <button class="TCC1-tile btn">TCC1</button>
-                    <button class="TDD1-tile btn" disabled>TDD1</button>
-                    <button class="TEE1-tile btn" disabled>TEE1</button>
-                    <button class="TFF1-tile btn" disabled>TFF1</button>
-                    <button class="TGG1-tile btn" disabled>TGG1</button>
-                </div>
+        <!-- Quick selection tiles - Morning slots -->
+        <div
+            class="container-lg quick-selection noselect"
+            style="display: none;"
+        >
+            <div>
+                <table>
+                    <tr>
+                        <td>
+                            <button class="A1-tile btn btn-quick">A1</button>
+                            <button class="B1-tile btn btn-quick">B1</button>
+                            <button class="C1-tile btn btn-quick">C1</button>
+                            <button class="D1-tile btn btn-quick">D1</button>
+                            <button class="E1-tile btn btn-quick">E1</button>
+                            <button class="F1-tile btn btn-quick">F1</button>
+                            <button class="G1-tile btn btn-quick">G1</button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <button class="TA1-tile btn btn-quick">TA1</button>
+                            <button class="TB1-tile btn btn-quick">TB1</button>
+                            <button class="TC1-tile btn btn-quick">TC1</button>
+                            <button class="TD1-tile btn btn-quick">TD1</button>
+                            <button class="TE1-tile btn btn-quick">TE1</button>
+                            <button class="TF1-tile btn btn-quick">TF1</button>
+                            <button class="TG1-tile btn btn-quick">TG1</button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <button class="TAA1-tile btn btn-quick">
+                                TAA1
+                            </button>
+                            <button class="TBB1-tile btn btn-quick" disabled>
+                                TBB1
+                            </button>
+                            <button class="TCC1-tile btn btn-quick">
+                                TCC1
+                            </button>
+                            <button class="TDD1-tile btn btn-quick" disabled>
+                                TDD1
+                            </button>
+                            <button class="TEE1-tile btn btn-quick" disabled>
+                                TEE1
+                            </button>
+                            <button class="TFF1-tile btn btn-quick" disabled>
+                                TFF1
+                            </button>
+                            <button class="TGG1-tile btn btn-quick" disabled>
+                                TGG1
+                            </button>
+                        </td>
+                    </tr>
+                </table>
             </div>
         </div>
-        <!-- End of container -->
+        <!-- End of quick selection tiles -->
 
         <!-- Timetable -->
-        <div class="container-fluid text-center noselect">
-            <div id="timetable" class="row table-responsive">
+        <div class="container-xxl text-center noselect">
+            <div id="timetable" class="table-responsive">
                 <table class="table table-bordered">
                     <tr style="display:none" class="screenshot_msg">
                         <td colspan="16">FFCS On The Go | bit.ly/ffcs-vit</td>
@@ -704,7 +786,7 @@
                             07:00 PM <br />to <br />07:50 PM
                         </td>
                         <!--<td class="TheoryHours">07:00 PM<br>to<br>07:50 PM</td>
-          <td class="TheoryHours">08:00 PM<br>to<br>08:50 PM</td>-->
+                        <td class="TheoryHours">08:00 PM<br>to<br>08:50 PM</td>-->
                     </tr>
                     <tr>
                         <td class="ColumnOneDays">LAB <br />HOURS</td>
@@ -745,7 +827,7 @@
                             06:16 PM <br />to <br />07:00 PM
                         </td>
                         <!--<td class="LabHours">07:30 PM<br>to<br>08:20 PM</td>
-          <td class="LabHours">08:20 PM<br>to<br>09:10 PM</td>-->
+                        <td class="LabHours">08:20 PM<br>to<br>09:10 PM</td>-->
                     </tr>
                     <tr>
                         <!-- IMPORTANT: It's important to maintain the order of class. i.e. A1,F1,D1,.. are 2nd -->
@@ -793,7 +875,7 @@
                             V3 / L36
                         </td>
                         <!--<td class="TimetableContent H1 L61">H1 / L61</td>
-          <td class="TimetableContent K1 L62">K1 / L62</td>-->
+                        <td class="TimetableContent K1 L62">K1 / L62</td>-->
                     </tr>
                     <tr>
                         <td class="ColumnOneDays">TUE</td>
@@ -840,7 +922,7 @@
                             V4 / L42
                         </td>
                         <!--<td class="TimetableContent H2 L63">H2 / L63</td>
-          <td class="TimetableContent K2 L64">K2 / L64</td>-->
+                        <td class="TimetableContent K2 L64">K2 / L64</td>-->
                     </tr>
                     <tr>
                         <td class="ColumnOneDays">WED</td>
@@ -885,7 +967,7 @@
                             V5 / L48
                         </td>
                         <!--<td class="TimetableContent H3 L65">H3 / L65</td>
-          <td class="TimetableContent K3 L66">K3 / L66</td>-->
+                        <td class="TimetableContent K3 L66">K3 / L66</td>-->
                     </tr>
                     <tr>
                         <td class="ColumnOneDays">THU</td>
@@ -932,7 +1014,7 @@
                             V6 / L54
                         </td>
                         <!--<td class="TimetableContent H4 L67">H4 / L67</td>
-          <td class="TimetableContent K4 L68">K4 / L68</td>-->
+                        <td class="TimetableContent K4 L68">K4 / L68</td>-->
                     </tr>
                     <tr>
                         <td class="ColumnOneDays">FRI</td>
@@ -979,78 +1061,103 @@
                             V7 / L60
                         </td>
                         <!--<td class="TimetableContent H5 L69">H5 / L69</td>
-          <td class="TimetableContent K5 L70">K5 / L70</td>-->
+                        <td class="TimetableContent K5 L70">K5 / L70</td>-->
                     </tr>
                     <!-- <tr>
-          <td class="ColumnOneDays">SAT</td>
-          <td class="TimetableContent V8 L71">V8 / L71</td>
-          <td class="TimetableContent X1 L72">X1 / L72</td>
-          <td class="TimetableContent X1 L73">X1 / L73</td>
-          <td class="TimetableContent Y1 L74">Y1 / L74</td>
-          <td class="TimetableContent Y1 L75">Y1 / L75</td>
-          <td class="TimetableContent L76">L76</td>
-          <td class="TimetableContent X2 L77">X2 / L77</td>
-          <td class="TimetableContent Z L78">Z / L78</td>
-          <td class="TimetableContent Y2 L79">Y2 / L79</td>
-          <td class="TimetableContent W2 L80">W2 / L80</td>
-          <td class="TimetableContent W2 L81">W2 / L81</td>
-          <td class="TimetableContent V9 L82">V9 / L82</td>
-        </tr>
-        <tr>
-          <td class="ColumnOneDays">SUN</td>
-          <td class="TimetableContent V10 L83">V10 / L83</td>
-          <td class="TimetableContent Y1 L84">Y1 / L84</td>
-          <td class="TimetableContent Y1 L85">Y1 / L85</td>
-          <td class="TimetableContent X1 L86">X1 / L86</td>
-          <td class="TimetableContent X1 L87">X1 / L87</td>
-          <td class="TimetableContent L88">L88</td>
-          <td class="TimetableContent Y2 L89">Y2 / L89</td>
-          <td class="TimetableContent Z L90">Z / L90</td>
-          <td class="TimetableContent X2 L91">X2 / L91</td>
-          <td class="TimetableContent W2 L92">W2 / L92</td>
-          <td class="TimetableContent W2 L93">W2 / L93</td>
-          <td class="TimetableContent V11 L94">V11 / L94</td>
-        </tr> -->
+                        <td class="ColumnOneDays">SAT</td>
+                        <td class="TimetableContent V8 L71">V8 / L71</td>
+                        <td class="TimetableContent X1 L72">X1 / L72</td>
+                        <td class="TimetableContent X1 L73">X1 / L73</td>
+                        <td class="TimetableContent Y1 L74">Y1 / L74</td>
+                        <td class="TimetableContent Y1 L75">Y1 / L75</td>
+                        <td class="TimetableContent L76">L76</td>
+                        <td class="TimetableContent X2 L77">X2 / L77</td>
+                        <td class="TimetableContent Z L78">Z / L78</td>
+                        <td class="TimetableContent Y2 L79">Y2 / L79</td>
+                        <td class="TimetableContent W2 L80">W2 / L80</td>
+                        <td class="TimetableContent W2 L81">W2 / L81</td>
+                        <td class="TimetableContent V9 L82">V9 / L82</td>
+                    </tr>
+                    <tr>
+                        <td class="ColumnOneDays">SUN</td>
+                        <td class="TimetableContent V10 L83">V10 / L83</td>
+                        <td class="TimetableContent Y1 L84">Y1 / L84</td>
+                        <td class="TimetableContent Y1 L85">Y1 / L85</td>
+                        <td class="TimetableContent X1 L86">X1 / L86</td>
+                        <td class="TimetableContent X1 L87">X1 / L87</td>
+                        <td class="TimetableContent L88">L88</td>
+                        <td class="TimetableContent Y2 L89">Y2 / L89</td>
+                        <td class="TimetableContent Z L90">Z / L90</td>
+                        <td class="TimetableContent X2 L91">X2 / L91</td>
+                        <td class="TimetableContent W2 L92">W2 / L92</td>
+                        <td class="TimetableContent W2 L93">W2 / L93</td>
+                        <td class="TimetableContent V11 L94">V11 / L94</td>
+                    </tr> -->
                 </table>
             </div>
         </div>
-        <!-- End of container-fluid -->
+        <!-- End of timetable -->
 
-        <div class="container">
-            <!-- Quick selection tiles - evening slots -->
-            <div class="quick-selection noselect" style="display:none">
-                <div class="horizontal-scroll-no-collapse">
-                    <button class="A2-tile btn">A2</button>
-                    <button class="B2-tile btn">B2</button>
-                    <button class="C2-tile btn">C2</button>
-                    <button class="D2-tile btn">D2</button>
-                    <button class="E2-tile btn">E2</button>
-                    <button class="F2-tile btn">F2</button>
-                    <button class="G2-tile btn">G2</button>
-                </div>
-                <div class="horizontal-scroll-no-collapse">
-                    <button class="TA2-tile btn">TA2</button>
-                    <button class="TB2-tile btn">TB2</button>
-                    <button class="TC2-tile btn">TC2</button>
-                    <button class="TD2-tile btn">TD2</button>
-                    <button class="TE2-tile btn">TE2</button>
-                    <button class="TF2-tile btn">TF2</button>
-                    <button class="TG2-tile btn">TG2</button>
-                </div>
-                <div class="horizontal-scroll-no-collapse">
-                    <button class="TAA2-tile btn">TAA2</button>
-                    <button class="TBB2-tile btn">TBB2</button>
-                    <button class="TCC2-tile btn">TCC2</button>
-                    <button class="TDD2-tile btn">TDD2</button>
-                    <button class="TEE2-tile btn" disabled>TEE2</button>
-                    <button class="TFF2-tile btn" disabled>TFF2</button>
-                    <button class="TGG2-tile btn" disabled>TGG2</button>
-                </div>
+        <!-- Quick selection tiles - Evening slots -->
+        <div class="container-lg quick-selection" style="display: none;">
+            <div>
+                <table>
+                    <tr>
+                        <td>
+                            <button class="A2-tile btn btn-quick">A2</button>
+                            <button class="B2-tile btn btn-quick">B2</button>
+                            <button class="C2-tile btn btn-quick">C2</button>
+                            <button class="D2-tile btn btn-quick">D2</button>
+                            <button class="E2-tile btn btn-quick">E2</button>
+                            <button class="F2-tile btn btn-quick">F2</button>
+                            <button class="G2-tile btn btn-quick">G2</button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <button class="TA2-tile btn btn-quick">TA2</button>
+                            <button class="TB2-tile btn btn-quick">TB2</button>
+                            <button class="TC2-tile btn btn-quick">TC2</button>
+                            <button class="TD2-tile btn btn-quick">TD2</button>
+                            <button class="TE2-tile btn btn-quick">TE2</button>
+                            <button class="TF2-tile btn btn-quick">TF2</button>
+                            <button class="TG2-tile btn btn-quick">TG2</button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <button class="TAA2-tile btn btn-quick">
+                                TAA2
+                            </button>
+                            <button class="TBB2-tile btn btn-quick" disabled>
+                                TBB2
+                            </button>
+                            <button class="TCC2-tile btn btn-quick">
+                                TCC2
+                            </button>
+                            <button class="TDD2-tile btn btn-quick" disabled>
+                                TDD2
+                            </button>
+                            <button class="TEE2-tile btn btn-quick" disabled>
+                                TEE2
+                            </button>
+                            <button class="TFF2-tile btn btn-quick" disabled>
+                                TFF2
+                            </button>
+                            <button class="TGG2-tile btn btn-quick" disabled>
+                                TGG2
+                            </button>
+                        </td>
+                    </tr>
+                </table>
             </div>
         </div>
-        <!-- End of container -->
+        <!-- End of quick selection tiles -->
 
-        <div id="course-list-container" class="container-fluid">
+        <!-- Course list table -->
+        <div class="container-lg">
             <blockquote>
                 <p class="blockquote">
                     Double click a course to load it back into the panel.
@@ -1090,51 +1197,39 @@
                 </table>
             </div>
         </div>
+        <!-- End of course list table -->
 
-        <!-- Embed code Excel online -->
-        <!--<div class="container-fluid hidden-xs">
-    <div class="row text-center">
-      <div id="ExcelSheet" class="col-sm-12">
-        <button id="CourseAllocationReport-btn" type="button" class="btn btn-info">Load Course Allocation Report</button>
-      </div>
-    </div>
-  </div>-->
-        <!-- End of container-fluid-->
+        <!-- End of #2 -->
 
         <hr />
+        <!-- #3 - Comments & Footer -->
 
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-12" id="fb-comment-id">
-                    <!--comments-->
-                    <div id="disqus_thread"></div>
-                </div>
+        <!-- Disqus comments -->
+        <div class="container-lg">
+            <div class="col-xs-12" id="fb-comment-id">
+                <div id="disqus_thread"></div>
             </div>
         </div>
-        <!-- End of container-->
 
         <!-- Footer -->
         <footer class="container-fluid text-center">
-            <div class="row">
-                <div class="col-sm-12">
-                    Made with &#10084; for VITians
-                </div>
-            </div>
+            <span>Made with <i class="fas fa-heart"></i> for VITians</span>
         </footer>
-        <!-- End of container-fluid -->
 
+        <!-- End of #3 -->
+
+        <!-- Importing JavaScript (Other imports are done inside main.js) -->
         <script src="./js/main.js"></script>
-        <!-- enjoy hint -->
-        <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/enjoyhint/3.1.0/enjoyhint.min.js"></script>
-  <script src="js/enjoyhintsetup.js"></script>-->
 
+        <!-- Initializing Disqus -->
+        <!-- DO NOT EDIT THIS SECTION UNLESS NECESSARY -->
         <script>
             var disqus_config = function() {
                 this.page.url = 'https://ffcsonthego.vatz88.in/'; // Replace PAGE_URL with your page's canonical URL variable
                 this.page.identifier = 'ffcsonthego_main_page'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
             };
+
             (function() {
-                // DON'T EDIT BELOW THIS LINE
                 var d = document,
                     s = d.createElement('script');
                 s.src = 'https://ffcsonthego.disqus.com/embed.js';

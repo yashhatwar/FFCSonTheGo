@@ -76,17 +76,17 @@ $(function() {
     // Disable On Click Selection
     $('#toggleClickToSelect').click(function() {
         if ($(this).attr('data-state') === 'enabled') {
-            $(this).text('Enable Quick Visualization');
+            $('span', this).html('&nbsp;&nbsp;Enable Quick Visualization');
             $(this).attr('data-state', 'disabled');
             $('.quick-selection *[class*="-tile"]').off();
             $('#timetable .TimetableContent').off();
-            $('.quick-selection').hide(500);
         } else {
-            $(this).text('Disable Quick Visualization');
+            $('span', this).html('&nbsp;&nbsp;Disable Quick Visualization');
             addColorChangeEvents();
             $(this).attr('data-state', 'enabled');
-            $('.quick-selection').show(500);
         }
+
+        $('.quick-selection').slideToggle();
     });
 
     // Toggle extra fields in slot selection area
@@ -106,7 +106,7 @@ $(function() {
             toggle.attr('class', 'btn btn-outline-secondary');
         }
 
-        $('#slot-sel-area-toggle-fields').fadeToggle();
+        $('#slot-sel-area-toggle-fields').slideToggle();
     });
 
     $('#addCourseBtn').click(function() {
@@ -321,7 +321,7 @@ $(function() {
         });
 
     // Reset current table not all tables
-    $('#resetButton').click(function() {
+    $('#reset-table').click(function() {
         clearPage();
         activeTable.data = [];
         updateLocalForage();
@@ -371,11 +371,11 @@ $(function() {
         ).text();
 
         $('#table-name').val(tableName);
-        $('#editButton').data('table-id', tableId);
+        $('#edit-table').data('table-id', tableId);
     });
 
     // Renaming the table
-    $('#editButton').on('click', function() {
+    $('#edit-table').on('click', function() {
         var tableId = $(this).data('table-id');
         var tableName = $('#table-name')
             .val()
@@ -391,11 +391,7 @@ $(function() {
     // Renaming the table using the Enter key
     $('#table-name').on('keydown', function(e) {
         if (e.key == 'Enter') {
-            $('#editButton').trigger('click');
-        }
-
-        if (e.which === 13 || e.which === 27) {
-            $(this).blur();
+            $('#edit-table').trigger('click');
         }
     });
 
@@ -410,11 +406,11 @@ $(function() {
                 .data('table-id'),
         );
 
-        $('#deleteButton').data('table-id', tableId);
+        $('#delete-table').data('table-id', tableId);
     });
 
     // Deleting a table
-    $('#deleteButton').on('click', function() {
+    $('#delete-table').on('click', function() {
         var tableId = $(this).data('table-id');
 
         $('.tt-picker-label')
@@ -907,10 +903,10 @@ function addTableDropdownButton(tableId, tableName) {
             '<td>' +
             '<a class="tt-picker-edit" href="JavaScript:void(0);" data-table-id="' +
             tableId +
-            '" data-bs-toggle="modal" data-bs-target="#editModal"><i class="fas fa-edit"></i></a>' +
+            '" data-bs-toggle="modal" data-bs-target="#edit-modal"><i class="fas fa-edit"></i></a>' +
             '<a class="tt-picker-remove" href="JavaScript:void(0);" data-table-id="' +
             tableId +
-            '" data-bs-toggle="modal" data-bs-target="#deleteModal"><i class="fas fa-trash"></i></a>' +
+            '" data-bs-toggle="modal" data-bs-target="#delete-modal"><i class="fas fa-trash"></i></a>' +
             '</td>' +
             '</table>' +
             '</li>',
@@ -920,7 +916,7 @@ function addTableDropdownButton(tableId, tableName) {
         $('#saved-tt-picker .tt-picker-edit')
             .first()
             .after(
-                '<a class="tt-picker-remove" href="JavaScript:void(0);" data-table-id="0" data-bs-toggle="modal" data-bs-target="#deleteModal"><i class="fas fa-trash"></i></a>',
+                '<a class="tt-picker-remove" href="JavaScript:void(0);" data-table-id="0" data-bs-toggle="modal" data-bs-target="#delete-modal"><i class="fas fa-trash"></i></a>',
             );
 
         isDefaultDeletable = true;
@@ -948,16 +944,16 @@ function loadCourseData() {
     initAutocomplete(window.location.hash === '#Chennai');
     postInitAutocomplete();
     if (window.location.hash === '#Chennai') {
-        $('#campusDropdown').text('Chennai Campus');
+        $('#campus').text('Chennai Campus');
     } else {
-        $('#campusDropdown').text('Vellore Campus');
+        $('#campus').text('Vellore Campus');
     }
     $(window).on('hashchange', () => {
         initAutocomplete(window.location.hash === '#Chennai');
         if (window.location.hash === '#Chennai') {
-            $('#campusDropdown').text('Chennai Campus');
+            $('#campus').text('Chennai Campus');
         } else {
-            $('#campusDropdown').text('Vellore Campus');
+            $('#campus').text('Vellore Campus');
         }
     });
 }

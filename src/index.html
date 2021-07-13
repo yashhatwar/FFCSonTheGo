@@ -476,7 +476,7 @@
                     </div>
 
                     <div class="row">
-                        <div class="col-sm-12">
+                        <div class="col-sm-12 blockquote-container">
                             <blockquote>
                                 <p class="blockquote">
                                     Search, select then add or double click to
@@ -600,9 +600,9 @@
         <!-- #2 - Timetable -->
 
         <!-- Option buttons for the timetable -->
-        <div class="container-xxl col-xl-11">
+        <div id="option-buttons" class="container-xxl col-xl-11">
             <div class="row justify-content-around">
-                <div class="col-xl-3 text-center" style="padding: 5px;">
+                <div class="col-xl-3 text-center">
                     <div class="btn-group" role="group">
                         <div class="btn-group">
                             <button
@@ -651,10 +651,7 @@
                     </div>
                 </div>
 
-                <div
-                    class="col-xl-7 horizontal-scroll-no-collapse text-center"
-                    style="padding: 5px;"
-                >
+                <div class="col-xl-7 horizontal-scroll-no-collapse text-center">
                     <button
                         id="takeScreenshotBtn"
                         class="btn btn-success"
@@ -1164,11 +1161,13 @@
 
         <!-- Course list table -->
         <div class="container-lg">
-            <blockquote>
-                <p class="blockquote">
-                    Double click a course to load it back into the panel.
-                </p>
-            </blockquote>
+            <div class="blockquote-container">
+                <blockquote>
+                    <p class="blockquote">
+                        Double click a course to load it back into the panel.
+                    </p>
+                </blockquote>
+            </div>
 
             <div style="overflow-x: auto;">
                 <table id="courseListTable" class="table table-hover">

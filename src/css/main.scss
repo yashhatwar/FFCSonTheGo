@@ -148,9 +148,14 @@ blockquote {
     width: 100%;
     background: #9c27b0;
     color: #ffffff;
-    margin: 0.5rem 0 !important;
+    margin: 0 !important;
     padding: 1rem 1.2rem !important;
     border-radius: 0.5rem;
+}
+
+.blockquote-container {
+    padding-top: 0.5rem !important;
+    padding-bottom: 0.5rem !important;
 }
 
 .blockquote {
@@ -216,11 +221,6 @@ header .alert {
     width: 80%;
 }
 
-#option_buttons {
-    margin-left: 0.5rem;
-    margin-right: 0.5rem;
-}
-
 .btn-close {
     background-image: none;
 }
@@ -250,6 +250,26 @@ a:hover {
     margin: 3px 20px;
 }
 
+#option-buttons {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+#option-buttons button {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+#toggleClickToSelect {
+    margin-left: 0.3rem;
+    margin-right: 0.3rem;
+}
+
+.container-xxl {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
 .table {
     margin-bottom: 0 !important;
 }
@@ -271,7 +291,7 @@ td {
 }
 
 .quick-selection {
-    margin: 2.5px auto;
+    margin: 1rem auto;
     width: 100%;
 }
 
@@ -281,9 +301,7 @@ td {
 }
 
 .quick-selection table {
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 2.5px;
+    margin: auto;
 }
 
 .quick-selection td {
@@ -301,7 +319,7 @@ td {
 .btn-quick {
     flex-grow: 1;
     width: fit-content;
-    margin: 2.5px;
+    margin: 0.3rem;
     background-color: #ffc107 !important;
 }
 
@@ -330,7 +348,7 @@ footer {
     vertical-align: bottom;
 }
 
-#option_buttons .dropdown-menu > li:not(:last-child) {
+.dropdown-menu > li:not(:last-child) {
     border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }
 
@@ -721,14 +739,16 @@ footer a:hover {
 
 @media screen and (max-width: 1400px) {
     .container-xxl {
-        padding: 0.5rem 2rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
     }
 }
 
 @media screen and (max-width: 992px) {
     .container-lg,
     .container-xxl {
-        padding: 0.5rem 1rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
     }
 }
 

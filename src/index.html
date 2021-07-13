@@ -465,7 +465,15 @@
                             <label for="filter-by-slot" class="form-label"
                                 >Filter By Slot</label
                             >
-                            <select id="filter-by-slot" multiple></select>
+                            <select
+                                id="filter-by-slot"
+                                class="selectpicker"
+                                data-width="100%"
+                                data-live-search="true"
+                                data-live-search-placeholder="Search for a slot"
+                                multiple
+                                disabled
+                            ></select>
                         </div>
                     </div>
 
@@ -1220,6 +1228,17 @@
 
         <!-- Importing JavaScript (Other imports are done inside main.js) -->
         <script src="./js/main.js"></script>
+
+        <!-- NOTE: The package bootstrap-select is not compatable with bootstrap 5
+            at the time of writing this. Once a stable version of bootstrap-select
+            v1.14.0 has been released, the bootstrap 4 javascript import below can
+            be removed and the package import should be moved to main.js -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+            crossorigin="anonymous"
+        ></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.18/dist/js/bootstrap-select.min.js"></script>
 
         <!-- Initializing Disqus -->
         <!-- DO NOT EDIT THIS SECTION UNLESS NECESSARY -->

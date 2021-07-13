@@ -1,10 +1,10 @@
 import '../../node_modules/bootstrap/dist/css/bootstrap.css';
+import '../../node_modules/bootstrap-select/dist/css/bootstrap-select.min.css';
 import '../../node_modules/@fortawesome/fontawesome-free/css/all.min.css';
 import '../css/main.scss';
 
-import $ from 'jquery';
-window.jQuery = window.$ = $;
-require('bootstrap');
+import './attacher';
+
 import html2canvas from 'html2canvas';
 
 import './color_change';

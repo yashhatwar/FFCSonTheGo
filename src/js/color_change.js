@@ -1,6 +1,4 @@
-import $ from 'jquery';
 import localforage from 'localforage';
-
 import { resetFilterSlotArr } from './autocomplete_course';
 
 let timeTableStorage = [
@@ -329,8 +327,9 @@ $(function() {
         // Clear Multiselect
         $('#filter-by-slot').html('');
         resetFilterSlotArr();
-        $('#filter-by-slot').multiselect &&
-            $('#filter-by-slot').multiselect('rebuild');
+        $('#filter-by-slot').prop('disabled', true) &&
+            $('#filter-by-slot').selectpicker &&
+            $('#filter-by-slot').selectpicker('refresh');
     });
 
     // Clear course from panel
@@ -340,8 +339,9 @@ $(function() {
         // Clear Multiselect
         $('#filter-by-slot').html('');
         resetFilterSlotArr();
-        $('#filter-by-slot').multiselect &&
-            $('#filter-by-slot').multiselect('rebuild');
+        $('#filter-by-slot').prop('disabled', true) &&
+            $('#filter-by-slot').selectpicker &&
+            $('#filter-by-slot').selectpicker('refresh');
     });
 
     // Switch table on click
@@ -933,10 +933,9 @@ function updateLocalForage() {
 // load course data with autocomplete
 function loadCourseData() {
     require('easy-autocomplete');
-    require('bootstrap-multiselect');
     require('./autocomplete_course');
     require('../../node_modules/easy-autocomplete/dist/easy-autocomplete.css');
-    require('../../node_modules/bootstrap-multiselect/dist/css/bootstrap-multiselect.css');
+    // require('bootstrap-select');
     const {
         initAutocomplete,
         postInitAutocomplete,

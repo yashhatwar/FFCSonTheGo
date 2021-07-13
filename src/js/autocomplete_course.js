@@ -1,4 +1,4 @@
-import $ from 'jquery';
+// import $ from 'jquery';
 
 export let filterSlotArr = [];
 export function resetFilterSlotArr(params) {
@@ -8,78 +8,6 @@ export function resetFilterSlotArr(params) {
 const courses_data = {
     unique_courses: [],
     all_data: [],
-};
-
-var multiselectConfig = {
-    enableCaseInsensitiveFiltering: true,
-    delimiterText: '; ',
-    enableClickableOptGroups: true,
-    disableIfEmpty: true,
-    disabledText: 'Apply Slot Filter',
-    buttonWidth: '100%',
-    maxHeight: 200,
-    onChange: function(option, checked) {
-        if (checked) {
-            for (var key = 0; key < option.length; key++) {
-                if (option[key.toString()].value) {
-                    filterSlotArr.indexOf(option[key.toString()].value) ===
-                        -1 && filterSlotArr.push(option[key.toString()].value);
-                } else {
-                    var allSelectOption = option[key.toString()];
-                    for (
-                        var innerkey = 0;
-                        innerkey < allSelectOption.length;
-                        innerkey++
-                    ) {
-                        if (allSelectOption[innerkey.toString()].value) {
-                            filterSlotArr.indexOf(
-                                allSelectOption[innerkey.toString()].value,
-                            ) === -1 &&
-                                filterSlotArr.push(
-                                    allSelectOption[innerkey.toString()].value,
-                                );
-                        }
-                    }
-                }
-            }
-        } else {
-            for (var key = 0; key < option.length; key++) {
-                if (option[key.toString()].value) {
-                    var filterSlotIndex = filterSlotArr.indexOf(
-                        option[key.toString()].value,
-                    );
-                    filterSlotArr.splice(filterSlotIndex, 1);
-                } else {
-                    var allSelectOption = option[key.toString()];
-                    for (
-                        var innerkey = 0;
-                        innerkey < allSelectOption.length;
-                        innerkey++
-                    ) {
-                        if (allSelectOption[innerkey.toString()].value) {
-                            var filterSlotIndex = filterSlotArr.indexOf(
-                                allSelectOption[innerkey.toString()].value,
-                            );
-                            filterSlotArr.splice(filterSlotIndex, 1);
-                        }
-                    }
-                }
-            }
-        }
-        $('#insertCourseSelectionOptions button').show();
-        if (filterSlotArr.length) {
-            $('#insertCourseSelectionOptions button')
-                .not(function(i, el) {
-                    var elSlot = $(el).data('slot');
-                    if (filterSlotArr.indexOf(elSlot) > -1) {
-                        return true;
-                    } else {
-                        return false;
-                    }
-                })
-                .hide();
-        }
-    },
 };
 
 export function initAutocomplete(isChennai) {
@@ -153,8 +81,43 @@ export function postInitAutocomplete() {
         $(this).blur();
     });
 
-    // Init Multiselect
-    $('#filter-by-slot').multiselect(multiselectConfig);
+    // Initalize the slot filter
+    $('#filter-by-slot').on('changed.bs.select', function(
+        e,
+        clickedIndex,
+        isSelected,
+        previousValue,
+    ) {
+        var option = $('option', this)[clickedIndex].value;
+        var filterIndex = filterSlotArr.indexOf(option);
+
+        if (isSelected) {
+            if (filterIndex == -1) {
+                filterSlotArr.push(option);
+            }
+        } else {
+            if (filterIndex != -1) {
+                filterSlotArr.splice(filterIndex, 1);
+            }
+        }
+
+        // Show all the slots first, then hide whatever is not in filterSlotArr
+        $('#insertCourseSelectionOptions button').show();
+        if (filterSlotArr.length) {
+            $('#insertCourseSelectionOptions button')
+                .not(function(i, el) {
+                    var elSlot = $(el).data('slot');
+
+                    if (filterSlotArr.indexOf(elSlot) != -1) {
+                        return true;
+                    } else {
+                        return false;
+                    }
+                })
+                .hide();
+        }
+    });
+    $('#filter-by-slot').selectpicker('refresh');
 }
 
 // Add slot selection buttons from array of slots
@@ -234,6 +197,7 @@ function addSlotButtons(code) {
         });
         $('#filter-by-slot').append($theorySlotGroupSelect);
     }
+
     if (labSlotGroupSelect.length) {
         // Multiselect Lab
         var $labSlotGroupSelect = $('<optgroup label="Lab"></optgroup>');
@@ -243,5 +207,12 @@ function addSlotButtons(code) {
         });
         $('#filter-by-slot').append($labSlotGroupSelect);
     }
-    $('#filter-by-slot').multiselect('rebuild');
+
+    if ($('#filter-by-slot option').length) {
+        $('#filter-by-slot').prop('disabled', false);
+    } else {
+        $('#filter-by-slot').prop('disabled', true);
+    }
+
+    $('#filter-by-slot').selectpicker('refresh');
 }

@@ -129,12 +129,6 @@ input.form-control {
     box-shadow: 0 0 0 0.25rem rgb(13 110 253 / 25%);
 }
 
-.bootstrap-select > select.mobile-device:focus + .dropdown-toggle,
-.bootstrap-select .dropdown-toggle:focus {
-    outline: none !important;
-    outline-offset: 0px !important;
-}
-
 .bootstrap-select button.dropdown-toggle {
     border-color: #ccc !important;
     border-radius: 4px !important;
@@ -629,7 +623,6 @@ footer {
     cursor: pointer;
 }
 
-#slot-sel-area input,
 .list-group-item {
     text-transform: uppercase;
 }

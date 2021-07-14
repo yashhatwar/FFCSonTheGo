@@ -3,7 +3,15 @@ import '../../node_modules/bootstrap-select/dist/css/bootstrap-select.min.css';
 import '../../node_modules/@fortawesome/fontawesome-free/css/all.min.css';
 import '../css/main.scss';
 
+/*
+ *  The package bootstrap-select is not compatable with bootstrap 5 at the
+ *  time of writing this. Once bootstrap-select has been upgraded to a stable
+ *  version with bootstrap 5 support, the bootstrap 4 javascript import &
+ *  it's dependency (bootstrap4) can be removed.
+ */
 import './attacher';
+import '../../node_modules/bootstrap4/dist/js/bootstrap.bundle';
+import '../../node_modules/bootstrap-select/dist/js/bootstrap-select';
 
 import html2canvas from 'html2canvas';
 

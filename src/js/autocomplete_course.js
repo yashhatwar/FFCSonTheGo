@@ -118,6 +118,15 @@ export function postInitAutocomplete() {
         }
     });
     $('#filter-by-slot').selectpicker('refresh');
+
+    // Hack to turn off auto focus
+    $('#filter-by-slot').on('change', function() {
+        $(this)
+            .siblings('.dropdown-menu')
+            .children('.bs-searchbox')
+            .children('input[type="search"]')
+            .trigger('blur');
+    });
 }
 
 // Add slot selection buttons from array of slots

@@ -74,11 +74,13 @@ $(function() {
     // Disable On Click Selection
     $('#toggleClickToSelect').click(function() {
         if ($(this).attr('data-state') === 'enabled') {
+            $('i', this).prop('class', 'fas fa-eye');
             $('span', this).html('&nbsp;&nbsp;Enable Quick Visualization');
             $(this).attr('data-state', 'disabled');
             $('.quick-selection *[class*="-tile"]').off();
             $('#timetable .TimetableContent').off();
         } else {
+            $('i', this).prop('class', 'fas fa-eye-slash');
             $('span', this).html('&nbsp;&nbsp;Disable Quick Visualization');
             addColorChangeEvents();
             $(this).attr('data-state', 'enabled');

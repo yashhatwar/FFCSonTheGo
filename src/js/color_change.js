@@ -190,7 +190,7 @@ $(function() {
     });
 
     // Load course again in the panel
-    $('#courseListTable').on('dblclick', 'tr', function(e) {
+    $('#courseListTable').on('dblclick', 'tr:not(:last-child)', function(e) {
         var slotString = $(this)
             .find('td')
             .not('[colspan]')

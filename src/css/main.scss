@@ -236,9 +236,18 @@ a:hover {
     color: #000000;
 }
 
+#saved-tt-picker-label {
+    max-width: 180px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
 .tt-picker-label {
     padding-right: 1.2rem;
     width: 100%;
+    max-width: 180px;
+    overflow: hidden;
+    text-overflow: ellipsis;
     cursor: pointer;
 }
 
@@ -678,12 +687,6 @@ footer {
 
 .table-active:hover {
     --bs-table-accent-bg: var(--bs-table-active-bg) !important;
-}
-
-#saved-tt-picker-label {
-    max-width: 180px;
-    overflow: hidden;
-    text-overflow: ellipsis;
 }
 
 footer {

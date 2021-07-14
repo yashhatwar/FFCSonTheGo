@@ -45,7 +45,10 @@ $(function() {
     // Timetable screenshot
     $('#takeScreenshotBtn').click(function() {
         // Hack: scroll to top gives better image with html2canvas
-        window.scrollTo(0, 0);
+        window.scrollTo({
+            top: 0,
+            behavior: 'instant',
+        });
         var timetable_img_src;
         var courseListTable_img_src;
         var newWindow_data = '';

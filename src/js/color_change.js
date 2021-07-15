@@ -1,5 +1,5 @@
 import localforage from 'localforage';
-import { resetFilterSlotArr } from './autocomplete_course';
+import { resetFilterSlotArr, addSlotButtons } from './autocomplete_course';
 
 let timeTableStorage = [
     {
@@ -219,11 +219,8 @@ $(function() {
             .eq(5)
             .text();
 
-        $('#inputCourseCode')
-            .val(courseCode)
-            .trigger('change');
-        $('#inputCourseTitle')
-            .val(courseTitle)
+        $('#inputCourse')
+            .val(courseCode + ' - ' + courseTitle)
             .trigger('change');
         $('#inputFaculty')
             .val(faculty)
@@ -238,10 +235,7 @@ $(function() {
             .val(credits)
             .trigger('change');
 
-        try {
-            // Function may not work if autocomplete is not loaded
-            addSlotButtons(courseCode);
-        } catch (error) {}
+        addSlotButtons(courseCode);
 
         $(this)
             .find('.close')

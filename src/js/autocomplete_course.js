@@ -161,7 +161,7 @@ function getSlotSelectionButton(
     return $slotButton;
 }
 
-function addSlotButtons(code) {
+export function addSlotButtons(code) {
     $('#insertCourseSelectionOptions').html('');
     $('#filter-by-slot').html('');
 

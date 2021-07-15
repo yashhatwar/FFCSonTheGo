@@ -183,7 +183,7 @@ function getSlotSelectionButton(
     return $slotButton;
 }
 
-function addSlotButtons(code) {
+export function addSlotButtons(code) {
     var BUTTONS_PER_DIV = 4;
 
     var buttonsPerDiv = BUTTONS_PER_DIV;

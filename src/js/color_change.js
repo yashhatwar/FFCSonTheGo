@@ -1,7 +1,7 @@
 import $ from 'jquery';
 import localforage from 'localforage';
 
-import { resetFilterSlotArr } from './autocomplete_course';
+import { resetFilterSlotArr, addSlotButtons } from './autocomplete_course';
 
 let timeTableStorage = [
     {
@@ -144,7 +144,10 @@ $(function() {
 
         var courseSplit = course.split('-');
         var courseCode = courseSplit[0].trim();
-        var courseTitle = courseSplit.slice(1).join('-').trim();
+        var courseTitle = courseSplit
+            .slice(1)
+            .join('-')
+            .trim();
 
         // [0: courseId, 1: courseCode, 2:courseTitle, 3: faculty, 4: slotArray, 5: venue, 6: credits, 7: isProject]
         activeTable.data.push([
@@ -201,11 +204,8 @@ $(function() {
             .eq(5)
             .text();
 
-        $('#inputCourseCode')
-            .val(courseCode)
-            .trigger('change');
-        $('#inputCourseTitle')
-            .val(courseTitle)
+        $('#inputCourse')
+            .val(courseCode + ' - ' + courseTitle)
             .trigger('change');
         $('#inputFaculty')
             .val(faculty)
@@ -220,10 +220,7 @@ $(function() {
             .val(credits)
             .trigger('change');
 
-        try {
-            // Function may not work if autocomplete is not loaded
-            addSlotButtons(courseCode);
-        } catch (error) {}
+        addSlotButtons(courseCode);
 
         $(this)
             .find('.close')

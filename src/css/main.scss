@@ -4,11 +4,11 @@
 * The order of elements here is the order in which they appear on the page
 */
 body {
-    padding-top: 5rem;
+    padding-top: 6rem;
 }
 
 nav {
-    box-shadow: 0 2px 5px #000;
+    box-shadow: 0 2px 5px #c2c6cc;
 }
 
 .navbar-brand {
@@ -56,66 +56,6 @@ nav {
     color: #812092;
 }
 
-/**
- * Theme toggle switch
- */
-.checkbox {
-    opacity: 0;
-    position: absolute;
-}
-
-.toggle {
-    background-color: #9c27b0;
-    border-radius: 50px;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 5px;
-    position: relative;
-    height: 26px;
-    width: 50px;
-    margin: 0 calc(0.5rem * 1.5);
-    transform: scale(1.5);
-}
-
-.toggle .ball {
-    background-color: #fff;
-    border-radius: 50%;
-    position: absolute;
-    top: 2px;
-    left: 2px;
-    height: 22px;
-    width: 22px;
-    transform: translateX(0px);
-    transition: transform 0.2s linear;
-}
-
-.checkbox:checked + .toggle .ball {
-    transform: translateX(24px);
-}
-
-.fa-moon {
-    color: #ffffff;
-}
-
-.fa-sun {
-    color: #ffffff;
-}
-
-.container-fluid .row {
-    margin-right: 0;
-    margin-left: 0;
-}
-
-label {
-    font-weight: bold;
-}
-
-input.form-control {
-    margin-bottom: 0.3rem;
-}
-
 #inputCourse {
     box-shadow: none;
 }
@@ -128,34 +68,16 @@ input.form-control {
     outline: none !important;
     box-shadow: 0 0 0 0.25rem rgb(13 110 253 / 25%);
 }
-
 .bootstrap-select button.dropdown-toggle {
     border-color: #ccc !important;
     border-radius: 4px !important;
     border-style: solid !important;
     border-width: 1px !important;
     margin-bottom: 0.3rem;
-}
 
-blockquote {
-    width: 100%;
-    background: #ddd;
-    margin: 0 !important;
-    padding: 1rem 1.2rem !important;
-    border-radius: 0.5rem;
-}
-
-.blockquote-container {
-    padding-top: 0.5rem !important;
-    padding-bottom: 0.5rem !important;
-}
-
-.blockquote-text {
-    font-size: 1rem;
-    color: #555;
-    margin: 0;
-    padding-left: 0.5rem;
-    border-left: 0.2rem solid #555;
+    &:not(.disabled) {
+        background-color: #fff;
+    }
 }
 
 #insertCourseSelectionOptions {
@@ -199,34 +121,15 @@ blockquote {
     margin: 1rem;
 }
 
-hr {
-    margin: 1rem 0 0.5rem 0 !important;
-}
+#saved-tt-picker {
+    a {
+        color: #000000;
+        text-decoration: none;
+    }
 
-header .alert {
-    margin-bottom: 0;
-}
-
-#shareWhatsApp img {
-    width: 20px;
-    margin-left: 0.5rem;
-}
-
-#shareWhatsApp .btn {
-    width: 80%;
-}
-
-.btn-close {
-    background-image: none;
-}
-
-a {
-    color: #000000;
-    text-decoration: none;
-}
-
-a:hover {
-    color: #000000;
+    a:hover {
+        color: #000000;
+    }
 }
 
 #saved-tt-picker-label {
@@ -254,24 +157,9 @@ a:hover {
     margin: 3px 20px;
 }
 
-#option-buttons {
-    padding-top: 0;
-    padding-bottom: 0;
-}
-
-#option-buttons button {
-    margin-top: 0.5rem;
-    margin-bottom: 0.5rem;
-}
-
 #toggleClickToSelect {
     margin-left: 0.3rem;
     margin-right: 0.3rem;
-}
-
-.container-xxl {
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
 }
 
 .table {
@@ -335,10 +223,6 @@ td {
     background-color: #64dd17 !important;
 }
 
-#CourseAllocationReport-btn {
-    width: 60%;
-}
-
 footer {
     padding-top: 0.25em;
     padding-bottom: 0.25em;
@@ -348,10 +232,6 @@ footer {
 * Font, color and other styling
 * Order of elements here is same as they appear on the page
 */
-#shareWhatsApp img {
-    vertical-align: bottom;
-}
-
 .tt-picker-edit-ok {
     position: absolute;
     right: 25px;
@@ -418,8 +298,8 @@ footer {
     cursor: default;
 }
 
-#timetable .table-bordered td,
-#timetable .table-bordered th {
+#timetable.table-bordered td,
+#timetable.table-bordered th {
     border: 1px solid #616161 !important;
     vertical-align: middle;
 }
@@ -630,11 +510,6 @@ footer {
     color: black !important;
 }
 
-.myBlockquote {
-    color: #9e9e9e;
-    font-size: 1.5rem;
-}
-
 #insertSlotBtn .btn {
     white-space: normal;
 }
@@ -712,44 +587,12 @@ footer a:hover {
     user-select: none;
 }
 
-/**
- * Add horizontal scroll and don't collapse the elements
- * Putting it under @media preserve the original bootstrap properties when there is no overflow
- */
-.horizontal-scroll-no-collapse {
-    overflow: auto;
-    white-space: nowrap;
-}
-
-@media screen and (max-width: 768px) {
-    .horizontal-scroll-no-collapse > * {
-        float: none;
-        display: inline-block;
-    }
-    .container .horizontal-scroll-no-collapse {
-        margin-left: -15px;
-        margin-right: -15px;
-    }
-}
-
-@media screen and (max-width: 1400px) {
-    .container-xxl {
-        padding-left: 2rem;
-        padding-right: 2rem;
-    }
-}
-
-@media screen and (max-width: 992px) {
-    .container-lg,
-    .container-xxl {
-        padding-left: 1rem;
-        padding-right: 1rem;
-    }
-}
-
-@media screen and (max-width: 650px) {
-    button span {
+@media (max-width: 768px) {
+    #tt-action-buttons button span {
         display: none;
+    }
+    body {
+        padding-top: 5rem;
     }
 }
 

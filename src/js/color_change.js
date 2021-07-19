@@ -1,3 +1,4 @@
+import $ from 'jquery';
 import localforage from 'localforage';
 import { resetFilterSlotArr, addSlotButtons } from './autocomplete_course';
 
@@ -912,7 +913,7 @@ function addTableDropdownButton(tableId, tableName) {
         $('#saved-tt-picker .tt-picker-edit')
             .first()
             .after(
-                '<a class="tt-picker-remove" href="JavaScript:void(0);" data-table-id="0" data-bs-toggle="modal" data-bs-target="#delete-modal"><i class="fas fa-trash"></i></a>',
+                '<span class="tt-picker-remove" href="JavaScript:void(0);" data-table-id="0" data-bs-toggle="modal" data-bs-target="#delete-modal"><i class="fas fa-trash"></i></span>',
             );
 
         isDefaultDeletable = true;
@@ -928,10 +929,26 @@ function updateLocalForage() {
 
 // load course data with autocomplete
 function loadCourseData() {
+    /**
+     * We should avoid polluting window object
+     * but easy-autocomplete has dependency on jquery
+     * this is a temporary hack until we find some better way to do it
+     */
+    window.$ = $;
+    window.jQuery = $;
     require('easy-autocomplete');
     require('./autocomplete_course');
-    require('../../node_modules/easy-autocomplete/dist/easy-autocomplete.css');
-    // require('bootstrap-select');
+    require('easy-autocomplete/dist/easy-autocomplete.css');
+    /*
+     *  The package bootstrap-select is not compatible with bootstrap 5 at the
+     *  time of writing this. Once bootstrap-select has been upgraded to a stable
+     *  version with bootstrap 5 support, the bootstrap 4 javascript import &
+     *  it's dependency (bootstrap4) can be removed.
+     */
+    require('bootstrap4/dist/js/bootstrap.bundle');
+    require('bootstrap-select');
+    require('bootstrap-select/dist/css/bootstrap-select.min.css');
+
     const {
         initAutocomplete,
         postInitAutocomplete,

@@ -183,29 +183,11 @@ td {
 }
 
 .quick-selection {
-    margin: 1rem auto;
-    width: 100%;
-}
-
-.quick-selection div {
-    width: 100%;
-    overflow: auto;
-}
-
-.quick-selection table {
-    margin: auto;
+    min-width: 100px;
 }
 
 .quick-selection td {
     display: flex;
-}
-
-.quick-selection td button:first-child {
-    margin-left: 0;
-}
-
-.quick-selection td button:last-child {
-    margin-right: 0;
 }
 
 .btn-quick {

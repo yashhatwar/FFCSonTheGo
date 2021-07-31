@@ -1,6 +1,7 @@
 {
     "name": "FFCSonTheGo",
     "version": "1.0.0",
+    "last-update": "Fall Semester 2021-22",
     "main": "index.js",
     "repository": "https://github.com/vatz88/FFCSonTheGo.git",
     "author": "Vatsal Joshi <vatz88@gmail.com>",

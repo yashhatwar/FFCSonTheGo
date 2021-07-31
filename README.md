@@ -1,32 +1,35 @@
-# FFCS on The Go
+# FFCS On The Go
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/6d48d2f4-8dc7-4780-ae32-e8da62053826/deploy-status)](https://app.netlify.com/sites/ffcsonthego/deploys)
+![Netlify Status](https://img.shields.io/netlify/6d48d2f4-8dc7-4780-ae32-e8da62053826) ![Last Update](https://img.shields.io/github/package-json/last-update/vatz88/FFCSonTheGo?include_prereleases) ![License](https://img.shields.io/github/license/vatz88/FFCSonTheGo) ![Dependencies](https://status.david-dm.org/gh/vatz88/FFCSonTheGo.svg) ![Dev Dependencies](https://status.david-dm.org/gh/vatz88/FFCSonTheGo.svg?type=dev)
 
-![Demo](demo.gif 'Demo')
+This web application is a tool to visualize your timetable for the students of VIT Vellore & Chennai to help with FFCS course registrations.
 
-Website to visualize VIT timetable. Helpful to students of VIT University, Vellore campus & Chennai campus during FFCS course registrations.
+## Links
 
-## Getting Started
+This application has been deployed at the following links.
 
-Visit the website here [ffcsonthego.vatz88.in](https://ffcsonthego.vatz88.in)
-
-> Last updated for Winter Semester 2020-21
-
-🔈 Old site used untill Winter Semester 2018-19 is archived at https://ffcsonthego-archive.vatz88.in/
+-   https://ffcsonthego.vatz88.in/ - Currenlty used
+-   https://ffcsonthego-archive.vatz88.in/ - Used until **Winter Semester 2018-19**
 
 ## Contributing
 
-Please go through [CONTRIBUTING](.github/CONTRIBUTING.md) guidelines.
+Anyone and everyone is welcome to contribute. Please take a moment to review our [code of conduct](/.github/CODE_OF_CONDUCT.md).
 
-Found a bug or have a new idea? Feel free to open [issues](https://github.com/vatz88/FFCSonTheGo/issues).
+### Issues
+
+If you've caught a bug or you'd like a new feature to be added, feel free to open an issue so that the same can be discussed.
+
+### Pull Requests
+
+If you're interested in contributing to our code, refer the [contributing guidlines](/.github/CONTRIBUTING.md) before opening a pull requests.
 
 ## Authors
 
--   **Vatsal Joshi** - _Initial work_ - [vatz88](https://github.com/vatz88)
--   **Sangeeth Sudheer** - [sangeeth96](https://github.com/sangeeth96)
+-   **Vatsal Joshi** (Owner) - [@vatz88](https://github.com/vatz88)
+-   **Sangeeth Sudheer** - [@sangeeth96](https://github.com/sangeeth96)
 
 See also the list of [contributors](https://github.com/vatz88/FFCSonTheGo/contributors) who participated in this project.
 
 ## License
 
-This project is licensed under the GNU General Public License - see the [LICENSE](LICENSE.md) file for details.
+This project is licensed under [the GNU General Public License](/LICENSE.md).

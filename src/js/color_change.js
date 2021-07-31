@@ -169,7 +169,7 @@ $(function() {
                 .attr('href', canvas.toDataURL('image/jpeg'))
                 .attr(
                     'download',
-                    `FFCS On The Go ${activeTable.name} (Timetable).jpg`,
+                    `FFCS On The Go - ${activeTable.name} (Timetable).jpg`,
                 );
 
             $('body').append($a);
@@ -242,7 +242,7 @@ $(function() {
                 .attr('href', canvas.toDataURL('image/jpeg'))
                 .attr(
                     'download',
-                    `FFCS On The Go ${activeTable.name} (Course List).jpg`,
+                    `FFCS On The Go - ${activeTable.name} (Course List).jpg`,
                 );
 
             $('body').append($a);

@@ -8,9 +8,14 @@ import 'bootstrap';
 import './color_change';
 import { removeTouchHoverCSSRule } from './utils';
 
+const lastUpdate = require('../../package.json')['last-update'];
+
 $(function() {
     // disable hover for touch screen devices
     removeTouchHoverCSSRule();
+
+    // Setting the last updated semester
+    $('#last-update').text(lastUpdate);
 
     $('.quick-selection .btn').click(function() {
         $(this).blur();

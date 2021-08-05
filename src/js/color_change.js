@@ -259,7 +259,6 @@ $(function() {
             var isAscending = false,
                 isDescending = false;
             var $items = retrieveColumnItems($(this));
-            console.log($items);
 
             if ($(this).hasClass('ascending')) {
                 isAscending = true;

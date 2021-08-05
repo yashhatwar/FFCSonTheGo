@@ -430,6 +430,52 @@
         </div>
         <!-- End of reset modal -->
 
+        <!-- The Download Timetable Modal -->
+        <div
+            id="download-modal"
+            class="modal fade"
+            tabindex="-1"
+            aria-labelledby="reset-modal-label"
+            aria-hidden="true"
+        >
+            <div class="modal-dialog modal-sm">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="download-modal-label">
+                            Download Timetable
+                        </h5>
+                        <button
+                            type="button"
+                            class="btn-close"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"
+                        ></button>
+                    </div>
+
+                    <div class="modal-body">
+                        <button
+                            id="download-tt-button"
+                            type="button"
+                            class="btn btn-success w-100 download-button"
+                            style="margin-bottom: 0.5rem;"
+                        >
+                            <i class="fas fa-camera"></i>
+                            &nbsp;&nbsp;Download Timetable
+                        </button>
+                        <button
+                            id="download-course-list-button"
+                            type="button"
+                            class="btn btn-success w-100 download-button"
+                        >
+                            <i class="fas fa-camera"></i>
+                            &nbsp;&nbsp;Download Course List
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End of download timetable modal -->
+
         <!-- #1 - Course Panel -->
         <div class="container">
             <div class="card mb-4">
@@ -640,12 +686,13 @@
 
                 <div id="tt-action-buttons" class="col-12 col-lg-8 text-center">
                     <button
-                        id="takeScreenshotBtn"
                         class="btn btn-success"
                         type="button"
+                        data-bs-toggle="modal"
+                        data-bs-target="#download-modal"
                     >
-                        <i class="fas fa-camera"></i>
-                        <span>&nbsp;&nbsp;Save Screenshot</span>
+                        <i class="fas fa-download"></i>
+                        <span>&nbsp;&nbsp;Download Timetable</span>
                     </button>
                     <button
                         id="toggleClickToSelect"
@@ -731,9 +778,6 @@
         <!-- Timetable -->
         <div class="table-responsive text-center noselect">
             <table id="timetable" class="table table-bordered">
-                <tr style="display:none" class="screenshot_msg">
-                    <td colspan="16">FFCS On The Go | bit.ly/ffcs-vit</td>
-                </tr>
                 <tr>
                     <td class="ColumnOneDays">THEORY <br />HOURS</td>
                     <td class="TheoryHours">
@@ -1092,11 +1136,6 @@
             </blockquote>
             <table id="courseListTable" class="table table-hover">
                 <thead>
-                    <tr style="display:none" class="screenshot_msg">
-                        <td colspan="7">
-                            FFCS On The Go | bit.ly/ffcs-vit
-                        </td>
-                    </tr>
                     <tr class="table-success">
                         <th>Slot</th>
                         <th>Course Code</th>

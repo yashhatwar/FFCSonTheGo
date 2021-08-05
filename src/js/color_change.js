@@ -1,5 +1,6 @@
 import $ from 'jquery';
 import localforage from 'localforage';
+import html2canvas from 'html2canvas';
 import { resetFilterSlotArr, addSlotButtons } from './autocomplete_course';
 
 let timeTableStorage = [
@@ -69,6 +70,186 @@ $(function() {
             })
             .catch(console.error);
     })();
+
+    const appendHeader = ($layout, width) => {
+        var campus = (() => {
+            if (window.location.hash === '#Chennai') {
+                return 'Chennai';
+            } else {
+                return 'Vellore';
+            }
+        })();
+        const $header = $('<div></div>')
+            .css({
+                width: width,
+                'margin-bottom': '1rem',
+            })
+            .append(
+                $('<h3>FFCS On The Go</h3>').css({
+                    margin: 0,
+                    display: 'inline',
+                    color: '#9c27b0',
+                    'font-weight': 'bold',
+                }),
+            )
+            .append(
+                $(`<h3>${campus} Campus</h3>`).css({
+                    margin: 0,
+                    display: 'inline',
+                    color: '#707070',
+                    float: 'right',
+                }),
+            )
+            .append(
+                $('<hr>').css({
+                    'border-color': '#000000',
+                    'border-width': '2px',
+                }),
+            );
+        const $title = $(`<h4>${activeTable.name}</h4>`).css({
+            'margin-bottom': '1rem',
+            width: width,
+            'text-align': 'center',
+        });
+
+        return $layout.append($header).append($title);
+    };
+
+    $('#download-tt-button').on('click', function() {
+        var buttonText = $(this).html();
+        $(this)
+            .html(
+                `<span
+                    class="spinner-border spinner-border-sm"
+                    role="status"
+                    aria-hidden="true"
+                ></span>&nbsp;&nbsp;Please Wait`,
+            )
+            .attr('disabled', true);
+
+        const width = $('#timetable')[0].scrollWidth;
+        var $layout = $('<div></div>').css({
+            padding: '2rem',
+            position: 'absolute',
+            top: 0,
+            left: `calc(-${width}px - 4rem)`,
+        });
+
+        $layout = appendHeader($layout, width);
+
+        const $timetableClone = $('#timetable')
+            .clone()
+            .css({
+                width: width,
+                'text-align': 'center',
+            });
+        $('table', $timetableClone).css({
+            margin: 0,
+        });
+        $('tr', $timetableClone).css({
+            border: 'none',
+        });
+
+        $layout.append($timetableClone);
+        $('body').append($layout);
+
+        html2canvas($layout[0], {
+            scrollX: -window.scrollX,
+            scrollY: -window.scrollY,
+        }).then((canvas) => {
+            $layout.remove();
+            $(this)
+                .html(buttonText)
+                .attr('disabled', false);
+
+            var $a = $('<a></a>')
+                .css({
+                    display: 'none',
+                })
+                .attr('href', canvas.toDataURL('image/jpeg'))
+                .attr(
+                    'download',
+                    `FFCS On The Go - ${activeTable.name} (Timetable).jpg`,
+                );
+
+            $('body').append($a);
+            $a[0].click();
+            $a.remove();
+        });
+    });
+
+    $('#download-course-list-button').on('click', function() {
+        var buttonText = $(this).html();
+        $(this)
+            .html(
+                `<span
+                    class="spinner-border spinner-border-sm"
+                    role="status"
+                    aria-hidden="true"
+                ></span>&nbsp;&nbsp;Please Wait`,
+            )
+            .attr('disabled', true);
+
+        const width = $('#courseListTable')[0].scrollWidth;
+        var $layout = $('<div></div>').css({
+            padding: '2rem',
+            position: 'absolute',
+            top: 0,
+            left: `calc(-${width}px - 4rem)`,
+        });
+
+        $layout = appendHeader($layout, width);
+
+        const $courseListClone = $('#courseListTable')
+            .clone()
+            .css({
+                width: width,
+                border: '1px solid #000000',
+                'border-bottom': 'none',
+            });
+        $('table', $courseListClone).css({
+            margin: 0,
+        });
+        $('tr', $courseListClone)
+            .css({
+                border: 'none',
+            })
+            .each(function() {
+                if ($(this).children().length == 1) {
+                    return;
+                }
+
+                $('th:last-child', this).remove();
+                $('td:last-child', this).remove();
+            });
+
+        $layout.append($courseListClone);
+        $('body').append($layout);
+
+        html2canvas($layout[0], {
+            scrollX: -window.scrollX,
+            scrollY: -window.scrollY,
+        }).then((canvas) => {
+            $layout.remove();
+            $(this)
+                .html(buttonText)
+                .attr('disabled', false);
+
+            var $a = $('<a></a>')
+                .css({
+                    display: 'none',
+                })
+                .attr('href', canvas.toDataURL('image/jpeg'))
+                .attr(
+                    'download',
+                    `FFCS On The Go - ${activeTable.name} (Course List).jpg`,
+                );
+
+            $('body').append($a);
+            $a[0].click();
+            $a.remove();
+        });
+    });
 
     // addColorChangeEvents(); quick visualization disabled by default
 

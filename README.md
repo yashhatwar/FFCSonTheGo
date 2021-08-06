@@ -1,8 +1,10 @@
 # FFCS On The Go
 
-![Netlify Status](https://img.shields.io/netlify/6d48d2f4-8dc7-4780-ae32-e8da62053826) ![Last Update](https://img.shields.io/github/package-json/last-update/vatz88/FFCSonTheGo?include_prereleases) ![License](https://img.shields.io/github/license/vatz88/FFCSonTheGo) ![Dependencies](https://status.david-dm.org/gh/vatz88/FFCSonTheGo.svg) ![Dev Dependencies](https://status.david-dm.org/gh/vatz88/FFCSonTheGo.svg?type=dev)
+[![Netlify Status](https://img.shields.io/netlify/6d48d2f4-8dc7-4780-ae32-e8da62053826)](https://app.netlify.com/sites/ffcsonthego/deploys) ![Last Update](https://img.shields.io/github/package-json/last-update/vatz88/FFCSonTheGo?include_prereleases) [![License](https://img.shields.io/github/license/vatz88/FFCSonTheGo)](/LICENSE.md) [![Dependencies](https://status.david-dm.org/gh/vatz88/FFCSonTheGo.svg)](https://david-dm.org/vatz88/FFCSonTheGo) [![Dev Dependencies](https://status.david-dm.org/gh/vatz88/FFCSonTheGo.svg?type=dev)](https://david-dm.org/vatz88/FFCSonTheGo?type=dev)
 
 This web application is a tool to visualize your timetable for the students of VIT Vellore & Chennai to help with FFCS course registrations.
+
+![Demo](/demo.gif)
 
 ## Links
 
@@ -21,7 +23,7 @@ If you've caught a bug or you'd like a new feature to be added, feel free to ope
 
 ### Pull Requests
 
-If you're interested in contributing to our code, refer the [contributing guidlines](/.github/CONTRIBUTING.md) before opening a pull requests.
+If you're interested in contributing to our code, refer the [contributing guidlines](/.github/CONTRIBUTING.md) before opening a pull request.
 
 ## Authors
 

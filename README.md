@@ -1,6 +1,6 @@
 # FFCS On The Go
 
-[![Netlify Status](https://img.shields.io/netlify/6d48d2f4-8dc7-4780-ae32-e8da62053826)](https://app.netlify.com/sites/ffcsonthego/deploys) ![Last Update](https://img.shields.io/github/package-json/last-update/vatz88/FFCSonTheGo?include_prereleases) [![License](https://img.shields.io/github/license/vatz88/FFCSonTheGo)](/LICENSE.md) [![Dependencies](https://status.david-dm.org/gh/vatz88/FFCSonTheGo.svg)](https://david-dm.org/vatz88/FFCSonTheGo) [![Dev Dependencies](https://status.david-dm.org/gh/vatz88/FFCSonTheGo.svg?type=dev)](https://david-dm.org/vatz88/FFCSonTheGo?type=dev)
+[![Netlify Status](https://img.shields.io/netlify/6d48d2f4-8dc7-4780-ae32-e8da62053826)](https://app.netlify.com/sites/ffcsonthego/deploys) ![Last Update](https://img.shields.io/github/package-json/last-update/vatz88/FFCSonTheGo?include_prereleases) [![License](https://img.shields.io/github/license/vatz88/FFCSonTheGo)](/LICENSE.md)
 
 This web application is a tool to visualize your timetable for the students of VIT Vellore & Chennai to help with FFCS course registrations.
 
@@ -10,7 +10,7 @@ This web application is a tool to visualize your timetable for the students of V
 
 This application has been deployed at the following links.
 
--   https://ffcsonthego.vatz88.in/ - Currenlty used
+-   https://ffcsonthego.vatz88.in/ - Currently used
 -   https://ffcsonthego-archive.vatz88.in/ - Used until **Winter Semester 2018-19**
 
 ## Contributing

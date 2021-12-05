@@ -27,7 +27,7 @@ If you're interested in contributing to our code, refer the [contributing guidli
 
 ## Authors
 
--   **Vatsal Joshi** (Owner) - [@vatz88](https://github.com/vatz88)
+-   **Vatsal Joshi** (Initial work) - [@vatz88](https://github.com/vatz88)
 -   **Sangeeth Sudheer** - [@sangeeth96](https://github.com/sangeeth96)
 
 ## Contributors

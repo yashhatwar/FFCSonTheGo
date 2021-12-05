@@ -30,6 +30,11 @@ If you're interested in contributing to our code, refer the [contributing guidli
 -   **Vatsal Joshi** (Owner) - [@vatz88](https://github.com/vatz88)
 -   **Sangeeth Sudheer** - [@sangeeth96](https://github.com/sangeeth96)
 
+## Contributors
+
+-   **Sujit Kumar** (Active maintainer) - [@therealsujitk](https://github.com/therealsujitk)
+-   **Sanket Mohapatra** - [@sanket9918](https://github.com/sanket9918)
+
 See also the list of [contributors](https://github.com/vatz88/FFCSonTheGo/contributors) who participated in this project.
 
 ## License

@@ -1,0 +1,111 @@
+/**
+ *  This style sheet contains the custom styling applied
+ *  to the document body that is common to all sections
+ *  or that doesn't fit into any particular section
+ */
+
+@import 'global/colors.scss';
+
+body {
+    padding-top: 6rem;
+    background-color: var(--background-color);
+}
+
+/*
+    The navigation bar
+ */
+nav {
+    box-shadow: 0 2px 5px #c2c6cc;
+}
+
+.navbar-brand {
+    color: var(--primary-color) !important;
+    font-weight: bold;
+}
+
+.nav-btn-outline {
+    color: var(--primary-color);
+    border-color: var(--primary-color);
+    border-width: 2px;
+}
+
+.nav-btn-outline:hover {
+    color: var(--background-color);
+    border-color: var(--primary-color) !important;
+    background-color: var(--primary-color) !important;
+}
+
+.nav-btn-outline:active,
+.nav-btn-outline:focus,
+.nav-btn-outline.show {
+    color: var(--background-color);
+    border-color: var(--primary-dark-color) !important;
+    background-color: var(--primary-dark-color) !important;
+}
+
+.nav-link i {
+    font-size: 1.5rem;
+    margin-right: 0.3rem;
+}
+
+.nav-link small {
+    line-height: 100%;
+    vertical-align: text-top;
+}
+
+.nav-link i,
+.nav-link small {
+    color: var(--primary-color);
+}
+
+.nav-link i:hover,
+.nav-link small:hover {
+    color: var(--primary-dark-color);
+}
+
+th,
+td {
+    margin-bottom: 0 !important;
+    padding: 0;
+    white-space: nowrap;
+}
+
+/*
+    Footer
+ */
+footer {
+    background-color: var(--primary-color);
+    color: var(--background-color);
+    padding: 0.5rem 0;
+}
+
+/*
+    Disable text selection
+ */
+.noselect {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+@media (max-width: 768px) {
+    body {
+        padding-top: 5rem;
+    }
+}
+
+/*
+    Custom scrollbar
+ */
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+    background: var(--primary-light-color);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--primary-color);
+}

@@ -1,6 +1,10 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '@fortawesome/fontawesome-free/css/all.min.css';
-import '../css/main.scss';
+
+import '../scss/main.scss';
+import '../scss/course-panel.scss';
+import '../scss/timetable.scss';
+import '../scss/course-list.scss';
 
 import $ from 'jquery';
 import 'bootstrap';

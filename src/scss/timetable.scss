@@ -1,0 +1,142 @@
+/**
+ *  This style sheet contains the custom styling applied
+ *  to the option buttons, quick selection buttons and
+ *  the timetable
+ */
+
+@import 'global/colors.scss';
+
+#saved-tt-picker {
+    a {
+        color: var(--text-color);
+        text-decoration: none;
+    }
+
+    a:hover {
+        color: var(--text-color);
+    }
+}
+
+#saved-tt-picker-label {
+    max-width: 180px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.tt-picker-label {
+    padding-right: 1.2rem;
+    width: 100%;
+    max-width: 180px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    cursor: pointer;
+}
+
+.tt-picker-edit,
+.tt-picker-remove {
+    padding-left: 0.5rem;
+}
+
+.tt-picker-edit-input {
+    /* Margin same as bootstrap padding default for .dropdown-menu > li > a */
+    margin: 3px 20px;
+}
+
+.tt-picker-edit-ok {
+    position: absolute;
+    right: 25px;
+    padding-top: 5px !important;
+}
+
+#toggleClickToSelect {
+    margin-left: 0.3rem;
+    margin-right: 0.3rem;
+}
+
+.quick-selection {
+    min-width: 100px;
+}
+
+.quick-selection td {
+    display: flex;
+}
+
+.btn-quick {
+    flex-grow: 1;
+    width: fit-content;
+    margin: 0.3rem;
+    background-color: var(--quick-button-color) !important;
+}
+
+.btn-quick.highlight {
+    background-color: var(--quick-button-highlight-color) !important;
+}
+
+.btn-quick:hover {
+    background-color: var(--quick-button-highlight-color) !important;
+}
+
+.LabHours {
+    font-weight: bold;
+    background-color: var(--lab-color) !important;
+    cursor: default;
+}
+
+.TheoryHours {
+    font-weight: bold;
+    background-color: var(--theory-color) !important;
+    cursor: default;
+}
+
+.ColumnOneDays {
+    font-weight: bold;
+    background-color: var(--day-lunch-color) !important;
+    cursor: default;
+}
+
+.TimetableContent {
+    text-transform: uppercase;
+    color: var(--text-light-color);
+    background-color: var(--period-color) !important;
+    cursor: pointer;
+}
+
+.TimetableContent:hover,
+.TimetableContent.highlight {
+    color: var(--text-color);
+    background-color: var(--period-highlight-color) !important;
+    cursor: pointer;
+}
+
+.TimetableContent.highlight:hover {
+    color: var(--text-light-color);
+}
+
+.TimetableContent[disabled] {
+    text-transform: capitalize;
+    color: var(--text-light-color);
+    background-color: var(--period-color) !important;
+    cursor: default;
+}
+
+#timetable.table-bordered td,
+#timetable.table-bordered th {
+    border: 1px solid var(--table-border-color) !important;
+    vertical-align: middle;
+}
+
+/* .tt-course-code used when inserting course code in timetable */
+#timetable td div {
+    font-size: 0.9em;
+}
+
+#timetable td.clash {
+    background: var(--period-clash-color) !important;
+    color: #ffffff !important;
+}
+
+@media (max-width: 768px) {
+    #tt-action-buttons button span {
+        display: none;
+    }
+}

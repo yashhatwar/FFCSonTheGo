@@ -5,27 +5,27 @@
 
 @import 'global/colors.scss';
 
-#slot-sel-area input {
-    color: var(--text-color) !important;
+#course-panel input {
+    color: var(--input-text-color);
 }
 
-#inputCourse {
+#course-input {
     box-shadow: none;
 }
 
-#inputCourse:focus,
+#course-input:focus,
 .bootstrap-select button.dropdown-toggle:focus {
     color: var(--input-text-color);
-    background-color: var(--background-color);
     border-color: var(--input-border-active-color) !important;
     outline: none !important;
     box-shadow: 0 0 0 0.25rem var(--input-border-shadow-color);
 }
+
 .bootstrap-select button.dropdown-toggle {
     border-color: var(--input-border-color) !important;
-    border-radius: 4px !important;
-    border-style: solid !important;
-    border-width: 1px !important;
+    border-radius: 4px;
+    border-style: solid;
+    border-width: 1px;
     margin-bottom: 0.3rem;
 
     &:not(.disabled) {
@@ -33,49 +33,51 @@
     }
 }
 
-#insertCourseSelectionOptions {
+.bootstrap-select .btn-group {
+    width: 100%;
+}
+
+#slot-buttons {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     flex-wrap: wrap;
-    /* Values taken from bootstrap */
-    padding-right: calc(var(--bs-gutter-x) * 0.5 - 5px);
-    padding-left: calc(var(--bs-gutter-x) * 0.5 - 5px);
+    /* Correcting the .slot-button margin */
+    padding-right: calc(var(--bs-gutter-x) * 0.5 - 0.3rem);
+    padding-left: calc(var(--bs-gutter-x) * 0.5 - 0.3rem);
 }
 
-.list-group-item {
-    border-width: 1px !important;
+.slot-button {
+    margin: 0.3rem;
+    padding: 0.5rem;
+    border: 1px solid var(--primary-color);
+    border-radius: 0.5rem;
     background: none;
-    border-color: var(--primary-color);
-    border-radius: 0.5rem !important;
-    margin: 5px;
+    color: var(--text-color);
+    text-transform: uppercase;
     transition: background 0.3s, border-color 0.3s;
 }
 
-.list-group-item:hover {
-    background: var(--primary-light-color);
-    border-color: var(--primary-light-color);
+.slot-button:hover {
+    background: var(--slot-button-selected-color);
+    border-color: var(--slot-button-selected-color);
 }
 
-.list-group-item.selected {
-    background: var(--primary-light-color);
-    border-color: var(--primary-light-color);
+.slot-button.selected {
+    background: var(--slot-button-selected-color);
+    border-color: var(--slot-button-selected-color);
 }
 
-.list-group-item-heading {
+.slot-button-heading {
     word-break: break-all;
     margin: 5px 0;
 }
 
-.list-group-item-text {
+.slot-button-text {
     margin: 5px 0;
 }
 
-#slot-sel-area-toggle-fields {
-    margin: 1rem;
-}
-
 @media screen and (max-width: 400px) {
-    #insertCourseSelectionOptions {
+    #slot-buttons {
         grid-template-columns: unset;
     }
 }

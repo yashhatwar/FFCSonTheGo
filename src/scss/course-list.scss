@@ -5,41 +5,42 @@
 
 @import 'global/colors.scss';
 
-#courseListTable {
-    border: 1px solid var(--table-border-color);
-    margin-top: 0.3rem;
-}
-
-#courseListTable th,
-#courseListTable tr {
+#course-list table tr {
     text-align: center;
-    border-color: var(--table-border-color);
+    border: 1px solid var(--table-border-color);
 }
 
-#courseListTable tr th:not(:last-of-type) {
+#course-list table tr th:not(:last-of-type) {
     cursor: pointer;
 }
 
-#courseListTable tr th.sorted,
-#courseListTable tr th:hover:not(:last-of-type) {
-    background-color: #f1f7ee;
+#course-list table tr th.sorted,
+#course-list table tr th:hover:not(:last-of-type) {
+    background-color: var(--course-list-header-hover-color);
 }
 
-#courseListTable tr th.ascending::after {
-    content: ' ↓';
-    font-size: larger;
+#course-list table tr th.ascending::after {
+    content: '\f062';
+    margin-left: 10px;
+    font-family: 'Font Awesome 5 Free';
 }
 
-#courseListTable tr th.descending::after {
-    content: ' ↑';
-    font-size: larger;
-    font-weight: bold;
+#course-list table tr th.descending::after {
+    content: '\f063';
+    margin-left: 10px;
+    font-family: 'Font Awesome 5 Free';
 }
 
-#courseListTable tr:not(:last-of-type) {
+#course-list table tbody tr {
     cursor: pointer;
 }
 
-.table-active:hover {
-    --bs-table-accent-bg: var(--bs-table-active-bg) !important;
+@media screen and (max-width: 768px) {
+    /*
+        Making course list full-width on smaller screens
+    */
+    #course-list {
+        margin-left: var(--bs-gutter-x, -0.75rem);
+        margin-right: var(--bs-gutter-x, -0.75rem);
+    }
 }

@@ -12,9 +12,9 @@ body {
 }
 
 /*
-    The navigation bar
+    Navigation bar
  */
-nav {
+.navbar {
     box-shadow: 0 2px 5px #c2c6cc;
 }
 
@@ -63,10 +63,22 @@ nav {
     color: var(--primary-dark-color);
 }
 
-th,
-td {
-    margin-bottom: 0 !important;
-    padding: 0;
+/*
+    Custom blockquote
+ */
+blockquote > p::before {
+    content: '\f059';
+    font-family: 'Font Awesome 5 Free';
+    margin-right: 5px;
+}
+
+/*
+    Overriding bootstrap table style
+ */
+.table th,
+.table td {
+    text-align: center;
+    vertical-align: middle;
     white-space: nowrap;
 }
 
@@ -91,12 +103,6 @@ footer {
     user-select: none;
 }
 
-@media (max-width: 768px) {
-    body {
-        padding-top: 5rem;
-    }
-}
-
 /*
     Custom scrollbar
  */
@@ -108,4 +114,10 @@ footer {
 
 ::-webkit-scrollbar-thumb {
     background: var(--primary-color);
+}
+
+@media (max-width: 768px) {
+    body {
+        padding-top: 5rem;
+    }
 }

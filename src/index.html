@@ -92,7 +92,7 @@
 
         <!-- Navbar -->
         <nav class="navbar fixed-top navbar-expand-md navbar-light bg-light">
-            <div class="container-fluid">
+            <div class="container-xl">
                 <a class="navbar-brand" href="/">FFCS On The Go</a>
                 <button
                     class="navbar-toggler"
@@ -107,8 +107,8 @@
                 </button>
 
                 <div id="navbar" class="collapse navbar-collapse">
-                    <ul class="navbar-nav me-auto">
-                        <li class="nav-item dropdown my-2 mb-lg-0">
+                    <ul class="navbar-nav">
+                        <li class="nav-item dropdown">
                             <a
                                 id="campus"
                                 class="nav-link dropdown-toggle"
@@ -126,107 +126,866 @@
                                     >
                                 </li>
                                 <li>
-                                    <a
-                                        class="dropdown-item disabled"
-                                        href="#Chennai"
+                                    <a class="dropdown-item" href="#Chennai"
                                         >Chennai Campus</a
                                     >
                                 </li>
                             </ul>
                         </li>
                     </ul>
-                    <ul class="navbar-nav">
-                        <li class="nav-item me-1 mb-2 mb-lg-0">
+
+                    <ul class="navbar-nav flex-row flex-wrap ms-auto">
+                        <li class="nav-item col-6 col-md-auto">
                             <a
-                                class="btn btn-outline-secondary nav-btn-outline"
+                                class="nav-link"
                                 href="https://github.com/vatz88/FFCSonTheGo"
                                 target="_blank"
                             >
                                 <i class="fab fa-github"></i>
-                                GitHub
+                                <small class="d-md-none ms-2">GitHub</small>
                             </a>
                         </li>
-                        <li class="nav-item mb-2 mb-lg-0">
-                            <div
-                                class="dropdown"
-                                style="display: inline-block;"
-                            >
-                                <a
-                                    id="share"
-                                    class="btn btn-outline-secondary dropdown-toggle nav-btn-outline"
-                                    href="#"
-                                    role="button"
-                                    data-bs-toggle="dropdown"
-                                    aria-expanded="false"
-                                    >Share</a
-                                >
-
-                                <ul
-                                    class="dropdown-menu dropdown-menu-light"
-                                    aria-labelledby="share"
-                                >
-                                    <li>
-                                        <a
-                                            class="dropdown-item"
-                                            href="https://www.facebook.com/sharer/sharer.php?message=FFCS made hassle free!&u=https://ffcsonthego.vatz88.in/"
-                                            target="_blank"
-                                        >
-                                            <i class="fab fa-facebook"></i>
-                                            <span>&nbsp;&nbsp;Facebook</span>
-                                        </a>
-                                    </li>
-
-                                    <li>
-                                        <a
-                                            class="dropdown-item"
-                                            href="https://www.linkedin.com/sharing/share-offsite/?url=https://ffcsonthego.vatz88.in/"
-                                            target="_blank"
-                                        >
-                                            <i class="fab fa-linkedin"></i>
-                                            <span>&nbsp;&nbsp;LinkedIn</span>
-                                        </a>
-                                    </li>
-
-                                    <li>
-                                        <a
-                                            class="dropdown-item"
-                                            href="https://twitter.com/intent/tweet?text=FFCS made hassle free! https://ffcsonthego.vatz88.in/"
-                                            target="_blank"
-                                        >
-                                            <i class="fab fa-twitter"></i>
-                                            <span>&nbsp;&nbsp;Twitter</span>
-                                        </a>
-                                    </li>
-
-                                    <li>
-                                        <a
-                                            class="dropdown-item"
-                                            href="whatsapp://send?text=FFCS made hassle free! https://ffcsonthego.vatz88.in/"
-                                            target="_blank"
-                                        >
-                                            <i class="fab fa-whatsapp"></i>
-                                            <span>&nbsp;&nbsp;WhatsApp</span>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li class="nav-item mb-2 mb-lg-0">
-                            <button
-                                class="btn btn-outline-secondary nav-btn-outline"
-                                type="button"
-                                data-bs-toggle="modal"
-                                data-bs-target="#about-modal"
-                                style="margin-left: 0.3rem;"
-                            >
-                                About
-                            </button>
-                        </li>
                     </ul>
+
+                    <form class="md-auto">
+                        <div class="dropdown" style="display: inline-block;">
+                            <a
+                                id="share-button"
+                                class="btn btn-outline-secondary dropdown-toggle nav-btn-outline"
+                                href="#"
+                                role="button"
+                                data-bs-toggle="dropdown"
+                                aria-expanded="false"
+                                >Share</a
+                            >
+
+                            <ul
+                                class="dropdown-menu dropdown-menu-light"
+                                aria-labelledby="share-button"
+                            >
+                                <li>
+                                    <a
+                                        class="dropdown-item"
+                                        href="https://www.facebook.com/sharer/sharer.php?message=FFCS made hassle free!&u=https://ffcsonthego.vatz88.in/"
+                                        target="_blank"
+                                    >
+                                        <i class="fab fa-facebook"></i>
+                                        <span>&nbsp;&nbsp;Facebook</span>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a
+                                        class="dropdown-item"
+                                        href="https://www.linkedin.com/sharing/share-offsite/?url=https://ffcsonthego.vatz88.in/"
+                                        target="_blank"
+                                    >
+                                        <i class="fab fa-linkedin"></i>
+                                        <span>&nbsp;&nbsp;LinkedIn</span>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a
+                                        class="dropdown-item"
+                                        href="https://twitter.com/intent/tweet?text=FFCS made hassle free! https://ffcsonthego.vatz88.in/"
+                                        target="_blank"
+                                    >
+                                        <i class="fab fa-twitter"></i>
+                                        <span>&nbsp;&nbsp;Twitter</span>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a
+                                        class="dropdown-item"
+                                        href="whatsapp://send?text=FFCS made hassle free! https://ffcsonthego.vatz88.in/"
+                                        target="_blank"
+                                    >
+                                        <i class="fab fa-whatsapp"></i>
+                                        <span>&nbsp;&nbsp;WhatsApp</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <button
+                            class="btn btn-outline-secondary nav-btn-outline"
+                            type="button"
+                            data-bs-toggle="modal"
+                            data-bs-target="#about-modal"
+                            style="margin-left: 0.3rem;"
+                        >
+                            About
+                        </button>
+                    </form>
                 </div>
             </div>
         </nav>
         <!-- End of navbar -->
+
+        <!-- #1 - Course Panel -->
+        <div class="container-xl">
+            <div class="card mb-4">
+                <div class="card-header text-center fw-bold">
+                    Search Courses
+                </div>
+                <div class="card-body">
+                    <form id="slot-sel-area" class="container">
+                        <div class="row gy-3">
+                            <div class="col-lg-9 col-12">
+                                <label for="course-input" class="form-label"
+                                    >Course</label
+                                >
+                                <input
+                                    type="text"
+                                    class="form-control"
+                                    id="course-input"
+                                    placeholder="CSE1001 or Problem Solving and Programming"
+                                />
+                            </div>
+
+                            <div class="col-lg-3 col-12">
+                                <label for="slot-filter" class="form-label"
+                                    >Filter By Slot</label
+                                >
+                                <select
+                                    id="slot-filter"
+                                    class="selectpicker"
+                                    data-width="100%"
+                                    data-live-search="true"
+                                    data-live-search-placeholder="Search for a slot"
+                                    multiple
+                                    disabled
+                                ></select>
+                            </div>
+                        </div>
+
+                        <div class="row mt-2">
+                            <div class="col-12">
+                                <blockquote>
+                                    <p class="text-black-50 fs-6 fw-light">
+                                        Search for a course, select a slot and
+                                        click the button below or double click
+                                        the slot to add it to your timetable.
+                                    </p>
+                                </blockquote>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div id="slot-buttons"></div>
+                        </div>
+
+                        <div class="row mt-1 mb-3">
+                            <div class="col-12 text-center">
+                                <button
+                                    id="advanced-toggle"
+                                    type="button"
+                                    class="btn btn-outline-secondary"
+                                >
+                                    Show Advanced Options
+                                </button>
+                            </div>
+                        </div>
+
+                        <div
+                            id="advanced-options"
+                            class="row gy-2"
+                            style="display: none;"
+                        >
+                            <div class="col-6 col-md-3">
+                                <label for="slot-input" class="form-label"
+                                    >Slot</label
+                                >
+                                <input
+                                    id="slot-input"
+                                    class="form-control text-uppercase"
+                                    type="text"
+                                    autocomplete="off"
+                                    placeholder="A1+TA1"
+                                />
+                            </div>
+                            <div class="col-6 col-md-3">
+                                <label for="faculty-input" class="form-label"
+                                    >Faculty</label
+                                >
+                                <input
+                                    id="faculty-input"
+                                    class="form-control text-uppercase"
+                                    type="text"
+                                    autocomplete="off"
+                                    placeholder="JOHN DOE"
+                                />
+                            </div>
+                            <div class="col-6 col-md-3">
+                                <label for="venue-input" class="form-label"
+                                    >Venue</label
+                                >
+                                <input
+                                    id="venue-input"
+                                    class="form-control text-uppercase"
+                                    type="text"
+                                    autocomplete="off"
+                                    placeholder="SJTG01"
+                                />
+                            </div>
+                            <div class="col-6 col-md-3">
+                                <label for="credits-input" class="form-label"
+                                    >Credits</label
+                                >
+                                <input
+                                    id="credits-input"
+                                    class="form-control text-uppercase"
+                                    type="number"
+                                    autocomplete="off"
+                                    placeholder="4"
+                                />
+                            </div>
+
+                            <!-- This input field is to store whether the selected option is a project -->
+                            <input
+                                id="inputIsProject"
+                                type="hidden"
+                                value="false"
+                            />
+                        </div>
+                    </form>
+                </div>
+
+                <div class="card-footer">
+                    <div class="row">
+                        <div class="col-sm-12 text-end">
+                            <button
+                                id="clear-panel-button"
+                                type="button"
+                                class="btn btn-light me-1"
+                            >
+                                Clear
+                            </button>
+                            <button
+                                id="add-course-button"
+                                type="button"
+                                class="btn btn-success"
+                            >
+                                Add Course
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End of #1 - Course panel -->
+
+        <hr />
+
+        <!-- #2 - Timetable -->
+        <!-- Option buttons for the timetable -->
+        <div class="container-xxl col-xl-11">
+            <div id="option-buttons" class="row justify-content-around">
+                <div class="col-xl-3 mb-2 text-center">
+                    <div class="btn-group" role="group">
+                        <div class="btn-group">
+                            <button
+                                id="tt-picker-button"
+                                class="btn btn-primary dropdown-toggle"
+                                type="button"
+                                data-bs-toggle="dropdown"
+                                course-list
+                                table
+                                aria-expanded="false"
+                            >
+                                Default Table
+                            </button>
+                            <ul id="tt-picker-dropdown" class="dropdown-menu">
+                                <li>
+                                    <table class="dropdown-item">
+                                        <td class="tt-picker-label">
+                                            <a
+                                                href="JavaScript:void(0);"
+                                                data-table-id="0"
+                                                >Default Table</a
+                                            >
+                                        </td>
+                                        <td>
+                                            <a
+                                                class="tt-picker-rename"
+                                                href="JavaScript:void(0);"
+                                                data-bs-toggle="modal"
+                                                data-bs-target="#rename-modal"
+                                                ><i class="fas fa-edit"></i
+                                            ></a>
+                                        </td>
+                                    </table>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <button
+                            id="tt-picker-add"
+                            type="button"
+                            class="btn btn-primary"
+                            style="margin-left: 0;"
+                        >
+                            <i class="fas fa-plus"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="col-xl-7 mb-2 text-center">
+                    <button
+                        class="btn btn-success"
+                        type="button"
+                        data-bs-toggle="modal"
+                        data-bs-target="#download-modal"
+                    >
+                        <i class="fas fa-download"></i>
+                        <span>&nbsp;&nbsp;Download Timetable</span>
+                    </button>
+                    <button
+                        id="quick-toggle"
+                        class="btn btn-warning ms-1 me-1"
+                        type="button"
+                    >
+                        <i class="fas fa-eye"></i>
+                        <span>&nbsp;&nbsp;Enable Quick Visualization</span>
+                    </button>
+                    <button
+                        class="btn btn-danger"
+                        type="button"
+                        data-bs-toggle="modal"
+                        data-bs-target="#reset-modal"
+                    >
+                        <i class="fas fa-power-off"></i>
+                        <span>&nbsp;&nbsp;Reset Table</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Quick selection tiles - Morning slots -->
+        <div
+            class="container-lg my-2 quick-buttons noselect"
+            style="display: none;"
+        >
+            <div>
+                <table>
+                    <tr>
+                        <td>
+                            <button class="A1-tile btn quick-button">A1</button>
+                            <button class="B1-tile btn quick-button">B1</button>
+                            <button class="C1-tile btn quick-button">C1</button>
+                            <button class="D1-tile btn quick-button">D1</button>
+                            <button class="E1-tile btn quick-button">E1</button>
+                            <button class="F1-tile btn quick-button">F1</button>
+                            <button class="G1-tile btn quick-button">G1</button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <button class="TA1-tile btn quick-button">
+                                TA1
+                            </button>
+                            <button class="TB1-tile btn quick-button">
+                                TB1
+                            </button>
+                            <button class="TC1-tile btn quick-button">
+                                TC1
+                            </button>
+                            <button class="TD1-tile btn quick-button">
+                                TD1
+                            </button>
+                            <button class="TE1-tile btn quick-button">
+                                TE1
+                            </button>
+                            <button class="TF1-tile btn quick-button">
+                                TF1
+                            </button>
+                            <button class="TG1-tile btn quick-button">
+                                TG1
+                            </button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <button class="TAA1-tile btn quick-button">
+                                TAA1
+                            </button>
+                            <button class="TBB1-tile btn quick-button" disabled>
+                                TBB1
+                            </button>
+                            <button class="TCC1-tile btn quick-button">
+                                TCC1
+                            </button>
+                            <button class="TDD1-tile btn quick-button" disabled>
+                                TDD1
+                            </button>
+                            <button class="TEE1-tile btn quick-button" disabled>
+                                TEE1
+                            </button>
+                            <button class="TFF1-tile btn quick-button" disabled>
+                                TFF1
+                            </button>
+                            <button class="TGG1-tile btn quick-button" disabled>
+                                TGG1
+                            </button>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <!-- End of quick selection tiles -->
+
+        <!-- Timetable -->
+        <div class="container-xxl text-center noselect">
+            <div id="timetable" class="table-responsive">
+                <table class="table table-bordered mt-2 mb-0">
+                    <tr>
+                        <td class="day">THEORY <br />HOURS</td>
+                        <td class="theory-hour">
+                            08:00 AM <br />to <br />08:50 AM
+                        </td>
+                        <td class="theory-hour">
+                            09:00 AM <br />to <br />09:50 AM
+                        </td>
+                        <td class="theory-hour">
+                            10:00 AM <br />to <br />10:50 AM
+                        </td>
+                        <td class="theory-hour">
+                            11:00 AM <br />to <br />11:50 AM
+                        </td>
+                        <td class="theory-hour">
+                            12:00 PM <br />to <br />12:50 PM
+                        </td>
+                        <td class="theory-hour"></td>
+                        <td width="8px" rowspan="7" class="lunch">
+                            <strong>L <br />U <br />N <br />C <br />H</strong>
+                        </td>
+                        <td class="theory-hour">
+                            02:00 PM <br />to <br />02:50 PM
+                        </td>
+                        <td class="theory-hour">
+                            03:00 PM <br />to <br />03:50 PM
+                        </td>
+                        <td class="theory-hour">
+                            04:00 PM <br />to <br />04:50 PM
+                        </td>
+                        <td class="theory-hour">
+                            05:00 PM <br />to <br />05:50 PM
+                        </td>
+                        <td class="theory-hour">
+                            06:00 PM <br />to <br />06:50 PM
+                        </td>
+                        <td class="theory-hour">
+                            07:00 PM <br />to <br />07:50 PM
+                        </td>
+                        <!--<td class="theory-hour">07:00 PM<br>to<br>07:50 PM</td>
+                        <td class="theory-hour">08:00 PM<br>to<br>08:50 PM</td>-->
+                    </tr>
+                    <tr>
+                        <td class="day">LAB <br />HOURS</td>
+                        <td class="lab-hour">
+                            08:00 AM <br />to <br />08:45 AM
+                        </td>
+                        <td class="lab-hour">
+                            08:46 AM <br />to <br />09:30 AM
+                        </td>
+                        <td class="lab-hour">
+                            10:00 AM <br />to <br />10:45 AM
+                        </td>
+                        <td class="lab-hour">
+                            10:46 AM <br />to <br />11:30 AM
+                        </td>
+                        <td class="lab-hour">
+                            11:31 AM <br />to <br />12:15 AM
+                        </td>
+                        <td class="lab-hour">
+                            12:16 AM <br />to <br />01:00 PM
+                        </td>
+                        <td class="lab-hour">
+                            02:00 PM <br />to <br />02:45 PM
+                        </td>
+                        <td class="lab-hour">
+                            02:46 PM <br />to <br />03:30 PM
+                        </td>
+                        <td class="lab-hour">
+                            04:00 PM <br />to <br />04:45 PM
+                        </td>
+                        <td class="lab-hour">
+                            04:46 PM <br />to <br />05:30 PM
+                        </td>
+                        <td class="lab-hour">
+                            05:31 PM <br />to <br />06:15 PM
+                        </td>
+                        <td class="lab-hour">
+                            06:16 PM <br />to <br />07:00 PM
+                        </td>
+                        <!--<td class="lab-hour">07:30 PM<br>to<br>08:20 PM</td>
+                        <td class="lab-hour">08:20 PM<br>to<br>09:10 PM</td>-->
+                    </tr>
+                    <tr>
+                        <!-- IMPORTANT: It's important to maintain the order of class. i.e. A1,F1,D1,.. are 2nd -->
+                        <td class="day">MON</td>
+                        <td class="period A1 L1 no-post-lab">
+                            A1 / L1
+                        </td>
+                        <td class="period F1 L2 no-pre-theory">
+                            F1 / L2
+                        </td>
+                        <td class="period D1 L3 no-post-lab">
+                            D1 / L3
+                        </td>
+                        <td class="period TB1 L4 no-post-lab no-pre-theory">
+                            TB1 / L4
+                        </td>
+                        <td class="period TG1 L5 no-post-lab no-pre-theory">
+                            TG1 / L5
+                        </td>
+                        <td class="period L6 no-pre-theory">L6</td>
+                        <td class="period A2 L31 no-post-lab">
+                            A2 / L31
+                        </td>
+                        <td class="period F2 L32 no-pre-theory">
+                            F2 / L32
+                        </td>
+                        <td class="period D2 L33 no-post-lab">
+                            D2 / L33
+                        </td>
+                        <td class="period TB2 L34 no-post-lab no-pre-theory">
+                            TB2 / L34
+                        </td>
+                        <td class="period TG2 L35 no-post-lab no-pre-theory">
+                            TG2 / L35
+                        </td>
+                        <td class="period V3 L36 no-pre-theory">
+                            V3 / L36
+                        </td>
+                        <!--<td class="period H1 L61">H1 / L61</td>
+                        <td class="period K1 L62">K1 / L62</td>-->
+                    </tr>
+                    <tr>
+                        <td class="day">TUE</td>
+                        <td class="period B1 L7 no-post-lab">
+                            B1 / L7
+                        </td>
+                        <td class="period G1 L8 no-pre-theory">
+                            G1 / L8
+                        </td>
+                        <td class="period E1 L9 no-post-lab">
+                            E1 / L9
+                        </td>
+                        <td class="period TC1 L10 no-post-lab no-pre-theory">
+                            TC1 / L10
+                        </td>
+                        <td class="period TAA1 L11 no-post-lab no-pre-theory">
+                            TAA1 / L11
+                        </td>
+                        <td class="period L12 no-pre-theory">L12</td>
+                        <td class="period B2 L37 no-post-lab">
+                            B2 / L37
+                        </td>
+                        <td class="period G2 L38 no-pre-theory">
+                            G2 / L38
+                        </td>
+                        <td class="period E2 L39 no-post-lab">
+                            E2 / L39
+                        </td>
+                        <td class="period TC2 L40 no-post-lab no-pre-theory">
+                            TC2 / L40
+                        </td>
+                        <td class="period TAA2 L41 no-post-lab no-pre-theory">
+                            TAA2 / L41
+                        </td>
+                        <td class="period V4 L42 no-pre-theory">
+                            V4 / L42
+                        </td>
+                        <!--<td class="period H2 L63">H2 / L63</td>
+                        <td class="period K2 L64">K2 / L64</td>-->
+                    </tr>
+                    <tr>
+                        <td class="day">WED</td>
+                        <td class="period C1 L13 no-post-lab">
+                            C1 / L13
+                        </td>
+                        <td class="period A1 L14 no-pre-theory">
+                            A1 / L14
+                        </td>
+                        <td class="period F1 L15 no-post-lab">
+                            F1 / L15
+                        </td>
+                        <td class="period V1 L16 no-post-lab no-pre-theory">
+                            V1 / L16
+                        </td>
+                        <td class="period V2 no-post-lab no-pre-theory">
+                            V2
+                        </td>
+                        <td class="period"></td>
+                        <td class="period C2 L43 no-post-lab">
+                            C2 / L43
+                        </td>
+                        <td class="period A2 L44 no-pre-theory">
+                            A2 / L44
+                        </td>
+                        <td class="period F2 L45 no-post-lab">
+                            F2 / L45
+                        </td>
+                        <td class="period TD2 L46 no-post-lab no-pre-theory">
+                            TD2 / L46
+                        </td>
+                        <td class="period TBB2 L47 no-post-lab no-pre-theory">
+                            TBB2 / L47
+                        </td>
+                        <td class="period V5 L48 no-pre-theory">
+                            V5 / L48
+                        </td>
+                        <!--<td class="period H3 L65">H3 / L65</td>
+                        <td class="period K3 L66">K3 / L66</td>-->
+                    </tr>
+                    <tr>
+                        <td class="day">THU</td>
+                        <td class="period D1 L19 no-post-lab">
+                            D1 / L19
+                        </td>
+                        <td class="period B1 L20 no-pre-theory">
+                            B1 / L20
+                        </td>
+                        <td class="period G1 L21 no-post-lab">
+                            G1 / L21
+                        </td>
+                        <td class="period TE1 L22 no-post-lab no-pre-theory">
+                            TE1 / L22
+                        </td>
+                        <td class="period TCC1 L23 no-post-lab no-pre-theory">
+                            TCC1 / L23
+                        </td>
+                        <td class="period L24 no-pre-theory">L24</td>
+                        <td class="period D2 L49 no-post-lab">
+                            D2 / L49
+                        </td>
+                        <td class="period B2 L50 no-pre-theory">
+                            B2 / L50
+                        </td>
+                        <td class="period G2 L51 no-post-lab">
+                            G2 / L51
+                        </td>
+                        <td class="period TE2 L52 no-post-lab no-pre-theory">
+                            TE2 / L52
+                        </td>
+                        <td class="period TCC2 L53 no-post-lab no-pre-theory">
+                            TCC2 / L53
+                        </td>
+                        <td class="period V6 L54 no-pre-theory">
+                            V6 / L54
+                        </td>
+                        <!--<td class="period H4 L67">H4 / L67</td>
+                        <td class="period K4 L68">K4 / L68</td>-->
+                    </tr>
+                    <tr>
+                        <td class="day">FRI</td>
+                        <td class="period E1 L25 no-post-lab">
+                            E1 / L25
+                        </td>
+                        <td class="period C1 L26 no-pre-theory">
+                            C1 / L26
+                        </td>
+                        <td class="period TA1 L27 no-post-lab">
+                            TA1 / L27
+                        </td>
+                        <td class="period TF1 L28 no-post-lab no-pre-theory">
+                            TF1 / L28
+                        </td>
+                        <td class="period TD1 L29 no-post-lab no-pre-theory">
+                            TD1 / L29
+                        </td>
+                        <td class="period L30 no-pre-theory">L30</td>
+                        <td class="period E2 L55 no-post-lab">
+                            E2 / L55
+                        </td>
+                        <td class="period C2 L56 no-pre-theory">
+                            C2 / L56
+                        </td>
+                        <td class="period TA2 L57 no-post-lab">
+                            TA2 / L57
+                        </td>
+                        <td class="period TF2 L58 no-post-lab no-pre-theory">
+                            TF2 / L58
+                        </td>
+                        <td class="period TDD2 L59 no-post-lab no-pre-theory">
+                            TDD2 / L59
+                        </td>
+                        <td class="period V7 L60 no-pre-theory">
+                            V7 / L60
+                        </td>
+                        <!--<td class="period H5 L69">H5 / L69</td>
+                        <td class="period K5 L70">K5 / L70</td>-->
+                    </tr>
+                    <!-- <tr>
+                        <td class="day">SAT</td>
+                        <td class="period V8 L71">V8 / L71</td>
+                        <td class="period X1 L72">X1 / L72</td>
+                        <td class="period X1 L73">X1 / L73</td>
+                        <td class="period Y1 L74">Y1 / L74</td>
+                        <td class="period Y1 L75">Y1 / L75</td>
+                        <td class="period L76">L76</td>
+                        <td class="period X2 L77">X2 / L77</td>
+                        <td class="period Z L78">Z / L78</td>
+                        <td class="period Y2 L79">Y2 / L79</td>
+                        <td class="period W2 L80">W2 / L80</td>
+                        <td class="period W2 L81">W2 / L81</td>
+                        <td class="period V9 L82">V9 / L82</td>
+                    </tr>
+                    <tr>
+                        <td class="day">SUN</td>
+                        <td class="period V10 L83">V10 / L83</td>
+                        <td class="period Y1 L84">Y1 / L84</td>
+                        <td class="period Y1 L85">Y1 / L85</td>
+                        <td class="period X1 L86">X1 / L86</td>
+                        <td class="period X1 L87">X1 / L87</td>
+                        <td class="period L88">L88</td>
+                        <td class="period Y2 L89">Y2 / L89</td>
+                        <td class="period Z L90">Z / L90</td>
+                        <td class="period X2 L91">X2 / L91</td>
+                        <td class="period W2 L92">W2 / L92</td>
+                        <td class="period W2 L93">W2 / L93</td>
+                        <td class="period V11 L94">V11 / L94</td>
+                    </tr> -->
+                </table>
+            </div>
+        </div>
+        <!-- End of timetable -->
+
+        <!-- Quick selection tiles - Evening slots -->
+        <div class="container-lg mt-3 quick-buttons" style="display: none;">
+            <div>
+                <table>
+                    <tr>
+                        <td>
+                            <button class="A2-tile btn quick-button">A2</button>
+                            <button class="B2-tile btn quick-button">B2</button>
+                            <button class="C2-tile btn quick-button">C2</button>
+                            <button class="D2-tile btn quick-button">D2</button>
+                            <button class="E2-tile btn quick-button">E2</button>
+                            <button class="F2-tile btn quick-button">F2</button>
+                            <button class="G2-tile btn quick-button">G2</button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <button class="TA2-tile btn quick-button">
+                                TA2
+                            </button>
+                            <button class="TB2-tile btn quick-button">
+                                TB2
+                            </button>
+                            <button class="TC2-tile btn quick-button">
+                                TC2
+                            </button>
+                            <button class="TD2-tile btn quick-button">
+                                TD2
+                            </button>
+                            <button class="TE2-tile btn quick-button">
+                                TE2
+                            </button>
+                            <button class="TF2-tile btn quick-button">
+                                TF2
+                            </button>
+                            <button class="TG2-tile btn quick-button">
+                                TG2
+                            </button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <button class="TAA2-tile btn quick-button">
+                                TAA2
+                            </button>
+                            <button class="TBB2-tile btn quick-button" disabled>
+                                TBB2
+                            </button>
+                            <button class="TCC2-tile btn quick-button">
+                                TCC2
+                            </button>
+                            <button class="TDD2-tile btn quick-button" disabled>
+                                TDD2
+                            </button>
+                            <button class="TEE2-tile btn quick-button" disabled>
+                                TEE2
+                            </button>
+                            <button class="TFF2-tile btn quick-button" disabled>
+                                TFF2
+                            </button>
+                            <button class="TGG2-tile btn quick-button" disabled>
+                                TGG2
+                            </button>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <!-- End of quick selection tiles -->
+
+        <hr />
+
+        <!-- Course list table -->
+        <div class="container-xl">
+            <blockquote>
+                <p class="text-black-50 fs-6 fw-light">
+                    Double click a course in the list below to load it back into
+                    the course panel.
+                </p>
+            </blockquote>
+
+            <div id="course-list" class="table-responsive">
+                <table class="table table-hover mb-0">
+                    <thead>
+                        <tr class="table-success">
+                            <th>Slot</th>
+                            <th>Course Code</th>
+                            <th>Course Title</th>
+                            <th>Faculty</th>
+                            <th>Venue</th>
+                            <th>Credits</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <!-- Courses will be added here -->
+                    </tbody>
+
+                    <tfoot>
+                        <tr class="table-active">
+                            <td colspan="7">
+                                <strong>
+                                    Total Credits:
+                                    <span id="total-credits">0</span>
+                                </strong>
+                            </td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+        </div>
+        <!-- End of course list table -->
+        <!-- End of #2 -->
+
+        <hr />
+
+        <!-- #3 - Comments & Footer -->
+        <!-- Disqus comments -->
+        <div class="container">
+            <div id="disqus_thread"></div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="container-fluid text-center">
+            <span>Made with <i class="fas fa-heart"></i> for VITians</span>
+        </footer>
+        <!-- End of #3 -->
 
         <!-- The About Modal -->
         <div
@@ -456,7 +1215,7 @@
                         <button
                             id="download-tt-button"
                             type="button"
-                            class="btn btn-success w-100 download-button"
+                            class="btn btn-success w-100"
                             style="margin-bottom: 0.5rem;"
                         >
                             <i class="fas fa-camera"></i>
@@ -465,7 +1224,7 @@
                         <button
                             id="download-course-list-button"
                             type="button"
-                            class="btn btn-success w-100 download-button"
+                            class="btn btn-success w-100"
                         >
                             <i class="fas fa-camera"></i>
                             &nbsp;&nbsp;Download Course List
@@ -475,710 +1234,6 @@
             </div>
         </div>
         <!-- End of download timetable modal -->
-
-        <!-- #1 - Course Panel -->
-        <div class="container">
-            <div class="card mb-4">
-                <div class="card-header text-center fw-bold">
-                    Course panel
-                </div>
-                <div class="card-body">
-                    <form id="slot-sel-area" class="container">
-                        <div class="row gy-3">
-                            <div class="col-lg-9 col-12">
-                                <label for="inputCourse" class="form-label"
-                                    >Course</label
-                                >
-                                <input
-                                    type="text"
-                                    class="form-control"
-                                    id="inputCourse"
-                                    placeholder="CSE1001 or Problem Solving and Programming"
-                                />
-                            </div>
-
-                            <div class="col-lg-3 col-12">
-                                <label for="filter-by-slot" class="form-label"
-                                    >Filter By Slot</label
-                                >
-                                <select
-                                    id="filter-by-slot"
-                                    class="selectpicker"
-                                    data-width="100%"
-                                    data-live-search="true"
-                                    data-live-search-placeholder="Search for a slot"
-                                    multiple
-                                    disabled
-                                ></select>
-                            </div>
-                        </div>
-
-                        <div class="row mt-2">
-                            <div class="col-12">
-                                <blockquote class="blockquote mt-1">
-                                    <p class="text-black-50 fs-6">
-                                        Search, select then add or double click
-                                        to quickly add. Select course to enable
-                                        slot filter.
-                                    </p>
-                                </blockquote>
-                            </div>
-                        </div>
-
-                        <div class="row">
-                            <div id="insertCourseSelectionOptions"></div>
-                        </div>
-
-                        <div class="row" style="margin: 0.5rem 0 1rem 0;">
-                            <div class="col-12 text-center">
-                                <button
-                                    id="slot-sel-area-toggle-fields-btn"
-                                    type="button"
-                                    class="btn btn-outline-secondary"
-                                >
-                                    Show Advanced Options
-                                </button>
-                            </div>
-                        </div>
-
-                        <div
-                            id="slot-sel-area-toggle-fields"
-                            class="row gy-2"
-                            style="display: none;"
-                        >
-                            <div class="col-6 col-md-3">
-                                <label for="inputSlotString" class="form-label"
-                                    >Slot</label
-                                >
-                                <input
-                                    id="inputSlotString"
-                                    class="form-control"
-                                    type="text"
-                                    autocomplete="off"
-                                    placeholder="A1+TA1"
-                                />
-                            </div>
-                            <div class="col-6 col-md-3">
-                                <label for="inputFaculty" class="form-label"
-                                    >Faculty</label
-                                >
-                                <input
-                                    id="inputFaculty"
-                                    class="form-control"
-                                    type="text"
-                                    autocomplete="off"
-                                    placeholder="JOHN DOE"
-                                />
-                            </div>
-                            <div class="col-6 col-md-3">
-                                <label for="inputVenue" class="form-label"
-                                    >Venue</label
-                                >
-                                <input
-                                    id="inputVenue"
-                                    class="form-control"
-                                    type="text"
-                                    autocomplete="off"
-                                    placeholder="SJTG01"
-                                />
-                            </div>
-                            <div class="col-6 col-md-3">
-                                <label
-                                    for="inputCourseCredits"
-                                    class="form-label"
-                                    >Credits</label
-                                >
-                                <input
-                                    id="inputCourseCredits"
-                                    class="form-control"
-                                    type="number"
-                                    autocomplete="off"
-                                    placeholder="4"
-                                />
-                            </div>
-
-                            <!-- This input field is to store whether the selected option is a project -->
-                            <input
-                                id="inputIsProject"
-                                type="hidden"
-                                value="false"
-                            />
-                        </div>
-                    </form>
-                </div>
-                <div class="card-footer container">
-                    <div class="row">
-                        <div class="col-sm-12 text-end">
-                            <button
-                                id="clearCourseBtn"
-                                type="button"
-                                class="btn btn-light"
-                            >
-                                Clear
-                            </button>
-                            <button
-                                id="addCourseBtn"
-                                type="button"
-                                class="btn btn-success"
-                            >
-                                Add Course
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- End of #1 - Course panel -->
-
-        <hr />
-
-        <!-- #2 - Timetable -->
-        <!-- Option buttons for the timetable -->
-        <div id="option-buttons" class="container">
-            <div class="row justify-content-around gy-3">
-                <div class="col-12 col-lg-4 text-center">
-                    <div class="btn-group" role="group">
-                        <div class="btn-group">
-                            <button
-                                id="saved-tt-picker-label"
-                                class="btn btn-primary dropdown-toggle"
-                                type="button"
-                                style="margin-right: 0;"
-                                data-bs-toggle="dropdown"
-                                aria-expanded="false"
-                            >
-                                Default Table
-                            </button>
-                            <ul id="saved-tt-picker" class="dropdown-menu">
-                                <li>
-                                    <table class="dropdown-item">
-                                        <td class="tt-picker-label">
-                                            <a
-                                                href="JavaScript:void(0);"
-                                                data-table-id="0"
-                                                >Default Table</a
-                                            >
-                                        </td>
-                                        <td>
-                                            <a
-                                                class="tt-picker-edit"
-                                                href="JavaScript:void(0);"
-                                                data-table-id="0"
-                                                data-bs-toggle="modal"
-                                                data-bs-target="#edit-modal"
-                                                ><i class="fas fa-edit"></i
-                                            ></a>
-                                        </td>
-                                    </table>
-                                </li>
-                            </ul>
-                        </div>
-                        <button
-                            id="saved-tt-picker-add"
-                            type="button"
-                            class="btn btn-primary border-start"
-                            style="margin-left: 0;"
-                        >
-                            <i class="fas fa-plus"></i>
-                        </button>
-                    </div>
-                </div>
-
-                <div id="tt-action-buttons" class="col-12 col-lg-8 text-center">
-                    <button
-                        class="btn btn-success"
-                        type="button"
-                        data-bs-toggle="modal"
-                        data-bs-target="#download-modal"
-                    >
-                        <i class="fas fa-download"></i>
-                        <span>&nbsp;&nbsp;Download Timetable</span>
-                    </button>
-                    <button
-                        id="toggleClickToSelect"
-                        class="btn btn-warning"
-                        type="button"
-                    >
-                        <i class="fas fa-eye"></i>
-                        <span>&nbsp;&nbsp;Enable Quick Visualization</span>
-                    </button>
-                    <button
-                        class="btn btn-danger"
-                        type="button"
-                        data-bs-toggle="modal"
-                        data-bs-target="#reset-modal"
-                    >
-                        <i class="fas fa-redo-alt"></i>
-                        <span>&nbsp;&nbsp;Reset Table</span>
-                    </button>
-                </div>
-            </div>
-        </div>
-
-        <hr />
-
-        <!-- Quick selection tiles - Morning slots -->
-        <div class="table-responsive d-flex justify-content-center">
-            <div class="quick-selection noselect mb-1" style="display: none;">
-                <table>
-                    <tr>
-                        <td>
-                            <button class="A1-tile btn btn-quick">A1</button>
-                            <button class="B1-tile btn btn-quick">B1</button>
-                            <button class="C1-tile btn btn-quick">C1</button>
-                            <button class="D1-tile btn btn-quick">D1</button>
-                            <button class="E1-tile btn btn-quick">E1</button>
-                            <button class="F1-tile btn btn-quick">F1</button>
-                            <button class="G1-tile btn btn-quick">G1</button>
-                        </td>
-                    </tr>
-
-                    <tr>
-                        <td>
-                            <button class="TA1-tile btn btn-quick">TA1</button>
-                            <button class="TB1-tile btn btn-quick">TB1</button>
-                            <button class="TC1-tile btn btn-quick">TC1</button>
-                            <button class="TD1-tile btn btn-quick">TD1</button>
-                            <button class="TE1-tile btn btn-quick">TE1</button>
-                            <button class="TF1-tile btn btn-quick">TF1</button>
-                            <button class="TG1-tile btn btn-quick">TG1</button>
-                        </td>
-                    </tr>
-
-                    <tr>
-                        <td>
-                            <button class="TAA1-tile btn btn-quick">
-                                TAA1
-                            </button>
-                            <button class="TBB1-tile btn btn-quick" disabled>
-                                TBB1
-                            </button>
-                            <button class="TCC1-tile btn btn-quick">
-                                TCC1
-                            </button>
-                            <button class="TDD1-tile btn btn-quick" disabled>
-                                TDD1
-                            </button>
-                            <button class="TEE1-tile btn btn-quick" disabled>
-                                TEE1
-                            </button>
-                            <button class="TFF1-tile btn btn-quick" disabled>
-                                TFF1
-                            </button>
-                            <button class="TGG1-tile btn btn-quick" disabled>
-                                TGG1
-                            </button>
-                        </td>
-                    </tr>
-                </table>
-            </div>
-        </div>
-        <!-- End of quick selection tiles -->
-
-        <!-- Timetable -->
-        <div class="table-responsive text-center noselect">
-            <table id="timetable" class="table table-bordered">
-                <tr>
-                    <td class="ColumnOneDays">THEORY <br />HOURS</td>
-                    <td class="TheoryHours">
-                        08:00 AM <br />to <br />08:50 AM
-                    </td>
-                    <td class="TheoryHours">
-                        09:00 AM <br />to <br />09:50 AM
-                    </td>
-                    <td class="TheoryHours">
-                        10:00 AM <br />to <br />10:50 AM
-                    </td>
-                    <td class="TheoryHours">
-                        11:00 AM <br />to <br />11:50 AM
-                    </td>
-                    <td class="TheoryHours">
-                        12:00 PM <br />to <br />12:50 PM
-                    </td>
-                    <td class="TheoryHours"></td>
-                    <td width="8px" rowspan="9" class="ColumnOneDays">
-                        <strong>L <br />U <br />N <br />C <br />H</strong>
-                    </td>
-                    <td class="TheoryHours">
-                        02:00 PM <br />to <br />02:50 PM
-                    </td>
-                    <td class="TheoryHours">
-                        03:00 PM <br />to <br />03:50 PM
-                    </td>
-                    <td class="TheoryHours">
-                        04:00 PM <br />to <br />04:50 PM
-                    </td>
-                    <td class="TheoryHours">
-                        05:00 PM <br />to <br />05:50 PM
-                    </td>
-                    <td class="TheoryHours">
-                        06:00 PM <br />to <br />06:50 PM
-                    </td>
-                    <td class="TheoryHours">
-                        07:00 PM <br />to <br />07:50 PM
-                    </td>
-                    <!--<td class="TheoryHours">07:00 PM<br>to<br>07:50 PM</td>
-                        <td class="TheoryHours">08:00 PM<br>to<br>08:50 PM</td>-->
-                </tr>
-                <tr>
-                    <td class="ColumnOneDays">LAB <br />HOURS</td>
-                    <td class="LabHours">08:00 AM <br />to <br />08:45 AM</td>
-                    <td class="LabHours">08:46 AM <br />to <br />09:30 AM</td>
-                    <td class="LabHours">10:00 AM <br />to <br />10:45 AM</td>
-                    <td class="LabHours">10:46 AM <br />to <br />11:30 AM</td>
-                    <td class="LabHours">11:31 AM <br />to <br />12:15 AM</td>
-                    <td class="LabHours">12:16 AM <br />to <br />01:00 PM</td>
-                    <td class="LabHours">02:00 PM <br />to <br />02:45 PM</td>
-                    <td class="LabHours">02:46 PM <br />to <br />03:30 PM</td>
-                    <td class="LabHours">04:00 PM <br />to <br />04:45 PM</td>
-                    <td class="LabHours">04:46 PM <br />to <br />05:30 PM</td>
-                    <td class="LabHours">05:31 PM <br />to <br />06:15 PM</td>
-                    <td class="LabHours">06:16 PM <br />to <br />07:00 PM</td>
-                    <!--<td class="LabHours">07:30 PM<br>to<br>08:20 PM</td>
-                        <td class="LabHours">08:20 PM<br>to<br>09:10 PM</td>-->
-                </tr>
-                <tr>
-                    <!-- IMPORTANT: It's important to maintain the order of class. i.e. A1,F1,D1,.. are 2nd -->
-                    <td class="ColumnOneDays">MON</td>
-                    <td class="TimetableContent A1 L1 noPostLab">
-                        A1 / L1
-                    </td>
-                    <td class="TimetableContent F1 L2 noPreTheory">
-                        F1 / L2
-                    </td>
-                    <td class="TimetableContent D1 L3 noPostLab">
-                        D1 / L3
-                    </td>
-                    <td class="TimetableContent TB1 L4 noPostLab noPreTheory">
-                        TB1 / L4
-                    </td>
-                    <td class="TimetableContent TG1 L5 noPostLab noPreTheory">
-                        TG1 / L5
-                    </td>
-                    <td class="TimetableContent L6 noPreTheory">L6</td>
-                    <td class="TimetableContent A2 L31 noPostLab">
-                        A2 / L31
-                    </td>
-                    <td class="TimetableContent F2 L32 noPreTheory">
-                        F2 / L32
-                    </td>
-                    <td class="TimetableContent D2 L33 noPostLab">
-                        D2 / L33
-                    </td>
-                    <td class="TimetableContent TB2 L34 noPostLab noPreTheory">
-                        TB2 / L34
-                    </td>
-                    <td class="TimetableContent TG2 L35 noPostLab noPreTheory">
-                        TG2 / L35
-                    </td>
-                    <td class="TimetableContent V3 L36 noPreTheory">
-                        V3 / L36
-                    </td>
-                    <!--<td class="TimetableContent H1 L61">H1 / L61</td>
-                        <td class="TimetableContent K1 L62">K1 / L62</td>-->
-                </tr>
-                <tr>
-                    <td class="ColumnOneDays">TUE</td>
-                    <td class="TimetableContent B1 L7 noPostLab">
-                        B1 / L7
-                    </td>
-                    <td class="TimetableContent G1 L8 noPreTheory">
-                        G1 / L8
-                    </td>
-                    <td class="TimetableContent E1 L9 noPostLab">
-                        E1 / L9
-                    </td>
-                    <td class="TimetableContent TC1 L10 noPostLab noPreTheory">
-                        TC1 / L10
-                    </td>
-                    <td class="TimetableContent TAA1 L11 noPostLab noPreTheory">
-                        TAA1 / L11
-                    </td>
-                    <td class="TimetableContent L12 noPreTheory">L12</td>
-                    <td class="TimetableContent B2 L37 noPostLab">
-                        B2 / L37
-                    </td>
-                    <td class="TimetableContent G2 L38 noPreTheory">
-                        G2 / L38
-                    </td>
-                    <td class="TimetableContent E2 L39 noPostLab">
-                        E2 / L39
-                    </td>
-                    <td class="TimetableContent TC2 L40 noPostLab noPreTheory">
-                        TC2 / L40
-                    </td>
-                    <td class="TimetableContent TAA2 L41 noPostLab noPreTheory">
-                        TAA2 / L41
-                    </td>
-                    <td class="TimetableContent V4 L42 noPreTheory">
-                        V4 / L42
-                    </td>
-                    <!--<td class="TimetableContent H2 L63">H2 / L63</td>
-                        <td class="TimetableContent K2 L64">K2 / L64</td>-->
-                </tr>
-                <tr>
-                    <td class="ColumnOneDays">WED</td>
-                    <td class="TimetableContent C1 L13 noPostLab">
-                        C1 / L13
-                    </td>
-                    <td class="TimetableContent A1 L14 noPreTheory">
-                        A1 / L14
-                    </td>
-                    <td class="TimetableContent F1 L15 noPostLab">
-                        F1 / L15
-                    </td>
-                    <td class="TimetableContent V1 L16 noPostLab noPreTheory">
-                        V1 / L16
-                    </td>
-                    <td class="TimetableContent V2 noPostLab noPreTheory">
-                        V2
-                    </td>
-                    <td class="TimetableContent"></td>
-                    <td class="TimetableContent C2 L43 noPostLab">
-                        C2 / L43
-                    </td>
-                    <td class="TimetableContent A2 L44 noPreTheory">
-                        A2 / L44
-                    </td>
-                    <td class="TimetableContent F2 L45 noPostLab">
-                        F2 / L45
-                    </td>
-                    <td class="TimetableContent TD2 L46 noPostLab noPreTheory">
-                        TD2 / L46
-                    </td>
-                    <td class="TimetableContent TBB2 L47 noPostLab noPreTheory">
-                        TBB2 / L47
-                    </td>
-                    <td class="TimetableContent V5 L48 noPreTheory">
-                        V5 / L48
-                    </td>
-                    <!--<td class="TimetableContent H3 L65">H3 / L65</td>
-                        <td class="TimetableContent K3 L66">K3 / L66</td>-->
-                </tr>
-                <tr>
-                    <td class="ColumnOneDays">THU</td>
-                    <td class="TimetableContent D1 L19 noPostLab">
-                        D1 / L19
-                    </td>
-                    <td class="TimetableContent B1 L20 noPreTheory">
-                        B1 / L20
-                    </td>
-                    <td class="TimetableContent G1 L21 noPostLab">
-                        G1 / L21
-                    </td>
-                    <td class="TimetableContent TE1 L22 noPostLab noPreTheory">
-                        TE1 / L22
-                    </td>
-                    <td class="TimetableContent TCC1 L23 noPostLab noPreTheory">
-                        TCC1 / L23
-                    </td>
-                    <td class="TimetableContent L24 noPreTheory">L24</td>
-                    <td class="TimetableContent D2 L49 noPostLab">
-                        D2 / L49
-                    </td>
-                    <td class="TimetableContent B2 L50 noPreTheory">
-                        B2 / L50
-                    </td>
-                    <td class="TimetableContent G2 L51 noPostLab">
-                        G2 / L51
-                    </td>
-                    <td class="TimetableContent TE2 L52 noPostLab noPreTheory">
-                        TE2 / L52
-                    </td>
-                    <td class="TimetableContent TCC2 L53 noPostLab noPreTheory">
-                        TCC2 / L53
-                    </td>
-                    <td class="TimetableContent V6 L54 noPreTheory">
-                        V6 / L54
-                    </td>
-                    <!--<td class="TimetableContent H4 L67">H4 / L67</td>
-                        <td class="TimetableContent K4 L68">K4 / L68</td>-->
-                </tr>
-                <tr>
-                    <td class="ColumnOneDays">FRI</td>
-                    <td class="TimetableContent E1 L25 noPostLab">
-                        E1 / L25
-                    </td>
-                    <td class="TimetableContent C1 L26 noPreTheory">
-                        C1 / L26
-                    </td>
-                    <td class="TimetableContent TA1 L27 noPostLab">
-                        TA1 / L27
-                    </td>
-                    <td class="TimetableContent TF1 L28 noPostLab noPreTheory">
-                        TF1 / L28
-                    </td>
-                    <td class="TimetableContent TD1 L29 noPostLab noPreTheory">
-                        TD1 / L29
-                    </td>
-                    <td class="TimetableContent L30 noPreTheory">L30</td>
-                    <td class="TimetableContent E2 L55 noPostLab">
-                        E2 / L55
-                    </td>
-                    <td class="TimetableContent C2 L56 noPreTheory">
-                        C2 / L56
-                    </td>
-                    <td class="TimetableContent TA2 L57 noPostLab">
-                        TA2 / L57
-                    </td>
-                    <td class="TimetableContent TF2 L58 noPostLab noPreTheory">
-                        TF2 / L58
-                    </td>
-                    <td class="TimetableContent TDD2 L59 noPostLab noPreTheory">
-                        TDD2 / L59
-                    </td>
-                    <td class="TimetableContent V7 L60 noPreTheory">
-                        V7 / L60
-                    </td>
-                    <!--<td class="TimetableContent H5 L69">H5 / L69</td>
-                        <td class="TimetableContent K5 L70">K5 / L70</td>-->
-                </tr>
-                <!-- <tr>
-                        <td class="ColumnOneDays">SAT</td>
-                        <td class="TimetableContent V8 L71">V8 / L71</td>
-                        <td class="TimetableContent X1 L72">X1 / L72</td>
-                        <td class="TimetableContent X1 L73">X1 / L73</td>
-                        <td class="TimetableContent Y1 L74">Y1 / L74</td>
-                        <td class="TimetableContent Y1 L75">Y1 / L75</td>
-                        <td class="TimetableContent L76">L76</td>
-                        <td class="TimetableContent X2 L77">X2 / L77</td>
-                        <td class="TimetableContent Z L78">Z / L78</td>
-                        <td class="TimetableContent Y2 L79">Y2 / L79</td>
-                        <td class="TimetableContent W2 L80">W2 / L80</td>
-                        <td class="TimetableContent W2 L81">W2 / L81</td>
-                        <td class="TimetableContent V9 L82">V9 / L82</td>
-                    </tr>
-                    <tr>
-                        <td class="ColumnOneDays">SUN</td>
-                        <td class="TimetableContent V10 L83">V10 / L83</td>
-                        <td class="TimetableContent Y1 L84">Y1 / L84</td>
-                        <td class="TimetableContent Y1 L85">Y1 / L85</td>
-                        <td class="TimetableContent X1 L86">X1 / L86</td>
-                        <td class="TimetableContent X1 L87">X1 / L87</td>
-                        <td class="TimetableContent L88">L88</td>
-                        <td class="TimetableContent Y2 L89">Y2 / L89</td>
-                        <td class="TimetableContent Z L90">Z / L90</td>
-                        <td class="TimetableContent X2 L91">X2 / L91</td>
-                        <td class="TimetableContent W2 L92">W2 / L92</td>
-                        <td class="TimetableContent W2 L93">W2 / L93</td>
-                        <td class="TimetableContent V11 L94">V11 / L94</td>
-                    </tr> -->
-            </table>
-        </div>
-        <!-- End of timetable -->
-
-        <!-- Quick selection tiles - Evening slots -->
-        <div class="table-responsive d-flex justify-content-center">
-            <div class="quick-selection noselect mt-1" style="display: none;">
-                <table>
-                    <tr>
-                        <td>
-                            <button class="A2-tile btn btn-quick">A2</button>
-                            <button class="B2-tile btn btn-quick">B2</button>
-                            <button class="C2-tile btn btn-quick">C2</button>
-                            <button class="D2-tile btn btn-quick">D2</button>
-                            <button class="E2-tile btn btn-quick">E2</button>
-                            <button class="F2-tile btn btn-quick">F2</button>
-                            <button class="G2-tile btn btn-quick">G2</button>
-                        </td>
-                    </tr>
-
-                    <tr>
-                        <td>
-                            <button class="TA2-tile btn btn-quick">TA2</button>
-                            <button class="TB2-tile btn btn-quick">TB2</button>
-                            <button class="TC2-tile btn btn-quick">TC2</button>
-                            <button class="TD2-tile btn btn-quick">TD2</button>
-                            <button class="TE2-tile btn btn-quick">TE2</button>
-                            <button class="TF2-tile btn btn-quick">TF2</button>
-                            <button class="TG2-tile btn btn-quick">TG2</button>
-                        </td>
-                    </tr>
-
-                    <tr>
-                        <td>
-                            <button class="TAA2-tile btn btn-quick">
-                                TAA2
-                            </button>
-                            <button class="TBB2-tile btn btn-quick">
-                                TBB2
-                            </button>
-                            <button class="TCC2-tile btn btn-quick">
-                                TCC2
-                            </button>
-                            <button class="TDD2-tile btn btn-quick">
-                                TDD2
-                            </button>
-                            <button class="TEE2-tile btn btn-quick" disabled>
-                                TEE2
-                            </button>
-                            <button class="TFF2-tile btn btn-quick" disabled>
-                                TFF2
-                            </button>
-                            <button class="TGG2-tile btn btn-quick" disabled>
-                                TGG2
-                            </button>
-                        </td>
-                    </tr>
-                </table>
-            </div>
-        </div>
-        <!-- End of quick selection tiles -->
-
-        <hr />
-
-        <!-- Course list table -->
-        <div class="table-responsive">
-            <blockquote class="blockquote mt-2 px-2">
-                <p class="text-black-50 fs-6">
-                    Double click a course to load it back into the course panel.
-                </p>
-            </blockquote>
-            <table id="courseListTable" class="table table-hover">
-                <thead>
-                    <tr class="table-success">
-                        <th>Slot</th>
-                        <th>Course Code</th>
-                        <th>Course Title</th>
-                        <th>Faculty</th>
-                        <th>Venue</th>
-                        <th>Credits</th>
-                        <th></th>
-                    </tr>
-                </thead>
-
-                <tbody>
-                    <!-- Courses will be added here -->
-                </tbody>
-
-                <tfoot>
-                    <tr class="table-active">
-                        <td colspan="7">
-                            <strong>
-                                Total Credits:
-                                <span id="total-credits">0</span>
-                            </strong>
-                        </td>
-                    </tr>
-                </tfoot>
-            </table>
-        </div>
-        <!-- End of course list table -->
-        <!-- End of #2 -->
-
-        <hr />
-
-        <!-- #3 - Comments & Footer -->
-        <!-- Disqus comments -->
-        <div class="container">
-            <div id="disqus_thread"></div>
-        </div>
-
-        <!-- Footer -->
-        <footer class="container-fluid text-center">
-            <span>Made with <i class="fas fa-heart"></i> for VITians</span>
-        </footer>
-        <!-- End of #3 -->
 
         <!-- Importing JavaScript (Other imports are done inside main.js) -->
         <script src="./js/main.js"></script>

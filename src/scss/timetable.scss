@@ -127,27 +127,26 @@
     }
 
     td.clash {
-        background-color: var(--period-clash-color);
-        color: var(--background-color);
+        background-color: var(--period-clash-color) !important;
+        color: var(--on-clash-color) !important;
     }
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 400px) {
+    /*
+        Making quick buttons, timetable full-width on smaller screens
+    */
+    #option-buttons {
+        justify-content: center !important;
+    }
+}
+
+@media screen and (max-width: 1000px) {
     /*
         Hiding the text in the option buttons if the screen
         width is not big enough
     */
     button span {
         display: none;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    /*
-        Making quick buttons, timetable full-width on smaller screens
-    */
-    #timetable {
-        margin-left: var(--bs-gutter-x, -0.75rem);
-        margin-right: var(--bs-gutter-x, -0.75rem);
     }
 }

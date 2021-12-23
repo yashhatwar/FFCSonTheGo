@@ -34,13 +34,3 @@
 #course-list table tbody tr {
     cursor: pointer;
 }
-
-@media screen and (max-width: 768px) {
-    /*
-        Making course list full-width on smaller screens
-    */
-    #course-list {
-        margin-left: var(--bs-gutter-x, -0.75rem);
-        margin-right: var(--bs-gutter-x, -0.75rem);
-    }
-}

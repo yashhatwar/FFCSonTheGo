@@ -7,7 +7,7 @@
 @import 'global/colors.scss';
 
 body {
-    padding-top: 6rem;
+    padding-top: 5rem;
     background-color: var(--background-color);
 }
 
@@ -41,26 +41,6 @@ body {
     color: var(--background-color);
     border-color: var(--primary-dark-color) !important;
     background-color: var(--primary-dark-color) !important;
-}
-
-.nav-link i {
-    font-size: 1.5rem;
-    margin-right: 0.3rem;
-}
-
-.nav-link small {
-    line-height: 100%;
-    vertical-align: text-top;
-}
-
-.nav-link i,
-.nav-link small {
-    color: var(--primary-color);
-}
-
-.nav-link i:hover,
-.nav-link small:hover {
-    color: var(--primary-dark-color);
 }
 
 /*
@@ -117,7 +97,11 @@ footer {
 }
 
 @media (max-width: 768px) {
-    body {
-        padding-top: 5rem;
+    /*
+        Remove x-axis padding on smaller devices
+     */
+    .container-xxl {
+        padding-left: 0;
+        padding-right: 0;
     }
 }

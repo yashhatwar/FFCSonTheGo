@@ -18,14 +18,9 @@ import './timetable';
 import './course-list';
 import * as Utils from './utils';
 
-const lastUpdate = require('../../package.json')['last-update'];
+const lastUpdate = require('../../package.json')['lastUpdate'];
 
 $(function() {
-    /*
-        Setting the last updated semester
-     */
-    $('#last-update').text(lastUpdate);
-
     /*
         Event to listen to hash changes
      */
@@ -50,9 +45,11 @@ $(function() {
 function switchCampus() {
     if (window.location.hash === '#Chennai') {
         $('#campus').text('Chennai Campus');
+        $('#last-update').text(lastUpdate.chennai);
         window.campus = 'Chennai';
     } else {
         $('#campus').text('Vellore Campus');
+        $('#last-update').text(lastUpdate.vellore);
         window.campus = 'Vellore';
     }
 

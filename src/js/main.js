@@ -1,50 +1,67 @@
-import 'bootstrap/dist/css/bootstrap.min.css';
-import '@fortawesome/fontawesome-free/css/all.min.css';
-import '../css/main.scss';
+/*
+ *  This file contains the events and functions applied to
+ *  the document body that is common to all sections or
+ *  that doesn't fit into any particular section
+ */
 
-import $ from 'jquery';
-import 'bootstrap';
+import '../../node_modules/bootstrap/dist/css/bootstrap.min.css';
+import '../../node_modules/@fortawesome/fontawesome-free/css/all.min.css';
 
-import './color_change';
-import { removeTouchHoverCSSRule } from './utils';
+import '../scss/main.scss';
+import '../scss/course-panel.scss';
+import '../scss/timetable.scss';
+import '../scss/course-list.scss';
 
-const lastUpdate = require('../../package.json')['last-update'];
+import './attacher';
+import './course-panel';
+import './timetable';
+import './course-list';
+import * as Utils from './utils';
+
+const lastUpdate = require('../../package.json')['lastUpdate'];
 
 $(function() {
-    // disable hover for touch screen devices
-    removeTouchHoverCSSRule();
-
-    // Setting the last updated semester
-    $('#last-update').text(lastUpdate);
-
-    $('.quick-selection .btn').click(function() {
-        $(this).blur();
+    /*
+        Event to listen to hash changes
+     */
+    $(window).on('hashchange', () => {
+        switchCampus();
     });
 
-    /**
-     * Need to rework these events based on new share button
+    /*
+        Remove focus from quick buttons once clicked
      */
-    // $('header .alert-dismissible a').click(function() {
-    //     ga('send', {
-    //         hitType: 'event',
-    //         eventCategory: 'Promotion',
-    //         eventAction: 'click',
-    //         eventLabel: 'GitHub',
-    //     });
-    // });
-    // $('#shareWhatsApp a').click(function() {
-    //     ga('send', {
-    //         hitType: 'event',
-    //         eventCategory: 'Share',
-    //         eventAction: 'click',
-    //         eventLabel: 'WhatsApp',
-    //     });
-    // });
+    $('.quick-buttons .btn').on('click', function() {
+        $(this).trigger('blur');
+    });
+
+    switchCampus();
+    Utils.removeTouchHoverCSSRule();
 });
 
-// open github repo on ctrl+u
+/*
+    Function to switch campuses
+ */
+function switchCampus() {
+    if (window.location.hash === '#Chennai') {
+        $('#campus').text('Chennai Campus');
+        $('#last-update').text(lastUpdate.chennai);
+        window.campus = 'Chennai';
+    } else {
+        $('#campus').text('Vellore Campus');
+        $('#last-update').text(lastUpdate.vellore);
+        window.campus = 'Vellore';
+    }
+
+    getCourses();
+}
+
+/*
+    Redirect to the GitHub page when Ctrl + U is clicked
+    instead of showing the page source code
+ */
 document.onkeydown = function(e) {
-    if (e.ctrlKey && (e.keyCode === 117 || e.keyCode === 85)) {
+    if (e.ctrlKey && e.key == 'u') {
         window.open('https://github.com/vatz88/FFCSonTheGo');
         return false;
     } else {
@@ -52,7 +69,18 @@ document.onkeydown = function(e) {
     }
 };
 
-// Setup a listener to track Add to Homescreen events.
+/*
+    Function to clear all sections
+ */
+window.resetPage = () => {
+    clearPanel();
+    clearTimetable();
+    clearCourseList();
+};
+
+/*
+    Prompt add to home screen
+ */
 window.addEventListener('beforeinstallprompt', (e) => {
     ga('send', {
         hitType: 'event',
@@ -60,6 +88,7 @@ window.addEventListener('beforeinstallprompt', (e) => {
         eventAction: 'Seen',
         eventLabel: `A2H Shown`,
     });
+
     e.userChoice.then((choiceResult) => {
         ga('send', {
             hitType: 'event',
@@ -69,8 +98,3 @@ window.addEventListener('beforeinstallprompt', (e) => {
         });
     });
 });
-
-// const Sentry = require('@sentry/browser');
-// Sentry.init({
-//     dsn: 'https://2108314c87344a6c9c4d1db1e82b5d05@sentry.io/1487980',
-// });

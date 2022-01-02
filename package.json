@@ -1,12 +1,15 @@
 {
     "name": "FFCSonTheGo",
     "version": "1.0.0",
-    "last-update": "Winter Semester 2021-22",
+    "lastUpdate": {
+        "vellore": "Winter Semester 2021-22",
+        "chennai": "Winter Semester 2020-21"
+    },
     "main": "index.js",
     "repository": "https://github.com/vatz88/FFCSonTheGo.git",
     "author": "Vatsal Joshi <vatz88@gmail.com>",
     "license": "GPL-3.0",
-    "private": false,
+    "private": true,
     "scripts": {
         "start": "yarn convert && yarn start:noconvert",
         "start:noconvert": "parcel src/index.html",

@@ -23,7 +23,7 @@
         }
     },
     "engines": {
-        "node": ">=16"
+        "node": ">=10 <13"
     },
     "devDependencies": {
         "husky": "^2.4.1",
